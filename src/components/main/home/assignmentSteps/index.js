@@ -58,7 +58,7 @@ export default function AssignmentSteps() {
           Money-back Guarantee
         </h4>
         <p className="text-gray-300 text-base leading-relaxed">
-          If there&#39s any issue with your order, the full amount will be refunded promptly.
+          If there&#39;s any issue with your order, the full amount will be refunded promptly.
         </p>
       </div>
 
@@ -67,13 +67,13 @@ export default function AssignmentSteps() {
     {/* Call-to-Action */}
     <div className="mt-16">
       <h2 className="text-4xl font-semibold mb-6">
-        <span className="text-[#003cff]">Get Professional Assistance</span>
-        <span className="text-white"> from Experts</span>
+        <span className="text-[#003cff]">Get work done from</span>
+        <span className="text-white"> the Experts</span>
       </h2>
-      <button className="bg-[#003cff] text-white py-4 px-10 rounded-full text-lg font-medium hover:bg-blue-700 transition-colors duration-300"
+      <button className="bg-[#003cff] text-white py-4 px-10 rounded-full text-lg font-medium hover:bg-white transition-colors duration-300"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
-        Start Your Project
+        Get Started
       </button>
     </div>
   </div>

@@ -18,7 +18,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import { TbMailStar } from "react-icons/tb";
+import { FaStar } from 'react-icons/fa'; 
 import axios from "axios";
 import InputError from "@/components/ui/input-error";
 import { useRouter } from "next/navigation";
@@ -93,7 +93,7 @@ export default function Banner() {
 
   function scrollToSection() {
     setTimeout(() => {
-      const section = document.getElementById("faq"); // Replace 'sectionId' with the ID of the section you want to scroll to
+      const section = document.getElementById("testimonials"); // Replace 'sectionId' with the ID of the section you want to scroll to
       section.scrollIntoView({ behavior: "smooth" });
     }, 10);
   }
@@ -399,11 +399,22 @@ export default function Banner() {
     handleChange(event); // Call the passed-in handleChange function
   };
 
+  const openInstagram = () => {
+    window.open('https://www.instagram.com/contentlywriters/', '_blank');  // Replace with your Instagram URL
+  };
+  
+  const openLinkedIn = () => {
+    window.open('https://www.linkedin.com/company/facio-contently-writers/', '_blank');  // Replace with your LinkedIn URL
+  };
+  
+
   return (
-    <div className="px-4 sm:!px-10 lg:!px-[50px] ">
-      <div className="max-w-[1280px] mx-auto  flex lg:flex-row flex-col gap-10">
-        <div className="w-full grid  mt-20 pr-10">
-          <h2 className="md:text-7xl sm:text-5xl text-5xl min-h-[300px]  sm:min-h-[200px] leading-[80px]">
+    <div className="px-4 sm:!px-10 lg:!px-[50px] bg-gradient-to-b from-white to-[#f7f7f7] pb-5">
+
+
+      <div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10">
+        <div className="w-full grid mt-20 pr-10">
+          <h2 className="md:text-7xl sm:text-5xl text-5xl min-h-[300px] sm:min-h-[200px] leading-[80px]">
             {isClient && (
               <Typewriter
                 skipAddStyles={true}
@@ -421,21 +432,81 @@ export default function Banner() {
               />
             )}
           </h2>
-          <div className="flex  justify-between ">
-            <Button type="button" variant="icon" onClick={scrollToSection}>
-              <TbMailStar className="text-5xl" />
-            </Button>
-            <Link href="https://www.instagram.com/contentlywriters/">
-           
-              <FaInstagram className="text-5xl" />
-            </Link>
-            <Link href="https://www.linkedin.com/company/facio-contently-writers/">
-            
-              <FaLinkedin className="text-5xl" />
-            </Link>
-          </div>
-        </div>
-        <div className="z-30   lg:w-[550px] bg-[#3c46d5] lg:p-4 p-10 lg:mx-1 sm:mx-20 mx-4 mt-10  ">
+
+ {/* New Boxes Section */}
+<div className="flex flex-wrap justify-center gap-4 mt-8">
+  <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-4 w-[250px] h-[50px] rounded-lg shadow-md text-center flex flex-col justify-center items-center hidden lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
+    <p className="text-lg">
+      <span className="font-semibold">Assignment</span>
+      <span className="text-sm font-normal"> helper</span>
+    </p>
+  </div>
+
+  <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-4 w-[250px] h-[50px] rounded-lg shadow-md text-center flex flex-col justify-center items-center hidden lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
+    <p className="text-lg">
+      <span className="font-semibold">Affordable</span>
+      <span className="text-sm font-normal"> Pricing</span>
+    </p>
+  </div>
+
+  <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-4 w-[250px] h-[50px] rounded-lg shadow-md text-center flex flex-col justify-center items-center hidden lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
+    <p className="text-lg">
+      <span className="font-semibold">Timely</span>
+      <span className="text-sm font-normal"> delivery</span>
+    </p>
+  </div>
+</div>
+
+
+
+
+
+<div className="flex  justify-between ">
+  {/* Testimonials Icon */}
+  <Button
+    type="button"
+    variant="icon"
+    onClick={scrollToSection}
+    className="flex items-center space-x-1 sm:space-x-4"
+  >
+    <div className="rounded-full bg-black hover:bg-[#333333] text-white p-4 flex items-center justify-center">
+      <FaStar className="text-2xl sm:text-4xl" />  {/* Adjust icon size */}
+    </div>
+    <span className="hidden lg:block text-base lg:text-lg">Testimonials</span>  {/* Show text only on large screens */}
+  </Button>
+
+  {/* Instagram Icon */}
+  <Button
+    type="button"
+    variant="icon"
+    onClick={openInstagram}
+    className="flex items-center space-x-1 sm:space-x-4"
+  >
+    <div
+      className="rounded-full p-4 flex items-center bg-black hover:bg-[#333333] text-white justify-center">
+      <FaInstagram className="text-2xl sm:text-4xl text-white" /> {/* Adjust icon size */}
+    </div>
+    <span className="hidden lg:block text-base lg:text-lg">Instagram</span> {/* Show text only on large screens */}
+  </Button>
+
+  {/* LinkedIn Icon */}
+  <Button
+    type="button"
+    variant="icon"
+    onClick={openLinkedIn}
+    className="flex items-center space-x-1 sm:space-x-4"
+  >
+    <div className="rounded-full bg-black hover:bg-[#333333] text-white p-4 flex items-center justify-center">
+      <FaLinkedin className="text-2xl sm:text-4xl" />  {/* Adjust icon size */}
+    </div>
+    <span className="hidden lg:block text-base lg:text-lg">LinkedIn</span>  {/* Show text only on large screens */}
+  </Button>
+</div>
+
+
+</div>
+    
+        <div className="z-30   lg:w-[550px] bg-[#5b6cf2] lg:p-4 p-10 lg:mx-1 sm:mx-20 mx-4 mt-10  ">
           <form className="w-full bg-white p-6 grid gap-3 ">
             <h3 className="text-2xl font-semibold">Place new order</h3>
             <SelectTab

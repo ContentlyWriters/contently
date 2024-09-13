@@ -29,7 +29,7 @@ export default function Testimonials() {
   }
   return (
     <>
-      <div id="faq" className="px-4 sm:!px-10 lg:!px-[50px] bg-[#f8f9fa]">
+      <div id="Testimonials" className="px-4 sm:!px-10 lg:!px-[50px] bg-[#f8f9fa]">
         <div className="max-w-[1280px] mx-auto py-16">
           <div className="mx-auto ">
             <div className="text-[26px] text-center font-bold py-4 underline underline-offset-2">

@@ -93,7 +93,7 @@ export default function Banner() {
 
   function scrollToSection() {
     setTimeout(() => {
-      const section = document.getElementById("testimonials"); // Replace 'sectionId' with the ID of the section you want to scroll to
+      const section = document.getElementById("Testimonials"); // Replace 'sectionId' with the ID of the section you want to scroll to
       section.scrollIntoView({ behavior: "smooth" });
     }, 10);
   }

@@ -1,4 +1,4 @@
-// app/blog/[slug]/page.js
+
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import img1 from "@/assets/image/blogImg1.jpg";
@@ -271,3 +271,4 @@ export default function BlogPostPage({ params }) {
   
   );
 }
+

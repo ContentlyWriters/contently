@@ -8,8 +8,16 @@ import img2 from "@/assets/image/blogImg2.jpg";
 import img3 from "@/assets/image/blogImg3.jpg";
 import img4 from "@/assets/image/blogImg4.jpg";
 import img5 from "@/assets/image/blogImg5.jpg";
+import img6 from "@/assets/image/blogImg6.jpg";
 
 const blogData = [
+  {
+    tag: "blog-6",
+    heading: "The Future of Marketing: Emerging Trends and Technologies",
+    image: img6,
+    about: "Marketing is always changing, and it's important for businesses to keep up with the latest trends and technologies. As we look to the future, several new trends and technologies are set to change how marketing is done. Here’s a look at what to expect.",
+    slug: "blog-6", // For linking
+  },
   {
     tag: "blog-1",
     heading: "Embracing Tomorrow's Innovations: What's Next in Technology",
@@ -62,7 +70,7 @@ export default function Blog() {
               <h1 className="text-3xl font-semibold pt-5 text-center">
                 {item.heading}
               </h1>
-              <Image className="my-4 rounded-lg max-h-[500px]" src={item.image} alt="blog image" />
+              <Image className="my-4 rounded-lg w-[1056px] max-h-[500px]" src={item.image} alt="blog image" />
               <p className="pt-5">{item.about}</p>
               <Link href={`/blog/${item.slug}`} passHref>
                 <Button className="bg-read-more-bg text-read-more-text shadow-read-more">

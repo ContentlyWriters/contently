@@ -35,8 +35,8 @@ function ContactUs() {
             <div className="grid gap-2">
               <h3 className="font-semibold">Location</h3>
               <div>
-                <p>Our company, Facio Contently Writers Private Limited is based in</p>
-                <p>Mansarovar, Jaipur 302020</p>
+                <p>Our company, Facio Contently Writers Private Limited is based in
+                Mansarovar, Jaipur 302020</p>
               </div>
               <p>CIN: U82990RJ2024PTC09328</p>
             </div>
@@ -44,8 +44,8 @@ function ContactUs() {
             <div className="grid gap-2">
               <h2 className="font-semibold">Email</h2>
               <div>
-                <p>If you have any issues regarding any matter or if you are</p>
-                <p>just curious drop a mail so we can help you out!</p>
+                <p>If you have any issues regarding any matter or if you are
+                just curious drop a mail so we can help you out!</p>
               </div>
               <a
                 href="mailto:info@contentlywriters.com"

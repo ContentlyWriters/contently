@@ -52,8 +52,8 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         // Custom colors for Read More and Read Less buttons
-        "read-more-bg": "#c2fbd7",
-        "read-more-text": "rgba(0, 128, 0, 0.693)",
+        "read-more-bg": "#5b6cf2",
+        "read-more-text": "#fff",
         "read-less-bg": "#f5f5f5",
         "read-less-text": "#868686",
       },

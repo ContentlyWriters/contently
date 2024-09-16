@@ -602,9 +602,9 @@ export default function Banner() {
                 >
                   <FiMinus />
                 </Button>
-                <h1 className=" tex-2xl font-medium h-12 w-full border-2 border-black text-center leading-10">
+                <h4 className=" tex-2xl font-medium h-12 w-full border-2 border-black text-center leading-10">
                   {count}
-                </h1>
+                </h4>
                 <Button
                   size="icon"
                   className="rounded-none text-xl font-normal w-16 h-12  bg-black text-white"

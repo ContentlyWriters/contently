@@ -44,7 +44,7 @@ export default function AssignmentSteps() {
 
       {/* Zero Plagiarism Section */}
       <div className="bg-gray-900 rounded-lg p-8 shadow-lg transform transition-transform duration-300 hover:scale-105">
-        <h4 className="text-[#003cff] text-3xl font-semibold mb-4">
+        <h4 className="text-[#5b6cf2] text-3xl font-semibold mb-4">
           Zero Plagiarism
         </h4>
         <p className="text-gray-300 text-base leading-relaxed">
@@ -54,7 +54,7 @@ export default function AssignmentSteps() {
 
       {/* Money-back Guarantee Section */}
       <div className="bg-gray-900 rounded-lg p-8 shadow-lg transform transition-transform duration-300 hover:scale-105">
-        <h4 className="text-[#003cff] text-3xl font-semibold mb-4">
+        <h4 className="text-[#5b6cf2] text-3xl font-semibold mb-4">
           Money-back Guarantee
         </h4>
         <p className="text-gray-300 text-base leading-relaxed">
@@ -67,10 +67,10 @@ export default function AssignmentSteps() {
     {/* Call-to-Action */}
     <div className="mt-16">
       <h2 className="text-4xl font-semibold mb-6">
-        <span className="text-[#003cff]">Get work done from</span>
+        <span className="text-[#5b6cf2]">Get work done from</span>
         <span className="text-white"> the Experts</span>
       </h2>
-      <button className="bg-[#003cff] text-white py-4 px-10 rounded-full text-lg font-medium hover:bg-white hover:text-black transition-colors duration-300"
+      <button className="bg-[#5b6cf2] text-white py-4 px-10 rounded-full text-lg font-medium hover:bg-white hover:text-black transition-colors duration-300"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
         Get Started
@@ -87,7 +87,7 @@ export default function AssignmentSteps() {
         <div className="max-w-[1280px] mx-auto bg-[#f8f8f8] my-10 p-10 text-lg rounded-lg">
           <p>
             Here at{" "}
-            <span className="text-[#003cff] text-4xl font-semibold">
+            <span className="text-[#5b6cf2] text-4xl font-semibold">
               Contently Writers
             </span>
             , we provide a platform for users looking to get their best assignment services, essays, homework, or projects completed at minimal charges. We suggest trying our online assignment helper services for their efficiency and the quality of work done, always keeping users&#39; best interests in mind. Our writers are highly skilled and experienced in handling these tasks, ensuring your important work is in capable and reliable hands.

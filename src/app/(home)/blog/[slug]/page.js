@@ -1,4 +1,4 @@
-
+// app/blog/[slug]/page.js
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import img1 from "@/assets/image/blogImg1.jpg";
@@ -6,13 +6,70 @@ import img2 from "@/assets/image/blogImg2.jpg";
 import img3 from "@/assets/image/blogImg3.jpg";
 import img4 from "@/assets/image/blogImg4.jpg";
 import img5 from "@/assets/image/blogImg5.jpg";
+import img6 from "@/assets/image/blogImg6.jpg";
 
 const blogData = [
   {
+    slug: "blog-6",
+    heading: "The Future of Marketing: Emerging Trends and Technologies",
+    image: img6,
+    content: "Marketing is always changing, and it's important for businesses to keep up with the latest trends and technologies. As we look to the future, several new trends and technologies are set to change how marketing is done. Here’s a look at what to expect",
+    keywords: ["content writing services", "assignment writing services"],
+    description: "Discover the latest trends and technologies shaping the future of marketing. Learn how innovations like AI, data analytics, and personalization are transforming the marketing landscape and driving business success.",
+    post: [
+     
+        {
+        title: "Artificial Intelligence (AI):",
+        about:
+          "The Future of Marketing: Emerging Trends and Technologies Introduction: Marketing is always changing, and it's important for businesses to keep up with the latest trends and technologies. As we look to the future, several new trends and technologies are set to change how marketing is done. Here’s a look at what to expect. Artificial Intelligence (AI): AI is making a big impact on marketing. It enables businesses to process and interpret vast amounts of data efficiently and with precision. With AI, companies can personalize marketing messages, predict customer behavior, and automate repetitive tasks. This allows marketers to spend more time on strategy and creativity while AI handles the data work. For example, content writing services can use AI to analyze audience preferences and tailor content to engage readers more effectively.",
+      },
+  
+      {
+        title: "Voice Search Optimization:",
+        about:
+          "More people are using voice-activated devices like Amazon's Alexa and Google Home. This means businesses need to optimize their content for voice search. Voice searches are usually more conversational, so marketers need to use natural language and longer keywords in their SEO strategies.",
+      },
+      {
+        title: "Augmented Reality (AR):",
+        about:
+          "AR technology adds digital elements to the real world, creating interactive and immersive experiences. Brands can use AR for virtual try-ons, interactive ads, and unique in-store experiences. AR helps blend online and offline shopping, giving customers a new way to engage with products.",
+      },
+      {
+        title: "Video Marketing:",
+        about:
+          "Video content is extremely popular online. Short videos, live streams, and interactive videos are all becoming more common. Brands can use videos to tell stories, show off products, and connect with their audience on a deeper level. Videos are more engaging and can effectively convey emotions and messages.",
+      },
+      {
+        title: "Social Commerce:",
+        about:
+          "Social media platforms are adding shopping features, making it easier for users to buyproducts directly from their feeds. This trend, called social commerce, simplifies the buyingprocess and offers a smooth shopping experience. Marketers can take advantage of socialcommerce by creating posts that users can shop from and interacting with customers onsocial media. For example, businesses offering assignment writing services can createengaging posts that showcase their services and allow customers to make purchasesdirectly through the platform.",
+      },
+      {
+        title: "Sustainability and Ethical Marketing:",
+        about:
+          "Customers are increasingly aware of environmental and ethical concerns.. Brands that focus on sustainability and ethical practices are more appealing to these consumers. Marketing strategies that highlight transparency, eco-friendly products, and social responsibility can build trust and loyalty among customers.",
+      },
+      {
+        title: "Personalized Marketing:",
+        about:
+          "Personalization is crucial for standing out in a crowded market. With data analytics and AI, businesses can create highly personalized marketing campaigns that cater to individual preferences and behaviors. Personalized emails, product recommendations, and targeted ads can greatly improve customer engagement and conversion rates.",
+      },
+      {
+        title: "Conclusion:",
+        about:
+          "The future of marketing is full of exciting possibilities. By adopting new trends and technologies like AI, voice search optimization, AR, video marketing, social commerce, sustainability, and personalized marketing, businesses can stay ahead. Keeping up with these developments will help marketers create innovative strategies that connect with their audience and drive success.",
+      },
+      ],  
+},
+  
+  {
+
     slug: "blog-1",
     heading: "Embracing Tomorrow's Innovations: What's Next in Technology",
     image: img5,
     content: "Innovation drives progress, always pushing us towards a better tomorrow. As we look ahead, it's important to explore the new trends and technologies that will shape our future. Join us as we uncover the potential of tomorrow's innovations.",
+    keywords: ["AI", "Quantum Computing", "Technology Trends", "Machine Learning", "Future Technology"],
+    description: "Discover the next big things in technology, from AI to quantum computing, and how they will impact our future.",
     post: [
      
         {
@@ -59,6 +116,8 @@ const blogData = [
     heading: "The Union Budget for 2024-25",
     image: img4,
     content: "The Lok Sabha has unanimously approved the Union Budget for the fiscal year 2024-25, which amounts to Rs 48.21 trillion. The budget presented by Finance Minister Nirmala Sitharaman is a significant milestone in India's economic development. Here is a summary of the key aspects and implications of this substantial financial plan. Additionally, for students and professionals seeking detailed analyses and reports on the budget, assignment writing services can provide comprehensive and insightful assistance. ",
+    keywords: ["Union Budget", "2024-25 Budget", "India Budget", "Infrastructure", "Tax Reforms"],
+    description: "Explore the key aspects of the Union Budget 2024-25 and how it impacts various sectors.",
     post: [
      
         {
@@ -103,6 +162,8 @@ const blogData = [
     slug: "blog-3",
     heading: "A Beginner's Guide to Writing Essays in Proper Format",
     image: img1,
+    keywords: ["Essay writing", "how to write essays"," essay structure"," proper essay format"],
+    description: "Learn the basics of essay writing with this beginner's guide. Discover the proper format, structure, and tips for writing clear and effective essays for academic success.",
     content: "Are you feeling overwhelmed by the task of writing an essay? Don't worry, you're not alone. Many students find essay writing challenging, but with the right approach, it can become much more manageable. In this guide, we'll walk through the steps to writing an essay in proper format at an intermediate English level.",
     post: [
         {
@@ -157,6 +218,8 @@ const blogData = [
     heading: "Decoding Academic Success: The Crucial Role of Choosing the Perfect Assignment Assistance Partner",
     image: img2,
     content: "In today's academic world, students juggle multiple assignments and deadlines, often feeling overwhelmed. This is where assignment help services come to the rescue. However, not all services are created equal, and choosing the right one is crucial for success. Here's why it matters.",
+    keywords: ["Assignment assistance", "academic success", "choosing assignment partner", "best assignment help"],
+    description: "Explore how selecting the right assignment assistance partner can significantly impact your academic success. Learn the key factors to consider and make informed choices to enhance your learning experience.",
     post: [
         {
           title: "Understanding outlook of the topic :",
@@ -201,6 +264,8 @@ const blogData = [
     heading: "Unleashing the Power of ROI: A guide to Maximizing Returns in Business",
     image: img3,
     content: "Return on Investment (ROI) is a critical metric in business that measures the profitability of an investment relative to its cost. It provides valuable insights into the efficiency and effectiveness of various business initiatives. ",
+    keywords: ["ROI", "Return on Investment", "business returns", "maximizing ROI"],
+    description: "Unlock the potential of Return on Investment (ROI) with this comprehensive guide. Learn strategies and tips for maximizing returns in business, improving profitability, and making smarter financial decisions.",
     post: [
      
         {
@@ -237,8 +302,24 @@ const blogData = [
     
       ],  
 },
-];
 
+];
+export async function generateMetadata({ params }) {
+  const slug = params.slug;
+
+  // Find the blog post by slug
+  const post = blogData.find((blog) => blog.slug === slug);
+
+  if (!post) {
+    return notFound(); // Handle 404 if slug is not found
+  }
+
+  return {
+    title: post.heading, // Use the heading as the title
+    description: post.description, // Use the description from the blogData
+    keywords: post.keywords.join(", "), // Convert the keywords array into a comma-separated string
+  };
+}
 export default function BlogPostPage({ params }) {
   const { slug } = params;
   const blog = blogData.find((b) => b.slug === slug);
@@ -249,11 +330,11 @@ export default function BlogPostPage({ params }) {
 
   return (
     <div className="px-4 sm:!px-10 lg:!px-[50px] pt-10 pb-10">
-          <div className="max-w-[1280px] mx-auto bg-[#f0efed] border-1 p-4 sm:p-8 shadow-xl rounded-xl ">
+          <div className="max-w-[1280px] mx-auto bg-[#f7f7f7] border-1 p-4 sm:p-8 shadow-xl rounded-xl ">
           <div className="sm:px-20 grid sm:gap-4 gap-4 py-10">
           
     <h1 className="text-5xl font-bold text-center pt-2">{blog.heading}</h1>
-    <Image className="my-4 rounded-lg max-h-[500px]" src={blog.image} alt="blog image" />
+    <Image className="my-4 rounded-lg  max-h-[500px]" src={blog.image} alt="blog image" />
     <div className=" text-lg ">{blog.content}</div>
   
     {/* Mapping over the post array */}
@@ -271,4 +352,3 @@ export default function BlogPostPage({ params }) {
   
   );
 }
-

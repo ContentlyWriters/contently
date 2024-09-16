@@ -2,6 +2,7 @@ import Navbar from "@/components/main/navbar";
 import Footer from "@/components/main/footer";
 import GuestRoute from "@/routes/guestRoute";
 
+
 export const metadata = {
   title: "Expert Content Writing Services Online | Contently Writers",
   description: `Are you looking for top-notch Content Writing Services? Contently connects you with skilled writers who craft original, plagiarism-free content tailored for diverse industries.`,

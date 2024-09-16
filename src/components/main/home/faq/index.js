@@ -13,7 +13,7 @@ export default function FAQ() {
       <div className="max-w-[1280px] mx-auto py-16">
         <h4 className="text-white lg:text-5xl sm:text-3xl text-2xl  font-semibold md:px-20 sm:px-10">
           Frequently asked {"  "}
-          <span className="text-[#003cff]">questions</span>
+          <span className="text-[#5b6cf2]">questions</span>
         </h4>
         <Accordion
           type="single"

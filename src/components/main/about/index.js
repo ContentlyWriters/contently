@@ -16,7 +16,7 @@ function About() {
         <p className="text-[#FFFFFF] text-[25px] text-center pt-10 mb-8 mx-auto ">
           Let&#39;s explore and deepen our connection.
         </p>
-        <div className="h-[7px] w-[150px] bg-[#1A0C87] mx-auto"></div>
+        <div className="h-[7px] w-[150px] bg-[#5b6cf2] mx-auto"></div>
       </div>
       <div className="px-4 sm:!px-10 lg:!px-[50px] ">
         <div className="max-w-[1280px] mx-auto">

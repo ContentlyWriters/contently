@@ -16,7 +16,7 @@ function ContactUs() {
         <p className="text-[#FFFFFF] text-[25px] text-center pt-3 mx-auto lg:pb-10 pb-3">
           
         </p>
-        <div className="h-[7px] w-[150px] bg-[#1A0C87] mx-auto"></div>
+        <div className="h-[7px] w-[150px] bg-[#5b6cf2] mx-auto"></div>
       </div>
 
       <div className="lg:px-32 lg:py-16">

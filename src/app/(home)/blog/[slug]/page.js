@@ -12,6 +12,8 @@ const blogData = [
   {
     slug: "blog-6",
     heading: "The Future of Marketing: Emerging Trends and Technologies",
+    date: "September 16, 2024", // Add this field for the date
+    author: "Charchit Sharma", // Add this field for the author
     image: img6,
     content: "Marketing is always changing, and it's important for businesses to keep up with the latest trends and technologies. As we look to the future, several new trends and technologies are set to change how marketing is done. Here’s a look at what to expect",
     keywords: ["content writing services", "assignment writing services"],
@@ -66,6 +68,8 @@ const blogData = [
 
     slug: "blog-1",
     heading: "Embracing Tomorrow's Innovations: What's Next in Technology",
+    date: "September 9, 2024", // Add this field for the date
+    author: "Charchit Sharma", // Add this field for the author
     image: img5,
     content: "Innovation drives progress, always pushing us towards a better tomorrow. As we look ahead, it's important to explore the new trends and technologies that will shape our future. Join us as we uncover the potential of tomorrow's innovations.",
     keywords: ["AI", "Quantum Computing", "Technology Trends", "Machine Learning", "Future Technology"],
@@ -114,6 +118,8 @@ const blogData = [
   {
     slug: "blog-2",
     heading: "The Union Budget for 2024-25",
+    date: "July 22, 2024", // Add this field for the date
+    author: "Charchit Sharma", // Add this field for the author
     image: img4,
     content: "The Lok Sabha has unanimously approved the Union Budget for the fiscal year 2024-25, which amounts to Rs 48.21 trillion. The budget presented by Finance Minister Nirmala Sitharaman is a significant milestone in India's economic development. Here is a summary of the key aspects and implications of this substantial financial plan. Additionally, for students and professionals seeking detailed analyses and reports on the budget, assignment writing services can provide comprehensive and insightful assistance. ",
     keywords: ["Union Budget", "2024-25 Budget", "India Budget", "Infrastructure", "Tax Reforms"],
@@ -161,6 +167,8 @@ const blogData = [
   {
     slug: "blog-3",
     heading: "A Beginner's Guide to Writing Essays in Proper Format",
+    date: "July 15, 2024", // Add this field for the date
+    author: "Charchit Sharma", // Add this field for the author
     image: img1,
     keywords: ["Essay writing", "how to write essays"," essay structure"," proper essay format"],
     description: "Learn the basics of essay writing with this beginner's guide. Discover the proper format, structure, and tips for writing clear and effective essays for academic success.",
@@ -216,6 +224,8 @@ const blogData = [
   {
     slug: "blog-4",
     heading: "Decoding Academic Success: The Crucial Role of Choosing the Perfect Assignment Assistance Partner",
+    date: "July 1, 2024", // Add this field for the date
+    author: "Charchit Sharma", // Add this field for the author
     image: img2,
     content: "In today's academic world, students juggle multiple assignments and deadlines, often feeling overwhelmed. This is where assignment help services come to the rescue. However, not all services are created equal, and choosing the right one is crucial for success. Here's why it matters.",
     keywords: ["Assignment assistance", "academic success", "choosing assignment partner", "best assignment help"],
@@ -262,6 +272,8 @@ const blogData = [
   {
     slug: "blog-5",
     heading: "Unleashing the Power of ROI: A guide to Maximizing Returns in Business",
+    date: "June 24, 2024", // Add this field for the date
+    author: "Charchit Sharma", // Add this field for the author
     image: img3,
     content: "Return on Investment (ROI) is a critical metric in business that measures the profitability of an investment relative to its cost. It provides valuable insights into the efficiency and effectiveness of various business initiatives. ",
     keywords: ["ROI", "Return on Investment", "business returns", "maximizing ROI"],
@@ -341,11 +353,16 @@ export default function BlogPostPage({ params }) {
     <div className="mt-10 space-y-8">
       {blog.post.map((item, index) => (
         <div key={index}>
-          <h2 className="text-2xl font-semibold mb-2">{item.title}</h2>
+          <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
           <p className="text-lg">{item.about}</p>
         </div>
       ))}
     </div>
+     {/* Date and Author Section */}
+     <div className="flex justify-between mt-8">
+            <span className="text-sm text-gray-600">{blog.date}</span> {/* Date on the left */}
+            <span className="text-sm text-gray-600">{blog.author}</span> {/* Author on the right */}
+          </div>
   </div>
   </div>
   </div>

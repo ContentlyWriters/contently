@@ -22,26 +22,18 @@ function Subject() {
     }, 10);
   }
   return (
-    <>
-      <div
-        className="px-4 sm:!px-10 lg:!px-[50px] bg-black h-[300px]"
-        style={{
-          backgroundImage: `url(https://cdn.pixabay.com/photo/2015/11/04/09/28/banner-1022119_1280.jpg)`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "fit",
-          alt:"subject",
-        }}
-      >
-        <div className="max-w-[1280px] mx-auto py-16 text-[#b0ad9f] flex flex-col gap-4 justify-center items-center h-full ">
-          <h1 className="text-center text-5xl font-semibold ">
-            Welcome to our Subject Page
-          </h1>
-          <h2 className="text-xl text-center">
-            Explore our wide range of subjects and services
-          </h2>
-        </div>
-      </div>
+    
+    <div>
+    <div className="bg-[#020035] py-8">
+      <h1 className="text-[#FFFFFF] sm:text-[40px] lg:text-[50px] text-[30px] text-center pt-20 mx-auto font-semibold">
+       Welcome to our Subject page
+      </h1>
+      <p className="text-[#FFFFFF] text-[25px] text-center pt-1 mb-8 mx-auto ">
+       Explore our wide range of subjects and services
+      </p>
+      <div className="h-[7px] w-[150px] bg-[#5b6cf2] mx-auto"></div>
+    </div>
+        
       <div className="px-4 sm:!px-10 lg:!px-[50px]">
         <div className="max-w-[1280px] mx-auto py-16 ">
           <div className="flex gap-4 justify-center flex-wrap ">
@@ -162,7 +154,7 @@ function Subject() {
           <MdEmail className="text-3xl " />
         </div>
       </Link>
-    </>
+    </div>
   );
 }
 

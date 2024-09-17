@@ -2,10 +2,7 @@ import React from "react";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaRegFileLines } from "react-icons/fa6";
@@ -30,9 +27,11 @@ function Service() {
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-5 sm:gap-10 lg:gap-16 my-8">
             {data.map((item, index) => (
               <div key={index}>
-                <Card className="p-5 min-h-[380px] hover:translate-y-3 duration-200 ">
-                  <CardHeader className="text-5xl text-[#00052a] hover:text-[#5b6cf2]  !justify-center">
-                    <div className="flex justify-center ">{item.logo}</div>
+                {/* Hover effect applied to the entire card */}
+                <Card className="p-5 min-h-[380px] hover:translate-y-3 duration-200 group cursor-pointer">
+                  {/* Icon will change color when the whole card is hovered */}
+                  <CardHeader className="text-5xl text-[#00052a] group-hover:text-[#5b6cf2] !justify-center">
+                    <div className="flex justify-center">{item.logo}</div>
                   </CardHeader>
                   <CardContent>
                     <h3 className="text-center text-3xl pb-2 text-[#00052a] font-medium">
@@ -49,8 +48,8 @@ function Service() {
         </div>
       </div>
       <Link href="mailto:info@contentlywriters.com">
-        <div className="rounded-full fixed w-12 h-12 transition-colors duration-200 text-white hover:text-[#5646ea] bg-[#5646ea] hover:bg-white bottom-6 right-16  flex justify-center items-center shadow-xl">
-          <MdEmail className="text-3xl " />
+        <div className="rounded-full fixed w-12 h-12 transition-colors duration-200 text-white hover:text-[#5646ea] bg-[#5646ea] hover:bg-white bottom-6 right-16 flex justify-center items-center shadow-xl">
+          <MdEmail className="text-3xl" />
         </div>
       </Link>
     </>
@@ -59,7 +58,7 @@ function Service() {
 
 const data = [
   {
-    logo: <FaShoppingCart className="max-auto " />,
+    logo: <FaShoppingCart className="max-auto" />,
     title: "Buy an assignment",
     about:
       "While we provide services for completing any assignment within the given timeframe, we also offer specialized assignments crafted through years of experience at a fair price. As a leading writing platform in the USA, we cover a wide range of topics across basic, intermediate, and advanced levels for almost all academic stages.",
@@ -96,7 +95,7 @@ const data = [
   },
   {
     logo: <FaFilePrescription />,
-    title: "Disseration",
+    title: "Dissertation",
     about:
       "Our dissertation services include conducting a thorough study on any given topic and crafting a well-structured dissertation with your input throughout the process. We offer comprehensive dissertation help services and dissertation writing help to meet your needs. If your specific requirements are not addressed through the form on the homepage, please visit our community page for further assistance.",
   },

@@ -27,7 +27,7 @@ import { useUserContext } from "@/context/auth";
 import { toast } from "react-toastify";
 export default function Banner() {
   // const checkoutHandler = async({orderDetails}) => {
-  //   const orderData  = await axios.post("https://contentlywriters.com:8088/order", {data: orderDetails})
+  //   const orderData  = await axios.post("https://apis.contentlywriters.com:8088/order", {data: orderDetails})
   //   console.log({orderData})
   // }
   const router = useRouter();

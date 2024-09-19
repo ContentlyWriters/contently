@@ -86,7 +86,7 @@ const Footer = () => {
         <Separator className="my-4" />
 
         <div className="my-10">
-          <h1 className="font-semibold pb-4">Disclaimer</h1>
+          <p className="font-semibold pb-4">Disclaimer</p>
           <p className="font-normal opacity-80">
             Our materials are designed to support you in conducting research and completing your
           </p>

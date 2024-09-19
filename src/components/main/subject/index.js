@@ -120,10 +120,10 @@ function Subject() {
   
             <div className="text-[#555] gap-6 grid">
               <p>
-                If you're seeking a subject not listed on our page or have an assignment that falls outside mainstream topics, we can still assist you.
+                If you&#39;re seeking a subject not listed on our page or have an assignment that falls outside mainstream topics, we can still assist you.
               </p>
               <p>
-                Reach out to us via email or through our social media pages. If your assignment aligns with any of our writers' expertise, we'll be happy to take it on.
+                Reach out to us via email or through our social media pages. If your assignment aligns with any of our writers&#39; expertise, we&#39;ll be happy to take it on.
               </p>
               <p>
                 We deliver on our promise, as all the assignments we do will be devised with merit.

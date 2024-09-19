@@ -19,25 +19,33 @@ import { MdEmail } from "react-icons/md";
 function Service() {
   return (
     <>
-      <div className="px-4 sm:!px-10 lg:!px-[50px] bg-[#FFFFFF]  !w-full ">
-        <div className="max-w-[1280px] mx-auto py-2">
-          <h1 className="text-2xl sm:text-5xl lg:text-6xl pt-10 font-normal text-center">
+    
+      <div className="px-4 sm:!px-10 lg:!px-[50px] bg-gradient-to-b from-[#f8f9fa] to-[#ffffff] w-full">
+        <div className="max-w-[1280px] mx-auto py-2 ">
+        <div className="bg-[#020035] w-full py-6">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl pt-10 font-bold text-center text-[#ffffff]">
             Best Assignment Services
           </h1>
-          <div className="grid sm:grid-cols-2 grid-cols-1 gap-5 sm:gap-10 lg:gap-16 my-8">
+          <p className="text-center text-md sm:text-lg text-[#ffffff] mt-4 mb-10 max-w-[800px] mx-auto">
+            Explore our comprehensive services designed to help students succeed with their academic work, offering top-quality assignments tailored to your needs.
+          </p>
+          </div>
+         
+
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 sm:gap-12 lg:gap-16 my-8">
             {data.map((item, index) => (
               <div key={index}>
                 {/* Hover effect applied to the entire card */}
-                <Card className="p-5 min-h-[380px] hover:translate-y-3 duration-200 group cursor-pointer">
+                <Card className="p-6 min-h-[400px] transition-transform duration-300 transform hover:-translate-y-2 group cursor-pointer bg-white shadow-lg hover:shadow-2xl rounded-lg border border-[#e3e3e3]">
                   {/* Icon will change color when the whole card is hovered */}
                   <CardHeader className="text-5xl text-[#00052a] group-hover:text-[#5b6cf2] !justify-center">
                     <div className="flex justify-center">{item.logo}</div>
                   </CardHeader>
                   <CardContent>
-                    <h3 className="text-center text-3xl pb-2 text-[#00052a] font-medium">
+                    <h3 className="text-center text-3xl pb-4 text-[#00052a] font-semibold transition-colors duration-200">
                       {item.title}
                     </h3>
-                    <p className="text-md opacity-80 font-normal">
+                    <p className="text-center text-md text-[#555555] opacity-80 font-light transition-colors duration-200">
                       {item.about}
                     </p>
                   </CardContent>
@@ -47,9 +55,11 @@ function Service() {
           </div>
         </div>
       </div>
+
+      {/* Floating email button */}
       <Link href="mailto:info@contentlywriters.com">
-        <div className="rounded-full fixed w-12 h-12 transition-colors duration-200 text-white hover:text-[#5646ea] bg-[#5646ea] hover:bg-white bottom-6 right-16 flex justify-center items-center shadow-xl">
-          <MdEmail className="text-3xl" />
+        <div className="rounded-full fixed w-12 h-12 transition-colors duration-200 text-white hover:text-[#5b6cf2] bg-[#5b6cf2] hover:bg-white bottom-6 right-8  flex justify-center items-center shadow-xl">
+          <MdEmail className="text-3xl " />
         </div>
       </Link>
     </>

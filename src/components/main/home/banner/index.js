@@ -410,8 +410,7 @@ export default function Banner() {
   
 
   return (
-    <div className="px-4 sm:!px-10 lg:!px-[50px] bg-gradient-to-b from-white to-[#f7f7f7] pb-5">
-
+    <div className="px-2 sm:px-4 md:px-6 lg:px-[50px] bg-gradient-to-b from-white to-[#f7f7f7] pb-5">
 
       <div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10">
         <div className="w-full grid mt-20 pr-10">
@@ -462,18 +461,22 @@ export default function Banner() {
 
 
 
-<div className="flex  justify-between ">
+<div className="flex justify-between">
   {/* Testimonials Icon */}
   <Button
     type="button"
     variant="icon"
     onClick={scrollToSection}
-    className="flex items-center space-x-1 sm:space-x-4"
+    className="flex items-center space-x-1 sm:space-x-4 group"
   >
     <div className="rounded-full bg-black hover:bg-[#333333] text-white p-4 flex items-center justify-center">
-      <FaStar className="text-2xl sm:text-4xl" />  {/* Adjust icon size */}
+      <FaStar className="text-2xl sm:text-4xl" /> {/* Adjust icon size */}
     </div>
-    <span className="hidden lg:block text-base lg:text-lg">Testimonials</span>  {/* Show text only on large screens */}
+    <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
+      Testimonials
+      {/* Underline span */}
+      <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#000] transition-all duration-500 ease-in-out group-hover:w-full"></span> {/* Left to right animation */}
+    </span>
   </Button>
 
   {/* Instagram Icon */}
@@ -481,13 +484,16 @@ export default function Banner() {
     type="button"
     variant="icon"
     onClick={openInstagram}
-    className="flex items-center space-x-1 sm:space-x-4"
+    className="flex items-center space-x-1 sm:space-x-4 group"
   >
-    <div
-      className="rounded-full p-4 flex items-center bg-black hover:bg-[#333333] text-white justify-center">
+    <div className="rounded-full p-4 flex items-center bg-black hover:bg-[#333333] text-white justify-center">
       <FaInstagram className="text-2xl sm:text-4xl text-white" /> {/* Adjust icon size */}
     </div>
-    <span className="hidden lg:block text-base lg:text-lg">Instagram</span> {/* Show text only on large screens */}
+    <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
+      Instagram
+      {/* Underline span */}
+      <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#000] transition-all duration-500 ease-in-out group-hover:w-full"></span> {/* Left to right animation */}
+    </span>
   </Button>
 
   {/* LinkedIn Icon */}
@@ -495,19 +501,26 @@ export default function Banner() {
     type="button"
     variant="icon"
     onClick={openLinkedIn}
-    className="flex items-center space-x-1 sm:space-x-4"
+    className="flex items-center space-x-1 sm:space-x-4 group"
   >
     <div className="rounded-full bg-black hover:bg-[#333333] text-white p-4 flex items-center justify-center">
-      <FaLinkedin className="text-2xl sm:text-4xl" />  {/* Adjust icon size */}
+      <FaLinkedin className="text-2xl sm:text-4xl" /> {/* Adjust icon size */}
     </div>
-    <span className="hidden lg:block text-base lg:text-lg">LinkedIn</span>  {/* Show text only on large screens */}
+    <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
+      LinkedIn
+      {/* Underline span */}
+      <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#000] transition-all duration-500 ease-in-out group-hover:w-full"></span> {/* Left to right animation */}
+    </span>
   </Button>
 </div>
 
 
+
+
+
 </div>
     
-        <div className="z-30   lg:w-[550px] bg-[#5b6cf2] lg:p-4 p-10 lg:mx-1 sm:mx-20 mx-4 mt-10  ">
+        <div className="z-30   lg:w-[550px] bg-[#5b6cf2] sm:p-10 lg:p-4 p-2 lg:mx-1 sm:mx-20 mx-4 mt-1 sm:mt-10  ">
           <form className="w-full bg-white p-6 grid gap-3 ">
             <h3 className="text-2xl font-semibold">Place new order</h3>
             <SelectTab

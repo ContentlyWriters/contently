@@ -26,135 +26,121 @@ function Subject() {
     <div>
     <div className="bg-[#020035] py-8">
       <h1 className="text-[#FFFFFF] sm:text-[40px] lg:text-[50px] text-[30px] text-center pt-20 mx-auto font-semibold">
-       Welcome to our Subject page
+        Welcome to our Subject page
       </h1>
-      <p className="text-[#FFFFFF] text-[25px] text-center pt-1 mb-8 mx-auto ">
-       Explore our wide range of subjects and services
+      <p className="text-[#FFFFFF] text-[25px] text-center pt-1 mb-8 mx-auto">
+        Explore our wide range of subjects and services
       </p>
       <div className="h-[7px] w-[150px] bg-[#5b6cf2] mx-auto"></div>
     </div>
-        
-      <div className="px-4 sm:!px-10 lg:!px-[50px]">
-        <div className="max-w-[1280px] mx-auto py-16 ">
-          <div className="flex gap-4 justify-center flex-wrap ">
-            {listOFSubjects.map((subject) => (
-              <button
-                onClick={() => scrollToSection(subject.tag)}
-                key={subject.id}
-                className="hover:text-[#5b6cf2] "
-              >
-                {subject.title}
-              </button>
-            ))}
-          </div>
-          <div className="grid gap-10 my-10 md:px-24 sm:px-16 px-2">
-            {data.map((item, index) => (
-              <div key={index} className="grid gap-6" id={item.tag}>
-                <h3 className="text-4xl font-semibold flex gap-1">
-                  {item.logo} {item.title}
-                </h3>
-                <p className="text-[#555]">{item.about}</p>
-                {item.points.length != 0 && (
-                  <h4 className="text-3=2xl font-semibold">Services Offered</h4>
-                )}
-                {item.points.length != 0 && (
+  
+    <div className="px-4 sm:px-10 lg:px-[50px]">
+      <div className="max-w-[1280px] mx-auto py-16">
+        <div className="flex gap-4 justify-center flex-wrap">
+          {listOFSubjects.map((subject) => (
+            <button
+              onClick={() => scrollToSection(subject.tag)}
+              key={subject.id}
+              className="hover:text-[#5b6cf2]"
+            >
+              {subject.title}
+            </button>
+          ))}
+        </div>
+  
+        <div className="grid gap-10 my-10 md:px-24 sm:px-16 px-2">
+          {data.map((item, index) => (
+            <div key={index} className="grid gap-6" id={item.tag}>
+              <h3 className="text-4xl font-semibold flex gap-1">
+                {item.logo} {item.title}
+              </h3>
+              <p className="text-[#555]">{item.about}</p>
+  
+              {item.points.length !== 0 && (
+                <>
+                  <h4 className="text-2xl font-semibold">Services Offered</h4>
                   <ul className="list-none p-0 grid gap-3">
-                    {item.points.map((item, index) => (
-                      <li
-                        key={index}
-                        className="flex items-center relative text-[#555]"
-                      >
-                        <div className="bg-[#42b84a] w-5 h-5 rounded-full flex justify-center items-center mr-3 ">
+                    {item.points.map((point, idx) => (
+                      <li key={idx} className="flex items-center relative text-[#555]">
+                        <div className="bg-[#42b84a] w-5 h-5 rounded-full flex justify-center items-center mr-3">
                           <FaCheck className="text-white text-sm" />
                         </div>
-                        {item}
+                        {point}
                       </li>
                     ))}
                   </ul>
-                )}
-
-                {item.manner.length != 0 && (
-                  <h4 className="text-3=2xl font-semibold">
+                </>
+              )}
+  
+              {item.manner.length !== 0 && (
+                <>
+                  <h4 className="text-2xl font-semibold">
                     We offer services in the following manner
                   </h4>
-                )}
-                {item.manner.length != 0 && (
                   <ul className="list-none p-0 grid gap-3">
-                    {item.manner.map((item, index) => (
-                      <li
-                        key={index}
-                        className="flex items-center relative text-[#555]"
-                      >
-                        {item}
+                    {item.manner.map((manner, idx) => (
+                      <li key={idx} className="flex items-center relative text-[#555]">
+                        {manner}
                       </li>
                     ))}
                   </ul>
-                )}
-                <ul className="list-none p-0 grid gap-3">
-                  {item?.aboutPoints?.map((item, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center relative text-[#555]"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-
-            <div>
-              <p className="text-xl font-semibold pb-3">
-                The services we provide for any such subjects include:
-              </p>
-              <div className="text-[#555] text-md grid gap-3">
-                <p>
-                Assisting with assignments or homework in any of the subjects listed
-
-                </p>
-                <p>
-                Completing assignments in any of the subjects mentioned
-
-                </p>
-                <p>
-                Providing pre-made assignments for a reasonable price or special offers
-
-                </p>
-              </div>
+                </>
+              )}
+  
+              <ul className="list-none p-0 grid gap-3">
+                {item?.aboutPoints?.map((aboutPoint, idx) => (
+                  <li key={idx} className="flex items-center relative text-[#555]">
+                    {aboutPoint}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="grid gap-4 mt-2">
-              <div className="flex items-center">
-                <div className="rounded-full bg-black h-3 w-3 m-[1px] " ></div>
-                <div className="rounded-full bg-black h-3 w-3 m-[1px] " ></div>
-                <div className="rounded-full bg-black h-3 w-3 m-[1px] " ></div>
-                <h2 className="text-4xl font-semibold">
-                  Other Subjects and Services
-                </h2>
-              </div>
-
-              <div className="text-[#555] gap-6 grid">
-                <p>
-                If you&#39;re seeking a subject not listed on our page or have an assignment that falls outside mainstream topics, we can still assist you. 
-                </p>
-                <p>
-                Reach out to us via email or through our social media pages. If your assignment aligns with any of our writers&#39; expertise, we&#39;ll be happy to take it on.
-
-                </p>
-                <p>
-                  We deliver on our promise as all the assignments we do will be
-                  devised with merit.
-                </p>
-              </div>
+          ))}
+  
+          <div>
+            <p className="text-xl font-semibold pb-3">
+              The services we provide for any such subjects include:
+            </p>
+            <div className="text-[#555] text-md grid gap-3">
+              <p>Assisting with assignments or homework in any of the subjects listed</p>
+              <p>Completing assignments in any of the subjects mentioned</p>
+              <p>Providing pre-made assignments for a reasonable price or special offers</p>
+            </div>
+          </div>
+  
+          <div className="grid gap-4 mt-2">
+            <div className="flex items-center">
+              <div className="rounded-full bg-black h-3 w-3 m-[1px]"></div>
+              <div className="rounded-full bg-black h-3 w-3 m-[1px]"></div>
+              <div className="rounded-full bg-black h-3 w-3 m-[1px]"></div>
+              <h2 className="text-4xl font-semibold">
+                Other Subjects and Services
+              </h2>
+            </div>
+  
+            <div className="text-[#555] gap-6 grid">
+              <p>
+                If you're seeking a subject not listed on our page or have an assignment that falls outside mainstream topics, we can still assist you.
+              </p>
+              <p>
+                Reach out to us via email or through our social media pages. If your assignment aligns with any of our writers' expertise, we'll be happy to take it on.
+              </p>
+              <p>
+                We deliver on our promise, as all the assignments we do will be devised with merit.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <Link href="mailto:info@contentlywriters.com">
-        <div className="rounded-full fixed w-12 h-12 transition-colors duration-200 text-white hover:text-[#5646ea] bg-[#5646ea] hover:bg-white bottom-6 right-16  flex justify-center items-center shadow-xl">
+    </div>
+  
+    <Link href="mailto:info@contentlywriters.com">
+        <div className="rounded-full fixed w-12 h-12 transition-colors duration-200 text-white hover:text-[#5b6cf2] bg-[#5b6cf2] hover:bg-white bottom-6 right-8  flex justify-center items-center shadow-xl">
           <MdEmail className="text-3xl " />
         </div>
       </Link>
-    </div>
+  </div>
+  
   );
 }
 

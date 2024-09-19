@@ -11,48 +11,48 @@ function About() {
     <div>
       <div className="bg-[#020035] py-8">
         <h1 className="text-[#FFFFFF] sm:text-[50px] lg:text-[80px] text-[40px] text-center pt-20 mx-auto font-semibold">
-         About us
+          About us
         </h1>
         <p className="text-[#FFFFFF] text-[25px] text-center pt-10 mb-8 mx-auto ">
           Let&#39;s explore and deepen our connection.
         </p>
         <div className="h-[7px] w-[150px] bg-[#5b6cf2] mx-auto"></div>
       </div>
-      <div className="px-4 sm:!px-10 lg:!px-[50px] ">
+      
+      <div className="px-4 sm:px-10 lg:px-[50px]">
         <div className="max-w-[1280px] mx-auto">
           <div className="pt-8">
-            <h2 className="text-center text-[60px] font-semibold mx-auto">
+            <h2 className="text-center text-[40px] sm:text-[50px] lg:text-[60px] font-semibold mx-auto">
               Writers and AI writers
             </h2>
-            <p className="text-center mx-auto text-[15px]">
+            <p className="text-center mx-auto text-[16px] sm:text-[14px] lg:text-[18px]">
             Contently Writers are highly skilled at tackling any challenge you may encounter. For those in need of a quick assignment with less focus on quality, we also offer AI content writing and review services.
             </p>
           </div>
+          
           <div className="my-10">
-            <div className="grid sm:!gap-1 gap-10">
+            <div className="grid gap-10 sm:gap-1">
               {data.map((item, index) => (
                 <div
                   key={index}
-                  className={`flex flex-col  
-              justify-center items-center 
-       
-              ${
-                Number(index) % 2 != 0 ? "md:flex-row-reverse" : "md:flex-row"
-              } `}
+                  className={`flex flex-col justify-center items-center ${
+                    Number(index) % 2 != 0 ? "md:flex-row-reverse" : "md:flex-row"
+                  } sm:flex-col`}
                 >
-                  <div className={`flex justify-center flex-col md:w-[50%] `}>
-                    <h3 className="lg:text-4xl sm:text-2xl text-2xl font-bold pb-5 md:text-start text-center">
+                  <div className={`flex justify-center flex-col md:w-[50%] w-full px-2`}>
+                    <h3 className="lg:text-4xl sm:text-3xl text-2xl font-bold pb-5 md:text-start text-center">
                       {item.title}
                     </h3>
-                    <p className=" md:text-start text-center opacity-90">
+                    <p className="md:text-start text-center opacity-90">
                       {item.about}
                     </p>
                   </div>
-                  <div className="flex justify-center items-center md:w-[50%] p-5">
+                  
+                  <div className="flex justify-center items-center md:w-[50%] w-full p-5">
                     <Image
                       src={item.image}
                       alt="Image"
-                      className="m-w-[500px]"
+                      className="w-full sm:max-w-[400px] lg:max-w-[500px] object-contain"
                     />
                   </div>
                 </div>
@@ -61,14 +61,14 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="px-4 sm:!px-10 lg:!px-[50px] bg-[#000000] py-20 mb-50">
+
+      <div className="px-4 sm:px-10 lg:px-[50px] bg-[#000000] py-20 mb-50">
         <div className="max-w-[1280px] mx-auto">
-          <h2 className="text-[#FFFFFF] sm:text-[30px] lg:text-[50px] text-[30px] text-center  mx-auto font-[450]">
+          <h2 className="text-[#FFFFFF] sm:text-[30px] lg:text-[50px] text-[30px] text-center mx-auto font-[450]">
             About our Writers
           </h2>
-          <p className="text-[#FFFFFF] sm:text-[20px] text-center pt-5 mx-auto ">
+          <p className="text-[#FFFFFF] sm:text-[18px] text-center pt-5 mx-auto ">
           We are fortunate to have writers from diverse educational backgrounds, including many from renowned universities, with a combined work experience spanning decades. You can connect with them through our LinkedIn page.
-
           </p>
         </div>
       </div>

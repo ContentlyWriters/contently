@@ -16,7 +16,7 @@ const blogData = [
     date: "September 19, 2024",
     author: "Charchit Sharma",
     image: img7,
-    content: (<div> <p>In today's interconnected world, information technology (IT) plays an important role in shaping the landscape of business, communication, and everyday life. These global organisations drive technological progress, spark innovation, and deliver solutions that transform industries. But what is an IT company and why is it important? Explore the structure, impact, and future of IT companies as well as their relationship with various sectors, including assignment writing services.</p>
+    content: (<div> <p>In today&#39;s interconnected world, information technology (IT) plays an important role in shaping the landscape of business, communication, and everyday life. These global organisations drive technological progress, spark innovation, and deliver solutions that transform industries. But what is an IT company and why is it important? Explore the structure, impact, and future of IT companies as well as their relationship with various sectors, including assignment writing services.</p>
   
   <p style={{ marginTop: '8px' }}>The introduction of information technology in fields such as education has made assignment writing services possible by offering digital databases, hand-held devices, and cloud-based systems for research, writing, and collaboration. IT companies provide the technical backbone that allows these services to run efficiently, reach a global audience, and ensure data security for customers.
   </p> </div>
@@ -82,7 +82,7 @@ governments and individuals, and shape the way we live, work and interact with t
           <div>
             <p>IT companies are not just businesses; they are the creators of the future. By driving technological progress, they enable innovation and improve the lives of billions. However, with great influence comes the responsibility to protect user data, promote sustainability, and foster continued innovation.</p>
          
-            <p style={{ marginTop: '8px' }}>As technology evolves, IT companies will remain at the forefront, shaping the digital landscape and preparing the world for tomorrow's challenges and opportunities.</p>
+            <p style={{ marginTop: '8px' }}>As technology evolves, IT companies will remain at the forefront, shaping the digital landscape and preparing the world for tomorrow&#39;s challenges and opportunities.</p>
             
           </div>
         ),

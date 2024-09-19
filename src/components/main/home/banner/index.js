@@ -410,28 +410,37 @@ export default function Banner() {
   
 
   return (
-    <div className="px-2 sm:px-4 md:px-6 lg:px-[50px] bg-gradient-to-b from-white to-[#f7f7f7] pb-5">
+    <div className="px-4 sm:px-4 md:px-6 lg:px-[50px] bg-gradient-to-b from-white to-[#f7f7f7] pb-5">
 
-      <div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10">
-        <div className="w-full grid mt-20 pr-10">
-          <h2 className="md:text-7xl sm:text-5xl text-5xl min-h-[300px] sm:min-h-[200px] leading-[80px]">
-            {isClient && (
-              <Typewriter
-                skipAddStyles={true}
-                options={{
-                  strings: [
-                    "Best Content Writing Services in UK & USA",
-                    "Contently Writers Devised with Merit",
-                    "Assignments done in few clicks",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  pauseFor: 1000,
-                  deleteSpeed: 20,
-                }}
-              />
-            )}
-          </h2>
+      <div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10 sm:gap-10">
+        <div className="w-full grid  mt-2 sm:mt-20 sm:pr-10">
+        <h2 className="md:text-7xl sm:text-5xl text-4xl sm:min-h-[300px] min-h-[160px]  sm:min-h-[200px] sm:leading-[80px]">
+  {isClient && (
+    <>
+      <span className="hidden sm:block">
+        <Typewriter
+          skipAddStyles={true}
+          options={{
+            strings: [
+              "Best Content Writing Services in UK & USA",
+              "Contently Writers Devised with Merit",
+              "Assignments done in few clicks",
+            ],
+            autoStart: true,
+            loop: true,
+            pauseFor: 1000,
+            deleteSpeed: 20,
+          }}
+        />
+      </span>
+      <span className="block text-[34px] sm:hidden text-left px-3 font-semibold leading-tight">
+  Best Content Writing Services in UK & USA
+</span>
+
+    </>
+  )}
+</h2>
+
 
  {/* New Boxes Section */}
 <div className="flex flex-wrap justify-center gap-4 mt-8">
@@ -461,6 +470,7 @@ export default function Banner() {
 
 
 
+
 <div className="flex justify-between">
   {/* Testimonials Icon */}
   <Button
@@ -469,7 +479,7 @@ export default function Banner() {
     onClick={scrollToSection}
     className="flex items-center space-x-1 sm:space-x-4 group"
   >
-    <div className="rounded-full bg-black hover:bg-[#333333] text-white p-4 flex items-center justify-center">
+    <div className="rounded-full bg-black hover:bg-[#333333] text-white sm:p-4 p-3 flex items-center justify-center">
       <FaStar className="text-2xl sm:text-4xl" /> {/* Adjust icon size */}
     </div>
     <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
@@ -486,7 +496,7 @@ export default function Banner() {
     onClick={openInstagram}
     className="flex items-center space-x-1 sm:space-x-4 group"
   >
-    <div className="rounded-full p-4 flex items-center bg-black hover:bg-[#333333] text-white justify-center">
+    <div className="rounded-full sm:p-4 p-3 flex items-center bg-black hover:bg-[#333333] text-white justify-center">
       <FaInstagram className="text-2xl sm:text-4xl text-white" /> {/* Adjust icon size */}
     </div>
     <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
@@ -503,7 +513,7 @@ export default function Banner() {
     onClick={openLinkedIn}
     className="flex items-center space-x-1 sm:space-x-4 group"
   >
-    <div className="rounded-full bg-black hover:bg-[#333333] text-white p-4 flex items-center justify-center">
+    <div className="rounded-full bg-black hover:bg-[#333333] text-white sm:p-4 p-3 flex items-center justify-center">
       <FaLinkedin className="text-2xl sm:text-4xl" /> {/* Adjust icon size */}
     </div>
     <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
@@ -520,7 +530,7 @@ export default function Banner() {
 
 </div>
     
-        <div className="z-30   lg:w-[550px] bg-[#5b6cf2] sm:p-10 lg:p-4 p-2 lg:mx-1 sm:mx-20 mx-4 mt-1 sm:mt-10  ">
+        <div className="z-30   lg:w-[550px] bg-[#5b6cf2] sm:p-10 lg:p-4 p-1 lg:mx-1 sm:mx-20 mx-4 mt-1 sm:mt-10  ">
           <form className="w-full bg-white p-6 grid gap-3 ">
             <h3 className="text-2xl font-semibold">Place new order</h3>
             <SelectTab

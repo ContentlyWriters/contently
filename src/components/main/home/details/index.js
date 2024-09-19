@@ -24,8 +24,11 @@ export default function Details() {
               } `}
             >
               <div className={`flex justify-center flex-col md:w-[50%] `}>
-                <h3 className="lg:text-5xl sm:text-3xl text-3xl font-bold pb-5 md:text-start text-center">{item.title}</h3>
-                <p className="lg:text-4xl sm:text-3xl text-2xl leading-[50px] md:text-start text-center">{item.description}</p>
+                <h3 className="lg:text-5xl sm:text-3xl text-3xl font-bold pb-5 md:text-start text-left sm:px-0 px-2 sm:text-center">{item.title}</h3>
+                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-small px-2 leading-tight sm:leading-normal text-left sm:px-0 sm:text-left">
+  {item.description}
+</p>
+
               </div>
               <div className="flex justify-center items-center md:w-[50%] p-5">
                 <Image src={item.image} alt="Topic" className="m-w-[500px]" />

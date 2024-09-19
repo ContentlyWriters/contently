@@ -18,14 +18,14 @@ const items = [
 
 function NavBar() {
   return (
-    <div className="px-4 sm:!px-10 lg:!px-[50px] bg-[#FFFFFF]  !w-full fixed top-0 left-0 z-50">
-      <div className="max-w-[1280px] mx-auto  flex justify-between items-center  py-2">
+    <div className="px-1 sm:!px-10 lg:!px-[50px] bg-[#FFFFFF] sm:px-4 !w-full fixed top-0 left-0 z-50">
+      <div className="max-w-[1280px] mx-auto  flex justify-between items-center py-1 sm:py-2">
         <Link href="/">
           <div className="flex items-center justify-center">
             <Image
               src={logo}
               alt="Pangram Logo"
-              className="h-[80px] w-[180px]"
+              className="h-[70px] w-[160px] sm:h-[80px] sm:w-[180px]"
             />
           </div>
         </Link>

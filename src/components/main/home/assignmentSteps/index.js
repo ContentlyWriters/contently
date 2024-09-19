@@ -15,7 +15,10 @@ export default function AssignmentSteps() {
     <>
       <div className="px-4 sm:!px-10 lg:!px-[50px] ">
         <div className="max-w-[1280px] mx-auto">
-        <h1 className="md:text-4xl text-4xl text-center py-10 mt-10" >Simplify Your Assignment with Our Content Writing Services</h1>
+        <h1 className="sm:text-4xl text-2xl font-semibold sm:text-center text-left px-2 sm:py-8 py-4 sm:tracking-wide leading-snug sm:mt-10 mt-5">
+  Simplify Your Assignment with Our Content Writing Services
+</h1>
+
           <Image src={logo} alt="Assignment Steps" width={680} height={400} className="mx-auto" />
           <div className="grid md:grid-cols-3 sm:grid-cols-2  rounded-lg bg-[#f8f8f8] my-10">
             {data.map((item, index) => (
@@ -27,7 +30,7 @@ export default function AssignmentSteps() {
                 }`}
               >
                 <p className="text-center font-semibold">{item.title}</p>
-                <p className="text-sm opacity-80 pt-4 text-center">
+                <p className="text-sm opacity-80 pt-4 text-left sm:text-center">
                   {item.description}
                 </p>
               </div>
@@ -84,15 +87,15 @@ export default function AssignmentSteps() {
 
 
       <div className="px-4 sm:!px-10 lg:!px-[50px] ">
-        <div className="max-w-[1280px] mx-auto bg-[#f8f8f8] my-10 p-10 text-lg rounded-lg">
+        <div className="max-w-[1280px] mx-auto bg-[#f8f8f8] my-10 p-10 text-lg rounded-lg px-3 sm:px-8">
           <p>
             Here at{" "}
-            <span className="text-[#5b6cf2] text-4xl font-semibold">
+            <span className="text-[#5b6cf2] sm:text-4xl text-4x1  font-semibold">
               Contently Writers
             </span>
             , we provide a platform for users looking to get their best assignment services, essays, homework, or projects completed at minimal charges. We suggest trying our online assignment helper services for their efficiency and the quality of work done, always keeping users&#39; best interests in mind. Our writers are highly skilled and experienced in handling these tasks, ensuring your important work is in capable and reliable hands.
           </p>
-          <Button onClick={scrollToSection}  className="uppercase rounded-full mt-5" size="lg" type="button" >
+          <Button onClick={scrollToSection} className="uppercase rounded-full mt-5 " size="lg" type="button"  >
             Get Started Now
           </Button>
         </div>

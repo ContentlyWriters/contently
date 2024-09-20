@@ -27,7 +27,7 @@ import { useUserContext } from "@/context/auth";
 import { toast } from "react-toastify";
 export default function Banner() {
   // const checkoutHandler = async({orderDetails}) => {
-  //   const orderData  = await axios.post("https://apis.contentlywriters.com:8088/order", {data: orderDetails})
+  //   const orderData  = await axios.post("https://contentlywriters.com:8088/order", {data: orderDetails})
   //   console.log({orderData})
   // }
   const router = useRouter();
@@ -203,7 +203,7 @@ export default function Banner() {
   const getUpdatedPrice = async (e) => {
     try {
       const response = await axios.post(
-        "https://apis.contentlywriters.com:8088/price",
+        "https://contentlywriters.com:8088/price",
         {
           subject: formValues.subject,
           days: formValues.deadline.split(" ")[0],
@@ -282,7 +282,7 @@ export default function Banner() {
       formData.append("orderFile", file);
 
       const response = await axios.post(
-        "https://apis.contentlywriters.com:8088/order",
+        "https://contentlywriters.com:8088/order",
         formData,
         {
           headers: {

@@ -26,6 +26,7 @@ function NavBar() {
               src={logo}
               alt="Pangram Logo"
               className="h-[70px] w-[160px] sm:h-[80px] sm:w-[180px]"
+              priority={true}
             />
           </div>
         </Link>

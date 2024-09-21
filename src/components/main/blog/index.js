@@ -19,7 +19,7 @@ const blogData = [
     image: img7,
     about: "In today's interconnected world, information technology (IT) plays an important role in shaping the landscape of business, communication, and everyday life. These global organisations drive technological progress, spark innovation, and deliver solutions that transform industries. But what is an IT company and why is it important? Explore the structure, impact, and future of IT companies as well as their relationship with various sectors, including assignment writing services.",
     slug: "IT-Corporation",
-    date: "September 19, 2024", 
+    date: "September 19, 2024",
   },
   {
     tag: "blog-6",
@@ -27,7 +27,7 @@ const blogData = [
     image: img6,
     about: "Marketing is always changing, and it's important for businesses to keep up with the latest trends and technologies. As we look to the future, several new trends and technologies are set to change how marketing is done. Here’s a look at what to expect.",
     slug: "The-Future-of-Marketing",
-    date: "September 16, 2024", 
+    date: "September 16, 2024",
   },
   {
     tag: "blog-1",
@@ -35,7 +35,7 @@ const blogData = [
     image: img5,
     about: "Innovation drives progress, always pushing us towards a better tomorrow. As we look ahead, it's important to explore the new trends and technologies that will shape our future. Join us as we uncover the potential of tomorrow's innovations.",
     slug: "Embracing-Tomorrow's-Innovations",
-    date: "September 9, 2024", 
+    date: "September 9, 2024",
   },
   {
     tag: "blog-2",
@@ -43,7 +43,7 @@ const blogData = [
     image: img4,
     about: "The Lok Sabha has unanimously approved the Union Budget for the fiscal year 2024-25, which amounts to Rs 48.21 trillion. The budget presented by Finance Minister Nirmala Sitharaman is a significant milestone in India's economic development. Here is a summary of the key aspects and implications of this substantial financial plan.",
     slug: "The-Union-Budget-for-2024-25",
-    date: "July 22, 2024", 
+    date: "July 22, 2024",
   },
   {
     tag: "blog-3",
@@ -59,7 +59,7 @@ const blogData = [
     image: img2,
     about: "In today's academic world, students juggle multiple assignments and deadlines, often feeling overwhelmed. This is where assignment help services come to the rescue. However, not all services are created equal, and choosing the right one is crucial for success.",
     slug: "Decoding-Academic-Success",
-    date: "July 1, 2024", 
+    date: "July 1, 2024",
   },
   {
     tag: "blog-5",
@@ -67,18 +67,16 @@ const blogData = [
     image: img3,
     about: "Return on Investment (ROI) is a critical metric in business that measures the profitability of an investment relative to its cost. It provides valuable insights into the efficiency and effectiveness of various business initiatives.",
     slug: "Unleashing-the-Power-of-ROI",
-    date: "June 24, 2024", 
+    date: "June 24, 2024",
   },
 ];
-const itemsPerPage = 9; 
+
+const itemsPerPage = 9;
 
 export default function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
 
-  
   const totalPages = Math.ceil(blogData.length / itemsPerPage);
-
-  
   const currentBlogs = blogData.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
@@ -93,14 +91,15 @@ export default function Blog() {
   return (
     <div className="px-4 sm:!px-10 lg:!px-[50px]">
       <div className="max-w-[1280px] mx-auto">
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10">
+        {/* Adjust grid columns based on screen size */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
           {currentBlogs.map((item, index) => (
             <Link href={`/blog/${item.slug}`} key={index} passHref>
               <div
                 id={item.tag}
-                className="bg-[#fff] border-1 p-4 sm:p-8 shadow-xl rounded-xl h-[550px] flex flex-col justify-between cursor-pointer hover:shadow-2xl transition-shadow duration-300"
+                className="bg-[#fff] border-1 p-4 sm:p-6 shadow-xl rounded-xl h-[550px] flex flex-col justify-between cursor-pointer hover:shadow-2xl transition-shadow duration-300"
               >
-                <h1 className="text-1x1 font-bold pt-5 text-center">
+                <h1 className="text-lg font-bold pt-5 text-center">
                   {item.heading}
                 </h1>
                 <Image
@@ -120,8 +119,8 @@ export default function Blog() {
           ))}
         </div>
 
-          {/* Pagination */}
-          <div className="flex justify-end mt-8 mb-8">
+        {/* Pagination */}
+        <div className="flex justify-end mt-8 mb-8">
           <div className="flex items-center space-x-2">
             <button
               onClick={() => handlePageChange(currentPage - 1)}
@@ -160,9 +159,9 @@ export default function Blog() {
             >
               Next »
             </button>
+          </div>
         </div>
       </div>
-     </div>
     </div>
   );
 }

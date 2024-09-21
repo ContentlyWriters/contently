@@ -70,7 +70,12 @@ const Footer = () => {
             <ul className="grid gap-2">
               <li className="font-semibold"><h4>We Accept</h4></li>
               <li>
-                <Image src={img} alt="payment" width={250} height={250} className="w-full" />
+              <Image 
+  src={img} 
+  alt="payment" 
+  className="w-full sm:w-[308px] sm:h-[201px] w-[150px] h-[120px]" 
+/>
+
               </li>
               <li className="font-semibold">
                 {/* Facio Contently Writers Private Limited */}

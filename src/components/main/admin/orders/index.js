@@ -17,7 +17,7 @@ import AdminOrderDetailScreen from "./orderDetails"
 
 async function fetchOrders() {
   try {
-    const response = await axios.get("https://contentlywriters.com:8088/order/getAll", {
+    const response = await axios.get("https://apis.contentlywriters.com:8088/order/getAll", {
       headers: {
         Authorization: `Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlZXdAc3Nkc2RkYWFzcyIsImlhdCI6MTcyMjA3OTk3NSwiZXhwIjoxNzIyMTg3OTc1fQ.BZ1Hz3SZ373BOJa-Z3dpp1o_CC-gl7gq2Kj6gsxlB6vAZWsdmBtwjBb1JiivRGY0cAMkPG6QUlS1zr6Qg1bNdw`,
       },

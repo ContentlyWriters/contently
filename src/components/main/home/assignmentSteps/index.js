@@ -19,6 +19,7 @@ export default function AssignmentSteps() {
   Simplify Your Assignment with Our Content Writing Services
 </h1>
 
+
           <Image src={logo} alt="Assignment Steps" width={680} height={400} className="mx-auto" />
           <div className="grid md:grid-cols-3 sm:grid-cols-2  rounded-lg bg-[#f8f8f8] my-10">
             {data.map((item, index) => (

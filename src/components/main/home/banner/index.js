@@ -282,7 +282,7 @@ export default function Banner() {
       formData.append("orderFile", file);
 
       const response = await axios.post(
-        "https://apis.contentlywriters.com:8088/order",
+        "https://contentlywriters.com:8088/order",
         formData,
         {
           headers: {

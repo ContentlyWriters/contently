@@ -52,7 +52,7 @@ const blogData = [
   
             <h4><strong>Advantages</strong></h4>
             <ul>
-              <li>Convenience: Schedule meetings when it&#39;s convenient for you.</li>
+              <li>Convenience: Schedule meetings when it's convenient for you.</li>
               <li>Personalized learning: Lessons tailored to your needs.</li>
               <li>Instant Feedback: Get real-time answers to your questions.</li>
             </ul>
@@ -160,7 +160,7 @@ const blogData = [
             <p>Evaluate your financial resources. While many options are free, others may have associated costs.</p>
   
            <h4><strong>Trials</strong></h4>
-            <p>Don&#39;t hesitate to try different forms of help until you find the one that resonates with you. Each student&#39;s needs are unique, and sometimes it takes a bit of exploration to find the perfect fit.</p>
+            <p>Don’t hesitate to try different forms of help until you find the one that resonates with you. Each student's needs are unique, and sometimes it takes a bit of exploration to find the perfect fit.</p>
           </div>
         )
       },

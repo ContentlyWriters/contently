@@ -11,17 +11,8 @@ import img4 from "@/assets/image/blogImg4.jpg";
 import img5 from "@/assets/image/blogImg5.jpg";
 import img6 from "@/assets/image/blogImg6.jpg";
 import img7 from "@/assets/image/blogImg7.jpg";
-import img8 from "@/assets/image/blogImg8.jpg";
 
 const blogData = [
-  {
-    tag: "blog-8",
-    heading: "Exploring Different Types of Assignment Help: Which One is Right for You",
-    image: img8,
-    about: " In the wider world of education, students often face a variety of challenges that make homework difficult. Fortunately, there are many resources to help you overcome these obstacles, including an assignment helper who can assist with written assignments. Knowing the different types of assignment help will empower you to choose the option that best suits your needs. In this blog, we will explore different types of aids and advise how to choose the right one for you.",
-    slug: "exploring-assignment-help",
-    date: "September 26, 2024",
-  },
   {
     tag: "blog-7",
     heading: "IT Corporation: Shaping the Future of Technology and Business",

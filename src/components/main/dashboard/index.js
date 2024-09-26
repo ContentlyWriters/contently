@@ -13,7 +13,7 @@ export default function DashBoard() {
   const getOrders = async () => {
     try {
       const response = await axios.get(
-        `https://apis.contentlywriters.com:8088/order/getAll?status=${"Pending"}`,
+        `https://contentlywriters.com:8088/order/getAll?status=${"Pending"}`,
         {
           headers: {
             Authorization: `${localStorage.getItem("token")}`,

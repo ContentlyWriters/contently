@@ -19,7 +19,7 @@ const blogData = [
  {
     slug: "exploring-assignment-help",
     heading: "Exploring Different Types of Assignment Help: Which One is Right for You",
-    date: "September 19, 2024",
+    date: "September 26, 2024",
     author: "Charchit Sharma",
     image: img8,
     metaTitle: "Exploring Types of Assignment Help: Your Guide to Finding an Assignment Helper",

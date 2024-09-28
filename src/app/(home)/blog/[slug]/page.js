@@ -13,6 +13,7 @@ import { ImTextColor } from "react-icons/im";
 import { color } from "framer-motion";
 
 const blogData = [
+
   {
     slug: "exploring-assignment-help",
     heading: "Exploring Different Types of Assignment Help: Which One is Right for You",

@@ -12,189 +12,7 @@ import img8 from "@/assets/image/blogImg8.jpg";
 import { ImTextColor } from "react-icons/im";
 import { color } from "framer-motion";
 
-
 const blogData = [
-
-   
- {
-    slug: "exploring-assignment-help",
-    heading: "Exploring Different Types of Assignment Help: Which One is Right for You",
-    date: "September 19, 2024",
-    author: "Charchit Sharma",
-    image: img8,
-    metaTitle: "Exploring Types of Assignment Help: Your Guide to Finding an Assignment Helper",
-    metaDescription: "Explore various types of assignment help available to you. Learn how an assignment helper can enhance your writing and support your academic journey.",
-    
-    content: (
-      <div>
-    <p>
-        In the wider world of education, students often face a variety of challenges that make homework difficult. Fortunately, there are many resources to help you overcome these obstacles, including an 
-        <a href="https://www.contentlywriters.com/" class="text-[#5b6cf2]"> Assignment Helper</a> who can assist with written assignments. Knowing the different types of assignment help will empower you to choose the option that best suits your needs. In this blog, we will explore different types of aids and advise how to choose the right one for you.
-    </p>
-</div>
-
-    ),
-    keywords: ["assignment help", "online tutoring", "writing services", "study groups", "educational platforms"],
-    post: [
-      {
-        title: "Types of Assignment Help",
-        heading: "",
-        about: (
-          <div>
-            <p>Explore various forms of assignment help that cater to different learning styles and academic needs.</p>
-          </div>
-        )
-      },
-      {
-        title: "How Online Tutoring Helps in Assignment",
-        heading: "",
-        about: (
-          <div>
-            <h4><strong>What is Online Education</strong></h4>
-            <p>Online education connects students with teachers or subject matter experts in real-time. Platforms like Zoom and tutoring services enable self-paced learning and interactive learning experiences.</p>
-  
-            <h4><strong>Advantages</strong></h4>
-            <ul>
-              <li>Convenience: Schedule meetings when it&#39;s convenient for you.</li>
-              <li>Personalized learning: Lessons tailored to your needs.</li>
-              <li>Instant Feedback: Get real-time answers to your questions.</li>
-            </ul>
-  
-            <h4><strong>Who It’s For</strong></h4>
-            <p>Students who prefer self-directed, interactive learning and need help with specific topics or concepts.</p>
-          </div>
-        )
-      },
-      {
-        title: "How Writing Services Help in Assignment",
-        heading: "",
-        about: (
-          <div>
-            <h4><strong>What are Writing Services</strong></h4>
-            <p>Writing services help in <a href="https://www.contentlywriters.com/blog/A-Beginner's-Guide-to-Writing-Essays-in-Proper-Format" class="text-[#5b6cf2]"> writing essays</a>, research papers, and other writing assignments. These services can edit, proofread, and improve everything.</p>
-  
-            <h4><strong>Benefits</strong></h4>
-            <ul>
-              <li>Professional Tutors: Access to experienced writers who can improve your writing.</li>
-              <li>Save time: Free up time for other activities.</li>
-              <li>Quality Assurance: Many services offer plagiarism control and quality assurance.</li>
-            </ul>
-  
-            <h4><strong>Who It’s For</strong></h4>
-            <p>Students who struggle with writing or those who want to improve their writing skills while handling important assignments.</p>
-          </div>
-        )
-      },
-      {
-        title: "How Library and Academic Resources Help in Assignment",
-        heading: "",
-        about: (
-          <div>
-            <h4><strong>What It Does</strong></h4>
-            <p>Using resources at your school or local library, including textbooks, databases, and writing centers.</p>
-  
-            <h4><strong>Benefits</strong></h4>
-            <ul>
-              <li>Authentic sources: Access to authentic educational resources.</li>
-              <li>Research assistance: Librarians can assist in finding relevant resources.</li>
-              <li>Cost: Most resources are available for little or no cost.</li>
-            </ul>
-  
-            <h4><strong>Who It’s For</strong></h4>
-            <p>Good for students who prefer traditional learning methods and want to delve deeper into research topics.</p>
-          </div>
-        )
-      },
-      {
-        title: "How Study Groups and Peer Learning Help in Assignment",
-        heading: "",
-        about: (
-          <div>
-            <h4><strong>What Are Study Groups and Peer Learning</strong></h4>
-            <p>Study groups are classmates who come together to review materials and help each other with homework. Peer learning involves students helping themselves, often with a more experienced peer.</p>
-  
-            <h4><strong>Advantages</strong></h4>
-            <ul>
-              <li>Functional Learning: Different perspectives can increase understanding.</li>
-              <li>Social support: Building friendships and reducing feelings of isolation.</li>
-              <li>Cost: Usually free or low cost compared to professional services.</li>
-            </ul>
-  
-            <h4><strong>Who It’s For</strong></h4>
-            <p>Students who thrive in collaborative environments and need informal, supportive environments.</p>
-          </div>
-        )
-      },
-      {
-        title: "How Online Resources and Educational Platforms Help in Assignment",
-        heading: "",
-        about: (
-          <div>
-            <h4><strong>What Are Online Resources and Educational Platforms</strong></h4>
-            <p>Sites like Khan Academy, Coursera, and YouTube offer many resources, including videos, tutorials, and training on many subjects.</p>
-  
-            <h4><strong>Advantages</strong></h4>
-            <ul>
-              <li>Access: Free or low-cost resources available 24/7.</li>
-              <li>Different learning styles: Videos, text, and interactive activities take into account different learning styles.</li>
-              <li>Learning at your own pace: Learn at your own pace without being forced into deadlines.</li>
-            </ul>
-  
-            <h4><strong>Who It’s For</strong></h4>
-            <p>Motivated students who want to explore topics independently and pursue learning to use resources effectively.</p>
-          </div>
-        )
-      },
-      {
-        title: "Choosing the Right Type of Help",
-        heading: "",
-        about: (
-          <div>
-            <h4><strong>Consider Your Learning Style</strong></h4>
-            <p>Reflect on how you learn best. Do you prefer one-on-one interaction,<a href="https://en.wikipedia.org/wiki/Collaborative_learning/" class="text-[#5b6cf2]"> collaborative learning</a>, or self-paced resources?</p>
-  
-            <h4><strong>Assess Your Needs</strong></h4>
-            <p>Identify the specific challenges you’re facing. Are you struggling with understanding a concept, writing quality, or time management?</p>
-  
-            <h4><strong>Think About Your Schedule</strong></h4>
-            <p>Consider how much time you have available. Some options require regular commitments, while others offer more flexibility.</p>
-  
-            <h4><strong>Budget</strong></h4>
-            <p>Evaluate your financial resources. While many options are free, others may have associated costs.</p>
-  
-           <h4><strong>Trials</strong></h4>
-            <p>Don&#39;t hesitate to try different forms of help until you find the one that resonates with you. Each student&#39;s needs are unique, and sometimes it takes a bit of exploration to find the perfect fit.</p>
-          </div>
-        )
-      },
-      {
-        title: "Conclusion",
-        heading: "",
-        about: (
-          <div>
-            <p>The right homework help can make a huge difference in your learning journey. By exploring the various types of support available, you can find the support that best fits your needs and enhance your learning experience. Remember, seeking help is not a sign of weakness; it’s a proactive step towards achieving your educational goals.</p>
-          </div>
-        )
-      }
-    ],
-    links: [
-      {
-        title: "Assignment Helper",
-        url: "https://www.contentlywriters.com/"
-      },
-      {
-        title: "Writing Essays",
-        url: "https://www.contentlywriters.com/blog/A-Beginner's-Guide-to-Writing-Essays-in-Proper-Format"
-      },
-      {
-        title: "Collaborative Learning",
-        url: "https://en.wikipedia.org/wiki/Collaborative_learning"
-      },
-    ],
-  },
-  
-  
-  
   {
     slug: "exploring-assignment-help",
     heading: "Exploring Different Types of Assignment Help: Which One is Right for You",
@@ -229,17 +47,17 @@ const blogData = [
         heading: "",
         about: (
           <div>
-            <h4><strong>What is Online Education</strong></h4>
+            <h4><strong>What is Online Education:</strong></h4>
             <p>Online education connects students with teachers or subject matter experts in real-time. Platforms like Zoom and tutoring services enable self-paced learning and interactive learning experiences.</p>
   
-            <h4><strong>Advantages</strong></h4>
+            <h4><strong>Advantages:</strong></h4>
             <ul>
               <li>Convenience: Schedule meetings when it&#39;s convenient for you.</li>
               <li>Personalized learning: Lessons tailored to your needs.</li>
               <li>Instant Feedback: Get real-time answers to your questions.</li>
             </ul>
   
-            <h4><strong>Who It’s For</strong></h4>
+            <h4><strong>Who It&#39;s For:</strong></h4>
             <p>Students who prefer self-directed, interactive learning and need help with specific topics or concepts.</p>
           </div>
         )
@@ -249,17 +67,17 @@ const blogData = [
         heading: "",
         about: (
           <div>
-            <h4><strong>What are Writing Services</strong></h4>
+            <h4><strong>What are Writing Services:</strong></h4>
             <p>Writing services help in <a href="https://www.contentlywriters.com/blog/A-Beginner's-Guide-to-Writing-Essays-in-Proper-Format" class="text-[#5b6cf2]"> writing essays</a>, research papers, and other writing assignments. These services can edit, proofread, and improve everything.</p>
   
-            <h4><strong>Benefits</strong></h4>
+            <h4><strong>Benefits:</strong></h4>
             <ul>
               <li>Professional Tutors: Access to experienced writers who can improve your writing.</li>
               <li>Save time: Free up time for other activities.</li>
               <li>Quality Assurance: Many services offer plagiarism control and quality assurance.</li>
             </ul>
   
-            <h4><strong>Who It’s For</strong></h4>
+            <h4><strong>Who It’s For:</strong></h4>
             <p>Students who struggle with writing or those who want to improve their writing skills while handling important assignments.</p>
           </div>
         )
@@ -269,17 +87,17 @@ const blogData = [
         heading: "",
         about: (
           <div>
-            <h4><strong>What It Does</strong></h4>
+            <h4><strong>What It Does:</strong></h4>
             <p>Using resources at your school or local library, including textbooks, databases, and writing centers.</p>
   
-            <h4><strong>Benefits</strong></h4>
+            <h4><strong>Benefits:</strong></h4>
             <ul>
               <li>Authentic sources: Access to authentic educational resources.</li>
               <li>Research assistance: Librarians can assist in finding relevant resources.</li>
               <li>Cost: Most resources are available for little or no cost.</li>
             </ul>
   
-            <h4><strong>Who It’s For</strong></h4>
+            <h4><strong>Who It’s For:</strong></h4>
             <p>Good for students who prefer traditional learning methods and want to delve deeper into research topics.</p>
           </div>
         )
@@ -292,14 +110,14 @@ const blogData = [
             <h4><strong>What Are Study Groups and Peer Learning</strong></h4>
             <p>Study groups are classmates who come together to review materials and help each other with homework. Peer learning involves students helping themselves, often with a more experienced peer.</p>
   
-            <h4><strong>Advantages</strong></h4>
+            <h4><strong>Advantages:</strong></h4>
             <ul>
               <li>Functional Learning: Different perspectives can increase understanding.</li>
               <li>Social support: Building friendships and reducing feelings of isolation.</li>
               <li>Cost: Usually free or low cost compared to professional services.</li>
             </ul>
   
-            <h4><strong>Who It’s For</strong></h4>
+            <h4><strong>Who It’s For:</strong></h4>
             <p>Students who thrive in collaborative environments and need informal, supportive environments.</p>
           </div>
         )
@@ -309,17 +127,17 @@ const blogData = [
         heading: "",
         about: (
           <div>
-            <h4><strong>What Are Online Resources and Educational Platforms</strong></h4>
+            <h4><strong>What Are Online Resources and Educational Platform:s</strong></h4>
             <p>Sites like Khan Academy, Coursera, and YouTube offer many resources, including videos, tutorials, and training on many subjects.</p>
   
-            <h4><strong>Advantages</strong></h4>
+            <h4><strong>Advantages:</strong></h4>
             <ul>
               <li>Access: Free or low-cost resources available 24/7.</li>
               <li>Different learning styles: Videos, text, and interactive activities take into account different learning styles.</li>
               <li>Learning at your own pace: Learn at your own pace without being forced into deadlines.</li>
             </ul>
   
-            <h4><strong>Who It’s For</strong></h4>
+            <h4><strong>Who It’s For:</strong></h4>
             <p>Motivated students who want to explore topics independently and pursue learning to use resources effectively.</p>
           </div>
         )
@@ -329,19 +147,19 @@ const blogData = [
         heading: "",
         about: (
           <div>
-            <h4><strong>Consider Your Learning Style</strong></h4>
+            <h4><strong>Consider Your Learning Style:</strong></h4>
             <p>Reflect on how you learn best. Do you prefer one-on-one interaction,<a href="https://en.wikipedia.org/wiki/Collaborative_learning/" class="text-[#5b6cf2]"> collaborative learning</a>, or self-paced resources?</p>
   
-            <h4><strong>Assess Your Needs</strong></h4>
-            <p>Identify the specific challenges you’re facing. Are you struggling with understanding a concept, writing quality, or time management?</p>
+            <h4><strong>Assess Your Needs:</strong></h4>
+            <p>Identify the specific challenges you&#39;re facing. Are you struggling with understanding a concept, writing quality, or time management?</p>
   
-            <h4><strong>Think About Your Schedule</strong></h4>
+            <h4><strong>Think About Your Schedule:</strong></h4>
             <p>Consider how much time you have available. Some options require regular commitments, while others offer more flexibility.</p>
   
-            <h4><strong>Budget</strong></h4>
+            <h4><strong>Budget:</strong></h4>
             <p>Evaluate your financial resources. While many options are free, others may have associated costs.</p>
   
-           <h4><strong>Trials</strong></h4>
+           <h4><strong>Trials:</strong></h4>
             <p>Don&#39;t hesitate to try different forms of help until you find the one that resonates with you. Each student&#39;s needs are unique, and sometimes it takes a bit of exploration to find the perfect fit.</p>
           </div>
         )
@@ -371,6 +189,9 @@ const blogData = [
       },
     ],
   },
+  
+  
+  
   {
     slug: "IT-Corporation",
     heading: "IT Corporation: Shaping the Future of Technology and Business",
@@ -783,20 +604,23 @@ export default function BlogPostPage({ params }) {
   }
 
   return (
-    <div className="px-4 sm:!px-10 lg:!px-[50px] pt-10 pb-10">
+    <div className="px-4 sm:!px-10 lg:!px-[50px] sm:pt-10 pt-1 pb-10">
           <div className="max-w-[1280px] mx-auto bg-[#f7f7f7] border-1 p-4 sm:p-8 shadow-xl rounded-xl ">
           <div className="sm:px-20 grid sm:gap-4 gap-4 py-10">
           
-    <h1 className="text-5xl font-bold text-center pt-2">{blog.heading}</h1>
-    <Image className="my-4 rounded-lg  max-h-[500px]" src={blog.image} alt="blog image" />
-    <div className=" text-lg ">{blog.content}</div>
+          <h1 className="sm:text-5xl text-1xl font-bold text-center pt-1 px-1 sm:px-6 leading-tight sm:leading-none">
+  {blog.heading}
+</h1>
+
+      <Image className="my-4 rounded-lg  max-h-[500px]" src={blog.image} alt="blog image" />
+    <div className=" sm:text-lg text-1xl ">{blog.content}</div>
   
     {/* Mapping over the post array */}
     <div className="mt-10 space-y-8">
       {blog.post.map((item, index) => (
         <div key={index}>
-          <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
-          <p className="text-lg">{item.about}</p>
+          <h3 className="sm:text-2xl text-1xl font-semibold mb-2">{item.title}</h3>
+          <p className="sm:text-lg text-1xl ">{item.about}</p>
         </div>
       ))}
     </div>

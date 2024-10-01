@@ -408,7 +408,7 @@ export default function Banner() {
     window.open('https://www.linkedin.com/company/facio-contently-writers/', '_blank');  // Replace with your LinkedIn URL
   };
   
-<<<<<<< HEAD
+
   // const strings = [
   //   "Best Content Writing Services in UK & USA",
   //   "Contently Writers Devised with Merit",
@@ -444,43 +444,11 @@ export default function Banner() {
  
 
 
-=======
-  const strings = [
-    "Best Content Writing Services in UK & USA",
-    "Contently Writers Devised with Merit",
-    "Assignments done in few clicks",
-  ];
-  
-  const SlideInText = () => {
-    const [currentStringIndex, setCurrentStringIndex] = useState(0);
-    const [isVisible, setIsVisible] = useState(true);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        // Trigger slide-out animation
-        setIsVisible(false);
-  
-        setTimeout(() => {
-          // After the slide-out, update to the next string and trigger slide-in
-          setCurrentStringIndex((prevIndex) => (prevIndex + 1) % strings.length);
-          setIsVisible(true);
-        }, 500); 
-      }, 3000); 
-  
-      return () => clearInterval(interval);
-    }, []);
-  
-    return (
-      <span className={`block ${isVisible ? 'slide-in' : 'slide-out'}`}>
-        {strings[currentStringIndex]}
-      </span>
-    );
-  };
->>>>>>> d589ba18e232859dc9b617b62341e3be885b670d
+
   return (
     <div className="px-4 sm:px-4 md:px-6 lg:px-[50px] bg-gradient-to-b from-white to-[#f7f7f7] pb-10">
 
-<<<<<<< HEAD
+
 <div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10 sm:gap-10">
   <div className="w-full grid mt-10 sm:mt-24 sm:pr-10">
     <h2 className="md:text-8xl sm:text-7xl text-4xl sm:min-h-[300px] min-h-[200px] sm:leading-[100px] leading-tight text-left font-bold text-[#000] tracking-tight">
@@ -491,19 +459,6 @@ export default function Banner() {
         </span>
       )}
     </h2>
-=======
-      <div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10 sm:gap-10">
-        <div className="w-full grid  mt-2 sm:mt-20 sm:pr-10">
-        <h2 className="md:text-7xl sm:text-5xl text-4xl sm:min-h-[300px] min-h-[160px]  sm:min-h-[200px] sm:leading-[80px]">
-          {/* slide in text */}
-          {isClient && (
-            <>
-              <SlideInText />
-             
-            </>
-          )}
-        </h2>
->>>>>>> d589ba18e232859dc9b617b62341e3be885b670d
 
  
 

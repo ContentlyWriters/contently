@@ -128,8 +128,8 @@
 }
 
 /* animation */
-
-/* @keyframes slideIn {
+/* 
+@keyframes slideIn {
   from {
     transform: translateX(-10px); 
     opacity: 0;
@@ -159,3 +159,4 @@
 .slide-out {
   animation: slideOut 0.5s forwards; 
 } */
+

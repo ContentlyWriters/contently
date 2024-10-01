@@ -18,7 +18,7 @@ export default function HomeLayout({ children }) {
           <title>{metadata.title}</title>
           <meta name="description" content={metadata.description} />
           <meta name="keywords" content={metadata.keywords} />
-          {/* <link rel="canonical" href="https://www.contentlywriters.com/" /> */}
+          
         </head>
         <Navbar />
         <div className="mt-[80px]">{children}</div>

@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
       setIsLoading(true);
       console.log("AuthContext getProfile");
       const response = await axios.get(
-        "https://apis.contentlywriters.com:8088/user/getProfile",
+        "https://contentlywriters.com:8088/user/getProfile",
         {
           headers: {
             Authorization: `${localStorage.getItem("token")}`,

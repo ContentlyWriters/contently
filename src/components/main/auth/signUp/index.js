@@ -84,7 +84,7 @@ export default function SignUpScreen() {
       console.log("Form Values:", formValues);
 
       const response = await axios.post(
-        "https://apis.contentlywriters.com:8088/user/add",
+        "https://contentlywriters.com:8088/user/add",
         formValues,
         {
           headers: {

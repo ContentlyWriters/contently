@@ -11,14 +11,23 @@ import img4 from "@/assets/image/blogImg4.jpg";
 import img5 from "@/assets/image/blogImg5.jpg";
 import img6 from "@/assets/image/blogImg6.jpg";
 import img7 from "@/assets/image/blogImg7.jpg";
+import img8 from "@/assets/image/blogImg8.jpg";
 
 const blogData = [
+  {
+    tag: "blog-8",
+    heading: "Exploring Different Types of Assignment Help: Which One is Right for You",
+    image: img8,
+    about: " In the wider world of education, students often face a variety of challenges that make homework difficult. Fortunately, there are many resources to help you overcome these obstacles, including an assignment helper who can assist with written assignments. Knowing the different types of assignment help will empower you to choose the option that best suits your needs. In this blog, we will explore different types of aids and advise how to choose the right one for you.",
+    slug: "exploring-assignment-help",
+    date: "September 26, 2024",
+  },
   {
     tag: "blog-7",
     heading: "IT Corporation: Shaping the Future of Technology and Business",
     image: img7,
     about: "In today's interconnected world, information technology (IT) plays an important role in shaping the landscape of business, communication, and everyday life. These global organisations drive technological progress, spark innovation, and deliver solutions that transform industries. But what is an IT company and why is it important? Explore the structure, impact, and future of IT companies as well as their relationship with various sectors, including assignment writing services.",
-    slug: "IT-Corporation",
+    slug: "it-corporation",
     date: "September 19, 2024",
   },
   {
@@ -26,7 +35,7 @@ const blogData = [
     heading: "The Future of Marketing: Emerging Trends and Technologies",
     image: img6,
     about: "Marketing is always changing, and it's important for businesses to keep up with the latest trends and technologies. As we look to the future, several new trends and technologies are set to change how marketing is done. Here’s a look at what to expect.",
-    slug: "The-Future-of-Marketing",
+    slug: "the-future-of-marketing",
     date: "September 16, 2024",
   },
   {
@@ -34,7 +43,7 @@ const blogData = [
     heading: "Embracing Tomorrow's Innovations: What's Next in Technology",
     image: img5,
     about: "Innovation drives progress, always pushing us towards a better tomorrow. As we look ahead, it's important to explore the new trends and technologies that will shape our future. Join us as we uncover the potential of tomorrow's innovations.",
-    slug: "Embracing-Tomorrow's-Innovations",
+    slug: "embracing-tomorrow's-innovations",
     date: "September 9, 2024",
   },
   {
@@ -42,7 +51,7 @@ const blogData = [
     heading: "The Union Budget for 2024-25",
     image: img4,
     about: "The Lok Sabha has unanimously approved the Union Budget for the fiscal year 2024-25, which amounts to Rs 48.21 trillion. The budget presented by Finance Minister Nirmala Sitharaman is a significant milestone in India's economic development. Here is a summary of the key aspects and implications of this substantial financial plan.",
-    slug: "The-Union-Budget-for-2024-25",
+    slug: "the-union-budget-for-2024-25",
     date: "July 22, 2024",
   },
   {
@@ -50,7 +59,7 @@ const blogData = [
     heading: "A Beginner's Guide to Writing Essays in Proper Format",
     image: img1,
     about: "Are you feeling overwhelmed by the task of writing an essay? Don't worry, you're not alone. Many students find essay writing challenging, but with the right approach, it can become much more manageable. In this guide, we'll walk through the steps to writing an essay in proper format at an intermediate English level.",
-    slug: "A-Beginner's-Guide-to-Writing-Essays-in-Proper-Format",
+    slug: "a-beginner's-guide-to-writing-essays-in-proper-format",
     date: "July 15, 2024",
   },
   {
@@ -58,7 +67,7 @@ const blogData = [
     heading: "Decoding Academic Success: The Crucial Role of Choosing the Perfect Assignment Assistance Partner",
     image: img2,
     about: "In today's academic world, students juggle multiple assignments and deadlines, often feeling overwhelmed. This is where assignment help services come to the rescue. However, not all services are created equal, and choosing the right one is crucial for success.",
-    slug: "Decoding-Academic-Success",
+    slug: "decoding-academic-success",
     date: "July 1, 2024",
   },
   {
@@ -66,7 +75,7 @@ const blogData = [
     heading: "Unleashing the Power of ROI: A guide to Maximizing Returns in Business",
     image: img3,
     about: "Return on Investment (ROI) is a critical metric in business that measures the profitability of an investment relative to its cost. It provides valuable insights into the efficiency and effectiveness of various business initiatives.",
-    slug: "Unleashing-the-Power-of-ROI",
+    slug: "unleashing-the-power-of-roi",
     date: "June 24, 2024",
   },
 ];

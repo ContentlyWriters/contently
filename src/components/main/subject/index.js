@@ -140,6 +140,8 @@ function Subject() {
         </div>
       </Link>
   </div>
+
+
   
   );
 }
@@ -327,6 +329,7 @@ const data = [
     manner: [],
   },
 ];
+
 
 const listOFSubjects = [
   {

@@ -128,12 +128,8 @@
 }
 
 /* animation */
-<<<<<<< HEAD
-/* 
-=======
 
->>>>>>> d589ba18e232859dc9b617b62341e3be885b670d
-@keyframes slideIn {
+/*@keyframes slideIn {
   from {
     transform: translateX(-10px); 
     opacity: 0;
@@ -162,9 +158,7 @@
 
 .slide-out {
   animation: slideOut 0.5s forwards; 
-<<<<<<< HEAD
+
 } */
 
-=======
-}
->>>>>>> d589ba18e232859dc9b617b62341e3be885b670d
+

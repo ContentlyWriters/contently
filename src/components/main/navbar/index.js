@@ -37,7 +37,7 @@ const items = [
   },
 
 
-  { id: 3, name: "Subject", path: "subject#", 
+  { id: 3, name: "Subject", path: "subjects", 
     subItems: [
       { id: 32, name: "Management", path: "/subject/management",
         subItems: [

@@ -451,10 +451,10 @@ export default function Banner() {
 
 <div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10 sm:gap-10">
   <div className="w-full grid mt-10 sm:mt-24 sm:pr-10">
-    <h2 className="md:text-8xl sm:text-7xl text-4xl sm:min-h-[300px] min-h-[200px] sm:leading-[100px] leading-tight text-left font-bold text-[#000] tracking-tight">
+    <h2 className="md:text-8xl sm:text-7xl text-4xl sm:min-h-[300px] min-h-[200px] sm:leading-[100px] leading-tight text-left font-semibold text-[#1a1a1a] tracking-tight">
       {/* Slide in text with subtle fade animation */}
       {isClient && (
-        <span className="block animate-fade-in">
+        <span className="block animate-fade-in ">
           Best Content Writing Services in UK & USA
         </span>
       )}

@@ -22,7 +22,7 @@ export default function LargeNavbar({ items }) {
   const handleMouseLeave = () => {
     const timeout = setTimeout(() => {
       setOpenDropdown(null); 
-    }, 150);
+    }, 450);
     setDropdownTimeout(timeout);
   };
 

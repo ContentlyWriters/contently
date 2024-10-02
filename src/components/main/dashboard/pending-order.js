@@ -25,7 +25,7 @@ export default function PendingOrder({ orders }) {
          height={300} 
          className="mx-auto"
        />
-       <p className="text-center text-lg">No orders have been completed yet</p>
+       <p className="text-center text-lg">No orders have been placed yet</p>
        <Link href={"/"} className="flex justify-center items-center">
          <Button className="bg-[#5b6cf2] hover:bg-gray-800 px-6 py-2 text-white">
            New Order

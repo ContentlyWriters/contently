@@ -1,5 +1,5 @@
 import React from "react";
-import img from "@/assets/image/undraw_loading_re_5axr.png";
+import img from "@/assets/image/No data-cuate.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -19,9 +19,9 @@ export default function PendingOrder({ orders }) {
       {orders.length == 0 && (
         <div className="flex items-center  flex-col justify-center gap-2 py-4">
           <Image src={img} alt="loading" width={200} height={200} />
-          <p>There are no orders yet</p>
+          <p>No orders have been placed yet</p>
           <Link href={"/"} className="grid justify-center items-center">
-            <Button className="bg-[#0040ff] hover:bg-red-600">New Order</Button>
+            <Button className="bg-[#5b6cf2] hover:bg-gray-900">New Order</Button>
           </Link>
         </div>
       )}

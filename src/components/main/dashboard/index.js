@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import img from "@/assets/image/undraw_loading_re_5axr.png";
+import img from "@/assets/image/No data-cuate.svg";
 import Link from "next/link";
 import Image from "next/image";
 import PendingOrder from "./pending-order";
@@ -46,26 +46,39 @@ export default function DashBoard() {
             <PendingOrder orders={orders} />
           </TabsContent>
           <TabsContent value="finished">
-            <div className="grid justify-center items-center gap-2 py-4">
-              <Image src={img} alt="loading" width={200} height={200} />
-              <p>There are no finished orders</p>
-              <Link href={"/"} className="grid justify-center items-center">
-                <Button className="bg-[#5b6cf2] hover:bg-gray-800">
-                  New Order
-                </Button>
-              </Link>
-            </div>
+          <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
+  <Image 
+    src={img} 
+    alt="loading" 
+    width={300} 
+    height={300} 
+    className="mx-auto"
+  />
+  <p className="text-center text-lg">No orders have been completed yet</p>
+  <Link href={"/"} className="flex justify-center items-center">
+    <Button className="bg-[#5b6cf2] hover:bg-gray-800 px-6 py-2 text-white">
+      New Order
+    </Button>
+  </Link>
+</div>
+
           </TabsContent>
           <TabsContent value="cancelled">
-            <div className="grid justify-center items-center gap-2 py-4">
-              <Image src={img} alt="loading" width={200} height={200} />
-              <p>There are no cancelled orders</p>
-              <Link href={"/"} className="grid justify-center items-center">
-              <Button className="bg-[#5b6cf2] hover:bg-gray-800">
-                  New Order
-                </Button>
-              </Link>
-            </div>
+          <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
+  <Image 
+    src={img} 
+    alt="loading" 
+    width={300} 
+    height={300} 
+    className="mx-auto"
+  />
+  <p className="text-center text-lg">No orders have been cancelled yet</p>
+  <Link href={"/"} className="flex justify-center items-center">
+    <Button className="bg-[#5b6cf2] hover:bg-gray-800 px-6 py-2 text-white">
+      New Order
+    </Button>
+  </Link>
+</div>
           </TabsContent>
         </Tabs>
       </div>

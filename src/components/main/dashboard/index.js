@@ -35,7 +35,7 @@ export default function DashBoard() {
   }, [currentTab]);
   return (
     <>
-      <div className="px-5 py-5 min-h-screen">
+      <div className="px-5 py-5 min-h-screen pt-28">
         <Tabs defaultValue="recent">
           <TabsList className="bg-transparent ">
             <TabsTrigger value="recent">Recent</TabsTrigger>
@@ -50,7 +50,7 @@ export default function DashBoard() {
               <Image src={img} alt="loading" width={200} height={200} />
               <p>There are no finished orders</p>
               <Link href={"/"} className="grid justify-center items-center">
-                <Button className="bg-[#0040ff] hover:bg-red-600">
+                <Button className="bg-[#5b6cf2] hover:bg-gray-800">
                   New Order
                 </Button>
               </Link>
@@ -61,7 +61,7 @@ export default function DashBoard() {
               <Image src={img} alt="loading" width={200} height={200} />
               <p>There are no cancelled orders</p>
               <Link href={"/"} className="grid justify-center items-center">
-                <Button className="bg-[#0040ff] hover:bg-red-600">
+              <Button className="bg-[#5b6cf2] hover:bg-gray-800">
                   New Order
                 </Button>
               </Link>

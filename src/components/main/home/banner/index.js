@@ -637,7 +637,7 @@ export default function Banner() {
   {/* Words on the left */}
   <span className="text-md -mb-3">{250 * count} words</span>
   {/* Pages on the right */}
-  <span className="text-md -mb-3">pages</span>
+  <span className="text-md -mb-3">Pages</span>
 </div>
 
 <div className="flex justify-center items-center ">

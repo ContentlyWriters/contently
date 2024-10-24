@@ -18,7 +18,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import { FaStar } from 'react-icons/fa'; 
+import { FaStar } from "react-icons/fa";
 import axios from "axios";
 import InputError from "@/components/ui/input-error";
 import { useRouter } from "next/navigation";
@@ -198,7 +198,7 @@ export default function Banner() {
   }
   function floorToTwo(num) {
     return Math.floor(num * 100) / 100;
-}
+  }
 
   const getUpdatedPrice = async (e) => {
     try {
@@ -225,7 +225,7 @@ export default function Banner() {
     if (formValues.subject && count) {
       getUpdatedPrice();
     }
-  }, [formValues.subject, formValues.deadline,count]);
+  }, [formValues.subject, formValues.deadline, count]);
 
   // useEffect(()=>{
   //   setPrice((prev)=>prev*count);
@@ -247,6 +247,26 @@ export default function Banner() {
     }
 
     handleMakeOrder(data);
+  };
+
+  const handlePaymentStatus = async (orderId, status) => {
+    try {
+      let formData = new FormData();
+      formData.append("status", status);
+      const editOrder = await axios.put(
+        `https://contentlywriters.com:8088/order/${orderId}`,
+        formData,
+        {
+          headers: {
+            Authorization: `${localStorage.getItem("token")}`,
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      console.log({ editOrder });
+    } catch (err) {
+      console.log(err);
+    }
   };
   const handleMakeOrder = async (data) => {
     try {
@@ -294,6 +314,7 @@ export default function Banner() {
 
       const { amount, paymentOrderId, currency } =
         response.data.data.paymentOrder;
+      const { orderId } = response.data.data;
       var options = {
         key: "rzp_live_Akona2kaTAt7MG", // Enter the Key ID generated from the Dashboard
         amount: amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
@@ -302,10 +323,9 @@ export default function Banner() {
         description: "Test Transaction",
         // "image": "https://example.com/your_logo",
         order_id: paymentOrderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-        handler: function (response) {
-          // alert(response.razorpay_payment_id);
-          // alert(response.razorpay_order_id);
-          // alert(response.razorpay_signature);
+        handler: async function (response) {
+          await handlePaymentStatus(orderId, "success");
+
           toast.success("Order create Successful!", {
             position: "top-right",
             autoClose: 5000,
@@ -328,7 +348,10 @@ export default function Banner() {
       };
 
       var rzp1 = await new Razorpay(options);
-      rzp1.on("payment.failed", function (response) {
+      rzp1.on("payment.failed", async function (response) {
+
+        await handlePaymentStatus(orderId, "cancel");
+        
         toast.error("Payment failed!", {
           position: "top-right",
           autoClose: 5000,
@@ -346,7 +369,7 @@ export default function Banner() {
       //   console.log('306-------')
       // };
 
-      // rzp1.open();
+      rzp1.open();
 
       setLoading(false);
     } catch (err) {
@@ -374,7 +397,7 @@ export default function Banner() {
           setSelectedFileName("");
 
           setCount(orderData.count);
-        
+
           setPrice(floorToTwo(orderData.amount));
           getUpdatedPrice();
         }, 0);
@@ -401,39 +424,41 @@ export default function Banner() {
   };
 
   const openInstagram = () => {
-    window.open('https://www.instagram.com/contentlywriters/', '_blank');  // Replace with your Instagram URL
+    window.open("https://www.instagram.com/contentlywriters/", "_blank"); // Replace with your Instagram URL
   };
-  
+
   const openLinkedIn = () => {
-    window.open('https://www.linkedin.com/company/facio-contently-writers/', '_blank');  // Replace with your LinkedIn URL
+    window.open(
+      "https://www.linkedin.com/company/facio-contently-writers/",
+      "_blank"
+    ); // Replace with your LinkedIn URL
   };
-  
 
   // const strings = [
   //   "Best Content Writing Services in UK & USA",
   //   "Contently Writers Devised with Merit",
   //   "Assignments done in few clicks",
   // ];
-  
+
   // const SlideInText = () => {
   //   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   //   const [isVisible, setIsVisible] = useState(true);
-  
+
   //   useEffect(() => {
   //     const interval = setInterval(() => {
   //       // Trigger slide-out animation
   //       setIsVisible(false);
-  
+
   //       setTimeout(() => {
   //         // After the slide-out, update to the next string and trigger slide-in
   //         setCurrentStringIndex((prevIndex) => (prevIndex + 1) % strings.length);
   //         setIsVisible(true);
-  //       }, 500); 
-  //     }, 3000); 
-  
+  //       }, 500);
+  //     }, 3000);
+
   //     return () => clearInterval(interval);
   //   }, []);
-  
+
   //   return (
   //     <span className={`block ${isVisible ? 'slide-in' : 'slide-out'}`}>
   //       {strings[currentStringIndex]}
@@ -441,115 +466,103 @@ export default function Banner() {
   //   );
   // };
 
- 
-
-
-
   return (
     <div className="px-4 sm:px-4 md:px-6 lg:px-[50px] bg-gradient-to-b from-white to-[#f7f7f7] pb-10">
+      <div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10 sm:gap-10">
+        <div className="w-full grid mt-10 sm:mt-24 sm:pr-10">
+          <h2 className="md:text-8xl sm:text-7xl text-4xl sm:min-h-[300px] min-h-[200px] sm:leading-[100px] leading-tight text-left font-semibold text-[#1a1a1a] tracking-tight">
+            {/* Slide in text with subtle fade animation */}
+            {isClient && (
+              <span className="block animate-fade-in ">
+                Best Content Writing Services in UK & USA
+              </span>
+            )}
+          </h2>
 
+          {/* New Boxes Section */}
+          <div className="flex flex-wrap justify-center gap-4  mb-8">
+            <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-4 w-[250px] h-[50px] rounded-lg shadow-md text-center flex flex-col justify-center items-center hidden lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
+              <p className="text-lg">
+                <span className="font-semibold">Assignment</span>
+                <span className="text-sm font-normal"> helper</span>
+              </p>
+            </div>
 
-<div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10 sm:gap-10">
-  <div className="w-full grid mt-10 sm:mt-24 sm:pr-10">
-    <h2 className="md:text-8xl sm:text-7xl text-4xl sm:min-h-[300px] min-h-[200px] sm:leading-[100px] leading-tight text-left font-semibold text-[#1a1a1a] tracking-tight">
-      {/* Slide in text with subtle fade animation */}
-      {isClient && (
-        <span className="block animate-fade-in ">
-          Best Content Writing Services in UK & USA
-        </span>
-      )}
-    </h2>
+            <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-4 w-[250px] h-[50px] rounded-lg shadow-md text-center flex flex-col justify-center items-center hidden lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
+              <p className="text-lg">
+                <span className="font-semibold">Affordable</span>
+                <span className="text-sm font-normal"> Pricing</span>
+              </p>
+            </div>
 
- 
+            <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-4 w-[250px] h-[50px] rounded-lg shadow-md text-center flex flex-col justify-center items-center hidden lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
+              <p className="text-lg">
+                <span className="font-semibold">Timely</span>
+                <span className="text-sm font-normal"> delivery</span>
+              </p>
+            </div>
+          </div>
 
- {/* New Boxes Section */}
-<div className="flex flex-wrap justify-center gap-4  mb-8">
-  <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-4 w-[250px] h-[50px] rounded-lg shadow-md text-center flex flex-col justify-center items-center hidden lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
-    <p className="text-lg">
-      <span className="font-semibold">Assignment</span>
-      <span className="text-sm font-normal"> helper</span>
-    </p>
-  </div>
+          <div className="flex justify-between">
+            {/* Testimonials Icon */}
+            <Button
+              type="button"
+              variant="icon"
+              onClick={scrollToSection}
+              className="flex items-center space-x-1 sm:space-x-4 group"
+            >
+              <div className="rounded-full bg-black hover:bg-[#333333] text-white sm:p-4 p-3 flex items-center justify-center">
+                <FaStar className="text-2xl sm:text-4xl" />{" "}
+                {/* Adjust icon size */}
+              </div>
+              <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
+                Testimonials
+                {/* Underline span */}
+                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#000] transition-all duration-500 ease-in-out group-hover:w-full"></span>{" "}
+                {/* Left to right animation */}
+              </span>
+            </Button>
 
-  <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-4 w-[250px] h-[50px] rounded-lg shadow-md text-center flex flex-col justify-center items-center hidden lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
-    <p className="text-lg">
-      <span className="font-semibold">Affordable</span>
-      <span className="text-sm font-normal"> Pricing</span>
-    </p>
-  </div>
+            {/* Instagram Icon */}
+            <Button
+              type="button"
+              variant="icon"
+              onClick={openInstagram}
+              className="flex items-center space-x-1 sm:space-x-4 group"
+            >
+              <div className="rounded-full sm:p-4 p-3 flex items-center bg-black hover:bg-[#333333] text-white justify-center">
+                <FaInstagram className="text-2xl sm:text-4xl text-white" />{" "}
+                {/* Adjust icon size */}
+              </div>
+              <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
+                Instagram
+                {/* Underline span */}
+                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#000] transition-all duration-500 ease-in-out group-hover:w-full"></span>{" "}
+                {/* Left to right animation */}
+              </span>
+            </Button>
 
-  <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-4 w-[250px] h-[50px] rounded-lg shadow-md text-center flex flex-col justify-center items-center hidden lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
-    <p className="text-lg">
-      <span className="font-semibold">Timely</span>
-      <span className="text-sm font-normal"> delivery</span>
-    </p>
-  </div>
-</div>
+            {/* LinkedIn Icon */}
+            <Button
+              type="button"
+              variant="icon"
+              onClick={openLinkedIn}
+              className="flex items-center space-x-1 sm:space-x-4 group"
+            >
+              <div className="rounded-full bg-black hover:bg-[#333333] text-white sm:p-4 p-3 flex items-center justify-center">
+                <FaLinkedin className="text-2xl sm:text-4xl" />{" "}
+                {/* Adjust icon size */}
+              </div>
+              <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
+                LinkedIn
+                {/* Underline span */}
+                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#000] transition-all duration-500 ease-in-out group-hover:w-full"></span>{" "}
+                {/* Left to right animation */}
+              </span>
+            </Button>
+          </div>
+        </div>
 
-
-
-
-
-
-<div className="flex justify-between">
-  {/* Testimonials Icon */}
-  <Button
-    type="button"
-    variant="icon"
-    onClick={scrollToSection}
-    className="flex items-center space-x-1 sm:space-x-4 group"
-  >
-    <div className="rounded-full bg-black hover:bg-[#333333] text-white sm:p-4 p-3 flex items-center justify-center">
-      <FaStar className="text-2xl sm:text-4xl" /> {/* Adjust icon size */}
-    </div>
-    <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
-      Testimonials
-      {/* Underline span */}
-      <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#000] transition-all duration-500 ease-in-out group-hover:w-full"></span> {/* Left to right animation */}
-    </span>
-  </Button>
-
-  {/* Instagram Icon */}
-  <Button
-    type="button"
-    variant="icon"
-    onClick={openInstagram}
-    className="flex items-center space-x-1 sm:space-x-4 group"
-  >
-    <div className="rounded-full sm:p-4 p-3 flex items-center bg-black hover:bg-[#333333] text-white justify-center">
-      <FaInstagram className="text-2xl sm:text-4xl text-white" /> {/* Adjust icon size */}
-    </div>
-    <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
-      Instagram
-      {/* Underline span */}
-      <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#000] transition-all duration-500 ease-in-out group-hover:w-full"></span> {/* Left to right animation */}
-    </span>
-  </Button>
-
-  {/* LinkedIn Icon */}
-  <Button
-    type="button"
-    variant="icon"
-    onClick={openLinkedIn}
-    className="flex items-center space-x-1 sm:space-x-4 group"
-  >
-    <div className="rounded-full bg-black hover:bg-[#333333] text-white sm:p-4 p-3 flex items-center justify-center">
-      <FaLinkedin className="text-2xl sm:text-4xl" /> {/* Adjust icon size */}
-    </div>
-    <span className="hidden lg:block text-base lg:text-lg relative overflow-hidden">
-      LinkedIn
-      {/* Underline span */}
-      <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-[#000] transition-all duration-500 ease-in-out group-hover:w-full"></span> {/* Left to right animation */}
-    </span>
-  </Button>
-</div>
-
-
-
-
-
-</div>
-    
         <div className="z-30   lg:w-[550px] bg-[#5b6cf2] sm:p-10 lg:p-4 p-1 lg:mx-1 sm:mx-20 mx-4 mt-1 sm:mt-10 rounded-lg  ">
           <form className="w-full bg-white p-6 grid gap-3 rounded-md ">
             <h3 className="text-2xl font-semibold">Place new order</h3>
@@ -591,26 +604,28 @@ export default function Banner() {
               value={formValues.highlight}
               handleChange={handleChange}
             /> */}
-           <div className="relative w-auto">
-  <label htmlFor="orderFile" className="cursor-pointer inline-block">
-  <button className="px-4 h-10 py-2 bg-[#000] hover:bg-[#fff] text-white font-medium text-sm rounded-lg shadow-md transition-all duration-300 transform hover:scale-105">
-  Choose file
-</button>
-
-
-
-  </label>
-  <Input
-    type="file"
-    id="orderFile"
-    name="orderFile"
-    className="absolute inset-0 opacity-0 w-full cursor-pointer"
-    accept=".pdf, .docx, .png, .jpeg, .jpg, .txt"
-    onChange={handleFileChange}
-  />
-  {selectedFileName && (
-    <div className="mt-2 text-sm text-gray-600">{selectedFileName}</div>
-  )}
+            <div className="relative w-auto">
+              <label
+                htmlFor="orderFile"
+                className="cursor-pointer inline-block"
+              >
+                <button className="px-4 h-10 py-2 bg-[#000] hover:bg-[#fff] text-white font-medium text-sm rounded-lg shadow-md transition-all duration-300 transform hover:scale-105">
+                  Choose file
+                </button>
+              </label>
+              <Input
+                type="file"
+                id="orderFile"
+                name="orderFile"
+                className="absolute inset-0 opacity-0 w-full cursor-pointer"
+                accept=".pdf, .docx, .png, .jpeg, .jpg, .txt"
+                onChange={handleFileChange}
+              />
+              {selectedFileName && (
+                <div className="mt-2 text-sm text-gray-600">
+                  {selectedFileName}
+                </div>
+              )}
               {error.orderFile && <InputError message={error.orderFile} />}
             </div>
 
@@ -634,36 +649,34 @@ export default function Banner() {
               <InputError message={error.deadline} />
             </div>
             <div className="flex justify-between items-center">
-  {/* Words on the left */}
-  <span className="text-md -mb-3">{250 * count} words</span>
-  {/* Pages on the right */}
-  <span className="text-md -mb-3">Pages</span>
-</div>
+              {/* Words on the left */}
+              <span className="text-md -mb-3">{250 * count} words</span>
+              {/* Pages on the right */}
+              <span className="text-md -mb-3">Pages</span>
+            </div>
 
-<div className="flex justify-center items-center ">
-  <Button
-    size="icon"
-    className="rounded-none text-xl font-normal w-16 h-12 bg-black text-white"
-    type="button"
-    disabled={count === 1}
-    onClick={() => setCount(count - 1)}
-  >
-    <FiMinus />
-  </Button>
-  <h4 className="tex-2xl font-medium h-12 w-full border-2 border-black text-center leading-10">
-    {count}
-  </h4>
-  <Button
-    size="icon"
-    className="rounded-none text-xl font-normal w-16 h-12 bg-black text-white"
-    type="button"
-    onClick={() => setCount(count + 1)}
-  >
-    <IoMdAdd />
-  </Button>
-</div>
-
-
+            <div className="flex justify-center items-center ">
+              <Button
+                size="icon"
+                className="rounded-none text-xl font-normal w-16 h-12 bg-black text-white"
+                type="button"
+                disabled={count === 1}
+                onClick={() => setCount(count - 1)}
+              >
+                <FiMinus />
+              </Button>
+              <h4 className="tex-2xl font-medium h-12 w-full border-2 border-black text-center leading-10">
+                {count}
+              </h4>
+              <Button
+                size="icon"
+                className="rounded-none text-xl font-normal w-16 h-12 bg-black text-white"
+                type="button"
+                onClick={() => setCount(count + 1)}
+              >
+                <IoMdAdd />
+              </Button>
+            </div>
 
             <div className="text-center text-2xl">
               Estimated Price: {price}$

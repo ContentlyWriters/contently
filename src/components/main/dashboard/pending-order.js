@@ -17,21 +17,21 @@ export default function PendingOrder({ orders }) {
   return (
     <div className="">
       {orders.length == 0 && (
-       <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
-       <Image 
-         src={img} 
-         alt="loading" 
-         width={300} 
-         height={300} 
-         className="mx-auto"
-       />
-       <p className="text-center text-lg">No orders have been placed yet</p>
-       <Link href={"/"} className="flex justify-center items-center">
-         <Button className="bg-[#5b6cf2] hover:bg-gray-800 px-6 py-2 text-white">
-           New Order
-         </Button>
-       </Link>
-     </div>
+        <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
+          <Image
+            src={img}
+            alt="loading"
+            width={300}
+            height={300}
+            className="mx-auto"
+          />
+          <p className="text-center text-lg">No orders have been placed yet</p>
+          <Link href={"/"} className="flex justify-center items-center">
+            <Button className="bg-[#5b6cf2] hover:bg-gray-800 px-6 py-2 text-white">
+              New Order
+            </Button>
+          </Link>
+        </div>
       )}
       {orders.length !== 0 && (
         <Table className="m-2">
@@ -46,6 +46,7 @@ export default function PendingOrder({ orders }) {
               <TableHead className="text-center">Amount</TableHead>
               <TableHead className="text-center">Order Date</TableHead>
               <TableHead className="text-center">Order File</TableHead>
+              <TableHead className="text-center">Result File Link</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -73,6 +74,19 @@ export default function PendingOrder({ orders }) {
                   >
                     File
                   </Link>
+                </TableCell>
+                <TableCell className="text-center">
+                  {order.orderResponseFileLink ? (
+                    <Link
+                      href={order.orderResponseFileLink || "#"}
+                      target="_black"
+                      className="hover:underline"
+                    >
+                      Result File
+                    </Link>
+                  ) : (
+                    <></>
+                  )}
                 </TableCell>
               </TableRow>
             ))}

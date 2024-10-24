@@ -13,7 +13,7 @@ export default function DashBoard() {
   const getOrders = async () => {
     try {
       const response = await axios.get(
-        `https://contentlywriters.com:8088/order/getAll?status=${"Pending"}`,
+        `https://contentlywriters.com:8088/order/getAll?status=${currentTab}`,
         {
           headers: {
             Authorization: `${localStorage.getItem("token")}`,
@@ -38,15 +38,31 @@ export default function DashBoard() {
       <div className="px-5 py-5 min-h-screen pt-28">
         <Tabs defaultValue="recent">
           <TabsList className="bg-transparent ">
-            <TabsTrigger value="recent">Recent</TabsTrigger>
-            <TabsTrigger value="finished">Finished</TabsTrigger>
-            <TabsTrigger value="cancelled">Cancelled</TabsTrigger>
+            <TabsTrigger
+              value="recent"
+              onClick={() => setCurrentTab("Pending")}
+            >
+              Recent
+            </TabsTrigger>
+            <TabsTrigger
+              value="finished"
+              onClick={() => setCurrentTab("InProgress")}
+            >
+              Finished
+            </TabsTrigger>
+            <TabsTrigger
+              value="cancelled"
+              onClick={() => setCurrentTab("cancel")}
+            >
+              Cancelled
+            </TabsTrigger>
           </TabsList>
           <TabsContent value="recent">
             <PendingOrder orders={orders} />
           </TabsContent>
           <TabsContent value="finished">
-            <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
+            <PendingOrder orders={orders} />
+            {/* <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
               <Image
                 src={img}
                 alt="loading"
@@ -62,7 +78,7 @@ export default function DashBoard() {
                   New Order
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </TabsContent>
           <TabsContent value="cancelled">
             <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">

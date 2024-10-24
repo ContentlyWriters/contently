@@ -101,12 +101,7 @@ export default function LoginScreen() {
 
   const handleGoogleAuth = async () => {
     try {
-      await axios.get(
-        "https://www.contentlywriters.com:8088/oauth2/authorization/google",
-        {
-          withCredentials: true, // This is the key part to include credentials like cookies
-        }
-      );
+      window.location.href = 'http://www.contentlywriters.com:8088/oauth2/authorization/google';
     } catch (err) {}
   };
 

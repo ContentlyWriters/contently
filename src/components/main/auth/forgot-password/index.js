@@ -14,7 +14,8 @@ import Image from "next/image";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "react-toastify";
-export default function LoginScreen() {
+
+export default function ForGotPasswordScreen() {
   const { getProfile } = useUserContext();
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
@@ -55,30 +56,25 @@ export default function LoginScreen() {
       setLoading(true);
       const error = {};
       if (!formValues.email) error.email = "Please enter email";
-      if (!formValues.password) error.password = "Please enter password";
       if (Object.keys(error).length > 0) {
         setErrors(error);
         return;
       }
-
-      console.log("Form Values:", formValues);
       const response = await axios.post(
-        "https://contentlywriters.com:8088/user/login",
-        formValues
+        `https://contentlywriters.com:8088/reset-password/send-email?email=${formValues.email}`
       );
 
       console.log({ response: response.data });
-      localStorage.setItem("token", response.data.token);
 
-      if (response.data.token == null) {
-        const error = {};
-        error.password = "Please check your password";
-        setErrors(error);
-        setLoading(false);
-        return;
-      }
+    //   if (response.data.token == null) {
+    //     const error = {};
+    //     error.password = "Please check your password";
+    //     setErrors(error);
+    //     setLoading(false);
+    //     return;
+    //   }
 
-      toast.success("Login Success!", {
+      toast.success("Email send success to reset password!", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -87,22 +83,15 @@ export default function LoginScreen() {
         draggable: true,
         progress: undefined,
       });
-      getProfile();
-      router.replace("/");
+      router.replace("/login");
       setLoading(false);
     } catch (err) {
       console.log(err);
       const error = {};
-      error.email = "User does not exists";
+      error.email = "Something went wrong";
       setErrors(error);
       setLoading(false);
     }
-  };
-
-  const handleGoogleAuth = async () => {
-    try {
-      window.location.href = 'http://www.contentlywriters.com:8088/oauth2/authorization/google';
-    } catch (err) {}
   };
 
   return (
@@ -119,6 +108,7 @@ export default function LoginScreen() {
             </div>
           </Link>
         </h1>
+        <h1 className='text-2xl font-semibold pb-4' >Forgot Password</h1>
         <form className="grid gap-6">
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="login">Email</Label>
@@ -132,50 +122,16 @@ export default function LoginScreen() {
             />
             <InputError message={errors.email} />
           </div>
-          <div className="grid w-full max-w-sm items-center gap-1.5">
-            <Label htmlFor="login">Password</Label>
-            <span className="relative w-full flex items-center">
-              <Input
-                id="password"
-                name="password"
-                type={showPassword ? "text" : "password"}
-                placeholder="Enter your Password"
-                value={formValues.password}
-                onChange={handleChange}
-              />
-              {!showPassword ? (
-                <AiFillEyeInvisible
-                  onClick={togglePasswordVisibility}
-                  className="absolute right-2.5 text-gray-500 text-xl cursor-pointer"
-                />
-              ) : (
-                <AiFillEye
-                  onClick={togglePasswordVisibility}
-                  className="absolute right-2.5 text-gray-500 text-xl cursor-pointer"
-                />
-              )}
-            </span>
-            <InputError message={errors.password} />
-          </div>
-          <Link href="/forgot-password" className="underline">
-            Forgot Password
+
+          <Link href="/login" className="underline">
+            Login
           </Link>
           <Button type="button" disabled={loading} onClick={handleSubmit}>
             {loading ? (
               <AiOutlineLoading3Quarters className="h-4 w-4 animate-spin" />
             ) : (
-              "Login"
+              "Forget Password"
             )}
-          </Button>
-          <div className="text-center">
-            Don&#39;t have an account?{" "}
-            <Link href="/sign-up" className="underline">
-              Register
-            </Link>
-          </div>
-          <Button type="button"  onClick={()=>handleGoogleAuth()}>
-            <FcGoogle className="mr-5 text-2xl" />
-            Login with Google
           </Button>
         </form>
       </div>

@@ -8,29 +8,36 @@ import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { useUserContext } from "@/context/auth";
 import logo from "@/assets/image/contently-logo.png";
 import Image from "next/image";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "react-toastify";
-export default function LoginScreen() {
-  const { getProfile } = useUserContext();
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+export default function ResetPasswordScreen() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+
+  const token = searchParams.get("token");
   const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formValues, setFormValues] = useState({
-    email: "",
+    confirmPassword: "",
     password: "",
   });
 
   const [errors, setErrors] = useState({
-    email: "",
+    confirmPassword: "",
     password: "",
   });
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+  const toggleConfirmPasswordVisibility = () => {
+    setShowConfirmPassword(!showConfirmPassword);
   };
 
   const handleChange = (e) => {
@@ -49,36 +56,39 @@ export default function LoginScreen() {
     setFormValues({ ...formValues, [name]: value.trim() });
   };
 
+  const validatePassword = (password) => {
+    const hasLetter = /[a-zA-Z]/.test(password);
+    const hasNumber = /[0-9]/.test(password);
+    const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+    return hasLetter && hasNumber && hasSpecialChar;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       setLoading(true);
       const error = {};
-      if (!formValues.email) error.email = "Please enter email";
+      //   if (!formValues.email) error.email = "Please enter email";
       if (!formValues.password) error.password = "Please enter password";
+      if (!validatePassword(formValues.password)) {
+        error.password =
+          "Password must contain at least one letter, one number, and one special character";
+      }
+      if (formValues.password !== formValues.confirmPassword) {
+        error.confirmPassword = "Passwords do not match";
+      }
       if (Object.keys(error).length > 0) {
         setErrors(error);
         return;
       }
-
-      console.log("Form Values:", formValues);
       const response = await axios.post(
-        "https://contentlywriters.com:8088/user/login",
-        formValues
+        `https://contentlywriters.com:8088/reset-password?token=${token}`,
+        {
+          password: formValues.password,
+        }
       );
 
-      console.log({ response: response.data });
-      localStorage.setItem("token", response.data.token);
-
-      if (response.data.token == null) {
-        const error = {};
-        error.password = "Please check your password";
-        setErrors(error);
-        setLoading(false);
-        return;
-      }
-
-      toast.success("Login Success!", {
+      toast.success("Password Reset Success!", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -87,22 +97,17 @@ export default function LoginScreen() {
         draggable: true,
         progress: undefined,
       });
-      getProfile();
-      router.replace("/");
+      router.replace("/login");
       setLoading(false);
     } catch (err) {
       console.log(err);
       const error = {};
-      error.email = "User does not exists";
+      error.email = "Something went wrong";
       setErrors(error);
       setLoading(false);
+    }finally{
+      setLoading(false);
     }
-  };
-
-  const handleGoogleAuth = async () => {
-    try {
-      window.location.href = 'http://www.contentlywriters.com:8088/oauth2/authorization/google';
-    } catch (err) {}
   };
 
   return (
@@ -119,19 +124,8 @@ export default function LoginScreen() {
             </div>
           </Link>
         </h1>
+        <h1 className='text-2xl font-semibold pb-4' >Reset Password</h1>
         <form className="grid gap-6">
-          <div className="grid w-full max-w-sm items-center gap-1.5">
-            <Label htmlFor="login">Email</Label>
-            <Input
-              id="email"
-              name="email"
-              type="text"
-              placeholder="Enter your Email"
-              value={formValues.email}
-              onChange={handleChange}
-            />
-            <InputError message={errors.email} />
-          </div>
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="login">Password</Label>
             <span className="relative w-full flex items-center">
@@ -157,25 +151,42 @@ export default function LoginScreen() {
             </span>
             <InputError message={errors.password} />
           </div>
-          <Link href="/forgot-password" className="underline">
-            Forgot Password
+          <div className="grid w-full max-w-sm items-center gap-1.5 relative">
+            <Label htmlFor="confirmPassword">Confirm Password</Label>
+
+            <span className="relative w-full flex items-center">
+              <Input
+                id="confirmPassword"
+                name="confirmPassword"
+                type={showConfirmPassword ? "text" : "password"}
+                placeholder="Confirm your Password"
+                value={formValues.confirmPassword}
+                onChange={handleChange}
+              />
+              {!showConfirmPassword ? (
+                <AiFillEyeInvisible
+                  onClick={toggleConfirmPasswordVisibility}
+                  className="absolute right-2.5 text-gray-500 text-xl cursor-pointer"
+                />
+              ) : (
+                <AiFillEye
+                  onClick={toggleConfirmPasswordVisibility}
+                  className="absolute right-2.5 text-gray-500 text-xl cursor-pointer"
+                />
+              )}
+            </span>
+            <InputError message={errors.confirmPassword} />
+          </div>
+
+          <Link href="/login" className="underline">
+            Login
           </Link>
           <Button type="button" disabled={loading} onClick={handleSubmit}>
             {loading ? (
               <AiOutlineLoading3Quarters className="h-4 w-4 animate-spin" />
             ) : (
-              "Login"
+              "Forget Password"
             )}
-          </Button>
-          <div className="text-center">
-            Don&#39;t have an account?{" "}
-            <Link href="/sign-up" className="underline">
-              Register
-            </Link>
-          </div>
-          <Button type="button"  onClick={()=>handleGoogleAuth()}>
-            <FcGoogle className="mr-5 text-2xl" />
-            Login with Google
           </Button>
         </form>
       </div>

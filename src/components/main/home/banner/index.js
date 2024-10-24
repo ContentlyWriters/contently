@@ -346,7 +346,7 @@ export default function Banner() {
       //   console.log('306-------')
       // };
 
-      rzp1.open();
+      // rzp1.open();
 
       setLoading(false);
     } catch (err) {

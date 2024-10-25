@@ -13,18 +13,16 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import axios from "axios";
+import { axiosInstance } from "@/lib/axios";
 import AdminOrderDetailScreen from "./orderDetails";
 
 async function fetchOrders() {
   try {
-    const response = await axios.get(
-      "https://contentlywriters.com:8088/order/getAll",
-      {
-        headers: {
-          Authorization: `${localStorage.getItem("token")}`,
-        },
-      }
-    );
+    const response = await axiosInstance.get("order/getAll", {
+      headers: {
+        Authorization: `${localStorage.getItem("token")}`,
+      },
+    });
     console.log(response.data.data);
     return response.data.data;
   } catch (error) {

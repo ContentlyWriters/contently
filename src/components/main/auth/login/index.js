@@ -14,6 +14,7 @@ import Image from "next/image";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "react-toastify";
+import { axiosInstance } from "@/lib/axios";
 export default function LoginScreen() {
   const { getProfile } = useUserContext();
   const router = useRouter();
@@ -62,7 +63,7 @@ export default function LoginScreen() {
       }
 
       console.log("Form Values:", formValues);
-      const response = await axios.post(
+      const response = await axiosInstance.post(
         "https://contentlywriters.com:8088/user/login",
         formValues
       );
@@ -96,12 +97,15 @@ export default function LoginScreen() {
       error.email = "User does not exists";
       setErrors(error);
       setLoading(false);
+    }finally{
+      setLoading(false)
     }
   };
 
   const handleGoogleAuth = async () => {
     try {
-      window.location.href = 'http://www.contentlywriters.com:8088/oauth2/authorization/google';
+      window.location.href =
+        "http://www.contentlywriters.com:8088/oauth2/authorization/google";
     } catch (err) {}
   };
 
@@ -173,7 +177,7 @@ export default function LoginScreen() {
               Register
             </Link>
           </div>
-          <Button type="button"  onClick={()=>handleGoogleAuth()}>
+          <Button type="button" onClick={() => handleGoogleAuth()}>
             <FcGoogle className="mr-5 text-2xl" />
             Login with Google
           </Button>

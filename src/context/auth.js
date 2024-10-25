@@ -2,6 +2,7 @@
 
 import { useState, useEffect, createContext, useContext } from "react";
 import axios from "axios";
+import { axiosInstance } from "@/lib/axios";
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
@@ -16,8 +17,8 @@ export const AuthProvider = ({ children }) => {
     try {
       setIsLoading(true);
       console.log("AuthContext getProfile");
-      const response = await axios.get(
-        "https://contentlywriters.com:8088/user/getProfile",
+      const response = await axiosInstance.get(
+        "user/getProfile",
         {
           headers: {
             Authorization: `${localStorage.getItem("token")}`,

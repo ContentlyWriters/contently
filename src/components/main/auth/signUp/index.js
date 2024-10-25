@@ -14,6 +14,7 @@ import { useRouter } from "next/navigation"; // Correct import for useRouter in 
 import { useUserContext } from "@/context/auth";
 import logo from "@/assets/image/contently-logo.png";
 import Image from "next/image";
+import { axiosInstance } from "@/lib/axios";
 
 export default function SignUpScreen() {
   const { getProfile } = useUserContext();
@@ -83,16 +84,12 @@ export default function SignUpScreen() {
     try {
       console.log("Form Values:", formValues);
 
-      const response = await axios.post(
-        "https://contentlywriters.com:8088/user/add",
-        formValues,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json, text/plain, */*",
-          },
-        }
-      );
+      const response = await axiosInstance.post("user/add", formValues, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json, text/plain, */*",
+        },
+      });
 
       localStorage.setItem("token", response.data.token);
 
@@ -136,7 +133,8 @@ export default function SignUpScreen() {
 
   const handleGoogleAuth = async () => {
     try {
-      window.location.href = 'http://www.contentlywriters.com:8088/oauth2/authorization/google';
+      window.location.href =
+        "http://www.contentlywriters.com:8088/oauth2/authorization/google";
     } catch (err) {}
   };
 

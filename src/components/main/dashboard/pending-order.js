@@ -26,6 +26,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import InputError from "@/components/ui/input-error";
+import { axiosInstance } from "@/lib/axios";
 export default function PendingOrder({ orders }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOrder, setSelectedOrder] = useState({});
@@ -80,8 +81,8 @@ export default function PendingOrder({ orders }) {
       let formData = new FormData();
       formData.append("rating", formaValue.rating);
       formData.append("review", formaValue.review);
-      const editOrder = await axios.put(
-        `https://contentlywriters.com:8088/order/${selectedOrder}`,
+      const editOrder = await axiosInstance.put(
+        `order/${selectedOrder}`,
         formData,
         {
           headers: {

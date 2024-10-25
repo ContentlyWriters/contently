@@ -8,6 +8,7 @@ import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import axios from "axios";
+import { axiosInstance } from "@/lib/axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation"; // Correct import for useRouter in App Router
@@ -83,16 +84,12 @@ export default function SignUpScreen() {
     try {
       console.log("Form Values:", formValues);
 
-      const response = await axios.post(
-        "https://contentlywriters.com:8088/user/add",
-        formValues,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json, text/plain, */*",
-          },
-        }
-      );
+      const response = await axiosInstance.post("user/add", formValues, {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json, text/plain, */*",
+        },
+      });
 
       localStorage.setItem("token", response.data.token);
 

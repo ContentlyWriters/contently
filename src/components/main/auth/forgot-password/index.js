@@ -7,6 +7,7 @@ import InputError from "@/components/ui/input-error";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
+import { axiosInstance } from "@/lib/axios";
 import { useRouter } from "next/navigation";
 import { useUserContext } from "@/context/auth";
 import logo from "@/assets/image/contently-logo.png";
@@ -60,19 +61,19 @@ export default function ForGotPasswordScreen() {
         setErrors(error);
         return;
       }
-      const response = await axios.post(
+      const response = await axiosInstance.post(
         `https://contentlywriters.com:8088/reset-password/send-email?email=${formValues.email}`
       );
 
       console.log({ response: response.data });
 
-    //   if (response.data.token == null) {
-    //     const error = {};
-    //     error.password = "Please check your password";
-    //     setErrors(error);
-    //     setLoading(false);
-    //     return;
-    //   }
+      //   if (response.data.token == null) {
+      //     const error = {};
+      //     error.password = "Please check your password";
+      //     setErrors(error);
+      //     setLoading(false);
+      //     return;
+      //   }
 
       toast.success("Email send success to reset password!", {
         position: "top-right",
@@ -108,7 +109,7 @@ export default function ForGotPasswordScreen() {
             </div>
           </Link>
         </h1>
-        <h1 className='text-2xl font-semibold pb-4' >Forgot Password</h1>
+        <h1 className="text-2xl font-semibold pb-4">Forgot Password</h1>
         <form className="grid gap-6">
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="login">Email</Label>

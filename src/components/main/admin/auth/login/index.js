@@ -7,6 +7,7 @@ import InputError from "@/components/ui/input-error";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
+import { axiosInstance } from "@/lib/axios";
 import { useRouter } from "next/navigation";
 import { useUserContext } from "@/context/auth";
 import logo from "@/assets/image/contently-logo.png";
@@ -48,7 +49,7 @@ export default function LoginScreen() {
   };
 
   const handleSubmit = async (e) => {
-    console.log("login")
+    console.log("login");
     e.preventDefault();
     try {
       const error = {};
@@ -60,8 +61,8 @@ export default function LoginScreen() {
       }
 
       console.log("Form Values:", formValues);
-      const response = await axios.post(
-        "https://contentlywriters.com:8088/user/login",
+      const response = await axiosInstance.post(
+        "user/login",
         formValues
       );
 

@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import axios from "axios";
+import { axiosInstance } from "@/lib/axios";
 export default function AdminOrderDetailScreen({
   isOpen,
   onClose,
@@ -55,7 +56,6 @@ export default function AdminOrderDetailScreen({
     }
   };
 
-
   const handleUpdateOrder = async (data) => {
     try {
       setLoading(true);
@@ -76,8 +76,8 @@ export default function AdminOrderDetailScreen({
       let formData = new FormData();
       formData.append("orderResponseFile", file);
 
-      const response = await axios.put(
-        `https://contentlywriters.com:8088/order/${orderDetail.orderId}`,
+      const response = await axiosInstance.put(
+        `order/${orderDetail.orderId}`,
         formData,
         {
           headers: {

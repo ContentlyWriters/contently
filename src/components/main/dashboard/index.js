@@ -7,13 +7,14 @@ import PendingOrder from "./pending-order";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import axios from "axios";
+import { axiosInstance } from "@/lib/axios";
 export default function DashBoard() {
   const [orders, setOrders] = useState([]);
   const [currentTab, setCurrentTab] = useState("Pending");
   const getOrders = async () => {
     try {
-      const response = await axios.get(
-        `https://contentlywriters.com:8088/order/getAll?status=${currentTab}`,
+      const response = await axiosInstance.get(
+        `order/getAll?status=${currentTab}`,
         {
           headers: {
             Authorization: `${localStorage.getItem("token")}`,

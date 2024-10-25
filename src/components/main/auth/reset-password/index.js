@@ -15,6 +15,7 @@ import Image from "next/image";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "react-toastify";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { axiosInstance } from "@/lib/";
 export default function ResetPasswordScreen() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -81,8 +82,8 @@ export default function ResetPasswordScreen() {
         setErrors(error);
         return;
       }
-      const response = await axios.post(
-        `https://contentlywriters.com:8088/reset-password?token=${token}`,
+      const response = await axiosInstance.post(
+        `reset-password?token=${token}`,
         {
           password: formValues.password,
         }
@@ -105,7 +106,7 @@ export default function ResetPasswordScreen() {
       error.email = "Something went wrong";
       setErrors(error);
       setLoading(false);
-    }finally{
+    } finally {
       setLoading(false);
     }
   };
@@ -124,7 +125,7 @@ export default function ResetPasswordScreen() {
             </div>
           </Link>
         </h1>
-        <h1 className='text-2xl font-semibold pb-4' >Reset Password</h1>
+        <h1 className="text-2xl font-semibold pb-4">Reset Password</h1>
         <form className="grid gap-6">
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="login">Password</Label>

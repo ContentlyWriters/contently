@@ -25,6 +25,7 @@ import { useRouter } from "next/navigation";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useUserContext } from "@/context/auth";
 import { toast } from "react-toastify";
+import { axiosInstance } from "@/lib/axios";
 export default function Banner() {
   // const checkoutHandler = async({orderDetails}) => {
   //   const orderData  = await axios.post("https://contentlywriters.com:8088/order", {data: orderDetails})
@@ -202,8 +203,8 @@ export default function Banner() {
 
   const getUpdatedPrice = async (e) => {
     try {
-      const response = await axios.post(
-        "https://contentlywriters.com:8088/price",
+      const response = await axiosInstance.post(
+        "price",
         {
           subject: formValues.subject,
           days: formValues.deadline.split(" ")[0],
@@ -253,8 +254,8 @@ export default function Banner() {
     try {
       let formData = new FormData();
       formData.append("status", status);
-      const editOrder = await axios.put(
-        `https://contentlywriters.com:8088/order/${orderId}`,
+      const editOrder = await axiosInstance.put(
+        `order/${orderId}`,
         formData,
         {
           headers: {
@@ -301,8 +302,8 @@ export default function Banner() {
       formData.append("amount", price);
       formData.append("orderFile", file);
 
-      const response = await axios.post(
-        "https://contentlywriters.com:8088/order",
+      const response = await axiosInstance.post(
+        "order",
         formData,
         {
           headers: {

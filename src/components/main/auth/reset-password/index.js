@@ -15,7 +15,7 @@ import Image from "next/image";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "react-toastify";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
-import { axiosInstance } from "@/lib/";
+import { axiosInstance } from "@/lib/axios";
 export default function ResetPasswordScreen() {
   const router = useRouter();
   const searchParams = useSearchParams();

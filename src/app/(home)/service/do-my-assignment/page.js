@@ -73,7 +73,7 @@ const DoMyAssignmentPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-             It&#39;s not always easy to acknowledge that an assignment is overwhelming. Even if a few extra days might resolve the problem, time is limited, and your agenda is packed. Your classmates are preoccupied with their own assignments, and teachers can only provide brief assistance between courses. This is when you may think, &#34;I wish someone with the right expertise could do my assignment for me.&#34; When you're thinking, &#39;I need to pay someone to do my assignment online,&#39; Contently Writers is here to deliver top-quality results. Our  <a href="https://www.contentlywriters.com/"><strong>best assignment services</strong></a> guarantee fast, reliable, and high-quality assistance, making your academic life easier.
+             It&#39;s not always easy to acknowledge that an assignment is overwhelming. Even if a few extra days might resolve the problem, time is limited, and your agenda is packed. Your classmates are preoccupied with their own assignments, and teachers can only provide brief assistance between courses. This is when you may think, &#34;I wish someone with the right expertise could do my assignment for me.&#34; When you&#39;re thinking, &#39;I need to pay someone to do my assignment online,&#39; Contently Writers is here to deliver top-quality results. Our  <a href="https://www.contentlywriters.com/"><strong>best assignment services</strong></a> guarantee fast, reliable, and high-quality assistance, making your academic life easier.
           </motion.p>
         </div>
       </section>

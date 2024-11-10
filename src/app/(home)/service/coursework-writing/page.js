@@ -83,7 +83,7 @@ time effectively.
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            When you’re asking yourself, "Who can <b>do my coursework</b>?", rest assured that our expert
+            When you&#39;re asking yourself, &#34;Who can <b>do my coursework</b>?&#34;, rest assured that our expert
 writers have the answers. Our comprehensive <b>coursework writing help online</b> covers a
 range of subjects, including math, lab reports, case studies, and dissertations. We’re
 committed to providing high-quality assignments with original research, meticulous analysis,

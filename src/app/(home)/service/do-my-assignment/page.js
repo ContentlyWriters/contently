@@ -27,7 +27,7 @@ const DoMyAssignmentPage = () => {
           animate="visible"
           transition={{ duration: 1 }}
         >
-          "Do My Assignment" –{" "}
+          &#34;Do My Assignment&#34; –{" "}
           <span className="text-[#4a90e2]">Your Academic Ally</span>
         </motion.h1>
         <motion.p
@@ -63,7 +63,7 @@ const DoMyAssignmentPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Stuck? We Can Help You "Do My Assignment Online" in No Time!
+            Stuck? We Can Help You &#34;Do My Assignment Online&#34; in No Time!
           </motion.h1>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
@@ -73,7 +73,7 @@ const DoMyAssignmentPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-             It’s not always easy to acknowledge that an assignment is overwhelming. Even if a few extra days might resolve the problem, time is limited, and your agenda is packed. Your classmates are preoccupied with their own assignments, and teachers can only provide brief assistance between courses. This is when you may think, "I wish someone with the right expertise could do my assignment for me." When you're thinking, 'I need to pay someone to do my assignment online,' Contently Writers is here to deliver top-quality results. Our  <a href="https://www.contentlywriters.com/"><strong>best assignment services</strong></a> guarantee fast, reliable, and high-quality assistance, making your academic life easier.
+             It&#39;s not always easy to acknowledge that an assignment is overwhelming. Even if a few extra days might resolve the problem, time is limited, and your agenda is packed. Your classmates are preoccupied with their own assignments, and teachers can only provide brief assistance between courses. This is when you may think, &#34;I wish someone with the right expertise could do my assignment for me.&#34; When you're thinking, &#39;I need to pay someone to do my assignment online,&#39; Contently Writers is here to deliver top-quality results. Our  <a href="https://www.contentlywriters.com/"><strong>best assignment services</strong></a> guarantee fast, reliable, and high-quality assistance, making your academic life easier.
           </motion.p>
         </div>
       </section>
@@ -89,7 +89,7 @@ const DoMyAssignmentPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Why We're the Best Choice When You Need Experts to Do My Assignment Online
+            Why We&#39;re the Best Choice When You Need Experts to Do My Assignment Online
           </motion.h2>
           <ul className="list-disc pl-6 text-gray-700 space-y-4">
             <motion.li
@@ -250,7 +250,7 @@ const DoMyAssignmentPage = () => {
               Can someone do my assignment for me?
             </motion.h4>
             <p className="text-gray-700">
-            Yes, our experienced writers can help with nearly any subject. If you're stressed about deadlines, just let us know, and we’ll <strong>do your university assignment online</strong>.
+            Yes, our experienced writers can help with nearly any subject. If you&#39;re stressed about deadlines, just let us know, and we&#39;ll <strong>do your university assignment online</strong>.
             </p>
             <motion.h4
               className="text-lg font-semibold text-[#0e1c3d]"
@@ -300,7 +300,7 @@ const DoMyAssignmentPage = () => {
             What Are the Advantages of Hiring an Online Assignment Service?
           </motion.h4>
           <p className="text-gray-700  mb-3">
-          Hiring an online service to "do my assignment online by experts" offers numerous advantages. You get access to professionals specializing in various subjects, ensuring that your assignments are thoroughly researched and tailored to your professor’s guidelines.          </p>
+          Hiring an online service to &#34;do my assignment online by experts&#34; offers numerous advantages. You get access to professionals specializing in various subjects, ensuring that your assignments are thoroughly researched and tailored to your professor’s guidelines.          </p>
           <p className="text-gray-700  mb-3">
           One of the main benefits is <strong>time savings</strong>. With school, work, and personal commitments, completing a challenging assignment can be stressful. By outsourcing your academic tasks to experts, you free up time for other important activities or well-deserved breaks.
           </p>

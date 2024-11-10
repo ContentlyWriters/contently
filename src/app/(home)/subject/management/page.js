@@ -87,7 +87,7 @@ At Contently Writers, we take pride in our team of skilled writers, many of whom
             className="text-lg leading-7 mb-6"
             
           >
-            With our best management assignment help, you'll find a reliable partner in managing your time effectively. Our dedicated support is designed to enhance your work, impress your professors, and maintain affordability, giving you the peace of mind to focus on your studies.
+            With our best management assignment help, you&#39;ll find a reliable partner in managing your time effectively. Our dedicated support is designed to enhance your work, impress your professors, and maintain affordability, giving you the peace of mind to focus on your studies.
           </motion.p>
         </section>
 
@@ -226,7 +226,7 @@ Our Business Management assignment help covers a wide range of essential topics 
 <section className="mb-10">
   <h2 className="text-3xl font-bold mb-6 text-[#303030]">Conclusion</h2>
   <p className="text-lg leading-7">
-    Our best management assignment help services ensure that students receive comprehensive support across all areas of management studies. Whether you need help with Business Management, Operations Management, Change Management, or Strategic Management, we offer affordable, plagiarism-free, and custom assignments to improve your academic performance. Don't hesitate to reach out and ask for help with management assignment services or say, “Do my homework,” and we will deliver quality work that aligns with your university guidelines.
+    Our best management assignment help services ensure that students receive comprehensive support across all areas of management studies. Whether you need help with Business Management, Operations Management, Change Management, or Strategic Management, we offer affordable, plagiarism-free, and custom assignments to improve your academic performance. Don&#39;t hesitate to reach out and ask for help with management assignment services or say, “Do my homework,” and we will deliver quality work that aligns with your university guidelines.
   </p>
 </section>
 

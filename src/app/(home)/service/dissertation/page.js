@@ -131,7 +131,7 @@ At Contently Writers, we have assembled a team of highly qualified professionals
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-Our writers are dedicated to creating original, well-researched, and articulate dissertations that meet even the strictest academic requirements. We ensure every dissertation is tailored to each student's unique needs, giving you the advantage of personalized, focused assistance.
+Our writers are dedicated to creating original, well-researched, and articulate dissertations that meet even the strictest academic requirements. We ensure every dissertation is tailored to each student&#39;s unique needs, giving you the advantage of personalized, focused assistance.
           </motion.p>
         </div>
       </section>
@@ -452,7 +452,7 @@ Contently Writers stands out in the academic support industry because of our unw
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-Our focus on <b>client satisfaction and academic integrity</b> means that we don’t just meet expectations—we strive to exceed them. Students who choose us can be confident that they’ll receive a dissertation that is crafted with care, reflects their unique voice, and meets their academic institution's standards. This dedication to excellence is what makes us the best choice for dissertation support.
+Our focus on <b>client satisfaction and academic integrity</b> means that we don&#39;t just meet expectations—we strive to exceed them. Students who choose us can be confident that they&#39;ll receive a dissertation that is crafted with care, reflects their unique voice, and meets their academic institution&#39;s standards. This dedication to excellence is what makes us the best choice for dissertation support.
 
           </motion.p>
         </div>

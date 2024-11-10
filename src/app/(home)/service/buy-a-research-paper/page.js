@@ -69,7 +69,7 @@ const ResearchPaperPage = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             At Contently Writers, we understand the challenges students face when writing research
-papers. Whether it's an argumentative paper, a report, a survey, an experimental analysis, a
+papers. Whether it&#39;s an argumentative paper, a report, a survey, an experimental analysis, a
 case study, or an analytical paper, our expert writers are here to assist you with high-quality,
 100% plagiarism-free content. By entrusting your research paper assignments to us, you are
 ensuring that you receive top grades while relieving yourself from the stress of tight

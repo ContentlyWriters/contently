@@ -161,4 +161,26 @@
 
 } */
 
+.custom-bullet-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-bullet-list li::before {
+  content: '';
+  display: inline-block;
+  width: 8px; 
+  height: 8px;
+  border: 2px solid rgb(0, 0, 0); 
+  border-radius: 50%;
+  background-color: rgba(253, 253, 253, 0); 
+  margin-right: 10px; 
+  position: relative;
+}
+
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 1.5rem; /* Space for the custom bullet */
+}
+
 

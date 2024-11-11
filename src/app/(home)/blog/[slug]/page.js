@@ -90,7 +90,7 @@ services.</li>
               <li style={{ marginTop: '8px' }}><strong>1. Input-Output (I-O) Analysis:</strong> A widely-used method, I-O analysis examines relationships between economic sectors,
 revealing how changes in one industry (e.g., manufacturing) affect others (e.g., supply
 chains or retail).</li>
-              <li style={{ marginTop: '8px' }}><strong>2. Cost-Benefit Analysis (CBA):</strong> CBA is used to assess whether a project's benefits outweigh its costs. It helps
+              <li style={{ marginTop: '8px' }}><strong>2. Cost-Benefit Analysis (CBA):</strong> CBA is used to assess whether a project&#39;s benefits outweigh its costs. It helps
               decision-makers evaluate the long-term financial and social returns on investment</li>
               <li style={{ marginTop: '8px' }}><strong>3. Computable General Equilibrium (CGE) Modeling:</strong> CGE models simulate how an economy reacts to external changes, showing complex
 interactions between economic sectors and factors. They provide a comprehensive view of
@@ -119,7 +119,7 @@ infrastructure damage, and long-term economic effects on the local economy</li>
 studies to assess job creation, regional connectivity, and environmental benefits. For
 instance, California’s high-speed rail project utilized an economic impact study to analyze its
 potential effects on job creation and sustainability.</li>
-              <li style={{ marginTop: '8px' }}><strong>4. Policy Changes:</strong> Economic impact studies predict policy changes' outcomes, such as increasing the minimum
+              <li style={{ marginTop: '8px' }}><strong>4. Policy Changes:</strong> Economic impact studies predict policy change&#39;s outcomes, such as increasing the minimum
 wage or adjusting tax rates. These studies help evaluate potential effects on employment,
 consumer spending, and business performance.</li>
             </ol>

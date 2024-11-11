@@ -62,7 +62,7 @@ export default function ForGotPasswordScreen() {
         return;
       }
       const response = await axiosInstance.post(
-        `https://contentlywriters.com:8088/reset-password/send-email?email=${formValues.email}`
+        `https://contentlywriters.com/api/reset-password/send-email?email=${formValues.email}`
       );
 
       console.log({ response: response.data });

@@ -12,8 +12,17 @@ import img5 from "@/assets/image/blogImg5.jpg";
 import img6 from "@/assets/image/blogImg6.jpg";
 import img7 from "@/assets/image/blogImg7.jpg";
 import img8 from "@/assets/image/blogImg8.jpg";
+import img9 from "@/assets/image/blogImg9.jpg";
 
 const blogData = [
+  {
+    tag: "blog-8",
+    slug: "economic-impact-studies",
+    heading: "Understanding Economic Impact Studies: A Deep Dive",
+    date: "November 11, 2024",
+    image: img9,
+    about:"Economic impact studies are essential tools that enable governments, businesses, and organizations to assess the financial and economic consequences of specific events, programs, or policies. By analyzing factors like job creation, GDP growth, tax revenue, and sector development, these studies help determine how particular activities affect the economy overall.",
+  },
   {
     tag: "blog-8",
     heading: "Exploring Different Types of Assignment Help: Which One is Right for You",

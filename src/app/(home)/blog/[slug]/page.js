@@ -26,7 +26,7 @@ const blogData = [
     description: "Discover the importance of economic impact studies, methodologies, and examples. Learn how they guide decisions, justify funding, and ensure accountability.",
     post: [
       {
-        title: "What Are Economic Impact Studies?",
+        title1: "What Are Economic Impact Studies?",
         about: (
           <div> 
           <p>Economic impact studies are essential tools that enable governments, businesses, and organizations to assess the financial and economic consequences of specific events, programs, or policies. By analyzing factors like job creation, GDP growth, tax revenue, and sector development, these studies help determine how particular activities affect the economy overall.</p>
@@ -40,7 +40,7 @@ const blogData = [
         ),
       },
       {
-        title: "Why Are Economic Impact Studies Important?",
+        title1: "Why Are Economic Impact Studies Important?",
         about: (
           <div>
             <p>Economic impact studies offer several essential benefits, including:</p>
@@ -181,7 +181,7 @@ and contribute positively to society</p>
     keywords: ["assignment help", "online tutoring", "writing services", "study groups", "educational platforms"],
     post: [
       {
-        title: "Types of Assignment Help",
+        title1: "Types of Assignment Help",
         heading: "",
         about: (
           <div>
@@ -290,7 +290,7 @@ and contribute positively to society</p>
         )
       },
       {
-        title: "Choosing the Right Type of Help",
+        title1: "Choosing the Right Type of Help",
         heading: "",
         about: (
           <div>
@@ -533,7 +533,7 @@ and contribute positively to society</p>
     description: "Explore the role of IT corporations in driving innovation and transforming industries, with insights into their core functions and future technologies.",
     post: [
       {
-       title: "What is an IT Corporation?",
+       title1: "What is an IT Corporation?",
       about: ( <div> <p>An IT company refers to a business or organisation that focuses on digital technology and
         services. These companies offer a wide range of services, including software development,
         hardware manufacturing, cloud computing, cyber security, artificial intelligence and more.
@@ -547,7 +547,7 @@ governments and individuals, and shape the way we live, work and interact with t
   },
 
       {
-        title: "Core Functions of IT Corporation",
+        title1: "Core Functions of IT Corporation",
         about: (
           <div>
             <p>There are several key roles that IT companies perform in different areas:</p>
@@ -610,13 +610,13 @@ governments and individuals, and shape the way we live, work and interact with t
     post: [
      
         {
-        title: "Artificial Intelligence (AI):",
+        title1: "Artificial Intelligence (AI):",
         about:
           "AI is making a big impact on marketing. It enables businesses to process and interpret vast amounts of data efficiently and with precision. With AI, companies can personalize marketing messages, predict customer behavior, and automate repetitive tasks. This allows marketers to spend more time on strategy and creativity while AI handles the data work. For example, content writing services can use AI to analyze audience preferences and tailor content to engage readers more effectively.",
       },
   
       {
-        title: "Voice Search Optimization:",
+        title1: "Voice Search Optimization:",
         about:
           "More people are using voice-activated devices like Amazon's Alexa and Google Home. This means businesses need to optimize their content for voice search. Voice searches are usually more conversational, so marketers need to use natural language and longer keywords in their SEO strategies.",
       },
@@ -666,13 +666,13 @@ governments and individuals, and shape the way we live, work and interact with t
     post: [
      
         {
-        title: "Artificial Intelligence (AI) and Machine Learning:",
+        title1: "Artificial Intelligence (AI) and Machine Learning:",
         about:
           "Technology like AI and machine learning is transforming industries by enabling computers to learn from data, anticipate results, and automate processes. In sectors such as healthcare, finance, and manufacturing, the integration of these tools has revolutionized operations, fostering efficiency and unlocking new creative avenues. For instance, in the realm of assignment writing services, AI-powered tools can aid in research, generate content, and refine writing, streamlining the writing process and enhancing productivity. This not only saves time but also elevates the quality of written assignments, offering students and professionals alike valuable support in their academic and professional endeavors.",
       },
   
       {
-        title: "Internet of Things (IoT): ",
+        title1: "Internet of Things (IoT): ",
         about:
           "The Internet of Things (IoT) revolutionizes the way we interact with our environment by connecting everyday objects to the internet. From smart homes equipped with thermostats, lighting systems, and security cameras that can be controlled remotely via smartphones to smart cities implementing intelligent infrastructure for efficient energy management, waste reduction, and traffic optimization, IoT is reshaping our daily lives. By seamlessly integrating technology into various aspects of our environment, IoT enhances convenience, efficiency, and sustainability. This interconnected network of devices not only provides real-time data insights but also enables automation and decision-making, ultimately leading to smarter, more adaptive environments. Whether it's monitoring energy usage in our homes or streamlining transportation systems in our cities, IoT is driving transformative changes and paving the way for a more connected and intelligent future.",
       },
@@ -716,13 +716,13 @@ governments and individuals, and shape the way we live, work and interact with t
     post: [
      
         {
-        title: "Emphasis on Infrastructure :",
+        title1: "Emphasis on Infrastructure :",
         about:
           "Infrastructure development is receiving a significant chunk of the Rs 48.21 trillion budget. Expansion and modernization of highways, railways, and airports is where the government plans to invest heavily. This investment's objective is to boost economic activities, enhance connectivity, and create job opportunities throughout the country. The budget also provides funding for the development of new smart cities and the expansion of existing ones. The expectation is that these initiatives will enhance urban living standards and foster technological advancements.",
       },
   
       {
-        title: "Boost to Agriculture and Rural Economy :",
+        title1: "Boost to Agriculture and Rural Economy :",
         about:
           " A strong commitment to supporting both the agricultural and rural economies is reflected in the budget. The key measures are to increase funding for irrigation projects, subsidize fertilizers, and support organic farming. The introduction of new agricultural credit schemes is intended to improve farmers' access to financial resources. Furthermore, the government plans to create more agricultural markets to make sure farmers receive fair prices for their crops. The aim of these steps is to enhance the rural economy and enhance the economic well-being of farmers. ",
       },
@@ -764,12 +764,12 @@ governments and individuals, and shape the way we live, work and interact with t
     content: "Are you feeling overwhelmed by the task of writing an essay? Don't worry, you're not alone. Many students find essay writing challenging, but with the right approach, it can become much more manageable. In this guide, we'll walk through the steps to writing an essay in proper format at an intermediate English level.",
     post: [
         {
-          title: "Understanding the Assignment :",
+          title1: "Understanding the Assignment :",
           about:
           "Before you begin writing, make sure you fully understand the essay prompt. Identify the key requirements, such as the topic, length, format, and any specific instructions provided by your teacher or professor.",
         },
         {
-          title: "Brainstorming and Research :",
+          title1: "Brainstorming and Research :",
           about:
             "Take some time to brainstorm ideas for your essay topic. Once you have a general idea, conduct research to gather relevant information and supporting evidence. Remember to use credible sources such as books, scholarly articles, and reputable websites. When exploring content writing services, ensure you focus on reputable providers and examine their expertise, customer reviews, and sample work to gauge their credibility and reliability.",
         },
@@ -821,12 +821,12 @@ governments and individuals, and shape the way we live, work and interact with t
     description: "Explore how selecting the right assignment assistance partner can significantly impact your academic success. Learn the key factors to consider and make informed choices to enhance your learning experience.",
     post: [
         {
-          title: "Understanding outlook of the topic :",
+          title1: "Understanding outlook of the topic :",
           about:
           "After understanding the view point of the topic, it might be easy for you to look for the service you need. Understanding the out look of the to pic involves gaining insight into its various dimensions, perspectives, and implications. Its about delving beyond surface-level understanding to grasp the underlying concepts and complexities. By comprehensively analyzing different viewpoints, historical contexts, and potential future developments, one can develop a well-rounded understanding of the topic. This deeper comprehension enables individuals to engage with the subject matter more effectively, whether through writing, discussion, or decision-making. Ultimately, understanding the outlook of the topic empowers individuals to navigate its intricacies with clarity and insight.",
         },
         {
-          title: "Quality Matters :",
+          title1: "Quality Matters :",
           about:
             "When seeking assistance with assignments, it's essential to prioritize quality. Opting for a reliable service guarantees well-researched and error-free work. Such high-quality output not only impresses your instructors but also deepens your understanding of the subject matter. With meticulously crafted assignments, you're poised to enhance both your grades and academic comprehension. Choosing a trustworthy service ensures that each task is meticulously executed, fostering academic excellence and confidence in your work. In the pursuit of academic success, investing in top-notch assistance can be a game-changer.",
         },
@@ -870,13 +870,13 @@ governments and individuals, and shape the way we live, work and interact with t
     post: [
      
         {
-        title: "Understanding ROI Calculation :",
+        title1: "Understanding ROI Calculation :",
         about:
           "ROI calculation involves dividing the net profit generated by an investment by the initial investment cost and expressing it as a percentage. This straightforward formula enables businesses to evaluate the viability of investments and make informed decisions",
       },
   
       {
-        title: "Importance of ROI in Business :",
+        title1: "Importance of ROI in Business :",
         about:
           "ROI serves as a guiding principle for strategic decision-making, helping businesses prioritize investments that yield the highest returns It enables businesses to assess the performance of marketing campaigns, product launches, and other initiatives, optimizing resource allocation for maximum impact.",
       },
@@ -945,6 +945,7 @@ export default function BlogPostPage({ params }) {
     <div className="mt-2 space-y-8">
       {blog.post.map((item, index) => (
         <div key={index}>
+           <h2 className="sm:text-2xl text-1xl font-semibold mb-2">{item.title1}</h2>
           <h3 className="sm:text-2xl text-1xl font-semibold mb-2">{item.title}</h3>
           <p className="sm:text-lg text-1xl ">{item.about}</p>
         </div>

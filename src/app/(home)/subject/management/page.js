@@ -57,14 +57,14 @@ const ManagementPage = () => {
       {/* Introduction */}
       <div className="px-6 sm:px-10 lg:px-[60px] py-12 bg-white">
         <section className="mb-12">
-          <motion.h1
+          {/* <motion.p
             className="text-3xl font-bold mb-6 text-[#303030]"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
             Best Management Assignment Help
-          </motion.h1>
+          </motion.p> */}
           <motion.p
             className="text-lg leading-7 mb-6"
             
@@ -93,9 +93,9 @@ At Contently Writers, we take pride in our team of skilled writers, many of whom
 
          {/* Services Section */}
          <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-[#303030]">
+          <h3 className="text-3xl font-bold mb-6 text-[#303030]">
           Achieve Academic Success with Minimal Stress
-          </h2>
+          </h3>
           <motion.p
             className="text-lg leading-7 mb-6"
             
@@ -149,7 +149,7 @@ Moreover, we pride ourselves on delivering assignments well before your deadline
             className="text-lg leading-7 mb-6"
             
           >
-Our Business Management assignment help covers a wide range of essential topics to assist students in mastering key management concepts. This includes Organizational Behavior, Risk Management, Human Resource Management, and Project Management. For specialized needs, our Operations Management assignments help focuses on areas like supply chain management and process optimization, while our Change Management assignment help guides students through leadership and transformation challenges. Additionally, our Strategic Management assignments help provides support with competitive analysis, decision-making frameworks, and real-world applications, ensuring well-researched, high-scoring solutions across all areas. If you’re looking for assistance beyond business management, be sure to check our <strong><a href="https://www.contentlywriters.com/service/other-subjects-and-services">other subjects and services</a></strong>. And if you ever find yourself overwhelmed with tasks, remember that we’re here to help—just ask us to <strong><a href="https://www.contentlywriters.com/service/do-my-assignment">do my assignment!</a>!</strong>          </motion.p>
+Our Business Management assignment help covers a wide range of essential topics to assist students in mastering key management concepts. This includes Organizational Behavior, Risk Management, Human Resource Management, and Project Management. For specialized needs, our Operations Management assignments help focuses on areas like supply chain management and process optimization, while our Change Management assignment help guides students through leadership and transformation challenges. Additionally, our Strategic Management assignments help provides support with competitive analysis, decision-making frameworks, and real-world applications, ensuring well-researched, high-scoring solutions across all areas. If you’re looking for assistance beyond business management, be sure to check our <a href="https://www.contentlywriters.com/service/other-subjects-and-services" class="text-[#5b6cf2]">other subjects and services</a>. And if you ever find yourself overwhelmed with tasks, remember that we’re here to help—just ask us to <a href="https://www.contentlywriters.com/service/do-my-assignment" class="text-[#5b6cf2]">do my assignment!</a>!          </motion.p>
           </section>
 
           <section className="mb-10">
@@ -192,7 +192,7 @@ Our Business Management assignment help covers a wide range of essential topics 
       <strong>24/7 Support:</strong> Our team is always available to help you with any queries.
     </li>
     <li>
-      <strong>Safe and Secure:</strong> We prioritize your privacy, ensure that your data remains confidential, and provide assignments that are <strong><a href="https://www.contentlywriters.com">Safe Assign</a></strong>-compliant, so students can trust our services fully.
+      <strong>Safe and Secure:</strong> We prioritize your privacy, ensure that your data remains confidential, and provide assignments that are <a href="https://www.contentlywriters.com" class="text-[#5b6cf2]">Safe Assign</a>-compliant, so students can trust our services fully.
     </li>
   </ol>
 </section>
@@ -246,7 +246,11 @@ Our Business Management assignment help covers a wide range of essential topics 
             type="button"
             className="p-8 bg-[#5b6cf2] text-xl hover:bg-white hover:text-black"
           >
-           <h2> Write my assignment </h2>
+          <a
+    href="https://contentlywriters.com"
+  >
+    Write my assignment
+  </a>
           </Button>
         </div>
       </div>

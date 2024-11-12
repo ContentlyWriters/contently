@@ -32,7 +32,7 @@ const ManagementPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Best Accounting Assignment Help
+        Best Accounting Assignment Help online
       </motion.h1>
       <motion.p
         className="text-white text-[25px] pt-2 mb-8 mx-auto"
@@ -57,14 +57,14 @@ const ManagementPage = () => {
       {/* Introduction */}
       <div className="px-6 sm:px-10 lg:px-[60px] py-12 bg-white">
         <section className="mb-12">
-          <motion.h1
+          {/* <motion.p
             className="text-3xl font-bold mb-6 text-[#303030]"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
             Best Accounting Assignment Help Online
-          </motion.h1>
+          </motion.p> */}
           <motion.p
             className="text-lg leading-7 mb-6"
             
@@ -81,14 +81,14 @@ Whether it’s deciphering financial statements, mastering management accounting
 
         {/* Highlight Section */}
         <section className="mb-12">
-          <motion.h3
+          <motion.h2
             className="text-3xl font-bold mb-6 text-[#303030]"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
             Why Choose Us for Accounting Assignment Help?
-          </motion.h3>
+          </motion.h2>
           <motion.p
             className="text-lg leading-7 mb-6"
             
@@ -153,9 +153,9 @@ Whether you need <b>help with financial accounting assignments</b> or are lookin
 
         {/* Services Section */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-[#303030]">
+          <h3 className="text-3xl font-bold mb-6 text-[#303030]">
           How Do I Choose a Reliable Accounting Assignment Help Service?
-          </h2>
+          </h3>
           <motion.p
             className="text-lg leading-7 mb-6"
             
@@ -198,9 +198,9 @@ Whether you need <b>help with financial accounting assignments</b> or are lookin
         </section>
 
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-[#303030]">
+          <h3 className="text-3xl font-bold mb-6 text-[#303030]">
           Why We Stand Out
-          </h2>
+          </h3>
     <ul className="list-disc list-inside text-lg leading-7 space-y-3">
     <li>
       <strong>Affordable Prices:</strong> Our pricing model is student-friendly while offering premium services.
@@ -257,13 +257,16 @@ Whether you need <b>help with financial accounting assignments</b> or are lookin
    
   </ol>
   <p className="text-lg leading-7 mt-2">
-  In addition to accounting assignment help, we provide comprehensive assistance across various subjects. You can explore our <b>homework</b> services for additional support, or take advantage of our <b>do my assignment</b> options for personalized solutions. Whether you&#39;re looking for <b>content writing services</b>, the <b>best assignment services</b>, or need an experienced <b>assignment helper</b>, we are committed to ensuring you receive top-notch academic assistance tailored to your specific needs. Our dedicated team is here to help you succeed in all your academic endeavors.  </p>
+  In addition to accounting assignment help, we provide comprehensive assistance across various subjects. You can explore our <a
+href="https://www.contentlywriters.com/service/homework" className=" text-[#5b6cf2]">Homework</
+a> services for additional support, or take advantage of our <a
+href="https://www.contentlywriters.com/service/do-my-assignment" className=" text-[#5b6cf2]">Do my assignment</a> options for personalized solutions. Whether you&#39;re looking for <b>content writing services</b>, the <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]">Best assignment services</a>, or need an experienced <b>assignment helper</b>, we are committed to ensuring you receive top-notch academic assistance tailored to your specific needs. Our dedicated team is here to help you succeed in all your academic endeavors.  </p>
 </section>
 
  
 
 <section className="mb-10">
-  <h2 className="text-3xl font-bold mb-6 text-[#303030]">Get the Best Accounting Assignment Help Today!</h2>
+  <h3 className="text-3xl font-bold mb-6 text-[#303030]">Get the Best Accounting Assignment Help Today!</h3>
   <p className="text-lg leading-7 ">
   When you choose us, you’re opting for reliability, expertise, and a commitment to academic excellence. Let us handle your accounting assignments so that you can focus on other important academic and personal pursuits. Whether you need help with <b>financial accounting</b>, <b>cost accounting</b>, or any other specialized area, we’ve got you covered. Contact us today for the <b>best accounting assignment help online!</b>  </p>
 </section>
@@ -280,12 +283,16 @@ Whether you need <b>help with financial accounting assignments</b> or are lookin
           </p>
 
           <Button
+  type="button"
+  className="p-8 bg-[#5b6cf2] text-xl hover:bg-white hover:text-black"
+>
+  <a
+    href="https://contentlywriters.com"
+  >
+    Write my assignment
+  </a>
+</Button>
 
-            type="button"
-            className="p-8 bg-[#5b6cf2] text-xl hover:bg-white hover:text-black"
-          >
-           <h2> Write my assignment </h2>
-          </Button>
         </div>
       </div>
       </div>

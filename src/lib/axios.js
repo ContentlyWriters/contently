@@ -3,6 +3,6 @@
 import axios from 'axios';
 
 export  const axiosInstance = axios.create({
-  baseURL: 'https://contentlywriters.com:8088/',
+  baseURL: 'https://contentlywriters.com/api/',
   withCredentials: true,
 });

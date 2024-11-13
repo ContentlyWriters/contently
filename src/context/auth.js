@@ -131,6 +131,13 @@ export const AuthProvider = ({ children }) => {
       token = Cookies.get("token"); // Try to retrieve the token from cookies
     }
     console.log(token + "Harsh")
+
+
+  const cookies = document.cookie.split("; ");
+  const tokenCookie = cookies.find(cookie => cookie.startsWith("token"));
+  console.log("harsh yrr " + tokenCookie);
+  const token1 = tokenCookie ? tokenCookie.split("=")[1] : null;
+  console.log("Token from document.cookie:", token1);
     if (!token) {
       setIsAuthenticated(false);
       setIsLoading(false);

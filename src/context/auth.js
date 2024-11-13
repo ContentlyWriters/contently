@@ -132,6 +132,9 @@ export const AuthProvider = ({ children }) => {
     }
     console.log(token + "Harsh")
 
+    const cookieJwt = Cookies.get('token');
+      console.log("doLoginStuff 2", cookieJwt);
+
 
   const cookies = document.cookie.split("; ");
   const tokenCookie = cookies.find(cookie => cookie.startsWith("token"));

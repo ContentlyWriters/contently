@@ -22,7 +22,7 @@ const ResearchPaperPage = () => {
           transition={{ duration: 1 }}
         >
           Struggling with Homework?{" "}
-          <span className="text-[#4a90e2]">"Best Homework Help Online"</span>
+          <span className="text-[#4a90e2]">&#34;Best Homework Help Online&#34;</span>
         </motion.h1>
         <motion.p
           className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
@@ -70,7 +70,7 @@ const ResearchPaperPage = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
            Who can provide me with online homework assistance? This question has undoubtedly
-come up more than once if you're a student. This situation is frequent: there are a lot of
+come up more than once if you&#39;re a student. This situation is frequent: there are a lot of
 assignments that need to be completed by a certain date, and the strain can be too much to
 handle. It might be difficult to manage your time and maintain motivation while finishing all of
 your assignments, particularly when your lecturers have high standards. What do a lot of
@@ -113,7 +113,7 @@ services</a>, our support is designed to meet your needs effectively.
       viewport={{ once: true }}
       transition={{ delay: 0.2, duration: 0.8 }}
     >
-   Students frequently look up "do my homework online." It can seem like there aren't enough
+   Students frequently look up &#34;do my homework online.&#34; It can seem like there aren&#39;t enough
 hours in the day when there are several assignments in numerous subjects, each with a
 deadline. The concept of <b>homework help</b> becomes very alluring at this point.
     </motion.p>
@@ -125,7 +125,7 @@ deadline. The concept of <b>homework help</b> becomes very alluring at this poin
       viewport={{ once: true }}
       transition={{ delay: 0.2, duration: 0.8 }}
     >
-      At our core, we aim to simplify your life. Our "do my homework" service provides
+      At our core, we aim to simplify your life. Our &#34;do my homework&#34; service provides
 dependable, uncomplicated assistance that saves you time and reduces stress. We
 understand the busy schedules students have, and our service provides flexibility, ensuring
 you have the time and peace of mind to focus on what matters most to you.
@@ -194,9 +194,9 @@ to make your academic life more manageable.
       viewport={{ once: true }}
       transition={{ delay: 0.2, duration: 0.8 }}
     >
-     If you've ever wondered, "Can I pay someone to do my homework?" we are ready to help in
-areas like economics, physics, chemistry, and more. Simply saying, "Help me with my
-homework," allows us to complete your request efficiently and with a focus on quality.
+     If you&#39;ve ever wondered, &#34;Can I pay someone to do my homework?&#34; we are ready to help in
+areas like economics, physics, chemistry, and more. Simply saying, &#34;Help me with my
+homework,&#34; allows us to complete your request efficiently and with a focus on quality.
     </motion.p>
     <motion.p
       className="text-gray-700 mb-2 leading-relaxed"
@@ -230,7 +230,7 @@ project is crafted from scratch.</li>
 services</b>.</li>
 <li>Our support team is available 24/7 to assist with your assignments whenever you
 need it.</li>
-<li>We offer an easy return policy if, for any reason, you're not satisfied with the finished
+<li>We offer an easy return policy if, for any reason, you&#39;re not satisfied with the finished
 product.</li>
           </motion.ul>
         </div>

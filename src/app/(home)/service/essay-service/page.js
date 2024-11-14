@@ -22,8 +22,8 @@ const ResearchPaperPage = () => {
           transition={{ duration: 1 }}
         >
           Your Academic Success,Our Priority{" "}
-          <span className="text-[#4a90e2]">"Best Essay Writing
-          Services Online"</span>
+          <span className="text-[#4a90e2]">&#34;Best Essay Writing
+          Services Online&#34;</span>
         </motion.h1>
         <motion.p
           className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
@@ -69,8 +69,8 @@ const ResearchPaperPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-           "Who’s the fairest essay writer of all? Contently Writers – where excellence speaks
-           for itself!"
+           &#34;Who’s the fairest essay writer of all? Contently Writers – where excellence speaks
+           for itself!&#34;
           </motion.p>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"

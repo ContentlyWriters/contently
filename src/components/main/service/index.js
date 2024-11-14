@@ -90,18 +90,7 @@ const data = [
     about: "Writing a research paper can be a daunting task, especially when you'd prefer to use your time more efficiently. We offer a variety of services to assist you, including writing research papers, providing help with research, and delivering high-quality papers crafted by experts. Our team includes research paper writers and provides the best research paper help in the USA.",
     href: "/service/buy-a-research-paper", // Define the link for this card
   },
-  {
-    logo: <FaRegNoteSticky />,
-    title: "Subject Notes",
-    about: "It’s an efficient and highly effective way to obtain high-quality study materials tailored to your needs. As a leading writing platform in the USA, our writers are experts in their respective fields and understand the requirements of students at various academic levels. Well-prepared notes could be invaluable for your next surprise exam! We offer services to write coursework notes, chapter notes, exam notes, and more.",
-    href: "/service/subject-notes", // Define the link for this card
-  },
-  {
-    logo: <FaListCheck />,
-    title: "Specific Tasks/project",
-    about: "Assignments or projects that deviate from standard guidelines often require extensive research and creative solutions. We offer a service for such projects through our platform, where you can connect directly with the person handling your project. You have the opportunity to provide input and ensure that the project progresses as intended. Additionally, we provide help writing essays to support you in managing complex tasks.",
-    href: "/service/specific-tasks-project", // Define the link for this card
-  },
+ 
   {
     logo: <FaPenAlt />,
     title: "Coursework Writing",
@@ -129,13 +118,13 @@ const data = [
   {
     logo: <FaGlobe />,
     title: "Country",
-    about: "Our extensive resources provide detailed insights into countries worldwide, covering everything from cultural nuances to economic landscapes. Whether you're a student needing homework help or a researcher, our content will guide you through the diverse aspects of any country.",
+    about: "Our vast resources offer in-depth analyses of nations all around the world, encompassing everything from economic environments to cultural quirks. Our content will help you navigate the many facets of any nation, whether you're a scholar or a student in need of homework assistance.",
     href: "/country", // Define the link for this card
   },
   {
     logo: <FaGraduationCap />,
     title: "Other subject and services",
-    about: "In addition to our specialized country guides, we offer expert support across a broad range of subjects. From mathematics to the humanities, our services include homework assistance, essay writing, and project development for all academic levels. We are committed to helping students succeed with customized solutions tailored to their academic needs.",
+    about: "We provide professional assistance on a wide range of topics in addition to our specialist country guides. We offer homework help, essay writing, and project planning for all academic levels, from the humanities to mathematics. We are dedicated to providing students with specialized solutions that meet their academic requirements in order to help them achieve.",
     href: "/service/other-subjects-and-services", // Define the link for this card
   },
 ];

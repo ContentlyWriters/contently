@@ -179,7 +179,7 @@ Whether you need <b>help with financial accounting assignments</b> or are lookin
     </ul>
 
           {/* Cards Section */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 ">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 mt-6 ">
       {["Qualified Experts", "Free Revisions", "Urgent Help", "Confidentiality"].map((title, index) => (
         <motion.div
           className="text-center p-6 bg-white bg-opacity-30 backdrop-blur-md shadow-lg rounded-md hover:shadow-2xl transition-shadow duration-300"

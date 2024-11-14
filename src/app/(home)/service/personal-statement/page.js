@@ -40,16 +40,16 @@ const PersonalStatementPage = () => {
           animate="visible"
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+         <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
             Get Started <FaArrowRight className="inline-block ml-2" />
-          </Button>
+          </Button> </a>
         </motion.div>
       </section>
 
       {/* Introduction Section */}
       <section className="relative py-12 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          {/* <motion.h1
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -59,7 +59,7 @@ const PersonalStatementPage = () => {
           >
             Need Help with Personal Statement Online? Get Expert
             Assistance!
-          </motion.h1>
+          </motion.h1> */}
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -97,7 +97,7 @@ writing assistance.
       {/* Why Choose Us Section */}
       <section className="relative py-6 bg-[#f5f7fa]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h2
+          <motion.h3
             className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
@@ -106,7 +106,7 @@ writing assistance.
             transition={{ duration: 0.8 }}
           >
             Why Choose Our Personal Statement Help?
-          </motion.h2>
+          </motion.h3>
           <ul className="list-disc pl-6 text-gray-700 space-y-4">
             <motion.li
               variants={fadeInUp}
@@ -164,7 +164,7 @@ writing assistance.
 
       <section className="relative py-12 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          <motion.h2
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -173,7 +173,7 @@ writing assistance.
             transition={{ duration: 0.8 }}
           >
             What Is Personal Statement Writing?
-          </motion.h1>
+          </motion.h2>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -194,7 +194,7 @@ reflected in grades or test scores.
 
       <section >
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          <motion.h2
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -204,14 +204,14 @@ reflected in grades or test scores.
           >
             Why Do Students Seek the Best Personal Statement Writing
             Help from Us?
-          </motion.h1>
+          </motion.h2>
           </div>
       </section>
 
       <section >
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+          <motion.h4
+            className="text-2xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -219,7 +219,7 @@ reflected in grades or test scores.
             transition={{ duration: 0.8 }}
           >
             High-Quality Content
-          </motion.h1>
+          </motion.h4>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -238,8 +238,8 @@ tailored to the applicant’s strengths and goals.
 
       <section className="relative py-4 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+          <motion.h4
+            className="text-2xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -247,7 +247,7 @@ tailored to the applicant’s strengths and goals.
             transition={{ duration: 0.8 }}
           >
             Expert Writers
-          </motion.h1>
+          </motion.h4>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -266,8 +266,8 @@ ideal candidate for your chosen program.
 
       <section className="relative py-4 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+          <motion.h4
+            className="text-2xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -275,7 +275,7 @@ ideal candidate for your chosen program.
             transition={{ duration: 0.8 }}
           >
             Around-the-clock Availability
-          </motion.h1>
+          </motion.h4>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -294,8 +294,8 @@ different time zones to access expert support.
 
       <section className="relative py-4 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+          <motion.h4
+            className="text-2xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -303,7 +303,7 @@ different time zones to access expert support.
             transition={{ duration: 0.8 }}
           >
             Protected and Secure Assistance
-          </motion.h1>
+          </motion.h4>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -323,8 +323,8 @@ focus solely on crafting an exceptional personal statement with complete peace o
 
       <section className="relative py-4 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+          <motion.h4
+            className="text-2xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -332,7 +332,7 @@ focus solely on crafting an exceptional personal statement with complete peace o
             transition={{ duration: 0.8 }}
           >
             Budget-Friendly Rates
-          </motion.h1>
+          </motion.h4>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -351,8 +351,8 @@ premium content without straining your budget.
 
       <section className="relative py-4 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+          <motion.h4
+            className="text-2xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -360,7 +360,7 @@ premium content without straining your budget.
             transition={{ duration: 0.8 }}
           >
             Unlimited Revisions
-          </motion.h1>
+          </motion.h4>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -417,7 +417,7 @@ expectations.
 
       <section className="relative py-4 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          <motion.h3
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -426,8 +426,8 @@ expectations.
             transition={{ duration: 0.8 }}
           >
            Top-Quality Personal Statement Support for Every Subject:
-          </motion.h1>
-          <motion.h1
+          </motion.h3>
+          <motion.h3
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -436,7 +436,7 @@ expectations.
             transition={{ duration: 0.8 }}
           >
            Experience the Best Personal Statement Writing Service Online
-          </motion.h1>
+          </motion.h3>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -460,7 +460,7 @@ aspirations.
       <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <motion.h3
-            className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
+            className="text-3xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -493,7 +493,7 @@ aspirations.
                   whileInView="visible"
                   viewport={{ once: true }}
                 >
-                  <FaBook className="text-4xl text-[#4a90e2] mb-4" />
+                  {/* <FaBook className="text-4xl text-[#4a90e2] mb-4" /> */}
                   <h4 className="text-xl font-semibold mb-2">{course}</h4>
                 </motion.div>
               )
@@ -508,7 +508,8 @@ aspirations.
             transition={{ delay: 0.2, duration: 0.8 }}
           >
        If you’re unsure how to write a personal statement for university or need help with another
-assignment, such as essays, homework, or dissertations, our assignment experts are
+assignment, such as <a
+href="https://www.contentlywriters.com/service/essay-service" className="text-[#5b6cf2]">Essay</a>, <a href="https://www.contentlywriters.com/service/homework" className="text-[#5b6cf2]">Homework</a>, or <a href="https://www.contentlywriters.com/service/dissertation" className="text-[#5b6cf2]">Dissertations</a>, our <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]">assignment experts</a> are
 ready to help. Let us know your needs, and we’ll manage every detail to create an impactful
 statement. If you encounter any issues while placing an order, our team is available 24/7 to
 assist.
@@ -518,7 +519,7 @@ assist.
 
       <section className="relative py-4 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          <motion.h3
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -527,7 +528,7 @@ assist.
             transition={{ duration: 0.8 }}
           >
            Why Choose Us for personal statement writing help?
-          </motion.h1>
+          </motion.h3>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -560,7 +561,7 @@ your academic journey simpler and more successful.
       {/* Conclusion Section */}
       <section className="relative py-12 bg-[#f5f7fa]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 text-center">
-          <motion.h2
+          <motion.h3
             className="text-3xl font-bold mb-4 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -569,7 +570,7 @@ your academic journey simpler and more successful.
             transition={{ duration: 0.8 }}
           >
             Ready to Craft Your Personal Statement?
-          </motion.h2>
+          </motion.h3>
           <motion.p
             className="text-gray-700 text-lg mb-6"
             variants={fadeInUp}
@@ -587,11 +588,11 @@ your academic journey simpler and more successful.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+           <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
-            </Button>
+            </Button></a>
           </motion.div>
         </div>
       </section>

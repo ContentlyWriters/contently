@@ -41,16 +41,16 @@ const ResearchPaperPage = () => {
           animate="visible"
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+        <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
             Get Started <FaArrowRight className="inline-block ml-2" />
-          </Button>
+          </Button></a>
         </motion.div>
       </section>
 
       {/* Introduction Section */}
       <section className="relative py-12 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          {/* <motion.h1
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -59,7 +59,7 @@ const ResearchPaperPage = () => {
             transition={{ duration: 0.8 }}
           >
             Unlock Academic Excellence with Our Best Research Paper Writing Services
-          </motion.h1>
+          </motion.h1> */}
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -93,7 +93,7 @@ us today to experience seamless academic support for your research paper needs.
 
       <section className="relative py-12 bg-white">
   <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-    <motion.h1
+    <motion.h2
       className="text-3xl font-bold mb-6 text-[#0e1c3d]"
       variants={fadeInUp}
       initial="hidden"
@@ -103,7 +103,7 @@ us today to experience seamless academic support for your research paper needs.
     >
       Hire Writers for Custom Research Paper Writing Services Online – 100%
       Plagiarism-Free in All Formats
-    </motion.h1>
+    </motion.h2>
     <motion.p
       className="text-gray-700 mb-2 leading-relaxed"
       variants={fadeInUp}
@@ -179,8 +179,7 @@ valuable insights, ensuring only relevant data is included in your paper
       viewport={{ once: true }}
       transition={{ delay: 0.2, duration: 0.8 }}
     >
-      We also provide expert research paper writing help across additional subjects, such as <b>law,
-statistics,</b> and other subjects and services. Our <b>assignment experts</b> ensure that all your
+      We also provide expert research paper writing help across additional subjects, such as <a href="https://www.contentlywriters.com/subject/law" className="text-[#5b6cf2]">Law</a>, <a href="https://www.contentlywriters.com/subject/statistics" className="text-[#5b6cf2]">Statistics</a>, and other subjects and services. Our <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]">Assignment experts</a> ensure that all your
 academic needs are met, no matter the complexity or subject matter.
     </motion.p>
   </div>
@@ -218,7 +217,7 @@ academic needs are met, no matter the complexity or subject matter.
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                <FaBook className="text-4xl text-[#4a90e2] mb-4" />
+                {/* <FaBook className="text-4xl text-[#4a90e2] mb-4" /> */}
                 <h4 className="text-xl font-semibold mb-2">{service}</h4>
                 <p className="text-gray-600">High-quality assistance for {service.toLowerCase()}.</p>
               </motion.div>
@@ -230,7 +229,7 @@ academic needs are met, no matter the complexity or subject matter.
       {/* Process Section */}
       <section className="relative py-12 bg-[#f5f7fa]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h3
+          <motion.h2
             className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
@@ -240,7 +239,7 @@ academic needs are met, no matter the complexity or subject matter.
           >
            The Process of Our Research Paper Writing Service: Your Source for Help with
            Research Paper Assignments
-          </motion.h3>
+          </motion.h2>
           <motion.p
       className="text-gray-700 mb-2 leading-relaxed"
       variants={fadeInUp}
@@ -279,7 +278,7 @@ and meet the highest academic standards.</li>
       {/* Why Choose Us Section */}
       <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h2
+          <motion.h3
             className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
@@ -288,7 +287,7 @@ and meet the highest academic standards.</li>
             transition={{ duration: 0.8 }}
           >
             Why Choose Our Research Paper Writing Services?
-          </motion.h2>
+          </motion.h3>
          
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
@@ -363,7 +362,7 @@ Writers, we’re committed to making your academic journey easier and more succe
        {/* Conclusion Section */}
        <section className="relative py-12 bg-[#f5f7fa]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 text-center">
-          <motion.h2
+          <motion.h4
             className="text-3xl font-bold mb-4 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -372,7 +371,7 @@ Writers, we’re committed to making your academic journey easier and more succe
             transition={{ duration: 0.8 }}
           >
             Ready to Craft Your Personal Statement?
-          </motion.h2>
+          </motion.h4>
           <motion.p
             className="text-gray-700 text-lg mb-6"
             variants={fadeInUp}
@@ -390,11 +389,11 @@ Writers, we’re committed to making your academic journey easier and more succe
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+          <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
-            </Button>
+            </Button> </a>
           </motion.div>
         </div>
       </section>

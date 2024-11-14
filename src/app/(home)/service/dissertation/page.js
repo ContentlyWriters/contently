@@ -41,25 +41,16 @@ const DissertationWritingPage = () => {
           animate="visible"
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+         <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
             Get Started <FaArrowRight className="inline-block ml-2" />
-          </Button>
+          </Button></a>
         </motion.div>
       </section>
 
       {/* Introduction Section */}
       <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-           Dissertation Writing Help Online: Partner with Us for Exceptional Dissertation Support
-          </motion.h1>
+         
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -68,7 +59,7 @@ const DissertationWritingPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-           Completing a degree often involves a significant milestone: writing a dissertation. This demanding task requires extensive research, organization, and analytical skills. At <b>Contently Writers</b>, we understand the challenges students face and are here to provide expert <b>dissertation writing help online</b>. Our skilled writers and comprehensive support ensure you can submit a well-crafted dissertation that reflects your hard work and dedication. Here’s why students worldwide rely on us for their academic success. With our <b>content writing services</b>, we provide exceptional support that meets the highest academic standards, ensuring your dissertation stands out.
+           Completing a degree often involves a significant milestone: writing a dissertation. This demanding task requires extensive research, organization, and analytical skills. At <b>Contently Writers</b>, we understand the challenges students face and are here to provide expert <b>dissertation writing help online</b>. Our skilled writers and comprehensive support ensure you can submit a well-crafted dissertation that reflects your hard work and dedication. Here’s why students worldwide rely on us for their academic success. With our <a href="https://www.contentlywriters.com" className="text-[#5b6cf2]">content writing services</a>, we provide exceptional support that meets the highest academic standards, ensuring your dissertation stands out.
 
           </motion.p>
         </div>
@@ -76,7 +67,7 @@ const DissertationWritingPage = () => {
 
       <section className="relative py-2 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          <motion.h2
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -85,7 +76,7 @@ const DissertationWritingPage = () => {
             transition={{ duration: 0.8 }}
           >
            Why We’re the Best Choice for Dissertation Writing Services
-          </motion.h1>
+          </motion.h2>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -102,16 +93,16 @@ Our reputation for excellence and reliability is built on a few core principles 
 
       <section className="relative py-2 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+          <motion.h4
+            className="text-2xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-           High-Quality Content Crafted by Expert Writers
-          </motion.h1>
+          1. High-Quality Content Crafted by Expert Writers
+          </motion.h4>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -138,16 +129,16 @@ Our writers are dedicated to creating original, well-researched, and articulate 
 
       <section className="relative py-2 bg-white">
   <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-    <motion.h1
-      className="text-3xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
+    <motion.h4
+      className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
       variants={fadeInUp}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
     >
-      Comprehensive Dissertation Services
-    </motion.h1>
+     2. Comprehensive Dissertation Services
+    </motion.h4>
     <motion.p
       className="text-gray-700 mb-2 leading-relaxed"
       variants={fadeInUp}
@@ -212,8 +203,7 @@ Our writers are dedicated to creating original, well-researched, and articulate 
             {[
               "Topic Selection and Proposal",
               "Research and Data Analysis",
-              "Writing and Structuring",
-              "Editing and Proofreading"
+              "Writing and Structuring"
             ].map((service, index) => (
               <motion.div
                 key={index}
@@ -224,7 +214,7 @@ Our writers are dedicated to creating original, well-researched, and articulate 
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                <FaBook className="text-4xl text-[#4a90e2] mb-4" />
+                {/* <FaBook className="text-4xl text-[#4a90e2] mb-4" /> */}
                 <h4 className="text-xl font-semibold mb-2">{service}</h4>
                 <p className="text-gray-600">Expert assistance for {service.toLowerCase()}.</p>
               </motion.div>
@@ -235,16 +225,16 @@ Our writers are dedicated to creating original, well-researched, and articulate 
 
         <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+          <motion.h4
+            className="text-2xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-           Customized Assistance Tailored to Your Needs
-          </motion.h1>
+          3. Customized Assistance Tailored to Your Needs
+          </motion.h4>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -322,7 +312,7 @@ Our commitment to quality has established us as a trusted and reliable provider 
 
       <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          <motion.h3
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -331,7 +321,7 @@ Our commitment to quality has established us as a trusted and reliable provider 
             transition={{ duration: 0.8 }}
           >
           Confidentiality and Secure Transactions
-          </motion.h1>
+          </motion.h3>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -388,7 +378,7 @@ Our goal is to support students throughout their academic journey. In addition t
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              <strong>Personal Statements:</strong> We help students create compelling personal statements that highlight their strengths and aspirations.
+              <strong>Personal Statements:</strong> We help students create compelling <a href="https://www.contentlywriters.com/service/personal-statement" className="text-[#5b6cf2]"> personal statement</a> that highlight their strengths and aspirations.
             </motion.li>
             <motion.li
               variants={fadeInUp}
@@ -406,7 +396,7 @@ Our goal is to support students throughout their academic journey. In addition t
               viewport={{ once: true }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              <strong>Homework Help:</strong> For students needing extra support with homework, our service is here to make academic life easier.
+              <strong>Homework Help:</strong> For students needing extra support with <a href="https://www.contentlywriters.com/service/homework" className="text-[#5b6cf2]">homework</a>, our service is here to make academic life easier.
 
             </motion.li>
           </ul>
@@ -425,7 +415,7 @@ By offering this range of services, we serve as a one-stop solution for students
 
       <section className="relative py-2 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          <motion.h3
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -434,7 +424,7 @@ By offering this range of services, we serve as a one-stop solution for students
             transition={{ duration: 0.8 }}
           >
         Why Choose Contently Writers for Dissertation Writing?
-          </motion.h1>
+          </motion.h3>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -460,7 +450,7 @@ Our focus on <b>client satisfaction and academic integrity</b> means that we don
 
       <section className="relative py-2 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          <motion.h3
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -469,7 +459,7 @@ Our focus on <b>client satisfaction and academic integrity</b> means that we don
             transition={{ duration: 0.8 }}
           >
           How to Get Started with Contently Writers
-          </motion.h1>
+          </motion.h3>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -484,37 +474,11 @@ If you’re ready to receive top-notch dissertation help, getting started is eas
         </div>
       </section>
 
-      {/* Commitment to Quality Section */}
-      <section className="relative py-12 bg-[#f5f7fa]">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h3
-            className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            Our Commitment to Quality and Client Satisfaction
-          </motion.h3>
-          <motion.ul
-            className="list-disc pl-6 space-y-4 text-gray-700"
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-          >
-            <li><strong>In-Depth Research:</strong> We conduct thorough research from reputable sources.</li>
-            <li><strong>Multiple Draft Reviews:</strong> Each draft is reviewed by our editing team to ensure quality.</li>
-            <li><strong>Originality Checks:</strong> We use tools like SafeAssign to ensure every dissertation is plagiarism-free.</li>
-          </motion.ul>
-        </div>
-      </section>
+    
 
       <section className="relative py-2 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          <motion.h3
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -524,7 +488,7 @@ If you’re ready to receive top-notch dissertation help, getting started is eas
           >
        Final Thoughts: Choose Contently Writers for Success
 
-          </motion.h1>
+          </motion.h3>
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -552,7 +516,7 @@ Let Contently Writers be your partner in achieving your academic goals. Our team
       {/* Conclusion Section */}
       <section className="relative py-12 bg-[#f5f7fa]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 text-center">
-          <motion.h2
+          <motion.h4
             className="text-3xl font-bold mb-4 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -561,7 +525,7 @@ Let Contently Writers be your partner in achieving your academic goals. Our team
             transition={{ duration: 0.8 }}
           >
             Ready to Start Your Dissertation?
-          </motion.h2>
+          </motion.h4>
           <motion.p
             className="text-gray-700 text-lg mb-6"
             variants={fadeInUp}
@@ -579,11 +543,11 @@ Let Contently Writers be your partner in achieving your academic goals. Our team
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+           <a href="https://www.contentlywriters.com/"> <Button  className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
-            </Button>
+            </Button></a>
           </motion.div>
         </div>
       </section>

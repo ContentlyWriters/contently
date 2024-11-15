@@ -31,8 +31,7 @@ const CaliforniaPage = () => {
           animate="visible"
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Get expert assistance with research papers of all kinds, including case studies,
-          surveys, and analytical reports.
+          Local expertise for exceptional assignments, wherever you are in the USA.
         </motion.p>
         <motion.div
           className="mt-6"
@@ -353,7 +352,7 @@ overwhelm you – contact us today for the best assignment help USA online!
             viewport={{ once: true }}
             transition={{ duration: 0.3 }}
           >
-            Ready to Craft Your Personal Statement?
+            Ready to Craft Your Assignment?
           </motion.h4>
           <motion.p
             className="text-gray-700 text-lg mb-6"
@@ -364,7 +363,7 @@ overwhelm you – contact us today for the best assignment help USA online!
             transition={{ delay: 0.1, duration: 0.3 }}
           >
             Let us help you make a strong impression. Get personalized, high-quality support
-            for your personal statement.
+            for your assignments.
           </motion.p>
           <motion.div
             className="mt-4"

@@ -31,7 +31,7 @@ const PersonalStatementPage = () => {
           animate="visible"
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Create a powerful personal statement that makes you stand out
+         Stand out with a compelling personal statement that reflects your unique journey and aspirations.
         </motion.p>
         <motion.div
           className="mt-6"

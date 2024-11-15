@@ -31,8 +31,7 @@ const DissertationWritingPage = () => {
           animate="visible"
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Partner with our experts to craft a dissertation that reflects your hard work and
-          dedication.
+          Transform your ideas into a winning dissertation with our expert guidance.
         </motion.p>
         <motion.div
           className="mt-6"
@@ -524,7 +523,7 @@ Let Contently Writers be your partner in achieving your academic goals. Our team
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
           >
-            Ready to Start Your Dissertation?
+            Ready to Craft Your Dissertation?
           </motion.h4>
           <motion.p
             className="text-gray-700 text-lg mb-6"
@@ -534,8 +533,8 @@ Let Contently Writers be your partner in achieving your academic goals. Our team
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.3 }}
           >
-            Let Contently Writers be your partner in achieving your academic goals. Reach out
-            today for personalized dissertation support!
+            Let us help you make a strong impression. Get personalized, high-quality support
+            for your dissertation.
           </motion.p>
           <motion.div
             className="mt-4"

@@ -32,8 +32,7 @@ const EssaywritingPage = () => {
           animate="visible"
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Get expert assistance with research papers of all kinds, including case studies,
-          surveys, and analytical reports.
+          Polished, persuasive, and impactful essays tailored to perfection.
         </motion.p>
         <motion.div
           className="mt-6"
@@ -341,7 +340,7 @@ confidence.
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
           >
-            Ready to Craft Your Personal Statement?
+            Ready to Craft Your Essay?
           </motion.h4>
           <motion.p
             className="text-gray-700 text-lg mb-6"
@@ -352,7 +351,7 @@ confidence.
             transition={{ delay: 0.1, duration: 0.3 }}
           >
             Let us help you make a strong impression. Get personalized, high-quality support
-            for your personal statement.
+            for your essay.
           </motion.p>
           <motion.div
             className="mt-4"

@@ -31,8 +31,7 @@ const ResearchPaperPage = () => {
           animate="visible"
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Get expert assistance with research papers of all kinds, including case studies,
-          surveys, and analytical reports.
+          Invest in expertly crafted research papers designed to meet your academic needs.
         </motion.p>
         <motion.div
           className="mt-6"
@@ -370,7 +369,7 @@ Writers, we’re committed to making your academic journey easier and more succe
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
           >
-            Ready to Craft Your Personal Statement?
+            Ready to Craft Your Research Paper?
           </motion.h4>
           <motion.p
             className="text-gray-700 text-lg mb-6"
@@ -381,7 +380,7 @@ Writers, we’re committed to making your academic journey easier and more succe
             transition={{ delay: 0.1, duration: 0.3 }}
           >
             Let us help you make a strong impression. Get personalized, high-quality support
-            for your personal statement.
+            for your research Paper.
           </motion.p>
           <motion.div
             className="mt-4"

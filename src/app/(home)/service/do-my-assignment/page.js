@@ -352,7 +352,7 @@ const DoMyAssignmentPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.4 }}
           >
-            Ready to Get Started?
+            Ready to Craft Your Assignment?
           </motion.h4>
           <motion.p
             className="text-gray-700 text-lg mb-6"
@@ -362,7 +362,8 @@ const DoMyAssignmentPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.3 }}
           >
-            Let us handle your assignments and deliver quality work. Your success is just a click away!
+            Let us help you make a strong impression. Get personalized, high-quality support
+            for your assignment.
           </motion.p>
           <motion.div
             className="mt-4"

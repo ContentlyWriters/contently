@@ -31,8 +31,7 @@ const CourseworkWritingPage = () => {
           animate="visible"
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Need help with coursework? Our skilled writers provide top-quality, customized
-          coursework support to help you.
+         Simplify your coursework with our precision-driven writing services.
         </motion.p>
         <motion.div
           className="mt-6"
@@ -380,7 +379,7 @@ academic goals a reality!
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            Ready to Ace Your Coursework?
+            Ready to Craft Your Coursework Writing?
           </motion.h4>
           <motion.p
             className="text-gray-700 text-lg mb-6"
@@ -390,7 +389,8 @@ academic goals a reality!
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.3 }}
           >
-            Partner with us for expert coursework writing support and achieve academic success!
+            Let us help you make a strong impression. Get personalized, high-quality support
+            for your coursework writing.
           </motion.p>
           <motion.div
             className="mt-4"

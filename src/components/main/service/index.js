@@ -49,11 +49,12 @@ function Service() {
 
                   {/* Enhanced animated button (hidden if card is clickable) */}
                   <div className="absolute bottom-4 right-4">
-                    <button
-                      className="w-24 h-10 border border-[#020035] rounded-md text-[#020035] font-medium bg-white hover:bg-[#020035] hover:text-white transition-colors duration-200"
-                    >
-                      Visit Page
-                    </button>
+                  <button className="w-24 h-10 text-[#020035] font-medium relative group">
+  <span className="relative group-hover:text-[#5b6cf2]">
+   Visit Page
+    <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-[#5b6cf2] group-hover:w-full transition-all duration-300 transform -translate-x-1/2"></span>
+  </span>
+</button>
                   </div>
                 </Card>
               </Link>

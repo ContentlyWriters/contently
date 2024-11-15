@@ -13,38 +13,45 @@ const DissertationWritingPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#020035] to-[#020035] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
-        <motion.h1
-          className="text-[#fff] text-5xl leading-tight mb-4"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 1 }}
-        >
-          Dissertation Writing Help Online{" "}
-          <span className="text-[#5b6cf2]">&#34;for Exceptional Support&#34;</span>
-        </motion.h1>
-        <motion.p
-          className="text-[#fff] text-lg sm:text-xl max-w-2xl mx-auto"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.3, duration: 1 }}
-        >
-          Transform your ideas into a winning dissertation with our expert guidance.
-        </motion.p>
-        <motion.div
-          className="mt-6"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-         <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-[#5b6cf2] transition duration-300">
-            Get Started <FaArrowRight className="inline-block ml-2" />
-          </Button></a>
-        </motion.div>
-      </section>
+      <section className="relative bg-gradient-to-r from-[#ede6e6] to-[#ebe8e8] min-h-[44vh] flex flex-col items-center justify-center text-center p-4 shadow-lg backdrop-blur-md">
+  
+  <motion.h1
+    className="text-black text-4xl sm:text-5xl font-semibold leading-tight mb-4"
+    variants={fadeInUp}
+    initial="hidden"
+    animate="visible"
+    transition={{ duration: 1 }}
+  >
+    Dissertation Writing Help Online{" "}
+    <span className="text-[#5b6cf2]">&#34;for Exceptional Support&#34;</span>
+  </motion.h1>
+
+  <motion.p
+    className="text-black text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
+    variants={fadeInUp}
+    initial="hidden"
+    animate="visible"
+    transition={{ delay: 0.3, duration: 1 }}
+  >
+    Transform your ideas into a winning dissertation with our expert guidance.
+  </motion.p>
+
+  <motion.div
+    className="mt-6"
+    variants={fadeInUp}
+    initial="hidden"
+    animate="visible"
+    transition={{ delay: 0.5, duration: 1 }}
+  >
+    <a href="https://www.contentlywriters.com/">
+      <Button className="px-6 py-3 bg-[#210404] text-white rounded-full font-medium hover:bg-white hover:text-black hover:border-2 hover:border-black transition duration-300">
+        Get Started <FaArrowRight className="inline-block ml-2" />
+      </Button>
+    </a>
+  </motion.div>
+
+</section>
+
 
       {/* Introduction Section */}
       <section className="relative py-6 bg-white">
@@ -67,7 +74,7 @@ const DissertationWritingPage = () => {
       <section className="relative py-2 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <motion.h2
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+            className="text-3xl font-bold mb-6 text-[#0e1c3d] border-b-2 border-gray-200"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -129,7 +136,7 @@ Our writers are dedicated to creating original, well-researched, and articulate 
       <section className="relative py-2 bg-white">
   <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
     <motion.h4
-      className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
+      className="text-2xl font-bold mb-6 pb-2"
       variants={fadeInUp}
       initial="hidden"
       whileInView="visible"
@@ -312,7 +319,7 @@ Our commitment to quality has established us as a trusted and reliable provider 
       <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <motion.h3
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+            className="text-3xl font-bold mb-6 text-[#0e1c3d] border-b-2 border-gray-200"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -415,7 +422,7 @@ By offering this range of services, we serve as a one-stop solution for students
       <section className="relative py-2 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <motion.h3
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+            className="text-3xl font-bold mb-6 text-[#0e1c3d] border-b-2 border-gray-200"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -450,7 +457,7 @@ Our focus on <b>client satisfaction and academic integrity</b> means that we don
       <section className="relative py-2 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <motion.h3
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+            className="text-3xl font-bold mb-6 text-[#0e1c3d] border-b-2 border-gray-200"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -478,7 +485,7 @@ If you’re ready to receive top-notch dissertation help, getting started is eas
       <section className="relative py-2 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <motion.h3
-            className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+            className="text-3xl font-bold mb-6 text-[#0e1c3d] border-b-2 border-gray-200"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
@@ -544,7 +551,7 @@ Let Contently Writers be your partner in achieving your academic goals. Our team
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.3 }}
           >
-           <a href="https://www.contentlywriters.com/"> <Button  className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
+           <a href="https://www.contentlywriters.com/"> <Button  className="px-6 py-3 bg-[#210404] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
             </Button></a>
           </motion.div>

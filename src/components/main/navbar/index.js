@@ -35,7 +35,7 @@ const items = [
   },
 
 
-  { id: 3, name: "Subject", path: "subjects", 
+  { id: 3, name: "Subject", path: "", 
     subItems: [
       { id: 32, name: "Management", path: "/subject/management" },
       {id: 33,  name: "Accounting",  path: "/subject/accounting" },

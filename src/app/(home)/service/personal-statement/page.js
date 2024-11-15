@@ -13,19 +13,19 @@ const PersonalStatementPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#f5f7fa] to-[#ebeff5] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
+      <section className="relative bg-gradient-to-r from-[#020035] to-[#020035] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
         <motion.h1
-          className="text-[#0e1c3d] text-5xl leading-tight mb-4"
+          className="text-[#fff] text-5xl leading-tight mb-4"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
           transition={{ duration: 1 }}
         >
           Need Help with Personal Statement?{" "}
-          <span className="text-[#4a90e2]">Get Expert Assistance!</span>
+          <span className="text-[#5b6cf2]">&#34;Get Expert Assistance!&#34;</span>
         </motion.h1>
         <motion.p
-          className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
+          className="text-[#fff] text-lg sm:text-xl max-w-2xl mx-auto"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -40,7 +40,7 @@ const PersonalStatementPage = () => {
           animate="visible"
           transition={{ delay: 0.5, duration: 1 }}
         >
-         <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+         <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-[#5b6cf2] transition duration-300">
             Get Started <FaArrowRight className="inline-block ml-2" />
           </Button> </a>
         </motion.div>
@@ -66,7 +66,7 @@ const PersonalStatementPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Creating an outstanding personal statement is vital to securing a place at your dream
 university. This concise document (typically 250–500 words) should highlight your
@@ -83,7 +83,7 @@ story and meets all admission requirements.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            Our best personal statement writing service online is crafted to meet high academic
 standards and pass plagiarism detection software, such as SafeAssign. Universities will gain
@@ -103,7 +103,7 @@ writing assistance.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Why Choose Our Personal Statement Help?
           </motion.h3>
@@ -113,7 +113,7 @@ writing assistance.
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>High-Quality Content</strong> – We produce personal statements that
               capture your strengths and goals to impress admissions committees.
@@ -123,7 +123,7 @@ writing assistance.
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>Experienced Writers</strong> – Our team has years of experience crafting
               personal statements that highlight the best qualities of each applicant.
@@ -133,7 +133,7 @@ writing assistance.
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.6, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>Secure and Confidential</strong> – Your privacy is our priority. All personal
               information is securely stored and never shared.
@@ -143,7 +143,7 @@ writing assistance.
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.8, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>Affordable Pricing</strong> – Quality assistance at budget-friendly rates
               with discounts available for students.
@@ -153,7 +153,7 @@ writing assistance.
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 1.0, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>Unlimited Revisions</strong> – We offer free revisions to ensure your
               statement meets your expectations.
@@ -170,7 +170,7 @@ writing assistance.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             What Is Personal Statement Writing?
           </motion.h2>
@@ -180,7 +180,7 @@ writing assistance.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            A personal statement is a concise, yet powerful essay that gives admissions officers insight
 into who you are as an applicant. It highlights your experiences, accomplishments, and
@@ -200,7 +200,7 @@ reflected in grades or test scores.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Why Do Students Seek the Best Personal Statement Writing
             Help from Us?
@@ -216,7 +216,7 @@ reflected in grades or test scores.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             High-Quality Content
           </motion.h4>
@@ -226,7 +226,7 @@ reflected in grades or test scores.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
           We take pride in producing personal statements that stand out to admissions committees.
 With our experienced writers, we ensure that each statement is memorable, authentic, and
@@ -244,7 +244,7 @@ tailored to the applicant’s strengths and goals.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Expert Writers
           </motion.h4>
@@ -254,7 +254,7 @@ tailored to the applicant’s strengths and goals.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
          Our best personal statement writers are professionals with years of experience in personal
 statement crafting. They know exactly how to bring out your strengths and present you as an
@@ -272,7 +272,7 @@ ideal candidate for your chosen program.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Around-the-clock Availability
           </motion.h4>
@@ -282,7 +282,7 @@ ideal candidate for your chosen program.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
           With our help with personal statement online services available 24/7, students can reach out
 for assistance whenever they need it. This flexibility makes it easy for students across
@@ -300,7 +300,7 @@ different time zones to access expert support.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Protected and Secure Assistance
           </motion.h4>
@@ -310,7 +310,7 @@ different time zones to access expert support.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
          Our best personal statement help online services respect and protect client confidentiality.
 Your personal information is secure and never shared with third parties, allowing you to
@@ -329,7 +329,7 @@ focus solely on crafting an exceptional personal statement with complete peace o
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Budget-Friendly Rates
           </motion.h4>
@@ -339,7 +339,7 @@ focus solely on crafting an exceptional personal statement with complete peace o
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
           Our personal statement services are priced affordably, making it accessible for students from
 all backgrounds. We offer excellent savings and a range of discounts to help you get
@@ -357,7 +357,7 @@ premium content without straining your budget.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Unlimited Revisions
           </motion.h4>
@@ -367,7 +367,7 @@ premium content without straining your budget.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
          We prioritize customer satisfaction. If you feel your statement needs any adjustments, we
 offer free and unlimited revisions. Simply reach out, and we’ll ensure it meets your
@@ -386,7 +386,7 @@ expectations.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             How Can I Get Help Writing a Personal Statement?
           </motion.h3>
@@ -396,7 +396,7 @@ expectations.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Getting help with your personal statement is simple with Contently Writers:
           </motion.p>
@@ -406,7 +406,7 @@ expectations.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             <li><strong>Place an Order:</strong> Fill in your requirements, including your goals and background details, so our assignment experts can tailor the content to your needs.</li>
             <li><strong>Work with an Expert Writer:</strong> Our writer will craft your personal statement with attention to detail, clarity, and originality.</li>
@@ -423,7 +423,7 @@ expectations.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
            Top-Quality Personal Statement Support for Every Subject:
           </motion.h3>
@@ -433,7 +433,7 @@ expectations.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
            Experience the Best Personal Statement Writing Service Online
           </motion.h3>
@@ -443,7 +443,7 @@ expectations.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
         Writing a personal statement can be daunting. It requires the perfect balance of clarity,
 relevance, and brevity. Our best personal statement writing service online understands the
@@ -465,7 +465,7 @@ aspirations.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Courses Included in Our Personal Statement Writing Service
           </motion.h3>
@@ -475,7 +475,7 @@ aspirations.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
        We provide personal statement assistance for a wide range of subjects, including:
           </motion.p>
@@ -505,7 +505,7 @@ aspirations.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
        If you’re unsure how to write a personal statement for university or need help with another
 assignment, such as <a
@@ -525,7 +525,7 @@ assist.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
            Why Choose Us for personal statement writing help?
           </motion.h3>
@@ -535,7 +535,7 @@ assist.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
          As a trusted provider of best assignment services, we are committed to delivering results
 that exceed expectations. Our team of expert writers understands the nuances of personal
@@ -548,7 +548,7 @@ and the specific requirements of their desired program.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
          With our seamless ordering process, dedication to quality, and unwavering support, we’re
 confident that we provide the best personal statement help online. Trust our team to make
@@ -567,7 +567,7 @@ your academic journey simpler and more successful.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Ready to Craft Your Personal Statement?
           </motion.h3>
@@ -577,7 +577,7 @@ your academic journey simpler and more successful.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Let us help you make a strong impression. Get personalized, high-quality support
             for your personal statement.
@@ -588,9 +588,9 @@ your academic journey simpler and more successful.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.6 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
-           <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+           <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
             </Button></a>
           </motion.div>

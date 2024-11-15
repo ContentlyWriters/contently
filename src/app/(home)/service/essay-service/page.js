@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FiCheckCircle, FiClock, FiShield } from "react-icons/fi";
 import { FaStar, FaArrowRight, FaBook } from "react-icons/fa";
 
-const ResearchPaperPage = () => {
+const EssaywritingPage = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 },
@@ -13,20 +13,20 @@ const ResearchPaperPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#f5f7fa] to-[#ebeff5] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
+      <section className="relative bg-gradient-to-r from-[#020035] to-[#020035] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
         <motion.h1
-          className="text-[#0e1c3d] text-5xl leading-tight mb-4"
+          className="text-[#fff] text-5xl leading-tight mb-4"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
           transition={{ duration: 1 }}
         >
           Your Academic Success,Our Priority{" "}
-          <span className="text-[#4a90e2]">&#34;Best Essay Writing
+          <span className="text-[#5b6cf2]">&#34;Best Essay Writing
           Services Online&#34;</span>
         </motion.h1>
         <motion.p
-          className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
+          className="text-[#fff] text-lg sm:text-xl max-w-2xl mx-auto"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -42,7 +42,7 @@ const ResearchPaperPage = () => {
           animate="visible"
           transition={{ delay: 0.5, duration: 1 }}
         >
-        <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+        <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-[#5b6cf2] transition duration-300">
             Get Started <FaArrowRight className="inline-block ml-2" />
           </Button></a>
         </motion.div>
@@ -67,7 +67,7 @@ const ResearchPaperPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            &#34;Who’s the fairest essay writer of all? Contently Writers – where excellence speaks
            for itself!&#34;
@@ -78,7 +78,7 @@ const ResearchPaperPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Contently Writers is more than just a boast; our reputation and a growing list of
 delighted clients speak for themselves. We are committed to providing excellent
@@ -91,7 +91,7 @@ essay writing service</b> available and experience unmatched quality and support
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            If you’re looking for the <b>best essay writing service</b>, Contently Writers stands ready
 to deliver excellence wherever you are. With 24/7 availability, our <b>essay and
@@ -109,7 +109,7 @@ ahead of the competition.
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.4 }}
     >
       Professional Essay Writer Service – Help with Essay
       Writing Online for Every Level
@@ -120,7 +120,7 @@ ahead of the competition.
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
     Several years ago, we founded a network of experienced <b>essay writers</b> to assist
 students across all academic levels and disciplines. Our team is well-known for its
@@ -134,7 +134,7 @@ dedicated to meeting the needs of students at every level.
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       Achieving the top status in the essay writing industry takes experience, patience, and
 dedication. We take pride in embodying these qualities and serving an ever-growing
@@ -149,7 +149,7 @@ reach your academic goals!
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       With every piece of content being 100% unique, our strict anti-plagiarism policies
 ensure that each paper is original. Even with last-minute <b>essay</b> requests, we
@@ -172,7 +172,7 @@ experience a level of service that’s hard to match, with dedicated support fro
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
           Unlock Exclusive Benefits with the Best Essay
           Writing Service for Students
@@ -184,7 +184,7 @@ experience a level of service that’s hard to match, with dedicated support fro
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             <li><strong>Top-Tier Writers - </strong> Every online <b>essay writer</b> at Contently Writers undergoes a
 rigorous selection process. Before hiring, our team thoroughly assesses their writing
@@ -212,7 +212,7 @@ every time.</li>
         {/* Services We Offer Section */}
         <section className="relative py-12 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h3
+          {/* <motion.h3
             className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
@@ -221,7 +221,7 @@ every time.</li>
             transition={{ duration: 0.8 }}
           >
             Essay Writing Service for Students
-          </motion.h3>
+          </motion.h3> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
   {[
     "Top-Tier Writers",
@@ -262,7 +262,7 @@ every time.</li>
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Choosing the Best Essay Writing Service for
             Students in Oxford, London, and California
@@ -274,7 +274,7 @@ every time.</li>
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            Selecting the right <b>essay writing service</b> requires considering the quality of writers,
 the guarantees offered, and client feedback. Contently Writers has established itself
@@ -288,7 +288,7 @@ support. Our team of expert writers understands the academic demands in <a href=
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
           With Contently Writers, you can safely hire professional <b>essay writers online</b>. We
 guarantee complete confidentiality, secure payment options, and adherence to
@@ -307,7 +307,7 @@ content tailored to individual needs.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
            Why Choose Contently Writers for Custom Essay
            Writing Help Online?
@@ -319,7 +319,7 @@ content tailored to individual needs.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            From skilled writers to high-quality, plagiarism-free content, Contently Writers offers
 everything you need to succeed academically. Trust in our <b>custom essay writing
@@ -339,7 +339,7 @@ confidence.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Ready to Craft Your Personal Statement?
           </motion.h4>
@@ -349,7 +349,7 @@ confidence.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Let us help you make a strong impression. Get personalized, high-quality support
             for your personal statement.
@@ -360,9 +360,9 @@ confidence.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.6 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
-          <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+          <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
             </Button> </a>
           </motion.div>
@@ -372,4 +372,4 @@ confidence.
   );
 };
 
-export default ResearchPaperPage;
+export default EssaywritingPage;

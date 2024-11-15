@@ -19,19 +19,19 @@ const DoMyAssignmentPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#f5f7fa] to-[#ebeff5] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
+      <section className="relative bg-gradient-to-r from-[#020035] to-[#020035] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
         <motion.h1
-          className="text-[#0e1c3d] text-5xl leading-tight mb-4"
+          className="text-[#fff] text-5xl leading-tight mb-4"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
           transition={{ duration: 1 }}
         >
-          &#34;Do My Assignment Online&#34;  –{" "}
-          <span className="text-[#4a90e2]">Your Academic Ally</span>
+          Do My Assignment Online –{" "}
+          <span className="text-[#5b6cf2]">&#34;Your Academic Ally&#34;</span>
         </motion.h1>
         <motion.p
-          className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
+          className="text-[#fff] text-lg sm:text-xl max-w-2xl mx-auto"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -46,7 +46,7 @@ const DoMyAssignmentPage = () => {
           animate="visible"
           transition={{ delay: 0.5, duration: 1 }}
         >
-        <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+        <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-[#5b6cf2] transition duration-300">
             Get Started <FaArrowRight className="inline-block ml-2" />
           </Button> </a>
         </motion.div>
@@ -171,7 +171,7 @@ const DoMyAssignmentPage = () => {
       {/* Service Icons Section */}
       <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h3
+          {/* <motion.h3
             className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
@@ -180,7 +180,7 @@ const DoMyAssignmentPage = () => {
             transition={{ duration: 0.8 }}
           >
             Why Choose Our Service?
-          </motion.h3>
+          </motion.h3> */}
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-2">
             {/* Animated Icons with Hover Effects */}
@@ -350,7 +350,7 @@ const DoMyAssignmentPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Ready to Get Started?
           </motion.h4>
@@ -360,7 +360,7 @@ const DoMyAssignmentPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Let us handle your assignments and deliver quality work. Your success is just a click away!
           </motion.p>
@@ -370,9 +370,9 @@ const DoMyAssignmentPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.6 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
-          <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+          <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
               Order Now <FaArrowRight className="inline-block ml-2" />
             </Button></a>
           </motion.div>

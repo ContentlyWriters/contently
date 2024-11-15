@@ -13,19 +13,19 @@ const CourseworkWritingPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#f5f7fa] to-[#ebeff5] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
+      <section className="relative bg-gradient-to-r from-[#020035] to-[#020035] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
         <motion.h1
-          className="text-[#0e1c3d] text-5xl leading-tight mb-4"
+          className="text-[#fff] text-5xl leading-tight mb-4"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
           transition={{ duration: 1 }}
         >
           Get Expert Online Coursework Writing Services{" "}
-          <span className="text-[#4a90e2]">Anytime, Anywhere</span>
+          <span className="text-[#5b6cf2]">&#34;Anytime, Anywhere&#34;</span>
         </motion.h1>
         <motion.p
-          className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
+          className="text-[#fff] text-lg sm:text-xl max-w-2xl mx-auto"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -41,7 +41,7 @@ const CourseworkWritingPage = () => {
           animate="visible"
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <a href="https://www.contentlywriters.com/"><Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+          <a href="https://www.contentlywriters.com/"><Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-[#5b6cf2] transition duration-300">
             Get Started <FaArrowRight className="inline-block ml-2" />
           </Button></a>
         </motion.div>
@@ -66,7 +66,7 @@ const CourseworkWritingPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Are you feeling overwhelmed by the assignments in your latest class? Contently Writers is
 here with a solution! Our <b>online coursework writing services</b> provide exceptional
@@ -81,7 +81,7 @@ time effectively.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             When you&#39;re asking yourself, &#34;Who can <b>do my coursework</b>?&#34;, rest assured that our expert
 writers have the answers. Our comprehensive <b>coursework writing help online</b> covers a
@@ -97,7 +97,7 @@ worldwide.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             With a solid decade of experience, we’ve supported thousands of students across the <b>UK,
 USA, Canada, and Australia</b> in their academic journeys. Our focus on quality and
@@ -116,7 +116,7 @@ coursework writers and alleviate your study stress today!
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.4 }}
     >
       Take the Stress Out of Studies with the Best Coursework Writing Help
     </motion.h2>
@@ -126,7 +126,7 @@ coursework writers and alleviate your study stress today!
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       Contently Writers offers <b>coursework writing help online</b> for various types of assignments,
       ensuring that you receive targeted assistance. Each assignment is matched with a
@@ -140,7 +140,7 @@ coursework writers and alleviate your study stress today!
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.3, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       <li>
         <strong>Essays:</strong> Whether you need an <a href="https://www.contentlywriters.com/service/essay-service" className="text-[#5b6cf2]">Essay</a> for an English class or an advanced
@@ -204,7 +204,7 @@ coursework writers and alleviate your study stress today!
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.4, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       At Contently Writers, we cover a wide range of subjects, including math, literature, science,
       business, and more. Each type of assignment is approached with the highest standards of
@@ -215,9 +215,9 @@ coursework writers and alleviate your study stress today!
 
 
       {/* Types of Coursework Section */}
-      <section className="relative py-12 bg-white">
+      <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h3
+          {/* <motion.h3
             className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
@@ -226,7 +226,7 @@ coursework writers and alleviate your study stress today!
             transition={{ duration: 0.8 }}
           >
             Types of Coursework We Handle
-          </motion.h3>
+          </motion.h3> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
             {[
               "Essays",
@@ -266,7 +266,7 @@ coursework writers and alleviate your study stress today!
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Order Your Coursework Writing Help Online in Simple Steps
           </motion.h2>
@@ -276,7 +276,7 @@ coursework writers and alleviate your study stress today!
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             <li><strong>Fill in Your Information:</strong> Start by completing a simple form with the necessary
 details such as word count, topic, subject, and deadline. Providing accurate details
@@ -306,7 +306,7 @@ tailored to your needs.</li>
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Why Choose Contently Writers for Your Coursework?
           </motion.h3>
@@ -316,7 +316,7 @@ tailored to your needs.</li>
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.4, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       Contently Writers stands out as a trusted provider of <b>online coursework writing services</b>.
 Our commitment to excellence and our focus on student satisfaction have made us the go-to
@@ -329,7 +329,7 @@ can navigate their academic challenges with ease and achieve outstanding success
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.4, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       By offering reliable, <b>affordable coursework writing help</b>, we cater to a variety of student
 needs, from routine essays and challenging math problems to complex theses and
@@ -343,7 +343,7 @@ academic goals a reality!
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>Experienced Writers</strong> – Specialized experts to handle any coursework requirements.
             </motion.li>
@@ -352,7 +352,7 @@ academic goals a reality!
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>Affordable Pricing</strong> – Quality assistance at prices that suit a student budget.
             </motion.li>
@@ -361,7 +361,7 @@ academic goals a reality!
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.6, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>24/7 Support</strong> – Assistance available any time you need it.
             </motion.li>
@@ -388,7 +388,7 @@ academic goals a reality!
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Partner with us for expert coursework writing support and achieve academic success!
           </motion.p>
@@ -398,9 +398,9 @@ academic goals a reality!
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
-          <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+          <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
             </Button></a>
           </motion.div>

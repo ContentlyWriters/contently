@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FiCheckCircle, FiClock, FiShield } from "react-icons/fi";
 import { FaStar, FaArrowRight, FaBook } from "react-icons/fa";
 
-const ResearchPaperPage = () => {
+const HomeworkPage = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 },
@@ -13,19 +13,19 @@ const ResearchPaperPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#f5f7fa] to-[#ebeff5] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
+      <section className="relative bg-gradient-to-r from-[#020035] to-[#020035] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
         <motion.h1
-          className="text-[#0e1c3d] text-5xl leading-tight mb-4"
+          className="text-[#fff] text-5xl leading-tight mb-4"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
           transition={{ duration: 1 }}
         >
           Struggling with Homework?{" "}
-          <span className="text-[#4a90e2]">&#34;Best Homework Help Online&#34;</span>
+          <span className="text-[#5b6cf2]">&#34;Best Homework Help Online&#34;</span>
         </motion.h1>
         <motion.p
-          className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
+          className="text-[#fff] text-lg sm:text-xl max-w-2xl mx-auto"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -41,7 +41,7 @@ const ResearchPaperPage = () => {
           animate="visible"
           transition={{ delay: 0.5, duration: 1 }}
         >
-        <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+        <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-[#5b6cf2] transition duration-300">
             Get Started <FaArrowRight className="inline-block ml-2" />
           </Button></a>
         </motion.div>
@@ -67,7 +67,7 @@ const ResearchPaperPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            Who can provide me with online homework assistance? This question has undoubtedly
 come up more than once if you&#39;re a student. This situation is frequent: there are a lot of
@@ -83,7 +83,7 @@ locating a person who can complete their assignments at a fair price.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            Thankfully, there’s an answer: the <b>best homework help online</b>. We offer trustworthy and
 reasonably priced assistance that prioritizes your academic success and satisfaction. With a
@@ -101,7 +101,7 @@ services</a>, our support is designed to meet your needs effectively.
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.4 }}
     >
       Reliable and Affordable Homework Help for Students
     </motion.h2>
@@ -111,7 +111,7 @@ services</a>, our support is designed to meet your needs effectively.
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
    Students frequently look up &#34;do my homework online.&#34; It can seem like there aren&#39;t enough
 hours in the day when there are several assignments in numerous subjects, each with a
@@ -123,7 +123,7 @@ deadline. The concept of <b>homework help</b> becomes very alluring at this poin
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       At our core, we aim to simplify your life. Our &#34;do my homework&#34; service provides
 dependable, uncomplicated assistance that saves you time and reduces stress. We
@@ -136,7 +136,7 @@ you have the time and peace of mind to focus on what matters most to you.
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       With us, you get straightforward, honest support without hidden fees or unnecessary
 complications. We take care of your schoolwork carefully and thoughtfully, ensuring that
@@ -148,7 +148,7 @@ each project meets high standards, helping you achieve your academic goals.
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       In addition to <b>homework help</b>, we offer support across a wide range of <a href="https://www.contentlywriters.com/service/other-subjects-and-services" className="text-[#5b6cf2]">other subjects and
 services</a>. Our expertise includes <b>do my assignment</b> requests, <b>assignment helper</b> support,
@@ -160,7 +160,7 @@ and <b>assignment experts</b> ready to assist students across multiple disciplin
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       Whenever homework or assignments start piling up, remember that we are here to support
 you. Contact us, share your needs, and we’ll handle the rest. Whether it’s homework
@@ -182,7 +182,7 @@ to make your academic life more manageable.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
           Affordable Homework Help for Students – Reliable Support When You Need It
           </motion.h2>
@@ -192,7 +192,7 @@ to make your academic life more manageable.
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
      If you&#39;ve ever wondered, &#34;Can I pay someone to do my homework?&#34; we are ready to help in
 areas like economics, physics, chemistry, and more. Simply saying, &#34;Help me with my
@@ -204,7 +204,7 @@ homework,&#34; allows us to complete your request efficiently and with a focus o
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
      Here’s why students choose our services to complete their online assignments:
     </motion.p>
@@ -217,7 +217,7 @@ homework,&#34; allows us to complete your request efficiently and with a focus o
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             <li>Our pricing policies make our <b>homework writing service affordable and
             accessible</b> for students at all academic levels worldwide.</li>
@@ -289,7 +289,7 @@ product.</li>
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             What Are the Best Subject-Specific Homework Help Resources?
           </motion.h2>
@@ -300,7 +300,7 @@ product.</li>
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
          When looking for <b>homework help online</b>, it’s essential to find platforms that specialize in
 your subjects of interest. Many students seek <b>expert help with homework online</b> in areas
@@ -314,7 +314,7 @@ excel in those areas.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
           By using our specialized platform, you’re ensuring access to <b>top homework help</b> from
 experts who understand your academic needs in detail. And if you’re looking for help beyond
@@ -332,7 +332,7 @@ variety of academic requirements.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
            Why Choose Contently Writers for Custom Essay
            Writing Help Online?
@@ -344,7 +344,7 @@ variety of academic requirements.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            From skilled writers to high-quality, plagiarism-free content, Contently Writers offers
 everything you need to succeed academically. Trust in our <b>custom essay writing
@@ -364,7 +364,7 @@ confidence.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Ready to Craft Your Personal Statement?
           </motion.h4>
@@ -374,7 +374,7 @@ confidence.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Let us help you make a strong impression. Get personalized, high-quality support
             for your personal statement.
@@ -385,9 +385,9 @@ confidence.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.6 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
-          <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+          <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
             </Button> </a>
           </motion.div>
@@ -397,4 +397,4 @@ confidence.
   );
 };
 
-export default ResearchPaperPage;
+export default HomeworkPage;

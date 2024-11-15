@@ -13,19 +13,19 @@ const DissertationWritingPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#f5f7fa] to-[#ebeff5] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
+      <section className="relative bg-gradient-to-r from-[#020035] to-[#020035] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
         <motion.h1
-          className="text-[#0e1c3d] text-5xl leading-tight mb-4"
+          className="text-[#fff] text-5xl leading-tight mb-4"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
           transition={{ duration: 1 }}
         >
           Dissertation Writing Help Online{" "}
-          <span className="text-[#4a90e2]">for Exceptional Support</span>
+          <span className="text-[#5b6cf2]">&#34;for Exceptional Support&#34;</span>
         </motion.h1>
         <motion.p
-          className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
+          className="text-[#fff] text-lg sm:text-xl max-w-2xl mx-auto"
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -41,7 +41,7 @@ const DissertationWritingPage = () => {
           animate="visible"
           transition={{ delay: 0.5, duration: 1 }}
         >
-         <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+         <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-[#5b6cf2] transition duration-300">
             Get Started <FaArrowRight className="inline-block ml-2" />
           </Button></a>
         </motion.div>
@@ -57,7 +57,7 @@ const DissertationWritingPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            Completing a degree often involves a significant milestone: writing a dissertation. This demanding task requires extensive research, organization, and analytical skills. At <b>Contently Writers</b>, we understand the challenges students face and are here to provide expert <b>dissertation writing help online</b>. Our skilled writers and comprehensive support ensure you can submit a well-crafted dissertation that reflects your hard work and dedication. Here’s why students worldwide rely on us for their academic success. With our <a href="https://www.contentlywriters.com" className="text-[#5b6cf2]">content writing services</a>, we provide exceptional support that meets the highest academic standards, ensuring your dissertation stands out.
 
@@ -73,7 +73,7 @@ const DissertationWritingPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
            Why We’re the Best Choice for Dissertation Writing Services
           </motion.h2>
@@ -83,7 +83,7 @@ const DissertationWritingPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 Our reputation for excellence and reliability is built on a few core principles that drive everything we do. We believe that each student deserves personalized assistance, top-quality work, and confidentiality. With a focus on client satisfaction and academic integrity, our dissertation writing services are designed to support students at every stage of their journey.
 
@@ -99,7 +99,7 @@ Our reputation for excellence and reliability is built on a few core principles 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
           1. High-Quality Content Crafted by Expert Writers
           </motion.h4>
@@ -109,7 +109,7 @@ Our reputation for excellence and reliability is built on a few core principles 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 At Contently Writers, we have assembled a team of highly qualified professionals, each with advanced degrees in their respective fields. Our writers are not only skilled in academic writing but also have extensive experience in their areas of expertise, allowing them to bring valuable insights to your dissertation. They have been carefully selected for their academic backgrounds, attention to detail, and commitment to excellence. When you choose us, you’re guaranteed to receive <b>top-quality dissertation help</b> from experts who understand the rigorous demands of academic research.
 
@@ -120,7 +120,7 @@ At Contently Writers, we have assembled a team of highly qualified professionals
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 Our writers are dedicated to creating original, well-researched, and articulate dissertations that meet even the strictest academic requirements. We ensure every dissertation is tailored to each student&#39;s unique needs, giving you the advantage of personalized, focused assistance.
           </motion.p>
@@ -135,7 +135,7 @@ Our writers are dedicated to creating original, well-researched, and articulate 
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.4 }}
     >
      2. Comprehensive Dissertation Services
     </motion.h4>
@@ -145,7 +145,7 @@ Our writers are dedicated to creating original, well-researched, and articulate 
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       Unlike many other services, we don’t just offer writing help. Our <b>dissertation writing
       services online</b> include a full range of support options designed to meet every need, whether
@@ -158,7 +158,7 @@ Our writers are dedicated to creating original, well-researched, and articulate 
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.3, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       <li>
         <strong>Topic Selection and Proposal Development:</strong> Finding the right topic is critical,
@@ -186,7 +186,7 @@ Our writers are dedicated to creating original, well-researched, and articulate 
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.4, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       With us, you receive not just writing help but a comprehensive service that supports you from
       start to finish. We’re here to make the dissertation process less daunting and more achievable.
@@ -231,7 +231,7 @@ Our writers are dedicated to creating original, well-researched, and articulate 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
           3. Customized Assistance Tailored to Your Needs
           </motion.h4>
@@ -241,7 +241,7 @@ Our writers are dedicated to creating original, well-researched, and articulate 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 Every dissertation is unique, and so are the needs of each student. At Contently Writers, we offer <b>custom dissertation writing services online</b>, meaning we tailor our support to align with your specific requirements. Whether you need assistance with only one chapter, full dissertation writing, or even help with data analysis, we can adapt our services to fit your needs.
 
@@ -252,7 +252,7 @@ Every dissertation is unique, and so are the needs of each student. At Contently
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 We know that some students require more support with particular aspects, such as literature reviews or methodology sections. That’s why we make our services fully customizable, allowing you to select only the help you need without paying for services you don’t. This flexibility makes us a preferred choice for students who need tailored support.
 
@@ -269,7 +269,7 @@ We know that some students require more support with particular aspects, such as
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
            Our Commitment to Quality and Client Satisfaction
           </motion.h3>
@@ -279,7 +279,7 @@ We know that some students require more support with particular aspects, such as
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 At Contently Writers, we have a single mission: to exceed our clients’ expectations. Our quality assurance process includes:
           </motion.p>
@@ -289,7 +289,7 @@ At Contently Writers, we have a single mission: to exceed our clients’ expecta
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             <li><strong>In-Depth Research:</strong> Our writers conduct thorough research from reputable sources to provide accurate and up-to-date information.
             </li>
@@ -302,7 +302,7 @@ At Contently Writers, we have a single mission: to exceed our clients’ expecta
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 Our commitment to quality has established us as a trusted and reliable provider known for excellence.. Students who work with us can trust that their dissertations will be well-researched, well-written, and tailored to their academic level.
 
@@ -318,7 +318,7 @@ Our commitment to quality has established us as a trusted and reliable provider 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
           Confidentiality and Secure Transactions
           </motion.h3>
@@ -328,7 +328,7 @@ Our commitment to quality has established us as a trusted and reliable provider 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 We understand the importance of privacy when using dissertation writing services. Contently Writers has implemented strict policies to protect our clients’ personal and academic information. All client details and project specifics remain confidential, and our secure payment system includes options like PayPal, debit/credit cards, and Paynote, ensuring safe and reliable transactions.
           </motion.p>
@@ -338,7 +338,7 @@ We understand the importance of privacy when using dissertation writing services
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 Our commitment to confidentiality and security is unwavering. We value the trust our clients place in us and go to great lengths to safeguard their information. With Contently Writers, you can rest assured that your privacy is protected.
 
@@ -355,7 +355,7 @@ Our commitment to confidentiality and security is unwavering. We value the trust
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             The Additional Benefits of Choosing Contently Writers
           </motion.h3>
@@ -365,7 +365,7 @@ Our commitment to confidentiality and security is unwavering. We value the trust
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 Our goal is to support students throughout their academic journey. In addition to dissertation help, we offer a range of other academic writing services, including:
 
@@ -376,7 +376,7 @@ Our goal is to support students throughout their academic journey. In addition t
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>Personal Statements:</strong> We help students create compelling <a href="https://www.contentlywriters.com/service/personal-statement" className="text-[#5b6cf2]"> personal statement</a> that highlight their strengths and aspirations.
             </motion.li>
@@ -385,7 +385,7 @@ Our goal is to support students throughout their academic journey. In addition t
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>Essays and Assignments:</strong> Our experts provide assistance for various assignments, ensuring high-quality content for any academic task.
             </motion.li>
@@ -394,7 +394,7 @@ Our goal is to support students throughout their academic journey. In addition t
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.6, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>Homework Help:</strong> For students needing extra support with <a href="https://www.contentlywriters.com/service/homework" className="text-[#5b6cf2]">homework</a>, our service is here to make academic life easier.
 
@@ -406,7 +406,7 @@ Our goal is to support students throughout their academic journey. In addition t
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 By offering this range of services, we serve as a one-stop solution for students, providing assistance across multiple areas of their academic life.
           </motion.p>
@@ -421,7 +421,7 @@ By offering this range of services, we serve as a one-stop solution for students
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
         Why Choose Contently Writers for Dissertation Writing?
           </motion.h3>
@@ -431,7 +431,7 @@ By offering this range of services, we serve as a one-stop solution for students
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 Contently Writers stands out in the academic support industry because of our unwavering commitment to <b>best dissertation writing help for students</b>. We are known for our meticulous approach to every project, helping students from various academic backgrounds achieve their goals with dissertations that reflect rigorous research and critical thinking.          </motion.p>
           <motion.p
@@ -440,7 +440,7 @@ Contently Writers stands out in the academic support industry because of our unw
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 Our focus on <b>client satisfaction and academic integrity</b> means that we don&#39;t just meet expectations—we strive to exceed them. Students who choose us can be confident that they&#39;ll receive a dissertation that is crafted with care, reflects their unique voice, and meets their academic institution&#39;s standards. This dedication to excellence is what makes us the best choice for dissertation support.
 
@@ -456,7 +456,7 @@ Our focus on <b>client satisfaction and academic integrity</b> means that we don
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
           How to Get Started with Contently Writers
           </motion.h3>
@@ -466,7 +466,7 @@ Our focus on <b>client satisfaction and academic integrity</b> means that we don
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 If you’re ready to receive top-notch dissertation help, getting started is easy. Simply reach out to us with your requirements, and our team will promptly assist you in developing a customized plan. From there, our writers will work closely with you, ensuring that every aspect of your dissertation is handled professionally and efficiently.
 </motion.p>
@@ -484,7 +484,7 @@ If you’re ready to receive top-notch dissertation help, getting started is eas
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
        Final Thoughts: Choose Contently Writers for Success
 
@@ -495,7 +495,7 @@ If you’re ready to receive top-notch dissertation help, getting started is eas
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 Choosing Contently Writers means choosing a team that values quality, originality, and client satisfaction. With our expert <b>dissertation writing help online</b>, you’re not only securing high-quality academic support but also investing in your academic future. Our dedication to providing the best possible service has made us a trusted partner for students worldwide.        
   </motion.p>
@@ -505,7 +505,7 @@ Choosing Contently Writers means choosing a team that values quality, originalit
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
 Let Contently Writers be your partner in achieving your academic goals. Our team is here to support your success, whether you need assistance with research, writing, or editing. Contact us today to experience the best in dissertation writing services and take the next step toward completing your degree with confidence.
 
@@ -522,7 +522,7 @@ Let Contently Writers be your partner in achieving your academic goals. Our team
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Ready to Start Your Dissertation?
           </motion.h4>
@@ -532,7 +532,7 @@ Let Contently Writers be your partner in achieving your academic goals. Our team
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Let Contently Writers be your partner in achieving your academic goals. Reach out
             today for personalized dissertation support!
@@ -543,9 +543,9 @@ Let Contently Writers be your partner in achieving your academic goals. Our team
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.6 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
-           <a href="https://www.contentlywriters.com/"> <Button  className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+           <a href="https://www.contentlywriters.com/"> <Button  className="px-6 py-3 bg-[#5b6cf2] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
             </Button></a>
           </motion.div>

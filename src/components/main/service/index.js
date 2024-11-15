@@ -33,7 +33,7 @@ function Service() {
 
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-8 sm:gap-12 lg:gap-16 my-8">
             {data.map((item, index) => (
-              <div key={index}>
+              <Link href={item.href} passHref key={index}>
                 <Card className="relative p-6 min-h-[400px] transition-transform duration-300 transform hover:-translate-y-2 group cursor-pointer bg-white shadow-lg hover:shadow-2xl rounded-lg border border-[#e3e3e3]">
                   <CardHeader className="text-5xl text-[#00052a] group-hover:text-[#5b6cf2] !justify-center">
                     <div className="flex justify-center">{item.logo}</div>
@@ -47,16 +47,16 @@ function Service() {
                     </p>
                   </CardContent>
 
-                  {/* Enhanced animated button */}
+                  {/* Enhanced animated button (hidden if card is clickable) */}
                   <div className="absolute bottom-4 right-4">
-                    <Link href={item.href} passHref>
-                      <button className="enhanced-button">
-                        Visit Page
-                      </button>
-                    </Link>
+                    <button
+                      className="w-24 h-10 border border-[#020035] rounded-md text-[#020035] font-medium bg-white hover:bg-[#020035] hover:text-white transition-colors duration-200"
+                    >
+                      Visit Page
+                    </button>
                   </div>
                 </Card>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -64,68 +64,69 @@ function Service() {
 
       {/* Floating email button */}
       <Link href="mailto:info@contentlywriters.com">
-        <div className="rounded-full fixed w-12 h-12 transition-colors duration-200 text-white hover:text-[#5b6cf2] bg-[#5b6cf2] hover:bg-white bottom-6 right-8  flex justify-center items-center shadow-xl">
-          <MdEmail className="text-3xl " />
+        <div className="rounded-full fixed w-12 h-12 transition-colors duration-200 text-white hover:text-[#5b6cf2] bg-[#5b6cf2] hover:bg-white bottom-6 right-8 flex justify-center items-center shadow-xl">
+          <MdEmail className="text-3xl" />
         </div>
       </Link>
     </>
   );
 }
+
 const data = [
   {
     logo: <FaShoppingCart className="max-auto" />,
     title: "Do my assignment",
     about: "While we provide services for completing any assignment within the given timeframe, we also offer specialized assignments crafted through years of experience at a fair price. As a leading writing platform in the USA, we cover a wide range of topics across basic, intermediate, and advanced levels for almost all academic stages.",
-    href: "/service/do-my-assignment", // Define the link for this card
+    href: "/service/do-my-assignment", 
   },
   {
     logo: <FaRegFileLines />,
     title: "Personal Statement",
     about: "Whether it’s for formality or specific requirements, a well-thought-out personal statement written by experienced writers can meet any need. We offer personal statement writing help, including writing a personal statement, assisting in its creation, and much more.",
-    href: "/service/personal-statement", // Define the link for this card
+    href: "/service/personal-statement", 
   },
   {
     logo: <FaRegFilePdf />,
     title: "Buy a research paper",
     about: "Writing a research paper can be a daunting task, especially when you'd prefer to use your time more efficiently. We offer a variety of services to assist you, including writing research papers, providing help with research, and delivering high-quality papers crafted by experts. Our team includes research paper writers and provides the best research paper help in the USA.",
-    href: "/service/buy-a-research-paper", // Define the link for this card
+    href: "/service/buy-a-research-paper", 
   },
  
   {
     logo: <FaPenAlt />,
     title: "Coursework Writing",
     about: "Coursework is a crucial component of students' academic journeys, and our services are designed to make this process efficient and accessible. As the best coursework writing service, we strive to fulfill this promise with every piece of coursework written on our platform. Our coursework writing services range from routine tasks, such as chapter assignments, to more complex tasks, including experiments and practical writing.",
-    href: "/service/coursework-writing", // Define the link for this card
+    href: "/service/coursework-writing", 
   },
   {
     logo: <FaFilePrescription />,
     title: "Dissertation",
     about: "Our dissertation services include conducting a thorough study on any given topic and crafting a well-structured dissertation with your input throughout the process. We offer comprehensive dissertation help services and dissertation writing help to meet your needs. If your specific requirements are not addressed through the form on the homepage, please visit our community page for further assistance.",
-    href: "/service/dissertation", // Define the link for this card
+    href: "/service/dissertation", 
   },
   {
     logo: <ImPen />,
     title: "Essay Services",
     about: "Applying to new institutions can be an intimidating task. While preparing for this process can be overwhelming, it might also divert your focus from crafting effective college essays. We offer top essay services in the USA and the best write essay in the USA, helping to lighten your workload with well-constructed and compelling college essays.",
-    href: "/service/essay-service", // Define the link for this card
+    href: "/service/essay-service", 
   },
   {
     logo: <FaBookOpen />,
     title: "Homework",
     about: "We handle homework for students of all grades and offer a variety of methods to complete your assignments exactly as you want. Our services, recognized for the best homework writing in the USA, cover everything from basic grade subjects to a range of academic levels.",
-    href: "/service/homework", // Define the link for this card
+    href: "/service/homework", 
   },
   {
     logo: <FaGlobe />,
     title: "Country",
     about: "Our vast resources offer in-depth analyses of nations all around the world, encompassing everything from economic environments to cultural quirks. Our content will help you navigate the many facets of any nation, whether you're a scholar or a student in need of homework assistance.",
-    href: "/country", // Define the link for this card
+    href: "/service/country", 
   },
   {
     logo: <FaGraduationCap />,
     title: "Other subject and services",
     about: "We provide professional assistance on a wide range of topics in addition to our specialist country guides. We offer homework help, essay writing, and project planning for all academic levels, from the humanities to mathematics. We are dedicated to providing students with specialized solutions that meet their academic requirements in order to help them achieve.",
-    href: "/service/other-subjects-and-services", // Define the link for this card
+    href: "/service/other-subjects-and-services", 
   },
 ];
 

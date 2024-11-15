@@ -71,7 +71,7 @@ const CaliforniaPage = () => {
           >
           Writing assignments and managing academic workload can be overwhelming for many
 students. Deadlines, complex topics, and pressure to perform can lead to stress. If you’re
-wondering where to find reliable <b>best assignment help in California</b>, you've come to the
+wondering where to find reliable <b>best assignment help in California</b>, you&#39;ve come to the
 right place. Our professional team is here to assist you with top-notch <b>assignment writing
 help in California</b> to ensure flawless submissions.
           </motion.p>
@@ -85,7 +85,7 @@ help in California</b> to ensure flawless submissions.
           >
           At Contently Writers, we specialize in delivering <b>affordable homework help for students</b>
 and offer <b>assignment helpers in California</b> who are experts in various subjects. Whether
-you're struggling with a marketing case study, a law essay, or an engineering research
+you&#39;re struggling with a marketing case study, a law essay, or an engineering research
 paper, we provide tailored support designed to meet the specific needs of each student. Our
 expert <a href="https://www.contentlywriters.com" className="text-[#5b6cf2]">assignment helpers</a> ensure that your work is of the highest quality, meeting all
 academic requirements, while being plagiarism-free.
@@ -124,13 +124,13 @@ academic requirements, while being plagiarism-free.
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.3 }}
           >
-            <li><b>Expert Assistance Across All Subjects</b><br></br> Whether you're studying law, marketing, finance, or engineering, our team of
+            <li><b>Expert Assistance Across All Subjects</b><br></br> Whether you&#39;re studying law, marketing, finance, or engineering, our team of
 assignment experts has the specialized knowledge to help you excel in your
 coursework. We handle assignments in a wide range of subjects to ensure that every
 student gets the help they need.</li>
 <li><b>Affordable Assignment Help for Every Student</b><br></br> We understand the financial challenges students face, which is why we offer the <b>best
 assignment help USA online</b> at competitive prices. With our reasonable rates, you
-don't have to compromise on quality to stay within your budget. Our goal is to make
+don&#39;t have to compromise on quality to stay within your budget. Our goal is to make
 quality academic support accessible to all students.</li>
 <li><b>Plagiarism-Free Content</b><br></br> Originality is a priority for us. Every assignment you receive from us is written from
 scratch, ensuring that you submit 100% original content. We also provide a free
@@ -141,7 +141,7 @@ delivering your assignments well before the due date, giving you time to review 
 ask for revisions if needed. You can always rely on us for timely, stress-free
 submissions.</li>
 <li><b>24/7 Customer Support</b><br></br> Our customer support team is available around the clock to assist with any queries
-you may have. Whether it's a question about your assignment or a request for
+you may have. Whether it&#39;s a question about your assignment or a request for
 updates, we’re here to help whenever you need us.</li>
           </motion.ul>
         </div>
@@ -200,19 +200,19 @@ updates, we’re here to help whenever you need us.</li>
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            <li><b>"Can someone do my assignment for me online?"</b><br></br> Absolutely! Our <b>Do My Assignment for Me online</b> service ensures that your academic
+            <li><b>&#34;Can someone do my assignment for me online?&#34;</b><br></br> Absolutely! Our <b>Do My Assignment for Me online</b> service ensures that your academic
 tasks are completed by experienced writers. You can trust our team to handle your
 assignments professionally, saving you time and reducing stress.</li>
-<li><b> "What are the best assignment help websites?"</b><br></br> The best assignment help websites, like ours, offer personalized assistance, timely delivery,
+<li><b>&#34;What are the best assignment help websites?&#34;</b><br></br> The best assignment help websites, like ours, offer personalized assistance, timely delivery,
 and work that adheres to your requirements. Look for a service that provides a diverse range
 of subjects, guarantees plagiarism-free content, and has a transparent pricing structure.</li>
-<li><b>"What makes our assignment writing help in California stand out?"</b><br></br> Our <b>top assignment help services in California</b> stand out because of our expert writers,
+<li><b>&#34;What makes our assignment writing help in California stand out?&#34;</b><br></br> Our <b>top assignment help services in California</b> stand out because of our expert writers,
 commitment to originality, affordable pricing, and 24/7 customer support. We focus on
 delivering quality work that is tailored to your specific academic needs.</li>
-<li><b>"Do you offer help with all subjects?"</b><br></br> Yes, we cover a wide variety of subjects. From <b>marketing assignment help to engineering</b>
+<li><b>&#34;Do you offer help with all subjects?&#34;</b><br></br> Yes, we cover a wide variety of subjects. From <b>marketing assignment help to engineering</b>
 and <b>law homework help</b>, we have experts available to assist in any subject area. This
 ensures that no matter your major or focus, we can help you with any academic task.</li>
-<li><b>"How do I know my assignment will be done correctly?"</b><br></br> Our <b>assignment experts</b> are highly qualified and experienced, holding degrees from
+<li><b>&#34;How do I know my assignment will be done correctly?&#34;</b><br></br> Our <b>assignment experts</b> are highly qualified and experienced, holding degrees from
 reputable institutions. We follow strict guidelines and double-check each paper for errors and
 plagiarism before submission. Additionally, you have the option to request revisions to
 ensure the work meets your expectations.</li>
@@ -304,7 +304,7 @@ of the rest.</li>
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.3 }}
           >
-         By choosing <b>California assignment help services</b> from Contently Writers, you're investing
+         By choosing <b>California assignment help services</b> from Contently Writers, you&#39;re investing
 in your academic future. We provide high-quality support that helps you stay on top of your
 assignments, reduce stress, and improve your grades. Let us take care of your academic
 tasks so you can focus on other important aspects of your life.
@@ -334,7 +334,7 @@ excel in those areas.
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.3 }}
           >
-          If you're seeking the <b>best assignment help in California</b>, look no further. With our
+          If you&#39;re seeking the <b>best assignment help in California</b>, look no further. With our
 affordable pricing, expert help, and guaranteed satisfaction, we are the perfect choice for
 students who need reliable, high-quality academic assistance. Don’t let assignments
 overwhelm you – contact us today for the best assignment help USA online!

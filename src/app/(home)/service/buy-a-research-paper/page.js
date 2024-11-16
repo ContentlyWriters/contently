@@ -13,44 +13,50 @@ const ResearchPaperPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#f5f7fa] to-[#ebeff5] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
-        <motion.h1
-          className="text-[#0e1c3d] text-5xl leading-tight mb-4"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 1 }}
-        >
-          Unlock Academic Excellence with Our{" "}
-          <span className="text-[#4a90e2]">Research Paper Writing Services</span>
-        </motion.h1>
-        <motion.p
-          className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.3, duration: 1 }}
-        >
-          Get expert assistance with research papers of all kinds, including case studies,
-          surveys, and analytical reports.
-        </motion.p>
-        <motion.div
-          className="mt-6"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
-            Get Started <FaArrowRight className="inline-block ml-2" />
-          </Button>
-        </motion.div>
-      </section>
+      <section className="relative bg-gradient-to-r from-[#ede6e6] to-[#ebe8e8] min-h-[44vh] flex flex-col items-center justify-center text-center p-4 shadow-lg backdrop-blur-md">
+
+  <motion.h1
+    className="text-black text-4xl sm:text-5xl font-semibold leading-tight mb-4"
+    variants={fadeInUp}
+    initial="hidden"
+    animate="visible"
+    transition={{ duration: 1 }}
+  >
+    Unlock Academic Excellence with{" "}
+    <span className="text-[#5b6cf2]">&#34;Research Paper Writing Services&#34;</span>
+  </motion.h1>
+
+  <motion.p
+    className="text-black text-base sm:text-lg max-w-3xl mx-auto leading-relaxed"
+    variants={fadeInUp}
+    initial="hidden"
+    animate="visible"
+    transition={{ delay: 0.3, duration: 1 }}
+  >
+    Invest in expertly crafted research papers designed to meet your academic needs.
+  </motion.p>
+
+  <motion.div
+    className="mt-6"
+    variants={fadeInUp}
+    initial="hidden"
+    animate="visible"
+    transition={{ delay: 0.5, duration: 1 }}
+  >
+    <a href="https://www.contentlywriters.com/">
+      <Button className="px-6 py-3 bg-[#210404] text-white font-medium rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition duration-300">
+        Get Started <FaArrowRight className="inline-block ml-2" />
+      </Button>
+    </a>
+  </motion.div>
+
+</section>
+
 
       {/* Introduction Section */}
       <section className="relative py-12 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          {/* <motion.h1
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -59,14 +65,14 @@ const ResearchPaperPage = () => {
             transition={{ duration: 0.8 }}
           >
             Unlock Academic Excellence with Our Best Research Paper Writing Services
-          </motion.h1>
+          </motion.h1> */}
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             At Contently Writers, we understand the challenges students face when writing research
 papers. Whether it&#39;s an argumentative paper, a report, a survey, an experimental analysis, a
@@ -81,7 +87,7 @@ deadlines.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            If writing your research paper is taking longer than expected and hindering your ability to
 focus on other studies, don’t worry. Our team is dedicated to delivering your assignments
@@ -93,24 +99,24 @@ us today to experience seamless academic support for your research paper needs.
 
       <section className="relative py-12 bg-white">
   <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-    <motion.h1
-      className="text-3xl font-bold mb-6 text-[#0e1c3d]"
+    <motion.h2
+      className="text-3xl font-bold mb-6 text-[#0e1c3d] border-b-2 border-gray-200"
       variants={fadeInUp}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.3 }}
     >
       Hire Writers for Custom Research Paper Writing Services Online – 100%
       Plagiarism-Free in All Formats
-    </motion.h1>
+    </motion.h2>
     <motion.p
       className="text-gray-700 mb-2 leading-relaxed"
       variants={fadeInUp}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       A research paper is a detailed, evidence-based written document that explores a particular
       topic or subject. It includes an introduction to the research problem, a review of relevant
@@ -124,7 +130,7 @@ us today to experience seamless academic support for your research paper needs.
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       We provide <b>custom research paper writing services online</b> to cater to a variety of
       formats. Our team of professional writers specializes in delivering unique, research-driven
@@ -138,7 +144,7 @@ us today to experience seamless academic support for your research paper needs.
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.3, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
       <li>
         <strong>Analytical Research Paper Assignments:</strong> Analytical papers evaluate information
@@ -177,10 +183,9 @@ valuable insights, ensuring only relevant data is included in your paper
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
-      We also provide expert research paper writing help across additional subjects, such as <b>law,
-statistics,</b> and other subjects and services. Our <b>assignment experts</b> ensure that all your
+      We also provide expert research paper writing help across additional subjects, such as <a href="https://www.contentlywriters.com/subject/law" className="text-[#5b6cf2]">Law</a>, <a href="https://www.contentlywriters.com/subject/statistics" className="text-[#5b6cf2]">Statistics</a>, and other subjects and services. Our <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]">Assignment experts</a> ensure that all your
 academic needs are met, no matter the complexity or subject matter.
     </motion.p>
   </div>
@@ -188,9 +193,9 @@ academic needs are met, no matter the complexity or subject matter.
 
 
       {/* Services We Offer Section */}
-      <section className="relative py-12 bg-white">
+      <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h3
+          {/* <motion.h3
             className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
@@ -199,7 +204,7 @@ academic needs are met, no matter the complexity or subject matter.
             transition={{ duration: 0.8 }}
           >
             Research Paper Services We Offer
-          </motion.h3>
+          </motion.h3> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
             {[
               "Analytical Research Paper",
@@ -218,7 +223,7 @@ academic needs are met, no matter the complexity or subject matter.
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                <FaBook className="text-4xl text-[#4a90e2] mb-4" />
+                {/* <FaBook className="text-4xl text-[#4a90e2] mb-4" /> */}
                 <h4 className="text-xl font-semibold mb-2">{service}</h4>
                 <p className="text-gray-600">High-quality assistance for {service.toLowerCase()}.</p>
               </motion.div>
@@ -230,24 +235,24 @@ academic needs are met, no matter the complexity or subject matter.
       {/* Process Section */}
       <section className="relative py-12 bg-[#f5f7fa]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h3
+          <motion.h2
             className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
            The Process of Our Research Paper Writing Service: Your Source for Help with
            Research Paper Assignments
-          </motion.h3>
+          </motion.h2>
           <motion.p
       className="text-gray-700 mb-2 leading-relaxed"
       variants={fadeInUp}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ delay: 0.2, duration: 0.8 }}
+      transition={{ delay: 0.1, duration: 0.3 }}
     >
      At Contently Writers, we follow a systematic and streamlined process for writing research
      papers, ensuring quality and timely delivery
@@ -258,7 +263,7 @@ academic needs are met, no matter the complexity or subject matter.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             <li><strong>Tell Us Your Needs:</strong> Begin by filling out the order form with detailed specifications for
 your research paper. Be sure to include any specific university guidelines or
@@ -279,16 +284,16 @@ and meet the highest academic standards.</li>
       {/* Why Choose Us Section */}
       <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h2
+          <motion.h3
             className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
             Why Choose Our Research Paper Writing Services?
-          </motion.h2>
+          </motion.h3>
          
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
@@ -296,7 +301,7 @@ and meet the highest academic standards.</li>
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             When you choose Contently Writers, you’re opting for the <b>best research paper writing help
 for students</b>. We are committed to delivering papers that not only meet but exceed your
@@ -308,7 +313,7 @@ academic expectations.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            Additionally, we offer <b>online research paper writing services at cheap rates</b> without
 compromising on quality. Our services are designed to accommodate a variety of student
@@ -321,7 +326,7 @@ cost concerns.
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
            If you have any questions or if there’s something missing on our site, don’t hesitate to
 contact us. Our support team is available 24/7 to assist you with any inquiries. Our support
@@ -334,7 +339,7 @@ Writers, we’re committed to making your academic journey easier and more succe
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>High-Quality Content</strong> – We prioritize academic excellence with every paper.
             </motion.li>
@@ -343,7 +348,7 @@ Writers, we’re committed to making your academic journey easier and more succe
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>Affordable Rates</strong> – Our services are competitively priced without compromising quality.
             </motion.li>
@@ -352,7 +357,7 @@ Writers, we’re committed to making your academic journey easier and more succe
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ delay: 0.6, duration: 0.8 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
             >
               <strong>24/7 Support</strong> – Our team is always available to assist you with any inquiries.
             </motion.li>
@@ -363,26 +368,26 @@ Writers, we’re committed to making your academic journey easier and more succe
        {/* Conclusion Section */}
        <section className="relative py-12 bg-[#f5f7fa]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 text-center">
-          <motion.h2
+          <motion.h4
             className="text-3xl font-bold mb-4 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
-            Ready to Craft Your Personal Statement?
-          </motion.h2>
+            Ready to Craft Your Research Paper?
+          </motion.h4>
           <motion.p
             className="text-gray-700 text-lg mb-6"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
             Let us help you make a strong impression. Get personalized, high-quality support
-            for your personal statement.
+            for your research Paper.
           </motion.p>
           <motion.div
             className="mt-4"
@@ -390,11 +395,11 @@ Writers, we’re committed to making your academic journey easier and more succe
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
-            <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+          <a href="https://www.contentlywriters.com/">   <Button className="px-6 py-3 bg-[#210404] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
-            </Button>
+            </Button> </a>
           </motion.div>
         </div>
       </section>

@@ -19,43 +19,49 @@ const DoMyAssignmentPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#f5f7fa] to-[#ebeff5] min-h-[40vh] flex flex-col items-center justify-center text-center p-6">
-        <motion.h1
-          className="text-[#0e1c3d] text-5xl leading-tight mb-4"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 1 }}
-        >
-          &#34;Do My Assignment&#34; –{" "}
-          <span className="text-[#4a90e2]">Your Academic Ally</span>
-        </motion.h1>
-        <motion.p
-          className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.3, duration: 1 }}
-        >
-          Let us take the stress off your shoulders and deliver exceptional academic work tailored to your needs.
-        </motion.p>
-        <motion.div
-          className="mt-6"
-          variants={fadeInUp}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
-            Get Started <FaArrowRight className="inline-block ml-2" />
-          </Button>
-        </motion.div>
-      </section>
+      <section className="relative bg-gradient-to-r from-[#ede6e6] to-[#ebe8e8] min-h-[44vh] flex flex-col items-center justify-center text-center p-4 shadow-lg backdrop-blur-md">
+  <motion.h1
+    className="text-[#000000] text-5xl font-semibold leading-tight mb-4"
+    variants={fadeInUp}
+    initial="hidden"
+    animate="visible"
+    transition={{ duration: 1 }}
+  >
+    Do My Assignment Online –{" "}
+    <span className="text-[#5b6cf2]">&#34;Your Academic Ally&#34;</span>
+  </motion.h1>
+
+  <motion.p
+    className="text-[#000000] text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed"
+    variants={fadeInUp}
+    initial="hidden"
+    animate="visible"
+    transition={{ delay: 0.3, duration: 1 }}
+  >
+    Let us take the stress off your shoulders and deliver exceptional academic work tailored to your needs.
+  </motion.p>
+
+  <motion.div
+    className="mt-6"
+    variants={fadeInUp}
+    initial="hidden"
+    animate="visible"
+    transition={{ delay: 0.5, duration: 1 }}
+  >
+    <a href="https://www.contentlywriters.com/">
+      <Button className="px-6 py-3 bg-[#210404] text-white font-medium rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
+        Get Started <FaArrowRight className="inline-block ml-2" />
+      </Button>
+    </a>
+  </motion.div>
+</section>
+
+
 
       {/* Introduction Section */}
       <section className="relative py-12 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h1
+          {/* <motion.h1
             className="text-3xl font-bold mb-6 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
@@ -64,7 +70,7 @@ const DoMyAssignmentPage = () => {
             transition={{ duration: 0.8 }}
           >
             Stuck? We Can Help You &#34;Do My Assignment Online&#34; in No Time!
-          </motion.h1>
+          </motion.h1> */}
           <motion.p
             className="text-gray-700 mb-2 leading-relaxed"
             variants={fadeInUp}
@@ -73,7 +79,7 @@ const DoMyAssignmentPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-             It&#39;s not always easy to acknowledge that an assignment is overwhelming. Even if a few extra days might resolve the problem, time is limited, and your agenda is packed. Your classmates are preoccupied with their own assignments, and teachers can only provide brief assistance between courses. This is when you may think, &#34;I wish someone with the right expertise could do my assignment for me.&#34; When you&#39;re thinking, &#39;I need to pay someone to do my assignment online,&#39; Contently Writers is here to deliver top-quality results. Our  <a href="https://www.contentlywriters.com/"><strong>best assignment services</strong></a> guarantee fast, reliable, and high-quality assistance, making your academic life easier.
+             It&#39;s not always easy to acknowledge that an assignment is overwhelming. Even if a few extra days might resolve the problem, time is limited, and your agenda is packed. Your classmates are preoccupied with their own assignments, and teachers can only provide brief assistance between courses. This is when you may think, &#34;I wish someone with the right expertise could do my assignment for me.&#34; When you&#39;re thinking, &#39;I need to pay someone to do my assignment online,&#39; Contently Writers is here to deliver top-quality results. Our  <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]">best assignment services</a> guarantee fast, reliable, and high-quality assistance, making your academic life easier.
           </motion.p>
         </div>
       </section>
@@ -171,7 +177,7 @@ const DoMyAssignmentPage = () => {
       {/* Service Icons Section */}
       <section className="relative py-6 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
-          <motion.h3
+          {/* <motion.h3
             className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2"
             variants={fadeInUp}
             initial="hidden"
@@ -180,7 +186,7 @@ const DoMyAssignmentPage = () => {
             transition={{ duration: 0.8 }}
           >
             Why Choose Our Service?
-          </motion.h3>
+          </motion.h3> */}
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-2">
             {/* Animated Icons with Hover Effects */}
@@ -337,32 +343,33 @@ const DoMyAssignmentPage = () => {
           <p className="text-gray-700  mb-3">
           Ensuring the quality of your assignment starts with researching trustworthy services like Contently Writers. Begin by reading reviews and testimonials, checking writing samples, and verifying the qualifications of the writers. Clear communication of your requirements will help ensure that the writer understands your expectations. Most reliable services, including ours, offer free revisions to guarantee satisfaction.</p>         
           <p className="text-gray-700  mb-3">
-          For more complex needs, such as <strong><a href="https://www.contentlywriters.com/service/buy-a-research-paper">research papers</a></strong>,<strong><a href="https://www.contentlywriters.com/service/coursework-writing">coursework writing</a></strong>, or <strong><a href="https://www.contentlywriters.com/service/dissertation">dissertation help</a></strong>, make sure to choose a service with proven expertise in those areas. Contently Writers not only excels in delivering high-quality assignments but also ensures that your data is secured with SafeAssign-compliant services.  </p>
+          For more complex needs, such as <a href="https://www.contentlywriters.com/service/buy-a-research-paper" className="text-[#5b6cf2]">research papers</a>,<a href="https://www.contentlywriters.com/service/coursework-writing" className="text-[#5b6cf2]" >coursework writing</a>, or <a href="https://www.contentlywriters.com/service/dissertation" className="text-[#5b6cf2]">dissertation help</a>, make sure to choose a service with proven expertise in those areas. Contently Writers not only excels in delivering high-quality assignments but also ensures that your data is secured with SafeAssign-compliant services.  </p>
         </div>
       </section>
 
       {/* Conclusion Section */}
       <section className="relative py-12 bg-[#f5f7fa]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 text-center">
-          <motion.h2
+          <motion.h4
             className="text-3xl font-bold mb-4 text-[#0e1c3d]"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           >
-            Ready to Get Started?
-          </motion.h2>
+            Ready to Craft Your Assignment?
+          </motion.h4>
           <motion.p
             className="text-gray-700 text-lg mb-6"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
-            Let us handle your assignments and deliver quality work. Your success is just a click away!
+            Let us help you make a strong impression. Get personalized, high-quality support
+            for your assignment.
           </motion.p>
           <motion.div
             className="mt-4"
@@ -370,11 +377,11 @@ const DoMyAssignmentPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
           >
-            <Button className="px-6 py-3 bg-[#4a90e2] text-white rounded-full hover:bg-[#357abd] transition duration-300">
+          <a href="https://www.contentlywriters.com/">  <Button className="px-6 py-3 bg-[#210404] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
               Order Now <FaArrowRight className="inline-block ml-2" />
-            </Button>
+            </Button></a>
           </motion.div>
         </div>
       </section>

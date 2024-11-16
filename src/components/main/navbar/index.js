@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const items = [
   { id: 1, name: "Home", path: "/" },
-  { id: 2, name: "Service", path: "/service",
+  { id: 2, name: "Service", path: "service",
     subItems: [
       { id: 21, name: "Do my assignment", path: "/service/do-my-assignment"},
       { id: 22, name: "Personal Statement", path: "/service/personal-statement"},

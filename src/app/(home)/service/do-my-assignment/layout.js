@@ -1,10 +1,6 @@
 import Navbar from "@/components/main/navbar";
 import Footer from "@/components/main/footer";
-<<<<<<< HEAD
 import GuestRoute from "@/routes/guestRoute";
-=======
-
->>>>>>> fb5ab9f44a44c653818d4eab6140a0fd922c94e6
 import Head from "next/head";
 
 export const metadata = {
@@ -13,7 +9,7 @@ export const metadata = {
   keywords: "assignment help in London , assignment writing help in London , best assignment helper in London , London assignment help services , Professional assignment Writers London , Top assignment help in London , Affordable assignment writing London "
 };
 
-export default function LondonLayout({ children }) {
+export default function DomyassignmentLayout({ children }) {
   return (
     <GuestRoute>
       <div>

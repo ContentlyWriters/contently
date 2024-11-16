@@ -7,41 +7,25 @@ export default function LargeNavbar({ items }) {
   const { isLoading, isAuthenticated, setIsAuthenticated } = useUserContext();
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSubDropdown, setOpenSubDropdown] = useState(null);
-  const [dropdownTimeout, setDropdownTimeout] = useState(null);
-  const [subDropdownTimeout, setSubDropdownTimeout] = useState(null);
 
   // Handle first-level dropdown
   const handleMouseEnter = (id) => {
-    if (dropdownTimeout) {
-      clearTimeout(dropdownTimeout);
-      setDropdownTimeout(null);
-    }
     setOpenDropdown(id); 
   };
 
-  const handleMouseLeave = () => {
-    const timeout = setTimeout(() => {
-      setOpenDropdown(null); 
-
-    }, 450);
-
-    setDropdownTimeout(timeout);
+  const handleMouseLeave = (id) => {
+    if (openDropdown === id) {
+      setOpenDropdown(null); // Close the dropdown if the mouse leaves the parent
+    }
   };
 
   // Handle second-level submenu
   const handleSubMenuMouseEnter = (id) => {
-    if (subDropdownTimeout) {
-      clearTimeout(subDropdownTimeout);
-      setSubDropdownTimeout(null);
-    }
     setOpenSubDropdown(id); 
   };
 
   const handleSubMenuMouseLeave = () => {
-    const timeout = setTimeout(() => {
-      setOpenSubDropdown(null); 
-    }, 8000);
-    setSubDropdownTimeout(timeout);
+    setOpenSubDropdown(null); 
   };
 
   const handleLogout = () => {
@@ -63,14 +47,13 @@ export default function LargeNavbar({ items }) {
             key={item.id}
             className="relative"
             onMouseEnter={() => handleMouseEnter(item.id)}
-            onMouseLeave={handleMouseLeave}
+            onMouseLeave={() => handleMouseLeave(item.id)}
           >
             <Link href={item.path} className="px-2">
               <Button
                 size="sm"
                 variant="link"
                 className="text-lg font-normal hover:text-[#5b6cf2] transition-colors ease-in-out duration-300"
-              
               >
                 {item.name}
               </Button>
@@ -78,13 +61,13 @@ export default function LargeNavbar({ items }) {
 
             {/* Dropdown for Service or Subject */}
             {item.subItems && openDropdown === item.id && (
-              <div className="absolute top-full left-0 mt-2 pb-1 bg-white shadow-md rounded-lg w-64 border border-gray-300 no-underline">
+              <div className="absolute top-full left-0  pb-1 bg-white shadow-md rounded-lg w-60 border border-gray-300 no-underline">
                 {item.subItems.map((subItem) => (
                   <div
                     key={subItem.id}
                     className="relative"
                     onMouseEnter={() => handleSubMenuMouseEnter(subItem.id)}
-                    onMouseLeave={handleSubMenuMouseLeave} // Add delay only when mouse leaves submenu
+                    onMouseLeave={handleSubMenuMouseLeave} 
                   >
                     <Link href={subItem.path}>
                       <Button
@@ -99,7 +82,7 @@ export default function LargeNavbar({ items }) {
 
                     {/* Second-level submenu */}
                     {subItem.subItems && openSubDropdown === subItem.id && (
-                      <div className="absolute top-0 left-full mt-2 ml-2 pb-2 bg-white shadow-md rounded-lg w-64 border border-gray-300">
+                      <div className="absolute top-0 left-full mt-2  pb-2 bg-white shadow-md rounded-lg w-60 border border-gray-300">
                         {subItem.subItems.map((secondSubItem) => (
                           <Link key={secondSubItem.id} href={secondSubItem.path}>
                             <Button

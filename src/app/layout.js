@@ -7,11 +7,11 @@ import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Contently Writers",
-  description:
-    "Contently Writers: Excellence within your budget! Offering a wide range of academic content writing services to suit any budget. Join our responsible and responsive community network.",
-};
+// export const metadata = {
+//   title: "Contently Writers",
+//   description:
+//     "Contently Writers: Excellence within your budget! Offering a wide range of academic content writing services to suit any budget. Join our responsible and responsive community network.",
+// };
 
 export default function RootLayout({ children }) {
   return (

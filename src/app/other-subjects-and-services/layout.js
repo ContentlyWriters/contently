@@ -6,17 +6,13 @@ import Head from "next/head";
 export const metadata = {
   title: "Assignment Help in London | Professional Writers at Your Service",
   description:'Looking for assignment help in London? Get custom-written assignments from experienced writers. Affordable and trusted by thousands of students.',
-  keywords: "assignment help in London , assignment writing help in London , best assignment helper in London , London assignment help services , Professional assignment Writers London , Top assignment help in London , Affordable assignment writing London ",
-canonical: "https://www.contentlywriters.com/other-subjects-and-services"
+  keywords: "assignment help in London , assignment writing help in London , best assignment helper in London , London assignment help services , Professional assignment Writers London , Top assignment help in London , Affordable assignment writing London "
 };
 
 export default function OthersubjectLayout({ children }) {
   return (
     <GuestRoute>
       <div>
-      <Head>
-        <link rel="canonical" href={metadata.canonical} />
-        </Head>
         <Navbar />
         <div className="mt-[80px]">{children}</div>
         <Footer />

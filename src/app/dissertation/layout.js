@@ -6,17 +6,13 @@ import Head from "next/head";
 export const metadata = {
   title: "Trusted Dissertation Writing Help Online | Boost Your Grades",
   description:'Need dissertation help? Our online service offers professional support for every stage, from research to editing. Achieve excellence with our expert team.',
-  keywords: " Dissertation writing help online , best Dissertation writing services online , Help with dissertation assignments writing , Custom dissertation writing service online , Best dissertation writing help for students",
-canonical: "https://www.contentlywriters.com/dissertation"
+  keywords: " Dissertation writing help online , best Dissertation writing services online , Help with dissertation assignments writing , Custom dissertation writing service online , Best dissertation writing help for students"
 };
 
 export default function DissertationLayout({ children }) {
   return (
     <GuestRoute>
       <div>
-      <Head>
-        <link rel="canonical" href={metadata.canonical} />
-        </Head>
         <Navbar />
         <div className="mt-[80px]">{children}</div>
         <Footer />

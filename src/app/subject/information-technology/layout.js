@@ -8,8 +8,7 @@ export const metadata = {
   description:
     "Get expert Information Technology Assignment Help for Python, IT security, and coding. Reliable support to enhance your academic performance.",
   keywords:
-    "Information Technology Assignment Help, Python programming assignment help, Javascript assignment help from experts, best IT security assignment help online, R programming assignment help, c programming assignment help",
-  canonical: "https://www.contentlywriters.com/information-technology",
+    "Information Technology Assignment Help, Python programming assignment help, Javascript assignment help from experts, best IT security assignment help online, R programming assignment help, c programming assignment help"
 };
 
 

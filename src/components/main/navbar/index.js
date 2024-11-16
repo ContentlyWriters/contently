@@ -39,13 +39,13 @@ const items = [
 
   { id: 3, name: "Subject", path: "subjects", 
     subItems: [
-      { id: 32, name: "Management", path: "/subject/management" },
-      {id: 33,  name: "Accounting",  path: "/subject/accounting" },
+      { id: 32, name: "Management", path: "/subject/management"},
+      { id: 33, name: "Accounting", path: "/subject/accounting"},
       { id: 34, name: "Engineering Studies", path: "/subject/engineering-studies"},
       { id: 35, name: "Information Technology", path: "/subject/information-technology"},
       { id: 36, name: "Law", path: "/subject/law"},
       { id: 37, name: "Statistics", path: "/subject/statistics"},
-      { id: 38, name: "General Subjects", path: "/subject/general-subjects"},
+      { id: 38, name: "General Subjects", path: "/subject/general-subjects"}
     ] 
   },
   { id: 4, name: "Blog", path: "/blog" },

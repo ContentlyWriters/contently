@@ -9,22 +9,24 @@ import Link from "next/link";
 
 const items = [
   { id: 1, name: "Home", path: "/" },
-  { id: 2, name: "Service", path: "service",
+  { id: 2, name: "Service", path: "/service",
     subItems: [
       { id: 21, name: "Do my assignment", path: "/service/do-my-assignment"},
       { id: 22, name: "Personal Statement", path: "/service/personal-statement"},
       { id: 23, name: "Buy a research paper", path: "/service/buy-a-research-paper"},
+      { id: 24, name: "Subject Notes", path: "/service/subject-notes"},
+      { id: 25, name: "Specific Tasks/project", path: "/service/specific-tasks-project"},
       { id: 26, name: "Coursework Writing", path: "/service/coursework-writing"},
       { id: 27, name: "Dissertation", path: "/service/dissertation"},
       { id: 28, name: "Essay Services", path: "/service/essay-service"},
       { id: 29, name: "Homework", path: "/service/homework"},
-      { id: 30, name: "Assignment in UK", path: "",
+      { id: 30, name: "Assignment in UK", path: "/service/assignment-in-uk",
         subItems: [
           {id:3011, name: "Oxford" , path: "/service/assignment-in-uk/oxford", },
           {id:3022, name: "London" , path: "/service/assignment-in-uk/london", }
         ]
        },
-      { id: 31, name: "Assignment in USA", path: "",
+      { id: 31, name: "Assignment in USA", path: "/service/assignment-in-usa",
         subItems: [
           {id:3111, name: "California" , path: "/service/assignment-in-usa/california", }
         ]
@@ -35,7 +37,7 @@ const items = [
   },
 
 
-  { id: 3, name: "Subject", path: "", 
+  { id: 3, name: "Subject", path: "subjects", 
     subItems: [
       { id: 32, name: "Management", path: "/subject/management" },
       {id: 33,  name: "Accounting",  path: "/subject/accounting" },

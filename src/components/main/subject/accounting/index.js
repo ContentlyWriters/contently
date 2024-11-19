@@ -1,7 +1,7 @@
 "use client";
 import { FaCheckCircle } from "react-icons/fa";
 import { MdAssignment } from "react-icons/md";
-import { motion } from "framer-motion"; // For subtle animations
+import { motion } from "framer-motion"; 
 import { Button } from "@/components/ui/button";
 
 

@@ -1,7 +1,7 @@
 import Navbar from "@/components/main/navbar";
 import Footer from "@/components/main/footer";
 import GuestRoute from "@/routes/guestRoute";
-import Head from "next/head";
+
 
 export const metadata = {
   title: "Best Accounting Assignment Help Online | Fast, Accurate & Affordable",
@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function AccountingLayout({ children }) {
   return (
-    <GuestRoute>
+    <GuestRoute allowAuthenticated={true}>
       <div>
         <Navbar />
         <div className="mt-[80px]">{children}</div>

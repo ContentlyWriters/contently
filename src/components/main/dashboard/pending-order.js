@@ -130,15 +130,9 @@ export default function PendingOrder({ orders }) {
               <TableHead className="text-center">Amount</TableHead>
               <TableHead className="text-center">Order Date</TableHead>
               <TableHead className="text-center">Order File</TableHead>
-              
-              {currentTab === "Completed" && (
-                <>
-                  <TableHead className="text-center">Result File Link</TableHead>
-                  <TableHead className="text-center">Give Feedback</TableHead>
-                </>
-              )}
-              
-              </TableRow>
+              <TableHead className="text-center">Result File Link</TableHead>
+              <TableHead className="text-center">Give Feedback</TableHead>
+            </TableRow>
           </TableHeader>
           <TableBody>
             {orders.map((order, index) => (

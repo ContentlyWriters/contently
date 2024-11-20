@@ -10,7 +10,7 @@ import axios from "axios";
 import { axiosInstance } from "@/lib/axios";
 export default function DashBoard() {
   const [orders, setOrders] = useState([]);
-  const [currentTab, setCurrentTab] = useState("Pending");
+  const [currentTab, setCurrentTab] = useState("InProgress");
   const getOrders = async () => {
     try {
       const response = await axiosInstance.get(

@@ -41,19 +41,19 @@ export default function DashBoard() {
           <TabsList className="bg-transparent ">
             <TabsTrigger
               value="recent"
-              onClick={() => setCurrentTab("Pending")}
+              onClick={() => setCurrentTab("InProgress")}
             >
               Recent
             </TabsTrigger>
             <TabsTrigger
               value="finished"
-              onClick={() => setCurrentTab("InProgress")}
+              onClick={() => setCurrentTab("Completed")}
             >
               Finished
             </TabsTrigger>
             <TabsTrigger
               value="cancelled"
-              onClick={() => setCurrentTab("cancel")}
+              onClick={() => setCurrentTab("Cancelled")}
             >
               Cancelled
             </TabsTrigger>

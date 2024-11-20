@@ -325,7 +325,7 @@ export default function Banner() {
         // "image": "https://example.com/your_logo",
         order_id: paymentOrderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         handler: async function (response) {
-          await handlePaymentStatus(orderId, "success");
+          await handlePaymentStatus(orderId, "InProgress");
 
           toast.success("Order create Successful!", {
             position: "top-right",
@@ -351,7 +351,7 @@ export default function Banner() {
       var rzp1 = await new Razorpay(options);
       rzp1.on("payment.failed", async function (response) {
 
-        await handlePaymentStatus(orderId, "cancel");
+        await handlePaymentStatus(orderId, "Cancelled");
         
         toast.error("Payment failed!", {
           position: "top-right",

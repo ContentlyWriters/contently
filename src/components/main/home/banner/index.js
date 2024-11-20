@@ -266,8 +266,8 @@ export default function Banner() {
         orderId: orderId,
         paymentStatus: payStatus, // Ensure this matches the order you want to update
         paymentOrder: {
-          amountPaid: amountPaid,
-          amountDue: amountDue
+          amountPaid: paidAmount,
+          amountDue: dueAmount
         }
       };
       let formData = new FormData();

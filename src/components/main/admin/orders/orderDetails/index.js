@@ -148,13 +148,23 @@ export default function AdminOrderDetailScreen({
                 Download
               </a>
             </div>
+            <div>
+              <strong>Response File Link:</strong>{" "}
+              <a
+                href={orderDetail.orderResponseFileLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download
+              </a>
+            </div>
             {orderDetail.paymentOrder && (
               <>
                 <div>
                   <strong>Payment Status:</strong>{" "}
                   {orderDetail.paymentOrder.status}
                 </div>
-                <div>
+                {/* <div>
                   <strong>Payment Amount:</strong>{" "}
                   {orderDetail.paymentOrder.amount}{" "}
                   {orderDetail.paymentOrder.currency}
@@ -166,7 +176,7 @@ export default function AdminOrderDetailScreen({
                 <div>
                   <strong>Amount Due:</strong>{" "}
                   {orderDetail.paymentOrder.amountDue}
-                </div>
+                </div> */}
                 <div>
                   <strong>Order Receipt:</strong>{" "}
                   {orderDetail.paymentOrder.orderReceipt}

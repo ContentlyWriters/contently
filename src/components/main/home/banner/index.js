@@ -298,7 +298,7 @@ export default function Banner() {
       }
       if (!formValues.topic) error.topic = "Please enter topic";
       if (!formValues.orderFile) error.orderFile = "Select  enter File";
-      if (!formValues.comment) error.comment = "Please enter comment";
+      // if (!formValues.comment) error.comment = "Please enter comment";
       if (!formValues.deadline) error.deadline = "Please enter deadline";
       if (!formValues.subject) error.subject = "Please enter subject";
       setError(error);

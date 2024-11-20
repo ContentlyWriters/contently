@@ -267,9 +267,11 @@ export default function Banner() {
         paymentStatus: payStatus, // Ensure this matches the order you want to update
         paymentOrder: {
           amountPaid: paidAmount,
-          amountDue: dueAmount
+          amountDue: dueAmount,
+          status: payStatus
         }
       };
+      console.log("paymentStatus :" + payStatus + " status "+ status)
       let formData = new FormData();
       formData.append("status", status);
       const editOrder = await axiosInstance.put(
@@ -278,7 +280,7 @@ export default function Banner() {
         {
           headers: {
             Authorization: `${localStorage.getItem("token")}`,
-            "Content-Type": "multipart/form-data",
+            "Content-Type": "application/json",
           },
         }
       );

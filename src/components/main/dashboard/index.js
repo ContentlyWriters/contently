@@ -51,18 +51,19 @@ export default function DashBoard() {
             >
               Finished
             </TabsTrigger>
-            <TabsTrigger
+            {/* <TabsTrigger
               value="cancelled"
               onClick={() => setCurrentTab("Cancelled")}
             >
               Cancelled
-            </TabsTrigger>
+            </TabsTrigger> */}
           </TabsList>
           <TabsContent value="recent">
             <PendingOrder orders={orders} />
           </TabsContent>
           <TabsContent value="finished">
             <PendingOrder orders={orders} />
+            
             {/* <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
               <Image
                 src={img}
@@ -81,7 +82,7 @@ export default function DashBoard() {
               </Link>
             </div> */}
           </TabsContent>
-          <TabsContent value="cancelled">
+          {/* <TabsContent value="cancelled">
             <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
               <Image
                 src={img}
@@ -99,7 +100,7 @@ export default function DashBoard() {
                 </Button>
               </Link>
             </div>
-          </TabsContent>
+          </TabsContent> */}
         </Tabs>
       </div>
     </>

@@ -130,6 +130,7 @@ export const AuthProvider = ({ children }) => {
     if (!token) {
       token = Cookies.get("token"); // Try to retrieve the token from cookies
     }
+    console.log("token from cookie " + Cookies.get("token"));
     console.log(token + "Harsh")
     if (!token) {
       setIsAuthenticated(false);

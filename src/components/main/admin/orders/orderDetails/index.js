@@ -135,6 +135,9 @@ export default function AdminOrderDetailScreen({
               <strong>Rating:</strong> {orderDetail.rating}
             </div>
             <div>
+              <strong>Review:</strong> {orderDetail.review}
+            </div>
+            <div>
               <strong>Order Placed Timestamp:</strong>{" "}
               {orderDetail.orderPlacedTimestamp}
             </div>

@@ -257,6 +257,10 @@ export default function Banner() {
         amountPaid: 0;
         amountDue: amount;
         payStatus: 'Failed'
+      }else if(status == 'InProgress'){
+        amountPaid: amount;
+        amountDue: 0;
+        payStatus: 'Success'
       }
       const updatedOrder = {
         orderId: orderId,

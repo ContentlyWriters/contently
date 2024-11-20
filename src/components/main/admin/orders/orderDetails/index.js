@@ -151,16 +151,6 @@ export default function AdminOrderDetailScreen({
                 Download
               </a>
             </div>
-            <div>
-              <strong>Response File Link:</strong>{" "}
-              <a
-                href={orderDetail.orderResponseFileLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download
-              </a>
-            </div>
             {orderDetail.paymentOrder && (
               <>
                 <div>
@@ -184,6 +174,31 @@ export default function AdminOrderDetailScreen({
                   <strong>Order Receipt:</strong>{" "}
                   {orderDetail.paymentOrder.orderReceipt}
                 </div>
+                {/* <div>
+                  <strong>Response File Link:</strong>{" "}
+                  <a
+                    href={orderDetail.orderResponseFileLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Download
+                  </a>  
+                </div> */}
+                <div>
+                  <strong>Response File Link:</strong>{" "}
+                  {orderDetail.orderResponseFileLink ? (
+                    <a
+                      href={orderDetail.orderResponseFileLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Download
+                    </a>
+                  ) : (
+                    "File not Uploaded"
+                  )}
+                </div>
+
                 <div className="flex justify-between ">
                   <div className="relative w-auto">
                     <label

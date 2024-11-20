@@ -59,10 +59,10 @@ export default function DashBoard() {
             </TabsTrigger> */}
           </TabsList>
           <TabsContent value="recent">
-            <PendingOrder orders={orders} />
+            <PendingOrder orders={orders} currentTab={currentTab} />
           </TabsContent>
           <TabsContent value="finished">
-            <PendingOrder orders={orders} />
+            <PendingOrder orders={orders} currentTab={currentTab} />
             
             {/* <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
               <Image

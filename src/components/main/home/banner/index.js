@@ -250,13 +250,27 @@ export default function Banner() {
     handleMakeOrder(data);
   };
 
-  const handlePaymentStatus = async (orderId, status) => {
+  const handlePaymentStatus = async (orderId, status,amount) => {
     try {
+      let paidAmount,dueAmount,payStatus;
+      if(status == 'Cancelled'){
+        amountPaid: 0;
+        amountDue: amount;
+        payStatus: 'Failed'
+      }
+      const updatedOrder = {
+        orderId: orderId,
+        paymentStatus: payStatus, // Ensure this matches the order you want to update
+        paymentOrder: {
+          amountPaid: amountPaid,
+          amountDue: amountDue
+        }
+      };
       let formData = new FormData();
       formData.append("status", status);
       const editOrder = await axiosInstance.put(
         `order/${orderId}`,
-        formData,
+        updatedOrder,
         {
           headers: {
             Authorization: `${localStorage.getItem("token")}`,
@@ -325,7 +339,7 @@ export default function Banner() {
         // "image": "https://example.com/your_logo",
         order_id: paymentOrderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         handler: async function (response) {
-          await handlePaymentStatus(orderId, "InProgress");
+          await handlePaymentStatus(orderId, "InProgress",amount);
 
           toast.success("Order create Successful!", {
             position: "top-right",
@@ -351,7 +365,7 @@ export default function Banner() {
       var rzp1 = await new Razorpay(options);
       rzp1.on("payment.failed", async function (response) {
 
-        await handlePaymentStatus(orderId, "Cancelled");
+        await handlePaymentStatus(orderId, "Cancelled",amount);
         
         toast.error("Payment failed!", {
           position: "top-right",

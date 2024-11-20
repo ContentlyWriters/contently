@@ -253,34 +253,35 @@ export default function Banner() {
   const handlePaymentStatus = async (orderId, status,amount) => {
     try {
       let paidAmount,dueAmount,payStatus;
-      if(status == 'Cancelled'){
-        paidAmount: 0;
-        dueAmount: amount;
-        payStatus: 'Failed'
-      }else if(status == 'InProgress'){
-        paidAmount: amount;
-        dueAmount: 0;
-        payStatus: 'Success'
+      if (status === 'Cancelled') {
+        paidAmount = 0;
+        dueAmount = amount;
+        payStatus = 'Failed';
+      } else if (status === 'InProgress') {
+          paidAmount = amount;
+          dueAmount = 0;
+          payStatus = 'Success';
       }
-      const updatedOrder = {
-        orderId: orderId,
-        paymentStatus: payStatus, // Ensure this matches the order you want to update
-        paymentOrder: {
-          amountPaid: paidAmount,
-          amountDue: dueAmount,
-          status: payStatus
-        }
-      };
       console.log("paymentStatus :" + payStatus + " status "+ status)
       let formData = new FormData();
       formData.append("status", status);
+      formData.append("paymentStatus",payStatus)
+      formData.append(
+        "paymentOrder",
+        JSON.stringify({
+            paymentOrderId: "order_PNa5ALp4uiJrnB",
+            amountPaid: paidAmount,
+            amountDue: dueAmount,
+            status: payStatus
+        })
+      );
       const editOrder = await axiosInstance.put(
         `order/${orderId}`,
         updatedOrder,
         {
           headers: {
             Authorization: `${localStorage.getItem("token")}`,
-            "Content-Type": "application/json",
+            "Content-Type": "multipart/form-data",
           },
         }
       );

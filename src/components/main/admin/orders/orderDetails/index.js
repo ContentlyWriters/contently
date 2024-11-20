@@ -75,7 +75,7 @@ export default function AdminOrderDetailScreen({
 
       let formData = new FormData();
       formData.append("orderResponseFile", file);
-
+      formData.append("status", "Completed");
       const response = await axiosInstance.put(
         `order/${orderDetail.orderId}`,
         formData,

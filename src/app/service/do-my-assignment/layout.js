@@ -1,7 +1,7 @@
 import Navbar from "@/components/main/navbar";
 import Footer from "@/components/main/footer";
 import GuestRoute from "@/routes/guestRoute";
-import Head from "next/head";
+
 
 export const metadata = {
   title: "Assignment Help in London | Professional Writers at Your Service",

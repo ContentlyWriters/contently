@@ -25,9 +25,9 @@ const ManagementPage = () => {
   return (
     <div className=" text-[#333] font-sans">
     {/* Hero Section with Animation */}
-    <div className="bg-[#020035] py-8 text-center relative overflow-hidden">
+    <div className="bg-[#e9f2f2] py-8 text-center relative overflow-hidden">
       <motion.h1
-        className="text-white sm:text-[40px] lg:text-[50px] text-[30px] pt-20 mx-auto font-semibold"
+        className="text-grey sm:text-[40px] lg:text-[50px] text-[30px] pt-20 mx-auto font-semibold"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -35,7 +35,7 @@ const ManagementPage = () => {
         Best Accounting Assignment Help online
       </motion.h1>
       <motion.p
-        className="text-white text-[25px] pt-2 mb-8 mx-auto"
+        className="text-[#191936] text-[25px] pt-2 mb-8 mx-auto"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5, duration: 1 }}

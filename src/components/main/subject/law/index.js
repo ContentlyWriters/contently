@@ -11,11 +11,11 @@ const LawPage = () => {
   return (
     <div>
       {/* Header Section */}
-      <div className="bg-[#2c3e50] py-8">
-        <h1 className="text-white sm:text-[40px] lg:text-[50px] text-[30px] text-center pt-20 mx-auto font-semibold">
+      <div className="bg-[#e9f2f2] py-8">
+        <h1 className="text-grey sm:text-[40px] lg:text-[50px] text-[30px] text-center pt-20 mx-auto font-semibold">
           Law Assignment Help
         </h1>
-        <p className="text-white text-[25px] text-center pt-2 mb-8 mx-auto">
+        <p className="text-[#191936] text-[25px] text-center pt-2 mb-8 mx-auto">
           Expert assistance for law students worldwide.
         </p>
         <div className="h-[7px] w-[150px] bg-[#e74c3c] mx-auto"></div>

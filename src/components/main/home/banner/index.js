@@ -277,7 +277,7 @@ export default function Banner() {
       );
       const editOrder = await axiosInstance.put(
         `order/${orderId}`,
-        updatedOrder,
+        formData,
         {
           headers: {
             Authorization: `${localStorage.getItem("token")}`,

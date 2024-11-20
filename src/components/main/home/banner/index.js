@@ -254,12 +254,12 @@ export default function Banner() {
     try {
       let paidAmount,dueAmount,payStatus;
       if(status == 'Cancelled'){
-        amountPaid: 0;
-        amountDue: amount;
+        paidAmount: 0;
+        dueAmount: amount;
         payStatus: 'Failed'
       }else if(status == 'InProgress'){
-        amountPaid: amount;
-        amountDue: 0;
+        paidAmount: amount;
+        dueAmount: 0;
         payStatus: 'Success'
       }
       const updatedOrder = {

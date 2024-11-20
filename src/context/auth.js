@@ -127,10 +127,7 @@ export const AuthProvider = ({ children }) => {
 
     // Check if the token exists in localStorage or cookies
     let token = localStorage.getItem("token");
-    if (!token) {
-      token = Cookies.get("token"); // Try to retrieve the token from cookies
-    }
-    console.log("token from cookie " + Cookies.get("token"));
+    token = token || Cookies.get("token");
     console.log(token + "Harsh")
     if (!token) {
       setIsAuthenticated(false);

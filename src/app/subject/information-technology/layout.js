@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function InformationLayout({ children }) {
   return (
-    <GuestRoute>
+    <GuestRoute allowAuthenticated={true}>
       <div>
         <Head>
           <link rel="canonical" href={metadata.canonical} />

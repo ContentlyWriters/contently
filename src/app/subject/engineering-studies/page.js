@@ -1,7 +1,7 @@
 import React from "react";
-import engineeringScreen from "@/components/main/subject/engineering-studies";
+import EngineeringScreen from "@/components/main/subject/engineering-studies";
 
 
-export default function AccountingPage() {
-  return <engineeringScreen />;
+export default function engineeringPage() {
+  return <EngineeringScreen />;
 }

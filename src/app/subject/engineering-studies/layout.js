@@ -9,7 +9,7 @@ export const metadata = {
   keywords: "best accounting assignment help online , do my accounting assignment for me ,help with financial accounting assignment , expert accounting assignment doers , top managerial accounting assignment help"
 };
 
-export default function AccountingLayout({ children }) {
+export default function EngineeringLayout({ children }) {
   return (
     <GuestRoute allowAuthenticated={true}>
       <div>

@@ -147,7 +147,7 @@ export default function LargeNavbar({ items }) {
               {profileDropdown && (
                 <div className="absolute top-full right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
                   <p className="text-sm font-medium text-gray-700">
-                    {user?.firstName || "User"}
+                    {user?.firstName || "User"}  {user?.lastName || "User"}
                   </p>
                   <p className="text-sm font-medium text-gray-700">
                     {user?.email || "Email not available"}

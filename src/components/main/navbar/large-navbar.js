@@ -9,7 +9,7 @@ export default function LargeNavbar({ items, user }) {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSubDropdown, setOpenSubDropdown] = useState(null);
   const [accountDropdown, setAccountDropdown] = useState(false);
-  const [profileDropdown, setProfileDropdown] = useState(false); // Added state
+  const [profileDropdown, setProfileDropdown] = useState(false);
 
   // Handle first-level dropdown
   const handleMouseEnter = (id) => {
@@ -120,6 +120,16 @@ export default function LargeNavbar({ items, user }) {
           </Button>
         ) : isAuthenticated ? (
           <>
+            {/* Dashboard Button */}
+            <Link href="/dashboard">
+              <Button
+                variant="outline"
+                className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
+              >
+                Dashboard
+              </Button>
+            </Link>
+
             {/* Profile Dropdown */}
             <div
               className="relative"
@@ -130,7 +140,7 @@ export default function LargeNavbar({ items, user }) {
                 variant="outline"
                 className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
               >
-                Welcome {user?.name || "User"}
+                Welcome {user?.firstName || "User"}
               </Button>
               {profileDropdown && (
                 <div className="absolute top-full right-0 bg-white shadow-md rounded-lg border border-gray-300 w-60 p-4">

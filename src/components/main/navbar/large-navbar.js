@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Cookies from 'js-cookie';
 import { Button } from "@/components/ui/button";
 import { useUserContext } from "@/context/auth";
 
@@ -30,7 +31,7 @@ export default function LargeNavbar({ items }) {
 
   const handleLogout = () => {
     try {
-      document.cookie = "token=; Max-Age=0; path=/; domain=contentlywriters.com; secure;";
+      Cookies.removeItem("token");
       localStorage.removeItem("token");
       sessionStorage.removeItem("orderData");
       sessionStorage.removeItem("redirectURL");

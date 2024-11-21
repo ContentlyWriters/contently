@@ -14,7 +14,7 @@ import Link from "next/link";
 import { useUserContext } from "@/context/auth";
 
 export default function SmallNavbar({ items }) {
-  const { isAuthenticated, setIsAuthenticated } = useUserContext();
+  const { isAuthenticated, user, setIsAuthenticated } = useUserContext();
   const [openMenuId, setOpenMenuId] = useState(null);
 
   // Handle toggle for opening/closing the dropdown
@@ -82,6 +82,11 @@ export default function SmallNavbar({ items }) {
 
         {isAuthenticated ? (
           <div className="grid gap-2">
+            {/* Displaying user first name and email */}
+            <div className="text-sm text-gray-700">
+              <p>Welcome, {user.firstName}</p>
+              <p>{user.email}</p>
+            </div>
             <SheetClose asChild>
               <Button
                 variant="outline"

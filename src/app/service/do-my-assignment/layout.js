@@ -4,8 +4,8 @@ import GuestRoute from "@/routes/guestRoute";
 
 
 export const metadata = {
-  title: "Assignment Help in London | Professional Writers at Your Service",
-  description:'Looking for assignment help in London? Get custom-written assignments from experienced writers. Affordable and trusted by thousands of students.',
+  title: "Do My Assignment Online by Experts | Fast & Reliable Help",
+  description:'Need help with assignments? Our experts provide reliable and affordable solutions. Choose Contently Writers to do your assignment online with 100% originality!',
   keywords: "Do my assignment cheap online , Pay someone to do my assignment online , Do my university assignment for me online , Do my assignment helper , Do my assignment online by experts"
 };
 

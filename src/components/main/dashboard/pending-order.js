@@ -121,7 +121,7 @@ export default function PendingOrder({ orders }) {
         <Table className="m-2">
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[100px]">Invoice</TableHead>
+              <TableHead className="w-[100px]">Order Id</TableHead>
               <TableHead>Subject</TableHead>
               <TableHead className="text-center">Topic</TableHead>
               <TableHead className="text-center">Comment</TableHead>
@@ -130,8 +130,8 @@ export default function PendingOrder({ orders }) {
               <TableHead className="text-center">Amount</TableHead>
               <TableHead className="text-center">Order Date</TableHead>
               <TableHead className="text-center">Order File</TableHead>
-              <TableHead className="text-center">Result File Link</TableHead>
-              <TableHead className="text-center">Give Feedback</TableHead>
+              <TableHead className="text-center">Your Assignment</TableHead>
+              <TableHead className="text-center">Your Feedback</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -167,7 +167,7 @@ export default function PendingOrder({ orders }) {
                       target="_black"
                       className="hover:underline"
                     >
-                      Result File
+                      Download
                     </Link>
                   ) : (
                     <></>
@@ -182,7 +182,7 @@ export default function PendingOrder({ orders }) {
                         setSelectedOrder(order.orderId);
                       }}
                     >
-                      Review
+                      Feedback
                     </Button>
                   ) : (
                     <></>

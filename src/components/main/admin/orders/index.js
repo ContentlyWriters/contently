@@ -52,10 +52,10 @@ export default function AdminOrderScreen() {
   }, []);
 
   return (
-    <div className="grid py-10 justify-center items-center h-screen bg-[#3C46D5] overflow-auto">
+    <div className="grid py-10 justify-center items-center h-screen bg-[#ffffff] overflow-auto">
       <div className="flex justify-between w-full max-w-[90%] sm:w-[1000px] mb-4">
         <div className="flex space-x-4">
-          <Button className="bg-green-100 border-2 rounded-lg text-[#000000] hover:bg-green-200">
+          <Button className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]">
             Get Fresh Order
           </Button>
           {/* <Button className="bg-green-100 border-2 rounded-lg text-[#000000] hover:bg-green-200">
@@ -63,13 +63,13 @@ export default function AdminOrderScreen() {
         </Button> */}
         </div>
         <Link href="/">
-          <Button className="bg-green-100 border-2 rounded-lg text-[#000000] hover:bg-green-200">
+          <Button className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]">
             Home
           </Button>
         </Link>
       </div>
 
-      <div className="border-2 rounded-lg sm:w-[1000px] p-4 sm:p-8 bg-green-100 w-full max-w-[90%]">
+      <div className="border-2 rounded-lg sm:w-[1000px] p-4 sm:p-8 bg-grey-300 w-full max-w-[90%] ">
         <Table>
           <TableCaption>A list of your recent invoices.</TableCaption>
           <TableHeader>

@@ -43,7 +43,7 @@ export default function DashBoard() {
               value="recent"
               onClick={() => setCurrentTab("InProgress")}
             >
-              Recent
+              Pending
             </TabsTrigger>
             <TabsTrigger
               value="finished"

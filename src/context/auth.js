@@ -130,6 +130,7 @@ export const AuthProvider = ({ children }) => {
     token = token || Cookies.get("token");
     if (token && !token.startsWith("Bearer")) {
       token = "Bearer " + token;
+      localStorage.setItem("token", token);
     }    
     if (!token) {
       setIsAuthenticated(false);

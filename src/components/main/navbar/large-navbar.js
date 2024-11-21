@@ -4,10 +4,12 @@ import Cookies from 'js-cookie';
 import { Button } from "@/components/ui/button";
 import { useUserContext } from "@/context/auth";
 
-export default function LargeNavbar({ items }) {
+export default function LargeNavbar({ items, user }) {
   const { isLoading, isAuthenticated, setIsAuthenticated } = useUserContext();
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSubDropdown, setOpenSubDropdown] = useState(null);
+  const [accountDropdown, setAccountDropdown] = useState(false);
+
 
   // Handle first-level dropdown
   const handleMouseEnter = (id) => {
@@ -117,25 +119,32 @@ export default function LargeNavbar({ items }) {
             Loading...
           </Button>
         ) : isAuthenticated ? (
-          <>
-            <Button
-              onClick={handleLogout}
-              variant="outline"
-              className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
-            >
-              Logout
-            </Button>
-            <Link href="/dashboard">
-              <Button
-                variant="outline"
-                className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
+          <div className="relative">
+          <Button
+            onClick={() => setAccountDropdown(!accountDropdown)}
+            variant="outline"
+            className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
+          >
+            Welcome, {user.firstName} {user.lastName}
+          </Button>
+
+          {/* Dropdown Menu */}
+          {accountDropdown && (
+            <div className="absolute top-full right-0 mt-2 w-48 bg-white shadow-lg rounded-lg p-4">
+              <p className="text-sm text-gray-700">
+                <strong>Email:</strong> {user.email}
+              </p>
+              <button
+                className="mt-3 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 w-full"
+                onClick={handleLogout}
               >
-                Dashboard
-              </Button>
-            </Link>
-          </>
-        ) : (
-          <>
+                Logout
+              </button>
+            </div>
+          )}
+        </div>
+      ) : (
+        <>
             <Link href="/sign-up">
               <Button
                 variant="outline"

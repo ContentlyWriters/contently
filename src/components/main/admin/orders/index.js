@@ -1,18 +1,7 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import axios from "axios";
 import { axiosInstance } from "@/lib/axios";
 import AdminOrderDetailScreen from "./orderDetails";
 
@@ -23,7 +12,6 @@ async function fetchOrders() {
         Authorization: `${localStorage.getItem("token")}`,
       },
     });
-    console.log(response.data.data);
     return response.data.data;
   } catch (error) {
     console.error(error);
@@ -33,6 +21,7 @@ async function fetchOrders() {
 
 export default function AdminOrderScreen() {
   const [orders, setOrders] = useState([]);
+  const [filteredOrders, setFilteredOrders] = useState([]);
   const [selectedOrder, setSelectedOrder] = useState({});
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
@@ -44,23 +33,34 @@ export default function AdminOrderScreen() {
   useEffect(() => {
     const getOrders = async () => {
       const data = await fetchOrders();
+      console.log('Fetched orders:', data); // Log the fetched data
       setOrders(data);
+      setFilteredOrders(data); // Set filtered orders to show all orders initially
     };
 
     getOrders();
-    console.log({ orders });
   }, []);
+
+  const filterOrdersByStatus = (status) => {
+    const filtered = orders.filter((order) => {
+      return order.status && order.status.trim().toLowerCase() === status.toLowerCase();
+    });
+    setFilteredOrders(filtered);
+  };
 
   return (
     <div className="grid py-10 justify-center items-center h-screen bg-[#ffffff] overflow-auto">
       <div className="flex justify-between w-full max-w-[90%] sm:w-[1000px] mb-4">
         <div className="flex space-x-4">
-          <Button className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]">
-            Get Fresh Order
+          <Button className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]" onClick={() => filterOrdersByStatus("In Progress")}>
+            In Progress
           </Button>
-          {/* <Button className="bg-green-100 border-2 rounded-lg text-[#000000] hover:bg-green-200">
-          Home
-        </Button> */}
+          <Button className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]" onClick={() => filterOrdersByStatus("Completed")}>
+            Completed
+          </Button>
+          <Button className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]" onClick={() => filterOrdersByStatus("Cancelled")}>
+            Cancelled
+          </Button>
         </div>
         <Link href="/">
           <Button className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]">
@@ -71,7 +71,7 @@ export default function AdminOrderScreen() {
 
       <div className="border-2 rounded-lg sm:w-[1000px] p-4 sm:p-8 bg-[#ededed] w-full max-w-[90%] ">
         <Table>
-          <TableCaption>A list of your recent invoices.</TableCaption>
+          <TableCaption>A list of your orders.</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="w-[100px]">Invoice</TableHead>
@@ -81,12 +81,8 @@ export default function AdminOrderScreen() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {orders.map((order, index) => (
-              <TableRow
-                key={index}
-                className="hover:bg-green-200"
-                onClick={() => handleIconClick(order)}
-              >
+            {filteredOrders.map((order, index) => (
+              <TableRow key={index} className="hover:bg-green-200" onClick={() => handleIconClick(order)}>
                 <TableCell className="font-medium">{order.orderId}</TableCell>
                 <TableCell>{order.status}</TableCell>
                 <TableCell>{order.email}</TableCell>

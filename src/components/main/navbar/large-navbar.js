@@ -3,6 +3,8 @@ import Link from "next/link";
 import Cookies from 'js-cookie';
 import { Button } from "@/components/ui/button";
 import { useUserContext } from "@/context/auth";
+import { FaUser } from 'react-icons/fa';
+
 
 export default function LargeNavbar({ items }) {
   const { isLoading, isAuthenticated, setIsAuthenticated, user } = useUserContext();
@@ -136,14 +138,17 @@ export default function LargeNavbar({ items }) {
               onMouseEnter={() => setProfileDropdown(true)}
               onMouseLeave={() => setProfileDropdown(false)}
             >
-              <Button
-                variant="outline"
-                className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
-              >
-                Welcome {user?.firstName || "User"}
-              </Button>
+             <Button
+  variant="outline"
+  className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
+>
+  Welcome User <FaUser className="ml-2" />
+</Button>
               {profileDropdown && (
                 <div className="absolute top-full right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
+                  <p className="text-sm font-medium text-gray-700">
+                     Welcome {user?.firstName || "User"}
+                  </p>
                   <p className="text-sm font-medium text-gray-700">
                     {user?.email || "Email not available"}
                   </p>

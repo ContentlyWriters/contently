@@ -143,7 +143,7 @@ export default function LargeNavbar({ items }) {
                 Welcome {user?.firstName || "User"}
               </Button>
               {profileDropdown && (
-                <div className="absolute top-full right-0 bg-white shadow-md rounded-lg border border-gray-300 w-60 p-4">
+                <div className="absolute top-full right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
                   <p className="text-sm font-medium text-gray-700">
                     {user?.email || "Email not available"}
                   </p>

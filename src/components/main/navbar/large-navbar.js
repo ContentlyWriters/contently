@@ -155,7 +155,7 @@ export default function LargeNavbar({ items }) {
                   <Button
                     onClick={handleLogout}
                     variant="outline"
-                      className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] w-[100px]"
+                      className="hover:bg-[#000000] hover:text-[#ffffff] bg-[#ffffff] text-[#000000] border-2 border-[#000000] text-sm py-2 px-4 rounded-md transition duration-200 ease-in-out"
                   >
                     Logout
                   </Button>

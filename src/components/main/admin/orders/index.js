@@ -16,11 +16,14 @@ import axios from "axios";
 import { axiosInstance } from "@/lib/axios";
 import AdminOrderDetailScreen from "./orderDetails";
 
-async function fetchOrders() {
+async function fetchOrders(status = "") {
   try {
     const response = await axiosInstance.get("order/getAll", {
       headers: {
         Authorization: `${localStorage.getItem("token")}`,
+      },
+      params: {
+        status: status,  // Filter orders by status if provided
       },
     });
     console.log(response.data.data);
@@ -35,32 +38,48 @@ export default function AdminOrderScreen() {
   const [orders, setOrders] = useState([]);
   const [selectedOrder, setSelectedOrder] = useState({});
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [filter, setFilter] = useState("");  // New state for filter
 
   const handleIconClick = (order) => {
     setSelectedOrder(order);
     setIsDialogOpen(true);
   };
 
+  const handleFilterChange = (status) => {
+    setFilter(status);  // Update the filter state
+  };
+
   useEffect(() => {
     const getOrders = async () => {
-      const data = await fetchOrders();
+      const data = await fetchOrders(filter);  // Fetch orders based on the current filter
       setOrders(data);
     };
 
     getOrders();
-    console.log({ orders });
-  }, []);
+  }, [filter]);  // Refetch orders when the filter changes
 
   return (
     <div className="grid py-10 justify-center items-center h-screen bg-[#ffffff] overflow-auto">
       <div className="flex justify-between w-full max-w-[90%] sm:w-[1000px] mb-4">
         <div className="flex space-x-4">
-          <Button className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]">
-            Get Fresh Order
+          <Button
+            onClick={() => handleFilterChange("In Progress")}
+            className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]"
+          >
+            In Progress
           </Button>
-          {/* <Button className="bg-green-100 border-2 rounded-lg text-[#000000] hover:bg-green-200">
-          Home
-        </Button> */}
+          <Button
+            onClick={() => handleFilterChange("Completed")}
+            className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]"
+          >
+            Completed
+          </Button>
+          <Button
+            onClick={() => handleFilterChange("Cancelled")}
+            className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]"
+          >
+            Cancelled
+          </Button>
         </div>
         <Link href="/">
           <Button className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]">

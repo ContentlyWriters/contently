@@ -119,32 +119,37 @@ export default function LargeNavbar({ items, user }) {
             Loading...
           </Button>
         ) : isAuthenticated ? (
-          <div className="relative">
-          <Button
-            onClick={() => setAccountDropdown(!accountDropdown)}
-            variant="outline"
-            className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
-          >
-            Welcome, {user.firstName} {user.lastName}
-          </Button>
-
-          {/* Dropdown Menu */}
-          {accountDropdown && (
-            <div className="absolute top-full right-0 mt-2 w-48 bg-white shadow-lg rounded-lg p-4">
-              <p className="text-sm text-gray-700">
-                <strong>Email:</strong> {user.email}
-              </p>
-              <button
-                className="mt-3 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 w-full"
-                onClick={handleLogout}
+          <>
+            {/* Profile Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setProfileDropdown(true)}
+              onMouseLeave={() => setProfileDropdown(false)}
+            >
+              <Button
+                variant="outline"
+                className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
               >
-                Logout
-              </button>
+                Welcome {user?.name || "User"}
+              </Button>
+              {profileDropdown && (
+                <div className="absolute top-full right-0 bg-white shadow-md rounded-lg border border-gray-300 w-60 p-4">
+                  <p className="text-sm font-medium text-gray-700">
+                    {user?.email || "Email not available"}
+                  </p>
+                  <Button
+                    onClick={handleLogout}
+                    variant="outline"
+                    className="mt-2 w-full hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
+                  >
+                    Logout
+                  </Button>
+                </div>
+              )}
             </div>
-          )}
-        </div>
-      ) : (
-        <>
+          </>
+        ) : (
+          <>
             <Link href="/sign-up">
               <Button
                 variant="outline"

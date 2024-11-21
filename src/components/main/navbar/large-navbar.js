@@ -152,11 +152,11 @@ export default function LargeNavbar({ items }) {
                   <p className="text-sm font-medium text-gray-700">
                     {user?.email || "Email not available"}
                   </p>
-                  <div className="flex justify-end mt-4">
+                  <div className="text-right">
                   <Button
                     onClick={handleLogout}
                     variant="outline"
-                      className="hover:text-[#ffffff] hover:bg-[#000] bg-[#ffffff] text-[#000000] border-2 border-[#8e8e8e] border-opacity-50 text-sm py-2 px-4 rounded-md transition duration-200 ease-in-out mt-4"
+                      className="hover:text-[#ffffff] mt-4 hover:bg-[#000] bg-[#ffffff] text-[#000000] border-2 border-[#8e8e8e] border-opacity-50 text-sm py-2 px-4 rounded-md transition duration-200 ease-in-out mt-4"
                   >
                     Logout
                   </Button>

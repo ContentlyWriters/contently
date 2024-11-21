@@ -9,26 +9,26 @@ export default function LargeNavbar({ items, user }) {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSubDropdown, setOpenSubDropdown] = useState(null);
   const [accountDropdown, setAccountDropdown] = useState(false);
-
+  const [profileDropdown, setProfileDropdown] = useState(false); // Added state
 
   // Handle first-level dropdown
   const handleMouseEnter = (id) => {
-    setOpenDropdown(id); 
+    setOpenDropdown(id);
   };
 
   const handleMouseLeave = (id) => {
     if (openDropdown === id) {
-      setOpenDropdown(null); // Close the dropdown if the mouse leaves the parent
+      setOpenDropdown(null);
     }
   };
 
   // Handle second-level submenu
   const handleSubMenuMouseEnter = (id) => {
-    setOpenSubDropdown(id); 
+    setOpenSubDropdown(id);
   };
 
   const handleSubMenuMouseLeave = () => {
-    setOpenSubDropdown(null); 
+    setOpenSubDropdown(null);
   };
 
   const handleLogout = () => {
@@ -66,19 +66,19 @@ export default function LargeNavbar({ items, user }) {
 
             {/* Dropdown for Service or Subject */}
             {item.subItems && openDropdown === item.id && (
-              <div className="absolute top-full left-0  pb-1 bg-white shadow-md rounded-lg w-60 border border-gray-300 no-underline">
+              <div className="absolute top-full left-0 pb-1 bg-white shadow-md rounded-lg w-60 border border-gray-300 no-underline">
                 {item.subItems.map((subItem) => (
                   <div
                     key={subItem.id}
                     className="relative"
                     onMouseEnter={() => handleSubMenuMouseEnter(subItem.id)}
-                    onMouseLeave={handleSubMenuMouseLeave} 
+                    onMouseLeave={handleSubMenuMouseLeave}
                   >
                     <Link href={subItem.path}>
                       <Button
                         size="sm"
                         variant="link"
-                        className="text-md font-normal px-5 py-3 hover:bg-gray-100 hover:text-[#5b6cf2] block text-left w-full "
+                        className="text-md font-normal px-5 py-3 hover:bg-gray-100 hover:text-[#5b6cf2] block text-left w-full"
                         style={{ textDecoration: "none" }}
                       >
                         {subItem.name}
@@ -87,13 +87,13 @@ export default function LargeNavbar({ items, user }) {
 
                     {/* Second-level submenu */}
                     {subItem.subItems && openSubDropdown === subItem.id && (
-                      <div className="absolute top-0 left-full mt-2  pb-2 bg-white shadow-md rounded-lg w-60 border border-gray-300">
+                      <div className="absolute top-0 left-full mt-2 pb-2 bg-white shadow-md rounded-lg w-60 border border-gray-300">
                         {subItem.subItems.map((secondSubItem) => (
                           <Link key={secondSubItem.id} href={secondSubItem.path}>
                             <Button
                               size="sm"
                               variant="link"
-                              className="text-md font-normal px-5 py-3 hover:bg-gray-100 hover:text-[#5b6cf2] block text-left w-full "
+                              className="text-md font-normal px-5 py-3 hover:bg-gray-100 hover:text-[#5b6cf2] block text-left w-full"
                               style={{ textDecoration: "none" }}
                             >
                               {secondSubItem.name}

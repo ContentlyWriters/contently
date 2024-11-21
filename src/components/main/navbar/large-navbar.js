@@ -145,18 +145,18 @@ export default function LargeNavbar({ items }) {
 <FaUser className="mr-2" /> User 
 </Button>
               {profileDropdown && (
-                <div className="absolute top-full right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
+                <div className="absolute top-full mt-1 right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
                   <p className="text-sm font-medium text-gray-700">
                     {user?.firstName || "User"}  {user?.lastName || "User"}
                   </p>
-                  <p className="text-sm font-medium text-gray-700">
+                  <p className="text-sm font-medium font-bold text-gray-700 uppercase">
                     {user?.email || "Email not available"}
                   </p>
                   <div className="text-right">
                   <Button
                     onClick={handleLogout}
                     variant="outline"
-                      className="hover:text-[#ffffff] mt-4 hover:bg-[#000] bg-[#ffffff] text-[#000000] border-2 border-[#8e8e8e] border-opacity-50 text-sm py-2 px-4 rounded-md transition duration-200 ease-in-out mt-4"
+                      className="hover:text-[#ffffff] mt-2 hover:bg-[#000] bg-[#ffffff] text-[#000000] border-2 border-[#8e8e8e] border-opacity-50 text-sm py-2 px-4 rounded-md transition duration-200 ease-in-out mt-4"
                   >
                     Logout
                   </Button>

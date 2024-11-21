@@ -128,7 +128,6 @@ export const AuthProvider = ({ children }) => {
     // Check if the token exists in localStorage or cookies
     let token = localStorage.getItem("token");
     token = token || Cookies.get("token");
-    console.log(token + "Harsh")
     if (token && !token.startsWith("Bearer")) {
       token = "Bearer " + token;
     }    

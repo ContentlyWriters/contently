@@ -31,7 +31,10 @@ export default function LargeNavbar({ items }) {
 
   const handleLogout = () => {
     try {
-      Cookies.remove("token", { path: "/", domain: "www.contentlywriters.com" });
+      console.log("log out happening");
+      console.log(document.cookie);
+      Cookies.remove("token", { path: "/", domain: ".contentlywriters.com" });
+      document.cookie = "token=; Max-Age=0; path=/; domain=contentlywriters.com; Secure";
       localStorage.removeItem("token");
       sessionStorage.removeItem("orderData");
       sessionStorage.removeItem("redirectURL");

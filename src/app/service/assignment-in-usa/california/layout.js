@@ -16,7 +16,7 @@ export default function CaliforniaLayout({ children }) {
       <div>
         <Navbar />
         <div className="mt-[80px]">{children}</div>
-        <Footer />
+       
       </div>
     </GuestRoute>
   );

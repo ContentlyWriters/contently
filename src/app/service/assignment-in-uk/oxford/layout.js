@@ -4,9 +4,9 @@ import GuestRoute from "@/routes/guestRoute";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Assignment Help in London | Professional Writers at Your Service",
-  description:'Looking for assignment help in London? Get custom-written assignments from experienced writers. Affordable and trusted by thousands of students.',
-  keywords: "assignment help in London , assignment writing help in London , best assignment helper in London , London assignment help services , Professional assignment Writers London , Top assignment help in London , Affordable assignment writing London "
+  title: "Expert Assignment Help in Oxford | Affordable & Reliable",
+  description:'Struggling with assignments? Get expert assignment help in Oxford for essays, research papers, and more. Plagiarism-free, affordable, and always on time!',
+  keywords: "assignment help in Oxford , best assignment writers in Oxford online , online assignment help in Oxford by experts , best assignment helper in Oxford "
 };
 
 export default function OxfordLayout({ children }) {
@@ -15,7 +15,7 @@ export default function OxfordLayout({ children }) {
       <div>
         <Navbar />
         <div className="mt-[80px]">{children}</div>
-        <Footer />
+       
       </div>
     </GuestRoute>
   );

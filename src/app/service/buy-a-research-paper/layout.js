@@ -16,7 +16,7 @@ export default function ResearchPaperLayout({ children }) {
        
         <Navbar />
         <div className="mt-[80px]">{children}</div>
-        <Footer />
+      
       </div>
     </GuestRoute>
   );

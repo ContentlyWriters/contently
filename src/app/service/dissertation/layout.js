@@ -15,7 +15,7 @@ export default function DissertationLayout({ children }) {
       <div>
         <Navbar />
         <div className="mt-[80px]">{children}</div>
-        <Footer />
+       
       </div>
     </GuestRoute>
   );

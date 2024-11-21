@@ -6,7 +6,7 @@ import GuestRoute from "@/routes/guestRoute";
 export const metadata = {
   title: "Assignment Help in London | Professional Writers at Your Service",
   description:'Looking for assignment help in London? Get custom-written assignments from experienced writers. Affordable and trusted by thousands of students.',
-  keywords: "assignment help in London , assignment writing help in London , best assignment helper in London , London assignment help services , Professional assignment Writers London , Top assignment help in London , Affordable assignment writing London "
+  keywords: "Do my assignment cheap online , Pay someone to do my assignment online , Do my university assignment for me online , Do my assignment helper , Do my assignment online by experts"
 };
 
 export default function DomyassignmentLayout({ children }) {
@@ -15,7 +15,7 @@ export default function DomyassignmentLayout({ children }) {
       <div>
         <Navbar />
         <div className="mt-[80px]">{children}</div>
-        <Footer />
+       
       </div>
     </GuestRoute>
   );

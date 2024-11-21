@@ -110,7 +110,7 @@ const Footer = () => {
             <Link href="mailto:info@contentlywriters.com" className="text-black-400 hover:text-[#8e8e9e]">
               <MdOutlineMail />
             </Link>
-            <Link href="https://www.facebook.com/profile.php?id=61558643577094" className="text-black-400 hover:text-[#8e8e9e]">
+            <Link href="https://www.facebook.com/profile.php?id=61568632033503" className="text-black-400 hover:text-[#8e8e9e]">
               <FaFacebookF />
             </Link>
             <Link href="https://www.instagram.com/contentlywriters/" className="text-black-400 hover:text-[#8e8e9e]">

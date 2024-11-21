@@ -215,7 +215,7 @@ and contribute positively to society</p>
         about: (
           <div>
             <h4><strong>What are Writing Services:</strong></h4>
-            <p>Writing services help in <a href="https://www.contentlywriters.com/blog/A-Beginner's-Guide-to-Writing-Essays-in-Proper-Format" class="text-[#5b6cf2]"> writing essays</a>, research papers, and other writing assignments. These services can edit, proofread, and improve everything.</p>
+            <p>Writing services help in <a href="https://www.contentlywriters.com/blog/a-Beginner's-Guide-to-Writing-Essays-in-Proper-Format" class="text-[#5b6cf2]"> writing essays</a>, research papers, and other writing assignments. These services can edit, proofread, and improve everything.</p>
   
             <h4><strong>Benefits:</strong></h4>
             <ul>

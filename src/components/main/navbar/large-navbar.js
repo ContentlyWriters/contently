@@ -142,12 +142,12 @@ export default function LargeNavbar({ items }) {
   variant="outline"
   className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] border-opacity-100"
 >
-  Welcome User <FaUser className="ml-2" />
+<FaUser className="mr-2" /> User 
 </Button>
               {profileDropdown && (
                 <div className="absolute top-full right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
                   <p className="text-sm font-medium text-gray-700">
-                     Welcome {user?.firstName || "User"}
+                    {user?.firstName || "User"}
                   </p>
                   <p className="text-sm font-medium text-gray-700">
                     {user?.email || "Email not available"}

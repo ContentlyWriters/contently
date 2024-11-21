@@ -4,8 +4,8 @@ import Cookies from 'js-cookie';
 import { Button } from "@/components/ui/button";
 import { useUserContext } from "@/context/auth";
 
-export default function LargeNavbar({ items, user }) {
-  const { isLoading, isAuthenticated, setIsAuthenticated } = useUserContext();
+export default function LargeNavbar({ items }) {
+  const { isLoading, isAuthenticated, setIsAuthenticated, user } = useUserContext();
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSubDropdown, setOpenSubDropdown] = useState(null);
   const [accountDropdown, setAccountDropdown] = useState(false);

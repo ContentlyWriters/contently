@@ -92,7 +92,7 @@ can be overwhelming, but our experts are here to help.
           >
        At Contently Writers, we offer tailored assistance across subjects like <a href="https://www.contentlywriters.com/subject/law" className="text-[#5b6cf2]"> Law</a>, <a
 href="https://www.contentlywriters.com/subject/statistics" className="text-[#5b6cf2]">Statistics</a>, and
-<a href="https://www.contentlywriters.com/subject/general-subjects" className="text-[#5b6cf2]"> General subjects</a>, ensuring every academic requirement is met precisely. Whether you're
+<a href="https://www.contentlywriters.com/subject/general-subjects" className="text-[#5b6cf2]"> General subjects</a>, ensuring every academic requirement is met precisely. Whether you&#39;re
 tackling an intricate thesis or a simple essay, our <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]">Assignment experts</a> are equipped to
 handle tasks of any complexity.
           </motion.p>
@@ -121,7 +121,7 @@ handle tasks of any complexity.
       transition={{ delay: 0.1, duration: 0.3 }}
     >
    Our <b>best assignment writers in Oxford online</b> bridge the gap between students and their
-academic goals, offering unparalleled support regardless of location. Whether you're an
+academic goals, offering unparalleled support regardless of location. Whether you&#39;re an
 Oxford student or studying elsewhere, our online assignment help ensures you receive
 top-notch assistance from seasoned professionals
     </motion.p>
@@ -228,7 +228,7 @@ support.</li>
 confidential.</li>
 <li><b>Affordable Services: </b> With competitive pricing and exciting discounts, we make
 academic help budget-friendly.</li>
-<li><b>Unlimited Revisions: </b> Not satisfied? We'll revise your assignment for free until you're
+<li><b>Unlimited Revisions: </b> Not satisfied? We&#39;ll revise your assignment for free until you&#39;re
 happy.</li>
 
           </motion.ul>

@@ -121,7 +121,7 @@ subjects, including management, IT, and general disciplines like history or soci
 assignment is handled by a subject expert, ensuring accuracy and depth.</li>
 <li><b>Plagiarism-Free Content</b><br></br> Originality is our promise. Every assignment undergoes rigorous plagiarism checks and is
 crafted to be 100% unique, helping you maintain academic integrity.</li>
-<li><b>Affordable Assignment Writing in London</b><br></br> We understand students' financial constraints. Our pricing is transparent and affordable,
+<li><b>Affordable Assignment Writing in London</b><br></br> We understand students&#39; financial constraints. Our pricing is transparent and affordable,
 ensuring you receive premium quality without stretching your budget.</li>
 <li><b>Timely Delivery</b><br></br> No matter how tight your deadline is, we guarantee on-time delivery. We work efficiently so
 you have ample time to review your assignment before submission.</li>
@@ -249,7 +249,7 @@ we have specialists to guide you.</li>
           >
          At <b>Contently Writers</b>, we recognize that every student has unique needs. Our writers
 carefully follow your instructions, ensuring every assignment aligns perfectly with your
-professor's expectations.
+professor&#39;s expectations.
           </motion.p>
           
         </div>

@@ -75,7 +75,7 @@ const OthersubjectPage = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.3 }}
           >
-        Looking for <b>premium assignment help in Oxford?</b> If so, you've arrived at the ideal location!
+        Looking for <b>premium assignment help in Oxford?</b> If so, you&#39;ve arrived at the ideal location!
 Our business provides expert academic writing services that are intended to assist you in
 achieving the best scores possible. We offer a broad range of services, including essays,
 assignments, research papers, dissertations, and more, because we recognize that students
@@ -142,7 +142,7 @@ subjects.
       transition={{ delay: 0.1, duration: 0.3 }}
     >
 We are aware that academic writing necessitates a great deal of concentration and
-commitment. Our team's dedication to producing outstanding work every single day has
+commitment. Our team&#39;s dedication to producing outstanding work every single day has
 enabled us to attain a level of skill that is frequently difficult for ordinary students to achieve.
     </motion.p>
     <motion.p
@@ -190,13 +190,13 @@ analysis on a particular subject, supported by extensive study and data, is call
 research paper. It entails compiling and analyzing data from multiple sources to offer
 insights and support the scholarly conversation on the topic.</li>
 <li><b><a
-href="https://www.contentlywriters.com/service/do-my-assignment" className="text-[#5b6cf2]">Thesis:</a></b> A thesis is a significant academic work that presents a student's original
+href="https://www.contentlywriters.com/service/do-my-assignment" className="text-[#5b6cf2]">Thesis:</a></b> A thesis is a significant academic work that presents a student&#39;s original
 research findings and theoretical contributions to their field of study. It shows that the
 student can carry out independent study, evaluate information critically, and present
 fresh viewpoints or ideas on a certain subject.</li>
 <li><b><a
 href="https://www.contentlywriters.com/subject/law" className="text-[#5b6cf2]">Law assignment help:</a></b> We also specialize in law assignment help, providing
-expert guidance for students studying legal studies and related subjects. Whether it's
+expert guidance for students studying legal studies and related subjects. Whether it&#39;s
 drafting legal essays, case studies, or preparing for exams, our writers are equipped
 with the necessary expertise to assist students in excelling in their law courses</li>
 

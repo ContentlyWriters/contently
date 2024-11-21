@@ -69,7 +69,7 @@ export default function AdminOrderScreen() {
         </Link>
       </div>
 
-      <div className="border-2 rounded-lg sm:w-[1000px] p-4 sm:p-8 bg-grey-300 w-full max-w-[90%] ">
+      <div className="border-2 rounded-lg sm:w-[1000px] p-4 sm:p-8 bg-[#dbdbdb] w-full max-w-[90%] ">
         <Table>
           <TableCaption>A list of your recent invoices.</TableCaption>
           <TableHeader>

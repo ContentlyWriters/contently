@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
@@ -34,7 +33,6 @@ export default function AdminOrderScreen() {
   useEffect(() => {
     const getOrders = async () => {
       const data = await fetchOrders();
-      console.log('Fetched orders:', data); // Log the fetched data
       setOrders(data);
       setFilteredOrders(data); // Set filtered orders to show all orders initially
     };
@@ -43,9 +41,7 @@ export default function AdminOrderScreen() {
   }, []);
 
   const filterOrdersByStatus = (status) => {
-    const filtered = orders.filter((order) => {
-      return order.status && order.status.trim().toLowerCase() === status.toLowerCase();
-    });
+    const filtered = orders.filter(order => order.status === status);
     setFilteredOrders(filtered);
   };
 

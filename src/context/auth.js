@@ -122,6 +122,32 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const token = Cookies.get("token");
+        if (token) {
+          // Fetch user profile
+          const response = await fetch("/api/profile", {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          });
+          const data = await response.json();
+          setUser(data.user); // Assuming data contains `user` object with name/email
+          setIsAuthenticated(true);
+        }
+      } catch (error) {
+        console.error("Error fetching user:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchUser();
+  }, []);
+
   useEffect(() => {
     console.log("AuthContext useEffect");
 

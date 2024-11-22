@@ -4,9 +4,9 @@ import GuestRoute from "@/routes/guestRoute";
 
 
 export const metadata = {
-  title: "Best Accounting Assignment Help Online | Fast, Accurate & Affordable",
-  description:'Get accurate and timely solutions with the best accounting assignment help online. We cover all accounting topics, ensuring confidentiality and on-time delivery every time.',
-  keywords: "best accounting assignment help online , do my accounting assignment for me ,help with financial accounting assignment , expert accounting assignment doers , top managerial accounting assignment help"
+  title: "Top-Quality Engineering Assignment Help for Students",
+  description:'Need reliable engineering assignment help? Get expert support in civil, electrical, software, and more. Timely delivery and plagiarism-free work are guaranteed!',
+  keywords: "engineering assignment help , Civil engineering assignment help ,software engineering assignment help , help with biomedical engineering assignments , Electrical engineering assignment help, expert Aerospace Engineering Assignment Help"
 };
 
 export default function EngineeringLayout({ children }) {

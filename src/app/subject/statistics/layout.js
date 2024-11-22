@@ -4,9 +4,9 @@ import GuestRoute from "@/routes/guestRoute";
 
 
 export const metadata = {
-  title: "Best Accounting Assignment Help Online | Fast, Accurate & Affordable",
-  description:'Get accurate and timely solutions with the best accounting assignment help online. We cover all accounting topics, ensuring confidentiality and on-time delivery every time.',
-  keywords: "best accounting assignment help online , do my accounting assignment for me ,help with financial accounting assignment , expert accounting assignment doers , top managerial accounting assignment help"
+  title: "Statistics Assignment Help Online | Expert Help, Guaranteed Success Meta",
+  description:'Struggling with Statistics? Get expert help from Contently Writers. We offer top-notch statistics assignment help online.',
+  keywords: "Statistics assignment help online , stats assignment help ,PAY FOR STATISTICS ASSIGNMENT , do my statistics assignment , help with statistics assignment online , online statistics assignment help"
 };
 
 export default function StatisticsLayout({ children }) {

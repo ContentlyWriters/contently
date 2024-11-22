@@ -4,9 +4,9 @@ import GuestRoute from "@/routes/guestRoute";
 
 
 export const metadata = {
-  title: "Best Accounting Assignment Help Online | Fast, Accurate & Affordable",
-  description:'Get accurate and timely solutions with the best accounting assignment help online. We cover all accounting topics, ensuring confidentiality and on-time delivery every time.',
-  keywords: "best accounting assignment help online , do my accounting assignment for me ,help with financial accounting assignment , expert accounting assignment doers , top managerial accounting assignment help"
+  title: "Best Law Assignment Writing Services for Academic Excellence",
+  description:'Get the best law assignment writing services for all legal topics. Expert writers deliver high-quality, timely help to ensure top grades and academic success.',
+  keywords: "law assignment help , best law assignment writing services ,Commercial law assignment help , Criminal law assignment help , best Constitutional law assignment help"
 };
 
 export default function LawLayout({ children }) {

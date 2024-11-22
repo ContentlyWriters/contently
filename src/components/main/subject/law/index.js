@@ -1,122 +1,249 @@
-"use client"
-import { Pie, Bar, Line } from 'react-chartjs-2';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, LineElement, PointElement } from 'chart.js';
-import Link from 'next/link';
-import { MdEmail } from 'react-icons/md';
+"use client";
+import { FaCheckCircle } from "react-icons/fa";
+import { MdAssignment } from "react-icons/md";
+import { motion } from "framer-motion"; // For subtle animations
+import { Button } from "@/components/ui/button";
 
-// Register Chart.js components
-ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, LineElement, PointElement);
+const cardVariants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.9,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
 
 const LawPage = () => {
   return (
-    <div>
-      {/* Header Section */}
-      <div className="bg-[#e9f2f2] py-8">
-        <h1 className="text-grey sm:text-[40px] lg:text-[50px] text-[30px] text-center pt-20 mx-auto font-semibold">
-          Law Assignment Help
-        </h1>
-        <p className="text-[#191936] text-[25px] text-center pt-2 mb-8 mx-auto">
-          Expert assistance for law students worldwide.
-        </p>
-        <div className="h-[7px] w-[150px] bg-[#e74c3c] mx-auto"></div>
+    <div className="text-[#333] font-sans">
+      {/* Hero Section with Animation */}
+      <div className="bg-[#e9f2f2] py-8 text-center relative overflow-hidden">
+        <motion.h1
+          className="text-grey sm:text-[40px] lg:text-[50px] text-[30px] pt-20 mx-auto font-semibold"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          Law Assignment Writing Services for Top Grades
+        </motion.h1>
+        <motion.p
+          className="text-[#191936] text-[25px] pt-2 mb-8 mx-auto"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          Achieve Excellence with Our Law Assignment Assistance!
+        </motion.p>
+        <motion.div
+          className="h-[5px] w-[120px] bg-[#5b6cf2] mx-auto rounded"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+        ></motion.div>
       </div>
 
-      {/* Introduction Section */}
       <div className="px-4 sm:px-10 lg:px-[50px]">
-        <div className="max-w-[1280px] mx-auto py-16">
-          <p className="text-[#333] text-xl mb-6">
-            The study of law is critical for maintaining justice and order in society. Law students often face complex legal theories and frameworks, making professional guidance essential for academic success. Our law assignment help services are designed to assist you in navigating these challenges effectively.
-          </p>
+        <div className="max-w-[1280px] mx-auto">
+          
+          {/* Introduction */}
+          <div className="px-6 sm:px-10 lg:px-[60px] py-12 bg-white">
+            <section className="mb-12">
+              {/* <motion.h1
+                className="text-3xl font-bold mb-6 text-[#303030]"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7 }}
+              >
+                Information Technology Assignment Help to Boost Your Grades Effortlessly
+              </motion.h1> */}
+              <motion.p className="text-lg leading-7 mb-6">
+              Since law is an interesting field with the potential for a rewarding career, many students
+decide to specialize in it. A legal career gives people the skills they need to defend their
+rights, deal with obstacles skillfully, and make wise choices. However, obtaining a law
+degree can be a challenging process, even if legal employment is frequently fulfilling. For
+this reason, a lot of students seek expert assistance when writing their law essays.             </motion.p>
+              <motion.p className="text-lg leading-7 mb-6">
+              Being a top supplier of law assignment writing services is something we at Contently Writers
+take great pride in. We understand that even the most committed students struggle to
+consistently perform at their best on all assignments. Our knowledgeable staff is available to
+help you achieve, regardless of the reason—time restraints or other challenges          </motion.p>
+            </section>
+
+            <section className="mb-12">
+  <motion.h2
+    className="text-3xl font-bold mb-6 text-[#303030]"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+  >
+    All-Encompassing Law Assignment Help for Every Area of Law
+  </motion.h2>
+  <motion.p className="text-lg leading-7 mb-6">
+  Every piece of work we produce is composed of original articles authored by experts in
+particular legal disciplines. Our services include customized legal essays and assignments
+that cover a variety of topics, such as business law, which thoroughly examines business
+transactions and associated procedures. Additionally, we provide Civil Rights law
+assignment assistance, in which our professionals examine the legal complexities and
+potential conflicts between people and government authorities.
+  </motion.p>
+  <motion.p className="text-lg leading-7 mb-6">
+  Criminal law experts, who concentrate on the complexities of illegal activity and legal
+infractions, are part of our team. Our writers proficiently describe the rights and
+responsibilities of employers and employees in labor law assignments. Experts in family law
+offer their perspectives on case studies concerning family conflicts.
+  </motion.p>
+  <motion.p className="text-lg leading-7 mb-6">
+  We also provide thorough support in a variety of areas, including intellectual property law,
+corporate law, international law, and environmental law. Our <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]">
+Assignment helper</a> will match
+you with a professional who possesses the exact talents to suit your requirements if you
+share the specifications of your task.
+  </motion.p>
+</section>
+
+<section className="mb-12">
+  <motion.h3
+    className="text-3xl font-bold mb-6 text-[#303030]"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+  >
+    Simplified Ordering Process: 5 Steps with Contently Writers
+  </motion.h3>
+  <motion.ul className="list-disc pl-6 text-lg leading-7 mb-6">
+    <li>To keep track of your order and get all the critical notifications, log in to your current account or establish a new one.</li>
+    <li>Start by completing the form found on the Contently Writers homepage in the upper-right corner.</li>
+    <li>After that, fill out the order form with all the pertinent information on your task. Giving precise and unambiguous instructions can help guarantee that your assignment is completed flawlessly.</li>
+    <li>To finish the payment procedure securely and effectively, you will be taken to our secure payment channel.</li>
+    <li>That's it! Your order will show up on your dashboard as soon as your payment has been approved. You can download the file straight from the location once your task is finished. The method is easy and convenient!</li>
+  </motion.ul>
+</section>
+
+
+<section className="mb-12">
+  <motion.h2
+    className="text-3xl font-bold mb-6 text-[#303030]"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+  >
+    The Advantages of Using Law Assignment Help for Students
+  </motion.h2>
+  <motion.p className="text-lg leading-7 mb-6">
+    Law students are aware that writing assignments is one of the most difficult things they will encounter during their academic career. Many students use online resources like <b>Commercial Law Assignment Help, Criminal Law Assignment Help, and Best Constitutional Law Assignment Help</b> to lessen this strain because they provide some important advantages. The following are some benefits that students experience when they use expert assignment assistance services:
+  </motion.p>
+
+  <motion.h4
+    className="text-2xl font-semibold mb-4 text-[#303030]"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+  >
+    High-quality Work
+  </motion.h4>
+  <motion.p className="text-lg leading-7 mb-6">
+    One of the main advantages of these services is that assignments are composed by professionals with the skills needed to produce believable, thoroughly researched projects. These specialists, who have years of experience in their disciplines, provide exceptional work that guarantees pupils obtain top grades.
+  </motion.p>
+
+  <motion.h4
+    className="text-2xl font-semibold mb-4 text-[#303030]"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+  >
+    Excellent Grades
+  </motion.h4>
+  <motion.p className="text-lg leading-7 mb-6">
+    Skilled writers ensure that there is no opportunity for error and produce legal assignments that precisely match examiner specifications. It is easier for students to receive A grades because the work generated is of the best caliber, regardless of whether it is Commercial Law Assignment Help, Criminal Law Assignment Help, or Best Constitutional Law Assignment Help.
+  </motion.p>
+
+  <motion.h4
+    className="text-2xl font-semibold mb-4 text-[#303030]"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+  >
+    Timely Service
+  </motion.h4>
+  <motion.p className="text-lg leading-7 mb-6">
+    On-time delivery is a top priority for the top assignment writing services. Even with tight constraints, students rely on these services since they know they will always receive high-quality work on time.
+  </motion.p>
+
+  <motion.h4
+    className="text-2xl font-semibold mb-4 text-[#303030]"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+  >
+    Work Management
+  </motion.h4>
+  <motion.p className="text-lg leading-7 mb-6">
+    Law students have a busy schedule that includes attending lectures, court proceedings, reading law texts, and completing homework. By getting professional legal assignment help, students may maintain their academic schedules and get well-written papers without any worry.
+  </motion.p>
+
+  <motion.h4
+    className="text-2xl font-semibold mb-4 text-[#303030]"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+  >
+    No Time Consumption
+  </motion.h4>
+  <motion.p className="text-lg leading-7 mb-6">
+    By relieving students of the pressure of tasks, online legal assignment services enable them to manage their time better. With these services, students don't have to worry about deadlines or spend hours looking through textbooks because everything is done for them.
+  </motion.p>
+
+  <motion.h3
+    className="text-3xl font-bold mb-6 text-[#303030]"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+  >
+    Choose Contently Writers for the Best Law Assignment Writing Services
+  </motion.h3>
+  <motion.p className="text-lg leading-7 mb-6">
+    At Contently Writers, we strive to make your academic journey smoother by providing exceptional <b>law assignment help</b> tailored to meet your unique needs. Whether it’s <b>Commercial Law Assignment Help, Criminal Law Assignment Help</b>, or the <b>best Constitutional Law Assignment Help</b>, our goal is to ensure you achieve outstanding results with high-quality, on-time submissions.
+  </motion.p>
+  <motion.p className="text-lg leading-7 mb-6">
+    In addition to our renowned <b>law assignment writing services</b>, we also extend our expertise to other fields such as <a
+href="https://www.contentlywriters.com/subject/management" className="text-[#5b6cf2]"> Management Assignment </a>, <a
+href="https://www.contentlywriters.com/subject/accounting" className="text-[#5b6cf2]"> Accounting Assignment</a>, and more. No matter the subject or complexity, our team is here to assist you every step of the way.
+  </motion.p>
+  <motion.p className="text-lg leading-7 mb-6">
+    With Contently Writers, you're not just purchasing a service; you're investing in academic excellence and peace of mind. Let us help you succeed in law and beyond!
+  </motion.p>
+</section>
+
+
+        
+
+          {/* Call to Action */}
+          <div id="faq" className="px-4 sm:!px-10 lg:!px-[50px] bg-[#000]">
+            <div className="max-w-[1280px] mx-auto py-10 lg:py-24 flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-5">
+              <p className="text-white text-3xl text-center">
+                Get your assignment done in just a few clicks
+              </p>
+
+              <Button
+                type="button"
+                className="p-8 bg-[#5b6cf2] text-xl hover:bg-white hover:text-black"
+              >
+                <a
+    href="https://contentlywriters.com"
+  >
+    Write my assignment
+  </a>
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
-
-      {/* Content Section */}
-      <div className="px-4 sm:px-10 lg:px-[50px]">
-        <div className="max-w-[1280px] mx-auto py-8">
-          <h2 className="text-3xl font-semibold text-center mb-8">Our Law Services</h2>
-
-          {/* Criminal Law */}
-          <div className="my-8 p-6 bg-gray-50 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-3">Criminal Law</h3>
-            <p className="text-[#555]">
-              Get expert help in understanding criminal justice, legal terminology, and case studies tailored to your needs.
-            </p>
-            {/* Example Bar Chart */}
-            <div className="mt-6">
-              <Bar
-                data={{
-                  labels: ['Murder', 'Theft', 'Assault', 'Fraud'],
-                  datasets: [{
-                    label: 'Types of Crimes',
-                    data: [35, 25, 20, 20],
-                    backgroundColor: ['#36A2EB', '#FF6384', '#FFCE56', '#4BC0C0'],
-                  }],
-                }}
-                options={{ responsive: true, maintainAspectRatio: false }}
-                className="h-60"
-              />
-            </div>
-          </div>
-
-          {/* Civil Law */}
-          <div className="my-8 p-6 bg-gray-50 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-3">Civil Law</h3>
-            <p className="text-[#555]">
-              Understand contract law, torts, and property rights with our specialized help and comprehensive resources.
-            </p>
-            {/* Example Pie Chart */}
-            <div className="mt-6">
-              <Pie
-                data={{
-                  labels: ['Contracts', 'Torts', 'Property', 'Family'],
-                  datasets: [{
-                    data: [40, 30, 20, 10],
-                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
-                  }],
-                }}
-                options={{ responsive: true, maintainAspectRatio: false }}
-                className="h-60"
-              />
-            </div>
-          </div>
-
-          {/* Constitutional Law */}
-          <div className="my-8 p-6 bg-gray-50 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-3">Constitutional Law</h3>
-            <p className="text-[#555]">
-              Explore the principles of constitutional governance, rights, and duties with our expert guidance.
-            </p>
-            {/* Example Line Chart */}
-            <div className="mt-6">
-              <Line
-                data={{
-                  labels: ['1791', '1865', '1964', '2020'],
-                  datasets: [{
-                    label: 'Major Amendments Over Time',
-                    data: [1, 13, 24, 27],
-                    fill: false,
-                    borderColor: '#36A2EB',
-                  }],
-                }}
-                options={{ responsive: true, maintainAspectRatio: false }}
-                className="h-60"
-              />
-            </div>
-          </div>
-
-          {/* Conclusion Section */}
-          <div className="text-center py-10">
-            <p className="text-lg font-semibold">
-              Are you facing challenges with your law assignments? Contact our experts for reliable support and achieve your academic goals!
-            </p>
-            <Link href="mailto:info@contentlywriters.com">
-              <div className="rounded-full w-12 h-12 transition-colors duration-200 text-white hover:text-[#e74c3c] bg-[#e74c3c] hover:bg-white mx-auto mt-8 flex justify-center items-center shadow-xl">
-                <MdEmail className="text-3xl" />
-              </div>
-            </Link>
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
   );
 };

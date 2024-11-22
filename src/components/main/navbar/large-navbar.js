@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useUserContext } from "@/context/auth";
 import { FaUser } from 'react-icons/fa';
 import { FiLogOut } from "react-icons/fi";
+import md5 from "md5"; 
 
 
 export default function LargeNavbar({ items }) {
@@ -48,7 +49,12 @@ export default function LargeNavbar({ items }) {
   };
 
 
-  
+
+
+  const getGravatarUrl = (email, size = 40) => {
+    const hash = md5(email.trim().toLowerCase());
+    return `https://www.gravatar.com/avatar/${hash}?s=${size}&d=identicon`; // Default fallback image
+  };  
 
   return (
     <>
@@ -149,23 +155,34 @@ export default function LargeNavbar({ items }) {
 <FaUser className="mr-2" /> User 
 </Button>
               {profileDropdown && (
-                <div className="absolute top-full  right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
-                  <p className="text-sm font-large font-extrabold text-black uppercase">
-                    {user?.firstName || "User"}  {user?.lastName || "."}
+              <div className="absolute top-full right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
+              <div className="flex items-center mb-3">
+                {/* User Avatar */}
+                <img
+                  src={getGravatarUrl(user?.email, 40)} // Get Gravatar image
+                  alt="User Avatar"
+                  className="rounded-full w-10 h-10 mr-3"
+                />
+                <div>
+                  <p className="text-sm font-bold text-black uppercase">
+                    {user?.firstName || "User"} {user?.lastName || "."}
                   </p>
-                  <p className="text-sm font-medium text-gray-700">
+                  <p className="text-xs text-gray-600">
                     {user?.email || "Email not available"}
                   </p>
-                  <div className="text-right">
-                  <Button
-                     onClick={handleLogout}
-                     variant="outline"
-                     className="px-4 py-2 rounded-md mt-3 border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#ededed] hover:text-black focus:outline-none focus:ring-2 focus:ring-[#000000]"
->
-<FiLogOut className="mr-2" /> Logout
-</Button>
-                  </div>
                 </div>
+              </div>
+              <div className="text-right">
+                <Button
+                  onClick={handleLogout}
+                  variant="outline"
+                  className="px-4 py-2 rounded-md mt-3 border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#ededed] hover:text-black focus:outline-none focus:ring-2 focus:ring-[#000000]"
+                >
+                  <FiLogOut className="mr-2" /> Logout
+                </Button>
+              </div>
+            </div>
+            
               )}
             </div>
           </>

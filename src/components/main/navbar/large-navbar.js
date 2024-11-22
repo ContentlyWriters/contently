@@ -157,16 +157,26 @@ export default function LargeNavbar({ items }) {
                     {user?.email || "Email not available"}
                   </p>
                   <div
-  className="relative flex items-right justify-center">
-  
-  <Button
-  onClick={handleLogout}
-  className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5b6cf2] to-[#020035] text-white border-0 shadow-lg transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[#5b6cf2]/50 flex items-center justify-center"
+  className="relative flex items-center justify-center"
+  onMouseEnter={() => setProfileDropdown(true)}
+  onMouseLeave={() => setProfileDropdown(false)}
 >
-  <FiLogOut size={18} className="transition-transform duration-300 ease-in-out hover:rotate-180" />
-</Button>
+  {/* Circular Logout Button */}
+  <Button
+    onClick={handleLogout}
+    className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5b6cf2] to-[#020035] text-white border-0 shadow-lg transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[#5b6cf2]/50 flex items-center justify-center"
+  >
+    <FiLogOut size={18} className="transition-transform duration-300 ease-in-out hover:rotate-180" />
+  </Button>
 
+  {/* Logout Text */}
+  <div
+    className={`absolute left-full ml-2 text-sm font-medium text-black bg-white rounded-md shadow-lg px-2 py-1 transform transition-all duration-300 ease-in-out ${profileDropdown ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
+  >
+    Logout
+  </div>
 </div>
+
 
                 </div>
               )}

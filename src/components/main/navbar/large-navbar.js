@@ -167,7 +167,7 @@ export default function LargeNavbar({ items }) {
                   <p className="text-sm font-bold text-black uppercase">
                     {user?.firstName || "User"} {user?.lastName || "."}
                   </p>
-                  <p className="text-xs text-gray-600">
+                  <p className="text-xs text-gray-800">
                     {user?.email || "Email not available"}
                   </p>
                 </div>

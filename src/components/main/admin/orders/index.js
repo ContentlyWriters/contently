@@ -40,25 +40,25 @@ export default function AdminOrderScreen() {
   const [orders, setOrders] = useState([]);
   const [selectedOrder, setSelectedOrder] = useState({});
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [filter, setFilter] = useState("InProgress");  // Default status filter
+  const [filter, setFilter] = useState("InProgress");  
 
-  // Handle filter change on button click
+  
   const handleFilterChange = (status) => {
-    console.log("Filter button clicked:", status);  // Debug log
-    setFilter(status);  // Update the filter state
+    console.log("Filter button clicked:", status);  
+    setFilter(status);  
   };
 
-  // Fetch orders whenever the filter changes
+  
   useEffect(() => {
     const getOrders = async () => {
-      const data = await fetchOrders(filter);  // Fetch orders based on the current filter
+      const data = await fetchOrders(filter);  
       setOrders(data);
     };
 
     getOrders();
-  }, [filter]);  // Refetch orders when the filter changes
+  }, [filter]);  
 
-  // Handle order selection for the dialog
+  
   const handleIconClick = (order) => {
     setSelectedOrder(order);
     setIsDialogOpen(true);

@@ -25,12 +25,12 @@ function About() {
             <h2 className="text-center text-[40px] sm:text-[50px] lg:text-[60px] font-semibold mx-auto">
               Writers and AI writers
             </h2>
-            <p className="text-center mx-auto text-[16px] sm:text-[14px] lg:text-[18px]">
+            <p className="text-center mx-auto text-[16px] sm:text-[14px] lg:text-[18px] border-b border-gray-300 pb-2">
             Contently Writers are highly skilled at tackling any challenge you may encounter. For those in need of a quick assignment with less focus on quality, we also offer AI content writing and review services.
             </p>
           </div>
           
-          <div className="my-10">
+          <div className="my-2">
             <div className="grid gap-10 sm:gap-1">
               {data.map((item, index) => (
                 <div
@@ -43,16 +43,16 @@ function About() {
                     <h3 className="lg:text-4xl sm:text-3xl text-2xl font-bold pb-5 md:text-start text-center">
                       {item.title}
                     </h3>
-                    <p className="md:text-start text-center opacity-90">
+                    <p className="md:text-start text-[18px] text-center text-[#3d3d3d]">
                       {item.about}
                     </p>
                   </div>
                   
-                  <div className="flex justify-center items-center md:w-[50%] w-full p-5">
+                  <div className="flex justify-center items-center md:w-[50%] w-full ">
                     <Image
                       src={item.image}
                       alt="Image"
-                      className="w-full sm:max-w-[400px] lg:max-w-[500px] object-contain"
+                      className="w-full sm:max-w-[250px] lg:max-w-[350px] object-contain hover:scale-105 "
                     />
                   </div>
                 </div>

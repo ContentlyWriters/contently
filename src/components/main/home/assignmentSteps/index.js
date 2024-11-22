@@ -62,7 +62,7 @@ export default function AssignmentSteps() {
           Money-back Guarantee
         </h4>
         <p className="text-gray-300 text-base leading-relaxed">
-          If there&#39;s any issue with your order, the full amount will be refunded promptly.
+        If there&#39;s any issue with your order, the full amount will be refunded promptly and without hassle.
         </p>
       </div>
 

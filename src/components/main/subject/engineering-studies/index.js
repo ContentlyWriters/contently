@@ -63,7 +63,7 @@ const EngineeringPage = () => {
               </motion.h1> */}
               <motion.p className="text-lg leading-7 mb-6">
               Are you having trouble with your engineering homework? Have you been looking up
-"Complete my engineering assignment" online? If so, it's time to set your concerns regarding
+              &#34;Complete my engineering assignment&#34; online? If so, it&#39;s time to set your concerns regarding
 writing services for engineering assignments aside. A group of very talented assignment
 writers who are also seasoned engineers work for Contently Writers. We are here to make
 sure you succeed academically because we have years of experience creating excellent
@@ -99,7 +99,7 @@ uniqueness and academic honesty.              </motion.p>
   ●  Engineering in Computer Science
   </motion.h3>
   <motion.p className="text-lg leading-7 mb-6">
-    Because of their extensive use in a variety of sectors, including information technology, banking, entertainment, media, healthcare, and education, computers have become essential in today's world. The need for qualified computer science engineers and experts is increasing along with the demand for technology. One of the most popular programs is Computer Science Engineering (CSE), which gives students a thorough understanding of networking, computer programming, and related topics. For students looking for <b>software engineering assignment help</b>, we also provide expert guidance to tackle complex topics and deliver assignments that meet academic standards with precision.
+    Because of their extensive use in a variety of sectors, including information technology, banking, entertainment, media, healthcare, and education, computers have become essential in today&#39;s world. The need for qualified computer science engineers and experts is increasing along with the demand for technology. One of the most popular programs is Computer Science Engineering (CSE), which gives students a thorough understanding of networking, computer programming, and related topics. For students looking for <b>software engineering assignment help</b>, we also provide expert guidance to tackle complex topics and deliver assignments that meet academic standards with precision.
   </motion.p>
 
   <motion.h3 className="text-2xl font-bold mb-4 text-[#303030]">

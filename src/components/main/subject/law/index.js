@@ -120,7 +120,7 @@ share the specifications of your task.
     <li>Start by completing the form found on the Contently Writers homepage in the upper-right corner.</li>
     <li>After that, fill out the order form with all the pertinent information on your task. Giving precise and unambiguous instructions can help guarantee that your assignment is completed flawlessly.</li>
     <li>To finish the payment procedure securely and effectively, you will be taken to our secure payment channel.</li>
-    <li>That's it! Your order will show up on your dashboard as soon as your payment has been approved. You can download the file straight from the location once your task is finished. The method is easy and convenient!</li>
+    <li>That&#39;s it! Your order will show up on your dashboard as soon as your payment has been approved. You can download the file straight from the location once your task is finished. The method is easy and convenient!</li>
   </motion.ul>
 </section>
 
@@ -195,7 +195,7 @@ share the specifications of your task.
     No Time Consumption
   </motion.h4>
   <motion.p className="text-lg leading-7 mb-6">
-    By relieving students of the pressure of tasks, online legal assignment services enable them to manage their time better. With these services, students don't have to worry about deadlines or spend hours looking through textbooks because everything is done for them.
+    By relieving students of the pressure of tasks, online legal assignment services enable them to manage their time better. With these services, students don&#39;t have to worry about deadlines or spend hours looking through textbooks because everything is done for them.
   </motion.p>
 
   <motion.h3
@@ -215,7 +215,7 @@ href="https://www.contentlywriters.com/subject/management" className="text-[#5b6
 href="https://www.contentlywriters.com/subject/accounting" className="text-[#5b6cf2]"> Accounting Assignment</a>, and more. No matter the subject or complexity, our team is here to assist you every step of the way.
   </motion.p>
   <motion.p className="text-lg leading-7 mb-6">
-    With Contently Writers, you're not just purchasing a service; you're investing in academic excellence and peace of mind. Let us help you succeed in law and beyond!
+    With Contently Writers, you&#39;re not just purchasing a service; you&#39;re investing in academic excellence and peace of mind. Let us help you succeed in law and beyond!
   </motion.p>
 </section>
 

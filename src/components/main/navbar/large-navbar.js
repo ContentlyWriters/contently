@@ -171,7 +171,7 @@ export default function LargeNavbar({ items }) {
 
   {/* Logout Text */}
   <div
-    className={`absolute left-full ml-2 text-sm font-medium text-black bg-white rounded-md shadow-lg px-2 py-1 transform transition-all duration-300 ease-in-out ${profileDropdown ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
+    className={`absolute left text-sm font-medium text-black bg-white rounded-md shadow-lg px-2 py-1 transform transition-all duration-300 ease-in-out ${profileDropdown ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2"}`}
   >
     Logout
   </div>

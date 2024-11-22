@@ -4,6 +4,7 @@ import Cookies from 'js-cookie';
 import { Button } from "@/components/ui/button";
 import { useUserContext } from "@/context/auth";
 import { FaUser } from 'react-icons/fa';
+import { FiLogOut } from "react-icons/fi";
 
 
 export default function LargeNavbar({ items }) {
@@ -126,7 +127,7 @@ export default function LargeNavbar({ items }) {
             <Link href="/dashboard">
               <Button
                 variant="outline"
-                className="px-4 py-2 rounded-md border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#000000] hover:text-white hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000]"
+                className="px-4 py-2 rounded-md border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#ededed] hover:text-black hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000]"
               >
                 Dashboard
               </Button>
@@ -140,12 +141,12 @@ export default function LargeNavbar({ items }) {
             >
              <Button
   variant="outline"
-        className="px-4 py-2 rounded-md border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#000000] hover:text-white hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000]"
+        className="px-4 py-2 rounded-md border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#ededed] hover:text-black hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000]"
 >
 <FaUser className="mr-2" /> User 
 </Button>
               {profileDropdown && (
-                <div className="absolute top-full mt-1 right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
+                <div className="absolute top-full  right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
                   <p className="text-sm font-medium font-bold text-black uppercase">
                     {user?.firstName || "User"}  {user?.lastName || "."}
                   </p>
@@ -154,12 +155,12 @@ export default function LargeNavbar({ items }) {
                   </p>
                   <div className="text-right">
                   <Button
-                    onClick={handleLogout}
-                    variant="outline"
-                      className="hover:text-[#ffffff] mt-2 hover:bg-[#000] bg-[#ffffff] text-[#000000] border-2 border-[#8e8e8e] border-opacity-50 text-sm py-2 px-4 rounded-md transition duration-200 ease-in-out mt-4"
-                  >
-                    Logout
-                  </Button>
+                     onClick={handleLogout}
+                     variant="outline"
+                     className="px-4 py-2 rounded-md border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#ededed] hover:text-black hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000]"
+>
+<FiLogOut className="mr-2" /> Logout
+</Button>
                   </div>
                 </div>
               )}
@@ -170,7 +171,7 @@ export default function LargeNavbar({ items }) {
             <Link href="/sign-up">
               <Button
                 variant="outline"
-                  className="px-4 py-2 rounded-md border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#000000] hover:text-white hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000]"
+                  className="px-4 py-2 rounded-md border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#fff] hover:text-black hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000]"
               >
                 Sign up
               </Button>
@@ -178,7 +179,7 @@ export default function LargeNavbar({ items }) {
             <Link href="/login">
               <Button
                 variant="outline"
-                 className="px-4 py-2 rounded-md border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#000000] hover:text-white hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000]"
+                 className="px-4 py-2 rounded-md border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#fff] hover:text-black hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000]"
               >
                 Sign in
               </Button>

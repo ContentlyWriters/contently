@@ -156,28 +156,15 @@ export default function LargeNavbar({ items }) {
                   <p className="text-sm font-medium text-gray-700">
                     {user?.email || "Email not available"}
                   </p>
-                  <div
-  className="relative flex items-center justify-center"
-  onMouseEnter={() => setProfileDropdown(true)}
-  onMouseLeave={() => setProfileDropdown(false)}
+                  <div className="text-right">
+                  <Button
+                     onClick={handleLogout}
+                     variant="outline"
+                     className="px-4 py-2 rounded-md mt-3 border-2 border-[#8e8e8e] border-opacity-50 text-[#000000] bg-white font-medium text-sm transition-colors duration-300 ease-in-out hover:bg-[#ededed] hover:text-black hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000]"
 >
-  {/* Circular Logout Button */}
-  <Button
-    onClick={handleLogout}
-    className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5b6cf2] to-[#020035] text-white border-0 shadow-lg transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[#5b6cf2]/50 flex items-center justify-center"
-  >
-    <FiLogOut size={18} className="transition-transform duration-300 ease-in-out hover:rotate-180" />
-  </Button>
-
-  {/* Logout Text */}
-  <div
-    className={`absolute left text-sm font-medium text-black bg-white rounded-md shadow-lg px-2 py-1 transform transition-all duration-300 ease-in-out ${profileDropdown ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2"}`}
-  >
-    Logout
-  </div>
-</div>
-
-
+<FiLogOut className="mr-2" /> Logout
+</Button>
+                  </div>
                 </div>
               )}
             </div>

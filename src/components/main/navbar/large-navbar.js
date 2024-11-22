@@ -150,7 +150,7 @@ export default function LargeNavbar({ items }) {
 </Button>
               {profileDropdown && (
                 <div className="absolute top-full  right-0 bg-white shadow-md rounded-lg border border-gray-300 w-auto p-4">
-                  <p className="text-sm font-medium font-bold text-black uppercase">
+                  <p className="text-sm font-large font-extrabold text-black uppercase">
                     {user?.firstName || "User"}  {user?.lastName || "."}
                   </p>
                   <p className="text-sm font-medium text-gray-700">

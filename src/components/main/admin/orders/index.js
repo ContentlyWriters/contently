@@ -63,7 +63,7 @@ export default function AdminOrderScreen() {
       <div className="flex justify-between w-full max-w-[90%] sm:w-[1000px] mb-4">
         <div className="flex space-x-4">
           <Button
-            onClick={() => handleFilterChange("In Progress")}
+            onClick={() => handleFilterChange("recent")}
             className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]"
           >
             In Progress

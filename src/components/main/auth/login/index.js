@@ -10,7 +10,6 @@ import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useUserContext } from "@/context/auth";
-import { useSpinner } from "@/context/spinner"; // Spinner Context
 import logo from "@/assets/image/contently-logo.png";
 import Image from "next/image";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
@@ -20,7 +19,6 @@ import { axiosInstance } from "@/lib/axios";
 
 export default function LoginScreen() {
   const { getProfile } = useUserContext();
-  const { setIsLoading } = useSpinner(); // Spinner state
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -53,15 +51,14 @@ export default function LoginScreen() {
     e.preventDefault();
     try {
       setLoading(true);
-      setIsLoading(true); // Start global spinner
 
+      
       const newErrors = {};
       if (!formValues.email) newErrors.email = "Please enter email";
       if (!formValues.password) newErrors.password = "Please enter password";
       if (Object.keys(newErrors).length > 0) {
         setErrors(newErrors);
         setLoading(false);
-        setIsLoading(false); // Stop spinner
         return;
       }
 
@@ -70,36 +67,34 @@ export default function LoginScreen() {
         formValues
       );
 
+      
       localStorage.setItem("token", data.token);
 
       if (!data.token) {
         setErrors({ password: "Please check your password" });
         setLoading(false);
-        setIsLoading(false); // Stop spinner
         return;
       }
 
+      
       toast.success("Login successful!", {
         position: "top-right",
         autoClose: 5000,
       });
 
+      
       getProfile();
 
-      // Persist spinner state during reload
-      localStorage.setItem("loading", "true");
-      router.replace("/");
+      
+      router.replace("/"); 
       setTimeout(() => {
-        window.location.reload();
-      }, 100);
+        window.location.reload(); 
+      }, 100); 
     } catch (err) {
       console.error(err);
       setErrors({ email: "User does not exist" });
     } finally {
-      setTimeout(() => {
-        setLoading(false);
-        setIsLoading(false); // Stop spinner
-      }, 1500);
+      setLoading(false); 
     }
   };
 

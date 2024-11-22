@@ -171,15 +171,19 @@ export default function LargeNavbar({ items }) {
 
   {/* Sliding Hover Text */}
   <div
-    className={`absolute top-0 left-full ml-2 transition-all duration-300 ease-in-out transform ${
+    className={`absolute top-1/2 left-full ml-2 -translate-y-1/2 transition-all duration-300 ease-in-out transform ${
       profileDropdown ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-5"
     }`}
+    style={{
+      whiteSpace: "nowrap",
+    }}
   >
     <span className="text-sm font-medium text-[#000000] bg-white px-3 py-1 rounded-md border border-[#8e8e8e] shadow-lg">
       Logout
     </span>
   </div>
 </div>
+
                 </div>
               )}
             </div>

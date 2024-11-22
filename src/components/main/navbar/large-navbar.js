@@ -166,7 +166,7 @@ export default function LargeNavbar({ items }) {
     onClick={handleLogout}
     className="w-8 h-8 rounded-full bg-white border-2 border-[#8e8e8e] text-[#000000] transition-all duration-300 ease-in-out hover:bg-[#ededed] hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000] flex items-center justify-center"
   >
-    <FiLogOut size={20} />
+    <FiLogOut size={14} />
   </Button>
 
 </div>

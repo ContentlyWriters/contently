@@ -8,15 +8,13 @@ import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import { useUserContext } from "@/context/auth";
-import logo from "@/assets/image/contently-logo.png";
 import Image from "next/image";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "react-toastify";
-import { axiosInstance } from "@/lib/axios";
+import logo from "@/assets/image/contently-logo.png";
+
 export default function LoginScreen() {
-  const { getProfile } = useUserContext();
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -24,108 +22,107 @@ export default function LoginScreen() {
     email: "",
     password: "",
   });
-
+  const [user, setUser] = useState(null); // User state for synchronization
   const [errors, setErrors] = useState({
     email: "",
     password: "",
   });
 
+  // Toggle password visibility
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
 
+  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (!value) {
-      setErrors({
-        ...errors,
-        [name]: `Please enter ${name
-          .split(/(?=[A-Z])/)
-          .map((data) => data.toLowerCase())
-          .join(" ")}`,
-      });
-    } else {
-      setErrors({ ...errors, [name]: "" });
-    }
+    setErrors({ ...errors, [name]: value ? "" : `Please enter ${name}` });
     setFormValues({ ...formValues, [name]: value.trim() });
   };
 
+  // Fetch profile and set user state
+  const getProfile = async (token) => {
+    try {
+      const response = await axios.get("https://contentlywriters.com/api/user/profile", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      setUser(response.data); // Update user state
+    } catch (error) {
+      console.error("Error fetching profile:", error);
+      localStorage.removeItem("token"); // Clear invalid token
+    }
+  };
+
+  // Handle login form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       setLoading(true);
+
+      // Validate input
       const error = {};
       if (!formValues.email) error.email = "Please enter email";
       if (!formValues.password) error.password = "Please enter password";
       if (Object.keys(error).length > 0) {
         setErrors(error);
-        return;
-      }
-
-      console.log("Form Values:", formValues);
-      const response = await axiosInstance.post(
-        "https://contentlywriters.com/api/user/login",
-        formValues
-      );
-
-      console.log({ response: response.data });
-      localStorage.setItem("token", response.data.token);
-
-      if (response.data.token == null) {
-        const error = {};
-        error.password = "Please check your password";
-        setErrors(error);
         setLoading(false);
         return;
       }
 
-      toast.success("Login Success!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-      getProfile();
-      router.replace("/");
-      setLoading(false);
+      // Make login request
+      const response = await axios.post(
+        "https://contentlywriters.com/api/user/login",
+        formValues
+      );
+
+      // Handle successful response
+      if (response.data.token) {
+        localStorage.setItem("token", response.data.token);
+        await getProfile(response.data.token); // Fetch and set user profile
+        toast.success("Login Successful!");
+        router.replace("/"); // Redirect to homepage
+      } else {
+        setErrors({ password: "Invalid credentials" });
+      }
     } catch (err) {
-      console.log(err);
-      const error = {};
-      error.email = "User does not exists";
-      setErrors(error);
+      console.error(err);
+      setErrors({ email: "User does not exist" });
+    } finally {
       setLoading(false);
-    }finally{
-      setLoading(false)
     }
   };
 
-  const handleGoogleAuth = async () => {
-    try {
-      window.location.href =
-        "http://www.contentlywriters.com:8088/oauth2/authorization/google";
-    } catch (err) {}
+  // Handle Google authentication
+  const handleGoogleAuth = () => {
+    window.location.href =
+      "http://www.contentlywriters.com:8088/oauth2/authorization/google";
   };
+
+  // Sync user state on component mount
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      getProfile(token); // Verify and fetch profile on page load
+    }
+  }, []);
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="border-2 rounded-lg sm:w-[400px]  p-8 ">
+      <div className="border-2 rounded-lg sm:w-[400px] p-8">
         <h1 className="text-3xl font-bold text-center pb-10">
           <Link href="/">
             <div className="flex items-center justify-center">
               <Image
                 src={logo}
-                alt="Pangram Logo"
+                alt="Contently Logo"
                 className="h-[80px] w-[180px]"
               />
             </div>
           </Link>
         </h1>
-        <form className="grid gap-6">
+        <form className="grid gap-6" onSubmit={handleSubmit}>
           <div className="grid w-full max-w-sm items-center gap-1.5">
-            <Label htmlFor="login">Email</Label>
+            <Label htmlFor="email">Email</Label>
             <Input
               id="email"
               name="email"
@@ -137,7 +134,7 @@ export default function LoginScreen() {
             <InputError message={errors.email} />
           </div>
           <div className="grid w-full max-w-sm items-center gap-1.5">
-            <Label htmlFor="login">Password</Label>
+            <Label htmlFor="password">Password</Label>
             <span className="relative w-full flex items-center">
               <Input
                 id="password"
@@ -164,7 +161,7 @@ export default function LoginScreen() {
           <Link href="/forgot-password" className="underline">
             Forgot Password
           </Link>
-          <Button type="button" disabled={loading} onClick={handleSubmit}>
+          <Button type="submit" disabled={loading}>
             {loading ? (
               <AiOutlineLoading3Quarters className="h-4 w-4 animate-spin" />
             ) : (
@@ -177,7 +174,7 @@ export default function LoginScreen() {
               Register
             </Link>
           </div>
-          <Button type="button" onClick={() => handleGoogleAuth()}>
+          <Button type="button" onClick={handleGoogleAuth}>
             <FcGoogle className="mr-5 text-2xl" />
             Login with Google
           </Button>

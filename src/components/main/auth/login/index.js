@@ -10,6 +10,7 @@ import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useUserContext } from "@/context/auth";
+import { useSpinner } from "@/context/spinner"; // Spinner Context
 import logo from "@/assets/image/contently-logo.png";
 import Image from "next/image";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
@@ -19,6 +20,7 @@ import { axiosInstance } from "@/lib/axios";
 
 export default function LoginScreen() {
   const { getProfile } = useUserContext();
+  const { setIsLoading } = useSpinner(); // Spinner state
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -51,14 +53,15 @@ export default function LoginScreen() {
     e.preventDefault();
     try {
       setLoading(true);
+      setIsLoading(true); // Start global spinner
 
-      // Client-side validation
       const newErrors = {};
       if (!formValues.email) newErrors.email = "Please enter email";
       if (!formValues.password) newErrors.password = "Please enter password";
       if (Object.keys(newErrors).length > 0) {
         setErrors(newErrors);
         setLoading(false);
+        setIsLoading(false); // Stop spinner
         return;
       }
 
@@ -67,34 +70,36 @@ export default function LoginScreen() {
         formValues
       );
 
-      // Save token to localStorage
       localStorage.setItem("token", data.token);
 
       if (!data.token) {
         setErrors({ password: "Please check your password" });
         setLoading(false);
+        setIsLoading(false); // Stop spinner
         return;
       }
 
-      // Success Notification
       toast.success("Login successful!", {
         position: "top-right",
         autoClose: 5000,
       });
 
-      // Fetch Profile
       getProfile();
 
-      // Redirect and Reload
-      router.replace("/"); // Redirect to the desired page
+      // Persist spinner state during reload
+      localStorage.setItem("loading", "true");
+      router.replace("/");
       setTimeout(() => {
-        window.location.reload(); // Force reload after redirect
-      }, 100); // Slight delay to ensure smooth transition
+        window.location.reload();
+      }, 100);
     } catch (err) {
       console.error(err);
       setErrors({ email: "User does not exist" });
     } finally {
-      setLoading(false); // Ensure loader is stopped in any case
+      setTimeout(() => {
+        setLoading(false);
+        setIsLoading(false); // Stop spinner
+      }, 1500);
     }
   };
 

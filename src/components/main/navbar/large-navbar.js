@@ -157,17 +157,14 @@ export default function LargeNavbar({ items }) {
                     {user?.email || "Email not available"}
                   </p>
                   <div
-  className="relative flex items-right justify-center"
-  onMouseEnter={() => setProfileDropdown(true)}
-  onMouseLeave={() => setProfileDropdown(false)}
->
-  {/* Circular Logout Button */}
+  className="relative flex items-right justify-center">
+  
   <Button
-    onClick={handleLogout}
-    className="w-10 h-10 rounded-full bg-white border-2 border-[#8e8e8e] text-[#000000] transition-all duration-300 ease-in-out hover:bg-[#ededed] hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000] flex items-center justify-center"
-  >
-    <FiLogOut size={14} />
-  </Button>
+  onClick={handleLogout}
+  className="w-12 h-12 rounded-full bg-gradient-to-r from-[#5b6cf2] to-[#020035] text-white border-0 shadow-lg transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[#5b6cf2]/50 flex items-center justify-center"
+>
+  <FiLogOut size={18} className="transition-transform duration-300 ease-in-out hover:rotate-180" />
+</Button>
 
 </div>
 

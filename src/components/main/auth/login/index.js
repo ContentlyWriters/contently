@@ -1,126 +1,181 @@
 "use client";
 
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
-import axios from "axios";
-import { toast } from "react-toastify";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+import InputError from "@/components/ui/input-error";
+import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
-import { AiFillEye, AiFillEyeInvisible, AiOutlineLoading3Quarters } from "react-icons/ai";
+import axios from "axios";
+import { useRouter } from "next/navigation";
+import { useUserContext } from "@/context/auth";
+import logo from "@/assets/image/contently-logo.png";
+import Image from "next/image";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { toast } from "react-toastify";
+import { axiosInstance } from "@/lib/axios";
 
 export default function LoginScreen() {
+  const { getProfile } = useUserContext();
   const router = useRouter();
-  const [formValues, setFormValues] = useState({ email: "", password: "" });
-  const [errors, setErrors] = useState({ email: "", password: "" });
-  const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [formValues, setFormValues] = useState({
+    email: "",
+    password: "",
+  });
+
+  const [errors, setErrors] = useState({
+    email: "",
+    password: "",
+  });
 
   const togglePasswordVisibility = () => setShowPassword(!showPassword);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormValues({ ...formValues, [name]: value });
-    setErrors({ ...errors, [name]: "" }); // Clear errors as user types
+    setFormValues({ ...formValues, [name]: value.trim() });
+    if (!value) {
+      setErrors((prev) => ({
+        ...prev,
+        [name]: `Please enter ${name}`,
+      }));
+    } else {
+      setErrors((prev) => ({ ...prev, [name]: "" }));
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Form validation
-    const newErrors = {};
-    if (!formValues.email) newErrors.email = "Please enter your email.";
-    if (!formValues.password) newErrors.password = "Please enter your password.";
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
-
     try {
       setLoading(true);
 
-      // API call to login
-      const { data } = await axios.post(
+      // Client-side validation
+      const newErrors = {};
+      if (!formValues.email) newErrors.email = "Please enter email";
+      if (!formValues.password) newErrors.password = "Please enter password";
+      if (Object.keys(newErrors).length > 0) {
+        setErrors(newErrors);
+        setLoading(false);
+        return;
+      }
+
+      const { data } = await axiosInstance.post(
         "https://contentlywriters.com/api/user/login",
         formValues
       );
 
-      console.log("Login Response:", data);
-
       // Save token to localStorage
       localStorage.setItem("token", data.token);
 
-      // Redirect user after login
-      toast.success("Login successful!");
-      router.replace("/");
-    } catch (error) {
-      console.error("Login Error:", error.response?.data || error.message);
+      if (!data.token) {
+        setErrors({ password: "Please check your password" });
+        setLoading(false);
+        return;
+      }
 
-      // Show error feedback
-      setErrors({
-        email: error.response?.data?.message || "Invalid email or password.",
+      // Success Notification
+      toast.success("Login successful!", {
+        position: "top-right",
+        autoClose: 5000,
       });
+
+      // Fetch Profile
+      getProfile();
+
+      // Redirect and Reload
+      router.replace("/"); // Redirect to the desired page
+      setTimeout(() => {
+        window.location.reload(); // Force reload after redirect
+      }, 100); // Slight delay to ensure smooth transition
+    } catch (err) {
+      console.error(err);
+      setErrors({ email: "User does not exist" });
     } finally {
-      setLoading(false);
+      setLoading(false); // Ensure loader is stopped in any case
     }
   };
 
   const handleGoogleAuth = () => {
-    window.location.href = "http://www.contentlywriters.com:8088/oauth2/authorization/google";
+    window.location.href =
+      "http://www.contentlywriters.com:8088/oauth2/authorization/google";
   };
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="border-2 rounded-lg sm:w-[400px] p-8">
-        <h1 className="text-3xl font-bold text-center pb-10">Login</h1>
+      <div className="border-2 rounded-lg sm:w-[400px]  p-8 ">
+        <h1 className="text-3xl font-bold text-center pb-10">
+          <Link href="/">
+            <div className="flex items-center justify-center">
+              <Image
+                src={logo}
+                alt="Pangram Logo"
+                className="h-[80px] w-[180px]"
+              />
+            </div>
+          </Link>
+        </h1>
         <form className="grid gap-6" onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="email" className="block mb-2">Email</label>
-            <input
+          <div className="grid w-full max-w-sm items-center gap-1.5">
+            <Label htmlFor="email">Email</Label>
+            <Input
               id="email"
               name="email"
-              type="email"
-              className="w-full border px-4 py-2"
-              placeholder="Enter your email"
+              type="text"
+              placeholder="Enter your Email"
               value={formValues.email}
               onChange={handleChange}
             />
-            {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+            <InputError message={errors.email} />
           </div>
-          <div>
-            <label htmlFor="password" className="block mb-2">Password</label>
-            <div className="relative">
-              <input
+          <div className="grid w-full max-w-sm items-center gap-1.5">
+            <Label htmlFor="password">Password</Label>
+            <div className="relative w-full">
+              <Input
                 id="password"
                 name="password"
                 type={showPassword ? "text" : "password"}
-                className="w-full border px-4 py-2"
-                placeholder="Enter your password"
+                placeholder="Enter your Password"
                 value={formValues.password}
                 onChange={handleChange}
               />
-              <span
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer"
-                onClick={togglePasswordVisibility}
-              >
-                {showPassword ? <AiFillEye /> : <AiFillEyeInvisible />}
-              </span>
+              {showPassword ? (
+                <AiFillEye
+                  onClick={togglePasswordVisibility}
+                  className="absolute right-2.5 top-1/2 transform -translate-y-1/2 cursor-pointer"
+                />
+              ) : (
+                <AiFillEyeInvisible
+                  onClick={togglePasswordVisibility}
+                  className="absolute right-2.5 top-1/2 transform -translate-y-1/2 cursor-pointer"
+                />
+              )}
             </div>
-            {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}
+            <InputError message={errors.password} />
           </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
-            disabled={loading}
-          >
-            {loading ? <AiOutlineLoading3Quarters className="animate-spin mx-auto" /> : "Login"}
-          </button>
+          <Link href="/forgot-password" className="underline">
+            Forgot Password
+          </Link>
+          <Button type="submit" disabled={loading}>
+            {loading ? (
+              <AiOutlineLoading3Quarters className="h-4 w-4 animate-spin" />
+            ) : (
+              "Login"
+            )}
+          </Button>
+          <div className="text-center">
+            Don&#39;t have an account?{" "}
+            <Link href="/sign-up" className="underline">
+              Register
+            </Link>
+          </div>
+          <Button type="button" onClick={handleGoogleAuth}>
+            <FcGoogle className="mr-5 text-2xl" />
+            Login with Google
+          </Button>
         </form>
-        <button
-          className="mt-4 w-full flex items-center justify-center bg-gray-200 py-2 rounded"
-          onClick={handleGoogleAuth}
-        >
-          <FcGoogle className="mr-2" />
-          Login with Google
-        </button>
       </div>
     </div>
   );

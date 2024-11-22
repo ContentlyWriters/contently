@@ -169,13 +169,13 @@ export default function LargeNavbar({ items }) {
     <FiLogOut size={20} />
   </Button>
 
-  {/* Hover Text (Logout) */}
+  {/* Sliding Hover Text */}
   <div
-    className={`absolute top-14 transition-transform duration-300 ease-in-out ${
-      profileDropdown ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
+    className={`absolute top-0 left-full ml-2 transition-all duration-300 ease-in-out transform ${
+      profileDropdown ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-5"
     }`}
   >
-    <span className="text-sm font-medium text-[#000000] bg-white px-2 py-1 rounded-md border border-[#8e8e8e] shadow-lg">
+    <span className="text-sm font-medium text-[#000000] bg-white px-3 py-1 rounded-md border border-[#8e8e8e] shadow-lg">
       Logout
     </span>
   </div>

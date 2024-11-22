@@ -157,31 +157,18 @@ export default function LargeNavbar({ items }) {
                     {user?.email || "Email not available"}
                   </p>
                   <div
-  className="relative flex items-center justify-center"
+  className="relative flex items-right justify-center"
   onMouseEnter={() => setProfileDropdown(true)}
   onMouseLeave={() => setProfileDropdown(false)}
 >
   {/* Circular Logout Button */}
   <Button
     onClick={handleLogout}
-    className="w-12 h-12 rounded-full bg-white border-2 border-[#8e8e8e] text-[#000000] transition-all duration-300 ease-in-out hover:bg-[#ededed] hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000] flex items-center justify-center"
+    className="w-8 h-8 rounded-full bg-white border-2 border-[#8e8e8e] text-[#000000] transition-all duration-300 ease-in-out hover:bg-[#ededed] hover:border-[#000000] focus:outline-none focus:ring-2 focus:ring-[#000000] flex items-center justify-center"
   >
     <FiLogOut size={20} />
   </Button>
 
-  {/* Sliding Hover Text */}
-  <div
-    className={`absolute top-1/2 left-full ml-2 -translate-y-1/2 transition-all duration-300 ease-in-out transform ${
-      profileDropdown ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-5"
-    }`}
-    style={{
-      whiteSpace: "nowrap",
-    }}
-  >
-    <span className="text-sm font-medium text-[#000000] bg-white px-3 py-1 rounded-md border border-[#8e8e8e] shadow-lg">
-      Logout
-    </span>
-  </div>
 </div>
 
                 </div>

@@ -16,8 +16,10 @@ import axios from "axios";
 import { axiosInstance } from "@/lib/axios";
 import AdminOrderDetailScreen from "./orderDetails";
 
+// Fetch orders with a status
 async function fetchOrders(status = "") {
   try {
+    console.log("Admin Dashboard - Fetching orders with status:", status); // Debug log
     const response = await axiosInstance.get("order/getAll", {
       headers: {
         Authorization: `${localStorage.getItem("token")}`,
@@ -38,17 +40,15 @@ export default function AdminOrderScreen() {
   const [orders, setOrders] = useState([]);
   const [selectedOrder, setSelectedOrder] = useState({});
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [filter, setFilter] = useState("");  // New state for filter
+  const [filter, setFilter] = useState("InProgress");  // Default status filter
 
-  const handleIconClick = (order) => {
-    setSelectedOrder(order);
-    setIsDialogOpen(true);
-  };
-
+  // Handle filter change on button click
   const handleFilterChange = (status) => {
+    console.log("Filter button clicked:", status);  // Debug log
     setFilter(status);  // Update the filter state
   };
 
+  // Fetch orders whenever the filter changes
   useEffect(() => {
     const getOrders = async () => {
       const data = await fetchOrders(filter);  // Fetch orders based on the current filter
@@ -58,12 +58,18 @@ export default function AdminOrderScreen() {
     getOrders();
   }, [filter]);  // Refetch orders when the filter changes
 
+  // Handle order selection for the dialog
+  const handleIconClick = (order) => {
+    setSelectedOrder(order);
+    setIsDialogOpen(true);
+  };
+
   return (
     <div className="grid py-10 justify-center items-center h-screen bg-[#ffffff] overflow-auto">
       <div className="flex justify-between w-full max-w-[90%] sm:w-[1000px] mb-4">
         <div className="flex space-x-4">
           <Button
-            onClick={() => handleFilterChange("recent")}
+            onClick={() => handleFilterChange("InProgress")}
             className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]"
           >
             In Progress

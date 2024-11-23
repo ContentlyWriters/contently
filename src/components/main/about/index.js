@@ -52,7 +52,7 @@ function About() {
                     <Image
                       src={item.image}
                       alt="Image"
-                      className="w-full sm:max-w-[250px] lg:max-w-[350px] object-contain hover:scale-105 "
+                      className="w-full sm:max-w-[280px] lg:max-w-[380px] object-contain hover:scale-105 "
                     />
                   </div>
                 </div>

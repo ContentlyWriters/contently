@@ -1,8 +1,6 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/router"; // Correct import
 import Image from "next/image";
 import image1 from "@/assets/image/Blog post-amico.svg";
 import image2 from "@/assets/image/Maintenance-bro.svg";
@@ -14,9 +12,6 @@ const About = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [couponPopup, setCouponPopup] = useState(false); // Add state for coupon popup
   const [isCopied, setIsCopied] = useState(false); // State for copy confirmation
-  const [user, setUser] = useState({ email: "" }); // Simple user state for demo
-  const [router, setRouter] = useState(null); // State to store router
-  const [isClient, setIsClient] = useState(false); // State to check if it's client-side
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -26,24 +21,12 @@ const About = () => {
     return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
 
-  const handleGetCoupon = () => {
-    if (user?.email) {
-      // If user is logged in, directly show coupon popup
-      setShowPopup(false);
-      setCouponPopup(true);
-    } else {
-      // Redirect to login page if not logged in
-      router.push("/login");
-    }
-  };
-
   const handleCopyCoupon = () => {
     navigator.clipboard.writeText("SAVE20").then(() => {
       setIsCopied(true); // Set copied state to true
       setTimeout(() => setIsCopied(false), 2000); // Reset copied state after 2 seconds
     });
   };
-
 
   return (
     <div>
@@ -120,58 +103,65 @@ const About = () => {
         </div>
       </div>
 
-     {/* Coupon Popup */}
-     {showPopup && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-          <div className="relative bg-white shadow-lg rounded-r-[20px] rounded-l-[720px] h-[360px] w-[1020px] p-12 flex flex-col justify-center items-center ">
-            <button
-              className="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-[28px] -mt-4"
-              onClick={() => setShowPopup(false)}
-            >
-              &times;
-            </button>
-            <div className="absolute -left-[0px] w-[360px] h-[360px] rounded-full bg-white flex items-center justify-center">
-              <Image
-                src={image5}
-                alt="Logo"
-                className="rounded-full object-cover"
-                width={360}
-                height={360}
-              />
-            </div>
-            <div className="ml-[310px] text-center">
-              <h3 className="text-4xl font-bold text-gray-800 mb-4">
-                <span className="text-blue-600 font-extrabold">GET 20% OFF</span> YOUR FIRST ORDER
-              </h3>
-              <div className="flex flex-col items-center">
-                <input
-                  type="email"
-                  value={user?.email || ""}
-                  placeholder="Enter your email"
-                  className="w-full px-4 py-2 border border-gray-600 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-[#5b6cf2]"
-                  readOnly={!!user?.email} // Make field readonly if email is available
-                />
-                <Button
-                  className="bg-[#5b6cf2] hover:bg-[#3e54d6] w-[440px] text-white py-6 px-12 rounded-lg transition-transform transform"
-                  onClick={handleGetCoupon}
-                >
-                  GET MY 20% OFF
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      {showPopup && (
+  <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+    <div className="relative bg-white shadow-lg rounded-r-[20px] rounded-l-[720px] h-[360px] w-[1020px] p-12 flex flex-col justify-center items-center ">
+      {/* Close Button */}
+      <button
+        className="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-[28px] -mt-4"
+        onClick={() => setShowPopup(false)}
+      >
+        &times;
+      </button>
 
-      {/* Small Coupon Popup */}
-      {couponPopup && (
+      {/* Logo on the left */}
+      <div className="absolute -left-[0px] w-[360px] h-[360px] rounded-full bg-white flex items-center justify-center">
+        <Image
+          src={image5}
+          alt="Logo"
+          className="rounded-full object-cover"
+          width={360}
+          height={360}
+        />
+      </div>
+
+      {/* Popup content */}
+      <div className="ml-[310px] text-center">
+        <h3 className="text-4xl font-bold text-gray-800 mb-4">
+          <span className="text-blue-600 font-extrabold">GET 20% OFF</span> YOUR FIRST ORDER
+        </h3>
+        <div className="flex flex-col items-center">
+          {/* Email Input */}
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="w-full px-4 py-2 border border-gray-600 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-[#5b6cf2]"
+          />
+          {/* Submit Button */}
+          <Button
+            className="bg-[#5b6cf2] hover:bg-[#3e54d6] w-[440px] text-white py-6 px-12 rounded-lg  transition-transform transform"
+            onClick={() => {
+              setShowPopup(false); // Close current popup
+              setCouponPopup(true); // Show coupon popup
+            }}
+          >
+            GET MY 20% OFF
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+  {/* Small Coupon Popup */}
+  {couponPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
             <h3 className="text-2xl font-bold text-gray-800">Thanks for Joining!</h3>
             <p className="text-gray-600 mt-2">Your coupon code is:</p>
             <div
               className="bg-[#5b6cf2] text-white text-xl font-bold py-2 px-4 rounded-md mt-4 cursor-pointer hover:bg-[#3e54d6] transition"
-              onClick={handleCopyCoupon}
+              onClick={handleCopyCoupon} // Copy coupon code to clipboard
             >
               SAVE20
             </div>
@@ -220,3 +210,5 @@ const data = [
     image: image4,
   },
 ];
+
+

@@ -15,16 +15,10 @@ const Popup = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // Check if the first popup has been shown in the last 3 days
-    const lastShown = localStorage.getItem("popupLastShown");
-    const currentTime = new Date().getTime();
-    if (!lastShown || currentTime - lastShown > 3 * 24 * 60 * 60 * 1000) {
-      // If more than 3 days have passed, show the popup
-      setTimeout(() => {
-        setShowPopup(true);
-        localStorage.setItem("popupLastShown", currentTime); // Save the current time
-      }, 6000);
-    }
+    // Always show the first popup (no 3-day limit)
+    setTimeout(() => {
+      setShowPopup(true); // Show the first popup after 6 seconds
+    }, 6000);
   }, []);
 
   const handleClickGetDiscount = () => {
@@ -52,34 +46,39 @@ const Popup = () => {
   useEffect(() => {
     // This effect is to show "Thanks for Joining" popup when user logs in
     if (isAuthenticated && clickedGetDiscount) {
-      setTimeout(() => {
-        setCouponPopup(true); // Show the "Thanks for Joining" popup after 7 seconds
-      }, 7000); // Delay of 7 seconds
+      // Check if the "Thanks for Joining" popup has already been shown
+      const hasShownThanksPopup = localStorage.getItem("thanksPopupShown");
+
+      if (!hasShownThanksPopup) {
+        setTimeout(() => {
+          setCouponPopup(true); // Show the "Thanks for Joining" popup after 7 seconds
+          localStorage.setItem("thanksPopupShown", "true"); // Mark that the popup has been shown
+        }, 7000); // Delay of 7 seconds
+      }
     }
   }, [isAuthenticated, clickedGetDiscount]);
 
   return (
     <>
-       {showPopup && (
+      {showPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-            <div className="relative bg-white shadow-lg rounded-r-[20px] rounded-l-[720px] h-[360px] w-[1020px] p-12 flex flex-col justify-center items-center ">
-
+          <div className="relative bg-white shadow-lg rounded-r-[20px] rounded-l-[720px] h-[360px] w-[1020px] p-12 flex flex-col justify-center items-center ">
             <button
-        className="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-[28px] -mt-4"
-        onClick={() => setShowPopup(false)}
-      >
-        &times;
-      </button>
+              className="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-[28px] -mt-4"
+              onClick={() => setShowPopup(false)}
+            >
+              &times;
+            </button>
 
-      <div className="absolute -left-[0px] w-[360px] h-[360px] rounded-full bg-white flex items-center justify-center">
-        <Image
-          src={image5}
-          alt="Logo"
-          className="rounded-full object-cover"
-          width={360}
-          height={360}
-        />
-      </div>
+            <div className="absolute -left-[0px] w-[360px] h-[360px] rounded-full bg-white flex items-center justify-center">
+              <Image
+                src={image5}
+                alt="Logo"
+                className="rounded-full object-cover"
+                width={360}
+                height={360}
+              />
+            </div>
 
             <div className="ml-[310px] text-center">
               <h3 className="text-4xl font-bold text-gray-800 mb-4">
@@ -94,13 +93,11 @@ const Popup = () => {
                   className="w-full px-4 py-2 border border-gray-600 rounded-lg mb-4 focus:outline-none"
                 />
                 <button
-                    className="bg-[#5b6cf2] hover:bg-[#3e54d6] w-[440px] text-white py-3 px-12 rounded-lg  transition-transform transform"
-
+                  className="bg-[#5b6cf2] hover:bg-[#3e54d6] w-[440px] text-white py-3 px-12 rounded-lg transition-transform transform"
                   onClick={handleClickGetDiscount} // Call the function on click
                 >
                   GET MY 20% OFF
                 </button>
-
               </div>
             </div>
           </div>

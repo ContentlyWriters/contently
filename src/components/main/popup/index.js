@@ -11,11 +11,11 @@ const Popup = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [couponPopup, setCouponPopup] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
-  const [clickedGetDiscount, setClickedGetDiscount] = useState(false); // State to track if the button is clicked
+  const [clickedGetDiscount, setClickedGetDiscount] = useState(false); // Track if the user clicked the button
   const router = useRouter();
 
   useEffect(() => {
-    // Check if the popup has been shown in the last 3 days
+    // Check if the first popup has been shown in the last 3 days
     const lastShown = localStorage.getItem("popupLastShown");
     const currentTime = new Date().getTime();
     if (!lastShown || currentTime - lastShown > 3 * 24 * 60 * 60 * 1000) {
@@ -28,7 +28,7 @@ const Popup = () => {
   }, []);
 
   const handleClickGetDiscount = () => {
-    setClickedGetDiscount(true); // Mark that the button was clicked
+    setClickedGetDiscount(true); // Track if the button is clicked
 
     if (!isAuthenticated) {
       // If the user is not authenticated, redirect to login page
@@ -50,7 +50,7 @@ const Popup = () => {
   };
 
   useEffect(() => {
-    // Show "Thanks for Joining" popup only if the button was clicked and login is successful
+    // This effect is to show "Thanks for Joining" popup when user logs in
     if (isAuthenticated && clickedGetDiscount) {
       setTimeout(() => {
         setCouponPopup(true); // Show the "Thanks for Joining" popup after 7 seconds
@@ -81,7 +81,7 @@ const Popup = () => {
         />
       </div>
 
-      <div className="ml-[310px] text-center">
+            <div className="ml-[310px] text-center">
               <h3 className="text-4xl font-bold text-gray-800 mb-4">
                 <span className="text-blue-600">GET 20% OFF</span> YOUR FIRST ORDER
               </h3>

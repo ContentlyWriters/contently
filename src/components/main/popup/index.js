@@ -14,10 +14,16 @@ const Popup = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // Show the first popup after 6 seconds
-    setTimeout(() => {
-      setShowPopup(true);
-    }, 6000);
+    // Check if the popup has been shown in the last 3 days
+    const lastShown = localStorage.getItem("popupLastShown");
+    const currentTime = new Date().getTime();
+    if (!lastShown || currentTime - lastShown > 3 * 24 * 60 * 60 * 1000) {
+      // If more than 3 days have passed, show the popup
+      setTimeout(() => {
+        setShowPopup(true);
+        localStorage.setItem("popupLastShown", currentTime); // Save the current time
+      }, 6000);
+    }
   }, []);
 
   const handleClickGetDiscount = () => {
@@ -39,6 +45,13 @@ const Popup = () => {
       setTimeout(() => setIsCopied(false), 2000);
     });
   };
+
+  useEffect(() => {
+    // If the user is authenticated and the popup is shown, show the thanks popup
+    if (isAuthenticated && showPopup) {
+      setCouponPopup(true); // Show the "Thanks for Joining" popup immediately after login
+    }
+  }, [isAuthenticated, showPopup]);
 
   return (
     <>
@@ -63,7 +76,7 @@ const Popup = () => {
         />
       </div>
 
-            <div className="ml-[310px] text-center">
+      <div className="ml-[310px] text-center">
               <h3 className="text-4xl font-bold text-gray-800 mb-4">
                 <span className="text-blue-600">GET 20% OFF</span> YOUR FIRST ORDER
               </h3>
@@ -75,13 +88,15 @@ const Popup = () => {
                   placeholder="Enter your email"
                   className="w-full px-4 py-2 border border-gray-600 rounded-lg mb-4 focus:outline-none"
                 />
-                <button
+
+                  <button
                     className="bg-[#5b6cf2] hover:bg-[#3e54d6] w-[440px] text-white py-3 px-12 rounded-lg  transition-transform transform"
 
                   onClick={handleClickGetDiscount} // Call the function on click
                 >
                   GET MY 20% OFF
                 </button>
+
               </div>
             </div>
           </div>

@@ -14,12 +14,6 @@ export default function HomeLayout({ children }) {
   return (
     <GuestRoute>
       <div>
-      <head>
-          <title>{metadata.title}</title>
-          <meta name="description" content={metadata.description} />
-          <meta name="keywords" content={metadata.keywords} />
-          
-        </head>
         <Navbar />
         <div className="mt-[80px]">{children}</div>
         <Footer />

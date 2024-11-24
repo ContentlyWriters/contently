@@ -15,10 +15,15 @@ const Popup = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // Always show the first popup (no 3-day limit)
-    setTimeout(() => {
-      setShowPopup(true); // Show the first popup after 6 seconds
-    }, 6000);
+    // Check if the "Thanks for Joining" popup has already been shown
+    const hasShownThanksPopup = localStorage.getItem("thanksPopupShown");
+
+    if (!hasShownThanksPopup) {
+      // Always show the first popup (no 3-day limit)
+      setTimeout(() => {
+        setShowPopup(true); // Show the first popup after 6 seconds
+      }, 6000);
+    }
   }, []);
 
   const handleClickGetDiscount = () => {
@@ -60,7 +65,8 @@ const Popup = () => {
 
   return (
     <>
-      {showPopup && (
+      {/* Only show the first popup if "Thanks for Joining" hasn't been shown */}
+      {showPopup && !localStorage.getItem("thanksPopupShown") && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
           <div className="relative bg-white shadow-lg rounded-r-[20px] rounded-l-[720px] h-[360px] w-[1020px] p-12 flex flex-col justify-center items-center ">
             <button
@@ -104,7 +110,8 @@ const Popup = () => {
         </div>
       )}
 
-      {couponPopup && (
+      {/* Show "Thanks for Joining" popup only if it hasn't been shown already */}
+      {couponPopup && !localStorage.getItem("thanksPopupShown") && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
             <h3 className="text-2xl font-bold text-gray-800">Thanks for Joining!</h3>

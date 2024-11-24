@@ -47,36 +47,35 @@ const Popup = () => {
   };
 
   useEffect(() => {
-    // If the user is authenticated and the popup is shown, show the thanks popup
-    if (isAuthenticated && showPopup) {
-      setCouponPopup(true); // Show the "Thanks for Joining" popup immediately after login
+    // Show "Thanks for Joining" popup after login is successful
+    if (isAuthenticated) {
+      setTimeout(() => {
+        setCouponPopup(true); // Show the "Thanks for Joining" popup after 7 seconds
+      }, 7000); // Delay of 7 seconds
     }
-  }, [isAuthenticated, showPopup]);
+  }, [isAuthenticated]);
 
   return (
     <>
       {showPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-            <div className="relative bg-white shadow-lg rounded-r-[20px] rounded-l-[720px] h-[360px] w-[1020px] p-12 flex flex-col justify-center items-center ">
-
+          <div className="relative bg-white shadow-lg rounded-lg h-[360px] w-[1020px] p-12 flex flex-col justify-center items-center">
             <button
-        className="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-[28px] -mt-4"
-        onClick={() => setShowPopup(false)}
-      >
-        &times;
-      </button>
-
-      <div className="absolute -left-[0px] w-[360px] h-[360px] rounded-full bg-white flex items-center justify-center">
-        <Image
-          src={image5}
-          alt="Logo"
-          className="rounded-full object-cover"
-          width={360}
-          height={360}
-        />
-      </div>
-
-      <div className="ml-[310px] text-center">
+              className="absolute top-3 right-3 text-gray-600 hover:text-gray-800 text-2xl"
+              onClick={() => setShowPopup(false)}
+            >
+              &times;
+            </button>
+            <div className="absolute -left-[60px] w-[360px] h-[360px] rounded-full bg-white flex items-center justify-center">
+              <Image
+                src={image5}
+                alt="Logo"
+                className="rounded-full object-cover"
+                width={360}
+                height={360}
+              />
+            </div>
+            <div className="ml-[310px] text-center">
               <h3 className="text-4xl font-bold text-gray-800 mb-4">
                 <span className="text-blue-600">GET 20% OFF</span> YOUR FIRST ORDER
               </h3>
@@ -88,15 +87,12 @@ const Popup = () => {
                   placeholder="Enter your email"
                   className="w-full px-4 py-2 border border-gray-600 rounded-lg mb-4 focus:outline-none"
                 />
-
-                  <button
-                    className="bg-[#5b6cf2] hover:bg-[#3e54d6] w-[440px] text-white py-3 px-12 rounded-lg  transition-transform transform"
-
+                <button
+                  className="bg-[#5b6cf2] hover:bg-[#3e54d6] w-[440px] text-white py-6 px-12 rounded-lg transition-transform"
                   onClick={handleClickGetDiscount} // Call the function on click
                 >
                   GET MY 20% OFF
                 </button>
-
               </div>
             </div>
           </div>

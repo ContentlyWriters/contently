@@ -11,6 +11,7 @@ const Popup = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [couponPopup, setCouponPopup] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
+  const [clickedGetDiscount, setClickedGetDiscount] = useState(false); // State to track if the button is clicked
   const router = useRouter();
 
   useEffect(() => {
@@ -27,6 +28,8 @@ const Popup = () => {
   }, []);
 
   const handleClickGetDiscount = () => {
+    setClickedGetDiscount(true); // Mark that the button was clicked
+
     if (!isAuthenticated) {
       // If the user is not authenticated, redirect to login page
       setTimeout(() => {
@@ -47,17 +50,17 @@ const Popup = () => {
   };
 
   useEffect(() => {
-    // Show "Thanks for Joining" popup after login is successful
-    if (isAuthenticated) {
+    // Show "Thanks for Joining" popup only if the button was clicked and login is successful
+    if (isAuthenticated && clickedGetDiscount) {
       setTimeout(() => {
         setCouponPopup(true); // Show the "Thanks for Joining" popup after 7 seconds
       }, 7000); // Delay of 7 seconds
     }
-  }, [isAuthenticated]);
+  }, [isAuthenticated, clickedGetDiscount]);
 
   return (
     <>
-        {showPopup && (
+       {showPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
             <div className="relative bg-white shadow-lg rounded-r-[20px] rounded-l-[720px] h-[360px] w-[1020px] p-12 flex flex-col justify-center items-center ">
 
@@ -76,9 +79,9 @@ const Popup = () => {
           width={360}
           height={360}
         />
+      </div>
 
-            </div>
-            <div className="ml-[310px] text-center">
+      <div className="ml-[310px] text-center">
               <h3 className="text-4xl font-bold text-gray-800 mb-4">
                 <span className="text-blue-600">GET 20% OFF</span> YOUR FIRST ORDER
               </h3>
@@ -90,7 +93,6 @@ const Popup = () => {
                   placeholder="Enter your email"
                   className="w-full px-4 py-2 border border-gray-600 rounded-lg mb-4 focus:outline-none"
                 />
-
                 <button
                     className="bg-[#5b6cf2] hover:bg-[#3e54d6] w-[440px] text-white py-3 px-12 rounded-lg  transition-transform transform"
 

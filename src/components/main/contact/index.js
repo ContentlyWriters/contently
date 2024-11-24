@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import logo from "@/assets/image/contently-logo.png";
 
+
 function ContactUs() {
   return (
     <>

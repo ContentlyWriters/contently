@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -22,6 +22,7 @@ export default function LoginScreen() {
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [termsAccepted, setTermsAccepted] = useState(false); // State for checkbox
   const [formValues, setFormValues] = useState({
     email: "",
     password: "",
@@ -31,6 +32,14 @@ export default function LoginScreen() {
     email: "",
     password: "",
   });
+
+  useEffect(() => {
+    // Check localStorage for terms acceptance
+    const savedAcceptance = localStorage.getItem("termsAccepted");
+    if (savedAcceptance === "true") {
+      setTermsAccepted(true);
+    }
+  }, []);
 
   const togglePasswordVisibility = () => setShowPassword(!showPassword);
 
@@ -47,12 +56,19 @@ export default function LoginScreen() {
     }
   };
 
+  const handleTermsChange = (e) => {
+    const isChecked = e.target.checked;
+    setTermsAccepted(isChecked);
+
+    // Save terms acceptance to localStorage
+    localStorage.setItem("termsAccepted", isChecked.toString());
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       setLoading(true);
 
-      
       const newErrors = {};
       if (!formValues.email) newErrors.email = "Please enter email";
       if (!formValues.password) newErrors.password = "Please enter password";
@@ -67,7 +83,6 @@ export default function LoginScreen() {
         formValues
       );
 
-      
       localStorage.setItem("token", data.token);
 
       if (!data.token) {
@@ -76,36 +91,37 @@ export default function LoginScreen() {
         return;
       }
 
-      
       toast.success("Login successful!", {
         position: "top-right",
         autoClose: 5000,
       });
 
-      
       getProfile();
 
-      
-      router.replace("/"); 
+      router.replace("/");
       setTimeout(() => {
-        window.location.reload(); 
-      }, 100); 
+        window.location.reload();
+      }, 100);
     } catch (err) {
       console.error(err);
       setErrors({ email: "User does not exist" });
     } finally {
-      setLoading(false); 
+      setLoading(false);
     }
   };
 
   const handleGoogleAuth = () => {
+    if (!termsAccepted) {
+      toast.error("Please accept Terms & Conditions before logging in!");
+      return;
+    }
     window.location.href =
       "http://www.contentlywriters.com:8088/oauth2/authorization/google";
   };
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="border-2 rounded-lg sm:w-[400px]  p-8 ">
+      <div className="border-2 rounded-lg sm:w-[400px] p-8">
         <h1 className="text-3xl font-bold text-center pb-10">
           <Link href="/">
             <div className="flex items-center justify-center">
@@ -156,9 +172,30 @@ export default function LoginScreen() {
             <InputError message={errors.password} />
           </div>
           <Link href="/forgot-password" className="underline">
-            Forgot Password
-          </Link>
-          <Button type="submit" disabled={loading}>
+Forgot Password
+</Link>
+<div className="flex items-center">
+  <input
+    type="checkbox"
+    id="terms"
+    checked={termsAccepted}
+    onChange={handleTermsChange}
+    className="mr-2"
+  />
+  <label htmlFor="terms" className="text-[12px] ">
+    I agree to the{" "}
+    <Link href="/terms-and-conditions" target="_blank" className="underline text-[12px]">
+      Terms & Conditions
+    </Link>{" "}
+    and{" "}
+    <Link href="/privacy-policy" target="_blank" className="underline text-[12px]">
+      Privacy Policy
+    </Link>
+  </label>
+</div>
+
+
+          <Button type="submit" disabled={!termsAccepted || loading}>
             {loading ? (
               <AiOutlineLoading3Quarters className="h-4 w-4 animate-spin" />
             ) : (
@@ -180,3 +217,8 @@ export default function LoginScreen() {
     </div>
   );
 }
+
+
+
+
+

@@ -10,7 +10,7 @@ import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useRouter } from "next/navigation"; // Correct import for useRouter in App Router
+import { useRouter } from "next/navigation";
 import { useUserContext } from "@/context/auth";
 import logo from "@/assets/image/contently-logo.png";
 import Image from "next/image";
@@ -34,8 +34,9 @@ export default function SignUpScreen() {
 
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [termsAccepted, setTermsAccepted] = useState(false);
 
-  const router = useRouter(); // Use next/navigation for the new App Router
+  const router = useRouter();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -76,6 +77,14 @@ export default function SignUpScreen() {
     if (formValues.password !== formValues.confirmPassword) {
       error.confirmPassword = "Passwords do not match";
     }
+    if (!termsAccepted) {
+      toast.error("You must accept the Terms and Conditions and Privacy Policy.", {
+        position: "top-right",
+        autoClose: 5000,
+      });
+      return;
+    }
+
     if (Object.keys(error).length > 0) {
       setErrors(error);
       return;
@@ -92,6 +101,7 @@ export default function SignUpScreen() {
       });
 
       localStorage.setItem("token", response.data.token);
+      localStorage.setItem("termsAccepted", "true");
 
       console.log("Response:", response.data);
 
@@ -99,26 +109,26 @@ export default function SignUpScreen() {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
       });
 
       getProfile();
       setTimeout(() => {
         router.push("/");
-      }, 2000); // Redirect after 2 seconds
+      }, 2000);
     } catch (err) {
       console.log(err);
       toast.error("Signup failed. Please try again.", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
       });
     }
   };
@@ -131,13 +141,18 @@ export default function SignUpScreen() {
     setShowConfirmPassword(!showConfirmPassword);
   };
 
+
+
   const handleGoogleAuth = async () => {
+    if (!termsAccepted) {
+      toast.error("Please accept Terms & Conditions before logging in!");
+      return;
+    }
     try {
       window.location.href =
         "http://www.contentlywriters.com/api/oauth2/authorization/google";
     } catch (err) {}
   };
-
   return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="border-2 rounded-lg sm:w-[400px] p-8">
@@ -242,8 +257,28 @@ export default function SignUpScreen() {
             </span>
             <InputError message={errors.confirmPassword} />
           </div>
+        
+          <div className="flex items-start gap-2">
+            <input
+              type="checkbox"
+              id="terms"
+              checked={termsAccepted}
+              onChange={(e) => setTermsAccepted(e.target.checked)}
+              className="mt-1"
+            />
+            <Label htmlFor="terms" className="text-[12px]">
+              I accept the{" "}
+              <Link href="/terms-and-conditions" target="_blank" className="underline text-[12px]">
+                Terms and Conditions
+              </Link>{" "}
+              and{" "}
+              <Link href="/privacy-policy" target="_blank" className="underline text-[12px]">
+                Privacy Policy
+              </Link>.
+            </Label>
+          </div>
 
-          <Button type="submit">Register</Button>
+          <Button type="submit" disabled={!termsAccepted}>Register</Button>
           <div className="text-center">
             Already have an account?{" "}
             <Link href="/login" className="underline">
@@ -260,3 +295,5 @@ export default function SignUpScreen() {
     </div>
   );
 }
+
+

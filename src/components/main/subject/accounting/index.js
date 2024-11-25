@@ -55,8 +55,8 @@ const ManagementPage = () => {
    
 
       {/* Introduction */}
-      <div className="px-6 sm:px-10 lg:px-[60px] py-12 bg-white">
-        <section className="mb-12">
+      <div className="max-w-[1280px] mx-auto px-3 sm:px-6 mb-4">
+      <section className="relative py-12 bg-white">
           {/* <motion.p
             className="text-3xl font-bold mb-6 text-[#303030]"
             initial={{ opacity: 0, y: -20 }}
@@ -225,7 +225,7 @@ Whether you need <b>help with financial accounting assignments</b> or are lookin
           "Affordable Prices",
           "Expert Assistance",
           "On-Time Delivery",
-          "24/7 Support"
+          
         ].map((item, index) => (
           <motion.div
             className="flex items-start p-6 bg-white bg-opacity-30 backdrop-blur-md shadow-lg rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-2xl"

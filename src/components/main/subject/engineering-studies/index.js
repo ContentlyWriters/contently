@@ -51,8 +51,8 @@ const EngineeringPage = () => {
         <div className="max-w-[1280px] mx-auto">
           
           {/* Introduction */}
-          <div className="px-6 sm:px-10 lg:px-[60px] py-12 bg-white">
-            <section className="mb-12">
+          <div className="max-w-[1280px] mx-auto px-3 sm:px-6 mb-4">
+          <section className="relative py-12 bg-white">
               {/* <motion.h1
                 className="text-3xl font-bold mb-6 text-[#303030]"
                 initial={{ opacity: 0, y: -20 }}

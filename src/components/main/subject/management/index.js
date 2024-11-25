@@ -50,13 +50,13 @@ const ManagementPage = () => {
       ></motion.div>
     </div>
     <div className="px-4 sm:px-10 lg:px-[50px]">
-<div className="max-w-[1280px] mx-auto">
+<div className="max-w-[1280px] mx-auto px-4 sm:px-6">
 
    
 
       {/* Introduction */}
-      <div className="px-6 sm:px-10 lg:px-[60px] py-12 bg-white">
-        <section className="mb-12">
+      <div className="max-w-[1280px] mx-auto px-1 sm:px-2 mb-4">
+      <section className="relative py-12 bg-white">
           {/* <motion.p
             className="text-3xl font-bold mb-6 text-[#303030]"
             initial={{ opacity: 0, y: -20 }}

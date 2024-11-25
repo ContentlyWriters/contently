@@ -13,7 +13,7 @@ const CaliforniaPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#ede6e6] to-[#ebe8e8] min-h-[44vh] flex flex-col items-center justify-center text-center p-4 shadow-lg backdrop-blur-md">
+      <section className="relative bg-[#738290] min-h-[44vh] flex flex-col items-center justify-center text-center p-4 shadow-lg backdrop-blur-md">
 
   <motion.h1
     className="text-black text-4xl sm:text-5xl font-semibold leading-tight mb-4"
@@ -23,11 +23,11 @@ const CaliforniaPage = () => {
     transition={{ duration: 1 }}
   >
     Get the Best Assignment Help in{" "}
-    <span className="text-[#5b6cf2]">&#34;California&#34;</span>
+    <span className="text-[#fff]">&#34;California&#34;</span>
   </motion.h1>
 
   <motion.p
-    className="text-black text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
+    className="text-[#f5f5f5] text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
     variants={fadeInUp}
     initial="hidden"
     animate="visible"
@@ -44,7 +44,7 @@ const CaliforniaPage = () => {
     transition={{ delay: 0.5, duration: 1 }}
   >
     <a href="https://www.contentlywriters.com/">
-      <Button className="px-6 py-3 bg-[#210404] text-white font-medium rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition duration-300">
+      <Button className="px-6 py-3 bg-[#000] text-white font-medium rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition duration-300">
         Get Started <FaArrowRight className="inline-block ml-2" />
       </Button>
     </a>

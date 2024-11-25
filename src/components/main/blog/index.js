@@ -13,10 +13,19 @@ import img6 from "@/assets/image/blogImg6.jpg";
 import img7 from "@/assets/image/blogImg7.jpg";
 import img8 from "@/assets/image/blogImg8.jpg";
 import img9 from "@/assets/image/blogImg9.jpg";
+import img10 from "@/assets/image/blogImg10.jpg";
 
 const blogData = [
   {
-    tag: "blog-8",
+    tag: "blog-10",
+    slug: "assignment-preparation-steps",
+    heading: "Key Steps to Remember for Preparing Your Assignment",
+    date: "November 25, 2024",
+    image: img10,
+    about:"Composing an assignment may seem simple but crafting top-notch content poses a more demanding challenge. In this blog, we will discuss effective strategies for creating high-quality content and emphasize the key steps needed to finish an assignment quickly. Understanding the assignment requirement and the format of the assignment is involved. If needed, seek the best assignment services to ensure support and professional guidance in meeting academic standards.",
+  },
+  {
+    tag: "blog-9",
     slug: "economic-impact-studies",
     heading: "Understanding Economic Impact Studies: A Deep Dive",
     date: "November 11, 2024",

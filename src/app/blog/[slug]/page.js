@@ -103,8 +103,8 @@ for upholding high-quality work.</li>
 you might encounter particular questions to address or instructions to adhere to that
 have been given by the instructor. These instructions delineate the main points or
 issues that the assignment needs to cover, making sure that the content remains
-centered and in accordance with the task's objectives. It is crucial to follow these
-guidelines as they govern the assignment's structure, approach, and criteria for
+centered and in accordance with the task&#39;s objectives. It is crucial to follow these
+guidelines as they govern the assignment&#39;s structure, approach, and criteria for
 evaluation. Following specific questions or instructions is essential for ensuring that
 your response is clear, relevant, and comprehensive, covering all aspects of the
 assignment thoroughly.</li>
@@ -128,7 +128,7 @@ argument with sources.</li>
           <div>
             <p>
               <a href="https://www.contentlywriters.com/blog/a-beginner's-guide-to-writing-essays-in-proper-format" className="text-[#5b6cf2]">
-                A Beginner's Guide to Writing Essays in Proper Format
+                A Beginner&#39;s Guide to Writing Essays in Proper Format
               </a>
             </p>
           </div>

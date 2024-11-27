@@ -130,8 +130,14 @@ export default function PendingOrder({ orders }) {
               <TableHead className="text-center">Amount</TableHead>
               <TableHead className="text-center">Order Date</TableHead>
               <TableHead className="text-center">Order File</TableHead>
-              <TableHead className="text-center">Your Assignment</TableHead>
-              <TableHead className="text-center">Your Feedback</TableHead>
+
+              {/* Conditionally render "Your Assignment" and "Your Feedback" only in "Completed" tab */}
+              {currentTab === "Completed" && (
+                <>
+                  <TableHead className="text-center">Your Assignment</TableHead>
+                  <TableHead className="text-center">Your Feedback</TableHead>
+                </>
+              )}
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -160,39 +166,45 @@ export default function PendingOrder({ orders }) {
                     File
                   </Link>
                 </TableCell>
-                <TableCell className="text-center">
-                  {order.orderResponseFileLink ? (
-                    <Link
-                      href={order.orderResponseFileLink || "#"}
-                      target="_black"
-                      className="hover:underline"
-                    >
-                      Download
-                    </Link>
-                  ) : (
-                    <></>
-                  )}
-                </TableCell>
-                <TableCell className="text-center">
-                  {order.orderResponseFileLink ? (
-                    <Button
-                      variant="link"
-                      onClick={() => {
-                        setIsOpen(true);
-                        setSelectedOrder(order.orderId);
-                      }}
-                    >
-                      Feedback
-                    </Button>
-                  ) : (
-                    <></>
-                  )}
-                </TableCell>
+                    {/* Conditionally render "Your Assignment" and "Your Feedback" only in "Completed" tab */}
+                    {currentTab === "Completed" && (
+                  <>
+                    <TableCell className="text-center">
+                      {order.orderResponseFileLink ? (
+                        <Link
+                          href={order.orderResponseFileLink || "#"}
+                          target="_black"
+                          className="hover:underline"
+                        >
+                          Download
+                        </Link>
+                      ) : (
+                        <></>
+                      )}
+                    </TableCell>
+                    <TableCell className="text-center">
+                      {order.orderResponseFileLink ? (
+                        <Button
+                          variant="link"
+                          onClick={() => {
+                            setIsOpen(true);
+                            setSelectedOrder(order.orderId);
+                          }}
+                        >
+                          Feedback
+                        </Button>
+                      ) : (
+                        <></>
+                      )}
+                    </TableCell>
+                  </>
+                )}
               </TableRow>
             ))}
           </TableBody>
         </Table>
       )}
+
       <DialogDemo
         isOpen={isOpen}
         formaValue={formaValue}
@@ -210,9 +222,21 @@ function DialogDemo({
   error,
   handleChange,
   handleSendFeedback,
+  setIsOpen,
 }) {
+
+  const handleCloseDialog = () => {
+    // Close the dialog when the user clicks outside or presses ESC
+    setIsOpen(false);
+  };
+
+  const handleSend = () => {
+    handleSendFeedback();
+    handleCloseDialog();  // Close the dialog after feedback is sent
+  };
+
   return (
-    <Dialog open={isOpen}>
+    <Dialog open={isOpen} onClose={handleCloseDialog}>
       {/* <DialogTrigger isOpen={isOpen} asChild>
         <Button variant="link">Review</Button>
       </DialogTrigger> */}
@@ -250,6 +274,7 @@ function DialogDemo({
           </div>
         </div>
         <DialogFooter>
+        <Button onClick={handleCloseDialog}>Cancel</Button>
           <Button onClick={handleSendFeedback}>Send Feedback</Button>
         </DialogFooter>
       </DialogContent>

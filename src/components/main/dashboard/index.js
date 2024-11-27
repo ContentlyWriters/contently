@@ -51,56 +51,13 @@ export default function DashBoard() {
             >
               Finished
             </TabsTrigger>
-            {/* <TabsTrigger
-              value="cancelled"
-              onClick={() => setCurrentTab("Cancelled")}
-            >
-              Cancelled
-            </TabsTrigger> */}
           </TabsList>
           <TabsContent value="recent">
-            <PendingOrder orders={orders} />
+            <PendingOrder orders={orders} currentTab={currentTab} />
           </TabsContent>
           <TabsContent value="finished">
-            <PendingOrder orders={orders} />
-            
-            {/* <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
-              <Image
-                src={img}
-                alt="loading"
-                width={300}
-                height={300}
-                className="mx-auto"
-              />
-              <p className="text-center text-lg">
-                No orders have been completed yet
-              </p>
-              <Link href={"/"} className="flex justify-center items-center">
-                <Button className="bg-[#5b6cf2] hover:bg-gray-800 px-6 py-2 text-white">
-                  New Order
-                </Button>
-              </Link>
-            </div> */}
+            <PendingOrder orders={orders} currentTab={currentTab} />
           </TabsContent>
-          {/* <TabsContent value="cancelled">
-            <div className="flex flex-col justify-center items-center gap-2 py-4 mt-24">
-              <Image
-                src={img}
-                alt="loading"
-                width={300}
-                height={300}
-                className="mx-auto"
-              />
-              <p className="text-center text-lg">
-                No orders have been cancelled yet
-              </p>
-              <Link href={"/"} className="flex justify-center items-center">
-                <Button className="bg-[#5b6cf2] hover:bg-gray-800 px-6 py-2 text-white">
-                  New Order
-                </Button>
-              </Link>
-            </div>
-          </TabsContent> */}
         </Tabs>
       </div>
     </>

@@ -11,7 +11,7 @@ import { axiosInstance } from "@/lib/axios";
 
 export default function DashBoard() {
   const [orders, setOrders] = useState([]);
-  const [currentTab, setCurrentTab] = useState("InProgress");
+  const [currentTab, setCurrentTab] = useState("InProgress"); // Track the current tab manually
 
   const getOrders = async () => {
     try {
@@ -36,24 +36,22 @@ export default function DashBoard() {
 
   useEffect(() => {
     getOrders();
-  }, [currentTab]);
+  }, [currentTab]); // Trigger API call when the tab changes
 
   return (
     <>
       <div className="px-5 py-5 min-h-screen pt-28">
-        <Tabs value={currentTab} onValueChange={setCurrentTab}> {/* Set value and onValueChange for controlled Tabs */}
+        {/* Make Tabs a controlled component by syncing currentTab with the Tabs value */}
+        <Tabs value={currentTab} onValueChange={setCurrentTab}> 
           <TabsList className="bg-transparent">
-            <TabsTrigger value="InProgress"> {/* Use 'InProgress' as value */}
-              Pending
-            </TabsTrigger>
-            <TabsTrigger value="Completed"> {/* Use 'Completed' as value */}
-              Finished
-            </TabsTrigger>
+            <TabsTrigger value="InProgress">Pending</TabsTrigger>
+            <TabsTrigger value="Completed">Finished</TabsTrigger>
           </TabsList>
 
           <TabsContent value="InProgress">
             <PendingOrder orders={orders} currentTab={currentTab} />
           </TabsContent>
+
           <TabsContent value="Completed">
             <PendingOrder orders={orders} currentTab={currentTab} />
           </TabsContent>

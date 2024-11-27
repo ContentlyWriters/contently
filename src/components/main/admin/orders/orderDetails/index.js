@@ -12,8 +12,8 @@ import {
 import InputError from "@/components/ui/input-error";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { AiOutlineLoading3Quarters, AiOutlineFileAdd } from "react-icons/ai";
-import { FiCheckCircle } from "react-icons/fi";
+import { AiOutlineCloudUpload, AiOutlineFileText } from "react-icons/ai";
+import { FiDownload, FiCheckCircle } from "react-icons/fi";
 import axios from "axios";
 import { axiosInstance } from "@/lib/axios";
 
@@ -145,10 +145,10 @@ export default function AdminOrderDetailScreen({
               href={orderDetail.orderFileLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline flex items-center"
+              className="text-blue-500 hover:underline flex items-center space-x-2"
             >
-              <AiOutlineFileAdd className="mr-2" />
-              Download
+              <FiDownload className="text-lg" />
+              <span>Download File</span>
             </a>
           </div>
           {orderDetail.paymentOrder && (
@@ -167,10 +167,10 @@ export default function AdminOrderDetailScreen({
                     href={orderDetail.orderResponseFileLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline flex items-center"
+                    className="text-blue-500 hover:underline flex items-center space-x-2"
                   >
-                    <AiOutlineFileAdd className="mr-2" />
-                    Download
+                    <FiDownload className="text-lg" />
+                    <span>Download Response</span>
                   </a>
                 ) : (
                   "File not Uploaded"
@@ -189,7 +189,7 @@ export default function AdminOrderDetailScreen({
                   type="button"
                   className="px-4 h-10 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium text-sm rounded-lg shadow-md flex items-center space-x-2"
                 >
-                  <AiOutlineFileAdd />
+                  <AiOutlineCloudUpload className="text-xl" />
                   <span>Choose File</span>
                 </Button>
               </label>
@@ -218,7 +218,7 @@ export default function AdminOrderDetailScreen({
               disabled={loading}
             >
               {loading ? (
-                <AiOutlineLoading3Quarters className="h-4 w-4 animate-spin" />
+                <AiOutlineCloudUpload className="h-4 w-4 animate-spin" />
               ) : (
                 <span>Upload File</span>
               )}

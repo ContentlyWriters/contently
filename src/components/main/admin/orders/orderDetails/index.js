@@ -12,9 +12,9 @@ import {
 import InputError from "@/components/ui/input-error";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { AiOutlineLoading3Quarters, AiOutlineCloudUpload } from "react-icons/ai"; // Added upload icon
-import { FiDownload } from "react-icons/fi"; // Added download icon
-import { toast } from "react-toastify"; // Toast for success/failure messages
+import { AiOutlineLoading3Quarters, AiOutlineFileAdd } from "react-icons/ai";
+import { FiCheckCircle } from "react-icons/fi";
+import axios from "axios";
 import { axiosInstance } from "@/lib/axios";
 
 export default function AdminOrderDetailScreen({
@@ -31,6 +31,7 @@ export default function AdminOrderDetailScreen({
   const [formValues, setFormValues] = useState({
     orderFile: "",
   });
+  const [uploadSuccess, setUploadSuccess] = useState(false);
 
   const handleFileChange = (event) => {
     if (event.target.files.length > 0) {
@@ -39,7 +40,7 @@ export default function AdminOrderDetailScreen({
     } else {
       setSelectedFileName("");
     }
-    handleChange(event); // Call the passed-in handleChange function
+    handleChange(event);
   };
 
   const handleChange = (e) => {
@@ -47,7 +48,6 @@ export default function AdminOrderDetailScreen({
     if (name === "orderFile") {
       const maxSizeInBytes = 10 * 1024 * 1024;
       const file = e.target.files[0];
-
       if (file.size > maxSizeInBytes) {
         setError({ ...error, [name]: "File is too large. Max size is 10MB" });
         return;
@@ -58,7 +58,7 @@ export default function AdminOrderDetailScreen({
     }
   };
 
-  const handleUpdateOrder = async () => {
+  const handleUpdateOrder = async (data) => {
     try {
       setLoading(true);
       const error = {};
@@ -67,8 +67,7 @@ export default function AdminOrderDetailScreen({
         setLoading(false);
         return;
       }
-      if (!formValues.orderFile) error.orderFile = "Please select a file.";
-
+      if (!formValues.orderFile) error.orderFile = "Select a file to upload";
       setError(error);
       if (Object.keys(error).length > 0) {
         setLoading(false);
@@ -88,52 +87,110 @@ export default function AdminOrderDetailScreen({
           },
         }
       );
-
-      // On success
-      toast.success("File uploaded successfully!");
+      setUploadSuccess(true);
       setLoading(false);
-      onClose(); // Close dialog on success
     } catch (err) {
-      toast.error("Error uploading the file. Please try again.");
-      console.error(err);
+      console.log(err);
       setLoading(false);
     }
   };
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="min-w-[800px] h-[90%] overflow-auto bg-[#121212] text-white">
+      <DialogContent className="min-w-[800px] h-[90%] overflow-auto bg-white rounded-lg shadow-lg p-6">
         <DialogHeader>
-          <DialogTitle>Order Details</DialogTitle>
+          <DialogTitle className="text-xl font-semibold text-gray-800">Order Details</DialogTitle>
         </DialogHeader>
-        <DialogDescription>
-          <div className="flex flex-col space-y-4">
-            <div><strong>Order ID:</strong> {orderDetail.orderId}</div>
-            <div><strong>Email:</strong> {orderDetail.email}</div>
-            <div><strong>Subject:</strong> {orderDetail.subject}</div>
-            <div><strong>Topic:</strong> {orderDetail.topic}</div>
-            <div><strong>Comment:</strong> {orderDetail.comment}</div>
-            <div><strong>Deadline:</strong> {orderDetail.deadline} days</div>
-            <div><strong>Pages:</strong> {orderDetail.pages}</div>
-            <div><strong>Amount:</strong> ${orderDetail.amount}</div>
-            <div><strong>Status:</strong> {orderDetail.status}</div>
-            <div><strong>Rating:</strong> {orderDetail.rating}</div>
-            <div><strong>Review:</strong> {orderDetail.review}</div>
-            <div><strong>Order Placed Timestamp:</strong> {orderDetail.orderPlacedTimestamp}</div>
-            <div><strong>Order File Link:</strong> 
-              {orderDetail.orderResponseFileLink ? (
-                <a href={orderDetail.orderResponseFileLink} target="_blank" rel="noopener noreferrer">
-                  <FiDownload className="inline-block text-xl" /> Download
-                </a>
-              ) : (
-                "File not uploaded yet."
-              )}
-            </div>
+        <DialogDescription className="space-y-4">
+          <div className="text-gray-700">
+            <strong>Order ID:</strong> {orderDetail.orderId}
+          </div>
+          <div className="text-gray-700">
+            <strong>Email:</strong> {orderDetail.email}
+          </div>
+          <div className="text-gray-700">
+            <strong>Subject:</strong> {orderDetail.subject}
+          </div>
+          <div className="text-gray-700">
+            <strong>Topic:</strong> {orderDetail.topic}
+          </div>
+          <div className="text-gray-700">
+            <strong>Comment:</strong> {orderDetail.comment}
+          </div>
+          <div className="text-gray-700">
+            <strong>Deadline:</strong> {orderDetail.deadline} days
+          </div>
+          <div className="text-gray-700">
+            <strong>Pages:</strong> {orderDetail.pages}
+          </div>
+          <div className="text-gray-700">
+            <strong>Amount:</strong> ${orderDetail.amount}
+          </div>
+          <div className="text-gray-700">
+            <strong>Status:</strong> {orderDetail.status}
+          </div>
+          <div className="text-gray-700">
+            <strong>Rating:</strong> {orderDetail.rating}
+          </div>
+          <div className="text-gray-700">
+            <strong>Review:</strong> {orderDetail.review}
+          </div>
+          <div className="text-gray-700">
+            <strong>Order Placed Timestamp:</strong>{" "}
+            {orderDetail.orderPlacedTimestamp}
+          </div>
+          <div className="text-gray-700">
+            <strong>Order File Link:</strong>{" "}
+            <a
+              href={orderDetail.orderFileLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline flex items-center"
+            >
+              <AiOutlineFileAdd className="mr-2" />
+              Download
+            </a>
+          </div>
+          {orderDetail.paymentOrder && (
+            <>
+              <div className="text-gray-700">
+                <strong>Payment Status:</strong> {orderDetail.paymentOrder.status}
+              </div>
+              <div className="text-gray-700">
+                <strong>Order Receipt:</strong>{" "}
+                {orderDetail.paymentOrder.orderReceipt}
+              </div>
+              <div className="text-gray-700">
+                <strong>Response File Link:</strong>{" "}
+                {orderDetail.orderResponseFileLink ? (
+                  <a
+                    href={orderDetail.orderResponseFileLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline flex items-center"
+                  >
+                    <AiOutlineFileAdd className="mr-2" />
+                    Download
+                  </a>
+                ) : (
+                  "File not Uploaded"
+                )}
+              </div>
+            </>
+          )}
 
-            <div className="mt-6">
-              <label htmlFor="orderFile" className="cursor-pointer inline-block">
-                <Button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm rounded-lg shadow-md">
-                  <AiOutlineCloudUpload className="mr-2" /> Choose File
+          <div className="flex justify-between items-center">
+            <div className="relative w-auto">
+              <label
+                htmlFor="orderFile"
+                className="cursor-pointer inline-block"
+              >
+                <Button
+                  type="button"
+                  className="px-4 h-10 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium text-sm rounded-lg shadow-md flex items-center space-x-2"
+                >
+                  <AiOutlineFileAdd />
+                  <span>Choose File</span>
                 </Button>
               </label>
               <Input
@@ -145,24 +202,35 @@ export default function AdminOrderDetailScreen({
                 onChange={handleFileChange}
               />
               {selectedFileName && (
-                <div className="mt-2 text-sm text-gray-400">{selectedFileName}</div>
+                <div className="mt-2 text-sm text-gray-600">
+                  {selectedFileName}
+                </div>
               )}
-              {error.orderFile && <InputError message={error.orderFile} />}
+              {error.orderFile && (
+                <InputError message={error.orderFile} />
+              )}
             </div>
 
             <Button
               type="button"
-              className="mt-4 bg-blue-600 hover:bg-blue-700 text-white"
+              className="bg-green-500 hover:bg-green-600 text-white font-medium text-sm rounded-lg px-6 py-3 flex items-center space-x-2"
               onClick={handleUpdateOrder}
               disabled={loading}
             >
               {loading ? (
                 <AiOutlineLoading3Quarters className="h-4 w-4 animate-spin" />
               ) : (
-                "Upload File"
+                <span>Upload File</span>
               )}
             </Button>
           </div>
+
+          {uploadSuccess && (
+            <div className="mt-4 flex items-center text-green-600">
+              <FiCheckCircle className="mr-2" />
+              File uploaded successfully!
+            </div>
+          )}
         </DialogDescription>
       </DialogContent>
     </Dialog>

@@ -1,4 +1,4 @@
-# Allow all crawlers to access public pages
+# Disallow crawling
 User-agent: *
 Disallow: /login
 Disallow: /sign-up
@@ -9,7 +9,7 @@ Disallow: /refund-policy
 Disallow: /revision-policy
 Disallow: /plagiarism-policy
 
-# Allow crawling of the important service and blog pages
+# Allow crawling 
 Allow: /service/
 Allow: /subject/
 Allow: /blog/

@@ -8,9 +8,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import axios from "axios";
 import { axiosInstance } from "@/lib/axios";
+
 export default function DashBoard() {
   const [orders, setOrders] = useState([]);
   const [currentTab, setCurrentTab] = useState("InProgress");
+
   const getOrders = async () => {
     try {
       const response = await axiosInstance.get(
@@ -31,31 +33,28 @@ export default function DashBoard() {
       console.error(error);
     }
   };
+
   useEffect(() => {
     getOrders();
   }, [currentTab]);
+
   return (
     <>
       <div className="px-5 py-5 min-h-screen pt-28">
-        <Tabs defaultValue="recent">
-          <TabsList className="bg-transparent ">
-            <TabsTrigger
-              value="recent"
-              onClick={() => setCurrentTab("InProgress")}
-            >
+        <Tabs value={currentTab} onValueChange={setCurrentTab}> {/* Set value and onValueChange for controlled Tabs */}
+          <TabsList className="bg-transparent">
+            <TabsTrigger value="InProgress"> {/* Use 'InProgress' as value */}
               Pending
             </TabsTrigger>
-            <TabsTrigger
-              value="finished"
-              onClick={() => setCurrentTab("Completed")}
-            >
+            <TabsTrigger value="Completed"> {/* Use 'Completed' as value */}
               Finished
             </TabsTrigger>
           </TabsList>
-          <TabsContent value="recent">
+
+          <TabsContent value="InProgress">
             <PendingOrder orders={orders} currentTab={currentTab} />
           </TabsContent>
-          <TabsContent value="finished">
+          <TabsContent value="Completed">
             <PendingOrder orders={orders} currentTab={currentTab} />
           </TabsContent>
         </Tabs>

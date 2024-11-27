@@ -4,34 +4,31 @@ import React, { useEffect, useState } from "react";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
+  TableCaption,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import axios from "axios";
 import { axiosInstance } from "@/lib/axios";
 import AdminOrderDetailScreen from "./orderDetails";
+import logo from "@/assets/image/contently-logo.png";
+import Image from "next/image";
 
-// Fetch orders with a status
+// Function to fetch orders
 async function fetchOrders(status = "") {
   try {
-    console.log("Admin Dashboard - Fetching orders with status:", status); // Debug log
     const response = await axiosInstance.get("order/getAll", {
       headers: {
         Authorization: `${localStorage.getItem("token")}`,
       },
-      params: {
-        status: status,  // Filter orders by status if provided
-      },
+      params: { status },
     });
-    console.log(response.data.data);
-    return response.data.data;
+    return response.data.data || [];
   } catch (error) {
-    console.error(error);
+    console.error("Error fetching orders:", error);
     return [];
   }
 }
@@ -40,94 +37,130 @@ export default function AdminOrderScreen() {
   const [orders, setOrders] = useState([]);
   const [selectedOrder, setSelectedOrder] = useState({});
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [filter, setFilter] = useState("InProgress");  
+  const [filter, setFilter] = useState("InProgress");
 
-  
-  const handleFilterChange = (status) => {
-    console.log("Filter button clicked:", status);  
-    setFilter(status);  
-  };
-
-  
+  // Fetch orders on filter change
   useEffect(() => {
     const getOrders = async () => {
-      const data = await fetchOrders(filter);  
+      const data = await fetchOrders(filter);
       setOrders(data);
     };
-
     getOrders();
-  }, [filter]);  
+  }, [filter]);
 
-  
-  const handleIconClick = (order) => {
+  const handleFilterChange = (status) => setFilter(status);
+
+  const handleRowClick = (order) => {
     setSelectedOrder(order);
     setIsDialogOpen(true);
   };
 
   return (
-    <div className="grid py-10 justify-center items-center h-screen bg-[#ffffff] overflow-auto">
-      <div className="flex justify-between w-full max-w-[90%] sm:w-[1000px] mb-4">
-        <div className="flex space-x-4">
-          <Button
-            onClick={() => handleFilterChange("InProgress")}
-            className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]"
-          >
-            In Progress
-          </Button>
-          <Button
-            onClick={() => handleFilterChange("Completed")}
-            className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]"
-          >
-            Completed
-          </Button>
-          <Button
-            onClick={() => handleFilterChange("Cancelled")}
-            className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]"
-          >
-            Cancelled
-          </Button>
-        </div>
+    <div className="min-h-screen bg-[#ffffff] py-10 text-white">
+      {/* Header Section */}
+      <div className="flex justify-between items-center max-w-6xl mx-auto px-4 mb-8">
+        <Image src={logo} alt="Website Logo" className="h-[80px] w-[180px]" />
         <Link href="/">
-          <Button className="bg-black border-2 rounded-lg text-[#fff] hover:bg-[#5b6cf2]">
-            Home
-          </Button>
+        <Button className="bg-[#fff] text-black border-[1px] border-gray-700 hover:bg-[#f7f7f7]">
+  Home
+</Button>
+
+
         </Link>
       </div>
 
-      <div className="border-2 rounded-lg sm:w-[1000px] p-4 sm:p-8 bg-[#ededed] w-full max-w-[90%] ">
-        <Table>
-          <TableCaption>A list of your recent invoices.</TableCaption>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-[100px]">Invoice</TableHead>
-              <TableHead>Status</TableHead>
-              <TableHead>Method</TableHead>
-              <TableHead className="text-right">Amount</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {orders.map((order, index) => (
-              <TableRow
-                key={index}
-                className="hover:bg-green-200"
-                onClick={() => handleIconClick(order)}
-              >
-                <TableCell className="font-medium">{order.orderId}</TableCell>
-                <TableCell>{order.status}</TableCell>
-                <TableCell>{order.email}</TableCell>
-                <TableCell className="text-right">{order.amount}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-        {selectedOrder && (
-          <AdminOrderDetailScreen
-            isOpen={isDialogOpen}
-            onClose={() => setIsDialogOpen(false)}
-            orderDetail={selectedOrder}
-          />
-        )}
+      {/* Dashboard Content */}
+      <div className="flex flex-col items-center space-y-6">
+        {/* Filter Buttons */}
+        <div className="flex justify-center gap-4">
+          {["InProgress", "Completed", "Cancelled"].map((status) => (
+            <Button
+              key={status}
+              onClick={() => handleFilterChange(status)}
+              className={`px-4 py-2 text-md rounded-md shadow-md transition-all duration-300 ${
+                filter === status
+                  ? "bg-blue-600 text-white hover:bg-blue-700"
+                  : "bg-gray-700 text-gray-200 hover:bg-gray-600"
+              }`}
+            >
+              {status}
+            </Button>
+          ))}
+        </div>
+
+        {/* Orders Table */}
+        <div className="w-full max-w-6xl bg-[#ffffff] rounded-lg shadow-lg border border-gray-700">
+          <div className="p-6">
+            <Table>
+              {/* Table Caption */}
+              <TableCaption className="text-gray-700 font-medium mb-4">
+                A list of your recent invoices.
+              </TableCaption>
+
+              {/* Table Header */}
+              <TableHeader>
+                <TableRow className="bg-[] text-white">
+                  <TableHead className="w-[100px] px-4 py-3 uppercase font-semibold">
+                    Invoice
+                  </TableHead>
+                  <TableHead className="px-4 py-3 uppercase font-semibold">
+                    Status
+                  </TableHead>
+                  <TableHead className="px-4 py-3 uppercase font-semibold">
+                    Email
+                  </TableHead>
+                  <TableHead className="px-4 py-3 uppercase font-semibold text-right">
+                    Amount
+                  </TableHead>
+                </TableRow>
+              </TableHeader>
+
+              {/* Table Body */}
+              <TableBody>
+                {orders.map((order, index) => (
+                  <TableRow
+                    key={index}
+                    className="hover:bg-gray-800 transition-all duration-300 cursor-pointer"
+                    onClick={() => handleRowClick(order)}
+                  >
+                    <TableCell className="px-4 py-3 text-gray-300">
+                      {order.orderId}
+                    </TableCell>
+                    <TableCell className="px-4 py-3">
+                      <span
+                        className={`px-3 py-1 text-sm rounded-full ${
+                          order.status === "Completed"
+                            ? "bg-green-600 text-green-100"
+                            : order.status === "Cancelled"
+                            ? "bg-red-600 text-red-100"
+                            : "bg-yellow-600 text-yellow-100"
+                        }`}
+                      >
+                        {order.status}
+                      </span>
+                    </TableCell>
+                    <TableCell className="px-4 py-3 text-gray-300">
+                      {order.email}
+                    </TableCell>
+                    <TableCell className="px-4 py-3 text-right text-gray-300">
+                      {order.amount}
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
+        </div>
       </div>
+
+      {/* Order Details Dialog */}
+      {isDialogOpen && (
+        <AdminOrderDetailScreen
+          isOpen={isDialogOpen}
+          onClose={() => setIsDialogOpen(false)}
+          orderDetail={selectedOrder}
+        />
+      )}
     </div>
   );
 }

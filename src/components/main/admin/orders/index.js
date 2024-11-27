@@ -61,10 +61,9 @@ export default function AdminOrderScreen() {
       <div className="flex justify-between items-center max-w-6xl mx-auto px-4 mb-8">
         <Image src={logo} alt="Website Logo" className="h-[80px] w-[180px]" />
         <Link href="/">
-        <Button className="bg-[#fff] text-black border-[1px] border-gray-700 hover:bg-[#f7f7f7]">
+        <Button className="bg-[#fff] text-black border-[1px] hover:bg-[#f7f7f7] border-gray-700">
   Home
 </Button>
-
 
         </Link>
       </div>
@@ -99,7 +98,7 @@ export default function AdminOrderScreen() {
 
               {/* Table Header */}
               <TableHeader>
-                <TableRow className="bg-[] text-white">
+                <TableRow className="text-black">
                   <TableHead className="w-[100px] px-4 py-3 uppercase font-semibold">
                     Invoice
                   </TableHead>
@@ -120,10 +119,10 @@ export default function AdminOrderScreen() {
                 {orders.map((order, index) => (
                   <TableRow
                     key={index}
-                    className="hover:bg-gray-800 transition-all duration-300 cursor-pointer"
+                    className="hover:bg-[#f5f5f5] transition-all duration-300 cursor-pointer"
                     onClick={() => handleRowClick(order)}
                   >
-                    <TableCell className="px-4 py-3 text-gray-300">
+                    <TableCell className="px-4 py-3 text-black">
                       {order.orderId}
                     </TableCell>
                     <TableCell className="px-4 py-3">
@@ -139,10 +138,10 @@ export default function AdminOrderScreen() {
                         {order.status}
                       </span>
                     </TableCell>
-                    <TableCell className="px-4 py-3 text-gray-300">
+                    <TableCell className="px-4 py-3 text-black">
                       {order.email}
                     </TableCell>
-                    <TableCell className="px-4 py-3 text-right text-gray-300">
+                    <TableCell className="px-4 py-3 text-right text-black">
                       {order.amount}
                     </TableCell>
                   </TableRow>

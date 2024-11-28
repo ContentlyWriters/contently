@@ -61,8 +61,7 @@ const blogData = [
           <div>
             <p>
               A <a
-href="https://www.enago.com/academy/how-can-you-create-structured
--research-paper-outline/#Research_Paper_Outline_Template" className="text-[#5b6cf2]">
+href="https://www.enago.com/academy/how-can-you-create-structured-research-paper-outline/#Research_Paper_Outline_Template" className="text-[#5b6cf2]">
 research paper outline</a> acts as a guide or blueprint for your work. Consider it a
               guide that helps you logically structure your thoughts and arguments. Your outline
               should include these primary sections:

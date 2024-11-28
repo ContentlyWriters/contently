@@ -14,8 +14,17 @@ import img7 from "@/assets/image/blogImg7.jpg";
 import img8 from "@/assets/image/blogImg8.jpg";
 import img9 from "@/assets/image/blogImg9.jpg";
 import img10 from "@/assets/image/blogImg10.jpg";
+import img11 from "@/assets/image/blogImg11.jpg";
 
 const blogData = [
+  {
+    tag: "blog-11",
+    slug: "how-to-structure-research-paper",
+    heading: "How to Structure Your Research Paper: A Step-by-Step Guide for Students",
+    date: "November 28, 2024",
+    image: img11,
+    about:"Writing a research paper can seem daunting, particularly when you are unsure how to structure it effectively. A well-structured research paper ensures clarity and influences your research findings. In this detailed guide, we will demonstrate the process of organizing an effective research paper.",
+  },
   {
     tag: "blog-10",
     slug: "assignment-preparation-steps",

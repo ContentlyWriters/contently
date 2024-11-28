@@ -70,7 +70,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
             <ul className="list-disc">
               <li>
                 <strong>Title:</strong> Choose a descriptive title that represents your research topic (e.g.,
-                "The Impact of Social Media on Academic Performance").
+                  &#34;The Impact of Social Media on Academic Performance&#34;).
               </li>
               <li>
                 <strong><a href="https://writing.wisc.edu/handbook/assignments/writing-an-abstract-for-your-research-paper/" className="text-[#5b6cf2]"> Abstract</a>:</strong> Provide a brief overview of your research that shows the purpose,

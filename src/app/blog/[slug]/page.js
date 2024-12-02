@@ -24,7 +24,7 @@ const blogData = [
     date: "December 2, 2024",
     author: "Charchit Sharma",
     image: img12,
-    metaTitle: "6 Common Mistakes Students Make with Their Assignment",
+    metaTitle: "6 Common Assignment Mistakes Students Make & How to Avoid Them",
     metaDescription: "Discover the 6 common mistakes students make while writing assignments and learn how to avoid them for better academic results.",
     keywords: ["assignment mistakes", "academic writing tips", "student assignment errors"],
     description: "Discover 6 common assignment mistakes students make and practical tips to avoid them. Improve your writing, manage time, and enhance your grades!",
@@ -51,7 +51,7 @@ const blogData = [
                         avoid these circumstances to ensure timely and quality submissions.
                     </p>
                     <h4><strong>How to avoid it:</strong></h4>
-                    <ul className="list-disc">
+                    <ul className="list-disc     ml-6 " >
                         <li>Start working on your given assignment or task early.</li>
                         <li>Make a schedule for the assignment and break it into smaller chunks.</li>
                         <li>Set your deadline so that you have time for revision.</li>
@@ -70,7 +70,7 @@ const blogData = [
                         and stress, and that is because of their poor time management.
                     </p>
                     <h4><strong>How to avoid it:</strong></h4>
-                    <ul className="list-disc">
+                    <ul className="list-disc     ml-6" >
                         <li>Create a deadline for your assignment.</li>
                         <li>A calendar can help you organize your tasks.</li>
                         <li>Divide the time for research, writing, editing, and revision.</li>
@@ -88,7 +88,7 @@ const blogData = [
                         there is no point, even if you work hard to complete that assignment.
                     </p>
                     <h4><strong>How to avoid it:</strong></h4>
-                    <ul className="list-disc">
+                    <ul className="list-disc     ml-6" >
                         <li>Carefully read and follow the instructions or guidelines that are given.</li>
                         <li>If you have any doubts regarding the assignment, do not hesitate to ask your
                             professor for clarification.</li>
@@ -108,7 +108,7 @@ href="https://www.contentlywriters.com/service/do-my-assignment" className="text
                          helper to avoid any plagiarism and ensure originality and quality of the work.
                     </p>
                     <h4><strong>How to avoid it:</strong></h4>
-                    <ul className="list-disc">
+                    <ul className="list-disc     ml-6" >
                         <li>If you are paraphrasing content, make sure to reword ideas in your own words.</li>
                         <li>Cite your resources according to the required referencing style like APA, MLA, and
                             Chicago.</li>
@@ -128,7 +128,7 @@ that. Instead, they rely on sources that make the assignment easy for them but p
 on their thinking skills.
                   </p>
                   <h4><strong>How to avoid it:</strong></h4>
-                  <ul className="list-disc">
+                  <ul className="list-disc     ml-6" >
                       <li>Use academic sources such as books and journals instead of copying reliable
                       sources available on the web.</li>
                       <li>Get access to libraries and platforms like Google Scholar.</li>
@@ -149,7 +149,7 @@ assignment. <a
 href="https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/#:~:text=Proofreading%20is%20the%20final%20stage,of%20your%20other%20editing%20revisions." className="text-[#5b6cf2]">Proofreading</a> ensures that your assignment is ready for submission.
                 </p>
                 <h4><strong>How to avoid it:</strong></h4>
-                <ul className="list-disc">
+                <ul className="list-disc     ml-6" >
                     <li>The first thing to do after completion of your assignment is to read it aloud so that you
                     can catch any phrasing or mistakes.</li>
                     <li>If possible, ask any tutor or elder to proofread it so that you can get additional
@@ -251,7 +251,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               guide that helps you logically structure your thoughts and arguments. Your outline
               should include these primary sections:
             </p>
-            <ul className="list-disc">
+            <ul className="list-disc     ml-6" >
               <li>
                 <strong>Title:</strong> Choose a descriptive title that represents your research topic (e.g.,
                   &#34;The Impact of Social Media on Academic Performance&#34;).
@@ -300,7 +300,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               paper will make on its readers. It is important to make it clear as well as captivating.
               Arrange your introduction in the following manner:
             </p>
-            <ul className="list-disc">
+            <ul className="list-disc     ml-6" >
               <li>
                 <strong>Context:</strong> Providing some background information will help in establishing the
                 context of your research.
@@ -326,7 +326,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               highlighting the areas where your research will address. You can structure the
               literature review using the following approaches:
             </p>
-            <ul className="list-disc">
+            <ul className="list-disc     ml-6" >
               <li>
                 <strong><a href="https://www.cwauthors.com/article/how-to-structure-and-write-a-chronological-literature-review" className="text-[#5b6cf2]">Chronological Approach</a>:</strong> If your research is building upon earlier research,
                 present the literature in chronological order to show the evolution of the field
@@ -356,7 +356,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               The Methodology section describes the process of your research and explains why
               you choose these methods. Organize it into clear subsections such as:
             </p>
-            <ul className="list-disc">
+            <ul className="list-disc     ml-6" >
               <li>
                 <strong>Research Design:</strong> Indicate the specific research type (e.g., Qualitative,
                 Quantitative, or mixed methods).
@@ -381,7 +381,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               In this part, you’ll show the data or findings of your research. Arrange your results
               effectively by:
             </p>
-            <ul className="list-disc">
+            <ul className="list-disc     ml-6" >
               <li>
                 <strong>Using Tables and Figures:</strong> Visual aids such as charts, graphs, and tables
                 enhance comprehension of intricate data.
@@ -411,7 +411,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               your findings and clarify their importance. Arrange it by discussing the following
               points:
             </p>
-            <ul className="list-disc">
+            <ul className="list-disc     ml-6" >
               <li>
                 <strong>Interpretation of Results:</strong> Please elaborate on the implications of your
                 findings within the framework of your research question.
@@ -440,7 +440,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               The conclusion serves as your final chance to highlight the importance of your
               achievements. Organize your conclusion by:
             </p>
-            <ul className="list-disc">
+            <ul className="list-disc     ml-6" >
               <li>
                 <strong>Restating the Thesis:</strong> Could you kindly provide a short recap of your primary
                 argument or thesis?
@@ -469,8 +469,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               and brevity.
             </p>
             <p>
-              For more insights on academic writing and research, check our blog on managing
-              assignments effectively to avoid common pitfalls.
+              For more insights on academic writing and research, check our blog on <a href="https://www.contentlywriters.com/blog/common-mistakes-students-make-assignments" className="text-[#5b6cf2]"> 6 common mistakes students make with their assignments</a>
             </p>
           </div>
         ),
@@ -479,7 +478,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
         title: "Tips for Organizing Your Research Paper Effectively",
         about: (
           <div>
-            <ul className="list-disc">
+            <ul className="list-disc     ml-6" >
               <li>
                 <strong>Be Clear and Concise:</strong> Refrain from using technical terms or excessively
                 intricate sentence structures. Strive for clarity to ensure that your research is
@@ -548,7 +547,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
         title1: "Format of an Assignment",
         about: (
           <div>
-             <ul className="list-disc">
+             <ul className="list-disc     ml-6" >
               <li><strong>Title Page (If required):</strong> An assignment generally consists of diverse significant
 segments in its format. First, if required there may be a ‘title page’ that contains the
 assignment title, your name, the course name, details of the instructor, and the
@@ -582,7 +581,7 @@ style and format. Subsequently, it is equally important to keep in mind the word
 assignment. It is also important to remember the deadline and ensure that some specific
 questions and guidelines need to be followed. These are some essential steps to keep in
 mind for understanding the assignment requirements.</p>
-            <ul className="list-disc">
+            <ul className="list-disc     ml-6" >
               <li><strong>The topic or subject matter:</strong> The ‘topic’ or ‘subject matter’ is the central theme or
 issue that you’re assigned to explore, and analyze. It establishes the direction for
 your research and outlines the boundaries of your project. Depending on the

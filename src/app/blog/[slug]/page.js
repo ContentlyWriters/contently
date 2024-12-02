@@ -12,10 +12,195 @@ import img8 from "@/assets/image/blogImg8.jpg";
 import img9 from "@/assets/image/blogImg9.jpg";
 import img10 from "@/assets/image/blogImg10.jpg";
 import img11 from "@/assets/image/blogImg11.jpg";
+import img12 from "@/assets/image/blogImg12.jpg";
 import { ImTextColor } from "react-icons/im";
 import { color } from "framer-motion";
 
 const blogData = [
+
+  {
+    slug: "common-mistakes-students-make-assignments",
+    heading: "6 Common Mistakes Students Make with Their Assignment",
+    date: "December 2, 2024",
+    author: "Charchit Sharma",
+    image: img12,
+    metaTitle: "6 Common Mistakes Students Make with Their Assignment",
+    metaDescription: "Discover the 6 common mistakes students make while writing assignments and learn how to avoid them for better academic results.",
+    keywords: ["assignment mistakes", "academic writing tips", "student assignment errors"],
+    description: "Discover 6 common assignment mistakes students make and practical tips to avoid them. Improve your writing, manage time, and enhance your grades!",
+    post: [
+        {
+            about: (
+                <div>
+                    <p>
+                        In a student’s academic journey, assignments play an important role in developing essential
+                        skills like thinking, researching, and time management. In this blog, we will tell you which
+                        mistakes students make while writing an assignment and how they can avoid it.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title: "1. Postponement: Putting off Work Until the Last Minute",
+            about: (
+                <div>
+                    <p>
+                        Postponing work is the biggest problem for students. Thinking and waiting until the last
+                        minute to start the assignment is one common mistake students make, which often leads to
+                        rushed work, stress, and the use of AI tools. Many students opt for assignment services to
+                        avoid these circumstances to ensure timely and quality submissions.
+                    </p>
+                    <h4><strong>How to avoid it:</strong></h4>
+                    <ul className="list-disc">
+                        <li>Start working on your given assignment or task early.</li>
+                        <li>Make a schedule for the assignment and break it into smaller chunks.</li>
+                        <li>Set your deadline so that you have time for revision.</li>
+                    </ul>
+                </div>
+            ),
+        },
+        {
+            title: "2. Poor Time Management",
+            about: (
+                <div>
+                    <p>
+                        We all know time flies, but most people do not get it. Time management is essential for
+                        everything we do, and completing an assignment also involves time management. Many
+                        students keep on delaying the task until the last minute, which often leads to incomplete work
+                        and stress, and that is because of their poor time management.
+                    </p>
+                    <h4><strong>How to avoid it:</strong></h4>
+                    <ul className="list-disc">
+                        <li>Create a deadline for your assignment.</li>
+                        <li>A calendar can help you organize your tasks.</li>
+                        <li>Divide the time for research, writing, editing, and revision.</li>
+                    </ul>
+                </div>
+            ),
+        },
+        {
+            title: "3. Not Working as per the Assignment Instructions",
+            about: (
+                <div>
+                    <p>
+                        Most students don’t even take a look at the assignment instructions. It is an essential
+                        part of writing an assignment, and if you do not work as per the assignment instructions,
+                        there is no point, even if you work hard to complete that assignment.
+                    </p>
+                    <h4><strong>How to avoid it:</strong></h4>
+                    <ul className="list-disc">
+                        <li>Carefully read and follow the instructions or guidelines that are given.</li>
+                        <li>If you have any doubts regarding the assignment, do not hesitate to ask your
+                            professor for clarification.</li>
+                    </ul>
+                </div>
+            ),
+        },
+        {
+            title: "4. Plagiarism: Copying Without Authority",
+            about: (
+                <div>
+                    <p>
+                        In the academic period, plagiarism is considered a breach (violation). It happens when a
+                        student fails to think and research on their own and copies the content of an assignment that
+                        already exists somewhere. Many students seek assistance from a <a
+href="https://www.contentlywriters.com/service/do-my-assignment" className="text-[#5b6cf2]"> Do-my-assignment </a>
+                         helper to avoid any plagiarism and ensure originality and quality of the work.
+                    </p>
+                    <h4><strong>How to avoid it:</strong></h4>
+                    <ul className="list-disc">
+                        <li>If you are paraphrasing content, make sure to reword ideas in your own words.</li>
+                        <li>Cite your resources according to the required referencing style like APA, MLA, and
+                            Chicago.</li>
+                        <li>There are some free tools and websites that can help you check for unintentional
+                            plagiarism.</li>
+                    </ul>
+                </div>
+            ),
+        },
+        {
+          title: "5. Weak Research and Relying on Sources",
+          about: (
+              <div>
+                  <p>
+                  Writing an excellent assignment involves good research but most of the students don’t do
+that. Instead, they rely on sources that make the assignment easy for them but put a barrier
+on their thinking skills.
+                  </p>
+                  <h4><strong>How to avoid it:</strong></h4>
+                  <ul className="list-disc">
+                      <li>Use academic sources such as books and journals instead of copying reliable
+                      sources available on the web.</li>
+                      <li>Get access to libraries and platforms like Google Scholar.</li>
+                      <li>At the end of the assignment, give credit to the sources you used to back up your
+                      points.</li>
+                  </ul>
+              </div>
+          ),
+      },
+      {
+        title: "6. Not Proofreading and Editing after Completion",
+        about: (
+            <div>
+                <p>
+                This is the most common mistake most of the students make. They do not proofread and
+edit if there is something left which leads to mistakes and incomplete points in the
+assignment. <a
+href="https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/#:~:text=Proofreading%20is%20the%20final%20stage,of%20your%20other%20editing%20revisions." className="text-[#5b6cf2]">Proofreading</a> ensures that your assignment is ready for submission.
+                </p>
+                <h4><strong>How to avoid it:</strong></h4>
+                <ul className="list-disc">
+                    <li>The first thing to do after completion of your assignment is to read it aloud so that you
+                    can catch any phrasing or mistakes.</li>
+                    <li>If possible, ask any tutor or elder to proofread it so that you can get additional
+                    feedback.</li>
+                    <li>Always take time to review your assignment before submission.</li>
+                </ul>
+            </div>
+        ),
+    },
+    {
+        title1:"Additional Resources to Support Your Assignment Writing",
+      about: (
+        <div>
+          <p>
+          To further enhance your assignment writing skills, make use of the various online tools and
+platforms available. To manage your time effectively, explore <a href="https://www.mindtools.com/" className="text-[#5b6cf2]">Mind Tools</a>. To ensure
+originality, check your work with tools like the <a href="https://www.grammarly.com/plagiarism-checker" className="text-[#5b6cf2]">Grammarly Plagiarism Checker</a> or <a href="https://www.turnitin.com/" className="text-[#5b6cf2]">Turnitin</a>.
+For proofreading, tools like <a href="https://hemingwayapp.com/" className="text-[#5b6cf2]">Hemingway Editor</a> and <a href="https://prowritingaid.com/" className="text-[#5b6cf2]">ProWritingAid</a> can help refine your
+work.
+          </p>
+          <p className="mt-4">
+          These resources, combined with the tips shared above, will make your assignments not only
+          impactful but also professional.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title1:"Conclusion",
+    about: (
+      <div>
+        <p>
+        Following these steps and by avoiding these common mistakes, you can enhance the
+content of your assignment and improve your grades. Start doing your task early, read and
+follow instructions carefully, research the topic, schedule a timeline for your assignment, and
+do not forget to proofread it and edit if needed.
+        </p>
+        <p className="mt-4">
+        This approach will help you improve your skills in assignment writing over time, and with
+each task, you’ll get better at it. However, if you face any difficulties, feel free to contact
+<b> Contently Writers</b> for the <a
+href="https://www.contentlywriters.com/">Best assignment
+services</a>. We’re here to assist you 24/7 with all
+your assignment needs.
+        </p>
+      </div>
+    ),
+  },
+    ],
+},
+
 
   {
     slug: "how-to-structure-research-paper",

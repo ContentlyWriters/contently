@@ -121,7 +121,7 @@ const data = [
     logo: <FaGlobe />,
     title: "Country",
     about: "Our vast resources offer in-depth analyses of nations all around the world, encompassing everything from economic environments to cultural quirks. Our content will help you navigate the many facets of any nation, whether you're a scholar or a student in need of homework assistance.",
-    href: "/service/country", 
+    href: "/service/assignment-in-usa/california", 
   },
   {
     logo: <FaGraduationCap />,

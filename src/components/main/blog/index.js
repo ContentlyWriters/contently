@@ -15,8 +15,17 @@ import img8 from "@/assets/image/blogImg8.jpg";
 import img9 from "@/assets/image/blogImg9.jpg";
 import img10 from "@/assets/image/blogImg10.jpg";
 import img11 from "@/assets/image/blogImg11.jpg";
+import img12 from "@/assets/image/blogImg12.jpg";
 
 const blogData = [
+  {
+    tag: "blog-12",
+    slug: "common-mistakes-students-make-assignments",
+    heading: "6 Common Mistakes Students Make with Their Assignment",
+    date: "December 2, 2024",
+    image: img12,
+    about:"In a student’s academic journey, assignment plays an important role in developing essential skills like thinking, researching, and time management. In this blog, we will tell you which mistakes students make while writing an assignment and how they can avoid it.",
+  },
   {
     tag: "blog-11",
     slug: "how-to-structure-research-paper",

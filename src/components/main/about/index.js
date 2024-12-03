@@ -45,7 +45,7 @@ const About = () => {
                   } sm:flex-col`}
                 >
                   <div className="flex justify-center flex-col md:w-[50%] w-full px-2">
-                    <h3 className="lg:text-4xl sm:text-3xl text-2xl font-bold pb-5 md:text-start sm:text-left lg:text-left text-gray-900">
+                    <h3 className="lg:text-4xl sm:text-4xl text-3xl lg:font-bold md:font-bold font-semibold pb-5 md:text-start sm:text-left lg:text-left text-gray-900">
                       {item.title}
                     </h3>
                     <p className="md:text-start text-[18px] sm:text-center lg:text-left text-[#3d3d3d] leading-relaxed">

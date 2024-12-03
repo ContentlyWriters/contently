@@ -6,7 +6,10 @@ import Head from "next/head";
 export const metadata = {
   title: "All Assignment Help Online: Premium Academic Writing Services",
   description:'Get all assignment help online with Contently Writers. Our expert writers provide high-quality academic writing services for students in various subjects.',
-  keywords: "all assignment help online , best all assignment helper , all assignment help online , Comprehensive assignment help in all subjects , all assignment help services"
+  keywords: "all assignment help online , best all assignment helper , all assignment help online , Comprehensive assignment help in all subjects , all assignment help services",
+  alternates: {
+    canonical: "https://www.contentlywriters.com/service/other-subjects-and-services" 
+  }
 };
 
 export default function OthersubjectLayout({ children }) {

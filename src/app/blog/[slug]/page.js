@@ -51,7 +51,7 @@ const blogData = [
                         avoid these circumstances to ensure timely and quality submissions.
                     </p>
                     <h4><strong>How to avoid it:</strong></h4>
-                    <ul className="list-disc     ml-6 " >
+                    <ul className="list-disc ml-6 " >
                         <li>Start working on your given assignment or task early.</li>
                         <li>Make a schedule for the assignment and break it into smaller chunks.</li>
                         <li>Set your deadline so that you have time for revision.</li>

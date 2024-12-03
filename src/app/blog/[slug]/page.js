@@ -1409,35 +1409,60 @@ export default function BlogPostPage({ params }) {
   }
 
   return (
-    <div className="px-4 sm:px-10 lg:px-[50px] sm:pt-10 pt-1 pb-10">
-      <div className="max-w-[1280px] mx-auto bg-[#f7f7f7] border-1 p-4 sm:p-8 shadow-xl rounded-xl">
-        <div className="sm:px-20 grid sm:gap-4 gap-4 py-10">
-          <h1 className="sm:text-5xl text-1xl font-bold text-center pt-1 px-1 sm:px-6 leading-tight sm:leading-none">
-            {blog.heading}
-          </h1>
-
-          <Image className="my-4 rounded-lg max-h-[500px]" src={blog.image} alt="title image" />
-
-          <div className="sm:text-lg text-1xl">{blog.content}</div>
-
-          {/* Mapping over the post array */}
-          <div className="mt-2 space-y-8">
-            {blog.post.map((item, index) => (
-              <div key={index}>
-                <h2 className="sm:text-2xl text-1xl font-semibold mb-2">{item.title1}</h2>
-                <h3 className="sm:text-2xl text-1xl font-semibold mb-2">{item.title}</h3>
-                <p className="sm:text-lg text-1xl">{item.about}</p>
-              </div>
-            ))}
+    <div className="px-4 sm:px-10 lg:px-[50px] sm:pt-10 pt-4 pb-10">
+      <div className="max-w-[1280px] mx-auto">
+        {/* Blog Heading */}
+        <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center leading-snug sm:leading-tight mt-2 mb-8">
+          {blog.heading}
+        </h1>
+  
+        {/* Blog Image */}
+        <div className="flex justify-center">
+          <Image
+             className="rounded-lg w-full max-w-[1280px] max-h-[580px] h-auto"
+            src={blog.image}
+            alt="Blog header"
+          />
+        </div>
+  
+        {/* Blog Content */}
+        <div className="mt-8 text-base sm:text-lg leading-relaxed text-gray-800">
+          {blog.content}
+        </div>
+  
+        {/* Blog Posts */}
+        <div className="mt-10 space-y-8">
+          {blog.post.map((item, index) => (
+            <div key={index}>
+              {item.title1 && (
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
+                  {item.title1}
+                </h2>
+              )}
+              {item.title && (
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
+                  {item.title}
+                </h3>
+              )}
+              {item.about && (
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                  {item.about}
+                </p>
+              )}
+            </div>
+          ))}
+        </div>
+  
+        {/* Footer Section: Author and Date */}
+        <div className="mt-12 flex items-center justify-between text-sm sm:text-base text-gray-600 border-t border-gray-300 pt-6">
+          <div className="flex items-center space-x-2">
+            <span className="font-medium text-gray-800">By:</span>
+            <span className="font-semibold text-gray-900">{blog.author}</span>
           </div>
-
-          {/* Date and Author Section */}
-          <div className="flex justify-between mt-8">
-            <span className="text-sm text-gray-600">{blog.date}</span> {/* Date on the left */}
-            <span className="text-sm text-gray-600">{blog.author}</span> {/* Author on the right */}
-          </div>
+          <div className="text-gray-500 italic">{blog.date}</div>
         </div>
       </div>
     </div>
   );
+  
 }

@@ -12,29 +12,31 @@ const About = () => {
 
   return (
     <div>
+      {/* Header Section */}
       <div className="bg-[#020035] py-8">
         <h1 className="text-[#FFFFFF] sm:text-[50px] lg:text-[80px] text-[40px] text-center pt-20 mx-auto font-semibold">
-          About us
+          About Us
         </h1>
         <p className="text-[#FFFFFF] text-[25px] text-center pt-10 mb-8 mx-auto">
           Let&#39;s explore and deepen our connection.
         </p>
         <div className="h-[7px] w-[150px] bg-[#5b6cf2] mx-auto"></div>
       </div>
-
+  
+      {/* Main Content */}
       <div className="px-4 sm:px-10 lg:px-[50px]">
         <div className="max-w-[1280px] mx-auto">
           <div className="pt-8">
-            <h2 className="text-center text-[40px] sm:text-[50px] lg:text-[60px] font-semibold mx-auto">
-              Writers and AI writers
+            <h2 className="lg:text-center sm:text-left text-[40px] sm:text-[50px] lg:text-[60px] font-semibold mx-auto text-gray-900">
+              Writers and AI Writers
             </h2>
-            <p className="text-center mx-auto text-[18px] sm:text-[14px] lg:text-[18px]">
+            <p className="lg:text-center sm:text-left mx-auto text-[18px] sm:text-[14px] lg:text-[18px] text-gray-700 mt-4">
               Contently Writers are highly skilled at tackling any challenge you may encounter. For those in need of a quick assignment with less focus on quality, we also offer AI content writing and review services.
             </p>
           </div>
-
-          <div className="my-2">
-            <div className="grid gap-10 sm:gap-1">
+  
+          <div className="my-12">
+            <div className="grid gap-10 sm:gap-6">
               {data.map((item, index) => (
                 <div
                   key={index}
@@ -43,19 +45,19 @@ const About = () => {
                   } sm:flex-col`}
                 >
                   <div className="flex justify-center flex-col md:w-[50%] w-full px-2">
-                    <h3 className="lg:text-4xl sm:text-3xl text-2xl font-bold pb-5 md:text-start text-center">
+                    <h3 className="lg:text-4xl sm:text-3xl text-2xl font-bold pb-5 md:text-start sm:text-left lg:text-left text-gray-900">
                       {item.title}
                     </h3>
-                    <p className="md:text-start text-[18px] text-center text-[#3d3d3d]">
+                    <p className="md:text-start text-[18px] sm:text-center lg:text-left text-[#3d3d3d] leading-relaxed">
                       {item.about}
                     </p>
                   </div>
-
-                  <div className="flex justify-center items-center md:w-[50%] w-full">
+  
+                  <div className="flex justify-center items-center md:w-[50%] w-full mt-4 sm:mt-2">
                     <Image
                       src={item.image}
                       alt="Image"
-                      className="w-full sm:max-w-[280px] lg:max-w-[380px] object-contain hover:scale-105"
+                      className="w-full sm:max-w-[280px] lg:max-w-[385px] object-contain hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
@@ -64,9 +66,10 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      <div className="py-14 border-gray-200 bg-[#f7f7f7]">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-10 lg:px-[50px] text-center">
+  
+      {/* About Our Writers Section */}
+      <div className="py-14 border-t border-gray-200 bg-[#f7f7f7]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-10 lg:px-[50px] lg:text-center sm:text-left">
           <h2 className="text-gray-800 text-[30px] sm:text-[35px] lg:text-[40px] font-bold">
             About Our Writers
           </h2>
@@ -86,6 +89,7 @@ const About = () => {
       </div>
     </div>
   );
+  
 };
 
 export default About;

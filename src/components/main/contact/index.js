@@ -17,9 +17,9 @@ function ContactUs() {
 <h3 className="text-[#FFFFFF] sm:text-[22px] md:text-[26px] text-[20px] text-center pt-6 sm:pt-10 mx-auto">
   Got a Question or Concern? Drop Us a Mail, and We&#39;ll Help You Out!
 </h3>
-        <p className="text-[#FFFFFF] text-[25px] text-center pt-3 mx-auto lg:pb-10 pb-3">
+<p className="text-[#FFFFFF] text-[25px] text-center pt-6 mx-auto lg:pb-2 pb-3">
           
-        </p>
+          </p>
         <div className="h-[7px] w-[150px] bg-[#5b6cf2] mx-auto"></div>
       </div>
 

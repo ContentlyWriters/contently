@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { FaUser } from "react-icons/fa";
+import { MdExpandMore } from "react-icons/md";
 import {
   Sheet,
   SheetClose,

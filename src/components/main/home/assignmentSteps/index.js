@@ -74,7 +74,7 @@ export default function AssignmentSteps() {
         <span className="text-[#5b6cf2]">Get work done from</span>
         <span className="text-white"> the Experts</span>
       </h2>
-      <button className="bg-[#5b6cf2] text-white py-4 px-10 rounded-full text-lg font-medium hover:bg-white hover:text-black transition-colors duration-300"
+      <button className="bg-[#5b6cf2] text-white lg:py-4 lg:px-10 px-6 py-2 rounded-full lg:text-lg text-md font-medium hover:bg-white hover:text-black transition-colors duration-300"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
         Get Started

@@ -89,14 +89,14 @@ export default function Testimonials() {
       </div>
       <div id="faq" className="px-4 sm:!px-10 lg:!px-[50px] bg-[#000]">
         <div className="max-w-[1280px] mx-auto py-10 lg:py-32 flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-5">
-          <p className="text-white text-3xl text-center">
+          <p className="text-white text-2xl lg:text-3xl text-center">
             Get your assignment done in just a few clicks
           </p>
 
           <Button
             onClick={scrollToSection}
             type="button"
-            className="p-8 bg-[#5b6cf2] text-xl hover:bg-white hover:text-black"
+            className="py-6 px-4 lg:p-8 bg-[#5b6cf2] lg:text-xl text-md hover:bg-white hover:text-black"
           >
             Write my assignment
           </Button>

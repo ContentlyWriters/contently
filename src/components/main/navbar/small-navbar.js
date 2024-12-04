@@ -151,10 +151,18 @@ export default function SmallNavbar({ items }) {
         {/* User Authentication Section */}
         {isAuthenticated ? (
           <div className="grid gap-4 mt-6">
-            <div className="text-sm text-gray-700">
-              <p>Welcome, {user.firstName}</p>
-              <p>{user.email}</p>
-            </div>
+            <div className="relative text-sm text-gray-700">
+  <button className="flex items-center space-x-2">
+    <span>Welcome, {user.firstName}</span>
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+      <path fillRule="evenodd" d="M5.292 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+    </svg>
+  </button>
+  <div className="absolute mt-2 w-48 bg-white border border-gray-300 rounded shadow-lg">
+    <p className="px-4 py-2">Welcome, {user.firstName}</p>
+    <p className="px-4 py-2">{user.email}</p>
+  </div>
+</div>
             <SheetClose asChild>
               <Button
                 variant="outline"

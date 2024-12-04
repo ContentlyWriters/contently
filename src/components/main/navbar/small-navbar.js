@@ -170,7 +170,7 @@ export default function SmallNavbar({ items }) {
         <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 z-50">
           <div className="bg-white rounded-lg shadow-lg p-4 w-4/5 max-w-sm">
             <h2 className="text-lg font-semibold mb-2">User Info</h2>
-            <p className="text-gray-700">Name: {user.firstName }{user.lastName}</p>
+            <p className="text-gray-700">Name: {user.firstName } {user.lastName}</p>
             <p className="text-gray-700">Email: {user.email}</p>
             <button
               className="mt-4 px-4 py-2 bg-blue-600 text-white rounded"

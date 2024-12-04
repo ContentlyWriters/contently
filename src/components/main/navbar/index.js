@@ -18,17 +18,23 @@ const items = [
       { id: 27, name: "Dissertation", path: "/service/dissertation"},
       { id: 28, name: "Essay Services", path: "/service/essay-service"},
       { id: 29, name: "Homework", path: "/service/homework"},
-      { id: 30, name: "Assignment in UK", path: "",
+      {
+        id: 30, 
+        name: "Assignment in UK", 
+       path: "",
         subItems: [
-          {id:3011, name: "Oxford" , path: "/service/assignment-in-uk/oxford", },
-          {id:3022, name: "London" , path: "/service/assignment-in-uk/london", }
+          {id: 3011, name: "Oxford", path: "/service/assignment-in-uk/oxford"},
+          {id: 3022, name: "London", path: "/service/assignment-in-uk/london"}
         ]
-       },
-      { id: 31, name: "Assignment in USA", path: "",
+      },
+      {
+        id: 31, 
+        name: "Assignment in USA", 
+        path: "",
         subItems: [
-          {id:3111, name: "California" , path: "/service/assignment-in-usa/california", }
+          {id: 3111, name: "California", path: "/service/assignment-in-usa/california"}
         ]
-       },
+      },
 
       { id: 32, name: "Other Subjects & Services", path: "/service/other-subjects-and-services"},    
     ] 

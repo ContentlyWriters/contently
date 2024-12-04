@@ -16,30 +16,96 @@ import { useUserContext } from "@/context/auth";
 export default function SmallNavbar({ items }) {
   const { isAuthenticated, user, setIsAuthenticated } = useUserContext();
   const [openMenuId, setOpenMenuId] = useState(null);
-
-  // Handle toggle for opening/closing the dropdown
+  const [openSubMenuId, setOpenSubMenuId] = useState(null);
+  
+  // Toggle logic for submenus and third-level items
   const toggleMenu = (id) => {
     setOpenMenuId((prevId) => (prevId === id ? null : id));
   };
 
-  // Render menu items
+  const toggleSubMenu = (id) => {
+    setOpenSubMenuId((prevId) => (prevId === id ? null : id));
+  };
+
+  // Recursive function to render menu items with multiple levels
   const renderMenuItems = (menuItems, level = 0) => {
     return (
       <ul className={`pl-${level * 4} mt-2`}>
         {menuItems.map((item) => (
-          <li key={item.id}>
+          <li key={item.id} className="relative">
+            {/* If this item has subitems, create a dropdown */}
             {item.subItems ? (
               <>
-                <Button
-                  variant="link"
-                  className={`flex justify-between font-Normal w-full items-center text-left py-3 px-3 hover:text-[#5b6cf2] ${item.name === "Service" || item.name === "Subject" ? 'text-[16px]' : ''}`}
+                <button
+                  className={`flex justify-between items-center w-full text-left py-3 px-4 -ml-1 ${
+                    level === 0
+                      ? "text-md font-medium hover:text-[#5b6cf2]"
+                      : "text-md font-medium hover:text-[#5b6cf2]"
+                  }`}
                   onClick={() => toggleMenu(item.id)}
                 >
-                  {item.name} 
-                  {(item.name === "Service" || item.name === "Subject") && 
-                    (openMenuId === item.id ? <FiChevronUp /> : <FiChevronDown />)}
-                </Button>
-                {openMenuId === item.id && renderMenuItems(item.subItems, level + 1)}
+                  {item.name}
+                  {openMenuId === item.id ? (
+                    <FiChevronUp />
+                  ) : (
+                    <FiChevronDown />
+                  )}
+                </button>
+
+                {/* Render second-level subitems */}
+                {openMenuId === item.id && item.subItems && (
+                  <ul className="pl-4">
+                    {item.subItems.map((subItem) => (
+                      <li key={subItem.id}>
+                        {/* If this subitem has its own subitems, render recursively */}
+                        {subItem.subItems ? (
+                          <>
+                            <button
+                              className="flex justify-between items-center w-full text-left py-2 px-4 text-md font-medium"
+                              onClick={() => toggleSubMenu(subItem.id)}
+                            >
+                              {subItem.name}
+                              {openSubMenuId === subItem.id ? (
+                                <FiChevronUp />
+                              ) : (
+                                <FiChevronDown />
+                              )}
+                            </button>
+
+                            {/* Render third-level subitems */}
+                            {openSubMenuId === subItem.id && subItem.subItems && (
+                              <ul className="pl-4">
+                                {subItem.subItems.map((thirdLevelSubItem) => (
+                                  <li key={thirdLevelSubItem.id}>
+                                    <Link href={thirdLevelSubItem.path}>
+                                      <Button
+                                        size="sm"
+                                        variant="link"
+                                        className="text-md font-medium hover:text-[#5b6cf2] transition-colors duration-300"
+                                      >
+                                        {thirdLevelSubItem.name}
+                                      </Button>
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </>
+                        ) : (
+                          <Link href={subItem.path}>
+                            <Button
+                              size="sm"
+                              variant="link"
+                              className="text-md font-medium hover:text-[#5b6cf2] transition-colors duration-300"
+                            >
+                              {subItem.name}
+                            </Button>
+                          </Link>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </>
             ) : (
               <SheetClose asChild>
@@ -47,7 +113,7 @@ export default function SmallNavbar({ items }) {
                   <Button
                     size="sm"
                     variant="link"
-                    className="text-md font-normal hover:text-[#5b6cf2] transition-colors duration-300"
+                    className="text-md font-medium hover:text-[#5b6cf2] transition-colors duration-300"
                   >
                     {item.name}
                   </Button>
@@ -62,11 +128,14 @@ export default function SmallNavbar({ items }) {
 
   return (
     <Sheet>
+      {/* Trigger Button for Small Screens */}
       <SheetTrigger asChild className="grid lg:hidden">
-        <Button variant="icon">
+        <Button variant="icon" className="py-3 p-2">
           <BiMenu className="text-2xl" />
         </Button>
       </SheetTrigger>
+
+      {/* Sheet Content */}
       <SheetContent>
         <SheetHeader>
           <SheetTitle className="text-left mb-4">
@@ -76,13 +145,12 @@ export default function SmallNavbar({ items }) {
           </SheetTitle>
         </SheetHeader>
 
-        <nav>
-          {renderMenuItems(items)}
-        </nav>
+        {/* Navigation Menu */}
+        <nav>{renderMenuItems(items)}</nav>
 
+        {/* User Authentication Section */}
         {isAuthenticated ? (
-          <div className="grid gap-2">
-            {/* Displaying user first name and email */}
+          <div className="grid gap-4 mt-6">
             <div className="text-sm text-gray-700">
               <p>Welcome, {user.firstName}</p>
               <p>{user.email}</p>
@@ -90,7 +158,7 @@ export default function SmallNavbar({ items }) {
             <SheetClose asChild>
               <Button
                 variant="outline"
-                className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5] w-[100px]"
+                className="w-full hover:bg-[#5b6cf2] hover:text-white border-[#3c46d5]"
                 onClick={() => {
                   localStorage.removeItem("token");
                   setIsAuthenticated(false);
@@ -103,7 +171,7 @@ export default function SmallNavbar({ items }) {
               <Link href="/dashboard">
                 <Button
                   variant="outline"
-                  className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5]"
+                  className="w-full hover:bg-[#5b6cf2] hover:text-white border-[#3c46d5]"
                 >
                   Dashboard
                 </Button>
@@ -111,12 +179,12 @@ export default function SmallNavbar({ items }) {
             </SheetClose>
           </div>
         ) : (
-          <div className="grid gap-2">
+          <div className="grid gap-4 mt-6">
             <SheetClose asChild>
               <Link href="/sign-up">
                 <Button
                   variant="outline"
-                  className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5]"
+                  className="w-full hover:bg-[#5b6cf2] hover:text-white border-[#3c46d5]"
                 >
                   Sign up
                 </Button>
@@ -126,7 +194,7 @@ export default function SmallNavbar({ items }) {
               <Link href="/login">
                 <Button
                   variant="outline"
-                  className="hover:bg-[#5b6cf2] hover:text-[#ffffff] border-[#3c46d5]"
+                  className="w-full hover:bg-[#5b6cf2] hover:text-white border-[#3c46d5]"
                 >
                   Sign in
                 </Button>

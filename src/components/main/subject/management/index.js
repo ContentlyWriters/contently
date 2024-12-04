@@ -224,7 +224,7 @@ Our Business Management assignment help covers a wide range of essential topics 
     </section>
 
 <section className="mb-10">
-  <h2 className="text-3xl font-bold mb-6 text-[#303030]">Conclusion</h2>
+  <h3 className="text-3xl font-bold mb-6 text-[#303030]">Conclusion</h3>
   <p className="text-lg leading-7">
     Our best management assignment help services ensure that students receive comprehensive support across all areas of management studies. Whether you need help with Business Management, Operations Management, Change Management, or Strategic Management, we offer affordable, plagiarism-free, and custom assignments to improve your academic performance. Don&#39;t hesitate to reach out and ask for help with management assignment services or say, “Do my homework,” and we will deliver quality work that aligns with your university guidelines.
   </p>
@@ -236,15 +236,15 @@ Our Business Management assignment help covers a wide range of essential topics 
 
         {/* Call to Action */}
         <div id="faq" className="px-4 sm:!px-10 lg:!px-[50px] bg-[#000]">
-        <div className="max-w-[1280px] mx-auto py-10 lg:py-24 flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-5">
-          <p className="text-white text-3xl text-center">
+        <div className="max-w-[1280px] mx-auto py-5 lg:py-24 flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-4">
+          <p className="text-white lg:text-3xl sm:2x1 text-center">
             Get your assignment done in just a few clicks
           </p>
 
           <Button
 
             type="button"
-            className="p-8 bg-[#5b6cf2] text-xl hover:bg-white hover:text-black"
+            className="lg:p-8 sm:p4 bg-[#5b6cf2] lg:text-xl sm:text-md hover:bg-white hover:text-black"
           >
           <a
     href="https://contentlywriters.com"

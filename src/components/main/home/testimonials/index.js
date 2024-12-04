@@ -98,7 +98,7 @@ export default function Testimonials() {
             type="button"
             className="p-8 bg-[#5b6cf2] text-xl hover:bg-white hover:text-black"
           >
-           <h2> Write my assignment </h2>
+            Write my assignment
           </Button>
         </div>
       </div>

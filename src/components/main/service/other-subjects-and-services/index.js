@@ -16,7 +16,7 @@ const OthersubjectPage = () => {
       <section className="relative bg-[#738290] min-h-[44vh] flex flex-col items-center justify-center text-center p-4 shadow-lg backdrop-blur-md">
 
   <motion.h1
-    className="text-black text-4xl sm:text-5xl font-semibold leading-tight mb-4"
+     className="text-black text-2xl sm:text-3xl lg:text-5xl font-semibold leading-snug lg:leading-tight mb-4 sm:mb-3"
     variants={fadeInUp}
     initial="hidden"
     animate="visible"
@@ -27,7 +27,7 @@ const OthersubjectPage = () => {
   </motion.h1>
 
   <motion.p
-    className="text-[#f5f5f5] text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
+   className="text-[#f5f5f5] text-sm sm:text-sm lg:text-xl max-w-2xl mx-auto leading-normal lg:leading-relaxed sm:leading-snug"
     variants={fadeInUp}
     initial="hidden"
     animate="visible"

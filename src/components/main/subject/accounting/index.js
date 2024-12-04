@@ -277,22 +277,22 @@ href="https://www.contentlywriters.com/service/do-my-assignment" className=" tex
 
         {/* Call to Action */}
         <div id="faq" className="px-4 sm:!px-10 lg:!px-[50px] bg-[#000]">
-        <div className="max-w-[1280px] mx-auto py-10 lg:py-24 flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-5">
-          <p className="text-white text-3xl text-center">
+        <div className="max-w-[1280px] mx-auto py-5 lg:py-24 flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-4">
+          <p className="text-white lg:text-3xl sm:2x1 text-center">
             Get your assignment done in just a few clicks
           </p>
 
           <Button
-  type="button"
-  className="p-8 bg-[#5b6cf2] text-xl hover:bg-white hover:text-black"
->
-  <a
+
+            type="button"
+            className="lg:p-8 sm:p4 bg-[#5b6cf2] lg:text-xl sm:text-md hover:bg-white hover:text-black"
+          >
+          <a
     href="https://contentlywriters.com"
   >
     Write my assignment
   </a>
-</Button>
-
+          </Button>
         </div>
       </div>
       </div>

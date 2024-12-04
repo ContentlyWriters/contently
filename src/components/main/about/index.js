@@ -17,7 +17,7 @@ const About = () => {
         <h1 className="text-[#FFFFFF] sm:text-[50px] lg:text-[80px] text-[40px] text-center pt-20 mx-auto font-semibold">
           About Us
         </h1>
-        <p className="text-[#FFFFFF] text-[25px] text-center pt-10 mb-8 mx-auto">
+        <p className="text-[#FFFFFF] sm:text-[22px] md:text-[26px] text-[20px] text-center pt-6 sm:pt-10 mb-8 mx-auto">
           Let&#39;s explore and deepen our connection.
         </p>
         <div className="h-[7px] w-[150px] bg-[#5b6cf2] mx-auto"></div>

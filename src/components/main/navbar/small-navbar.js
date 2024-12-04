@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { FaUser } from "react-icons/fa";
 import {
   Sheet,
   SheetClose,
@@ -152,30 +153,38 @@ export default function SmallNavbar({ items }) {
         {/* User Authentication Section */}
         {isAuthenticated ? (
           <div className="grid gap-4 mt-6">
-         <div className="text-sm text-gray-700">
-  <button
-    className="flex items-center space-x-2"
-    onClick={() => setShowModal(true)} // Toggle state
-  >
-    <span>Welcome, {user.firstName}</span>
-  </button>
+            <div className="relative text-sm text-gray-700">
+      {/* User Icon with Tooltip */}
+      <button
+        className="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded transition"
+        onClick={() => setShowModal(true)}
+      >
+        <FaUser className="text-lg text-gray-600" />
+        <span className="font-medium">Welcome, {user.firstName}</span>
+      </button>
 
-  {showModal && (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
-      <div className="bg-white rounded-lg shadow-lg p-4 w-4/5 max-w-sm">
-        <h2 className="text-lg font-semibold mb-2">User Info</h2>
-        <p className="text-gray-700">Name: {user.firstName}</p>
-        <p className="text-gray-700">Email: {user.email}</p>
-        <button
-          className="mt-4 px-4 py-2 bg-blue-600 text-white rounded"
-          onClick={() => setShowModal(false)} // Close modal
-        >
-          Close
-        </button>
+      {/* Tooltip */}
+      <div className="absolute left-0 top-10 hidden group-hover:block bg-gray-800 text-white text-xs py-1 px-2 rounded shadow-lg">
+        Click to see user details
       </div>
+
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 z-50">
+          <div className="bg-white rounded-lg shadow-lg p-4 w-4/5 max-w-sm">
+            <h2 className="text-lg font-semibold mb-2">User Info</h2>
+            <p className="text-gray-700">Name: {user.firstName}</p>
+            <p className="text-gray-700">Email: {user.email}</p>
+            <button
+              className="mt-4 px-4 py-2 bg-blue-600 text-white rounded"
+              onClick={() => setShowModal(false)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
-  )}
-</div>
 
             <SheetClose asChild>
               <Button

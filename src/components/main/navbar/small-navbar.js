@@ -17,7 +17,8 @@ export default function SmallNavbar({ items }) {
   const { isAuthenticated, user, setIsAuthenticated } = useUserContext();
   const [openMenuId, setOpenMenuId] = useState(null);
   const [openSubMenuId, setOpenSubMenuId] = useState(null);
-  
+  const [showModal, setShowModal] = useState(false);
+
   // Toggle logic for submenus and third-level items
   const toggleMenu = (id) => {
     setOpenMenuId((prevId) => (prevId === id ? null : id));

@@ -153,20 +153,16 @@ export default function SmallNavbar({ items }) {
         {/* User Authentication Section */}
         {isAuthenticated ? (
           <div className="grid gap-4 mt-6">
-            <div className="relative text-sm text-gray-700">
-      {/* User Icon with Tooltip */}
+             <div className="relative text-sm text-gray-700">
+      {/* User Button */}
       <button
-        className="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded transition"
+        className="flex items-center justify-between space-x-2 p-2 bg-gray-100 rounded shadow transition active:scale-95"
         onClick={() => setShowModal(true)}
       >
-        <FaUser className="text-lg text-gray-600" />
+        <FaUser className="text-lg text-gray-600 ml-2" />
         <span className="font-medium">Welcome, {user.firstName}</span>
+        <MdExpandMore className="text-gray-600 animate-bounce-slow" /> {/* Indicating action */}
       </button>
-
-      {/* Tooltip */}
-      <div className="absolute left-0 top-10 hidden group-hover:block bg-gray-800 text-white text-xs py-1 px-2 rounded shadow-lg">
-        Click to see user details
-      </div>
 
       {/* Modal */}
       {showModal && (
@@ -185,6 +181,7 @@ export default function SmallNavbar({ items }) {
         </div>
       )}
     </div>
+  
 
             <SheetClose asChild>
               <Button

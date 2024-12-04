@@ -503,24 +503,24 @@ export default function Banner() {
 
           {/* New Boxes Section */}
           <div className="flex flex-wrap justify-center sm:gap-1 gap-3 lg:gap-4 -mt-12 lg:mt-0  mb-8">
-            <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-2 w-[105px] h-[30px] rounded-lg shadow-md text-center flex flex-col justify-center items-center  lg:flex lg:w-[250px] lg:h-[50px] sm:w-[100px] sm:h-[40px]">
-              <p className="sm:text-[12px] text-[10px] lg:text-[18px]">
+            <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-2 w-[100px] h-[30px] rounded-lg shadow-md text-center flex flex-col justify-center items-center  lg:flex lg:w-[250px] lg:h-[50px] sm:w-[100px] sm:h-[40px]">
+              <p className="sm:text-[10px] text-[10px] lg:text-[18px]">
                 <span className="font-semibold">Assignment</span>
-                <span className="text-[9px] sm:text-sm font-normal"> helper</span>
+                <span className="text-[8px] sm:text-sm font-normal"> helper</span>
               </p>
             </div>
 
-            <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-2 w-[105px] h-[30px] rounded-lg shadow-md text-center flex flex-col justify-center items-center lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
-              <p className="sm:text-[12px] text-[10px] lg:text-[18px]">
+            <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-2 w-[100px] h-[30px] rounded-lg shadow-md text-center flex flex-col justify-center items-center lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
+              <p className="sm:text-[10px] text-[10px] lg:text-[18px]">
                 <span className="font-semibold">Affordable</span>
-                <span className="text-[9px] sm:text-sm font-normal"> Pricing</span>
+                <span className="text-[8px] sm:text-sm font-normal"> Pricing</span>
               </p>
             </div>
 
-            <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-2 w-[105px] h-[30px] rounded-lg shadow-md text-center flex flex-col justify-center items-center lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
-              <p className="sm:text-[12px] text-[10px] lg:text-[18px]">
+            <div className="bg-[#5b6cf2] hover:bg-white hover:text-black text-white p-2 w-[100px] h-[30px] rounded-lg shadow-md text-center flex flex-col justify-center items-center lg:flex lg:w-[250px] lg:h-[50px] sm:w-[200px] sm:h-[40px]">
+              <p className="sm:text-[10px] text-[10px] lg:text-[18px]">
                 <span className="font-semibold">Timely</span>
-                <span className="text-[9px] sm:text-sm font-normal"> delivery</span>
+                <span className="text-[8px] sm:text-sm font-normal"> delivery</span>
               </p>
             </div>
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "@/assets/image/contently-logo.png";
 import LargeNavbar from "./large-navbar";
@@ -58,9 +58,31 @@ const items = [
 
 
 function NavBar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);  // Update state when page is scrolled
+      } else {
+        setIsScrolled(false); // Reset when at top
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll); // Cleanup on unmount
+    };
+  }, []);
+
   return (
-    <div className="px-1 sm:!px-10 lg:!px-[50px] bg-[#FFFFFF] sm:px-4 !w-full fixed top-0 left-0 z-50">
-      <div className="max-w-[1280px] mx-auto  flex justify-between items-center py-1 sm:py-2">
+    <div
+      className={`px-1 sm:!px-10 lg:!px-[50px] bg-[#FFFFFF] sm:px-4 !w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+        isScrolled ? "shadow-md shadow-black/30" : ""
+      }`}
+    >
+      <div className="max-w-[1280px] mx-auto flex justify-between items-center py-0 sm:py-1">
         <Link href="/">
           <div className="flex items-center justify-center">
             <Image
@@ -71,8 +93,8 @@ function NavBar() {
             />
           </div>
         </Link>
-        <LargeNavbar items={items}  />
-        <SmallNavbar items={items}  />
+        <LargeNavbar items={items} />
+        <SmallNavbar items={items} />
       </div>
     </div>
   );

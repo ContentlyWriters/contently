@@ -13,10 +13,116 @@ import img9 from "@/assets/image/blogImg9.jpg";
 import img10 from "@/assets/image/blogImg10.jpg";
 import img11 from "@/assets/image/blogImg11.jpg";
 import img12 from "@/assets/image/blogImg12.jpg";
+import img13 from "@/assets/image/blogImg13.jpg";
 import { ImTextColor } from "react-icons/im";
 import { color } from "framer-motion";
 
 const blogData = [
+
+  {
+    slug: "easy-steps-to-write-a-perfect-coursework",
+    heading: "7 Easy Steps to Write a Perfect Coursework",
+    date: "December 5, 2024",
+    author: "Charchit Sharma",
+    image: img13,
+    metaTitle: "7 Easy Steps to Write a Perfect Coursework",
+    metaDescription: "Learn how to write coursework effortlessly with these 7 easy steps! Follow this guide for research, structure, and submission tips.",
+    keywords: ["coursework writing tips", "academic coursework guide", "writing perfect coursework"],
+    description: "Learn how to write coursework effortlessly with these 7 easy steps! Follow this guide for research, structure, and submission tips.",
+    post: [
+        {
+            title: "Introduction",
+            about: (
+                <div>
+                    <p>
+                        Coursework is the easiest task to do if you understand the pattern and format of it. It
+                        includes some steps to follow, and in this blog, we will tell you how you can easily do your
+                        coursework in 7 steps.
+                    </p>
+                    <p>
+                        Many students find it challenging to manage coursework due to personal issues or additional
+                        academic pressures. If you’re struggling, explore our <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]">best assignment services</a> for expert
+                        guidance and support.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title: "What is Coursework?",
+            about: (
+                <div>
+                    <p>
+                        Coursework is a part of a student's academic journey. It includes essays, research papers,
+                        reports, or assignments and projects. <a href="https://en.wikipedia.org/wiki/Coursework" className="text-[#5b6cf2]">Coursework</a> helps students show their understanding
+                        by applying theories to real-world situations, often involving research and analysis.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title: "Steps to Follow",
+            about: (
+                <div>
+                    <h4>1. Understand the Assignment</h4>
+                    <ul className="list-disc ml-6">
+                        <li>Reading the <a href="https://www.indiaassignmenthelp.com/uploads/1651354732IIPP%20(TMA)%20Assignment%20Brief%202022%20-%20Copy%20(2)%20(1).pdf" className="text-[#5b6cf2]">assignment brief</a> is the first and essential step.</li>
+                        <li>Highlight key instructions, such as format, word count, and specific tasks.</li>
+                        <li>Ask your professor to clarify any doubts.</li>
+                    </ul>
+                    <h4>2. Choose a Topic</h4>
+                    <ul className="list-disc ml-6">
+                        <li>Discuss topics with friends to get ideas.</li>
+                        <li>Choose a topic that interests you and is easy to research.</li>
+                        <li>Passionate topics keep you motivated during the process.</li>
+                    </ul>
+                    <h4>3. Do a Thorough Research</h4>
+                    <ul className="list-disc ml-6">
+                        <li>Use journals, websites, and books to gather information.</li>
+                        <li>Organize findings and focus on relevant information.</li>
+                        <li>Strong arguments require thorough research.</li>
+                    </ul>
+                    <h4>4. Create an Outline</h4>
+                    <ul className="list-disc ml-6">
+                        <li>Organize your thoughts by outlining main sections like introduction, body, and conclusion.</li>
+                        <li>Stay on track with a well-structured outline.</li>
+                    </ul>
+                    <h4>5. Write the Draft</h4>
+                    <ul className="list-disc ml-6">
+                        <li>Draft your coursework according to the outline.</li>
+                        <li>Start with the table of contents and conclude strongly with evidence.</li>
+                    </ul>
+                    <h4>6. Edit and Revise</h4>
+                    <ul className="list-disc ml-6">
+                        <li>Take a break before revising your draft.</li>
+                        <li>Eliminate <a href="https://study.com/skill/learn/eliminating-needless-repetition-explanation.html#:~:text=Sometimes%20repetition%20can%20help%20to,more%20words%20than%20are%20necessary." className="text-[#5b6cf2]">needless repetition</a>.</li>
+                        <li>Get feedback from a tutor or elder for improvements.</li>
+                    </ul>
+                    <h4>7. Finalize and Submit</h4>
+                    <ul className="list-disc ml-6">
+                        <li>Review your coursework to ensure satisfaction and meet requirements.</li>
+                        <li>Submit your work on time.</li>
+                    </ul>
+                </div>
+            ),
+        },
+        {
+            title: "Conclusion",
+            about: (
+                <div>
+                    <p>
+                        First, understand what coursework is, then carefully comprehend your assignment. Choose a
+                        topic you are passionate about and can research thoroughly. Outline and draft your coursework
+                        before revising it to perfection. Once it meets all requirements, submit it on time.
+                    </p>
+                    <p>
+                        For additional tips, explore <a href="https://www.contentlywriters.com/blog/common-mistakes-students-make-assignments" className="text-[#5b6cf2]">6 Common Mistakes Students Make with Their Assignment</a> to avoid common pitfalls.
+                    </p>
+                </div>
+            ),
+        },
+    ],
+},
+
 
   {
     slug: "common-mistakes-students-make-assignments",
@@ -1410,7 +1516,7 @@ export default function BlogPostPage({ params }) {
 
   return (
     <div className="px-4 sm:px-10 lg:px-[50px] sm:pt-10 pt-4 pb-10">
-      <div className="max-w-[1280px] mx-auto">
+      <div className="max-w-[1220px] mx-auto">
         {/* Blog Heading */}
         <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center leading-snug sm:leading-tight mt-2 mb-8">
           {blog.heading}
@@ -1419,7 +1525,7 @@ export default function BlogPostPage({ params }) {
         {/* Blog Image */}
         <div className="flex justify-center">
           <Image
-             className="rounded-lg w-full max-w-[1280px] max-h-[580px] h-auto"
+             className="rounded-lg w-full max-w-[1220px] max-h-[580px] h-auto"
             src={blog.image}
             alt="Blog header"
           />

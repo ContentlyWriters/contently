@@ -16,8 +16,17 @@ import img9 from "@/assets/image/blogImg9.jpg";
 import img10 from "@/assets/image/blogImg10.jpg";
 import img11 from "@/assets/image/blogImg11.jpg";
 import img12 from "@/assets/image/blogImg12.jpg";
+import img13 from "@/assets/image/blogImg13.jpg";
 
 const blogData = [
+  {
+    tag: "blog-13",
+    slug: "easy-steps-to-write-a-perfect-coursework",
+    heading: "7 Easy Steps to Write a Perfect Courseworkt",
+    date: "December 5, 2024",
+    image: img13,
+    about:"Coursework is the easiest task to do if you understand the pattern and format of it. It includes some steps to follow and in this blog, we will tell you how you can easily do your coursework in 7 steps.",
+  },
   {
     tag: "blog-12",
     slug: "common-mistakes-students-make-assignments",

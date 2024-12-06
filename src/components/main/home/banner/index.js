@@ -492,14 +492,14 @@ export default function Banner() {
     <div className="px-4 sm:px-4 md:px-6 lg:px-[50px] bg-gradient-to-b from-white to-[#f7f7f7] pb-10">
       <div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10 sm:gap-10">
         <div className="w-full grid mt-10 sm:mt-24 sm:pr-10">
-          <h2 className="md:text-8xl sm:text-7xl text-4xl sm:min-h-[300px] min-h-[200px] sm:leading-[100px] leading-tight text-left font-semibold text-[#1a1a1a] tracking-tight">
+          <h1 className="md:text-8xl sm:text-7xl text-4xl sm:min-h-[300px] min-h-[200px] sm:leading-[100px] leading-tight text-left font-semibold text-[#1a1a1a] tracking-tight">
             {/* Slide in text with subtle fade animation */}
             {isClient && (
               <span className="block animate-fade-in ">
                 Best Content Writing Services in UK & USA
               </span>
             )}
-          </h2>
+          </h1>
 
           {/* New Boxes Section */}
           <div className="flex flex-wrap justify-center sm:gap-1 gap-3 lg:gap-4 -mt-12 lg:mt-0  mb-8">

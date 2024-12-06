@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import logo from "@/assets/image/Consulting-rafiki.svg";
+import Steps from "@/assets/image/Consulting-rafiki.svg";
 import { Button } from "@/components/ui/button";
+import { FaCheckCircle } from "react-icons/fa";
+import { MdCreditScore } from "react-icons/md";
 
 export default function AssignmentSteps() {
 
@@ -13,75 +15,104 @@ export default function AssignmentSteps() {
   }
   return (
     <>
-      <div className="px-4 sm:!px-10 lg:!px-[50px] ">
-        <div className="max-w-[1280px] mx-auto">
-        <h1 className="sm:text-4xl text-2xl font-semibold sm:text-center text-left px-2 sm:py-8 py-4 sm:tracking-wide leading-snug sm:mt-10 mt-5">
-  Simplify Your Assignment with Our Content Writing Services
-</h1>
+<div className="px-4 sm:!px-10 lg:!px-[50px] ">
+  <div className="max-w-[1280px] mx-auto">
+    {/* Section Heading */}
+    <h2 className="sm:text-4xl text-2xl font-semibold sm:text-center text-left px-2 sm:py-8 py-2 sm:tracking-wide leading-snug sm:mt-8  mt-5 text-gray-800">
+      Simplify Your Assignment with Our Content Writing Services
+    </h2>
+
+    {/* Decorative Image */}
+    <Image
+      src={Steps}
+      alt="Assignment Steps"
+      width={680}
+      height={400}
+      className="mx-auto -mb-8 sm:-mb-4 lg:-mb-4"
+    />
+
+    {/* Horizontal Steps Section */}
+    <div className="relative my-6 sm:my-8 lg:my-8">
+      {/* Horizontal Line */}
+      <div className="absolute top-1/2 left-0 right-0 transform -translate-y-1/2 h-1 bg-gradient-to-r from-blue-500 via-pink-500 to-pink-500"></div>
+
+      {/* Steps */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {data.map((item, index) => (
+          <div
+            key={item.title}
+            className="relative flex flex-col  sm:text-left lg:text-left bg-white rounded-lg shadow-lg p-6 text-center transition-transform transform "
+          >
+          
+
+             {/* Content */}
+            <h3 className="mt-10 text-xl font-semibold sm:text-left lg:text-center text-left text-gray-700">
+              {item.title}
+            </h3>
+            <p className="mt-3 text-sm text-gray-600 sm:text-left lg:text-center text-left leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
 
 
-          <Image src={logo} alt="Assignment Steps" width={680} height={400} className="mx-auto" />
-          <div className="grid md:grid-cols-3 sm:grid-cols-2  rounded-lg bg-[#f8f8f8] my-10">
-            {data.map((item, index) => (
-              <div
-                key={item.title}
-                className={`sm:p-8 px-4 py-6 ${
-                  index === data.length - 1 &&
-                  " md:col-span-1 sm:col-span-2 col-span-1"
-                }`}
-              >
-                <p className="text-center font-semibold">{item.title}</p>
-                <p className="text-sm opacity-80 pt-4 text-left sm:text-center">
-                  {item.description}
-                </p>
-              </div>
-            ))}
+    <div className="px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-gray-900 to-black text-gray-300">
+      <div className="max-w-[1200px] mx-auto py-16">
+        {/* Feature Highlights */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 text-left">
+          {/* Zero Plagiarism Section */}
+          <div className="flex items-start gap-6 border-l-4 border-[#5b6cf2] pl-6">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#5b6cf2] text-white">
+              <FaCheckCircle className="w-4 h-4" />
+            </div>
+            <div>
+              <h4 className="text-2xl font-semibold text-white mb-2">
+                Zero Plagiarism
+              </h4>
+              <p className="leading-relaxed">
+                Every essay is thoroughly checked for plagiarism before being
+                delivered, ensuring 100% original content.
+              </p>
+            </div>
+          </div>
+
+          {/* Money-back Guarantee Section */}
+          <div className="flex items-start gap-6 border-l-4 border-[#5b6cf2] pl-6">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#5b6cf2] text-white">
+              <MdCreditScore className="w-5 h-5" />
+            </div>
+            <div>
+              <h4 className="text-2xl font-semibold text-white mb-2">
+                Money-back Guarantee
+              </h4>
+              <p className="leading-relaxed">
+                If there&#39;s any issue with your order, the full amount will
+                be refunded promptly and without hassle.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      
-      
-      
-      <div className="px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-gray-900 to-black">
-    <div className="max-w-[1200px] mx-auto py-16 text-center">
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
-
-      {/* Zero Plagiarism Section */}
-      <div className="bg-gray-900 rounded-lg p-8 shadow-lg transform transition-transform duration-300 hover:scale-105">
-        <h4 className="text-[#5b6cf2] text-3xl font-semibold mb-4">
-          Zero Plagiarism
-        </h4>
-        <p className="text-gray-300 text-base leading-relaxed">
-          Every essay is thoroughly checked for plagiarism before being delivered, ensuring 100% original content.
-        </p>
-      </div>
-
-      {/* Money-back Guarantee Section */}
-      <div className="bg-gray-900 rounded-lg p-8 shadow-lg transform transition-transform duration-300 hover:scale-105">
-        <h4 className="text-[#5b6cf2] text-3xl font-semibold mb-4">
-          Money-back Guarantee
-        </h4>
-        <p className="text-gray-300 text-base leading-relaxed">
-        If there&#39;s any issue with your order, the full amount will be refunded promptly and without hassle.
-        </p>
-      </div>
-
-    </div>
 
     {/* Call-to-Action */}
-    <div className="mt-16">
-      <h2 className="text-4xl font-semibold mb-6">
-        <span className="text-[#5b6cf2]">Get work done from</span>
-        <span className="text-white"> the Experts</span>
+    <div className="mt-16 text-center">
+      <h2 className="text-3xl sm:text-4xl font-semibold mb-6">
+        <span className="text-[#5b6cf2]">Get work done from</span>{" "}
+        <span className="text-white">the Experts</span>
       </h2>
-      <button className="bg-[#5b6cf2] text-white lg:py-4 lg:px-10 px-6 py-2 rounded-full lg:text-lg text-md font-medium hover:bg-white hover:text-black transition-colors duration-300"
-      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      <button
+        className="bg-[#5b6cf2] text-white lg:py-4 lg:px-10 px-6 py-2 rounded-full lg:text-lg text-md font-medium hover:bg-white hover:text-black transition-colors duration-300"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         Get Started
       </button>
     </div>
   </div>
 </div>
+
 
 
 
@@ -109,16 +140,16 @@ const data = [
   {
     title: "Step 1",
     description:
-      "Complete the necessary details in the form provided, and format your assignment expert according to the specified guidelines. Upload the text file containing your assignment and any references required. Once these steps are finished, click the 'Write my assignment' button below to proceed.",
+      "Fill out the required details in the form and format your assignment as per the provided guidelines. Upload the pdf file with your assignment and any necessary references. Once complete, click the 'Write my assignment' button below to proceed.",
   },
   {
     title: "Step 2",
     description:
-      "You will be directed to the payment portal. After entering the required information, you can proceed with the payment to confirm your order. If you encounter any issues with payments, please visit the Contact page for assistance.",
+      "You will be directed to the payment portal. After filling the required information, you can proceed with the payment gateway to confirm your order. If you face any issues with payments, please visit our Contact page for assistance.",
   },
   {
     title: "Step 3",
     description:
-      "Any orders you place will be stored in your profile and/or sent to your email address. If you have any issues regarding the assignment after its completion, kindly refer to the Services section. If you have any questions about the website or the process of assignment completion, please check the FAQ page. If you need further assistance, feel free to ask, and we'll be happy to help me with assignment queries.",
+      "Your orders will be saved in your dashboard. For assignment issues, contact us via the details on the Contact page or use the feedback option in your dashboard. For website or assignment process queries, visit the FAQ section. We're here to help!",
   },
 ];

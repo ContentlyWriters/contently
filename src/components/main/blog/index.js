@@ -22,7 +22,7 @@ const blogData = [
   {
     tag: "blog-11",
     slug: "easy-steps-to-write-a-perfect-coursework",
-    heading: "7 Easy Steps to Write a Perfect Courseworkt",
+    heading: "7 Easy Steps to Write a Perfect Coursework",
     date: "December 5, 2024",
     image: img13,
     about:"Coursework is the easiest task to do if you understand the pattern and format of it. It includes some steps to follow and in this blog, we will tell you how you can easily do your coursework in 7 steps.",

@@ -14,7 +14,7 @@ import img10 from "@/assets/image/blogImg10.jpg";
 import img11 from "@/assets/image/blogImg11.jpg";
 import img12 from "@/assets/image/blogImg12.jpg";
 import img13 from "@/assets/image/blogImg13.jpg";
-import img14 from "@/assets/image/blogImg14.jpg";
+import img14 from "@/assets/image/blogimg14.jpg";
 import { ImTextColor } from "react-icons/im";
 import { color } from "framer-motion";
 
@@ -58,7 +58,7 @@ blog to assist you in selecting a topic that is both important and manageable.
                     </ul>
                     <p>
                     Selecting a subject you’re truly enthusiastic about will improve the research process and
-keep you motivated when challenges arise. For example, if you're passionate about
+keep you motivated when challenges arise. For example, if you&#39;re passionate about
 sustainability, you could explore topics like renewable energy policies or eco-friendly
 business practices. Your interests can serve as a guide to align your academic work with
 your values.
@@ -95,7 +95,7 @@ requirement but a strategic career move.
                     Take a close look at your current research, articles, and journals in your field and search for:   </p>
                     <ul className="list-disc ml-6">
                         <li>Popular topics and emerging trends.</li>
-                        <li>Gaps in the literature that haven't been fully explored.</li>
+                        <li>Gaps in the literature that haven&#39;t been fully explored.</li>
                         <li>Topics that complement your hobbies and professional objectives.</li>
                     </ul>
                     <p>Staying up to date with new research ensures that your topic is current and pertinent.
@@ -139,8 +139,8 @@ you might not have considered.</p>
                         <li>Collect sufficient information or proof.</li>
                     </ul>
                     <p>Researching and writing about a clearly defined topic makes it easier to stay on course. For
-instance, instead of researching "Global Climate Change," narrow it down to "The Impact of
-Climate Change on Small Island Nations." A focused topic not only makes your work
+instance, instead of researching &#34;Global Climate Change,&#34; narrow it down to &#34;The Impact of
+Climate Change on Small Island Nations.&#34; A focused topic not only makes your work
 manageable but also adds clarity to your objectives.</p>
                 </div>
             ),
@@ -151,7 +151,7 @@ manageable but also adds clarity to your objectives.</p>
                 <div>
                     <p>
                     Your dissertation should add something fresh to your field, even though ground-breaking
-                    discoveries aren't always required. You can:
+                    discoveries aren&#39;t always required. You can:
                     </p>
                     <ul className="list-disc ml-6">
                         <li>Look into a specific area inside a larger subject.</li>
@@ -159,7 +159,7 @@ manageable but also adds clarity to your objectives.</p>
                         <li>Consider a previously unconsidered viewpoint.</li>
                     </ul>
                     <p>
-                    Verify databases, journals, and prior dissertations to make sure your concept hasn't been
+                    Verify databases, journals, and prior dissertations to make sure your concept hasn&#39;t been
 thoroughly discussed before. Tools like Turnitin or iThenticate can help ensure your idea is
 unique and plagiarism-free.
                     </p>
@@ -179,7 +179,7 @@ unique and plagiarism-free.
                         <li>Can I explain its importance clearly?</li>
                         <li>What obstacles might I face, and how can I get past them?</li>
                     </ul>
-                    <p>This task will assist you in narrowing your emphasis and evaluating the topic's merit. A
+                    <p>This task will assist you in narrowing your emphasis and evaluating the topic&#39;s merit. A
 well-structured proposal also helps you gain clarity and approval from your academic
 advisor, setting a strong foundation for your research.</p>
                 </div>

@@ -45,7 +45,7 @@ blog to assist you in selecting a topic that is both important and manageable.
             ),
         },
         {
-            title1: "1. Reflect on Your Interests",
+            title: "1. Reflect on Your Interests",
             about: (
                 <div>
                     <p>
@@ -67,7 +67,7 @@ your values.
             ),
         },
         {
-            title1: "2. Align with Your Career Goals",
+            title: "2. Align with Your Career Goals",
             about: (
                 <div>
                     <p>
@@ -88,7 +88,7 @@ requirement but a strategic career move.
             ),
         },
         {
-            title1: "3. Examine Recent Developments in Research",
+            title: "3. Examine Recent Developments in Research",
             about: (
                 <div>
                     <p>
@@ -107,7 +107,7 @@ can offer fresh inspiration.</p>
             ),
         },
         {
-            title1: "4. Seek Feedback from Peers and Advisors",
+            title: "4. Seek Feedback from Peers and Advisors",
             about: (
                 <div>
                     <p>
@@ -126,7 +126,7 @@ you might not have considered.</p>
             ),
         },
         {
-            title1: "5. Narrow Your Scope",
+            title: "5. Narrow Your Scope",
             about: (
                 <div>
                     <p>
@@ -146,7 +146,7 @@ manageable but also adds clarity to your objectives.</p>
             ),
         },
         {
-            title1: "6. Ensure Originality",
+            title: "6. Ensure Originality",
             about: (
                 <div>
                     <p>
@@ -167,7 +167,7 @@ unique and plagiarism-free.
             ),
         },
         {
-            title1: "7. Test Your Topic with a Proposal",
+            title: "7. Test Your Topic with a Proposal",
             about: (
                 <div>
                     <p>
@@ -186,7 +186,7 @@ advisor, setting a strong foundation for your research.</p>
             ),
         },
         {
-            title: "Conclusion",
+            title1: "Conclusion",
             about: (
                 <div>
                     <p>

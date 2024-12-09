@@ -14,10 +14,207 @@ import img10 from "@/assets/image/blogImg10.jpg";
 import img11 from "@/assets/image/blogImg11.jpg";
 import img12 from "@/assets/image/blogImg12.jpg";
 import img13 from "@/assets/image/blogImg13.jpg";
+import img14 from "@/assets/image/blogImg14.jpg";
 import { ImTextColor } from "react-icons/im";
 import { color } from "framer-motion";
 
 const blogData = [
+
+  {
+    slug: "easy-steps-to-nail-your-dissertation-topic-selection",
+    heading: "7 Easy Steps to Nail Your Dissertation Topic Selection",
+    date: "December 9, 2024",
+    author: "Charchit Sharma",
+    image: img14,
+    metaTitle: "7 Easy Steps to Nail Your Dissertation Topic Selection",
+    metaDescription: "Struggling to find a dissertation topic? Discover 7 actionable steps to choose the perfect topic that aligns with your goals and interests.",
+    keywords: ["dissertation topic selection", "academic dissertation guide", "choosing perfect dissertation topic"],
+    description: "Struggling to find a dissertation topic? Discover 7 actionable steps to choose the perfect topic that aligns with your goals and interests.",
+    post: [
+        {
+            about: (
+                <div>
+                    <p>
+                    Choosing a dissertation topic is one of your most important and fascinating aspects of your
+academic journey. It’s your opportunity to show your enthusiasm, creativity, and knowledge.
+But finding the perfect topic can be difficult. We will give you comprehensive guidance in this
+blog to assist you in selecting a topic that is both important and manageable.
+                    </p>
+                   
+                </div>
+            ),
+        },
+        {
+            title1: "1. Reflect on Your Interests",
+            about: (
+                <div>
+                    <p>
+                        Start by asking yourself:
+                    </p>
+                    <ul className="list-disc ml-6">
+                        <li>Which academic subjects have interested you the most?</li>
+                        <li>Do you have strong opinions on any topics in the actual world?</li>
+                        <li>Which subjects fit your career and personal objectives?</li>
+                    </ul>
+                    <p>
+                    Selecting a subject you’re truly enthusiastic about will improve the research process and
+keep you motivated when challenges arise. For example, if you're passionate about
+sustainability, you could explore topics like renewable energy policies or eco-friendly
+business practices. Your interests can serve as a guide to align your academic work with
+your values.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title1: "2. Align with Your Career Goals",
+            about: (
+                <div>
+                    <p>
+                        Your dissertation can act as a stepping stone for your future goals. A well-chosen topic can:
+                    </p>
+                    <ul className="list-disc ml-6">
+                        <li>Enhance your resume or portfolio for possible future employment.</li>
+                        <li>Give people the chance to network with academics and professionals in your sector.</li>
+                        <li>Help you learn more about a particular aspect of your line of work.</li>
+                    </ul>
+                    <p>
+                    Think about how your dissertation can assist you in pursuing your desired career. For
+instance, if your goal is to enter the tech industry, you might focus on topics like AI ethics or
+cybersecurity trends. This approach can make your dissertation not just an academic
+requirement but a strategic career move.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title1: "3. Examine Recent Developments in Research",
+            about: (
+                <div>
+                    <p>
+                    Take a close look at your current research, articles, and journals in your field and search for:   </p>
+                    <ul className="list-disc ml-6">
+                        <li>Popular topics and emerging trends.</li>
+                        <li>Gaps in the literature that haven't been fully explored.</li>
+                        <li>Topics that complement your hobbies and professional objectives.</li>
+                    </ul>
+                    <p>Staying up to date with new research ensures that your topic is current and pertinent.
+Platforms like <a href="https://scholar.google.com/"className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Google
+Scholar</a> and databases like <a href="https://www.jstor.org/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">JSTOR</a> can be valuable for identifying
+cutting-edge research. Additionally, reviewing recent conference proceedings in your field
+can offer fresh inspiration.</p>
+                </div>      
+            ),
+        },
+        {
+            title1: "4. Seek Feedback from Peers and Advisors",
+            about: (
+                <div>
+                    <p>
+                    Important resources include your instructors, academic advisors, and even other students.
+                    Talk about your ideas with them to:
+                    </p>
+                    <ul className="list-disc ml-6">
+                        <li>Gain new insights on your subject.</li>
+                        <li>Determine potential obstacles or restrictions.</li>
+                        <li>Get suggestions on methods or resources.</li>
+                    </ul>
+                    <p>Their observations can assist you in honing your subject and ensuring its viability.
+Collaborating with peers during brainstorming sessions can also help you discover angles
+you might not have considered.</p>
+                </div>
+            ),
+        },
+        {
+            title1: "5. Narrow Your Scope",
+            about: (
+                <div>
+                    <p>
+                    Selecting a topic that is too ambitious or too general is a common error. To maintain focus
+                    and manageability in your dissertation, consider whether you can:
+                    </p>
+                    <ul className="list-disc ml-6">
+                        <li>Finish this topic in the allotted time.</li>
+                        <li>Handle the scope with the resources at your disposal.</li>
+                        <li>Collect sufficient information or proof.</li>
+                    </ul>
+                    <p>Researching and writing about a clearly defined topic makes it easier to stay on course. For
+instance, instead of researching "Global Climate Change," narrow it down to "The Impact of
+Climate Change on Small Island Nations." A focused topic not only makes your work
+manageable but also adds clarity to your objectives.</p>
+                </div>
+            ),
+        },
+        {
+            title1: "6. Ensure Originality",
+            about: (
+                <div>
+                    <p>
+                    Your dissertation should add something fresh to your field, even though ground-breaking
+                    discoveries aren't always required. You can:
+                    </p>
+                    <ul className="list-disc ml-6">
+                        <li>Look into a specific area inside a larger subject.</li>
+                        <li>Approach an established question with a new methodology.</li>
+                        <li>Consider a previously unconsidered viewpoint.</li>
+                    </ul>
+                    <p>
+                    Verify databases, journals, and prior dissertations to make sure your concept hasn't been
+thoroughly discussed before. Tools like Turnitin or iThenticate can help ensure your idea is
+unique and plagiarism-free.
+                    </p>
+                </div>
+            ),
+        },
+        {
+            title1: "7. Test Your Topic with a Proposal",
+            about: (
+                <div>
+                    <p>
+                    Writing a brief study proposal can assist you in assessing the potential of your subject.
+                    Answer the following queries:
+                    </p>
+                    <ul className="list-disc ml-6">
+                        <li>Is this subject intriguing and pertinent?</li>
+                        <li>Can I explain its importance clearly?</li>
+                        <li>What obstacles might I face, and how can I get past them?</li>
+                    </ul>
+                    <p>This task will assist you in narrowing your emphasis and evaluating the topic's merit. A
+well-structured proposal also helps you gain clarity and approval from your academic
+advisor, setting a strong foundation for your research.</p>
+                </div>
+            ),
+        },
+        {
+            title: "Conclusion",
+            about: (
+                <div>
+                    <p>
+                    Selecting the ideal dissertation topic requires careful consideration, investigation, and
+planning. By following these steps, you can find a topic that interests you, fits with your
+objectives, and makes a significant contribution to your field.
+                    </p>
+                    <p>
+                    More than just a prerequisite, your dissertation is your opportunity to leave a lasting
+impression. Begin investigating, maintain your curiosity, and have faith in the process! And
+remember, your dissertation is not just a challenge but an exciting opportunity to explore and
+contribute to what you are passionate about
+                    </p>
+                    <p>
+                    For students struggling to narrow down their scope, our Dissertation Writing Help service
+provides expert guidance to simplify the process. Additionally, platforms like <a href="https://scholar.google.com/"className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Google
+Scholar </a>
+and <a href="https://www.jstor.org/" className="text-[#5b6cf2]  underline hover:no-underline " target="_blank" rel="noopener noreferrer">JSTOR</a> are excellent resources for accessing the latest academic materials.
+                    </p>
+                    <p>Looking for expert assistance with your assignments? Contact Contently Writers for the <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">best assignment
+services </a> and ensure success in your academic journey!</p>
+                </div>
+            ),
+        },
+    ],
+},
+
+
 
   {
     slug: "easy-steps-to-write-a-perfect-coursework",
@@ -41,7 +238,7 @@ const blogData = [
                     </p>
                     <p>
                         Many students find it challenging to manage coursework due to personal issues or additional
-                        academic pressures. If you’re struggling, explore our <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2] underline hover:no-underline">best assignment services</a> for expert
+                        academic pressures. If you’re struggling, explore our <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">best assignment services</a> for expert
                         guidance and support.
                     </p>
                 </div>
@@ -53,7 +250,7 @@ const blogData = [
                 <div>
                     <p>
                         Coursework is a part of a student&#39;s academic journey. It includes essays, research papers,
-                        reports, or assignments and projects. <a href="https://en.wikipedia.org/wiki/Coursework" className="text-[#5b6cf2] underline hover:no-underline">Coursework</a> helps students show their understanding
+                        reports, or assignments and projects. <a href="https://en.wikipedia.org/wiki/Coursework" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Coursework</a> helps students show their understanding
                         by applying theories to real-world situations, often involving research and analysis.
                     </p>
                 </div>
@@ -65,7 +262,7 @@ const blogData = [
                 <div>
                     <h4><strong>1. Understand the Assignment</strong></h4>
                     <ul className="list-disc ml-6">
-                        <li>Reading the <a href="https://www.indiaassignmenthelp.com/uploads/1651354732IIPP%20(TMA)%20Assignment%20Brief%202022%20-%20Copy%20(2)%20(1).pdf" className="text-[#5b6cf2] underline hover:no-underline">assignment brief</a> is the first and essential step.</li>
+                        <li>Reading the <a href="https://www.indiaassignmenthelp.com/uploads/1651354732IIPP%20(TMA)%20Assignment%20Brief%202022%20-%20Copy%20(2)%20(1).pdf" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">assignment brief</a> is the first and essential step.</li>
                         <li>Highlight key instructions, such as format, word count, and specific tasks.</li>
                         <li>Ask your professor to clarify any doubts.</li>
                     </ul>
@@ -94,7 +291,7 @@ const blogData = [
                     <h4><strong>6. Edit and Revise</strong></h4>
                     <ul className="list-disc ml-6">
                         <li>Take a break before revising your draft.</li>
-                        <li>Eliminate <a href="https://study.com/skill/learn/eliminating-needless-repetition-explanation.html#:~:text=Sometimes%20repetition%20can%20help%20to,more%20words%20than%20are%20necessary." className="text-[#5b6cf2] underline hover:no-underline">needless repetition</a>.</li>
+                        <li>Eliminate <a href="https://study.com/skill/learn/eliminating-needless-repetition-explanation.html#:~:text=Sometimes%20repetition%20can%20help%20to,more%20words%20than%20are%20necessary." className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">needless repetition</a>.</li>
                         <li>Get feedback from a tutor or elder for improvements.</li>
                     </ul>
                     <h4><strong>7. Finalize and Submit</strong></h4>
@@ -115,7 +312,7 @@ const blogData = [
                         before revising it to perfection. Once it meets all requirements, submit it on time.
                     </p>
                     <p>
-                        For additional tips, explore <a href="https://www.contentlywriters.com/blog/common-mistakes-students-make-assignments" className="text-[#5b6cf2] underline hover:no-underline">6 Common Mistakes Students Make with Their Assignment</a> to avoid common pitfalls.
+                        For additional tips, explore <a href="https://www.contentlywriters.com/blog/common-mistakes-students-make-assignments" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">6 Common Mistakes Students Make with Their Assignment</a> to avoid common pitfalls.
                     </p>
                 </div>
             ),
@@ -210,7 +407,7 @@ const blogData = [
                         In the academic period, plagiarism is considered a breach (violation). It happens when a
                         student fails to think and research on their own and copies the content of an assignment that
                         already exists somewhere. Many students seek assistance from a <a
-href="https://www.contentlywriters.com/service/do-my-assignment" className="text-[#5b6cf2] underline hover:no-underline"> Do-my-assignment </a>
+href="https://www.contentlywriters.com/service/do-my-assignment" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer"> Do-my-assignment </a>
                          helper to avoid any plagiarism and ensure originality and quality of the work.
                     </p>
                     <h4><strong>How to avoid it:</strong></h4>
@@ -252,7 +449,7 @@ on their thinking skills.
                 This is the most common mistake most of the students make. They do not proofread and
 edit if there is something left which leads to mistakes and incomplete points in the
 assignment. <a
-href="https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/#:~:text=Proofreading%20is%20the%20final%20stage,of%20your%20other%20editing%20revisions." className="text-[#5b6cf2] underline hover:no-underline">Proofreading</a> ensures that your assignment is ready for submission.
+href="https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/#:~:text=Proofreading%20is%20the%20final%20stage,of%20your%20other%20editing%20revisions." className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Proofreading</a> ensures that your assignment is ready for submission.
                 </p>
                 <h4><strong>How to avoid it:</strong></h4>
                 <ul className="list-disc     ml-6" >
@@ -271,9 +468,9 @@ href="https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/#:~:
         <div>
           <p>
           To further enhance your assignment writing skills, make use of the various online tools and
-platforms available. To manage your time effectively, explore <a href="https://www.mindtools.com/" className="text-[#5b6cf2] underline hover:no-underline">Mind Tools</a>. To ensure
-originality, check your work with tools like the <a href="https://www.grammarly.com/plagiarism-checker" className="text-[#5b6cf2] underline hover:no-underline">Grammarly Plagiarism Checker</a> or <a href="https://www.turnitin.com/" className="text-[#5b6cf2] underline hover:no-underline">Turnitin</a>.
-For proofreading, tools like <a href="https://hemingwayapp.com/" className="text-[#5b6cf2] underline hover:no-underline">Hemingway Editor</a> and <a href="https://prowritingaid.com/" className="text-[#5b6cf2] underline hover:no-underline">ProWritingAid</a> can help refine your
+platforms available. To manage your time effectively, explore <a href="https://www.mindtools.com/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Mind Tools</a>. To ensure
+originality, check your work with tools like the <a href="https://www.grammarly.com/plagiarism-checker" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Grammarly Plagiarism Checker</a> or <a href="https://www.turnitin.com/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Turnitin</a>.
+For proofreading, tools like <a href="https://hemingwayapp.com/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Hemingway Editor</a> and <a href="https://prowritingaid.com/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">ProWritingAid</a> can help refine your
 work.
           </p>
           <p className="mt-4">
@@ -341,7 +538,7 @@ your assignment needs.
               showcasing new findings, analyzing existing literature, or addressing a specific
               research gap? A clear purpose will guide every section of your paper. If you’re
               struggling to frame your objective or need professional guidance, consider exploring
-              our <a href="https://www.contentlywriters.com/service/buy-a-research-paper" className="text-[#5b6cf2] underline hover:no-underline"> research paper writing assistance</a> tailored for students.
+              our <a href="https://www.contentlywriters.com/service/buy-a-research-paper" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer"> research paper writing assistance</a> tailored for students.
             </p>
           </div>
         ),
@@ -352,7 +549,7 @@ your assignment needs.
           <div>
             <p>
               A <a
-href="https://www.enago.com/academy/how-can-you-create-structured-research-paper-outline/#Research_Paper_Outline_Template" className="text-[#5b6cf2] underline hover:no-underline">
+href="https://www.enago.com/academy/how-can-you-create-structured-research-paper-outline/#Research_Paper_Outline_Template" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">
 research paper outline</a> acts as a guide or blueprint for your work. Consider it a
               guide that helps you logically structure your thoughts and arguments. Your outline
               should include these primary sections:
@@ -363,7 +560,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
                   &#34;The Impact of Social Media on Academic Performance&#34;).
               </li>
               <li>
-                <strong><a href="https://writing.wisc.edu/handbook/assignments/writing-an-abstract-for-your-research-paper/" className="text-[#5b6cf2] underline hover:no-underline"> Abstract</a>:</strong> Provide a brief overview of your research that shows the purpose,
+                <strong><a href="https://writing.wisc.edu/handbook/assignments/writing-an-abstract-for-your-research-paper/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer"> Abstract</a>:</strong> Provide a brief overview of your research that shows the purpose,
                 methodology, findings, and conclusion.
               </li>
               <li>
@@ -434,12 +631,12 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
             </p>
             <ul className="list-disc     ml-6" >
               <li>
-                <strong><a href="https://www.cwauthors.com/article/how-to-structure-and-write-a-chronological-literature-review" className="text-[#5b6cf2] underline hover:no-underline">Chronological Approach</a>:</strong> If your research is building upon earlier research,
+                <strong><a href="https://www.cwauthors.com/article/how-to-structure-and-write-a-chronological-literature-review" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Chronological Approach</a>:</strong> If your research is building upon earlier research,
                 present the literature in chronological order to show the evolution of the field
                 over time.
               </li>
               <li>
-                <strong><a href="https://www.cwauthors.com/article/how-to-structure-and-write-a-thematic-literature-review" className="text-[#5b6cf2] underline hover:no-underline">Thematic Approach:</a></strong> Organise the literature according to themes or topics,
+                <strong><a href="https://www.cwauthors.com/article/how-to-structure-and-write-a-thematic-literature-review" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Thematic Approach:</a></strong> Organise the literature according to themes or topics,
                 particularly if your paper covers multiple themes.
               </li>
               <li>
@@ -448,7 +645,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               </li>
             </ul>
             <p>
-              To better manage your research, our <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2] underline hover:no-underline"> best academic writing support services</a> can
+              To better manage your research, our <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer"> best academic writing support services</a> can
               assist you in ensuring your paper meets professional standards.
             </p>
           </div>
@@ -575,7 +772,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               and brevity.
             </p>
             <p>
-              For more insights on academic writing and research, check our blog on <a href="https://www.contentlywriters.com/blog/common-mistakes-students-make-assignments" className="text-[#5b6cf2] underline hover:no-underline"> 6 common mistakes students make with their assignments</a>
+              For more insights on academic writing and research, check our blog on <a href="https://www.contentlywriters.com/blog/common-mistakes-students-make-assignments" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer"> 6 common mistakes students make with their assignments</a>
             </p>
           </div>
         ),
@@ -643,7 +840,7 @@ research paper outline</a> acts as a guide or blueprint for your work. Consider 
               Composing an assignment may seem simple, but crafting top-notch content poses a more demanding challenge. 
               In this blog, we will discuss effective strategies for creating high-quality content and emphasize the key 
               steps needed to finish an assignment quickly. Understanding the assignment requirements and the format of 
-              the assignment is essential. If needed, seek the <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2] underline hover:no-underline">best assignment services</a> to ensure support and professional 
+              the assignment is essential. If needed, seek the <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">best assignment services</a> to ensure support and professional 
               guidance in meeting academic standards.
             </p>
           </div>
@@ -718,7 +915,7 @@ guidelines as they govern the assignment&#39;s structure, approach, and criteria
 evaluation. Following specific questions or instructions is essential for ensuring that
 your response is clear, relevant, and comprehensive, covering all aspects of the
 assignment thoroughly.</li>
-              <li><strong>Citations:</strong> In assignments, <a href="https://en.wikipedia.org/wiki/Citation" className="text-[#5b6cf2] underline hover:no-underline">
+              <li><strong>Citations:</strong> In assignments, <a href="https://en.wikipedia.org/wiki/Citation" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">
               Citations</a> are included to acknowledge the sources of
 information or ideas that you did not originate. Various citation styles exist, each with
 unique guidelines for formatting. The most frequent citation styles are APA (American
@@ -737,7 +934,7 @@ argument with sources.</li>
         about: (
           <div>
             <p>
-              <a href="https://www.contentlywriters.com/blog/a-beginner's-guide-to-writing-essays-in-proper-format" className="text-[#5b6cf2] underline hover:no-underline">
+              <a href="https://www.contentlywriters.com/blog/a-beginner's-guide-to-writing-essays-in-proper-format" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">
                 A Beginner&#39;s Guide to Writing Essays in Proper Format
               </a>
             </p>
@@ -788,7 +985,7 @@ commitment to professionalism and academic excellence.
           <div> 
           <p>Economic impact studies are essential tools that enable governments, businesses, and organizations to assess the financial and economic consequences of specific events, programs, or policies. By analyzing factors like job creation, GDP growth, tax revenue, and sector development, these studies help determine how particular activities affect the economy overall.</p>
   
-          <p style={{ marginTop: '8px' }}>From hosting major events like the Olympics to launching new infrastructure projects or introducing policy changes, economic impact studies provide structured, insightful analyses that guide important decision-making. <a href="https://www.contentlywriters.com/" class="text-[#5b6cf2] underline hover:no-underline">
+          <p style={{ marginTop: '8px' }}>From hosting major events like the Olympics to launching new infrastructure projects or introducing policy changes, economic impact studies provide structured, insightful analyses that guide important decision-making. <a href="https://www.contentlywriters.com/" class="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">
           Assignment experts</a> play a crucial role in delivering well-structured and accurate studies, helping organizations make informed choices based on reliable data.</p>
           <p style={{ marginTop: '8px' }}>In this blog, we’ll explore the financial implications of economic impact studies, why they are
           important, the main methodologies used, and real-world examples from across the globe.</p>
@@ -842,7 +1039,7 @@ services.</li>
         about: (
           <div>
             <p>Depending on the scope and nature of the project or event, several methods can be used to
-            conduct an <a href="https://en.m.wikipedia.org/wiki/Economic_impact_analysis" class="text-[#5b6cf2] underline hover:no-underline">economic impact analysis:</a></p>
+            conduct an <a href="https://en.m.wikipedia.org/wiki/Economic_impact_analysis" class="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">economic impact analysis:</a></p>
             <ol>
               <li style={{ marginTop: '8px' }}><strong>1. Input-Output (I-O) Analysis:</strong> A widely-used method, I-O analysis examines relationships between economic sectors,
 revealing how changes in one industry (e.g., manufacturing) affect others (e.g., supply
@@ -929,7 +1126,7 @@ and contribute positively to society</p>
       <div>
     <p>
         In the wider world of education, students often face a variety of challenges that make homework difficult. Fortunately, there are many resources to help you overcome these obstacles, including an 
-        <a href="https://www.contentlywriters.com/" class="text-[#5b6cf2] underline hover:no-underline"> Assignment Helper</a> who can assist with written assignments. Knowing the different types of assignment help will empower you to choose the option that best suits your needs. In this blog, we will explore different types of aids and advise how to choose the right one for you.
+        <a href="https://www.contentlywriters.com/" class="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer"> Assignment Helper</a> who can assist with written assignments. Knowing the different types of assignment help will empower you to choose the option that best suits your needs. In this blog, we will explore different types of aids and advise how to choose the right one for you.
     </p>
 </div>
 
@@ -971,7 +1168,7 @@ and contribute positively to society</p>
         about: (
           <div>
             <h4><strong>What are Writing Services:</strong></h4>
-            <p>Writing services help in <a href="https://www.contentlywriters.com/blog/A-Beginner's-Guide-to-Writing-Essays-in-Proper-Format" class="text-[#5b6cf2] underline hover:no-underline"> writing essays</a>, research papers, and other writing assignments. These services can edit, proofread, and improve everything.</p>
+            <p>Writing services help in <a href="https://www.contentlywriters.com/blog/a-beginner's-guide-to-writing-essays-in-proper-format" class="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer"> writing essays</a>, research papers, and other writing assignments. These services can edit, proofread, and improve everything.</p>
   
             <h4><strong>Benefits:</strong></h4>
             <ul>
@@ -1051,7 +1248,7 @@ and contribute positively to society</p>
         about: (
           <div>
             <h4><strong>Consider Your Learning Style:</strong></h4>
-            <p>Reflect on how you learn best. Do you prefer one-on-one interaction,<a href="https://en.wikipedia.org/wiki/Collaborative_learning/" class="text-[#5b6cf2] underline hover:no-underline"> collaborative learning</a>, or self-paced resources?</p>
+            <p>Reflect on how you learn best. Do you prefer one-on-one interaction,<a href="https://en.wikipedia.org/wiki/Collaborative_learning/" class="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer"> collaborative learning</a>, or self-paced resources?</p>
   
             <h4><strong>Assess Your Needs:</strong></h4>
             <p>Identify the specific challenges you&#39;re facing. Are you struggling with understanding a concept, writing quality, or time management?</p>

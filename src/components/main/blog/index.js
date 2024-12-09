@@ -17,8 +17,17 @@ import img10 from "@/assets/image/blogImg10.jpg";
 import img11 from "@/assets/image/blogImg11.jpg";
 import img12 from "@/assets/image/blogImg12.jpg";
 import img13 from "@/assets/image/blogImg13.jpg";
+import img14 from "@/assets/image/blogImg14.jpg";
 
 const blogData = [
+  {
+    tag: "blog-12",
+    slug: "easy-steps-to-nail-your-dissertation-topic-selection",
+    heading: "7 Easy Steps to Nail Your Dissertation Topic Selection",
+    date: "December 9, 2024",
+    image: img14,
+    about:"Choosing a dissertation topic is one of your most important and fascinating aspects of your academic journey. It’s your opportunity to show your enthusiasm, creativity, and knowledge. But finding the perfect topic can be difficult. We will give you comprehensive guidance in this blog to assist you in selecting a topic that is both important and manageable",
+  },
   {
     tag: "blog-11",
     slug: "easy-steps-to-write-a-perfect-coursework",

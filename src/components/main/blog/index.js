@@ -27,7 +27,7 @@ const blogData = [
     heading: "Why AI Cannot Replace Professional Writers: Academic Success",
     date: "December 12, 2024",
     image: img15,
-    about:"Undoubtedly, AI is one of the best technologies for helping people in many ways. But giving it a thought, it is also not good for students who are young and need to work on their academics. Using AI tools for work and projects puts a barrier on students’ thinking skills and makes them dependent on technology which is not good for their academic journey.",
+    about:"Undoubtedly , AI is one of the best technologies for helping people in many ways. But giving it a thought, it is also not good for students who are young and need to work on their academics. Using AI tools for work and projects puts a barrier on students’ thinking skills and makes them dependent on technology which is not good for their academic journey.",
   },
   {
     tag: "blog-12",

@@ -18,8 +18,17 @@ import img11 from "@/assets/image/blogImg11.jpg";
 import img12 from "@/assets/image/blogImg12.jpg";
 import img13 from "@/assets/image/blogImg13.jpg";
 import img14 from "@/assets/image/blogimg14.jpg";
+import img15 from "@/assets/image/blogimg15.jpg";
 
 const blogData = [
+  {
+    tag: "blog-13",
+    slug: "why-ai-cannot-replace-professional-writers-academic-success",
+    heading: "Why AI Cannot Replace Professional Writers: Academic Success",
+    date: "December 12, 2024",
+    image: img15,
+    about:"Undoubtedly, AI is one of the best technologies for helping people in many ways. But giving it a thought, it is also not good for students who are young and need to work on their academics. Using AI tools for work and projects puts a barrier on students’ thinking skills and makes them dependent on technology which is not good for their academic journey.",
+  },
   {
     tag: "blog-12",
     slug: "easy-steps-to-nail-your-dissertation-topic-selection",

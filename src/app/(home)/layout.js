@@ -10,12 +10,14 @@ export const metadata = {
   alternates: {
     canonical: "https://www.contentlywriters.com" 
   }
+  
 };
 
 
 export default function HomeLayout({ children }) {
   return (
     <GuestRoute>
+     
       <div>
         <Navbar />
         <div className="mt-[80px]">{children}</div>

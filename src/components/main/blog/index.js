@@ -6,8 +6,6 @@ import Link from "next/link";
 import { useState } from "react";
 import img1 from "@/assets/image/blogImg1.jpg";
 import img2 from "@/assets/image/blogImg2.jpg";
-import img3 from "@/assets/image/blogImg3.jpg";
-import img4 from "@/assets/image/blogImg4.jpg";
 import img5 from "@/assets/image/blogImg5.jpg";
 import img6 from "@/assets/image/blogImg6.jpg";
 import img7 from "@/assets/image/blogImg7.jpg";
@@ -18,7 +16,7 @@ import img11 from "@/assets/image/blogImg11.jpg";
 import img12 from "@/assets/image/blogImg12.jpg";
 import img13 from "@/assets/image/blogImg13.jpg";
 import img14 from "@/assets/image/blogimg14.jpg";
-import img15 from "@/assets/image/blogimg15.jpg";
+import img15 from "@/assets/image/blogImg15.jpg";
 
 const blogData = [
   {

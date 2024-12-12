@@ -38,7 +38,7 @@ const blogData = [
                         Undoubtedly, AI is one of the best technologies for helping people in many ways. But giving it a thought, it is also not good for students who are young and need to work on their academics. Using AI tools for work and projects puts a barrier on students’ thinking skills and makes them dependent on technology, which is not good for their academic journey.
                     </p>
                     <p className="mt-2">
-                        Despite emergencies when students are stressed with other projects like extra classes and personal problems, the best assignment services with professional writers can be helpful for students to provide reliable support. Unlike AI tools, which cannot offer personal assistance, professional writers bring tailored solutions. Here are some key reasons why AI cannot replace the expertise of professional writers:
+                        Despite emergencies when students are stressed with other projects like extra classes and personal problems, the <a href="https://www.contentlywriters.com/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Best assignment services </a> with professional writers can be helpful for students to provide reliable support. Unlike AI tools, which cannot offer personal assistance, professional writers bring tailored solutions. Here are some key reasons why AI cannot replace the expertise of professional writers:
                     </p>
                 </div>
             ),
@@ -67,7 +67,7 @@ thinking with originality.</li>
 understanding. This struggle with context leads to inappropriate content in certain
 scenarios.</li>
                         <li>Professional writers bring real-world experience as they understand social, cultural,
-and emotional contexts which helps them to provide contextual understanding
+and <a href="https://writershelpingwriters.net/2020/04/what-is-emotional-context-and-why-does-your-story-need-it/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">emotional contexts</a> which helps them to provide contextual understanding
 content.</li>
                     </ul>
                 </div>
@@ -79,7 +79,7 @@ content.</li>
                 <div>
                     <ul className="list-disc ml-6">
                         <li>Audience-specific customization requires a personal touch and that includes tone,
-cultural references, or understanding of individual requirements and AI cannot do
+                        <a href="https://resources.collins.co.uk/Samples/ELT/International_Students_Survival_Guide/ISSG_Chapter15.pdf" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer"> cultural references</a>, or understanding of individual requirements and AI cannot do
 that.</li>
                         <li>Professional writers can provide content to specific audiences, and tones, ensuring
                         that it resonates with the reader.</li>
@@ -108,10 +108,11 @@ know how to build trust, evoke feelings, and engage with the audience.</li>
                 <div>
                     <ul className="list-disc ml-6">
                         <li>AI tools can provide the content with the best assistance of grammar and spelling but
-they lack the complexities like logical flow, style consistency, and advanced
-editing.</li>
-                        <li>Professionals are best at providing creative content as they know logical flow, style
-consistency, and the other things that AI lacks and that is how they refine content to
+they lack the complexities like <a
+href="https://www.writerscollegeblog.com/create-perfect-logical-flow-in-your-writing/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">logical flow</a>, style consistency, and <a
+href="https://deliveredsocial.com/content-editing-what-it-is-and-how-to-do-it-like-a-pro/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">advanced editing </a></li>
+                        <li>Professionals are best at providing creative content as they know logical flow, <a
+href="https://www.linkedin.com/advice/0/how-can-you-maintain-consistent-tone-style-across-multiple-w0yof#:~:text=Consistency%20in%20writing%20style%20and,guidelines%20ensures%20a%20unified%20approach." className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">style consistency</a>, and the other things that AI lacks and that is how they refine content to
 meet high-quality standards.</li>
                     </ul>
                 </div>
@@ -261,7 +262,7 @@ requirement but a strategic career move.
                         <li>Topics that complement your hobbies and professional objectives.</li>
                     </ul>
                     <p>Staying up to date with new research ensures that your topic is current and pertinent.
-Platforms like <a href="https://scholar.google.com/"className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Google
+Platforms like <a href="https://scholar.google.com/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">Google
 Scholar</a> and databases like <a href="https://www.jstor.org/" className="text-[#5b6cf2]  underline hover:no-underline" target="_blank" rel="noopener noreferrer">JSTOR</a> can be valuable for identifying
 cutting-edge research. Additionally, reviewing recent conference proceedings in your field
 can offer fresh inspiration.</p>

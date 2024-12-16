@@ -41,7 +41,7 @@ const blogData = [
             ),
         },
         {
-            title: "What is Plagiarism?",
+            title1: "What is Plagiarism?",
             about: (
                 <div>
                   <p>Using someone else’s work, words, or ideas without properly citing them is plagiarism. It
@@ -60,7 +60,7 @@ href="https://www.turnitin.com/blog/what-is-mosaic-plagiarism-examples-types-and
             ),
         },
         {
-            title: "Why Avoiding Plagiarism Matters",
+            title1: "Why Avoiding Plagiarism Matters",
             about: (
                 <div>
                     <ul className="list-disc ml-6">

@@ -17,8 +17,17 @@ import img12 from "@/assets/image/blogImg12.jpg";
 import img13 from "@/assets/image/blogImg13.jpg";
 import img14 from "@/assets/image/blogimg14.jpg";
 import img15 from "@/assets/image/blogImg15.jpg";
+import img16 from "@/assets/image/blogImg16.jpg";
 
 const blogData = [
+  {
+    tag: "blog-14",
+    slug: "effective-ways-to-avoid-plagiarism-in-academic-assignments",
+    heading: " Effective Ways To Avoid Plagiarism In Academic Assignments",
+    date: "December 16, 2024",
+    image: img16,
+    about:"Plagiarism is a serious problem that affects students across fields including engineering, management, law, IT, and statistics. Plagiarized work might have serious consequences such as expulsion or a grade reduction. For students, who need help, or assistance, there are some best assignment services available for the time management of struggling students. This blog will give you tips on how to avoid plagiarism and create original, high-quality assignments that stand out.",
+  },
   {
     tag: "blog-13",
     slug: "why-ai-cannot-replace-professional-writers-academic-success",

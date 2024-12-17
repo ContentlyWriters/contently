@@ -15,7 +15,7 @@ import img10 from "@/assets/image/blogImg10.jpg";
 import img11 from "@/assets/image/blogImg11.jpg";
 import img12 from "@/assets/image/blogImg12.jpg";
 import img13 from "@/assets/image/blogImg13.jpg";
-import img14 from "@/assets/image/blogImg14.jpg";
+import img14 from "@/assets/image/blogimg14.jpg";
 import img15 from "@/assets/image/blogImg15.jpg";
 import img16 from "@/assets/image/blogImg16.jpg";
 

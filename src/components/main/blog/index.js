@@ -18,12 +18,21 @@ import img13 from "@/assets/image/blogImg13.jpg";
 import img14 from "@/assets/image/blogimg14.jpg";
 import img15 from "@/assets/image/blogImg15.jpg";
 import img16 from "@/assets/image/blogImg16.jpg";
+import img17 from "@/assets/image/blogImg17.jpg";
 
 const blogData = [
   {
+    tag: "blog-15",
+    slug: "how-to-write-and-structure-a-2000-word-essay-effectively",
+    heading: "How to Write and Structure a 2000-Word Essay Effectively",
+    date: "December 19, 2024",
+    image: img17,
+    about:"Writing a 2000-word essay is daunting unless you know how to structure it properly. You can either take the help of ChatGPT, or any other AI tools to complete your assignment but ask yourself, is it worth doing that? I am a student as well and managing assignments along with extra studies is very complex for me still, if I were in your place I would rather look for the best assignment services to complete my assignment because they provide personal assistance, unlike any other AI tools.",
+  },
+  {
     tag: "blog-14",
     slug: "effective-ways-to-avoid-plagiarism-in-academic-assignments",
-    heading: " Effective Ways To Avoid Plagiarism In Academic Assignments",
+    heading: "Effective Ways To Avoid Plagiarism In Academic Assignments",
     date: "December 16, 2024",
     image: img16,
     about:"Plagiarism is a serious problem that affects students across fields including engineering, management, law, IT, and statistics. Plagiarized work might have serious consequences such as expulsion or a grade reduction. For students, who need help, or assistance, there are some best assignment services available for the time management of struggling students. This blog will give you tips on how to avoid plagiarism and create original, high-quality assignments that stand out.",

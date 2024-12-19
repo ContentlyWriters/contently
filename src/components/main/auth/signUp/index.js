@@ -100,8 +100,12 @@ export default function SignUpScreen() {
         },
       });
 
+       // Save token in localStorage
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("termsAccepted", "true");
+
+      // Update user context
+      await getProfile();
 
       console.log("Response:", response.data);
 

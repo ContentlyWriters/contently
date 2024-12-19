@@ -177,7 +177,7 @@ export default function Blog() {
                   {item.heading}
                 </h1>
                 <Image
-                  className="my-2 rounded-md w-full h-[200px] object-contain mx-auto -mb-8 -mt-8"
+                  className="my-4 rounded-sm w-full h-[200px] object-contain mx-auto -mb-8 -mt-8"
                   src={item.image}
                   alt="blog image"
                 />

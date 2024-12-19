@@ -120,11 +120,11 @@ progress: undefined,
       });
 
       getProfile();
-     // Redirect to home page and reload
+     
      router.push("/");
      setTimeout(() => {
-       window.location.reload(); // Force page reload
-     }, 2000);
+       window.location.reload(); 
+     }, 50);
     } catch (err) {
       console.log(err);
       toast.error("Signup failed. Please try again.", {

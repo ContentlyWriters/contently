@@ -101,7 +101,7 @@ export default function LoginScreen() {
       router.replace("/");
       setTimeout(() => {
         window.location.reload();
-      }, 100);
+      }, 50);
     } catch (err) {
       console.error(err);
       setErrors({ email: "User does not exist" });

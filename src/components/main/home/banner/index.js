@@ -46,7 +46,7 @@ export default function Banner() {
     orderFile: "",
     temp: "Passage",
     pages: 1,
-    coupon,
+    
   });
 
   const [count, setCount] = useState(1);
@@ -64,7 +64,7 @@ export default function Banner() {
     comment: "",
     deadline: "",
     orderFile: "",
-    coupon,
+   
   });
 
   const handleChange = (e) => {

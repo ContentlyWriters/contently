@@ -235,15 +235,14 @@ export default function Banner() {
   }
 
   const getUpdatedPrice = async () => {
-    if (!formValues.coupon) return; // Early exit if coupon code is empty
-  
     try {
       setLoading(true);
   
+      // Prepare payload based on the presence of a coupon
       const payload = {
         subject: formValues.subject,
         days: formValues.deadline.split(" ")[0],
-        coupon: formValues.coupon,
+        ...(formValues.coupon && { coupon: formValues.coupon }), // Add coupon only if it exists
       };
   
       console.log("Payload:", payload);
@@ -259,15 +258,20 @@ export default function Banner() {
   
       const { actualPrice, discountedPrice, couponValidity } = response.data;
   
-      if (couponValidity) {
+      // Update price and handle coupon-specific error
+      if (formValues.coupon && couponValidity) {
         setPrice(floorToTwo(discountedPrice * count));
         setError((prev) => ({ ...prev, coupon: "" }));
-      } else {
+      } else if (formValues.coupon && !couponValidity) {
         setPrice(floorToTwo(actualPrice * count));
         setError((prev) => ({
           ...prev,
           coupon: "Invalid coupon code. Please try again.",
         }));
+      } else {
+        // Show actual price by default
+        setPrice(floorToTwo(actualPrice * count));
+        setError((prev) => ({ ...prev, coupon: "" })); // Clear coupon-related errors
       }
     } catch (err) {
       console.log("Error Response:", err.response?.data || err.message);
@@ -279,6 +283,7 @@ export default function Banner() {
       setLoading(false);
     }
   };
+  
   
   useEffect(() => {
     if (formValues.subject && count) {

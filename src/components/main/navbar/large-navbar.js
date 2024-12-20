@@ -37,7 +37,8 @@ export default function LargeNavbar({ items }) {
   const handleLogout = () => {
     try {
       Cookies.remove("token", { path: "/", domain: ".contentlywriters.com" });
-      document.cookie = "token=; Max-Age=0; path=/; domain=contentlywriters.com; Secure";
+      Cookies.remove("token", { path: "/" });
+      // document.cookie = "token=; Max-Age=0; path=/; domain=contentlywriters.com; Secure";
       localStorage.removeItem("token");
       sessionStorage.removeItem("orderData");
       sessionStorage.removeItem("redirectURL");

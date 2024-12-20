@@ -156,7 +156,7 @@ progress: undefined,
     }
     try {
       window.location.href =
-        "http://www.contentlywriters.com/api/oauth2/authorization/google";
+        "http://www.contentlywriters.com:8088/oauth2/authorization/google";
     } catch (err) {}
   };
   return (

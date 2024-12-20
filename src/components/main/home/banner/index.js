@@ -234,41 +234,46 @@ export default function Banner() {
     return Math.floor(num * 100) / 100;
   }
 
-  const getUpdatedPrice = async (e) => {
-    if (!formValues.couponCode) return;
+  const getCouponDetails = async () => {
+    if (!formValues.couponCode) return; // Early exit if coupon code is empty
+  
     try {
       setLoading(true);
-      const response = await axiosInstance.post(
-        "price",
-        {
-          subject: formValues.subject,
-          days: formValues.deadline.split(" ")[0],
-          couponCode: formValues.couponCode,
+  
+      const payload = {
+        subject: formValues.subject,
+        days: formValues.deadline.split(" ")[0],
+        couponCode: formValues.couponCode,
+      };
+  
+      console.log("Payload:", payload);
+  
+      const response = await axiosInstance.post("price", payload, {
+        headers: {
+          Authorization: `${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
         },
-        {
-          headers: {
-            Authorization: `${localStorage.getItem("token")}`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      });
+  
+      console.log("API Response:", response.data);
+  
       const { actualPrice, discountedPrice, couponValidity } = response.data;
-
+  
       if (couponValidity) {
-        setPrice(floorToTwo(discountedPrice * count)); // Update with discounted price
-        setError((prev) => ({ ...prev, coupon: "" })); // Clear any previous coupon errors
+        setPrice(floorToTwo(discountedPrice * count));
+        setError((prev) => ({ ...prev, coupon: "" }));
       } else {
-        setPrice(floorToTwo(actualPrice * count)); // Update with actual price
+        setPrice(floorToTwo(actualPrice * count));
         setError((prev) => ({
           ...prev,
-          coupon: "Invalid coupon code. Please try again.", // Display error for invalid coupon
+          coupon: "Invalid coupon code. Please try again.",
         }));
       }
     } catch (err) {
-      console.log({ err });
+      console.log("Error Response:", err.response?.data || err.message);
       setError((prev) => ({
         ...prev,
-        coupon: "Something went wrong. Please try again later.", // Generic error
+        coupon: "Something went wrong. Please try again later.",
       }));
     } finally {
       setLoading(false);

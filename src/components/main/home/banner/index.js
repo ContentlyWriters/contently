@@ -234,7 +234,7 @@ export default function Banner() {
     return Math.floor(num * 100) / 100;
   }
 
-  const getCouponDetails = async () => {
+  const getUpdatedPrice = async () => {
     if (!formValues.couponCode) return; // Early exit if coupon code is empty
   
     try {

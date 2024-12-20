@@ -235,7 +235,7 @@ export default function Banner() {
   }
 
   const getUpdatedPrice = async () => {
-    if (!formValues.couponCode) return; // Early exit if coupon code is empty
+    if (!formValues.coupon) return; // Early exit if coupon code is empty
   
     try {
       setLoading(true);

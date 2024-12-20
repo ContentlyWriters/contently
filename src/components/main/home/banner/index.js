@@ -243,7 +243,7 @@ export default function Banner() {
       const payload = {
         subject: formValues.subject,
         days: formValues.deadline.split(" ")[0],
-        couponCode: formValues.couponCode,
+        coupon: formValues.coupon,
       };
   
       console.log("Payload:", payload);

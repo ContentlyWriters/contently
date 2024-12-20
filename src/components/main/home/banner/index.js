@@ -779,8 +779,8 @@ export default function Banner() {
     <div className="relative">
     <input
       type="text"
-      id="couponCode"
-      name="couponCode"
+      id="coupon"
+      name="coupon"
       maxLength="15"
       placeholder="MERRY25"
       className="w-36 sm:w-48 border border-gray-300 rounded-md text-center text-sm px-3 py-2 shadow-sm bg-white focus:ring-2 focus:ring-[#5b6cf2] focus:outline-none transition-all"

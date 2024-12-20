@@ -2,6 +2,9 @@
 import { Input } from "@/components/ui/input";
 import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
+import { AiOutlineTag } from 'react-icons/ai'; 
+import { FiArrowRight } from 'react-icons/fi';
+
 import {
   Select,
   SelectContent,
@@ -43,6 +46,7 @@ export default function Banner() {
     orderFile: "",
     temp: "Passage",
     pages: 1,
+    
   });
 
   const [count, setCount] = useState(1);
@@ -60,6 +64,7 @@ export default function Banner() {
     comment: "",
     deadline: "",
     orderFile: "",
+    
   });
 
   const handleChange = (e) => {
@@ -91,6 +96,34 @@ export default function Banner() {
       setFormValues({ ...formValues, [name]: value });
     }
   };
+
+  //coupon code
+  // const getCouponDetails = async () => {
+  //   try {
+  //     setLoading(true);
+  //     const response = await axiosInstance.post(
+  //       `coupon`, 
+  //       {
+  //         couponCode: formValues.couponCode,
+  //       },
+  //       {
+  //         headers: {
+  //           Authorization: `${localStorage.getItem("token")}`,
+  //           "Content-Type": "application/json",
+  //         },
+  //       }
+  //     );
+  //     const { discount } = response.data;
+  //     const updatedPrice = floorToTwo(price - discount);
+  //     setPrice(updatedPrice);
+  //     toast.success('Coupon applied successfully');
+  //   } catch (err) {
+  //     console.log({ err });
+  //     toast.error('Invalid or expired coupon code');
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   function scrollToSection() {
     setTimeout(() => {
@@ -202,12 +235,15 @@ export default function Banner() {
   }
 
   const getUpdatedPrice = async (e) => {
+    if (!formValues.couponCode) return;
     try {
+      setLoading(true);
       const response = await axiosInstance.post(
         "price",
         {
           subject: formValues.subject,
           days: formValues.deadline.split(" ")[0],
+          couponCode: formValues.couponCode,
         },
         {
           headers: {
@@ -216,12 +252,29 @@ export default function Banner() {
           },
         }
       );
-      const { price } = response.data;
-      setPrice(floorToTwo(price * count));
+      const { actualPrice, discountedPrice, couponValidity } = response.data;
+
+      if (couponValidity) {
+        setPrice(floorToTwo(discountedPrice * count)); // Update with discounted price
+        setError((prev) => ({ ...prev, coupon: "" })); // Clear any previous coupon errors
+      } else {
+        setPrice(floorToTwo(actualPrice * count)); // Update with actual price
+        setError((prev) => ({
+          ...prev,
+          coupon: "Invalid coupon code. Please try again.", // Display error for invalid coupon
+        }));
+      }
     } catch (err) {
       console.log({ err });
+      setError((prev) => ({
+        ...prev,
+        coupon: "Something went wrong. Please try again later.", // Generic error
+      }));
+    } finally {
+      setLoading(false);
     }
   };
+  
   useEffect(() => {
     if (formValues.subject && count) {
       getUpdatedPrice();
@@ -488,6 +541,8 @@ export default function Banner() {
   //   );
   // };
 
+ 
+
   return (
     <div className="px-4 sm:px-4 md:px-6 lg:px-[50px] bg-gradient-to-b from-white to-[#f7f7f7] pb-10">
       <div className="max-w-[1280px] mx-auto flex lg:flex-row flex-col gap-10 sm:gap-10">
@@ -659,46 +714,108 @@ export default function Banner() {
               id="comment"
             />
             <InputError message={error.comment} />
-            <div className="grid gap-1.5">
-              <Label className="font-normal ">Deadline</Label>
-              <SelectTab
-                title="Deadline"
-                name="deadline"
-                data={deadlineOptions}
-                value={formValues.deadline}
-                handleChange={handleChange}
-              />
-              <InputError message={error.deadline} />
-            </div>
-            <div className="flex justify-between items-center">
-              {/* Words on the left */}
-              <span className="text-md -mb-3">{250 * count} words</span>
-              {/* Pages on the right */}
-              <span className="text-md -mb-3">Pages</span>
-            </div>
+            <div className="flex items-center rounded-lg bg-white ">
+  {/* Deadline Section */}
+  <div className="flex flex-col gap-2 w-1/3">
+    <Label className="text-sm font-semibold -mt-1 sm:-mt-2 text-gray-700">Deadline</Label>
+    <SelectTab
+      title="Deadline"
+      name="deadline"
+      data={deadlineOptions}
+      value={formValues.deadline}
+      handleChange={handleChange}
+      className="border   border-gray-300 rounded-lg px-4 h-10 text-sm focus:ring-2 focus:ring-[#5b6cf2] focus:outline-none shadow-sm"
+    />
+  </div>
 
-            <div className="flex justify-center items-center ">
-              <Button
-                size="icon"
-                className="rounded-none text-xl font-normal w-16 h-12 bg-black text-white"
-                type="button"
-                disabled={count === 1}
-                onClick={() => setCount(count - 1)}
-              >
-                <FiMinus />
-              </Button>
-              <h4 className="tex-2xl font-medium h-12 w-full border-2 border-black text-center leading-10">
-                {count}
-              </h4>
-              <Button
-                size="icon"
-                className="rounded-none text-xl font-normal w-16 h-12 bg-black text-white"
-                type="button"
-                onClick={() => setCount(count + 1)}
-              >
-                <IoMdAdd />
-              </Button>
-            </div>
+ {/* Count Box Section */}
+<div className="flex flex-col flex-1">
+  {/* Labels */}
+  <div className="flex justify-between items-center mb-2">
+    <span className="text-sm font-semibold text-gray-700 ml-4 sm:ml-8">Pages</span>
+    <span className="text-sm font-semibold text-gray-700 mr-4 sm:mr-1 -mr-[1px]">{250 * count} words</span>
+  </div>
+
+  {/* Count Box */}
+  <div className="flex items-center justify-center gap- ml-4 sm:ml-8">
+    <Button
+      size="icon"
+      className="rounded-none text-lg font-medium w-12 h-10 sm:w-12 sm:h-12 bg-black text-white transition"
+      type="button"
+      disabled={count === 1}
+      onClick={() => setCount(count - 1)}
+    >
+      <FiMinus />
+    </Button>
+    <h4 className="text-base sm:text-lg font-semibold h-10 sm:h-12 w-14 sm:w-16 bg-[#e3e3e3] text-center rounded-none bg-gray-50 shadow-sm flex items-center justify-center">
+      {count}
+    </h4>
+    <Button
+      size="icon"
+      className="rounded-none text-lg font-medium w-12 h-10 sm:w-12 sm:h-12 bg-black text-white transition"
+      type="button"
+      onClick={() => setCount(count + 1)}
+    >
+      <IoMdAdd />
+    </Button>
+  </div>
+</div>
+
+
+
+  <InputError message={error.deadline} />
+</div>
+<div className="flex flex-col ">
+  <label className="text-sm font-medium text-gray-700" htmlFor="couponCode">
+    Coupon Code
+  </label>
+  <div className="relative flex items-center">
+    {/* Input Box */}
+    <div className="relative">
+    <input
+      type="text"
+      id="couponCode"
+      name="couponCode"
+      maxLength="7"
+      placeholder="MERRY25"
+      className="w-36 sm:w-48 border border-gray-300 rounded-md text-center text-sm px-3 py-2 shadow-sm bg-white focus:ring-2 focus:ring-[#5b6cf2] focus:outline-none transition-all"
+      value={formValues.couponCode || ""}
+      onChange={(e) => handleChange(e)}
+    />
+    {/* Icon positioned correctly */}
+    <span className="absolute top-2/4 -translate-y-2/4 right-3 text-gray-400">
+      <AiOutlineTag className="text-lg" />
+    </span>
+    </div>
+    {/* Apply Button */}
+    <Button
+      onClick={getUpdatedPrice}
+      disabled={loading || !formValues.couponCode}
+      className={`ml-3 text-sm font-medium px-5 py-2 rounded-md shadow-lg transform transition-transform ${
+        loading || !formValues.couponCode
+          ? "bg-gray-300 text-gray-600 cursor-not-allowed"
+          : "bg-gradient-to-r from-[#000000] to-[#000000] text-white "
+      }`}
+    >
+      {loading ? (
+        <AiOutlineLoading3Quarters className="animate-spin text-lg" />
+      ) : (
+        <span className="flex items-center gap-2">
+          Apply <FiArrowRight className="text-md" />
+        </span>
+      )}
+    </Button>
+  </div>
+  {error.coupon && (
+    <p className="text-sm text-red-500 mt-1">{error.coupon}</p>
+  )}
+</div>
+
+
+
+
+
+  
 
             <div className="text-center text-2xl">
               Estimated Price: {price}$

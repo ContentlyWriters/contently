@@ -127,7 +127,7 @@ const Popup = () => {
       <h3 className="text-3xl font-extrabold text-green-800">Thanks for Joining! 🎄</h3>
       <p className="text-red-600 mt-2 font-medium">Your coupon code is:</p>
       <div
-        className="bg-gradient-to-r from-red-600 to-green-600 text-white text-xl font-bold py-2 px-4 rounded-md mt-4 cursor-pointer hover:from-green-600 hover:to-red-600 shadow-lg transform transition-transform hover:scale-105"
+        className="bg-gradient-to-r from-red-600 to-green-600 text-white text-xl font-bold py-2 px-4 rounded-md mt-4 cursor-pointer hover:from-green-600 hover:to-red-600 shadow-lg transform transition-transform"
         onClick={handleCopyCoupon}
       >
         MERRY25

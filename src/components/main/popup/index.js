@@ -42,7 +42,7 @@ const Popup = () => {
   };
 
   const handleCopyCoupon = () => {
-    navigator.clipboard.writeText("SAVE20").then(() => {
+    navigator.clipboard.writeText("MERRY25").then(() => {
       setIsCopied(true);
       setTimeout(() => setIsCopied(false), 2000);
     });

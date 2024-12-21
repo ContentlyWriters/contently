@@ -1,7 +1,7 @@
 import Navbar from "@/components/main/navbar";
 import Footer from "@/components/main/footer";
 import GuestRoute from "@/routes/guestRoute";
-// import Popup from '@/components/main/popup';
+
   
 
 
@@ -19,7 +19,7 @@ export default function ContactLayout({ children }) {
       <div>
        
         <Navbar />
-        {/* <Popup /> */}
+       
         <div className="mt-[80px]">{children}</div>
         <Footer />
       </div>

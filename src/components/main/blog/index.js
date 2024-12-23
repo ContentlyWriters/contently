@@ -22,6 +22,14 @@ import img17 from "@/assets/image/blogImg17.jpg";
 
 const blogData = [
   {
+    tag: "blog-3",
+    heading: "How to Choose the Best Assignment Help for Academic Success",
+    image: img2,
+    about: "In today’s busy academic world, students face numerous challenges including managing classes, extracurricular activities, personal commitments, and part-time jobs. With this busy schedule, assignments are like a burden for them, requiring a lot of time and focus. To reduce the burden on the students, some of the best assignment services are available for completing your assignment, providing personal assistance and 100% plagiarised free content with timely submission. However, choosing the right one is a challenge. In this blog, you will learn how you can choose the right assignment help.",
+    slug: "how-to-choose-the-best-assignment-help-for-academic-success",
+    date: "December 23, 2024",
+  },
+  {
     tag: "blog-15",
     slug: "how-to-write-and-structure-a-2000-word-essay-effectively",
     heading: "How to Write and Structure a 2000-Word Essay Effectively",
@@ -134,14 +142,7 @@ const blogData = [
     slug: "a-beginner's-guide-to-writing-essays-in-proper-format",
     date: "July 15, 2024",
   },
-  {
-    tag: "blog-3",
-    heading: "Decoding Academic Success: The Crucial Role of Choosing the Perfect Assignment Assistance Partner",
-    image: img2,
-    about: "In today's academic world, students juggle multiple assignments and deadlines, often feeling overwhelmed. This is where assignment help services come to the rescue. However, not all services are created equal, and choosing the right one is crucial for success.",
-    slug: "decoding-academic-success",
-    date: "July 1, 2024",
-  },
+ 
  
 ];
 

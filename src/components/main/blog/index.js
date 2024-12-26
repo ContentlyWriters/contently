@@ -19,8 +19,17 @@ import img14 from "@/assets/image/blogimg14.jpg";
 import img15 from "@/assets/image/blogImg15.jpg";
 import img16 from "@/assets/image/blogImg16.jpg";
 import img17 from "@/assets/image/blogImg17.jpg";
+import img18 from "@/assets/image/blogImg18.png";
 
 const blogData = [
+  {
+    tag: "blog-16",
+    slug: "ucas-personal-statement-changes-2025-guide",
+    heading: "UCAS Personal Statement Changes 2025: Complete Guide",
+    date: "December 26, 2024",
+    image: img18,
+    about:"The UCAS personal statement process is evolving for students applying to university in 2026 and beyond. These changes will transform how students present their motivations, qualifications, and extra-curricular activities, aiming to address disparities in the university admissions process.",
+  },
   {
     tag: "blog-3",
     heading: "How to Choose the Best Assignment Help for Academic Success",

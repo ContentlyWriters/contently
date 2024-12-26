@@ -118,10 +118,12 @@ const blogData = [
               admissions committees assess candidates more consistently.
             </p>
             <p className="mt-2">
-            In contrast, those applying in 2024 or 2025 can use the current free-form format, allowing them
-greater flexibility to express their experiences and motivations. This change seeks to ensure that
-all necessary aspects of an applicant's profile are covered in a more organized manner, making
-it essential for 2026 applicants to prepare accordingly.
+              In contrast, those applying in 2024 or 2025 can use the current
+              free-form format, allowing them greater flexibility to express
+              their experiences and motivations. This change seeks to ensure
+              that all necessary aspects of an applicant&#39;s profile are covered
+              in a more organized manner, making it essential for 2026
+              applicants to prepare accordingly.
             </p>
           </div>
         ),
@@ -131,25 +133,32 @@ it essential for 2026 applicants to prepare accordingly.
         about: (
           <div>
             <p>
-            UCAS will introduce a more organized structure to the personal statement, divided into three
-            focused sections. Each section comes with its question prompt to guide your response:
+              UCAS will introduce a more organized structure to the personal
+              statement, divided into three focused sections. Each section comes
+              with its question prompt to guide your response:
             </p>
             <ul className="list-disc ml-6">
               <li>
-                <b>Motivation:</b> Why do you want to study this course? <br></br>This section asks students to explain their interest in the subject. Applicants should show
-how their passion aligns with the course and university, demonstrating their academic
-interests.
-                
+                <b>Motivation:</b> Why do you want to study this course?{" "}
+                <br></br>This section asks students to explain their interest in
+                the subject. Applicants should show how their passion aligns
+                with the course and university, demonstrating their academic
+                interests.
               </li>
               <li>
-                <b>Preparation:</b> How have your qualifications prepared you for this course? <b></b>This section helps students link their previous academic work, qualifications, and
-relevant coursework to their chosen subject. It’s a chance to discuss how their education
-has set them up for success.
+                <b>Preparation:</b> How have your qualifications prepared you
+                for this course? <b></b>This section helps students link their
+                previous academic work, qualifications, and relevant coursework
+                to their chosen subject. It’s a chance to discuss how their
+                education has set them up for success.
               </li>
               <li>
-                <b>Extra-Curricular Activities:</b> What additional experiences support your application? <br></br> Whether it’s work experience, volunteering, or other relevant activities, this section lets
-applicants showcase how their extra-curricular engagements have prepared them for
-university life and their chosen field.
+                <b>Extra-Curricular Activities:</b> What additional experiences
+                support your application? <br></br> Whether it’s work
+                experience, volunteering, or other relevant activities, this
+                section lets applicants showcase how their extra-curricular
+                engagements have prepared them for university life and their
+                chosen field.
               </li>
             </ul>
           </div>
@@ -161,24 +170,27 @@ university life and their chosen field.
           <div>
             <ul className="list-decimal ml-6">
               <li>
-                <b>Goal:</b> The main aim is to reduce inequality in how students are admitted to universities.
-                
+                <b>Goal:</b> The main aim is to reduce inequality in how
+                students are admitted to universities.
               </li>
               <li>
-                <b>Current Issue:</b> The existing personal statement format allows some students, especially
-                those with private tutors or mentors, to get an advantage.
+                <b>Current Issue:</b> The existing personal statement format
+                allows some students, especially those with private tutors or
+                mentors, to get an advantage.
               </li>
               <li>
-                <b>New Approach:</b> UCAS plans to change to a structured format for personal statements,
-                making it more uniform for all applicants.
+                <b>New Approach:</b> UCAS plans to change to a structured format
+                for personal statements, making it more uniform for all
+                applicants.
               </li>
               <li>
-                <b>Fairness:</b> This change is intended to create a fairer opportunity for students from
-                different backgrounds.
+                <b>Fairness:</b> This change is intended to create a fairer
+                opportunity for students from different backgrounds.
               </li>
               <li>
-                <b>Feedback:</b> The decision is based on a report that gathered opinions from over 1,200
-                students and 200 teachers, highlighting the need for a fairer admissions system
+                <b>Feedback:</b> The decision is based on a report that gathered
+                opinions from over 1,200 students and 200 teachers, highlighting
+                the need for a fairer admissions system
               </li>
             </ul>
           </div>
@@ -190,101 +202,132 @@ university life and their chosen field.
         about: (
           <div>
             <p>
-            There's been a change in the university application process. Previously, students could include
-personal challenges—like family issues or health problems—in their statements. Now, that’s no
-longer allowed in the personal statement itself. Instead, there’s a new section where students
-can explain their challenges or exceptional situations. This change lets applicants share
-important contexts without affecting the main content of their statements.
+              There&#39;s been a change in the university application process.
+              Previously, students could include personal challenges—like family
+              issues or health problems—in their statements. Now, that&#39;s no
+              longer allowed in the personal statement itself. Instead, there&#39;s
+              a new section where students can explain their challenges or
+              exceptional situations. This change lets applicants share
+              important contexts without affecting the main content of their
+              statements.
             </p>
-           
           </div>
         ),
       },
 
       {
-        title: "How Should Students Prepare for the New Personal Statement Format?",
+        title:
+          "How Should Students Prepare for the New Personal Statement Format?",
         about: (
           <div>
-            <p>To prepare for the changes, students should start early and familiarize themselves with the new
-            sections. Here are some helpful tips:</p>
+            <p>
+              To prepare for the changes, students should start early and
+              familiarize themselves with the new sections. Here are some
+              helpful tips:
+            </p>
             <ul className="list-decimal ml-6">
               <li>
-                <b>Understand the Prompts</b> Each personal statement prompt serves a specific purpose. Reflecting on these questions
-can help you articulate your motivations and qualifications for your chosen course. Consider
-what the prompts ask—whether it's about your interests, experiences, or future goals—and
-ensure your responses are tailored to highlight how your background aligns with the program
-you are applying for.
-                
+                <b>Understand the Prompts</b> Each personal statement prompt
+                serves a specific purpose. Reflecting on these questions can
+                help you articulate your motivations and qualifications for your
+                chosen course. Consider what the prompts ask—whether it&#39;s about
+                your interests, experiences, or future goals—and ensure your
+                responses are tailored to highlight how your background aligns
+                with the program you are applying for.
               </li>
               <li>
-                <b>Draft Ideas</b> Brainstorming is crucial in this phase. Identify experiences that not only showcase your
-academic preparedness but also reveal your passion for the subject. Think about projects,
-jobs, or volunteer work that have influenced your interests. Additionally, reflect on
-extra-curricular activities—like clubs, sports, or community service—that have contributed to
-your skills, values, and personal growth, making you a compelling candidate.
+                <b>Draft Ideas</b> Brainstorming is crucial in this phase.
+                Identify experiences that not only showcase your academic
+                preparedness but also reveal your passion for the subject. Think
+                about projects, jobs, or volunteer work that have influenced
+                your interests. Additionally, reflect on extra-curricular
+                activities—like clubs, sports, or community service—that have
+                contributed to your skills, values, and personal growth, making
+                you a compelling candidate.
               </li>
               <li>
-                <b>Seek Expert Help</b> If the new format feels overwhelming, seeking assistance can provide clarity and direction.
-                <a href="https://www.contentlywriters.com/service/personal-statement" className="text-[#5b6cf2] underline hover:no-underline" target="_blank" rel="noopener noreferrer"> Best personal statement writers</a> can offer valuable insights into structuring your statement
-effectively. They help ensure that your responses address the prompts clearly and are
-impactful, allowing your unique voice and experiences to shine through in a coherent and
-persuasive narrative.
-              <br></br>
-               Each of these steps is designed to help you craft a personal statement that highlights your
-              individuality and suitability for the course you intend to pursue.
+                <b>Seek Expert Help</b> If the new format feels overwhelming,
+                seeking assistance can provide clarity and direction.
+                <a
+                  href="https://www.contentlywriters.com/service/personal-statement"
+                  className="text-[#5b6cf2] underline hover:no-underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Best personal statement writers
+                </a>{" "}
+                can offer valuable insights into structuring your statement
+                effectively. They help ensure that your responses address the
+                prompts clearly and are impactful, allowing your unique voice
+                and experiences to shine through in a coherent and persuasive
+                narrative.
+                <br></br>
+                Each of these steps is designed to help you craft a personal
+                statement that highlights your individuality and suitability for
+                the course you intend to pursue.
               </li>
-             
             </ul>
           </div>
         ),
       },
       {
-        title:
-          "Do You Still Need a Personal Statement for 2026 Entry?",
+        title: "Do You Still Need a Personal Statement for 2026 Entry?",
         about: (
           <div>
             <p>
-            Yes, students applying to university in 2026 will need to submit a personal statement, but it will
-be in a new structured format starting in September 2025. This means that if you're applying for
-university in 2024 or 2025, you'll still use the current free-form style for your statement. The new
-format aims to guide students in organizing their thoughts more clearly, making it easier for
-universities to assess their applications.
+              Yes, students applying to university in 2026 will need to submit a
+              personal statement, but it will be in a new structured format
+              starting in September 2025. This means that if you're applying for
+              university in 2024 or 2025, you&#39;ll still use the current free-form
+              style for your statement. The new format aims to guide students in
+              organizing their thoughts more clearly, making it easier for
+              universities to assess their applications.
             </p>
-           
           </div>
         ),
       },
       {
-        title:
-          "How Can You Make Your Personal Statement Stand Out?",
+        title: "How Can You Make Your Personal Statement Stand Out?",
         about: (
           <div>
             <p>
-            To create a strong personal statement, it's important to be clear, genuine, and relevant. Each
-part of your statement should directly respond to the prompt while showcasing your enthusiasm
-and readiness for your field. Focus on highlighting your strengths and experiences that set you
-apart. If you're finding it difficult to write the perfect statement, consider using the <a
-href="https://www.contentlywriters.com/" className="text-[#5b6cf2] underline hover:no-underline" target="_blank" rel="noopener noreferrer"> Best assignment service</a>. They can help you refine your content, ensuring that it effectively
-communicates your unique qualities and aspirations.
+              To create a strong personal statement, it&#39;s important to be clear,
+              genuine, and relevant. Each part of your statement should directly
+              respond to the prompt while showcasing your enthusiasm and
+              readiness for your field. Focus on highlighting your strengths and
+              experiences that set you apart. If you're finding it difficult to
+              write the perfect statement, consider using the{" "}
+              <a
+                href="https://www.contentlywriters.com/"
+                className="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                Best assignment service
+              </a>
+              . They can help you refine your content, ensuring that it
+              effectively communicates your unique qualities and aspirations.
             </p>
-           
           </div>
         ),
       },
       {
-        title:
-          "Conclusion",
+        title: "Conclusion",
         about: (
           <div>
             <p>
-            The recent updates to UCAS personal statements are designed to help students present their
-qualifications and motivations more clearly and fairly. The new format encourages applicants to
-outline their experiences and goals, making it easier for universities to evaluate their
-applications. By preparing ahead of time and following the new guidelines, you can make your
-statement stronger. If you need help with your assignments or how to write your personal
-statement, expert writers are here to assist you. Don’t hesitate to contact us for support!
+              The recent updates to UCAS personal statements are designed to
+              help students present their qualifications and motivations more
+              clearly and fairly. The new format encourages applicants to
+              outline their experiences and goals, making it easier for
+              universities to evaluate their applications. By preparing ahead of
+              time and following the new guidelines, you can make your statement
+              stronger. If you need help with your assignments or how to write
+              your personal statement, expert writers are here to assist you.
+              Don’t hesitate to contact us for support!
             </p>
-           
           </div>
         ),
       },
@@ -370,8 +413,7 @@ statement, expert writers are here to assist you. Don’t hesitate to contact us
                 through your research about your topic. As the name itself, it
                 is the{" "}
                 <a
-                  href="https://library.leeds.ac.uk/info/14011/writing/220/structur
-e-your-writing/3#:~:text=The%20main%20body%20of%20your,paragraphs%20to%20develop%20your%20argument."
+                  href="https://library.leeds.ac.uk/info/14011/writing/220/structure-your-writing/3#:~:text=The%20main%20body%20of%20your,paragraphs%20to%20develop%20your%20argument."
                   className="text-[#5b6cf2] underline hover:no-underline"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -3633,14 +3675,14 @@ e-your-writing/3#:~:text=The%20main%20body%20of%20your,paragraphs%20to%20develop
                   rel="noopener noreferrer"
                 >
                   {" "}
-                  Grammarly's Plagiarism Checker
+                  Grammarly&#39;s Plagiarism Checker
                 </a>{" "}
                 ensure that the content you receive is unique.
               </li>
               <li>
                 <b>Prioritize On-Time Delivery:</b> Deadlines are crucial in
                 academics. A good assignment help service will deliver your work
-                on time, so you don’t lose grades.
+                on time, so you don&#39;t lose grades.
               </li>
               <li>
                 <b>Consider Pricing:</b> While affordability is important,
@@ -3652,7 +3694,7 @@ e-your-writing/3#:~:text=The%20main%20body%20of%20your,paragraphs%20to%20develop
               <li>
                 <b>Read Reviews:</b> Read reviews from other students and see
                 what was their experience as it will help you as a customer
-                feedback that will give you a clear idea of the service’s
+                feedback that will give you a clear idea of the service&#39;s
                 reliability.
               </li>
               <li>
@@ -3708,7 +3750,7 @@ e-your-writing/3#:~:text=The%20main%20body%20of%20your,paragraphs%20to%20develop
               </li>
               <li>
                 <b>Bypassing Background Checks:</b> Always investigate the
-                service’s reputation and the qualifications of the writers.
+                service&#39;s reputation and the qualifications of the writers.
               </li>
               <li>
                 <b>Ignoring Refund Policies:</b> Confirm that the service
@@ -3738,7 +3780,7 @@ e-your-writing/3#:~:text=The%20main%20body%20of%20your,paragraphs%20to%20develop
               </li>
               <li>
                 <b>Test with a Small Project:</b> Start with a minor assignment
-                to assess the service’s quality and reliability.
+                to assess the service&#39;s quality and reliability.
               </li>
             </ul>
           </div>
@@ -3791,7 +3833,7 @@ e-your-writing/3#:~:text=The%20main%20body%20of%20your,paragraphs%20to%20develop
               emphasizing aspects such as knowledge, creativity, timeliness, and
               assistance, you can discover a service that aligns with your
               requirements and contributes to your success. Keep in mind that
-              the objective isn't merely to finish tasks but to expand your
+              the objective isn&#39;t merely to finish tasks but to expand your
               knowledge and develop academically.
             </p>
             <p className="mt-4">

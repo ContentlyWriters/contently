@@ -278,7 +278,7 @@ const blogData = [
             <p>
               Yes, students applying to university in 2026 will need to submit a
               personal statement, but it will be in a new structured format
-              starting in September 2025. This means that if you're applying for
+              starting in September 2025. This means that if you&#39;re applying for
               university in 2024 or 2025, you&#39;ll still use the current free-form
               style for your statement. The new format aims to guide students in
               organizing their thoughts more clearly, making it easier for
@@ -296,7 +296,7 @@ const blogData = [
               genuine, and relevant. Each part of your statement should directly
               respond to the prompt while showcasing your enthusiasm and
               readiness for your field. Focus on highlighting your strengths and
-              experiences that set you apart. If you're finding it difficult to
+              experiences that set you apart. If you&#39;re finding it difficult to
               write the perfect statement, consider using the{" "}
               <a
                 href="https://www.contentlywriters.com/"

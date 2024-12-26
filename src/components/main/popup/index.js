@@ -92,10 +92,10 @@ const Popup = () => {
         {/* Heading */}
         <h3 className="text-md sm:text-3xl lg:text-[34px] font-extrabold text-gray-800 mb-4">
           <span className="text-red-600 block sm:inline">
-            Celebrate Christmas Discount! 🎁
+            New Year, New Goals 🎁
           </span>{" "}
           <span className="text-gray-800 block sm:inline">
-            25% OFF on all Assignments
+             - 25% OFF to Get You Started!
           </span>
         </h3>
 

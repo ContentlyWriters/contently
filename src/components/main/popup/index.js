@@ -42,7 +42,7 @@ const Popup = () => {
   };
 
   const handleCopyCoupon = () => {
-    navigator.clipboard.writeText("MERRY25").then(() => {
+    navigator.clipboard.writeText("YEAR25").then(() => {
       setIsCopied(true);
       setTimeout(() => setIsCopied(false), 2000);
     });
@@ -132,7 +132,7 @@ const Popup = () => {
         className="bg-gradient-to-r from-red-600 to-green-600 text-white text-xl font-bold py-2 px-4 rounded-md mt-4 cursor-pointer hover:from-green-600 hover:to-red-600 shadow-lg transform transition-transform"
         onClick={handleCopyCoupon}
       >
-        MERRY25
+        YEAR25
       </div>
       {isCopied && (
         <p className="text-green-600 mt-2 text-sm font-semibold">Coupon code copied!</p>

@@ -132,7 +132,7 @@ const Popup = () => {
         <div className="w-full lg:w-1/2 h-[250px] lg:h-[360px] overflow-hidden rounded-l-lg">
           <img
             src={image5}// Replace with the actual path to your image
-            alt="New Year Sale"
+            alt="@/assets/image/newyear.png"
             className="w-full h-full object-cover"
           />
         </div>

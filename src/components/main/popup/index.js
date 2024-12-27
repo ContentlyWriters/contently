@@ -170,27 +170,50 @@ const Popup = () => {
 
       {/* Show "Thanks for Joining" popup only if it hasn't been shown already */}
       {couponPopup && !localStorage.getItem("thanksPopupShown") && (
+  // <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+  //   <div className="bg-[#fef6e4] p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
+  //     <h3 className="text-3xl font-extrabold text-green-800">Thanks for Joining! 🎄</h3>
+  //     <p className="text-red-600 mt-2 font-medium">Your coupon code is:</p>
+  //     <div
+  //       className="bg-gradient-to-r from-red-600 to-green-600 text-white text-xl font-bold py-2 px-4 rounded-md mt-4 cursor-pointer hover:from-green-600 hover:to-red-600 shadow-lg transform transition-transform"
+  //       onClick={handleCopyCoupon}
+  //     >
+  //       YEAR25
+  //     </div>
+  //     {isCopied && (
+  //       <p className="text-green-600 mt-2 text-sm font-semibold">Coupon code copied!</p>
+  //     )}
+  //     <button
+  //       className="mt-4 text-sm text-blue-700 underline hover:text-blue-900 transition-colors"
+  //       onClick={() => setCouponPopup(false)}
+  //     >
+  //       Close
+  //     </button>
+  //   </div>
+  // </div>
+
   <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-    <div className="bg-[#fef6e4] p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
-      <h3 className="text-3xl font-extrabold text-green-800">Thanks for Joining! 🎄</h3>
-      <p className="text-red-600 mt-2 font-medium">Your coupon code is:</p>
-      <div
-        className="bg-gradient-to-r from-red-600 to-green-600 text-white text-xl font-bold py-2 px-4 rounded-md mt-4 cursor-pointer hover:from-green-600 hover:to-red-600 shadow-lg transform transition-transform"
-        onClick={handleCopyCoupon}
-      >
-        YEAR25
-      </div>
-      {isCopied && (
-        <p className="text-green-600 mt-2 text-sm font-semibold">Coupon code copied!</p>
-      )}
-      <button
-        className="mt-4 text-sm text-blue-700 underline hover:text-blue-900 transition-colors"
-        onClick={() => setCouponPopup(false)}
-      >
-        Close
-      </button>
+  <div className="bg-[#e6f7ff] p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
+    <h3 className="text-3xl font-extrabold text-blue-800">Thanks for Joining! 🎆</h3>
+    <p className="text-blue-600 mt-2 font-medium">Your coupon code is:</p>
+    <div
+      className="bg-gradient-to-r from-blue-600 to-silver-600 text-white text-xl font-bold py-2 px-4 rounded-md mt-4 cursor-pointer hover:from-silver-600 hover:to-blue-600 shadow-lg transform transition-transform"
+      onClick={handleCopyCoupon}
+    >
+      YEAR25
     </div>
+    {isCopied && (
+      <p className="text-blue-600 mt-2 text-sm font-semibold">Coupon code copied!</p>
+    )}
+    <button
+      className="mt-4 text-sm text-blue-700 underline hover:text-blue-900 transition-colors"
+      onClick={() => setCouponPopup(false)}
+    >
+      Close
+    </button>
   </div>
+</div>
+
 )}
 
     </>

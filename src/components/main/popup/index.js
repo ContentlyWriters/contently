@@ -77,20 +77,11 @@ const Popup = () => {
         </button>
 
         {/* Image Section */}
-        {/* <div className="w-full lg:w-1/2 h-[250px] lg:h-[360px] overflow-hidden rounded-l-lg">
+        <div className="w-full lg:w-1/2 h-[250px] lg:h-[360px] overflow-hidden rounded-l-lg">
           <Image
             src={image5}// Replace with the actual path to your image
             alt="New year Image"
             className="object-cover w-full h-full"
-          />
-        </div> */}
-        <div className="lg:absolute rounded-sm lg:rounded-none md:rounded-none sm:rounded-none lg:-left-[0px] w-[120px] h-[120px] sm:w-[200px] sm:h-[200px] lg:w-[360px] lg:h-[360px] bg-white flex items-center justify-center  overflow-hidden">
-          <Image
-            src={image5}
-            alt="New Year Offer"
-            className="object-cover"
-            width={360}
-            height={360}
           />
         </div>
 

@@ -118,51 +118,52 @@ const Popup = () => {
   //     </div>
   //   </div>
   // </div>
-  <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-  <div className="relative bg-[#e6f7ff] shadow-lg rounded-lg flex flex-col lg:flex-row justify-center items-center w-[95%] max-w-[850px] h-auto lg:h-[360px]">
-    {/* Close Button */}
-    <button
-      className="absolute top-3 right-3 text-blue-600 hover:text-blue-800 text-[16px] sm:text-[20px] bg-blue-100 hover:bg-blue-300 rounded-full w-6 h-6 flex items-center justify-center shadow-md transition-transform focus:outline-none"
-      onClick={() => setShowPopup(false)}
-    >
-      &times;
-    </button>
-
-    {/* Content Section */}
-    <div className="text-center p-6 sm:p-8 lg:p-12 w-full lg:w-1/2">
-      <h3 className="text-md sm:text-3xl lg:text-[34px] font-extrabold text-gray-800 mb-4">
-        <span className="text-blue-600 block sm:inline">
-          New Year, New Goals 🎆
-        </span>{" "}
-        <span className="text-gray-800 block sm:inline">
-          - 25% OFF to Start Fresh!
-        </span>
-      </h3>
-
-      <div className="flex flex-col items-center">
-        <input
-          type="email"
-          placeholder="Enter your email"
-          className="w-full max-w-[300px] sm:max-w-[400px] px-4 py-2 text-sm sm:text-base border-2 border-blue-500 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
+    <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+      <div className="relative bg-[#e6f7ff] shadow-lg rounded-lg flex flex-col lg:flex-row justify-center items-center w-[95%] max-w-[850px] h-auto lg:h-[360px]">
+        {/* Close Button */}
         <button
-          className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-green-500 hover:to-blue-500 w-full max-w-[300px] sm:max-w-[400px] text-white text-sm sm:text-base py-2 sm:py-3 px-8 sm:px-12 rounded-lg shadow-lg transition-transform transform"
+          className="absolute top-3 right-3 text-blue-600 hover:text-blue-800 text-[16px] sm:text-[20px] bg-blue-100 hover:bg-blue-300 rounded-full w-6 h-6 flex items-center justify-center shadow-md transition-transform focus:outline-none"
+          onClick={() => setShowPopup(false)}
         >
-          GET MY 25% OFF
+          &times;
         </button>
+
+        {/* Image Section */}
+        <div className="w-full lg:w-1/2 h-[250px] lg:h-[360px] overflow-hidden rounded-l-lg">
+          <img
+            src={image5}// Replace with the actual path to your image
+            alt="New Year Sale"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Content Section */}
+        <div className="text-center p-6 sm:p-8 lg:p-12 w-full lg:w-1/2">
+          <h3 className="text-md sm:text-3xl lg:text-[34px] font-extrabold text-gray-800 mb-4">
+            <span className="text-blue-600 block sm:inline">
+              New Year, New Goals 🎆
+            </span>{" "}
+            <span className="text-gray-800 block sm:inline">
+              - 25% OFF to Start Fresh!
+            </span>
+          </h3>
+
+          <div className="flex flex-col items-center">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full max-w-[300px] sm:max-w-[400px] px-4 py-2 text-sm sm:text-base border-2 border-blue-500 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <button
+              className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-green-500 hover:to-blue-500 w-full max-w-[300px] sm:max-w-[400px] text-white text-sm sm:text-base py-2 sm:py-3 px-8 sm:px-12 rounded-lg shadow-lg transition-transform transform"
+              onClick={handleClickGetDiscount}
+            >
+              GET MY 25% OFF
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-
-    {/* Image Section */}
-    <div className="w-full lg:w-1/2 h-[250px] lg:h-[360px] overflow-hidden rounded-r-lg">
-      <img
-        src="/path/to/newyear.png"
-        alt="New Year Sale"
-        className="w-full h-full object-cover"
-      />
-    </div>
-  </div>
-</div>
 )}
 
 

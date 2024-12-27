@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from 'next/navigation'; // Use 'next/navigation'
 import { useUserContext } from "@/context/auth";
 import Image from "next/image";
-import image5 from "@/assets/image/newyear.png";
+import image5 from "@/assets/image/newyear1.png";
 
 const Popup = () => {
   const { user, isAuthenticated } = useUserContext();

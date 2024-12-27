@@ -81,7 +81,8 @@ const Popup = () => {
           <Image
             src={image5}// Replace with the actual path to your image
             alt="New year Image"
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
+            layout="fill"
           />
         </div>
 

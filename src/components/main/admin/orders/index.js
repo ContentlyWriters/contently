@@ -40,14 +40,24 @@ export default function AdminOrderScreen() {
   const [selectedOrder, setSelectedOrder] = useState({});
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [filter, setFilter] = useState("InProgress");
-  const { user, isAuthenticated } = useUserContext();
+  const { user, isAuthenticated, loading } = useUserContext();
   const router = useRouter();
 
   useEffect(() => {
     if (!isAuthenticated) {
       router.push("/login");
     }
-  }, [isAuthenticated, router]);
+  }, [isAuthenticated, loading, router]);
+
+  // Show loading indicator during auth check
+  if (loading) {
+    return <div className="text-center mt-20">Loading...</div>;
+  }
+
+  // Prevent rendering if not authenticated
+  if (!isAuthenticated) {
+    return null;
+  }
 
   // Fetch orders on filter change
   useEffect(() => {

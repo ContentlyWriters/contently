@@ -413,8 +413,8 @@ export default function Banner() {
       formData.append("pages", count);
       formData.append("amount", price);
       // formData.append("orderFile", file);
-      files.forEach(file => {
-        formData.append("orderFile", file);
+      file.forEach(file1 => {
+        formData.append("orderFile", file1);
       });
       formData.append("coupon",formValues.coupon)
 

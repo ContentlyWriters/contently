@@ -47,6 +47,9 @@ export default function AdminOrderScreen() {
     if (!isAuthenticated) {
       router.push("/login");
     }
+    else {
+      console.log("User role is " + user.role)
+    }
   }, [isAuthenticated, loading, router]);
 
   // Show loading indicator during auth check

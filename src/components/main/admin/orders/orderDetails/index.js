@@ -191,19 +191,23 @@ export default function AdminOrderDetailScreen({
               </div>
               <div className="text-gray-700">
                 <strong>Response File Link:</strong>{" "}
-                {orderDetail.orderResponseFileLink ? (
-                  <a
-                    href={orderDetail.orderResponseFileLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline flex items-center space-x-2"
-                  >
-                    <FiDownload className="text-lg" />
-                    <span>Download Response</span>
-                  </a>
-                ) : (
-                  "File not Uploaded"
-                )}
+                {orderDetail.orderResponseFiles && orderDetail.orderResponseFiles.length > 0 ? (
+                orderDetail.orderResponseFiles.map((fileLink, index) => (
+                  <div key={index} className="my-2">
+                    <a
+                      href={fileLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 hover:underline flex items-center space-x-2"
+                    >
+                      <FiDownload className="text-lg" />
+                      <span>Download File {index + 1}</span>
+                    </a>
+                  </div>
+                ))
+              ) : (
+                <span>No files available</span>
+              )}
               </div>
             </>
           )}

@@ -119,6 +119,8 @@ export const AuthProvider = ({ children }) => {
       console.log(err);
       setIsAuthenticated(false);
       setIsLoading(false);
+    } finally{
+      setIsLoading(false);
     }
   };
 

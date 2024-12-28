@@ -40,16 +40,16 @@ export default function AdminOrderScreen() {
   const [selectedOrder, setSelectedOrder] = useState({});
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [filter, setFilter] = useState("InProgress");
-  const { user, isAuthenticated, loading } = useUserContext();
+  const { user, isAuthenticated, isLoading } = useUserContext();
   const router = useRouter();
 
   useEffect(() => {
-    // if (!loading) {
-      if (!loading && !isAuthenticated) {
+      if (!isLoading && !isAuthenticated) {
         router.push("/login");
       }
+      console.log("loading " + isLoading);
       console.log("user role is " + user);
-  }, [isAuthenticated, loading, router, user]);
+  }, [isAuthenticated, isLoading, router, user]);
 
   
 

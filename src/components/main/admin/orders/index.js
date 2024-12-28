@@ -43,19 +43,6 @@ export default function AdminOrderScreen() {
   const { user, isAuthenticated, isLoading } = useUserContext();
   const router = useRouter();
 
-  // useEffect(() => {
-  //     console.log("user role " + user.role)
-  //     if (!isLoading && !isAuthenticated) {
-  //       router.push("/login");
-  //     }
-  //     else if (user.role !== "Admin") {
-  //       console.log("role  " + user.role)
-  //       alert("You are not authorized to view this page.");
-  //       router.push("/unauthorized");  // Redirect to an unauthorized page or homepage
-  //     }
-
-  // }, [isAuthenticated, isLoading, router, user]);
-
   useEffect(() => {
     // Wait for isLoading to be false
     if (isLoading) {
@@ -97,10 +84,9 @@ export default function AdminOrderScreen() {
   }
 
   // Prevent rendering if not authenticated
-  if (!isAuthenticated) {
-    return null;
+  if (!isAuthenticated || user.role !== "Admin") {
+    return null;  // Prevent the rest of the page from rendering
   }
-
 
   return (
     <div className="min-h-screen bg-[#ffffff] py-10 text-white">

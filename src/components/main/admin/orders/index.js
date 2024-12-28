@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   Table,
   TableBody,
@@ -16,6 +17,7 @@ import { axiosInstance } from "@/lib/axios";
 import AdminOrderDetailScreen from "./orderDetails";
 import logo from "@/assets/image/contently-logo.png";
 import Image from "next/image";
+import { useUserContext } from "@/context/auth";
 
 // Function to fetch orders
 async function fetchOrders(status = "") {
@@ -38,6 +40,14 @@ export default function AdminOrderScreen() {
   const [selectedOrder, setSelectedOrder] = useState({});
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [filter, setFilter] = useState("InProgress");
+  const { user, isAuthenticated } = useUserContext();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      router.push("/login");
+    }
+  }, [isAuthenticated, router]);
 
   // Fetch orders on filter change
   useEffect(() => {

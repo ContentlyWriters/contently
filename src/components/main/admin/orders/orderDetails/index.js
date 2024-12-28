@@ -23,7 +23,7 @@ export default function AdminOrderDetailScreen({
   orderDetail,
 }) {
   const [selectedFileName, setSelectedFileName] = useState("");
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState({
     orderFile: "",
@@ -35,8 +35,12 @@ export default function AdminOrderDetailScreen({
 
   const handleFileChange = (event) => {
     if (event.target.files.length > 0) {
-      setSelectedFileName(event.target.files[0].name);
-      setFile(event.target.files[0]);
+      setFile(Array.from(event.target.files));
+      const fileNames = Array.from(event.target.files)
+      .map((file) => file.name)
+      .join(', ');
+      console.log("fileNames " + fileNames)
+      setSelectedFileName(fileNames);
     } else {
       setSelectedFileName("");
     }
@@ -46,15 +50,30 @@ export default function AdminOrderDetailScreen({
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name === "orderFile") {
-      const maxSizeInBytes = 10 * 1024 * 1024;
-      const file = e.target.files[0];
-      if (file.size > maxSizeInBytes) {
-        setError({ ...error, [name]: "File is too large. Max size is 10MB" });
+      const maxSizeInBytes = 10 * 1024 * 1024;  // 10MB
+      const files = Array.from(e.target.files);  // Convert to array
+      console.log("Number of files selected: " + files.length);
+    
+      // Check for max 4 files
+      if (files.length > 5) {
+        setError({ ...error, [name]: "You can select up to 5 files only." });
         return;
-      } else {
-        setError({ ...error, [name]: "" });
-        setFormValues({ ...formValues, [name]: file });
       }
+    
+      // Check for file size limit
+      const oversizedFile = files.find(file => file.size > maxSizeInBytes);
+      if (oversizedFile) {
+        setError({ ...error, [name]: "One or more files exceed the 10MB size limit." });
+        return;
+      }
+    
+      // Clear errors if all checks pass
+      setError({ ...error, [name]: "" });
+      
+      // Store files in form state
+      setFormValues({ ...formValues, [name]: files });
+    } else {
+      setFormValues({ ...formValues, [name]: value });
     }
   };
 
@@ -75,7 +94,10 @@ export default function AdminOrderDetailScreen({
       }
 
       let formData = new FormData();
-      formData.append("orderResponseFile", file);
+      file.forEach(file1 => {
+        formData.append("orderResponseFiles", file1);
+      });
+      formData.append("orderResponseFiles", file);
       formData.append("status", "Completed");
       const response = await axiosInstance.put(
         `order/${orderDetail.orderId}`,
@@ -207,6 +229,7 @@ export default function AdminOrderDetailScreen({
                 name="orderFile"
                 className="absolute inset-0 opacity-0 w-full cursor-pointer"
                 accept=".pdf, .docx, .png, .jpeg, .jpg, .txt"
+                multiple
                 onChange={handleFileChange}
               />
               {selectedFileName && (

@@ -80,21 +80,6 @@ export default function Banner() {
     } else {
       setError({ ...error, [name]: "" });
     }
-    // if (name === "orderFile") {
-    //   const maxSizeInBytes = 10 * 1024 * 1024;
-    //   console.log("size of files array " + e.target.files.length)
-    //   const file = e.target.files[0];
-    //   console.log({ file: file.size, maxSizeInBytes });
-    //   if (file.size > maxSizeInBytes) {
-    //     setError({ ...error, [name]: "File is too large. Max size is 10MB" });
-    //     return;
-    //   } else {
-    //     setError({ ...error, [name]: "" });
-    //     setFormValues({ ...formValues, [name]: file });
-    //   }
-    // } else {
-    //   setFormValues({ ...formValues, [name]: value });
-    // }
 
     if (name === "orderFile") {
       const maxSizeInBytes = 10 * 1024 * 1024;  // 10MB
@@ -530,14 +515,6 @@ export default function Banner() {
   const [selectedFileName, setSelectedFileName] = useState("");
 
   const handleFileChange = (event) => {
-    // if (event.target.files.length > 0) {
-    //   setSelectedFileName(event.target.files[0].name);
-    //   console.log({ selectedFileName: event.target.files[0] });
-      // setFile(event.target.files);
-
-    // } else {
-    //   setSelectedFileName("");
-    // }
 
     if (event.target.files.length > 4) {
       setError({ orderFile: 'You can select up to 4 files only.' });

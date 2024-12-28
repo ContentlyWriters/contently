@@ -34,7 +34,7 @@ export default function AdminOrderDetailScreen({
   const [uploadSuccess, setUploadSuccess] = useState(false);
 
   const handleFileChange = (event) => {
-    if (event.target.files.length > 0) {
+    if (event.target.files.length > 0 && event.target.files.length < 6) {
       setFile(Array.from(event.target.files));
       const fileNames = Array.from(event.target.files)
       .map((file) => file.name)
@@ -54,7 +54,7 @@ export default function AdminOrderDetailScreen({
       const files = Array.from(e.target.files);  // Convert to array
       console.log("Number of files selected: " + files.length);
     
-      // Check for max 4 files
+      // Check for max 5 files
       if (files.length > 5) {
         setError({ ...error, [name]: "You can select up to 5 files only." });
         return;

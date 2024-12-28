@@ -517,12 +517,14 @@ export default function Banner() {
   const handleFileChange = (event) => {
 
     if (event.target.files.length > 4) {
-      setError({ orderFile: 'You can select up to 4 files only.' });
+      // setError({ orderFile: 'You can select up to 4 files only.' });
+      setError({ ...error, [orderFile]: "You can select up to 4 files only." });
       event.target.value = ''; // Clear the selection
       setSelectedFileName('');
     } else {
       setFile(Array.from(event.target.files));
-      setError({ orderFile: '' });
+      // setError({ orderFile: '' });
+      setError({ ...error, [orderFile]: '' });
       const fileNames = Array.from(event.target.files)
       .map((file) => file.name)
       .join(', ');

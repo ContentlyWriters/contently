@@ -152,13 +152,22 @@ export default function PendingOrder({ orders }) {
                   {format(order.orderPlacedTimestamp, "dd-MM-yyyy")}
                 </TableCell>
                 <TableCell className="text-center">
-                  <Link
-                    href={order.orderFileLink || "#"}
-                    target="_black"
-                    className="hover:underline"
-                  >
-                    File
-                  </Link>
+                  {order.orderFiles && order.orderFiles.length > 0 ? (
+                    order.orderFiles.map((file, index) => (
+                      <div key={index}>
+                        <Link
+                          href={file.orderFileLink || "#"}
+                          target="_blank"  // Use _blank to open in a new tab
+                          className="hover:underline"
+                        >
+                          File {index + 1}
+                        </Link>
+                        {index < order.orderFiles.length - 1 && <br />} {/* Add a line break between links */}
+                      </div>
+                    ))
+                  ) : (
+                    <span>No files available</span>
+                  )}
                 </TableCell>
                 <TableCell className="text-center">
                   {order.orderResponseFileLink ? (

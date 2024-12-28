@@ -534,7 +534,7 @@ export default function Banner() {
     //   setSelectedFileName(event.target.files[0].name);
     //   console.log({ selectedFileName: event.target.files[0] });
       // setFile(event.target.files);
-      setFile(Array.from(event.target.files));
+
     // } else {
     //   setSelectedFileName("");
     // }
@@ -544,6 +544,7 @@ export default function Banner() {
       event.target.value = ''; // Clear the selection
       setSelectedFileName('');
     } else {
+      setFile(Array.from(event.target.files));
       setError({ orderFile: '' });
       const fileNames = Array.from(event.target.files)
       .map((file) => file.name)

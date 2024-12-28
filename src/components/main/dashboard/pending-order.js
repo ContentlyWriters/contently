@@ -169,10 +169,10 @@ export default function PendingOrder({ orders }) {
                     <span>No files available</span>
                   )}
                 </TableCell>
-                <TableCell className="text-center">
-                  {order.orderResponseFileLink ? (
+                {/* <TableCell className="text-center">
+                  {order.orderResponseFilesLink ? (
                     <Link
-                      href={order.orderResponseFileLink || "#"}
+                      href={order.orderResponseFilesLink || "#"}
                       target="_black"
                       className="hover:underline"
                     >
@@ -181,9 +181,27 @@ export default function PendingOrder({ orders }) {
                   ) : (
                     <></>
                   )}
+                </TableCell> */}
+                <TableCell className="text-center">
+                  {order.orderResponseFilesLink && order.orderResponseFilesLink.length > 0 ? (
+                    order.orderResponseFilesLink.map((file, index) => (
+                      <div key={index}>
+                        <Link
+                          href={file || "#"}
+                          target="_blank"  // Use _blank to open in a new tab
+                          className="hover:underline"
+                        >
+                          Download {index + 1}
+                        </Link>
+                        {index < order.orderResponseFilesLink.length - 1 && <br />} {/* Add a line break between links */}
+                      </div>
+                    ))
+                  ) : (
+                    <span> In progress</span>
+                  )}
                 </TableCell>
                 <TableCell className="text-center">
-                  {order.orderResponseFileLink ? (
+                  {order.orderResponseFilesLink ? (
                     <Button
                       variant="link"
                       onClick={() => {

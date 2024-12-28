@@ -140,16 +140,24 @@ export default function AdminOrderDetailScreen({
             {orderDetail.orderPlacedTimestamp}
           </div>
           <div className="text-gray-700">
-            <strong>Order File Link:</strong>{" "}
-            <a
-              href={orderDetail.orderFileLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline flex items-center space-x-2"
-            >
-              <FiDownload className="text-lg" />
-              <span>Download File</span>
-            </a>
+            <strong>Order File Links:</strong>
+            {orderDetail.orderFilesLink && orderDetail.orderFilesLink.length > 0 ? (
+              orderDetail.orderFilesLink.map((fileLink, index) => (
+                <div key={index} className="my-2">
+                  <a
+                    href={fileLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline flex items-center space-x-2"
+                  >
+                    <FiDownload className="text-lg" />
+                    <span>Download File {index + 1}</span>
+                  </a>
+                </div>
+              ))
+            ) : (
+              <span>No files available</span>
+            )}
           </div>
           {orderDetail.paymentOrder && (
             <>

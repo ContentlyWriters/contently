@@ -44,10 +44,12 @@ export default function AdminOrderScreen() {
   const router = useRouter();
 
   useEffect(() => {
+      console.log("user role " + user.role)
       if (!isLoading && !isAuthenticated) {
         router.push("/login");
       }
       else if (user.role !== "Admin") {
+        console.log("role  " + user.role)
         alert("You are not authorized to view this page.");
         router.push("/unauthorized");  // Redirect to an unauthorized page or homepage
       }

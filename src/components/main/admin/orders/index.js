@@ -47,8 +47,10 @@ export default function AdminOrderScreen() {
       if (!isLoading && !isAuthenticated) {
         router.push("/login");
       }
-      console.log("loading " + isLoading);
-      console.log("user role is " + user.role);
+      else if (user.role !== "Admin") {
+        router.push("/unauthorized");  // Redirect to an unauthorized page or homepage
+      }
+
   }, [isAuthenticated, isLoading, router, user]);
 
   

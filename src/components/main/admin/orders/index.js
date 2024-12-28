@@ -67,8 +67,6 @@ export default function AdminOrderScreen() {
     if (!isAuthenticated) {
       router.push("/login");  // Redirect to login if not authenticated
     } else if (user.role !== "Admin") {
-      // Show alert and redirect to unauthorized if not an Admin
-      alert("You are not authorized to view this page.");
       router.push("/unauthorized");  // Redirect to unauthorized page
     }
   }, [isAuthenticated, isLoading, router, user]);

@@ -722,14 +722,12 @@ export default function Banner() {
               handleChange={handleChange}
             /> */}
             <div className="relative w-auto">
-              <label
-                htmlFor="orderFile"
-                className="cursor-pointer inline-block"
-              >
-                <button className="px-4 h-10 py-2 bg-[#000] hover:bg-[#fff] text-white font-medium text-sm rounded-lg shadow-md transition-all duration-300 transform hover:scale-105">
-                  Choose file <span className="text-xs">(max 4)</span>
-                </button>
-              </label>
+            <label htmlFor="orderFile" className="cursor-pointer inline-block flex items-center">
+              <button className="px-4 h-10 py-2 bg-[#000] hover:bg-[#fff] text-white font-medium text-sm rounded-lg shadow-md transition-all duration-300 transform hover:scale-105">
+                Choose file
+              </button>
+              <span className="text-xs text-gray-500 italic ml-2">(max 4)</span>
+            </label>
               <Input
                 type="file"
                 id="orderFile"

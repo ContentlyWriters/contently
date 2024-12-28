@@ -515,7 +515,6 @@ export default function Banner() {
   const [selectedFileName, setSelectedFileName] = useState("");
 
   const handleFileChange = (event) => {
-
     if (event.target.files.length > 4) {
       // setError({ orderFile: 'You can select up to 4 files only.' });
       setError({ ...error, [orderFile]: "You can select up to 4 files only." });
@@ -526,8 +525,11 @@ export default function Banner() {
       // setError({ orderFile: '' });
       setError({ ...error, [orderFile]: '' });
       const fileNames = Array.from(event.target.files)
-      .map((file) => file.name)
-      .join(', ');
+    .map((file) => {
+      const name = file.name;
+      return name.length > 10 ? name.substring(0, 8) + '..' : name;
+    })
+    .join(', ');
       console.log("fileNames " + fileNames)
       setSelectedFileName(fileNames);
     }

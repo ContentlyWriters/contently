@@ -71,7 +71,7 @@ export default function AdminOrderScreen() {
 
 
   // Show loading indicator during auth check
-  if (loading) {
+  if (isLoading) {
     return <div className="text-center mt-20">Loading...</div>;
   }
 

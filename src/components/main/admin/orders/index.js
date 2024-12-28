@@ -48,6 +48,7 @@ export default function AdminOrderScreen() {
         router.push("/login");
       }
       else if (user.role !== "Admin") {
+        alert("You are not authorized to view this page.");
         router.push("/unauthorized");  // Redirect to an unauthorized page or homepage
       }
 

@@ -45,7 +45,7 @@ export default function AdminOrderScreen() {
 
   useEffect(() => {
     // if (!loading) {
-      if (!isAuthenticated) {
+      if (!loading && !isAuthenticated) {
         router.push("/login");
       }
       console.log("user role is " + user);

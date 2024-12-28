@@ -412,7 +412,10 @@ export default function Banner() {
       formData.append("deadline", number);
       formData.append("pages", count);
       formData.append("amount", price);
-      formData.append("orderFile", file);
+      // formData.append("orderFile", file);
+      files.forEach(file => {
+        formData.append("orderFile", file);
+      });
       formData.append("coupon",formValues.coupon)
 
       const response = await axiosInstance.post(

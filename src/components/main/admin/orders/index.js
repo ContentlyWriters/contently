@@ -43,18 +43,36 @@ export default function AdminOrderScreen() {
   const { user, isAuthenticated, isLoading } = useUserContext();
   const router = useRouter();
 
-  useEffect(() => {
-      console.log("user role " + user.role)
-      if (!isLoading && !isAuthenticated) {
-        router.push("/login");
-      }
-      else if (user.role !== "Admin") {
-        console.log("role  " + user.role)
-        alert("You are not authorized to view this page.");
-        router.push("/unauthorized");  // Redirect to an unauthorized page or homepage
-      }
+  // useEffect(() => {
+  //     console.log("user role " + user.role)
+  //     if (!isLoading && !isAuthenticated) {
+  //       router.push("/login");
+  //     }
+  //     else if (user.role !== "Admin") {
+  //       console.log("role  " + user.role)
+  //       alert("You are not authorized to view this page.");
+  //       router.push("/unauthorized");  // Redirect to an unauthorized page or homepage
+  //     }
 
+  // }, [isAuthenticated, isLoading, router, user]);
+
+  useEffect(() => {
+    // Wait for isLoading to be false
+    if (isLoading) {
+      // If still loading, do nothing
+      return;
+    }
+  
+    // After isLoading is false, check authentication and role
+    if (!isAuthenticated) {
+      router.push("/login");  // Redirect to login if not authenticated
+    } else if (user.role !== "Admin") {
+      // Show alert and redirect to unauthorized if not an Admin
+      alert("You are not authorized to view this page.");
+      router.push("/unauthorized");  // Redirect to unauthorized page
+    }
   }, [isAuthenticated, isLoading, router, user]);
+  
 
   
 

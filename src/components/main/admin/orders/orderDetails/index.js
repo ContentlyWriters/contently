@@ -191,8 +191,8 @@ export default function AdminOrderDetailScreen({
               </div>
               <div className="text-gray-700">
                 <strong>Response File Link:</strong>{" "}
-                {orderDetail.orderResponseFiles && orderDetail.orderResponseFiles.length > 0 ? (
-                orderDetail.orderResponseFiles.map((fileLink, index) => (
+                {orderDetail.orderResponseFilesLink && orderDetail.orderResponseFilesLink.length > 0 ? (
+                orderDetail.orderResponseFilesLink.map((fileLink, index) => (
                   <div key={index} className="my-2">
                     <a
                       href={fileLink}

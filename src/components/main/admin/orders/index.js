@@ -48,18 +48,10 @@ export default function AdminOrderScreen() {
       if (!isAuthenticated) {
         router.push("/login");
       }
-      console.log("user role is " + user);
-  }, [isAuthenticated, loading, router, user]);
+      // console.log("user role is " + user);
+  }, [isAuthenticated, loading, router]);
 
-  // Show loading indicator during auth check
-  if (loading) {
-    return <div className="text-center mt-20">Loading...</div>;
-  }
-
-  // Prevent rendering if not authenticated
-  if (!isAuthenticated) {
-    return null;
-  }
+  
 
   // Fetch orders on filter change
   useEffect(() => {
@@ -77,6 +69,18 @@ export default function AdminOrderScreen() {
     setIsDialogOpen(true);
   };
 
+
+  // Show loading indicator during auth check
+  if (loading) {
+    return <div className="text-center mt-20">Loading...</div>;
+  }
+
+  // Prevent rendering if not authenticated
+  if (!isAuthenticated) {
+    return null;
+  }
+
+  
   return (
     <div className="min-h-screen bg-[#ffffff] py-10 text-white">
       {/* Header Section */}

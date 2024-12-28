@@ -51,7 +51,7 @@ export default function Banner() {
 
   const [count, setCount] = useState(1);
   const [price, setPrice] = useState(0);
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState([]);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setIsClient(true);
@@ -80,21 +80,49 @@ export default function Banner() {
     } else {
       setError({ ...error, [name]: "" });
     }
-    if (name === "orderFile") {
-      const maxSizeInBytes = 10 * 1024 * 1024;
+    // if (name === "orderFile") {
+    //   const maxSizeInBytes = 10 * 1024 * 1024;
+    //   console.log("size of files array " + e.target.files.length)
+    //   const file = e.target.files[0];
+    //   console.log({ file: file.size, maxSizeInBytes });
+    //   if (file.size > maxSizeInBytes) {
+    //     setError({ ...error, [name]: "File is too large. Max size is 10MB" });
+    //     return;
+    //   } else {
+    //     setError({ ...error, [name]: "" });
+    //     setFormValues({ ...formValues, [name]: file });
+    //   }
+    // } else {
+    //   setFormValues({ ...formValues, [name]: value });
+    // }
 
-      const file = e.target.files[0];
-      console.log({ file: file.size, maxSizeInBytes });
-      if (file.size > maxSizeInBytes) {
-        setError({ ...error, [name]: "File is too large. Max size is 10MB" });
+    if (name === "orderFile") {
+      const maxSizeInBytes = 10 * 1024 * 1024;  // 10MB
+      const files = Array.from(e.target.files);  // Convert to array
+      console.log("Number of files selected: " + files.length);
+    
+      // Check for max 4 files
+      if (files.length > 4) {
+        setError({ ...error, [name]: "You can select up to 4 files only." });
         return;
-      } else {
-        setError({ ...error, [name]: "" });
-        setFormValues({ ...formValues, [name]: file });
       }
+    
+      // Check for file size limit
+      const oversizedFile = files.find(file => file.size > maxSizeInBytes);
+      if (oversizedFile) {
+        setError({ ...error, [name]: "One or more files exceed the 10MB size limit." });
+        return;
+      }
+    
+      // Clear errors if all checks pass
+      setError({ ...error, [name]: "" });
+      
+      // Store files in form state
+      setFormValues({ ...formValues, [name]: files });
     } else {
       setFormValues({ ...formValues, [name]: value });
     }
+    
   };
 
   //coupon code
@@ -373,7 +401,7 @@ export default function Banner() {
         setLoading(false);
         return;
       }
-
+      console.log("picked up files " + file.length);
       let formData = new FormData();
       formData.append("subject", formValues.subject);
       formData.append("topic", formValues.topic);
@@ -499,13 +527,28 @@ export default function Banner() {
   const [selectedFileName, setSelectedFileName] = useState("");
 
   const handleFileChange = (event) => {
-    if (event.target.files.length > 0) {
-      setSelectedFileName(event.target.files[0].name);
-      console.log({ selectedFileName: event.target.files[0] });
-      setFile(event.target.files[0]);
+    // if (event.target.files.length > 0) {
+    //   setSelectedFileName(event.target.files[0].name);
+    //   console.log({ selectedFileName: event.target.files[0] });
+      // setFile(event.target.files);
+      setFile(Array.from(event.target.files));
+    // } else {
+    //   setSelectedFileName("");
+    // }
+
+    if (event.target.files.length > 4) {
+      setError({ orderFile: 'You can select up to 4 files only.' });
+      event.target.value = ''; // Clear the selection
+      setSelectedFileName('');
     } else {
-      setSelectedFileName("");
+      setError({ orderFile: '' });
+      const fileNames = Array.from(event.target.files)
+      .map((file) => file.name)
+      .join(', ');
+      console.log("fileNames " + fileNames)
+      setSelectedFileName(fileNames);
     }
+
     handleChange(event); // Call the passed-in handleChange function
   };
 
@@ -707,6 +750,7 @@ export default function Banner() {
                 name="orderFile"
                 className="absolute inset-0 opacity-0 w-full cursor-pointer"
                 accept=".pdf, .docx, .png, .jpeg, .jpg, .txt"
+                multiple
                 onChange={handleFileChange}
               />
               {selectedFileName && (

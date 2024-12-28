@@ -48,8 +48,8 @@ export default function AdminOrderScreen() {
       if (!isAuthenticated) {
         router.push("/login");
       }
-      // console.log("user role is " + user);
-  }, [isAuthenticated, loading, router]);
+      console.log("user role is " + user);
+  }, [isAuthenticated, loading, router, user]);
 
   
 
@@ -80,7 +80,7 @@ export default function AdminOrderScreen() {
     return null;
   }
 
-  
+
   return (
     <div className="min-h-screen bg-[#ffffff] py-10 text-white">
       {/* Header Section */}

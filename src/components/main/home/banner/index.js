@@ -315,6 +315,7 @@ export default function Banner() {
       ...formValues,
       amount: price,
     };
+    console.log("user role for home page is " + user);
     if (localStorage.getItem("token") === null) {
       sessionStorage.setItem("orderData", JSON.stringify(data));
       // reader.readAsDataURL(file);

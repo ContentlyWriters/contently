@@ -48,7 +48,7 @@ export default function AdminOrderScreen() {
         router.push("/login");
       }
       console.log("loading " + isLoading);
-      console.log("user role is " + user);
+      console.log("user role is " + user.role);
   }, [isAuthenticated, isLoading, router, user]);
 
   

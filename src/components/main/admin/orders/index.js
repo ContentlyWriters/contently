@@ -44,12 +44,11 @@ export default function AdminOrderScreen() {
   const router = useRouter();
 
   useEffect(() => {
-    if (!loading) {
+    // if (!loading) {
       if (!isAuthenticated) {
         router.push("/login");
       }
       console.log("user role is " + user.role);
-    }
   }, [isAuthenticated, loading, router, user]);
 
   // Show loading indicator during auth check

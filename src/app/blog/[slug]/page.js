@@ -78,7 +78,7 @@ concentrate on other crucial facets of their personal or academic lives.
           <div>
             <p>
             Professionals with a variety of specialties are frequently used by online essay writing
-services. These writers have the skills and expertise to produce excellent work, whether it's
+services. These writers have the skills and expertise to produce excellent work, whether it&#39;s
 a sophisticated literary review or a  <a
             href="https://www.contentlywriters.com/service/dissertation"
             class="text-[#5b6cf2]  underline hover:no-underline"
@@ -130,7 +130,7 @@ subsequent projects, students can gradually enhance their writing abilities.
             It has never been simpler to find online essay writers thanks to technological improvements.
 No matter where they are, people may connect with professionals from all around the world
 with a few clicks. Numerous platforms provide 24/7 support, guaranteeing that help is
-accessible whenever it's wanted. Those who are in different time zones or have busy
+accessible whenever it&#39;s wanted. Those who are in different time zones or have busy
 schedules will particularly benefit from this ease.
             </p>
           </div>
@@ -201,7 +201,7 @@ coming across new material.
             Writing essays in English can be a difficult undertaking for non-native English speakers and
 international students. Online essay writers offer much-needed support, preventing
 academic performance. Their command of syntax, punctuation, and vocabulary aids in the
-production of well-written essays that successfully convey the student's thoughts.
+production of well-written essays that successfully convey the student&#39;s thoughts.
             </p>
           </div>
         ),

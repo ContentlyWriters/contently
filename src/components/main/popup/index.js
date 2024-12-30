@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useRouter } from 'next/navigation'; // Use 'next/navigation'
+import { useRouter } from 'next/navigation'; 
 import { useUserContext } from "@/context/auth";
 import Image from "next/image";
 import image5 from "@/assets/image/newyear.png";
@@ -79,7 +79,7 @@ const Popup = () => {
         {/* Image Section */}
         <div className="w-full lg:w-1/2 h-[250px] lg:h-[360px] overflow-hidden rounded-l-lg">
           <Image
-            src={image5}// Replace with the actual path to your image
+            src={image5}
             alt="New year Image"
             className="object-cover w-full h-full"
           />

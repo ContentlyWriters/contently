@@ -20,8 +20,17 @@ import img15 from "@/assets/image/blogImg15.jpg";
 import img16 from "@/assets/image/blogImg16.jpg";
 import img17 from "@/assets/image/blogImg17.jpg";
 import img18 from "@/assets/image/blogImg18.png";
+import img19 from "@/assets/image/blogImg19.jpg";
 
 const blogData = [
+  {
+    tag: "blog-17",
+    slug: "top-10-benefits-of-hiring-online-essay-writers",
+    heading: "Top 10 Benefits of Hiring Online Essay Writers for Academic Success",
+    date: "December 30, 2024",
+    image: img19,
+    about:"Online essay writers have become an important resource for professionals, students, and even amateur writers in the fast-paced digital society we live in today. These services are becoming increasingly well-liked since they meet a variety of purposes, including professional writing projects and some of the best assignment services",
+  },
   {
     tag: "blog-16",
     slug: "ucas-personal-statement-changes-2025-guide",

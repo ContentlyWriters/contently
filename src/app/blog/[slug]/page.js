@@ -64,7 +64,7 @@ understanding and success in the field.
 The more you grasp the core concepts, the easier it becomes to tackle advanced topics.
 This strong foundation helps build your confidence in accounting.
             </p>
-            <ul className="ml-8">
+            <ul className="ml-4">
               <li>
                 <strong>Key Accounting Concepts:</strong>
                 <ul>
@@ -90,7 +90,7 @@ how assets are funded.
                 </ul>
               </li>
             </ul>
-            <p className="mt-4">
+            <p className="mt-2">
               <strong>Note:</strong> Practice daily by creating simple transactions and building your
               financial statements to get comfortable with the process.
             </p>
@@ -138,7 +138,7 @@ powerful tools to simplify complex tasks. Learning accounting software such as
 <strong>QuickBooks, Xero, or Excel</strong> is essential for students aiming to excel in their academic
 studies and future careers.
             </p>
-            <ul className="ml-8">
+            <ul className="ml-4">
               <li>
                 <strong>Why Software Matters for Students:</strong> These tools are widely used by businesses and professionals to manage
 finances efficiently. By learning to use software like <strong>QuickBooks</strong> or <strong>Excel</strong>,
@@ -149,7 +149,7 @@ entry-level accounting positions.
               </li>
               <li>
                 <strong>How to Get Started:</strong>
-                <ul className="ml-4">
+                <ul className="ml-2">
                   <li>
                   ○ <strong>Take Advantage of Free Tutorials:</strong> There are plenty of free resources
 online, such as QuickBooks Training or Microsoft Excel tutorials, that
@@ -179,11 +179,11 @@ more competitive in the accounting field.</p>
 decisions. Developing your analytical skills helps you go beyond just preparing
 statements to analyzing financial health
             </p>
-            <ul className="ml-8">
+            <ul className="ml-4">
              
               <li>
                 <strong>Why It Matters for Students:</strong>
-                <ul className="ml-4">
+                <ul className="ml-2">
                   <li>
                   ○ Analyzing financial data is crucial for making informed decisions beyond
                   just preparing reports.
@@ -230,10 +230,10 @@ Websites like <a
           >Coursera</a>, <strong>Udemy</strong>, and <strong>YouTube</strong> offer a wealth of tutorials to help you
 grasp accounting concepts and software.
             </p>
-            <ul className="ml-8">
+            <ul className="ml-4">
               <li>
                 <strong>Free Resources to Check Out:</strong>
-                <ul className="ml-4">
+                <ul className="ml-2">
                   <li>
                   ○ <strong>Accounting Coach</strong> offers free lessons and quizzes on key accounting
                   topics.
@@ -256,10 +256,10 @@ grasp accounting concepts and software.
             The key to mastering any skill is practice. The more you engage with accounting
             problems and assignments, the more confident you’ll become.
             </p>
-            <ul className="ml-8">
+            <ul className="ml-4">
               <li>
                 <strong>How to Get Consistent Practice:</strong>
-                <ul className="ml-4">
+                <ul className="ml-2">
                   <li>
                   ○ Solve practice problems from your textbook.
                   </li>
@@ -302,10 +302,10 @@ you through complex topics and provide clarity.
 online forums or university groups where you can share ideas, ask questions, and
 discuss the latest trends in accounting.
             </p>
-            <ul className="ml-8">
+            <ul className="ml-4">
               <li>
                 <strong>Communities to Join:</strong>
-                <ul className="ml-4">
+                <ul className="ml-2">
                   <li>
                   ○ Reddit’s <a
             href="https://www.reddit.com/r/Accounting/"

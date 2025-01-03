@@ -21,8 +21,17 @@ import img16 from "@/assets/image/blogImg16.jpg";
 import img17 from "@/assets/image/blogImg17.jpg";
 import img18 from "@/assets/image/blogImg18.png";
 import img19 from "@/assets/image/blogImg19.jpg";
+import img20 from "@/assets/image/blogImg20.jpg";
 
 const blogData = [
+  {
+    tag: "blog-18",
+    slug: "enhance-your-accounting-skills",
+    heading: "Enhance Your Accounting Skills: Learn, Practice, and Excel",
+    date: "January 3, 2025",
+    image: img20,
+    about:"Accounting might appear complicated, but anyone can learn it effectively with the right strategies. Whether you're a university student looking to boost your grades or aspiring to build a career in accounting, improving your skills is crucial. This blog will offer practical tips to enhance your accounting knowledge and highlight how professional assistance can aid your learning journey. Embracing these steps can lead to greater understanding and success in the field.",
+  },
   {
     tag: "blog-17",
     slug: "top-10-benefits-of-hiring-online-essay-writers",

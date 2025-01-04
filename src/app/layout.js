@@ -29,6 +29,32 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-LMDV800CGT');
           `}
         </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Corporation",
+              "name": "Facio Contently Writers",
+              "url": "https://www.contentlywriters.com/",
+              "logo": "https://www.contentlywriters.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcontently-logo.8714d802.png&w=1920&q=75",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91 7727851997",
+                "contactType": "customer service",
+                "contactOption": "TollFree",
+                "areaServed": "IN",
+                "availableLanguage": "en",
+              },
+              "sameAs": [
+                "https://www.facebook.com/people/Contently-Writers/pfbid0hDRwA6TSwFzkZQZeTEMNdcWRW1p4TcLrtgXsidvAdvvKFGYm1LL1tPq5hkXgY5Lnl/",
+                "https://www.instagram.com/contentlywriters/",
+                "https://youtu.be/MIJ1htZSunQ",
+                "https://www.linkedin.com/company/facio-contently-writers/",
+              ],
+            }),
+          }}
+        />
       </head>
       <body className={inter.className}>
         <AuthProvider>

@@ -25,7 +25,7 @@ const ManagementPage = () => {
   return (
     <div className=" text-[#333] font-sans">
     {/* Hero Section with Animation */}
-    <div className="bg-[#1F2A44] py-8 text-center relative overflow-hidden">
+    <div className="bg-[#020035] py-8 text-center relative overflow-hidden">
       <motion.h1
         className="text-white sm:text-[40px] lg:text-[50px] text-[30px] pt-20 mx-auto font-semibold"
         initial={{ opacity: 0, y: -50 }}
@@ -43,11 +43,11 @@ const ManagementPage = () => {
         Get expert assistance in Accounting assignments globally.
       </motion.p>
       <motion.div
-        className="h-[5px] w-[120px] bg-[#000] mx-auto rounded"
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: 1 }}
-        transition={{ delay: 1, duration: 0.5 }}
-      ></motion.div>
+          className="h-[5px] w-[120px] bg-[#A0A0A0] mx-auto rounded"
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+        ></motion.div>
     </div>
     <div className="px-4 sm:px-10 lg:px-[50px]">
 <div className="max-w-[1280px] mx-auto">

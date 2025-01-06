@@ -22,8 +22,17 @@ import img17 from "@/assets/image/blogImg17.jpg";
 import img18 from "@/assets/image/blogImg18.png";
 import img19 from "@/assets/image/blogImg19.jpg";
 import img20 from "@/assets/image/blogImg20.jpg";
+import img21 from "@/assets/image/blogImg21.jpg";
 
 const blogData = [
+  {
+    tag: "blog-19",
+    slug: "what-are-the-14-principles-of-management",
+    heading: "What Are the 14 Principles of Management by Fayol?",
+    date: "January 6, 2024",
+    image: img21,
+    about:"The role of management in any organization is crucial to ensure that resources are usedefficiently to achieve goals. To succeed in any type of business, be it team or projectmanagement, you must know the management principles. In this blog, we’ll explore whatmanagement is, discuss its fundamental principles, highlight its importance, and answerfrequently asked questions about this essential topic. For those seeking assistance inunderstanding these principles, especially for academic tasks, the best assignment helpcan provide valuable guidance.",
+  },
   {
     tag: "blog-18",
     slug: "enhance-your-accounting-skills",

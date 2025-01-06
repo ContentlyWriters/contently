@@ -13,7 +13,7 @@ export default function BlogLayout({ children }) {
     <GuestRoute allowAuthenticated={true}>
       <div>
         <Navbar />
-        <Popup />
+        {/* <Popup /> */}
         <div className="mt-[80px]">{children}</div>
         <Footer />
       </div>

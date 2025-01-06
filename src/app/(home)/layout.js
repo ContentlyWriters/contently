@@ -24,7 +24,7 @@ export default function HomeLayout({ children }) {
         </Head>
 
         <Navbar />
-        <Popup />
+        {/* <Popup /> */}
         <div className="mt-[80px]">{children}</div>
         <Footer />
       </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import img from "@/assets/image/Essential-Minimal-Payment-Icons-removebg-preview copy.png";
 import { Separator } from "@/components/ui/separator";
 import { FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
@@ -107,19 +107,24 @@ const Footer = () => {
             Copyright © 2024 Facio Contently Writers Private Limited. All Rights Reserved.
           </p>
           <div className="flex gap-10">
-            <Link href="mailto:info@contentlywriters.com" className="text-black-400 hover:text-[#8e8e9e]">
+            <Link href="mailto:info@contentlywriters.com"  target="_blank"
+            rel="noopener noreferrer" className="text-black-400 hover:text-[#8e8e9e]">
               <MdOutlineMail />
             </Link>
-            <Link href="https://www.facebook.com/profile.php?id=61568632033503" className="text-black-400 hover:text-[#8e8e9e]">
+            <Link href="https://www.facebook.com/profile.php?id=61568632033503"  target="_blank"
+            rel="noopener noreferrer" className="text-black-400 hover:text-[#8e8e9e]">
               <FaFacebookF />
             </Link>
-            <Link href="https://www.instagram.com/contentlywriters/" className="text-black-400 hover:text-[#8e8e9e]">
+            <Link href="https://www.instagram.com/contentlywriters/"  target="_blank"
+            rel="noopener noreferrer" className="text-black-400 hover:text-[#8e8e9e]">
               <FaInstagram />
             </Link>
-            <Link href="https://twitter.com/ContentlyW" className="text-black-400 hover:text-[#8e8e9e]">
-              <FaXTwitter />
+            <Link href="https://www.youtube.com/@ContentlyWriters"  target="_blank"
+            rel="noopener noreferrer" className="text-black-400 hover:text-[#8e8e9e]">
+             <FaYoutube />
             </Link>
-            <Link href="https://www.linkedin.com/company/facio-contently-writers/" className="text-black-400 hover:text-[#8e8e9e]">
+            <Link href="https://www.linkedin.com/company/facio-contently-writers/"  target="_blank"
+            rel="noopener noreferrer" className="text-black-400 hover:text-[#8e8e9e]">
               <FaLinkedin />
             </Link>
           </div>

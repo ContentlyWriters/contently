@@ -23,7 +23,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/#faq">
-                  <h5>FAQ</h5>
+                  <h5>FAQs</h5>
                 </Link>
               </li>
               <li>

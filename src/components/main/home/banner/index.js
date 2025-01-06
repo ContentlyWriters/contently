@@ -1,7 +1,7 @@
 "use client";
 import { Input } from "@/components/ui/input";
 import React, { useState, useEffect } from "react";
-import Typewriter from "typewriter-effect";
+
 import { AiOutlineTag } from 'react-icons/ai'; 
 import { FiArrowRight } from 'react-icons/fi';
 

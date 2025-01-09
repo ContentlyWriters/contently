@@ -23,13 +23,22 @@ import img18 from "@/assets/image/blogImg18.png";
 import img19 from "@/assets/image/blogImg19.jpg";
 import img20 from "@/assets/image/blogImg20.jpg";
 import img21 from "@/assets/image/blogImg21.jpg";
+import img22 from "@/assets/image/blogImg22.jpg";
 
 const blogData = [
+  {
+    tag: "blog-20",
+    slug: "criminal-law-guide-principles-crimes-defenses-explained",
+    heading: "Criminal Law Guide: Principles, Crimes, and Defenses Explained",
+    date: "January 9, 2025",
+    image: img22,
+    about:"Criminal law is the foundation of any legal system, it governs the rules and penalties associated with crimes. It seeks to maintain safety and public order by defining offenses, prosecuting defenders, and establishing punishments. This blog provides a detailed summary of criminal law, breaking down its crucial elements, principles, and procedures.",
+  },
   {
     tag: "blog-19",
     slug: "what-are-the-14-principles-of-management",
     heading: "What Are the 14 Principles of Management by Fayol?",
-    date: "January 6, 2024",
+    date: "January 6, 2025",
     image: img21,
     about:"The role of management in any organization is crucial to ensure that resources are usedefficiently to achieve goals. To succeed in any type of business, be it team or projectmanagement, you must know the management principles. In this blog, we’ll explore whatmanagement is, discuss its fundamental principles, highlight its importance, and answerfrequently asked questions about this essential topic. For those seeking assistance inunderstanding these principles, especially for academic tasks, the best assignment helpcan provide valuable guidance.",
   },

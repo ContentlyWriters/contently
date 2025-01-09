@@ -76,7 +76,7 @@ where the government prosecutes an accused party for breaking the law.
         ),
       },
       {
-        title1: "1. Legality",
+        title: "1. Legality",
         about: (
           <div>
            <p>Nobody can face legal action for doing something the law doesn&#39;t consider
@@ -85,7 +85,7 @@ where the government prosecutes an accused party for breaking the law.
         ),
       },
       {
-        title1: "2. Presumption of Innocence",
+        title: "2. Presumption of Innocence",
         about: (
           <div>
            <p> Until a person is proven guilty beyond a reasonable
@@ -95,7 +95,7 @@ convictions.</p>
         ),
       },
       {
-        title1: "3. Burden of Proof",
+        title: "3. Burden of Proof",
         about: (
           <div>
            <p>It is the prosecution’s responsibility to establish the accused’s guilt</p>
@@ -103,7 +103,7 @@ convictions.</p>
         ),
       },
       {
-        title1: "4. Mens Rea and Actus Reus",
+        title: "4. Mens Rea and Actus Reus",
         about: (
           <div>
             <ul>
@@ -125,7 +125,7 @@ convictions.</p>
         ),
       },
       {
-        title1: "5. Proportionality",
+        title: "5. Proportionality",
         about: (
           <div>
            <p>Punishments should be proportionate to the severity of the crime.</p>
@@ -133,7 +133,7 @@ convictions.</p>
         ),
       },
       {
-        title1: "Categories of Crimes",
+        title: "Categories of Crimes",
         about: (
           <div>
             <p>
@@ -143,7 +143,7 @@ convictions.</p>
         ),
       },
       {
-        title1: (
+        title: (
           <a  href="https://en.wikipedia.org/wiki/Felony"
           class="text-[#5b6cf2]  underline hover:no-underline"
           target="_blank"
@@ -162,7 +162,7 @@ convictions.</p>
         ),
       },
       {
-        title1: ( <a  href="https://en.wikipedia.org/wiki/Misdemeanor"
+        title: ( <a  href="https://en.wikipedia.org/wiki/Misdemeanor"
           class="text-[#5b6cf2]  underline hover:no-underline"
           target="_blank"
           rel="noopener noreferrer">
@@ -179,7 +179,7 @@ convictions.</p>
         ),
       },
       {
-        title1: (<a  href="https://www.merriam-webster.com/dictionary/infraction#:~:text=An%20infraction%20is%20usually%20the,only%20penalty%20is%20a%20fine"
+        title: (<a  href="https://www.merriam-webster.com/dictionary/infraction#:~:text=An%20infraction%20is%20usually%20the,only%20penalty%20is%20a%20fine"
           class="text-[#5b6cf2]  underline hover:no-underline"
           target="_blank"
           rel="noopener noreferrer">
@@ -197,7 +197,7 @@ convictions.</p>
       },
 
       {
-        title1: "Stages of a Criminal Case",
+        title: "Stages of a Criminal Case",
         about: (
           <div>
             <h4>1. Investigation:</h4>
@@ -246,7 +246,7 @@ convictions.</p>
         ),
       },
       {
-        title1: "Common Types of Crimes",
+        title: "Common Types of Crimes",
         about: (
           <div>
             <h4>1. Crimes Against Persons:</h4>
@@ -282,7 +282,7 @@ convictions.</p>
         ),
       },
       {
-        title1: "Defenses in Criminal Law",
+        title: "Defenses in Criminal Law",
         about: (
           <div>
             <h4>1. Self-Defense:</h4>
@@ -321,7 +321,7 @@ convictions.</p>
         ),
       },
       {
-        title1: "Punishments and Sentencing",
+        title: "Punishments and Sentencing",
         about: (
           <div>
             <p>
@@ -344,7 +344,7 @@ convictions.</p>
         ),
       },
       {
-        title1: "The Role of Criminal Lawyers",
+        title: "The Role of Criminal Lawyers",
         about: (
           <div>
             <p>
@@ -363,7 +363,7 @@ convictions.</p>
       },
       
       {
-        title1: "Conclusion",
+        title: "Conclusion",
         about: (
           <div>
             <p>
@@ -5167,10 +5167,10 @@ export default function BlogPostPage({ params }) {
                   {item.title}
                 </h3>
               )}
-                {item.title3 && (
-                <h3 className="text-md sm:text-lg font-semibold text-gray-800 mb-2">
-                  {item.title3}
-                </h3>
+                {item.title4 && (
+                <h4 className="text-md sm:text-lg font-semibold text-gray-800 mb-2">
+                  {item.title4}
+                </h4>
               )}
               {item.about && (
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed -mb-4">

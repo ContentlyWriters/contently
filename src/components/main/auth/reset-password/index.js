@@ -13,7 +13,7 @@ import { useUserContext } from "@/context/auth";
 import logo from "@/assets/image/contently-logo.png";
 import Image from "next/image";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import { toast } from "react-toastify";
+import { toast } from "sonner";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { axiosInstance } from "@/lib/axios";
 export default function ResetPasswordScreen() {
@@ -90,13 +90,15 @@ export default function ResetPasswordScreen() {
       );
 
       toast.success("Password Reset Success!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
+        position: "top-right", 
+        duration: 3000, 
+        style: {
+          backgroundColor: "#fff", 
+          color: "#000", 
+          borderRadius: "8px", 
+          padding: "10px 20px", 
+          fontSize: "14px", 
+        },
       });
       router.replace("/login");
       setLoading(false);

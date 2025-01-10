@@ -4,6 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { toast, Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -61,6 +62,8 @@ export default function RootLayout({ children }) {
           {children}
           <Script src="https://checkout.razorpay.com/v1/checkout.js" />
         </AuthProvider>
+        
+        <Toaster />
         <ToastContainer />
       </body>
     </html>

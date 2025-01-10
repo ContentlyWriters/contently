@@ -8,7 +8,7 @@ import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
+import { toast, Toaster } from "sonner";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation";
 import { useUserContext } from "@/context/auth";
@@ -79,8 +79,15 @@ export default function SignUpScreen() {
     }
     if (!termsAccepted) {
       toast.error("You must accept the Terms and Conditions and Privacy Policy.", {
-        position: "top-right",
-        autoClose: 5000,
+        position: "top-right",  
+        duration: 3000,  
+        style: {
+          backgroundColor: "#fff",  
+          color: "#000",  
+          borderRadius: "12px", 
+          padding: "8px 16px", 
+          fontSize: "14px",  
+        },
       });
       return;
     }
@@ -110,13 +117,15 @@ export default function SignUpScreen() {
       console.log("Response:", response.data);
 
       toast.success("Signup successful!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-closeOnClick: true,
-pauseOnHover: true,
-draggable: true,
-progress: undefined,
+        position: "top-right",  
+        duration: 3000,  
+        style: {
+          backgroundColor: "#fff",  
+          color: "#000",  
+          borderRadius: "12px", 
+          padding: "8px 16px", 
+          fontSize: "14px",  
+        },
       });
 
       getProfile();
@@ -128,13 +137,15 @@ progress: undefined,
     } catch (err) {
       console.log(err);
       toast.error("Signup failed. Please try again.", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-closeOnClick: true,
-pauseOnHover: true,
-draggable: true,
-progress: undefined,
+        position: "top-right",  
+        duration: 3000,  
+        style: {
+          backgroundColor: "#fff",  
+          color: "#000",  
+          borderRadius: "12px", 
+          padding: "8px 16px", 
+          fontSize: "14px",  
+        },
       });
     }
   };
@@ -149,11 +160,21 @@ progress: undefined,
 
 
 
-  const handleGoogleAuth = async () => {
-    if (!termsAccepted) {
-      toast.error("Please accept Terms & Conditions before logging in!");
-      return;
-    }
+  const handleGoogleAuth = () => {
+     if (!termsAccepted) {
+       toast.error("Please accept Terms & Conditions before logging in!", {
+         position: "top-right",  
+         duration: 3000,  
+         style: {
+           backgroundColor: "#fff",  
+           color: "#000",  
+           borderRadius: "12px", 
+           padding: "8px 16px", 
+           fontSize: "14px",  
+         },
+       });
+       return;
+     }
     try {
       window.location.href =
         "http://www.contentlywriters.com:8088/oauth2/authorization/google";
@@ -297,7 +318,7 @@ progress: undefined,
           </Button>
         </form>
       </div>
-      <ToastContainer />
+      <Toaster />
     </div>
   );
 }

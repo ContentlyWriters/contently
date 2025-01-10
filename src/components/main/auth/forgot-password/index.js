@@ -14,7 +14,7 @@ import logo from "@/assets/image/contently-logo.png";
 import Image from "next/image";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import { toast } from "react-toastify";
+import { toast } from "sonner";
 
 export default function ForGotPasswordScreen() {
   const { getProfile } = useUserContext();
@@ -75,14 +75,17 @@ export default function ForGotPasswordScreen() {
       //     return;
       //   }
 
-      toast.success("Email send success to reset password!", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
+      toast.success("Email sent successfully to reset password!", {
+        
+        position: "top-right", 
+        duration: 3000, 
+        style: {
+          backgroundColor: "#fff", 
+          color: "#000", 
+          borderRadius: "8px", 
+          padding: "10px 20px", 
+          fontSize: "14px", 
+        },
       });
       router.replace("/login");
       setLoading(false);
@@ -92,6 +95,17 @@ export default function ForGotPasswordScreen() {
       error.email = "Something went wrong";
       setErrors(error);
       setLoading(false);
+      toast.error("An error occurred. Please try again.", {
+        position: "top-right", 
+        duration: 3000, 
+        style: {
+          backgroundColor: "#fff", 
+          color: "#000", 
+          borderRadius: "8px",
+          padding: "10px 20px", 
+          fontSize: "14px", 
+        },
+      });
     }
   };
 

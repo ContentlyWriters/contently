@@ -17,6 +17,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast, Toaster } from "sonner";
 import { axiosInstance } from "@/lib/axios";
 
+
 export default function LoginScreen() {
   const { getProfile } = useUserContext();
   const router = useRouter();
@@ -92,8 +93,15 @@ export default function LoginScreen() {
       }
 
       toast.success("Login successful!", {
-        position: "top-right",
-        autoClose: 5000,
+        position: "top-right", 
+        duration: 3000, 
+        style: {
+          backgroundColor: "#fff", 
+          color: "#000", 
+          borderRadius: "8px", 
+          padding: "10px 20px", 
+          fontSize: "14px", 
+        },
       });
 
       getProfile();
@@ -105,6 +113,19 @@ export default function LoginScreen() {
     } catch (err) {
       console.error(err);
       setErrors({ email: "User does not exist" });
+
+      toast.error("User does not exist", {
+        position: "top-right", 
+        duration: 3000, 
+        style: {
+          backgroundColor: "#fff", 
+          color: "#000", 
+          borderRadius: "8px", 
+          padding: "10px 20px", 
+          fontSize: "14px", 
+        },
+      });
+
     } finally {
       setLoading(false);
     }
@@ -112,7 +133,17 @@ export default function LoginScreen() {
 
   const handleGoogleAuth = () => {
     if (!termsAccepted) {
-      toast.error("Please accept Terms & Conditions before logging in!");
+      toast.error("Please accept Terms & Conditions before logging in!", {
+        position: "top-right",  
+        duration: 3000,  
+        style: {
+          backgroundColor: "#fff",  
+          color: "#000",  
+          borderRadius: "12px", 
+          padding: "8px 16px", 
+          fontSize: "14px",  
+        },
+      });
       return;
     }
     window.location.href =
@@ -122,7 +153,6 @@ export default function LoginScreen() {
   return (
     
     <div className="flex justify-center items-center h-screen">
-            <Toaster />
       <div className="border-2 rounded-lg sm:w-[400px] p-8">
         <h1 className="text-3xl font-bold text-center pb-10">
           <Link href="/">
@@ -216,6 +246,7 @@ Forgot Password
           </Button>
         </form>
       </div>
+      <Toaster />
     </div>
   );
 }

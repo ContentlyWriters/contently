@@ -14,7 +14,7 @@ import logo from "@/assets/image/contently-logo.png";
 import Image from "next/image";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import { toast } from "react-toastify";
+import { toast, Toaster } from "sonner";
 import { axiosInstance } from "@/lib/axios";
 
 export default function LoginScreen() {
@@ -120,7 +120,9 @@ export default function LoginScreen() {
   };
 
   return (
+    
     <div className="flex justify-center items-center h-screen">
+            <Toaster />
       <div className="border-2 rounded-lg sm:w-[400px] p-8">
         <h1 className="text-3xl font-bold text-center pb-10">
           <Link href="/">

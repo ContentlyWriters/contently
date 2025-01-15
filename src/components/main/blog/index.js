@@ -24,8 +24,17 @@ import img19 from "@/assets/image/blogImg19.jpg";
 import img20 from "@/assets/image/blogImg20.jpg";
 import img21 from "@/assets/image/blogImg21.jpg";
 import img22 from "@/assets/image/blogImg22.jpg";
+import img23 from "@/assets/image/blogImg23.jpg";
 
 const blogData = [
+  {
+    tag: "blog-21",
+    slug: "commercial-law-assignment-help",
+    heading: "Commercial Law Assignment Help: Simplify Your Legal Studies",
+    date: "January 15, 2025",
+    image: img23,
+    about:"Commercial law, often called business law, governs the conduct, rights, and relations ofbusinesses and individuals engaged in trade, sales, and commerce. This area of law dealswith rights. Its complex and dynamic field of law is essential for ensuring fair trade practicesand protecting the interests or rights of all parties involved in the business world.Commercial law assignments are often tough for students studying law at the universitylevel. To tackle complex case studies, legal frameworks, and real-life cases, studentsstudying commercial law often seek help with their assignments.",
+  },
   {
     tag: "blog-20",
     slug: "criminal-law-guide-principles-crimes-defenses-explained",

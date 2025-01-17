@@ -25,8 +25,17 @@ import img20 from "@/assets/image/blogImg20.jpg";
 import img21 from "@/assets/image/blogImg21.jpg";
 import img22 from "@/assets/image/blogImg22.jpg";
 import img23 from "@/assets/image/blogImg23.jpg";
+import img24 from "@/assets/image/blogImg24.jpg";
 
 const blogData = [
+  {
+    tag: "blog-22",
+    slug: "constitutional-law-assignment-help-expert-legal-guidance",
+    heading: "Constitutional Law Assignment Help | Expert Legal Guidance",
+    date: "January 17, 2025",
+    image: img24,
+    about:"Constitutional law is a crucial branch of law. Its main purpose is to focus on the foundational principles that govern a country’s legal framework. This area of law addresses the allocation of powers between various branches of government, ensuring the protection of individual freedoms and rights. Students often seek constitutional law assignment help to understand complex legal principles, as constitutional law forms the backbone of the legal system.",
+  },
   {
     tag: "blog-21",
     slug: "commercial-law-assignment-help",

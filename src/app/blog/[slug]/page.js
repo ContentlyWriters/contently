@@ -35,13 +35,13 @@ const blogData = [
     author: "Charchit Sharma",
     image: img24,
     metaTitle: "Constitutional Law Assignment Help | Expert Legal Guidance",
-    metaDescription: "Get expert constitutional law assignment help for complex topics like federalism, judicial review, and constitutional amendments. Improve your grades today!",
+    metaDescription: "Get expert constitutional law assignment help with plagiarism-free solutions, in-depth legal research, and timely delivery. Perfect for law students worldwide.",
     keywords: [
       "Constitutional Law Assignment Help",
       "Legal Assignment Assistance",
       "Constitutional Law",
     ],
-    description: "Get expert constitutional law assignment help for complex topics like federalism, judicial review, and constitutional amendments. Improve your grades today!",
+    description: "Get expert constitutional law assignment help with plagiarism-free solutions, in-depth legal research, and timely delivery. Perfect for law students worldwide.",
     post: [
       {
         about: (

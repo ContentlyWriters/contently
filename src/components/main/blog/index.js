@@ -26,8 +26,17 @@ import img21 from "@/assets/image/blogImg21.jpg";
 import img22 from "@/assets/image/blogImg22.jpg";
 import img23 from "@/assets/image/blogImg23.jpg";
 import img24 from "@/assets/image/blogImg24.jpg";
+import img25 from "@/assets/image/blogImg25.jpg";
 
 const blogData = [
+  {
+    tag: "blog-23",
+    slug: "master-business-management-assignments",
+    heading: "Master Business Management Assignments with Ease",
+    date: "January 20, 2025",
+    image: img25,
+    about:"Business management assignments are common among students seeking degrees in business or similar professions. These critical assignments assess your ability to analyze business situations, make educated judgments, and provide realistic solutions. Excelling in these assignments not only improves your academic achievement but also prepares you for real-world issues. This blog delves into tips, techniques, and insights to help you ace your business management tasks with expert business management assignment help.",
+  },
   {
     tag: "blog-22",
     slug: "constitutional-law-assignment-help-expert-legal-guidance",

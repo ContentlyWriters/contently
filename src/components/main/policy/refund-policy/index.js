@@ -12,9 +12,9 @@ export default function RefundPolicyUI() {
           {data.item.map((item, index) => (
             <div key={index} className="flex flex-col gap-2">
               <h3 className="font-semibold text-lg">
-                {index + 1}
-                {"."} {item.title}
+               {item.title}
               </h3>
+              
               <p className="opacity-70 ">{item.description}</p>
               {item.other && (
                 <div className="grid gap-4 pl-4">
@@ -54,7 +54,7 @@ const data = {
         "If you need to cancel an order, please contact our support team immediately via WhatsApp or email. To confirm the cancellation, kindly send us a written request. We recommend initiating the cancellation process as soon as possible.",
       other: [
         {
-          title: "Refund Eligibility:",
+          title: " 1. Refund Eligibility:",
           description:
           "You are eligible for a full refund if you cancel your order before a writer is assigned. Once a writer has been assigned, cancellations may be restricted, and refunds may be partial or not possible, depending on the level of completion. The following timeframes determine eligibility for a refund:",
           value: [

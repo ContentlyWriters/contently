@@ -18,7 +18,7 @@ function TermsAndCondition() {
         </h3>
         <div className="grid gap-6">
           <div className="flex flex-col gap-2">
-            <h3 className="font-semibold text-[25px]">1. Elucidation:-</h3>
+            <h3 className="font-semibold text-[25px]">Elucidation:-</h3>
             <div>
               <div className="grid gap-4">
                 <p className="">
@@ -85,7 +85,7 @@ function TermsAndCondition() {
           </div>
           <div className="flex flex-col gap-2">
             <h2 className="font-semibold text-[25px]">
-              2. Order Placing and Registration:-
+              Order Placing and Registration:-
             </h2>
             <div className="grid gap-3">
               <p>
@@ -103,7 +103,7 @@ function TermsAndCondition() {
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="font-semibold text-[25px]">3. Order Payment:-</h2>
+            <h2 className="font-semibold text-[25px]">Order Payment:-</h2>
             <div className="grid gap-3">
               <p>
               By placing an order, you consent to purchasing the service from the Company. The Company begins processing your order only after
@@ -143,7 +143,7 @@ function TermsAndCondition() {
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="font-semibold text-[25px]">4. Order Process:-</h3>
+            <h3 className="font-semibold text-[25px]">Order Process:-</h3>
             <div className="grid gap-3">
               <p>
                 <span className="font-semibold">Order validation.</span> We reserve the right to review the order details after the final payment to ensure that the assignment conditions, as specified by the client, have been successfully met. If a mismatch occurs,
@@ -200,7 +200,7 @@ function TermsAndCondition() {
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="font-semibold text-[25px]">5. Order Delivery:-</h3>
+            <h3 className="font-semibold text-[25px]">Order Delivery:-</h3>
             <div className="grid gap-3">
               <p>
               The Company is responsible for delivering the service and meeting the deadline specified in the order.
@@ -234,7 +234,7 @@ function TermsAndCondition() {
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="font-semibold text-[25px]">6. Order Revision:-</h3>
+            <h3 className="font-semibold text-[25px]">Order Revision:-</h3>
             <div className="grid gap-3">
               <p>Please read the Revision Policy.</p>
               <p>
@@ -252,7 +252,7 @@ function TermsAndCondition() {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold text-[25px]">
-              7. The Use of Products:-
+              The Use of Products:-
             </h3>
             <div className="grid gap-3">
               <p>
@@ -274,7 +274,7 @@ function TermsAndCondition() {
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="font-semibold text-[25px]">8. Refund Policy:-</h3>
+            <h3 className="font-semibold text-[25px]">Refund Policy:-</h3>
             <div className="grid gap-3">
               <p>
               We are responsible for delivering the product on time and in accordance with the Client&#39;s specifications as detailed in the order. Should the Client breach any of their commitments, they are entitled to a partial or full refund according to our Money Back Guarantee Policy.
@@ -284,7 +284,7 @@ function TermsAndCondition() {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold text-[25px]">
-              9. Company’s Responsibilities:-
+              Company’s Responsibilities:-
             </h3>
             <div className="grid gap-3">
               <p>
@@ -308,7 +308,7 @@ function TermsAndCondition() {
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="font-semibold text-[25px]">10. Acknowledge:-</h3>
+            <h3 className="font-semibold text-[25px]">Acknowledge:-</h3>
             <div className="grid gap-3">
               <p>
               By placing an order and/or paying for a product, you acknowledge and agree that: 
@@ -350,7 +350,7 @@ function TermsAndCondition() {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold text-[25px]">
-              11. Security & Privacy:-
+              Security & Privacy:-
             </h3>
             <div className="grid gap-3">
               <p>
@@ -382,7 +382,7 @@ function TermsAndCondition() {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold text-[25px]">
-              12. Use of the Website; termination and suspension of use:-
+              Use of the Website; termination and suspension of use:-
             </h3>
             <div className="grid gap-3">
               <p>
@@ -391,20 +391,20 @@ function TermsAndCondition() {
                 Website for unauthorized purposes. Specifically, you may not use
                 the Website for any of the following purposes:
               </p>
-              <p>
+              <p className="ml-4">
               a. Disseminating material that is unlawful, harassing, defamatory, abusive, threatening, harmful, obscene, or otherwise objectionable, or violating any laws.
               </p>
-              <p>
+              <p className="ml-4">
                 b. Transmitting material that encourages criminal behavior or
                 violates any applicable laws, regulations, or codes of practice.</p>
-                <p>
+                <p className="ml-4">
                c. Interfering with other people&#39;s use of the Website.
               </p>
-              <p>
+              <p className="ml-4">
              d. Making, transmitting, or storing electronic copies of materials protected by copyright is prohibited.
               </p>
               
-              <p>
+              <p className="ml-4">
               If you violate any of these Terms, you will be responsible for all losses and costs resulting from such violations. 
 
               </p>
@@ -418,24 +418,24 @@ function TermsAndCondition() {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold text-[25px]">
-              13. Intellectual Property Rights(“IPRs”):-
+              Intellectual Property Rights(“IPRs”):-
             </h3>
             <div className="grid gap-3">
               <div className="grid gap-2">
                 <p>1. Intellectual Property Rights in the Products</p>
-                <p>a. Our writers drafted the products given to you.</p>
-                <p>
+                <p className="ml-4">a. Our writers drafted the products given to you.</p>
+                <p className="ml-4">
                 b. We and/or our affiliates and partners retain full copyright for any products or content provided to you. 
                 </p>
-                <p>
+                <p className="ml-4">
                 c. Upon payment, we grant you a non-exclusive right to use the products for personal, non-commercial purposes only.
                 </p>
-                <p>
+                <p className="ml-4">
                  d. You are not permitted to distribute, publish, transmit, edit,
                   display, or create derivative works from the Products and/or
                   materials of this Website without our prior written approval.
                 </p>
-                <p>
+                <p className="ml-4">
                 e. You are responsible for any losses resulting from unauthorized use of the products and/or material available on this website.
                 </p>
               </div>
@@ -452,14 +452,14 @@ function TermsAndCondition() {
               <br></br>
               <div className="grid gap-2">
                 <p>3. Intellectual Property Rights on the Website</p>
-                <p>
+                <p className="ml-4">
                a. We own or hold licenses for all intellectual property rights (IPRs) associated with the website
                 </p>
-                <p>
+                <p className="ml-4">
                 b.  The Website and its contents do not convey any intellectual
                   property rights to visitors.
                 </p>
-                <p>
+                <p className="ml-4">
                c.   You may not copy, transmit, or download any of the Website&#39;s
                   content unless expressly permitted by these Terms or otherwise
                   agreed upon with us.
@@ -478,7 +478,7 @@ function TermsAndCondition() {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold text-[25px]">
-              14. Disclaimer and Limitation of liability:-
+              Disclaimer and Limitation of liability:-
             </h3>
             <div className="grid gap-3">
               <p>
@@ -503,22 +503,22 @@ function TermsAndCondition() {
                 liable for any issues related to the Products and/or Services,
                 including but not limited to:
               </p>
-              <p>
+              <p className="ml-4">
                a. phones, electronics, hardware, software, networks, the Internet, email, or computers malfunctions, failures or defficulties of any kind;
                </p>
-               <p>b. failed, incomplete, garbled, or delayed computer and/or email transmissions;
+               <p className="ml-4">b. failed, incomplete, garbled, or delayed computer and/or email transmissions;
 
               </p>
-              <p>
+              <p className="ml-4">
                c. any condition caused by events beyond the control of the company
                 that might cause the Product and/or Services to be (as
                 applicable) delayed, disrupted, or corrupted;
               </p>
-              <p>
+              <p className="ml-4">
                d. any injuries, losses or damages of any kind arising in
                 connection with, or as a result of, utilizing the Services; or </p>
                 
-                <p>
+                <p className="ml-4">
                
                 e. any printing or typographical errors in any Product(s).We will not be liable to you or any other person for any issues arising from or related to your use of the Website, including your inability to use the Website, or for any other reason, including but not limited to: matters caused by events outside our reasonable control, or any unforeseeable losses or damages.</p>
                 <p> Nothing in these Terms is intended to reduce
@@ -531,7 +531,7 @@ function TermsAndCondition() {
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="font-semibold text-[25px]">
-              15. Governing Law and Amendments:-
+              Governing Law and Amendments:-
             </h3>
             <div className="grid gap-3">
               <p>

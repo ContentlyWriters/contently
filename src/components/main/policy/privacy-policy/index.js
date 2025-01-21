@@ -31,8 +31,8 @@ export default function PrivacyPolicyUI() {
                 <h3 className="font-semibold text-xl">{item.heading}</h3>
               )}
               <h3 className="font-semibold text-lg">
-                {index + 1}
-                {"."} {item.title}
+              
+                {item.title}
               </h3>
               {item.value && (
                 <ul key={index} className="grid gap-1  opacity-70 ">
@@ -98,7 +98,7 @@ const data = {
      
       subItems: [
         {
-          title: "Personal Information Provided by the User",
+          title: "1. Personal Information Provided by the User",
           value: [ "We collect personal information that you, as a user, provide when you register with us to use our services, inquire about our products or services, attend events related to our offerings, or otherwise get in touch with us. The personal information you provide may include the following:",
             "- First and last name.",
             "- User's email address.",
@@ -110,13 +110,13 @@ const data = {
         
         {
 
-           title: "Files",
+           title: "2. Files",
           value: [
             "We may collect and retain files that you submit, download, or access through the Website. Please do not share any files with us that you are not entitled to use. Please do not post or share with us files containing your personal information or the personal information of third parties without our authorization. We may not guarantee the security of such personal information.",
           ],
         },
         {
-          title: "Social Network Login Data",
+          title: "3. Social Network Login Data",
           value: [
             "We offer the option to register with us using your existing social network accounts, such as Google and other platforms. We will obtain your profile information from the social media provider, regardless of the platform you use. The information we obtain from social media providers differs depending on the site. Still, it often includes your name, email address, and any other information you have decided to share on the specific social networking platform. We will use the information you provide for the purposes mentioned in our privacy policy or for the applicable services you have requested. Please note that we have no control over, or responsibility for, any additional use of your personal information by third-party social media providers. We urge that all of our users study their social media providers' privacy policies to better understand how their information is collected, used, and shared online, as well as how to establish privacy choices on various sites and applications.",
             "Please ensure that all information provided during registration is true, complete, and accurate. You must notify us promptly of any changes or modifications to your personal information.",
@@ -193,19 +193,19 @@ const data = {
     
        subItems: [
       {
-        title: "Access to your personal data via password",
+        title: "1. Access to your personal data via password",
         value: [
           "Where we have provided you (or you have chosen) a password that allows you to access particular portions of our website, you are responsible for keeping it confidential. We ask that you do not share your password with anyone.",
         ],
       },
       {
-        title: "Transmission and storage of your personal data",
+        title: "2. Transmission and storage of your personal data",
         value: [
           "Unfortunately, data transfer over the internet is not entirely secure. We cannot guarantee the security of your data while it is being transported and kept; nevertheless, we will use best practices to ensure that your data is encrypted to the GDPR standards to secure your personal information.",
         ],
       },
       {
-        title: "How Long Will We Keep Your Personal Data?",
+        title: "3. How Long Will We Keep Your Personal Data?",
         value: [
           "We will not keep your Personal Information for longer than necessary. We will keep your personal information:",
           "• As long as necessary by law.",
@@ -217,19 +217,19 @@ const data = {
     ],
     subItems: [
       {
-        title: "Access to your personal data via password",
+        title: "1. Access to your personal data via password",
         value: [
           "Where we have provided you (or you have chosen) a password that allows you to access particular portions of our website, you are responsible for keeping it confidential. We ask that you do not share your password with anyone.",
         ],
       },
       {
-        title: "Transmission and storage of your personal data",
+        title: "2. Transmission and storage of your personal data",
         value: [
           "Unfortunately, data transfer over the internet is not entirely secure. We cannot guarantee the security of your data while it is being transported and kept; nevertheless, we will use best practices to ensure that your data is encrypted to the GDPR standards to secure your personal information.",
         ],
       },
       {
-        title: "How Long Will We Keep Your Personal Data?",
+        title: "3. How Long Will We Keep Your Personal Data?",
         value: [
           "We will not keep your Personal Information for longer than necessary. We will keep your personal information:",
           "• As long as necessary by law.",
@@ -242,34 +242,68 @@ const data = {
     },
    
   
-{
-  title: "What Are Your Rights?",
-  value: [
-    "The following are your legal rights, and what we do to defend them:",
-    "1. The right to be informed: We are releasing this Privacy Policy to keep you informed about what we do with your personal information. We strive to be transparent about how we use your information. We will also answer all of your queries about this Policy. Please submit them to info@contentlywriters.com.",
-    "",
-    "",
-    "2. The Right to Access: You have the right to view the personal data we hold about you. To request access to your information, please contact our Support Team at info@contentlywriters.com.",
-    "",
-    "",
-    "3. The Right to Rectification: If any of the information we have about you is incorrect or incomplete, you have the right to request its correction. If the data has been shared with third parties, either with your permission or for legal reasons, we will also request that they make the necessary corrections.",
-    "",
-    "",
-    "4. The right to erasure: This is also known as 'the right to be forgotten'. If you wish us to erase all of your personal data and we have no legal justification to continue processing and holding it, please contact our Support Team at info@contentlywriters.com.",
-    "",
-    "",
-    "5. The right to restrict processing: You have the right to ask us to limit how we use your information. This means that we can only store the data and not process it. We retain only the minimum amount of data necessary to ensure we can fulfill your request in the future. If you wish to restrict the processing of your data, please contact our Support Team at info@contentlywriters.com.",
-    "",
-    "",
-    "6. The right to data portability: We must allow you to get and reuse your personal data for your own purposes across services in a safe and secure manner, without impacting the usability of your data. If you would like to know how to transfer your data to another entity, please contact our Data Protection Officer at info@contentlywriters.com. This right only applies to the personal information you have submitted to us as the Data Controller. We must keep the data with your consent or for the purpose of performing a contract.",
-    "",
-    "",
-    "7. The Right to Object: You have the right to object to the processing of your data for legitimate interests, the exercise of official authority, or direct marketing purposes (including data aggregation), and purposeless statistics. If you want to object, please contact our support team at info@contentlywriters.com.",
-    "",
-    "",
-    "8. The Right to Withdraw Consent: If you have previously consented to the processing of your data but later decide to withdraw your permission, you have the right to do so at any time. We will then cease processing your data. To withdraw your consent, please contact our support team at info@contentlywriters.com.",
-  ],
-},
+    {
+      title: "What Are Your Rights?",
+      value: [
+        <p>
+          <strong>1. The right to be informed:</strong> We are releasing this
+          Privacy Policy to keep you informed about what we do with your personal
+          information. We strive to be transparent about how we use your
+          information. We will also answer all of your queries about this Policy.
+          Please submit them to info@contentlywriters.com.
+        </p>,
+        <p>
+          <strong>2. The Right to Access:</strong> You have the right to view the
+          personal data we hold about you. To request access to your information,
+          please contact our Support Team at info@contentlywriters.com.
+        </p>,
+        <p>
+          <strong>3. The Right to Rectification:</strong> If any of the information
+          we have about you is incorrect or incomplete, you have the right to
+          request its correction. If the data has been shared with third parties,
+          either with your permission or for legal reasons, we will also request
+          that they make the necessary corrections.
+        </p>,
+        <p>
+          <strong>4. The right to erasure:</strong> This is also known as "the right
+          to be forgotten". If you wish us to erase all of your personal data and we
+          have no legal justification to continue processing and holding it, please
+          contact our Support Team at info@contentlywriters.com.
+        </p>,
+        <p>
+          <strong>5. The right to restrict processing:</strong> You have the right
+          to ask us to limit how we use your information. This means that we can
+          only store the data and not process it. We retain only the minimum amount
+          of data necessary to ensure we can fulfill your request in the future. If
+          you wish to restrict the processing of your data, please contact our
+          Support Team at info@contentlywriters.com.
+        </p>,
+        <p> 
+          <strong>6. The right to data portability:</strong> We must allow you to
+          get and reuse your personal data for your own purposes across services in
+          a safe and secure manner, without impacting the usability of your data.
+          If you would like to know how to transfer your data to another entity,
+          please contact our Data Protection Officer at info@contentlywriters.com.
+          This right only applies to the personal information you have submitted to
+          us as the Data Controller. We must keep the data with your consent or for
+          the purpose of performing a contract.
+        </p>,
+        <p>
+          <strong>7. The Right to Object:</strong> You have the right to object to
+          the processing of your data for legitimate interests, the exercise of
+          official authority, or direct marketing purposes (including data
+          aggregation), and purposeless statistics. If you want to object, please
+          contact our support team at info@contentlywriters.com.
+        </p>,
+        <p>
+          <strong>8. The Right to Withdraw Consent:</strong> If you have previously
+          consented to the processing of your data but later decide to withdraw your
+          permission, you have the right to do so at any time. We will then cease
+          processing your data. To withdraw your consent, please contact our
+          support team at info@contentlywriters.com.
+        </p>,
+      ],
+    },
 {
   title: "The Laws and Regulations",
   value: [

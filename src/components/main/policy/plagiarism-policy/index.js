@@ -12,8 +12,7 @@ export default function PlagiarismPolicyUI() {
           {data.item.map((item, index) => (
             <div key={index} className="flex flex-col gap-2">
               <h3 className="font-semibold text-lg">
-                {index + 1}
-                {"."} {item.title}
+                {item.title}
               </h3>
               <p className="opacity-70">{item.description}</p>
               {item.other && (

@@ -124,7 +124,7 @@ const Popup = () => {
       {couponPopup && !localStorage.getItem("thanksPopupShown") && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
         <div className="bg-[#ffffff] border-2 border-black p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
-          <h3 className="text-3xl font-extrabold text-[#5b6cf2]">Thanks for Joining! 🎆</h3>
+          <h3 className="text-3xl font-extrabold text-[#5b6cf2]">Thanks for Joining!</h3>
           <p className="text-black mt-2 font-medium">Your coupon code is:</p>
           <div
             className="bg-black  text-white text-xl font-bold py-2 px-4 rounded-md mt-4 cursor-pointer hover:border-b-4 hover:border-[#fff] border-b-4 border-[#5b6cf2] shadow-lg transform transition-transform"

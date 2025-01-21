@@ -245,32 +245,32 @@ const data = {
     {
       title: "What Are Your Rights?",
       value: [
-        <p>
+        <p key="right-1">
           <strong>1. The right to be informed:</strong> We are releasing this
           Privacy Policy to keep you informed about what we do with your personal
           information. We strive to be transparent about how we use your
           information. We will also answer all of your queries about this Policy.
           Please submit them to info@contentlywriters.com.
         </p>,
-        <p>
+        <p key="right-2">
           <strong>2. The Right to Access:</strong> You have the right to view the
           personal data we hold about you. To request access to your information,
           please contact our Support Team at info@contentlywriters.com.
         </p>,
-        <p>
+        <p key="right-3">
           <strong>3. The Right to Rectification:</strong> If any of the information
           we have about you is incorrect or incomplete, you have the right to
           request its correction. If the data has been shared with third parties,
           either with your permission or for legal reasons, we will also request
           that they make the necessary corrections.
         </p>,
-        <p>
-          <strong>4. The right to erasure:</strong> This is also known as "the right
-          to be forgotten". If you wish us to erase all of your personal data and we
+        <p key="right-4">
+          <strong>4. The right to erasure:</strong> This is also known as &#34;the right
+          to be forgotten&#34;. If you wish us to erase all of your personal data and we
           have no legal justification to continue processing and holding it, please
           contact our Support Team at info@contentlywriters.com.
         </p>,
-        <p>
+        <p key="right-5">
           <strong>5. The right to restrict processing:</strong> You have the right
           to ask us to limit how we use your information. This means that we can
           only store the data and not process it. We retain only the minimum amount
@@ -278,7 +278,7 @@ const data = {
           you wish to restrict the processing of your data, please contact our
           Support Team at info@contentlywriters.com.
         </p>,
-        <p> 
+        <p key="right-6"> 
           <strong>6. The right to data portability:</strong> We must allow you to
           get and reuse your personal data for your own purposes across services in
           a safe and secure manner, without impacting the usability of your data.
@@ -288,14 +288,14 @@ const data = {
           us as the Data Controller. We must keep the data with your consent or for
           the purpose of performing a contract.
         </p>,
-        <p>
+        <p key="right-7">
           <strong>7. The Right to Object:</strong> You have the right to object to
           the processing of your data for legitimate interests, the exercise of
           official authority, or direct marketing purposes (including data
           aggregation), and purposeless statistics. If you want to object, please
           contact our support team at info@contentlywriters.com.
         </p>,
-        <p>
+        <p key="right-8">
           <strong>8. The Right to Withdraw Consent:</strong> If you have previously
           consented to the processing of your data but later decide to withdraw your
           permission, you have the right to do so at any time. We will then cease
@@ -304,6 +304,7 @@ const data = {
         </p>,
       ],
     },
+    
 {
   title: "The Laws and Regulations",
   value: [

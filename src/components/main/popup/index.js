@@ -67,7 +67,7 @@ const Popup = () => {
     <>
   {showPopup && !localStorage.getItem("thanksPopupShown") && (
   <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
-    <div className="relative bg-[#ffffff] shadow-lg rounded-lg rounded-l-full  flex flex-col lg:flex-row justify-center items-center w-[95%] max-w-[850px] h-auto lg:h-[356px]">
+    <div className="relative bg-[#ffffff] shadow-lg rounded-lg lg:rounded-l-full  md:lg:rounded-l-full  flex flex-col lg:flex-row justify-center items-center w-[95%] max-w-[850px] h-auto lg:h-[356px]">
       {/* Close Button */}
       <button
         className="absolute top-3 right-3 text-blue-600 hover:text-blue-800 text-[16px] sm:text-[20px] bg-blue-100 hover:bg-blue-300 rounded-full w-6 h-6 flex items-center justify-center shadow-md transition-transform focus:outline-none"
@@ -77,7 +77,7 @@ const Popup = () => {
       </button>
 
       {/* Image Section */}
-      <div className="w-[200px] h-[200px] lg:w-[340px] lg:h-[340px] -ml-10 overflow-hidden rounded-full flex items-center justify-center border-1 border-blue-300">
+      <div className="w-[150px] h-[150px] mt-4 lg:mt-0 md:mt-0 lg:w-[340px] lg:h-[340px]  lg:-ml-10 md:lg:-ml-10 overflow-hidden rounded-full flex items-center justify-center border-1 border-blue-300">
         <Image
           src={image5} // Replace with the new image with no background
           alt="New Year Image"

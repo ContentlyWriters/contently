@@ -27,8 +27,17 @@ import img22 from "@/assets/image/blogImg22.jpg";
 import img23 from "@/assets/image/blogImg23.jpg";
 import img24 from "@/assets/image/blogImg24.jpg";
 import img25 from "@/assets/image/blogImg25.jpg";
+import img26 from "@/assets/image/blogImg26.jpg";
 
 const blogData = [
+  {
+    tag: "blog-24",
+    slug: "expert-python-programming-assignment-help",
+    heading: "Expert Python Programming Assignment Help for Students",
+    date: "January 23, 2025",
+    image: img26,
+    about:"In the rapidly advancing world of technology, Python programming has become a cornerstone skill for developers, data scientists, and software engineers. Renowned for its simplicity and versatility, Python is a reliable language for everything from web development to artificial intelligence. However, excelling in Python requires effort, and tackling intricate assignments can often feel overwhelming. That’s where professional Python programming experts can become a game-changer.",
+  },
   {
     tag: "blog-23",
     slug: "master-business-management-assignments",

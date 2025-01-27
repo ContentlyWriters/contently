@@ -28,8 +28,17 @@ import img23 from "@/assets/image/blogImg23.jpg";
 import img24 from "@/assets/image/blogImg24.jpg";
 import img25 from "@/assets/image/blogImg25.jpg";
 import img26 from "@/assets/image/blogImg26.jpg";
+import img27 from "@/assets/image/blogImg27.jpg";
 
 const blogData = [
+  {
+    tag: "blog-25",
+    slug: "it-security-assignments-help",
+    heading: "IT Security Assignments Help: Challenges & Best Practices",
+    date: "January 27, 2025",
+    image: img27,
+    about:"In today’s digital era, IT security is critical, playing a pivotal role in safeguarding sensitive information from threats like hacking, phishing, and malware. For students pursuing degrees in information technology, tackling IT security assignments is both necessary and challenging. These assignments not only test their theoretical understanding but also their practical skills in real-world problem-solving.",
+  },
   {
     tag: "blog-24",
     slug: "expert-python-programming-assignment-help",

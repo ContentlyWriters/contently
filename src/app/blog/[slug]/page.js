@@ -53,7 +53,7 @@ const blogData = [
             In today’s digital era, IT security is critical, playing a pivotal role in safeguarding sensitive information from threats like hacking, phishing, and malware. For students pursuing degrees in information technology, tackling IT security assignments is both necessary and challenging. These assignments not only test their theoretical understanding but also their practical skills in real-world problem-solving.
             </p>
             <p className="mt-4">
-            This blog explores students' common challenges when dealing with IT security assignments and shares actionable best practices for achieving success. Additionally, we’ll discuss how students can seek IT security assignments help when they need extra support.
+            This blog explores students&#39; common challenges when dealing with IT security assignments and shares actionable best practices for achieving success. Additionally, we&#39;ll discuss how students can seek IT security assignments help when they need extra support.
             </p>
           </div>
         ),

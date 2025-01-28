@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import React from "react";
 import logo from "@/assets/image/contently-logo.png";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 
@@ -77,13 +77,13 @@ function ContactUs() {
                   <FaInstagram size={24} />
                 </a>
                 <a
-                  href="https://x.com/ContentlyW"
+                  href="https://www.youtube.com/@ContentlyWriters"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-black hover:scale-110 transition"
-                  aria-label="X (Twitter)"
+                  className="text-red-600 hover:scale-110 transition"
+                  aria-label="YouTube"
                 >
-                  <FaSquareXTwitter size={24} />
+                  <FaYoutube size={24} />
                 </a>
                
           

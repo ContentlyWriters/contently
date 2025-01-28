@@ -21,4 +21,4 @@ Allow: /about
 Disallow: /admin/
 
 # Sitemap location for better indexing
-Sitemap: https://www.contentlywriters.com/sitemap
+Sitemap: https://www.contentlywriters.com/sitemap.xml

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import logo from "@/assets/image/contently-logo.png";
 import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+
 
 
 

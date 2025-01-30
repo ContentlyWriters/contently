@@ -29,8 +29,17 @@ import img24 from "@/assets/image/blogImg24.jpg";
 import img25 from "@/assets/image/blogImg25.jpg";
 import img26 from "@/assets/image/blogImg26.jpg";
 import img27 from "@/assets/image/blogImg27.jpg";
+import img28 from "@/assets/image/blogImg28.jpg";
 
 const blogData = [
+  {
+    tag: "blog-26",
+    slug: "c-programming-assignments-help",
+    heading: "C Programming Assignment Help: Expert Solutions for You",
+    date: "January 30, 2025",
+    image: img28,
+    about:"C programming is one of the most essential and widely used languages in the field of computer science. Whether you’re a beginner stepping into coding or an experienced programmer aiming to refine your skills, mastering C is crucial. However, many students struggle with C programming assignments due to their complex syntax, memory management, and logical problem-solving demands. That’s where C programming assignment helps services prove valuable, offering expert guidance to simplify learning.",
+  },
   {
     tag: "blog-25",
     slug: "it-security-assignments-help",

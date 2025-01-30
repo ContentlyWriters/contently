@@ -279,7 +279,7 @@ export default function Blog() {
                 <Image
                   className="my-4 rounded-sm w-full h-[200px] object-contain mx-auto -mb-8 -mt-8"
                   src={item.image}
-                  alt="blog image"
+                  alt={item.heading}
                 />
                 <p className="pt-5 text-sm line-clamp-3">{item.about}</p>
                 <div className="flex justify-between items-center mt-4">

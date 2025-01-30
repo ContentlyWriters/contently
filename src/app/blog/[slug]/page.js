@@ -1,5 +1,6 @@
 // app/blog/[slug]/page.js
 import Image from "next/image";
+import Head from "next/head";
 import { notFound } from "next/navigation";
 import img1 from "@/assets/image/blogImg1.jpg";
 import img2 from "@/assets/image/blogImg2.jpg";
@@ -32,6 +33,8 @@ import { ImTextColor } from "react-icons/im";
 import { color } from "framer-motion";
 
 const blogData = [
+
+  
   {
     slug: "c-programming-assignments-help",
     heading: "C Programming Assignment Help: Expert Solutions for You",
@@ -45,6 +48,7 @@ const blogData = [
       "C Programming Assignment Support",
       "Academic Success in C Programming"
     ],
+    canonicalUrl: "https://www.contentlywriters.com/blog/c-programming-assignments-help",
     description: "Struggling with C programming assignments? Get expert help with coding challenges, memory management, and debugging to excel in your coursework and master C.",
     post: [
       {
@@ -104,7 +108,7 @@ const blogData = [
         ),
       },
       {
-        title: "Why is it Important",
+        title: "Why is it Important?",
         about: (
           <div>
             <p>
@@ -202,7 +206,7 @@ const blogData = [
               
             </ul>
             <p>
-            If yWhether you need help with pointers, memory management, data structures, or debugging, our C programming assignment helps ensure top-quality solutions for your coursework.
+           Whether you need help with pointers, memory management, data structures, or debugging, our C programming assignment helps ensure top-quality solutions for your coursework.
             </p>
            
           </div>
@@ -6507,7 +6511,7 @@ export default function BlogPostPage({ params }) {
           <Image
             className="rounded-lg w-full max-w-1080 max-h-full h-auto  "
             src={blog.image}
-            alt="Blog header"
+            alt={blog.heading}
           />
         </div>
 

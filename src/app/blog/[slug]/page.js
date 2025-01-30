@@ -192,7 +192,7 @@ const blogData = [
         about: (
           <div>
             <p>
-            If you're struggling with C programming assignments, we provide expert assignment writing services to help you succeed. Our offerings include:
+            If you&#39;re struggling with C programming assignments, we provide expert assignment writing services to help you succeed. Our offerings include:
             </p>
             <ul className="ml-8 list-disc">
               <li><strong>Custom-Written Assignments -</strong> Tailored solutions that meet your university guidelines.</li>

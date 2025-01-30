@@ -92,11 +92,11 @@ const blogData = [
                 href="https://www.contentlywriters.com/blog/expert-python-programming-assignment-help"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">Expert Python Programming Assignment Help for Students</a> to get expert guidance on coding challenges and improve your programming skills.</li>
+                rel="noopener noreferrer"> Expert Python Programming Assignment Help for Students</a> to get expert guidance on coding challenges and improve your programming skills.</li>
               <li><strong>Portability:</strong> C programs can be executed on various hardware platforms with minimal modifications.</li>
               <li><strong>Rich Library Functions:</strong> The standard C library provides numerous built-in functions that simplify development.</li>
               <li><strong>Low-Level Access:</strong> C allows direct memory manipulation, making it essential for system-level programming.</li>
-              <li><strong>Structured Programming:</strong>The modular approach in C improves code readability and maintainability by breaking tasks into functions.</li>
+              <li><strong>Structured Programming:</strong> The modular approach in C improves code readability and maintainability by breaking tasks into functions.</li>
               <li><strong>Extensibility:</strong> New functions and features can be added to C programs without significant modifications to existing code.</li>
             </ul>
             
@@ -117,7 +117,7 @@ const blogData = [
             <ul className="ml-8 list-disc">
               <li><strong>Memory Management:</strong> C requires manual memory handling using pointers, which is crucial for system-level programming.</li>
               <li><strong>Data Structures and Algorithms:</strong> C is widely used to implement fundamental data structures like linked lists, stacks, queues, and trees.</li>
-              <li><strong>Operating System Development:</strong>Many operating systems, including Linux, are written in C.</li>
+              <li><strong>Operating System Development:</strong> Many operating systems, including Linux, are written in C.</li>
               <li><strong>Embedded Systems:</strong> C is commonly used in microcontrollers and embedded applications due to its ability to interact directly with hardware.</li>
               
             </ul>
@@ -134,7 +134,7 @@ const blogData = [
             </p>
       
             <ul className="ml-8 list-decimal" >
-              <li><strong>Complex Syntax:</strong>Unlike Python, which is beginner-friendly, C has a strict syntax requiring precision.</li>
+              <li><strong>Complex Syntax:</strong> Unlike Python, which is beginner-friendly, C has a strict syntax requiring precision.</li>
               <li><strong>Pointers and Memory Allocation:</strong> Many students struggle with understanding and implementing pointers and dynamic memory allocation.</li>
               <li><strong>Debugging Issues:</strong> Unlike high-level languages, C lacks built-in debugging tools, making error detection harder.</li>
               <li><strong>Algorithmic Thinking:</strong> Writing efficient algorithms requires logical problem-solving skills, which take time to develop.</li>
@@ -377,7 +377,7 @@ const blogData = [
           <div>
       
             <ul className="ml-8 list-decimal" >
-              <li><strong>What are some common topics in IT security assignments?</strong>IT security assignments typically cover topics such as network security, ethical hacking, cryptography, risk management, and security protocols. Students may be required to explore case studies or simulate security breaches and defenses.</li>
+              <li><strong>What are some common topics in IT security assignments?</strong> IT security assignments typically cover topics such as network security, ethical hacking, cryptography, risk management, and security protocols. Students may be required to explore case studies or simulate security breaches and defenses.</li>
               <li><strong>How can I improve my IT security assignment grades?</strong> Consistently practicing hands-on tasks, staying up-to-date with the latest security trends, and understanding core concepts thoroughly can enhance your ability to tackle IT security assignments effectively.</li>
               <li><strong>When should I seek IT security assignments help?</strong> You may need help if you are facing time constraints, struggling with complex topics, or if you are dealing with personal challenges. Expert assistance can help ensure timely and high-quality assignment submissions.</li>
               

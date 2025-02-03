@@ -30,8 +30,17 @@ import img25 from "@/assets/image/blogImg25.jpg";
 import img26 from "@/assets/image/blogImg26.jpg";
 import img27 from "@/assets/image/blogImg27.jpg";
 import img28 from "@/assets/image/blogImg28.jpg";
+import img29 from "@/assets/image/blogImg29.jpg";
 
 const blogData = [
+  {
+    tag: "blog-27",
+    slug: "javascript-assignments-help",
+    heading: "JavaScript Assignment Help – Fast & Reliable Coding Aid",
+    date: "February 3, 2025",
+    image: img29,
+    about:"JavaScript is one of the most powerful and widely used programming languages in the world. JavaScript plays a crucial role in modern web development, from creating dynamic web pages to building full-fledged web applications. However, learning JavaScript can be challenging, especially for students juggling multiple assignments, exams, and coursework. If you find yourself struggling with JavaScript assignments, seeking professional JavaScript assignment help can be a game-changing decision. Whether you need help with a JavaScript assignment online or guidance with JavaScript project help for students, expert assistance can save time and improve your understanding.",
+  },
   {
     tag: "blog-26",
     slug: "c-programming-assignments-help",

@@ -11,6 +11,7 @@ export default function BlogLayout({ children }) {
 
   return (
     <GuestRoute allowAuthenticated={true}>
+      
       <div>
         <Navbar />
         <Popup />

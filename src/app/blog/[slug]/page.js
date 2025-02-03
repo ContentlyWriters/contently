@@ -212,7 +212,7 @@ const blogData = [
         </p>
         <h4 className="font-bold">2. Read Customer Reviews</h4>
         <p>
-        Customer testimonials and ratings can give you an idea of the service's quality and reliability.
+        Customer testimonials and ratings can give you an idea of the service&#39;s quality and reliability.
         </p>
         <h4 className="font-bold">3. Ensure Plagiarism-Free Work</h4>
         <p>
@@ -228,7 +228,7 @@ const blogData = [
         </p>
         <h4 className="font-bold">5. Compare Prices</h4>
         <p>
-        Affordable pricing is important, but don't compromise quality for a lower price. Look for services that offer a balance between affordability and quality.
+        Affordable pricing is important, but don&#39;t compromise quality for a lower price. Look for services that offer a balance between affordability and quality.
         </p>
         <h4 className="font-bold">6. Check Customer Support</h4>
         <p>

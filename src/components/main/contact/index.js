@@ -38,7 +38,7 @@ function ContactUs() {
         <div className="w-full md:w-1/2 space-y-10">
           {/* Location Section */}
           <div className="grid gap-2 text-center md:text-left">
-            <h3 className="font-semibold text-lg">Location</h3>
+            <h3 className="font-semibold text-lg mt-10 md:mt-0">Location</h3>
             <p>Our company, Facio Contently Writers Private Limited is based in Mansarovar, Jaipur 302020</p>
             <p>CIN: U82990RJ2024PTC09328</p>
           </div>

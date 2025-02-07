@@ -2389,6 +2389,7 @@ Direction, and others.            </p>
     description: "Discover practical tips and strategies to improve your accounting skills, build confidence, and achieve academic and professional success.",
     post: [
       {
+        
         about: (
           <div>
             <p>
@@ -2403,7 +2404,7 @@ understanding and success in the field.
         ),
       },
       {
-        title3: "1. Start with the Basics of Accounting",
+        title: "1. Start with the Basics of Accounting",
         about: (
           <div>
             <p>
@@ -2445,7 +2446,7 @@ how assets are funded.
         ),
       },
       {
-        title3: "2. Practice with Real-Life Examples",
+        title: "2. Practice with Real-Life Examples",
         about: (
           <div>
             <p>
@@ -2476,7 +2477,7 @@ financial health, helping you make informed spending decisions.
         ),
       },
       {
-        title3: "3. Master Accounting Software for Career Success",
+        title: "3. Master Accounting Software for Career Success",
         about: (
           <div>
             <p>
@@ -2518,7 +2519,7 @@ more competitive in the accounting field.</p>
         ),
       },
       {
-        title3: "4. Develop Your Analytical Thinking",
+        title: "4. Develop Your Analytical Thinking",
         about: (
           <div>
             <p>
@@ -2564,7 +2565,7 @@ company’s financial status.
         ),
       },
       {
-        title3: "5. Use Online Resources and Tutorials",
+        title: "5. Use Online Resources and Tutorials",
         about: (
           <div>
             <p>
@@ -2596,7 +2597,7 @@ grasp accounting concepts and software.
         ),
       },
       {
-        title3: "6. Practice, Practice, Practice",
+        title: "6. Practice, Practice, Practice",
         about: (
           <div>
             <p>
@@ -2641,7 +2642,7 @@ you through complex topics and provide clarity.
         ),
       },
       {
-        title3: "8. Join Accounting Communities and Stay Updated",
+        title: "8. Join Accounting Communities and Stay Updated",
         about: (
           <div>
             <p>
@@ -2671,7 +2672,7 @@ discuss the latest trends in accounting.
         ),
       },
       {
-        title: "Conclusion",
+        title1: "Conclusion",
         about: (
           <div>
             <p>

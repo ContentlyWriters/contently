@@ -31,8 +31,17 @@ import img26 from "@/assets/image/blogImg26.jpg";
 import img27 from "@/assets/image/blogImg27.jpg";
 import img28 from "@/assets/image/blogImg28.jpg";
 import img29 from "@/assets/image/blogImg29.jpg";
+import img30 from "@/assets/image/blogImg30.jpg";
 
 const blogData = [
+  {
+    tag: "blog-28",
+    slug: "software-engineering-assignments-help",
+    heading: "Software Engineering Assignment Help – Expert Assistance",
+    date: "February 7, 2025",
+    image: img30,
+    about:"Software engineering is an essential discipline in today’s tech landscape. From designing robust systems to developing complex applications, software engineers are at the heart of technological advancements. However, due to its complexity and diverse range of topics, many students often find themselves struggling with software engineering assignments. Whether it’s understanding intricate algorithms or solving programming challenges, seeking professional help can make a significant difference. This blog post will explore how getting software engineering assignment help can enhance your learning experience and contribute to your academic success.",
+  },
   {
     tag: "blog-27",
     slug: "javascript-assignments-help",

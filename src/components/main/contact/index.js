@@ -110,7 +110,7 @@ function ContactUs() {
         </div>
 
         {/* Right Side - Enquiry Form */}
-        <div className="w-full lg:w-1/2 bg-white p-8 shadow-md rounded-lg border-2 border-black">
+        <div className="w-full lg:w-1/2 bg-white p-8 shadow-md rounded-lg border-2 border-black mb-10 lg:mb-0">
           <h2 className="text-xl font-semibold text-center mb-4">Enquiry Form</h2>
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

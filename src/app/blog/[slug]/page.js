@@ -134,7 +134,7 @@ const blogData = [
         </p>
         <h4 className="font-bold  mt-2">5. 24/7 Customer Support</h4>
         <p>
-        Round-the-clock support ensures you get instant assistance whenever you need it, especially if you're working on tight deadlines.
+        Round-the-clock support ensures you get instant assistance whenever you need it, especially if you&#39;re working on tight deadlines.
         </p>
             
           </div>
@@ -176,7 +176,7 @@ const blogData = [
        
         <h4 className="font-bold mt-2">Q2.What software do I need for civil engineering assignments?</h4>
         <p>
-        Civil engineering assignments often require specialized tools like AutoCAD, STAADPro, Revit, SAP2000, and MATLAB for design, analysis, and simulations. If you're unfamiliar with these tools or need assistance in using them for your assignments, Our assignment helper provides expert help in handling software-based tasks, ensuring accuracy and precision in your work.
+        Civil engineering assignments often require specialized tools like AutoCAD, STAADPro, Revit, SAP2000, and MATLAB for design, analysis, and simulations. If you&#39;re unfamiliar with these tools or need assistance in using them for your assignments, Our assignment helper provides expert help in handling software-based tasks, ensuring accuracy and precision in your work.
         </p>
         <h4 className="font-bold mt-2">Q3. Is civil engineering assignment affordable for students?</h4>
         <p>

@@ -32,8 +32,17 @@ import img27 from "@/assets/image/blogImg27.jpg";
 import img28 from "@/assets/image/blogImg28.jpg";
 import img29 from "@/assets/image/blogImg29.jpg";
 import img30 from "@/assets/image/blogImg30.jpg";
+import img31 from "@/assets/image/blogImg31.jpg";
 
 const blogData = [
+  {
+    tag: "blog-29",
+    slug: "guide-to-civil-engineering-assignments-help",
+    heading: "Guide to Civil Engineering Assignment Help & Success",
+    date: "February 10, 2025",
+    image: img31,
+    about:"Are you struggling with your civil engineering coursework? Civil engineering is a complex field that requires a deep understanding of mathematical concepts, physics, and design principles. Whether dealing with structural analysis, transportation engineering, or geotechnical studies, getting professional guidance can make a difference.",
+  },
   {
     tag: "blog-28",
     slug: "software-engineering-assignments-help",

@@ -57,7 +57,7 @@ const blogData = [
         about: (
           <div>
             <p>
-            Electrical engineering is a vast and complex field that covers circuits, power systems, electromagnetism, and digital electronics. Many students find it challenging to understand intricate theories, apply formulas correctly, and complete assignments on time. If you're facing difficulties, don’t worry, you’re not alone. There are engineering assignment help experts who are willing to take your stress away. Reach out to the assignment experts to get your assignment done.
+            Electrical engineering is a vast and complex field that covers circuits, power systems, electromagnetism, and digital electronics. Many students find it challenging to understand intricate theories, apply formulas correctly, and complete assignments on time. If you&#39;re facing difficulties, don&#39;t worry, you&#39;re not alone. There are engineering assignment help experts who are willing to take your stress away. Reach out to the assignment experts to get your assignment done.
             </p>
             
           
@@ -131,7 +131,7 @@ const blogData = [
           
         <h3 className="font-bold">Why?</h3>
         <p>
-        If you're struggling with tough concepts like circuit analysis, control systems, or electrical machines, seeking expert electrical engineering assignment help can make a huge difference. Professionals provide:
+        If you&#39;re struggling with tough concepts like circuit analysis, control systems, or electrical machines, seeking expert electrical engineering assignment help can make a huge difference. Professionals provide:
         </p>
         <ul className="ml-8 list-disc">
               <li><strong>Step-by-step solutions for better understanding</strong></li>
@@ -143,16 +143,16 @@ const blogData = [
         <h3 className="font-bold mt-3">When?</h3>
         <ul className="ml-8 list-disc">
               
-              <li> If you're struggling with electrical engineering assignments involving circuit analysis, power systems, control engineering, or signal processing.</li>
+              <li> If you&#39;re struggling with electrical engineering assignments involving circuit analysis, power systems, control engineering, or signal processing.</li>
               <li> When deadlines are approaching and concepts feel overwhelming.</li>
-              <li> If you're unable to solve complex problems despite multiple attempts.</li>
+              <li> If you&#39;re unable to solve complex problems despite multiple attempts.</li>
               <li> If you need accurate solutions with step-by-step explanations.</li>
               
               
             </ul>
         
         <p className="mt-2">
-        Don't let difficult topics affect your grades—get top-quality electrical engineering assignment help today!
+        Don&#39;t let difficult topics affect your grades—get top-quality electrical engineering assignment help today!
         </p>
         
           </div>

@@ -33,8 +33,17 @@ import img28 from "@/assets/image/blogImg28.jpg";
 import img29 from "@/assets/image/blogImg29.jpg";
 import img30 from "@/assets/image/blogImg30.jpg";
 import img31 from "@/assets/image/blogImg31.jpg";
+import img32 from "@/assets/image/blogImg32.jpg";
 
 const blogData = [
+  {
+    tag: "blog-30",
+    slug: "electrical-engineering-assignments-help",
+    heading: "Electrical Engineering Assignment Help: Experts Help & Guide",
+    date: "February 13, 2025",
+    image: img32,
+    about:"Electrical engineering is a vast and complex field that covers circuits, power systems, electromagnetism, and digital electronics. Many students find it challenging to understand intricate theories, apply formulas correctly, and complete assignments on time. If you're facing difficulties, don’t worry, you’re not alone. There are engineering assignment help experts who are willing to take your stress away. Reach out to the assignment experts to get your assignment done",
+  },
   {
     tag: "blog-29",
     slug: "guide-to-civil-engineering-assignments-help",

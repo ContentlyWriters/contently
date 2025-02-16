@@ -34,8 +34,17 @@ import img29 from "@/assets/image/blogImg29.jpg";
 import img30 from "@/assets/image/blogImg30.jpg";
 import img31 from "@/assets/image/blogImg31.jpg";
 import img32 from "@/assets/image/blogImg32.jpg";
+import img33 from "@/assets/image/blogImg33.jpg";
 
 const blogData = [
+  {
+    tag: "blog-31",
+    slug: "biomedical-engineering-assignments-help",
+    heading: "How to Ace Your Biomedical Engineering Assignments",
+    date: "February 17, 2025",
+    image: img33,
+    about:"Biomedical engineering is a dynamic field combining engineering principles with medical and biological sciences to develop healthcare solutions. As a biomedical engineering student, you will often encounter help with biomedical engineering assignments that require technical knowledge, problem-solving skills, and creativity. These assignments help bridge the gap between theoretical concepts and real-world applications, making them essential for academic and professional growth.",
+  },
   {
     tag: "blog-30",
     slug: "electrical-engineering-assignments-help",

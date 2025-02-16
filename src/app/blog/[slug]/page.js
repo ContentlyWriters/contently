@@ -87,11 +87,11 @@ const blogData = [
           <div>
             <p>Biomedical engineering assignments are crucial in shaping a student’s understanding of the subject. Here’s why they matter:</p>
             <ul className="ml-8 list-disc">
-              <li><strong>Practical Application of Theories</strong> Assignments allow students to apply theoretical concepts to real-world problems, enhancing their problem-solving skills.</li>
+              <li><strong>Practical Application of Theories:</strong> Assignments allow students to apply theoretical concepts to real-world problems, enhancing their problem-solving skills.</li>
               <li><strong>Development of Technical Skills:</strong> These assignments involve programming, designing, and analyzing medical equipment, helping students develop technical expertise.</li>
               <li><strong>Enhancing Research Abilities:</strong> Research-based assignments improve students’ ability to find, analyze, and use scientific data effectively.</li>
-              <li><strong>Preparation for Industry:</strong>Biomedical engineering assignments mirror real-life projects in healthcare, preparing students for their future careers.</li>
-              <li><strong>Critical Thinking & Innovation:</strong>Students are encouraged to think creatively and develop innovative solutions to biomedical challenges.</li>
+              <li><strong>Preparation for Industry:</strong> Biomedical engineering assignments mirror real-life projects in healthcare, preparing students for their future careers.</li>
+              <li><strong>Critical Thinking & Innovation:</strong> Students are encouraged to think creatively and develop innovative solutions to biomedical challenges.</li>
               
               
             </ul>

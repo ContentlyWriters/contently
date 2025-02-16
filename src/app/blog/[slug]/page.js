@@ -280,7 +280,7 @@ const blogData = [
             </p>
            
             <p className="mt-4">
-            Whether you're working on a <a
+            Whether you&#39;re working on a <a
                 href="https://www.contentlywriters.com/blog/how-to-structure-research-paper"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"

@@ -6,22 +6,40 @@ import React, { useState } from "react";
 import logo from "@/assets/image/contently-logo.png";
 import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoMdMail, IoLogoWhatsapp } from "react-icons/io";
+import { toast, Toaster } from "sonner";
 
 function ContactUs() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState(""); // Updated from enquiry to message
+  const [message, setMessage] = useState(""); 
 
-  // Form submission handler
+ 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Enquiry Submitted by ${name}`);
-  };
+    e.preventDefault(); // Prevent page refresh
 
+    // Show success toast
+    toast.success("Submit successful!", {
+      position: "top-right",
+      duration: 3000,
+      style: {
+        backgroundColor: "#fff",
+        color: "#000",
+        borderRadius: "8px",
+        padding: "10px 20px",
+        fontSize: "14px",
+      },
+    });
+
+    // Clear form fields after submission
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  };
   return (
     <>
-      <div className="bg-[#020035] py-8">
+      <div className="bg-[#020035] py-8 px-4">
         <h1 className="text-[#FFFFFF] lg:text-[80px] sm:text-[40px] text-[30px] text-center pt-16 sm:pt-20 mx-auto font-semibold">
           Contently Connect
         </h1>
@@ -109,55 +127,57 @@ function ContactUs() {
           </div>
         </div>
 
-        {/* Right Side - Enquiry Form */}
-        <div className="w-full lg:w-1/2 bg-white p-8 shadow-md rounded-lg border-2 border-black mb-10 lg:mb-0">
-          <h2 className="text-xl font-semibold text-center mb-4">Enquiry Form</h2>
-          <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full border-2 p-2 rounded"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full border-2 p-2 rounded"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-            <input
-              type="text"
-              placeholder="Subject"
-              className="w-full border-2 p-2 rounded mt-4"
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-              required
-            />
-            <textarea
-              placeholder="Message"
-              className="w-full border-2 p-2 rounded mt-4"
-              rows="4"
-              value={message} // Updated from enquiry to message
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            ></textarea>
-            <div className="text-center mt-4">
-              <button
-                type="submit"
-                className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
+
+        <div className="px-6  flex justify-center">
+  <div className="w-full  bg-white p-8 shadow-lg rounded-xl border-2 border-black mb-10 lg:mb-0">
+    <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Enquiry Form</h2>
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          className="w-full border-2 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5b6cf2] transition-all"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          className="w-full border-2 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5b6cf2] transition-all"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
       </div>
+      <input
+        type="text"
+        placeholder="Subject"
+        className="w-full border-2 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5b6cf2] transition-all"
+        value={subject}
+        onChange={(e) => setSubject(e.target.value)}
+        required
+      />
+      <textarea
+        placeholder="Message"
+        className="w-full border-2 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5b6cf2] transition-all"
+        rows="4"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        required
+      ></textarea>
+      <div className="text-center mt-4">
+        <button
+          type="submit"
+          className="w-full py-3 rounded-lg text-white font-semibold transition-all bg-gradient-to-r from-[#5b6cf2] to-[#020035] hover:shadow-lg border-b-4 border-black hover:border-white "
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
     </>
   );
 }

@@ -112,7 +112,9 @@ export default function LoginScreen() {
   
      
   
-      router.replace("/");  
+     
+      localStorage.setItem("reloadAfterLogin", "true"); 
+      router.replace("/");
   
     } catch (err) {
       console.error(err);
@@ -135,7 +137,13 @@ export default function LoginScreen() {
     }
   };
   
- 
+  useEffect(() => {
+    if (localStorage.getItem("reloadAfterLogin") === "true") {
+      localStorage.removeItem("reloadAfterLogin");  
+      window.location.reload();  // ✅ Page silently reload hoga
+    }
+  }, []);
+  
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -144,10 +152,8 @@ export default function LoginScreen() {
       });
     }
   }, []);
+
   
-  useEffect(() => {
-    console.log("User Context Updated:", user);
-  }, [user]);
   
 
   const handleGoogleAuth = () => {

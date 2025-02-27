@@ -24,7 +24,6 @@ export default function LoginScreen() {
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [termsAccepted, setTermsAccepted] = useState(false); 
-  const { user, setUser } = useUserContext(); 
   const [formValues, setFormValues] = useState({
     email: "",
     password: "",
@@ -62,7 +61,7 @@ export default function LoginScreen() {
     const isChecked = e.target.checked;
     setTermsAccepted(isChecked);
 
-    
+    // Save terms acceptance to localStorage
     localStorage.setItem("termsAccepted", isChecked.toString());
   };
 
@@ -70,7 +69,7 @@ export default function LoginScreen() {
     e.preventDefault();
     try {
       setLoading(true);
-  
+
       const newErrors = {};
       if (!formValues.email) newErrors.email = "Please enter email";
       if (!formValues.password) newErrors.password = "Please enter password";
@@ -79,25 +78,20 @@ export default function LoginScreen() {
         setLoading(false);
         return;
       }
-  
+
       const { data } = await axiosInstance.post(
         "https://contentlywriters.com/api/user/login",
         formValues
       );
-  
+
+      localStorage.setItem("token", data.token);
+
       if (!data.token) {
         setErrors({ password: "Please check your password" });
         setLoading(false);
         return;
       }
-  
-      localStorage.setItem("token", data.token);
-      
-     
-      if (data.user) {
-        setUser(data.user);  
-      }
-  
+
       toast.success("Login successful!", {
         position: "top-right", 
         duration: 3000, 
@@ -109,17 +103,17 @@ export default function LoginScreen() {
           fontSize: "14px", 
         },
       });
-  
-     
-  
-     
-      localStorage.setItem("reloadAfterLogin", "true"); 
+
+      getProfile();
+
       router.replace("/");
-  
+      setTimeout(() => {
+        window.location.reload();
+      }, 50);
     } catch (err) {
       console.error(err);
       setErrors({ email: "User does not exist" });
-  
+
       toast.error("User does not exist", {
         position: "top-right", 
         duration: 3000, 
@@ -131,30 +125,11 @@ export default function LoginScreen() {
           fontSize: "14px", 
         },
       });
-  
+
     } finally {
       setLoading(false);
     }
   };
-  
-  useEffect(() => {
-    if (localStorage.getItem("reloadAfterLogin") === "true") {
-      localStorage.removeItem("reloadAfterLogin");  
-      router.replace("/"); 
-    }
-  }, []);
-
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (token) {
-      getProfile().then(() => {
-        router.replace("/"); // Ensure smooth transition
-      });
-    }
-  }, []);
-
-  
-  
 
   const handleGoogleAuth = () => {
     if (!termsAccepted) {
@@ -275,3 +250,4 @@ Forgot Password
     </div>
   );
 }
+

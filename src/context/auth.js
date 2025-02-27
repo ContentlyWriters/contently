@@ -86,11 +86,10 @@
 // };
 
 
-
 "use client";
 
 import { useState, useEffect, createContext, useContext } from "react";
-import Cookies from 'js-cookie';
+import Cookies from "js-cookie";
 import { axiosInstance } from "@/lib/axios";
 
 const AuthContext = createContext();
@@ -104,36 +103,35 @@ export const AuthProvider = ({ children }) => {
   const [message, setMessage] = useState("");
 
   const getProfile = async (token) => {
+    setIsLoading(true);
     try {
-      setIsLoading(true);
       console.log("AuthContext getProfile");
       const response = await axiosInstance.get("user/getProfile", {
-        headers: {
-          Authorization: token,
-        },
+        headers: { Authorization: token },
       });
       setIsAuthenticated(true);
       setUser(response.data);
-      setIsLoading(false);
+      setIsSuccess(true);
+      setIsError(false);
     } catch (err) {
-      console.log(err);
+      console.error("AuthContext Error:", err);
       setIsAuthenticated(false);
-      setIsLoading(false);
-    } finally{
+      setIsError(true);
+      setMessage(err.response?.data?.message || "Failed to fetch user profile");
+    } finally {
       setIsLoading(false);
     }
   };
 
   useEffect(() => {
     console.log("AuthContext useEffect");
+    let token = localStorage.getItem("token") || Cookies.get("token");
 
-    // Check if the token exists in localStorage or cookies
-    let token = localStorage.getItem("token");
-    token = token || Cookies.get("token");
     if (token && !token.startsWith("Bearer")) {
       token = "Bearer " + token;
       localStorage.setItem("token", token);
-    }    
+    }
+
     if (!token) {
       setIsAuthenticated(false);
       setIsLoading(false);
@@ -152,7 +150,6 @@ export const AuthProvider = ({ children }) => {
         isError,
         isAuthenticated,
         message,
-        user,
         setIsAuthenticated,
         getProfile,
       }}
@@ -162,6 +159,4 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-export const useUserContext = () => {
-  return useContext(AuthContext);
-};
+export const useUserContext = () => useContext(AuthContext);

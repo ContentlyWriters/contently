@@ -140,7 +140,7 @@ export default function LoginScreen() {
   useEffect(() => {
     if (localStorage.getItem("reloadAfterLogin") === "true") {
       localStorage.removeItem("reloadAfterLogin");  
-      window.location.reload();  
+      router.replace("/"); 
     }
   }, []);
 
@@ -148,7 +148,7 @@ export default function LoginScreen() {
     const token = localStorage.getItem("token");
     if (token) {
       getProfile().then(() => {
-        router.replace(router.asPath);  
+        router.replace("/"); // Ensure smooth transition
       });
     }
   }, []);

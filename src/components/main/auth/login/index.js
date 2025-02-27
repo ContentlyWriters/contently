@@ -24,6 +24,7 @@ export default function LoginScreen() {
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [termsAccepted, setTermsAccepted] = useState(false); 
+  const { user, setUser } = useUserContext(); 
   const [formValues, setFormValues] = useState({
     email: "",
     password: "",

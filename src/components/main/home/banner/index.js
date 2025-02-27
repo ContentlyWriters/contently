@@ -581,7 +581,12 @@ export default function Banner() {
   //   );
   // };
 
- 
+  useEffect(() => {
+     if (localStorage.getItem("reloadAfterLogin") === "true") {
+       localStorage.removeItem("reloadAfterLogin");  
+       window.location.reload();  
+     }
+   }, []);
 
   return (
     <div className="px-4 sm:px-4 md:px-6 lg:px-[50px] bg-gradient-to-b from-white to-[#f7f7f7] pb-10">

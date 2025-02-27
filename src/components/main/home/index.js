@@ -7,6 +7,7 @@ import Banner from "./banner";
 import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 
+
 export default function HomeScreen() {
   return (
     <>

@@ -140,10 +140,10 @@ export default function LoginScreen() {
   useEffect(() => {
     if (localStorage.getItem("reloadAfterLogin") === "true") {
       localStorage.removeItem("reloadAfterLogin");  
-      window.location.reload();  // ✅ Page silently reload hoga
+      window.location.reload();  
     }
   }, []);
-  
+
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {

@@ -139,9 +139,9 @@ export default function LoginScreen() {
     const token = localStorage.getItem("token");
     if (token) {
       getProfile();
+      router.refresh();  
     }
   }, []);
-  
 
   const handleGoogleAuth = () => {
     if (!termsAccepted) {

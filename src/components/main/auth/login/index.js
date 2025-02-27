@@ -110,7 +110,7 @@ export default function LoginScreen() {
         },
       });
   
-      getProfile(); 
+      await getProfile();
   
       router.replace("/");  
   

@@ -110,7 +110,7 @@ export default function LoginScreen() {
         },
       });
   
-      await getProfile();
+     
   
       router.replace("/");  
   
@@ -139,10 +139,16 @@ export default function LoginScreen() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      getProfile();
-      router.refresh();  
+      getProfile().then(() => {
+        router.replace(router.asPath);  
+      });
     }
   }, []);
+  
+  useEffect(() => {
+    console.log("User Context Updated:", user);
+  }, [user]);
+  
 
   const handleGoogleAuth = () => {
     if (!termsAccepted) {

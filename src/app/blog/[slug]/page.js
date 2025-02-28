@@ -77,8 +77,8 @@ const blogData = [
           <div>
             <p>The study of designing, development, and maintenance of spacecraft and aircraft design is called aerospace engineering. It consists of two primary branches:</p>
             <ul className="ml-8 list-disc">
-              <li><strong>Aeronautical Engineering:</strong> Focuses on aircraft that operate within the Earth's atmosphere.</li>
-              <li><strong>Astronautical Engineerings:</strong> Deals with spacecraft that operate beyond Earth's atmosphere.</li>
+              <li><strong>Aeronautical Engineering:</strong> Focuses on aircraft that operate within the Earth&#39;s atmosphere.</li>
+              <li><strong>Astronautical Engineerings:</strong> Deals with spacecraft that operate beyond Earth&#39;s atmosphere.</li>
                           
               
             </ul>
@@ -98,7 +98,7 @@ const blogData = [
               <li><strong>Complex Topics:</strong> Aerospace Engineering involves intricate topics that demand a deep understanding.</li>
               <li><strong>Lack of Resources:</strong> Not all students have access to the latest research papers, software, or industry insights.</li>
               <li><strong>High Academic Pressure:</strong> The rigorous curriculum makes it difficult for students to manage everything effectively.</li>
-              <li><strong>Need for Expert Guidance:</strong> Professional tutors can provide accurate solutions and enhance students' learning experiences.</li>
+              <li><strong>Need for Expert Guidance:</strong> Professional tutors can provide accurate solutions and enhance students&#39; learning experiences.</li>
                           
               
             </ul>

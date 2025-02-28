@@ -35,8 +35,17 @@ import img30 from "@/assets/image/blogImg30.jpg";
 import img31 from "@/assets/image/blogImg31.jpg";
 import img32 from "@/assets/image/blogImg32.jpg";
 import img33 from "@/assets/image/blogImg33.jpg";
+import img34 from "@/assets/image/blogImg34.jpg";
 
 const blogData = [
+  {
+    tag: "blog-32",
+    slug: "aerospace-engineering-assignments-help",
+    heading: "Need Aerospace Engineering Assignment Help? Ultimate Guide",
+    date: "February 28, 2025",
+    image: img34,
+    about:"Aerospace engineering is one of the most challenging fields of study. It modulates elements of mechanical, electrical, and computer engineering to design, build, and preserve aircraft and spacecraft. Students often struggle with assignments that require advanced knowledge, precise calculations, and critical thinking because of the complexity of the subject. This is where expert Aerospace Engineering Assignment Help steps in, offering students expert help to achieve success.",
+  },
   {
     tag: "blog-31",
     slug: "biomedical-engineering-assignments-help",

@@ -83,7 +83,7 @@ const blogData = [
                 href="https://www.anaplan.com/blog/consolidation-in-accounting-comprehensive-guide/#:~:text=Consolidation%20in%20accounting%20refers%20to,financial%20information%20of%20both%20entities."
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">consolidating</a>, and presenting a business's financial activities. It focuses on the preparation of financial statements, including the balance sheet, income statement, and cash flow statement, which provide insights into a company's financial health.</p>
+                rel="noopener noreferrer">consolidating</a>, and presenting a business&#39;s financial activities. It focuses on the preparation of financial statements, including the balance sheet, income statement, and cash flow statement, which provide insights into a company&#39;s financial health.</p>
             <p className="mt-2">Some key aspects of financial accounting include:</p>
             <ul className="ml-8 list-disc">
               <li><strong>Double-entry bookkeeping:</strong> Every transaction is recorded in at least two accounts to maintain balance.</li>

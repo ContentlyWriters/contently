@@ -36,8 +36,17 @@ import img31 from "@/assets/image/blogImg31.jpg";
 import img32 from "@/assets/image/blogImg32.jpg";
 import img33 from "@/assets/image/blogImg33.jpg";
 import img34 from "@/assets/image/blogImg34.jpg";
+import img35 from "@/assets/image/blogImg35.jpg";
 
 const blogData = [
+  {
+    tag: "blog-33",
+    slug: "financial-accounting-assignments-help",
+    heading: "Financial Accounting Assignment Help: Your Ultimate Guide",
+    date: "March 03, 2025",
+    image: img35,
+    about:"Financial accounting is a crucial aspect of business education, helping students develop the skills required to analyze financial statements and make informed economic decisions. However, financial accounting assignments can often be challenging, requiring a deep understanding of concepts, formulas, and real-world applications. Many students struggle with these tasks due to time constraints, lack of understanding, or complex problems. This is where professional financial accounting assignment help comes in handy, providing the necessary support to excel academically.",
+  },
   {
     tag: "blog-32",
     slug: "aerospace-engineering-assignments-help",

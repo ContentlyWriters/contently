@@ -66,7 +66,7 @@ const blogData = [
                 href="https://www.contentlywriters.com/subject/accounting"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">cost accounting assignment help</a> isn’t exactly a walk in the park. If you've ever found yourself staring at a problem for hours, wondering where you went wrong, you're not alone. There are ways to make sense of this subject and even get a little expert help along the way.
+                rel="noopener noreferrer">cost accounting assignment help</a> isn&#39;t exactly a walk in the park. If you&#39;ve ever found yourself staring at a problem for hours, wondering where you went wrong, you&#39;re not alone. There are ways to make sense of this subject and even get a little expert help along the way.
             </p>
           
           
@@ -151,7 +151,7 @@ const blogData = [
         title: "How Expert Help Can Make a Difference?",
         about: (
           <div>
-            <p>When you're stuck on an assignment, getting support from experienced professionals can save time and reduce stress. Seeking the best cost accounting assignment help online connects you with experts who can simplify complicated topics and explain them in an easy-to-understand way.</p>
+            <p>When you&#39;re stuck on an assignment, getting support from experienced professionals can save time and reduce stress. Seeking the best cost accounting assignment help online connects you with experts who can simplify complicated topics and explain them in an easy-to-understand way.</p>
         
         <h4 className="font-bold">1. Step-by-Step Solutions</h4>
         <p>
@@ -252,7 +252,7 @@ const blogData = [
         about: (
           <div>
             <p>
-            Cost accounting assignments can be tough, but they become much more manageable with the right approach. If you're struggling, seeking the <a
+            Cost accounting assignments can be tough, but they become much more manageable with the right approach. If you&#39;re struggling, seeking the <a
                 href="https://www.contentlywriters.com/"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"

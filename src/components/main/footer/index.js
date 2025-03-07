@@ -22,7 +22,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/#faq">
+                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/faq">
                   <h5>FAQs</h5>
                 </Link>
               </li>
@@ -104,7 +104,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-between lg:flex-row flex-col gap-5">
           <p className="text-white">
-            Copyright © 2024 Facio Contently Writers Private Limited. All Rights Reserved.
+            Copyright © 2024 - 2025 Facio Contently Writers Private Limited. All Rights Reserved.
           </p>
           <div className="flex gap-10">
             <Link href="mailto:info@contentlywriters.com"  target="_blank"

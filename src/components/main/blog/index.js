@@ -37,8 +37,18 @@ import img32 from "@/assets/image/blogImg32.jpg";
 import img33 from "@/assets/image/blogImg33.jpg";
 import img34 from "@/assets/image/blogImg34.jpg";
 import img35 from "@/assets/image/blogImg35.jpg";
+import img36 from "@/assets/image/blogImg36.jpg";
 
 const blogData = [
+  {
+    tag: "blog-34",
+    slug: "cost-accounting-assignments-help",
+    heading: "Cost Accounting Assignments Got You Stressed? Get Help Now",
+    date: "March 07, 2025",
+    image: img36,
+    about:"Let’s be honest—cost accounting assignment help isn’t exactly a walk in the park. If you've ever found yourself staring at a problem for hours, wondering where you went wrong, you're not alone. There are ways to make sense of this subject and even get a little expert help along the way.",
+  },
+  
   {
     tag: "blog-33",
     slug: "financial-accounting-assignments-help",

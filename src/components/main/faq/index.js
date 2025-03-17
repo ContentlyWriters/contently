@@ -16,10 +16,10 @@ const FAQ = () => {
       </div>
 
       {/* FAQ Content Section with Full-Width Styling */}
-      <div className="!px-6 sm:!px-10 lg:!px-[80px] py-5">
-        <div className="max-w-[1280px] mx-auto sm:!px-10 lg:!px-[80px] grid gap-8">
-          <div className="grid gap-6">
-            <div className="flex flex-col gap-2">
+      <div className="!px-6 sm:!px-10 lg:!px-[80px] py-5 mb-10">
+  <div className="max-w-[1280px] mx-auto sm:!px-10 lg:!px-[80px] grid gap-8">
+    <div className="grid gap-6">
+      <div className="flex flex-col gap-2">
               <h3 className="font-semibold text-lg text-[#020035]">
                 Q1. Where can I find the best assignment writers online?
               </h3>

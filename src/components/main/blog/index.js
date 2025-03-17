@@ -38,8 +38,18 @@ import img33 from "@/assets/image/blogImg33.jpg";
 import img34 from "@/assets/image/blogImg34.jpg";
 import img35 from "@/assets/image/blogImg35.jpg";
 import img36 from "@/assets/image/blogImg36.jpg";
+import img37 from "@/assets/image/blogImg37.jpg";
 
 const blogData = [
+  {
+    tag: "blog-35",
+    slug: "benefit-drawback-assignments-help",
+    heading: "Benefits & Drawbacks of Using Online Assignment Help",
+    date: "March 17, 2025",
+    image: img37,
+    about:"Finding the best assignment help service can make a significant difference in managing workloads effectively. Between juggling deadlines, assignments, part-time jobs, and personal commitments, it’s no shock that numerous undergraduates feel overpowered. Hiring an online assignment helper can seem like a lifesaver when due dates heap up and stress levels rise. But is it truly the best solution? Like most things in life, there are both advantages and drawbacks to consider. Let’s break it down.",
+  },
+  
   {
     tag: "blog-34",
     slug: "cost-accounting-assignments-help",

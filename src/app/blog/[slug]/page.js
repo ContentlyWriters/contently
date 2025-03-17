@@ -170,7 +170,7 @@ const blogData = [
                 href="https://www.contentlywriters.com/blog/assignment-preparation-steps"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">"Key Steps to Remember for Preparing Your Assignment"</a> offers valuable insights. It provides strategies for creating high-quality content and emphasizes the importance of understanding assignment requirements and formats.</p>
+                rel="noopener noreferrer">&#34;Key Steps to Remember for Preparing Your Assignment&#34;</a> offers valuable insights. It provides strategies for creating high-quality content and emphasizes the importance of understanding assignment requirements and formats.</p>
         
             
         
@@ -232,7 +232,7 @@ const blogData = [
         <p>
         Prices vary depending on the complexity, deadline, and quality of work required. Some services offer budget-friendly options, but high-quality assistance often comes at a premium.
         </p>
-        <h4 className="font-bold mt-2">Q7. Can I get a refund if I'm not satisfied with my assignment?</h4>
+        <h4 className="font-bold mt-2">Q7. Can I get a refund if I&#39;m not satisfied with my assignment?</h4>
         <p>
         Many reputable services offer money-back guarantees or revisions if the work does not meet expectations. Always check refund policies before placing an order.
         </p>

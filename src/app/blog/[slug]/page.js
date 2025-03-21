@@ -238,7 +238,7 @@ const blogData = [
         </p>
         <h4 className="font-bold mt-2">5. Reduces Stress Levels</h4>
         <p>
-        Knowing you have a master's back can ease uneasiness and offer assistance you center on completing your work efficiently.
+        Knowing you have a master&#39;s back can ease uneasiness and offer assistance you center on completing your work efficiently.
         </p>
         <h4 className="font-bold mt-2">6. Helps You Meet Deadlines</h4>
         <p>

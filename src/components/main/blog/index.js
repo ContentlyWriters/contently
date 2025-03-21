@@ -39,8 +39,18 @@ import img34 from "@/assets/image/blogImg34.jpg";
 import img35 from "@/assets/image/blogImg35.jpg";
 import img36 from "@/assets/image/blogImg36.jpg";
 import img37 from "@/assets/image/blogImg37.jpg";
+import img38 from "@/assets/image/blogImg38.jpg";
 
 const blogData = [
+  {
+    tag: "blog-36",
+    slug: "time-management-tips",
+    heading: "Time Management Tips for Thesis Writing – Stay Organized",
+    date: "March 21, 2025",
+    image: img38,
+    about:"Writing a thesis is a challenging task. It’s a long and detailed process that requires careful planning, strong investigation, and much persistence. If you’re juggling coursework, part-time work, or individual commitments, It’s easy to feel overwhelmed.",
+  },
+  
   {
     tag: "blog-35",
     slug: "benefit-drawback-assignments-help",

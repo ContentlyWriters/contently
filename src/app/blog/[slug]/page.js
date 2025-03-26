@@ -134,11 +134,11 @@ const blogData = [
               <li> Identify a special point or viewpoint inside the field.</li>
           
             </ul>
-        <p className="mt-1">For example, if you are interested in IT Corporations, instead of a broad topic like "Cybersecurity in IT Corporations," consider a more focused one, such as "<a
+        <p className="mt-1">For example, if you are interested in IT Corporations, instead of a broad topic like &#34;Cybersecurity in IT Corporations,&#34; consider a more focused one, such as &#34;<a
                 href="https://www.contentlywriters.com/blog/it-corporation"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">IT Corporation: Shaping the Future of Technology and Business</a>"</p>
+                rel="noopener noreferrer">IT Corporation: Shaping the Future of Technology and Business</a>&#34;</p>
 
         <h4 className="font-bold mt-2">4. Consider the Viable Aspects</h4>
         <p>

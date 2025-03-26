@@ -40,8 +40,18 @@ import img35 from "@/assets/image/blogImg35.jpg";
 import img36 from "@/assets/image/blogImg36.jpg";
 import img37 from "@/assets/image/blogImg37.jpg";
 import img38 from "@/assets/image/blogImg38.jpg";
+import img39 from "@/assets/image/blogImg39.jpg";
 
 const blogData = [
+  {
+    tag: "blog-37",
+    slug: "right-dissertation-topic",
+    heading: "Tips to Choose the Right Dissertation Topic Easily",
+    date: "March 25, 2025",
+    image: img39,
+    about:"Choosing the right dissertation topic is a crucial decision that affects your Academic and professional journey. A dissertation is a long-term project requiring in-depth research, Critical thinking, and strong commitment. Therefore, selecting a topic that aligns with your interests, scholarly qualities, and career yearnings is basic. In this guide, we will explore the key components to consider when choosing a dissertation subject and how best dissertation services can Support students in this challenging process.",
+  },
+  
   {
     tag: "blog-36",
     slug: "time-management-tips",

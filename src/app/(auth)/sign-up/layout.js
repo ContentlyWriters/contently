@@ -27,6 +27,7 @@ export default function AuthLayout({ children }) {
             </Head>
             <div className="h-screen w-screen bg-color_four p-5">
                 {children}
+            
             </div>
         </GuestRoute>
     );

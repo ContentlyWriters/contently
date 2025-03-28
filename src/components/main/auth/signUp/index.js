@@ -56,11 +56,14 @@ export default function SignUpScreen() {
   };
 
   const validatePassword = (password) => {
+    const hasMinLength = password.length >= 8;
     const hasLetter = /[a-zA-Z]/.test(password);
     const hasNumber = /[0-9]/.test(password);
     const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
-    return hasLetter && hasNumber && hasSpecialChar;
-  };
+    
+    return hasMinLength && hasLetter && hasNumber && hasSpecialChar;
+};
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();

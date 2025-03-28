@@ -72,7 +72,7 @@ export default function SignUpScreen() {
     if (!formValues.password) error.password = "Please enter password";
     if (!validatePassword(formValues.password)) {
       error.password =
-        "Password must contain at least one letter, one number, and one special character";
+        "Password must be at least 8 characters long and contain at least one letter, one number, and one special character";
     }
     if (formValues.password !== formValues.confirmPassword) {
       error.confirmPassword = "Passwords do not match";

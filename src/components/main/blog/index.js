@@ -41,8 +41,18 @@ import img36 from "@/assets/image/blogImg36.jpg";
 import img37 from "@/assets/image/blogImg37.jpg";
 import img38 from "@/assets/image/blogImg38.jpg";
 import img39 from "@/assets/image/blogImg39.jpg";
+import img40 from "@/assets/image/blogImg40.jpg";
 
 const blogData = [
+  {
+    tag: "blog-38",
+    slug: "time-management-tips",
+    heading: "Time Management Tips for Students: Balance Studies & Writing",
+    date: "April 01, 2025",
+    image: img40,
+    about:"Time management is crucial for students who need to juggle their coursework, assignments, and exams. With multiple deadlines to meet, many students struggle to allocate their time effectively, leading to stress and decreased productivity. A well-structured schedule and efficient time management strategies can help students stay on top of their workload while maintaining academic excellence.",
+  },
+  
   {
     tag: "blog-37",
     slug: "right-dissertation-topic",
@@ -54,7 +64,7 @@ const blogData = [
   
   {
     tag: "blog-36",
-    slug: "time-management-tips",
+    slug: "time-management-tips-for-thesis",
     heading: "Time Management Tips for Thesis Writing – Stay Organized",
     date: "March 21, 2025",
     image: img38,

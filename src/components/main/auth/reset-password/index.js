@@ -58,11 +58,14 @@ export default function ResetPasswordScreen() {
   };
 
   const validatePassword = (password) => {
+    const hasMinLength = password.length >= 8;
     const hasLetter = /[a-zA-Z]/.test(password);
     const hasNumber = /[0-9]/.test(password);
     const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
-    return hasLetter && hasNumber && hasSpecialChar;
-  };
+    
+    return hasMinLength && hasLetter && hasNumber && hasSpecialChar;
+};
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -73,7 +76,7 @@ export default function ResetPasswordScreen() {
       if (!formValues.password) error.password = "Please enter password";
       if (!validatePassword(formValues.password)) {
         error.password =
-          "Password must contain at least one letter, one number, and one special character";
+          "Password must be at least 8 characters long and contain at least one letter, one number, and one special character";
       }
       if (formValues.password !== formValues.confirmPassword) {
         error.confirmPassword = "Passwords do not match";

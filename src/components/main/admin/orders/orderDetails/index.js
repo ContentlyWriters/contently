@@ -42,6 +42,7 @@ export default function AdminOrderDetailScreen({
       console.log("fileNames " + fileNames)
       setSelectedFileName(fileNames);
     } else {
+      alert("You can only select up to 4 files.");
       setSelectedFileName("");
     }
     handleChange(event);

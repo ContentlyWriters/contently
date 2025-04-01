@@ -146,7 +146,6 @@ const blogData = [
         
         
         <h4 className="font-bold mt-2">Maintaining a Distraction-Free Study Environment</h4>
-       
         <p>
         Additionally, setting realistic goals and rewarding oneself after completing tasks can boost motivation. A well-maintained study environment, free from distractions, further enhances focus, allowing students to complete their assignments on time without stress.
         </p>

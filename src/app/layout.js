@@ -75,15 +75,11 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Service",
+              "@type": "Organization",
               name: "Contently Writers - Assignment Writing Service",
               description:
                 "Get expert academic writing help. High-quality, plagiarism-free, and delivered on time!",
-              provider: {
-                "@type": "Organization",
-                name: "Contently Writers",
-                url: "https://contentlywriters.com",
-              },
+              
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "4.8",

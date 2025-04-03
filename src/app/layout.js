@@ -69,6 +69,73 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+
+        {/* Review Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: "Contently Writers - Assignment Writing Service",
+              description:
+                "Get expert academic writing help. High-quality, plagiarism-free, and delivered on time!",
+              provider: {
+                "@type": "Organization",
+                name: "Contently Writers",
+                url: "https://contentlywriters.com",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.7",
+                reviewCount: "112",
+              },
+              review: [
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Charlotte R." },
+                  location: "London, UK",
+                  reviewBody:
+                    "I was having difficulty with my dissertation, but their skilled writers provided excellent support. The quality and attention to detail were remarkable. I highly recommend their services!",
+                  reviewRating: { "@type": "Rating", ratingValue: "5" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Liam H." },
+                  location: "Melbourne, Australia",
+                  reviewBody:
+                    "Highly professional and reliable. They saved me so much time, and my grades have never been better. Thank you!",
+                  reviewRating: { "@type": "Rating", ratingValue: "4.8" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Emily W." },
+                  location: "Sydney, Australia",
+                  reviewBody:
+                    "Exceptional service! The team truly grasped my requirements and delivered a flawlessly written assignment. This will definitely be my first choice for future projects.",
+                  reviewRating: { "@type": "Rating", ratingValue: "5" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "James K." },
+                  location: "New York, USA",
+                  reviewBody:
+                    "A great experience from start to finish. My essay was excellently written and delivered on time. I couldn't have asked for anything more.",
+                  reviewRating: { "@type": "Rating", ratingValue: "4.7" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Sarah M." },
+                  location: "California, USA",
+                  reviewBody:
+                    "Absolutely fantastic service! They assisted me with my research paper, and the quality was outstanding. I highly recommend them to any student in need of writing help.",
+                  reviewRating: { "@type": "Rating", ratingValue: "5" },
+                },
+              ],
+            }),
+          }}
+        />
+        
       </head>
       <body className={inter.className}>
 

@@ -116,7 +116,7 @@ const testimonialItems = [
   },
   {
     name: "James K., New York, USA",
-    stars: 4,
+    stars: 4.7,
     message:
       "A great experience from start to finish. My essay was excellently written and delivered on time. I couldn't have asked for anything more.",
     image: "image/scholar.png",
@@ -130,14 +130,14 @@ const testimonialItems = [
   },
   {
     name: "Liam H., Melbourne, Australia",
-    stars: 4,
+    stars: 4.8,
     message:
       "Highly professional and reliable. They saved me so much time, and my grades have never been better. Thank you!",
     image: "image/scholar.png",
   },
   {
     name: "Charlotte R., London, UK",
-    stars: 4,
+    stars: 5,
     message:
       "I was having difficulty with my dissertation, but their skilled writers provided excellent support. The quality and attention to detail were remarkable. I highly recommend their services!",
     image: "image/scholar.png",
@@ -151,14 +151,14 @@ const testimonialItems = [
   },
   {
     name: "Henry Brown, Toronto, Canada ",
-    stars: 4,
+    stars: 4.7,
     message:
       "My assignments were delivered on time and fulfilled all requirements. This service has been incredibly helpful during my busy semester.",
     image: "image/scholar.png",
   },
   {
     name: "Arlo Smith, St. John's, Canada ",
-    stars: 5,
+    stars: 4.8,
     message:
       "The writer assigned to my project was exceptionally knowledgeable and provided detailed, well-reasoned content. The entire process was smooth and stress-free.",
     image: "image/scholar.png",

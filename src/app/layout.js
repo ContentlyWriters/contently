@@ -70,8 +70,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Review Schema */}
-        <script
+          <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -87,14 +86,13 @@ export default function RootLayout({ children }) {
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.7",
-                reviewCount: "112",
+                ratingValue: "4.8",
+                reviewCount: "25",
               },
               review: [
                 {
                   "@type": "Review",
                   author: { "@type": "Person", name: "Charlotte R." },
-                  
                   reviewBody:
                     "I was having difficulty with my dissertation, but their skilled writers provided excellent support. The quality and attention to detail were remarkable. I highly recommend their services!",
                   reviewRating: { "@type": "Rating", ratingValue: "5" },
@@ -102,7 +100,6 @@ export default function RootLayout({ children }) {
                 {
                   "@type": "Review",
                   author: { "@type": "Person", name: "Liam H." },
-                  
                   reviewBody:
                     "Highly professional and reliable. They saved me so much time, and my grades have never been better. Thank you!",
                   reviewRating: { "@type": "Rating", ratingValue: "4.8" },
@@ -110,7 +107,6 @@ export default function RootLayout({ children }) {
                 {
                   "@type": "Review",
                   author: { "@type": "Person", name: "Emily W." },
-                  
                   reviewBody:
                     "Exceptional service! The team truly grasped my requirements and delivered a flawlessly written assignment. This will definitely be my first choice for future projects.",
                   reviewRating: { "@type": "Rating", ratingValue: "5" },
@@ -118,7 +114,6 @@ export default function RootLayout({ children }) {
                 {
                   "@type": "Review",
                   author: { "@type": "Person", name: "James K." },
-                  
                   reviewBody:
                     "A great experience from start to finish. My essay was excellently written and delivered on time. I couldn't have asked for anything more.",
                   reviewRating: { "@type": "Rating", ratingValue: "4.7" },
@@ -126,15 +121,85 @@ export default function RootLayout({ children }) {
                 {
                   "@type": "Review",
                   author: { "@type": "Person", name: "Sarah M." },
-                  
                   reviewBody:
                     "Absolutely fantastic service! They assisted me with my research paper, and the quality was outstanding. I highly recommend them to any student in need of writing help.",
                   reviewRating: { "@type": "Rating", ratingValue: "5" },
                 },
-              ],
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Arlo Smith" },
+                  reviewBody:
+                    "The writer assigned to my project was exceptionally knowledgeable and provided detailed, well-reasoned content. The entire process was smooth and stress-free.",
+                  reviewRating: { "@type": "Rating", ratingValue: "4.8" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Henry Brown" },
+                  reviewBody:
+                    "My assignments were delivered on time and fulfilled all requirements. This service has been incredibly helpful during my busy semester.",
+                  reviewRating: { "@type": "Rating", ratingValue: "4.7" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Oliver B." },
+                  reviewBody:
+                    "Outstanding service! The writers are both knowledgeable and approachable. My essay surpassed all my expectations. I will definitely use their services again.",
+                  reviewRating: { "@type": "Rating", ratingValue: "5" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Daniel C." },
+                  reviewBody:
+                    "The service was quick and efficient. My research paper was well-structured and met all the requirements.",
+                  reviewRating: { "@type": "Rating", ratingValue: "4.7" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Sophia M." },
+                  reviewBody:
+                    "Great experience! The writer understood my topic well and delivered an excellent paper.",
+                  reviewRating: { "@type": "Rating", ratingValue: "5" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Ethan L." },
+                  reviewBody:
+                    "Timely submission and well-researched content. Helped me a lot in my coursework!",
+                  reviewRating: { "@type": "Rating", ratingValue: "4.8" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Amelia B." },
+                  reviewBody:
+                    "The essay was well-written and formatted correctly. Customer support was also very responsive.",
+                  reviewRating: { "@type": "Rating", ratingValue: "4.6" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "William T." },
+                  reviewBody:
+                    "Impressive work! The plagiarism report provided assured me of originality.",
+                  reviewRating: { "@type": "Rating", ratingValue: "5" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Lucas G." },
+                  reviewBody:
+                    "I was unsure at first, but their service exceeded my expectations. Will use again!",
+                  reviewRating: { "@type": "Rating", ratingValue: "4.9" },
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Olivia P." },
+                  reviewBody:
+                    "Detailed analysis and excellent research work. This was exactly what I needed.",
+                  reviewRating: { "@type": "Rating", ratingValue: "4.8" },
+                }
+              ]
             }),
           }}
         />
+
 
       </head>
       <body className={inter.className}>

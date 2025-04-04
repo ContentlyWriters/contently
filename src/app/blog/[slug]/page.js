@@ -76,7 +76,7 @@ const blogData = [
                 target="_blank"
                 rel="noopener noreferrer">Google Scholar</a> is here to save the day. Think of it as your academic search engine, helping you find credible, peer-reviewed research without the headache.
             </p>
-            <p className="mt-2">Whether you're working on an essay or dissertation or need solid sources, this guide will help you use Google Scholar like a research pro. And hey, if you ever need help turning that research into a well-written assignment, we've got you covered!</p>
+            <p className="mt-2">Whether you&#39;re working on an essay or dissertation or need solid sources, this guide will help you use Google Scholar like a research pro. And hey, if you ever need help turning that research into a well-written assignment, we&#39;ve got you covered!</p>
             
           
           </div>
@@ -133,9 +133,9 @@ const blogData = [
         </p>
         <p>Want more precise results? Try these tricks: </p>
         <ul className="ml-8 list-disc">
-              <li> Find exact phrases: Use quotation marks → "digital marketing strategies"</li>
+              <li> Find exact phrases: Use quotation marks → &#34;digital marketing strategies&#34;</li>
               <li> Exclude words: Use a minus sign → leadership skills -corporate</li>
-              <li> Find research by a specific author: Use author: → author: "John Doe"</li>
+              <li> Find research by a specific author: Use author: → author: &#34;John Doe&#34;</li>
               <li>Filter by year: Click “Custom range” to get recent studies.</li>
              
       
@@ -178,7 +178,7 @@ const blogData = [
                 rel="noopener noreferrer">citation formats</a> — Google Scholar makes it ridiculously easy:
         </p>
         <ul className="ml-8 list-disc">
-              <li> Click the quotation mark ("Cite") below any research paper.</li>
+              <li> Click the quotation mark (&#34;Cite&#34;) below any research paper.</li>
               <li> Choose from APA, MLA, Harvard, Chicago, and more.</li>
               <li> Copy and paste the citation into your bibliography. Boom, done!</li>  
           
@@ -209,19 +209,19 @@ const blogData = [
           <p>If you’re looking to streamline your search process and make it even more efficient, these quick tips will help you get the best results from Google Scholar:</p>
         <ul className="ml-8 list-disc">
               <li> Google Scholar searches are not case-sensitive – You don’t need to worry about upper or lowercase letters, so focus on your keywords.</li>
-              <li> Use keywords, not full sentences – Think like a search engine. Instead of typing a question or a long phrase, break it down into the essential keywords. For example, try "<a
+              <li> Use keywords, not full sentences – Think like a search engine. Instead of typing a question or a long phrase, break it down into the essential keywords. For example, try &#34;<a
                 href="https://www.contentlywriters.com/blog/what-are-the-14-principles-of-management"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">principles of management</a>" instead of "What are the 14 principles of management by Fayol?"</li>
-              <li> Use quotation marks for exact phrases – When you're looking for a specific phrase or term, using quotation marks helps you narrow down to papers that use that exact phrase. Example: "<a
+                rel="noopener noreferrer">principles of management</a>&#34; instead of &#34;What are the 14 principles of management by Fayol?&#34;</li>
+              <li> Use quotation marks for exact phrases – When you&#39;re looking for a specific phrase or term, using quotation marks helps you narrow down to papers that use that exact phrase. Example: &#34;<a
                 href="https://www.contentlywriters.com/blog/why-ai-cannot-replace-professional-writers-academic-success"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">artificial intelligence in academic success</a>."</li>
+                rel="noopener noreferrer">artificial intelligence in academic success</a>.&#34;</li>
               <li> Include a publication year for recent research – If you want the latest research, add the publication year to your search. This will help you find papers from that specific year.</li>
               <li> Use the sidebar filters to adjust your results – The left-hand sidebar lets you adjust the time range, sort by relevance, and find articles by specific authors. Use it to quickly narrow down your results.</li>
-              <li>Boolean operators – Combine different terms using operators like AND, OR, and NOT to make your search even more specific. For example, if you want papers on digital marketing but not social media, you can search: "digital marketing" -social media.</li>
+              <li>Boolean operators – Combine different terms using operators like AND, OR, and NOT to make your search even more specific. For example, if you want papers on digital marketing but not social media, you can search: &#34;digital marketing&#34; -social media.</li>
             </ul>
         
           </div> 

@@ -40,6 +40,7 @@ import img37 from "@/assets/image/blogImg37.jpg";
 import img38 from "@/assets/image/blogImg38.jpg";
 import img39 from "@/assets/image/blogImg39.jpg";
 import img40 from "@/assets/image/blogImg40.jpg";
+import img41 from "@/assets/image/blogImg41.jpg";
 
 
 import { ImTextColor } from "react-icons/im";
@@ -47,6 +48,227 @@ import { color } from "framer-motion";
 
 const blogData = [
 
+  {
+    slug: "how-to-use-google-scholar",
+    heading: "How to Use Google Scholar: A Student’s Research Guide",
+    date: "April 04, 2025",
+    author: "Charchit Sharma",
+    image: img41,
+    metaTitle: "How to Use Google Scholar: A Student’s Research Guide",
+    metaDescription: "Master Google Scholar with this ultimate student guide! Learn expert research tips, find academic papers fast, and improve your assignments effortlessly.",
+    keywords: [
+      "Master Business Management Assignments 2025",
+      "artificial intelligence in academic success",
+      "principles of management",
+      "Google Scholar",
+      "Citation Formats",
+      "best assignment services"
+    ],
+    description: "Master Google Scholar with this ultimate student guide! Learn expert research tips, find academic papers fast, and improve your assignments effortlessly.",
+    post: [
+      {
+        about: (
+          <div>
+            <p>
+            Let’s be honest—doing research for assignments can feel like a wild goose chase. You Google something, only to sift through random blogs, outdated articles, or—worst of all—paywalled journals. It’s frustrating! But don’t worry, because <a
+                href="https://scholar.google.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Google Scholar</a> is here to save the day. Think of it as your academic search engine, helping you find credible, peer-reviewed research without the headache.
+            </p>
+            <p className="mt-2">Whether you're working on an essay or dissertation or need solid sources, this guide will help you use Google Scholar like a research pro. And hey, if you ever need help turning that research into a well-written assignment, we've got you covered!</p>
+            
+          
+          </div>
+        ),
+      },
+
+      {
+        title1: "What is Google Scholar?",
+        about: (
+          <div>
+        <p>Imagine if Google only showed you serious academic content—no ads, sketchy blogs, or solid research. That’s Google Scholar. It lets you find books, journal articles, <a
+                href="https://www.contentlywriters.com/blog/time-management-tips-for-thesis"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">thesis</a>, conference papers, and more, all from trusted sources.</p>
+        
+          </div> 
+        ),
+      },
+
+      {
+        title1: "Why Should You Use Google Scholar?",
+        about: (
+          <div>
+        <ul className="ml-8 list-disc">
+              <li> Find high-quality academic papers in seconds</li>
+              <li> Generate citations in one click (goodbye, manual formatting!)</li>
+              <li> Discover free full-text PDFs of research papers</li>
+              <li> Stay updated on the latest research in your field</li>
+              <li> Filter results by date, relevance, and author</li>
+  
+            </ul>
+        
+          </div> 
+        ),
+      },
+      
+      {
+        title: "The Ultimate Google Scholar Guide: Search, Cite, and Find Full Texts for Free",
+        about: (
+          <div>
+            
+        <h4 className="font-bold mt-2">Step 1: How to Search Like a Pro</h4>
+        <p className="font-bold">
+        Basic Search
+        </p>
+        <p>Using Google Scholar is as simple as typing your topic in the search bar. For example, if you’re researching mastering business management, just enter -<a
+                href="https://www.contentlywriters.com/blog/master-business-management-assignments"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Master Business Management Assignments 2025</a> </p>
+        <p className="font-bold mt-1">
+        Pro Search Hacks
+        </p>
+        <p>Want more precise results? Try these tricks: </p>
+        <ul className="ml-8 list-disc">
+              <li> Find exact phrases: Use quotation marks → "digital marketing strategies"</li>
+              <li> Exclude words: Use a minus sign → leadership skills -corporate</li>
+              <li> Find research by a specific author: Use author: → author: "John Doe"</li>
+              <li>Filter by year: Click “Custom range” to get recent studies.</li>
+             
+      
+            </ul>
+          
+        
+        <h4 className="font-bold mt-2">Step 2: Understanding the Search Results Page</h4>
+        <p>Once you hit search, you’ll see a list of <a
+                href="https://www.contentlywriters.com/blog/how-to-structure-research-paper"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">research papers</a>. Here’s what to pay attention to:</p>
+        <ul className="ml-8 list-disc">
+              <li> The First Two Lines – This includes the title, author(s), and publication details. This info helps you decide if a paper is relevant.</li>
+              <li> Quick Access to Full Text – Look for [PDF] links on the right side to check if the paper is freely available.</li>
+              <li> “Cited By” Count – The more times a paper is cited, the more influential it is. If a paper has been cited hundreds of times, it’s probably worth a read!</li>
+              <li> Related Articles & Versions – Click “All Versions” to find free copies, and check “Related Articles” to explore similar research.</li>
+  
+            </ul>
+        
+
+        <h4 className="font-bold mt-2">Step 3: Customizing Google Scholar for Better Results</h4>
+        <p>
+        Make Google Scholar work for you by tweaking a few settings:
+        </p>
+        <ul className="ml-8 list-disc">
+              <li> Use the Sidebar Filters – Narrow down your search by adjusting the publication year, sorting by relevance, or filtering by a specific journal.</li>
+              <li> Enable Library Links – Connect Google Scholar to your university library for access to subscription-only papers. Just go to Settings - Library Links and enter your university name.</li>
+              <li> Save Articles to “My Library” – Click the star icon under any paper to save it for later. You can find all your saved papers under “My Library” on the left panel.</li>
+          
+            </ul>
+        
+
+        <h4 className="font-bold mt-2">Step 4: Citing Sources in Seconds</h4>
+        <p>
+        Forget struggling with <a
+                href="https://pitt.libguides.com/citationhelp"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">citation formats</a> — Google Scholar makes it ridiculously easy:
+        </p>
+        <ul className="ml-8 list-disc">
+              <li> Click the quotation mark ("Cite") below any research paper.</li>
+              <li> Choose from APA, MLA, Harvard, Chicago, and more.</li>
+              <li> Copy and paste the citation into your bibliography. Boom, done!</li>  
+          
+            </ul>
+       
+        
+        <h4 className="font-bold mt-2">Step 5: Finding Full-Text Articles for Free</h4>
+        <p>
+        We’ve all been there—finding the perfect research paper, only to hit a paywall. But don’t worry, there are ways to access research for free:
+        </p> 
+        <ul className="ml-8 list-disc">
+              <li>Click on “All Versions” – This option often leads to free copies available through different sources.</li>
+              <li> Check ResearchGate – Many researchers upload their papers here for public access.</li>
+              <li> Browse University Repositories – Some universities provide open access to their research, which you can freely download.</li>  
+          
+            </ul>
+           
+       
+                    
+          </div>
+        ),
+      },
+      
+      {
+        title: "Tips for Searching Google Scholar",
+        about: (
+          <div>
+          <p>If you’re looking to streamline your search process and make it even more efficient, these quick tips will help you get the best results from Google Scholar:</p>
+        <ul className="ml-8 list-disc">
+              <li> Google Scholar searches are not case-sensitive – You don’t need to worry about upper or lowercase letters, so focus on your keywords.</li>
+              <li> Use keywords, not full sentences – Think like a search engine. Instead of typing a question or a long phrase, break it down into the essential keywords. For example, try "<a
+                href="https://www.contentlywriters.com/blog/what-are-the-14-principles-of-management"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">principles of management</a>" instead of "What are the 14 principles of management by Fayol?"</li>
+              <li> Use quotation marks for exact phrases – When you're looking for a specific phrase or term, using quotation marks helps you narrow down to papers that use that exact phrase. Example: "<a
+                href="https://www.contentlywriters.com/blog/why-ai-cannot-replace-professional-writers-academic-success"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">artificial intelligence in academic success</a>."</li>
+              <li> Include a publication year for recent research – If you want the latest research, add the publication year to your search. This will help you find papers from that specific year.</li>
+              <li> Use the sidebar filters to adjust your results – The left-hand sidebar lets you adjust the time range, sort by relevance, and find articles by specific authors. Use it to quickly narrow down your results.</li>
+              <li>Boolean operators – Combine different terms using operators like AND, OR, and NOT to make your search even more specific. For example, if you want papers on digital marketing but not social media, you can search: "digital marketing" -social media.</li>
+            </ul>
+        
+          </div> 
+        ),
+      },
+
+      {
+        title: "Why is Google Scholar Better Than Google for Finding Research Papers?",
+        about: (
+          <div>
+          <p>It’s tempting to simply Google your research topic, but Google Scholar is a far better tool when you need credible, academic sources. Here’s why:</p>
+        <ul className="ml-8 list-disc">
+              <li>Focused Search Results – Unlike regular Google, which pulls in results from all over the internet, Google Scholar only displays academic papers, books, and other scholarly content. This gives you a more reliable foundation for your research.</li>
+              <li> Peer-Reviewed Sources – Google Scholar prioritizes articles that have been peer-reviewed, meaning they’ve gone through rigorous scrutiny before being published.</li>
+              <li> Citation Information – Google Scholar lets you see how many times a paper has been cited, which is a great indicator of its impact and credibility in the field.</li>
+              
+            </ul>
+        
+          </div> 
+        ),
+      },
+
+      {
+        title: "Final Thoughts: Work Smarter, Not Harder",
+        about: (
+          <div>
+        <p>Google Scholar is a lifesaver for students who need reliable sources without the hassle. Once you get the hang of it, researching becomes quicker, easier, and way less stressful. So go ahead, start exploring, and give your assignments that extra edge!</p>
+        
+        <p className="mt-2"> Need help turning your research into a high-quality assignment? Check out our <a
+                href="https://www.contentlywriters.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">best assignment services</a> for expert support and timely submissions.</p>
+            
+                      
+        
+          </div> 
+        ),
+      },
+            
+        
+      
+      
+     
+    ],
+  },
+  
   {
     slug: "time-management-tips",
     heading: "Time Management Tips for Students: Balance Studies & Writing",

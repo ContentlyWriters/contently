@@ -42,8 +42,18 @@ import img37 from "@/assets/image/blogImg37.jpg";
 import img38 from "@/assets/image/blogImg38.jpg";
 import img39 from "@/assets/image/blogImg39.jpg";
 import img40 from "@/assets/image/blogImg40.jpg";
+import img41 from "@/assets/image/blogImg41.jpg";
 
 const blogData = [
+  {
+    tag: "blog-39",
+    slug: "how-to-use-google-scholar",
+    heading: "How to Use Google Scholar: A Student’s Research Guide",
+    date: "April 04, 2025",
+    image: img41,
+    about:"Let’s be honest—doing research for assignments can feel like a wild goose chase. You Google something, only to sift through random blogs, outdated articles, or—worst of all—paywalled journals. It’s frustrating! But don’t worry, because Google Scholar is here to save the day. Think of it as your academic search engine, helping you find credible, peer-reviewed research without the headache.",
+  },
+  
   {
     tag: "blog-38",
     slug: "time-management-tips",

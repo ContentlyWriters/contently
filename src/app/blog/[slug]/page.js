@@ -68,7 +68,7 @@ const blogData = [
         about: (
           <div>
             <p>
-            Let’s be honest: student life can feel like a juggling act most days. It's a lot to do <a
+            Let&#39;s be honest: student life can feel like a juggling act most days. It&#39;s a lot to do <a
                 href="https://www.contentlywriters.com/blog/time-management-tips"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
@@ -99,7 +99,7 @@ const blogData = [
           
         
         <h4 className="font-bold mt-2">2. Grammarly – Your Silent Writing Partner</h4>
-        <p>Grammarly is more than just a spell checker—it identifies the mistakes you overlook after reading your paper multiple times and can’t distinguish between “affect” and “effect. " It corrects grammar, spelling, and even suggests improvements for sentence structure and tone. It's great for essays, lab reports, or even emailing a professor without sounding rushed.</p>
+        <p>Grammarly is more than just a spell checker—it identifies the mistakes you overlook after reading your paper multiple times and can&#39;t distinguish between &#34;affect&#34; and &#34;effect&#34;. It corrects grammar, spelling, and even suggests improvements for sentence structure and tone. It&#39;s great for essays, lab reports, or even emailing a professor without sounding rushed.</p>
         
 
         <h4 className="font-bold mt-2">3. Anki – For Memorizing Without the Burnout</h4>

@@ -186,7 +186,7 @@ const blogData = [
                 rel="noopener noreferrer">best assignment services</a> for expert support and timely submissions.</p>
 
                 <p className="mt-2">Check out all the <a
-                href="https://drive.google.com/file/d/19hq7xU-gc2bRQ9g1jTtI8NT2v4e7TgLs/view?usp=sharing"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSddU_J8J8hy_dMLtla8EsFZvkOPR4JFAGch8dr-vQzovFpmGg/viewform?usp=header"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
                 rel="noopener noreferrer">free tools</a> mentioned above.</p>

@@ -43,8 +43,18 @@ import img38 from "@/assets/image/blogImg38.jpg";
 import img39 from "@/assets/image/blogImg39.jpg";
 import img40 from "@/assets/image/blogImg40.jpg";
 import img41 from "@/assets/image/blogImg41.jpg";
+import img42 from "@/assets/image/blogImg42.jpg";
 
 const blogData = [
+  {
+    tag: "blog-40",
+    slug: "free-tools-to-make-study-easy",
+    heading: "Top 10 Free Tools to Make Studying Easier for Students in 2025",
+    date: "April 10, 2025",
+    image: img42,
+    about:"Let’s be honest: student life can feel like a juggling act most days. It's a lot to do time management between classes, assignments, part-time jobs, and trying to keep some form of social life. Sometimes it feels like you’re running a marathon with your shoelaces tied together.",
+  },
+  
   {
     tag: "blog-39",
     slug: "how-to-use-google-scholar",

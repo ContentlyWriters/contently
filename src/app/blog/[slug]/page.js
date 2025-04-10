@@ -41,6 +41,7 @@ import img38 from "@/assets/image/blogImg38.jpg";
 import img39 from "@/assets/image/blogImg39.jpg";
 import img40 from "@/assets/image/blogImg40.jpg";
 import img41 from "@/assets/image/blogImg41.jpg";
+import img42 from "@/assets/image/blogImg42.jpg";
 
 
 import { ImTextColor } from "react-icons/im";
@@ -48,6 +49,160 @@ import { color } from "framer-motion";
 
 const blogData = [
 
+  {
+    slug: "free-tools-to-make-study-easy",
+    heading: "Top 10 Free Tools to Make Studying Easier for Students in 2025",
+    date: "April 10, 2025",
+    author: "Charchit Sharma",
+    image: img42,
+    metaTitle: "Top 10 Free Tools to Make Studying Easier for Students in 2025",
+    metaDescription: "Discover the top 10 free tools students should use in 2025 to stay organized, boost focus, improve writing, and make studying less stressful.",
+    keywords: [
+      "Time Management",
+      "Thesi help",
+      "best assignment services"
+    ],
+    description: "Discover the top 10 free tools students should use in 2025 to stay organized, boost focus, improve writing, and make studying less stressful.",
+    post: [
+      {
+        about: (
+          <div>
+            <p>
+            Let’s be honest: student life can feel like a juggling act most days. It's a lot to do <a
+                href="https://www.contentlywriters.com/blog/time-management-tips"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">time management</a> between classes, assignments, part-time jobs, and trying to keep some form of social life. Sometimes it feels like you’re running a marathon with your shoelaces tied together.
+            </p>
+            <p className="mt-2">The good news? There are tools out there that can make a difference—and you don’t need to spend a cent to use them.</p>
+            <p className="mt-2">These are tools I’ve personally used or recommended to friends, and they’ve helped all of us stay a bit more organized, focused, and less stressed. Whether you’re starting your first year of college or wrapping up your <a
+                href="https://www.contentlywriters.com/blog/time-management-tips-for-thesis"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">thesis</a>, these 10 free tools can help you stay on top of things.</p>
+          
+          </div>
+        ),
+      },
+
+      
+      {
+        title1: "These Free Tools Will Make Studying Easier for You in 2025",
+        about: (
+          <div>
+            
+        <h4 className="font-bold mt-2">1. Notion – For All Your Notes, Tasks, and Random Thoughts</h4>
+        
+        <p>If you’ve never tried Notion before, imagine it as a blank canvas that you can transform into the ultimate study dashboard. You can take class notes, manage deadlines, plan your week, or even organize your reading list—all in one place. </p>
+        
+        <p className="mt-1">The layout is clean and customizable, making it perfect for those who prefer having their system. Additionally, there are plenty of free templates designed specifically for students.</p>
+          
+        
+        <h4 className="font-bold mt-2">2. Grammarly – Your Silent Writing Partner</h4>
+        <p>Grammarly is more than just a spell checker—it identifies the mistakes you overlook after reading your paper multiple times and can’t distinguish between “affect” and “effect. " It corrects grammar, spelling, and even suggests improvements for sentence structure and tone. It's great for essays, lab reports, or even emailing a professor without sounding rushed.</p>
+        
+
+        <h4 className="font-bold mt-2">3. Anki – For Memorizing Without the Burnout</h4>
+        <p>
+        Studying for exams? Anki is a flashcard app that uses spaced repetition, meaning it shows you information right before you’re likely to forget it. This makes memorizing things way more effective than just cramming.
+        </p>
+        <p className="mt-1">It’s beneficial for subjects that rely on heavy memorization—anatomy, languages, or legal terms.</p>
+        
+
+        <h4 className="font-bold mt-2">4. Canva – When Presentation Matters</h4>
+        <p>
+        Whether you’re making a poster, a slideshow, or even your resume, Canva makes it look polished without needing any design skills. It’s simple to use and has loads of free templates to work with.
+        </p>
+        <p className="mt-1">It’s perfect for making projects stand out or adding that extra bit of professionalism when it’s needed.</p>
+       
+        
+        <h4 className="font-bold mt-2">5. FutureLearn – Free Online Courses from Top Universities.</h4>
+        <p>
+        FutureLearn offers free short courses from UK universities on topics like business, coding, and health. It’s perfect for students in the USA and UK who want to explore new subjects or upskill without spending money.
+        </p>
+
+        <h4 className="font-bold mt-2">6. Zotero – Say Goodbye to Citation Stress</h4>
+        <p>
+        Citing your sources can take ages, and let’s be honest—it’s easy to mess up. Zotero helps you collect and organize your references while automatically generating citations in the format your assignment requires (APA, MLA, Chicago, etc.).
+        </p>
+        <p className="mt-1">It also integrates with Word and Google Docs, so you can insert citations as you write.</p>
+
+        <h4 className="font-bold mt-2">7. Google Keep – For the Small Stuff You Don’t Want to Forget</h4>
+        <p>
+        Need a quick place to jot something down? Google Keep is great for making to-do lists, study reminders, or storing random thoughts that pop up during the day.
+        </p>
+        <p className="mt-1">It syncs across devices, so your notes are always handy whether you’re on your laptop or phone.</p>
+
+        <h4 className="font-bold mt-2">8. Pomofocus – Stay Focused Without Burning Out</h4>
+        <p>
+        If focusing is a struggle (and let’s be real—it is for a lot of us), try Pomofocus. It’s a simple Pomodoro timer that breaks your study time into 25-minute sessions with 5-minute breaks in between.
+        </p>
+        <p className="mt-1">It sounds basic, but this small change can help you get started and avoid the all-too-familiar spiral of procrastination.</p>
+
+        <h4 className="font-bold mt-2">9. Wolfram Alpha – Smarter Than Your Average Calculator</h4>
+        <p>
+        Wolfram Alpha is way more than a calculator. You can type in equations, stats questions, or even science problems, and it will not only solve them but also explain how it got there.
+        </p>
+        <p className="mt-1">It’s super helpful when you want to understand a concept instead of just getting the answer.</p>
+
+        <h4 className="font-bold mt-2">10. Trello – Bring Some Order to Your Semester</h4>
+        <p>Trello is a task management tool where you can visually organize projects, deadlines, and study goals. You can create boards for each class or assignment, and move tasks as you go.
+        </p>
+        <p className="mt-1">It’s especially helpful for group projects or when you’ve got a lot on your plate and need a clear view of what’s coming up.</p> 
+           
+       
+                    
+          </div>
+        ),
+      },
+
+      {
+        title1: "Final Thoughts",
+        about: (
+          <div>
+        <p>Studying is tough enough without having to do it all alone or from scratch. These tools exist to make things easier—not perfect, but easier. And when you’re balancing multiple responsibilities, even a little help goes a long way.</p>
+        
+        <p className = "mt-2">You don’t need to use all ten. Try a few, see what clicks. Everyone’s study habits are different, and the right tool for someone else might not be the one for you. The point is to find the systems that work for you—ones that help you feel a little more in control of your time, your tasks, and your learning.</p>
+        <p className="mt-2">At the end of the day, it’s not about being constantly productive. It’s about making space for your goals and your well-being.</p>
+        
+        <h4 className="font-bold mt-2">Quick Recap: Free Tools to Check Out</h4>
+        <ul className="ml-8 list-disc">
+              <li><strong>Notion –</strong> All-in-one study planner</li>
+              <li><strong>Grammarly –</strong> Clean, clear writing help</li>
+              <li><strong>Anki –</strong> Smart flashcards that work</li>
+              <li><strong>Canva –</strong> Design made easy</li>
+              <li><strong>Zotero –</strong> Stress-free citations</li>
+              <li><strong>FutureLearn –</strong> Free Online Courses</li>
+              <li><strong>Google Keep –</strong> Simple notes on the go</li>
+              <li><strong>Pomofocus –</strong> Focused study sessions</li>
+              <li><strong>Wolfram Alpha –</strong> Step-by-step problem solving</li>
+              <li><strong>Trello –</strong> Keep your workload organized</li>
+             
+            </ul>
+            <p className="mt-2">Need help turning your research into a high-quality assignment? Check out our <a
+                href="https://www.contentlywriters.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">best assignment services</a> for expert support and timely submissions.</p>
+
+                <p className="mt-2">Check out all the <a
+                href="https://drive.google.com/file/d/19hq7xU-gc2bRQ9g1jTtI8NT2v4e7TgLs/view?usp=sharing"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">free tools</a> mentioned above.</p>
+                      
+        
+          </div> 
+        ),
+      },  
+            
+        
+      
+      
+     
+    ],
+  },
+  
   {
     slug: "how-to-use-google-scholar",
     heading: "How to Use Google Scholar: A Student’s Research Guide",

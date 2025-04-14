@@ -69,9 +69,9 @@ const blogData = [
         about: (
           <div>
             <p>
-            Procrastination is something we're accidentally experts at, even though it's something that tends to hurt us academically. You sit down, all ready to tackle that one assignment, and somehow you end up deep-cleaning your room, checking the weather in three different cities, or doom-scrolling TikTok for “just five minutes.” Next thing you know? It’s midnight, the deadline’s creeping up, and the panic kicks in hard.
+            Procrastination is something we&#39;re accidentally experts at, even though it&#39;s something that tends to hurt us academically. You sit down, all ready to tackle that one assignment, and somehow you end up deep-cleaning your room, checking the weather in three different cities, or doom-scrolling TikTok for “just five minutes.” Next thing you know? It&#39;s midnight, the deadline&#39;s creeping up, and the panic kicks in hard.
             </p>
-            <p className="mt-2">If that hit too close to home, don’t worry, you're far from alone.</p>
+            <p className="mt-2">If that hit too close to home, don&#39;t worry, you&#39;re far from alone.</p>
             <p className="mt-2">But the big question is: Why do we keep procrastinating, especially as students? And more importantly, how do we stop? Let’s talk about it.</p>
             
           
@@ -106,7 +106,7 @@ const blogData = [
         <ul className="ml-8 list-disc">
               <li><strong>Fear of messing up –</strong> It’s easier to delay than to risk trying and not getting it right.</li>
               <li><strong>Perfectionism –</strong> You wait for the “perfect” moment or perfect idea, which never shows up.</li>
-              <li><strong>Too much freedom –</strong> Especially at university, where no one checks in on you, it's easy to drift off track.</li>
+              <li><strong>Too much freedom –</strong> Especially at university, where no one checks in on you, it&#39;s easy to drift off track.</li>
               <li><strong>Burnout –</strong> If your brain’s already fried from juggling 100 things, even starting feels exhausting.</li>
               <li><strong>Distractions 24/7 –</strong> Phones, Netflix, flatmate drama... everything seems more appealing than coursework.</li>
   

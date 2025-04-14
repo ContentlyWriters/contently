@@ -44,8 +44,18 @@ import img39 from "@/assets/image/blogImg39.jpg";
 import img40 from "@/assets/image/blogImg40.jpg";
 import img41 from "@/assets/image/blogImg41.jpg";
 import img42 from "@/assets/image/blogImg42.jpg";
+import img43 from "@/assets/image/blogImg43.jpg";
 
 const blogData = [
+  {
+    tag: "blog-41",
+    slug: "why-we-procrastinate",
+    heading: "Why We Procrastinate and How to Overcome It: Psychology Explained",
+    date: "April 14, 2025",
+    image: img43,
+    about:"Procrastination is something we're accidentally experts at, even though it's something that tends to hurt us academically. You sit down, all ready to tackle that one assignment, and somehow you end up deep-cleaning your room, checking the weather in three different cities, or doom-scrolling TikTok for “just five minutes.” Next thing you know? It’s midnight, the deadline’s creeping up, and the panic kicks in hard.",
+  },
+  
   {
     tag: "blog-40",
     slug: "free-tools-to-make-study-easy",

@@ -92,7 +92,7 @@ const blogData = [
             
         <h4 className="font-bold mt-1">1. Flexible Course Structure</h4>
         <p>
-        In the US, students are usually free to explore different subjects in their first couple of years before choosing a major. It’s perfect if you're still figuring out your path.
+        In the US, students are usually free to explore different subjects in their first couple of years before choosing a major. It&#39;s perfect if you&#39;re still figuring out your path.
         </p>
 
         <h4 className="font-bold mt-1">2. Campus Life</h4>
@@ -103,7 +103,7 @@ const blogData = [
         <p>
         Higher education institutions in the US draw learners from across the globe. This offers exposure to global cultures and helps build a wider network.</p>
 
-        <p className="mt-1">Plus, if you're based on the West Coast, finding the best <a
+        <p className="mt-1">Plus, if you&#39;re based on the West Coast, finding the best <a
                 href="https://www.contentlywriters.com/service/assignment-in-usa/california"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
@@ -134,7 +134,7 @@ const blogData = [
             
         <h4 className="font-bold mt-1">1. Shorter Course Duration</h4>
         <p>
-        Most undergraduate degrees in the UK are just three years, and master's degrees often take only one year. You save time and money.
+        Most undergraduate degrees in the UK are just three years, and master&#39;s degrees often take only one year. You save time and money.
         </p>
 
         <h4 className="font-bold mt-1">2. Academic Focus</h4>
@@ -171,7 +171,7 @@ const blogData = [
         title: "Need Help with Assignments? Here’s a Smart Option",
         about: (
           <div>
-        <p>Whether you're studying in Oxford or Ohio, assignments are a major part of your academic life. And let’s be honest, juggling lectures, part-time jobs, and social life can get overwhelming.</p>
+        <p>Whether you&#39;re studying in Oxford or Ohio, assignments are a major part of your academic life. And let&#39;s be honest, juggling lectures, part-time jobs, and social life can get overwhelming.</p>
         
         <p className="mt-2"> That’s where assignment writing services come in handy. In academic hubs like Oxford, it’s not uncommon for students to seek reliable <a
                 href="https://www.contentlywriters.com/service/assignment-in-uk/oxford"
@@ -236,7 +236,7 @@ const blogData = [
 
         <h4 className="font-bold mt-2">5. Are assignment writing services legal and ethical?</h4>
         <p>
-        Yes, assignment writing services are legal as long as they’re used responsibly. They should be seen as a study aid or a source of guidance, not as a way to submit someone else's work as your own. Always choose ethical providers that deliver plagiarism-free content.
+        Yes, assignment writing services are legal as long as they&#39;re used responsibly. They should be seen as a study aid or a source of guidance, not as a way to submit someone else&#39;s work as your own. Always choose ethical providers that deliver plagiarism-free content.
         </p>
 
         <h4 className="font-bold mt-2">6. Do students in Oxford or London often use assignment help services?</h4>

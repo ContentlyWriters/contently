@@ -45,8 +45,18 @@ import img40 from "@/assets/image/blogImg40.jpg";
 import img41 from "@/assets/image/blogImg41.jpg";
 import img42 from "@/assets/image/blogImg42.jpg";
 import img43 from "@/assets/image/blogImg43.jpg";
+import img44 from "@/assets/image/blogImg44.jpg";
 
 const blogData = [
+  {
+    tag: "blog-42",
+    slug: "study-in-usa-vs-uk",
+    heading: "Study in the US vs UK: Pros, Cons & Academic Support Tips",
+    date: "April 21, 2025",
+    image: img44,
+    about:"Studying abroad is one of the most exciting decisions a student can make, but it also comes with a fair share of confusion. Two of the most popular destinations, the United States and the United Kingdom, offer world-class education, but in very different ways.",
+  },
+  
   {
     tag: "blog-41",
     slug: "why-we-procrastinate",

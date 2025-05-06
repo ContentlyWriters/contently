@@ -73,9 +73,9 @@ const blogData = [
         about: (
           <div>
             <p>
-            If you’ve been creating content and wondering why it’s not showing up in Google searches, here's the truth: ticking off keywords isn’t enough anymore.
+            If you&#39;ve been creating content and wondering why it&#39;s not showing up in Google searches, here&#39;s the truth: ticking off keywords isn&#39;t enough anymore.
             </p>
-            <p className="mt-2">In 2025, search engines are a lot smarter—and a lot more human. They’re looking for real subject-matter experts, not just pages filled with clever SEO tricks. So if your goal is to stand out online, you must become your field's trusted source. That’s where topical authority comes in.
+            <p className="mt-2">In 2025, search engines are a lot smarter—and a lot more human. They&#39;re looking for real subject-matter experts, not just pages filled with clever SEO tricks. So if your goal is to stand out online, you must become your field&#39;s trusted source. That&#39;s where topical authority comes in.
             </p>
             <p className="mt-2">In this guide, I’ll explain topical authority, why it matters now more than ever, and how you can start building a content hub that Google (and real people) trust.</p>
   
@@ -240,7 +240,7 @@ and update your content regularly. That might mean:</p>
         title: "Tools That Make the Job Easier",
         about: (
           <div>
-            <p>If you're serious about building topical authority, a few tools can help you work smarter:</p>
+            <p>If you&#39;re serious about building topical authority, a few tools can help you work smarter:</p>
             <ul className="ml-8 list-disc">
               <li> <strong><a
                 href="https://surferseo.com/"

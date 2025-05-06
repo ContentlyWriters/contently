@@ -46,8 +46,18 @@ import img41 from "@/assets/image/blogImg41.jpg";
 import img42 from "@/assets/image/blogImg42.jpg";
 import img43 from "@/assets/image/blogImg43.jpg";
 import img44 from "@/assets/image/blogImg44.jpg";
+import img45 from "@/assets/image/blogImg45.jpg";
 
 const blogData = [
+  {
+    tag: "blog-43",
+    slug: "topical-authority",
+    heading: "Topical Authority: Build a Winning Content Hub in 2025",
+    date: "May 05, 2025",
+    image: img45,
+    about:"StudyiIf you’ve been creating content and wondering why it’s not showing up in Google searches, here's the truth: ticking off keywords isn’t enough anymore.",
+  },
+  
   {
     tag: "blog-42",
     slug: "study-in-usa-vs-uk",

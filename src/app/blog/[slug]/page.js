@@ -203,7 +203,7 @@ const blogData = [
         <p>
         This might sound odd, but try to think through your ideas in English instead of translating from your mother tongue. Start small:</p>
         <ul className="ml-8 list-disc">
-              <li> Talk yourself through your daily routine in English, even if it's just in your head.</li>
+              <li> Talk yourself through your daily routine in English, even if it&#39;s just in your head.</li>
               <li> Journal in English.</li>
   
             </ul>

@@ -47,8 +47,18 @@ import img42 from "@/assets/image/blogImg42.jpg";
 import img43 from "@/assets/image/blogImg43.jpg";
 import img44 from "@/assets/image/blogImg44.jpg";
 import img45 from "@/assets/image/blogImg45.jpg";
+import img46 from "@/assets/image/blogImg46.jpg";
 
 const blogData = [
+  {
+    tag: "blog-44",
+    slug: "mastering-assignment-writing",
+    heading: "Mastering Assignment Writing: Tips for International Students with Language Barriers",
+    date: "May 12, 2025",
+    image: img46,
+    about:"Studying abroad is one of those things you’ve probably imagined for years: new adventures, a different culture, meeting people from all over. But then, Reality hits the moment your professor hands you that first assignment. You look at the paper, and suddenly, it feels like the dream is harder to reach than you thought. You glance at the brief, and it feels like it was written in academic English from another century. Suddenly, all that excitement about being in a new place starts to fade, and you’re left thinking, “Okay, now I’m in trouble!”",
+  },
+
   {
     tag: "blog-43",
     slug: "topical-authority",

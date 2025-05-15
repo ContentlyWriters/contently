@@ -96,7 +96,7 @@ const blogData = [
                 href="https://developers.google.com/search/updates/core-updates"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">core update</a> with one clear focus: putting user value first. It’s not that Google suddenly got emotional. It's that the web’s been flooded with AI spam, regurgitated how-tos, and “10 best tips” posts that say a lot and mean nothing. So, Google tightened the screws.        </p>
+                rel="noopener noreferrer">core update</a> with one clear focus: putting user value first. It&#39;s not that Google suddenly got emotional. It&#39;s that the web&#39;s been flooded with AI spam, regurgitated how-tos, and “10 best tips” posts that say a lot and mean nothing. So, Google tightened the screws.        </p>
        
         
         <p className="mt-1"><b>Update</b></p> 
@@ -164,7 +164,7 @@ const blogData = [
         <ul className="ml-8 list-disc">
               <li><b>People-first content wins - </b> If your article isn’t genuinely helping someone fix a problem, clear up a doubt, or learn something new, it won’t rank well anymore. </li>
               <li><b>Generic content means generic rankings - </b> Rewriting what’s already out there won’t cut it anymore. Google’s sniffing out content that adds nothing new to the conversation.</li>
-              <li><b>Clarity beats cleverness - </b> This update doesn’t care how smart you sound. It cares if you're genuinely useful.</li>
+              <li><b>Clarity beats cleverness - </b> This update doesn&#39;t care how smart you sound. It cares if you're genuinely useful.</li>
                 
             </ul>
 
@@ -188,7 +188,7 @@ const blogData = [
                 target="_blank"
                 rel="noopener noreferrer">site reputation abuse</a>.</p>
 
-        <p className="mt-1">What is it? In short, it's when a high-authority site hosts low-quality or third-party content just to rank for off-topic or irrelevant search queries. Think of a reputable news site suddenly publishing product reviews in a completely unrelated niche.</p>
+        <p className="mt-1">What is it? In short, it&#39;s when a high-authority site hosts low-quality or third-party content just to rank for off-topic or irrelevant search queries. Think of a reputable news site suddenly publishing product reviews in a completely unrelated niche.</p>
         <p className="mt-1"> Google’s stance now is clear. No more freeloaders.</p>
        
 
@@ -237,7 +237,7 @@ const blogData = [
                 rel="noopener noreferrer">content tone</a>.</li>
               <li><b>Clean up your existing content - </b> Audit your site. Identify pages that lack depth or are outdated, then either refresh them with meaningful content or remove them altogether. Don’t let old content drag your domain down.</li>
               <li><b>Use AI carefully - </b> AI tools can be great for outlining or brainstorming. But the final message, structure, and tone must be yours. Google can tell the difference.</li>
-              <li><b>Stick to your lane - </b> Be consistent with your niche. If your site is about digital marketing, don’t suddenly publish “Top 10 Electric Cars.” Relevance builds authority, and authority ranks. If you're aiming to strengthen your domain's expertise and relevance, <a
+              <li><b>Stick to your lane - </b> Be consistent with your niche. If your site is about digital marketing, don&#39;t suddenly publish “Top 10 Electric Cars.” Relevance builds authority, and authority ranks. If you&#39;re aiming to strengthen your domain&#39;s expertise and relevance, <a
                 href="https://www.contentlywriters.com/blog/topical-authority"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
@@ -259,7 +259,7 @@ const blogData = [
             
         
         <p>
-        Some folks are panicking. But here’s the truth: Google isn’t trying to ruin SEO. It’s trying to clean it up. If you're authentic, focused, and genuinely trying to help your audience, this update is your chance to shine. But if your SEO game is all smoke and mirrors, now’s the time to evolve or step aside.
+        Some folks are panicking. But here&#39;s the truth: Google isn&#39;t trying to ruin SEO. It&#39;s trying to clean it up. If you&#39;re authentic, focused, and genuinely trying to help your audience, this update is your chance to shine. But if your SEO game is all smoke and mirrors, now&#39;s the time to evolve or step aside.
         </p>
 
 

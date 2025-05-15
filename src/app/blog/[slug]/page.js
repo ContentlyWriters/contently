@@ -164,7 +164,7 @@ const blogData = [
         <ul className="ml-8 list-disc">
               <li><b>People-first content wins - </b> If your article isn’t genuinely helping someone fix a problem, clear up a doubt, or learn something new, it won’t rank well anymore. </li>
               <li><b>Generic content means generic rankings - </b> Rewriting what’s already out there won’t cut it anymore. Google’s sniffing out content that adds nothing new to the conversation.</li>
-              <li><b>Clarity beats cleverness - </b> This update doesn&#39;t care how smart you sound. It cares if you're genuinely useful.</li>
+              <li><b>Clarity beats cleverness - </b> This update doesn&#39;t care how smart you sound. It cares if you&#39;re genuinely useful.</li>
                 
             </ul>
 

@@ -139,7 +139,7 @@ const blogData = [
               <li><b>Fluff got filtered - </b> If your content rambles, repeats, or is written just to hit a word count, expect it to drop. </li>
                 
             </ul>
-            <p className="mt-2"> <b>Avoid:</b> If your blog reads like it was written for a search engine, not a person, that’s your problem. Start writing for the reader sitting behind the screen, not the algorithm scanning your page.</p>
+            <p className="mt-2"> If your blog reads like it was written for a search engine, not a person, that’s your problem. Start writing for the reader sitting behind the screen, not the algorithm scanning your page.</p>
 
 
         

@@ -48,8 +48,19 @@ import img43 from "@/assets/image/blogImg43.jpg";
 import img44 from "@/assets/image/blogImg44.jpg";
 import img45 from "@/assets/image/blogImg45.jpg";
 import img46 from "@/assets/image/blogImg46.jpg";
+import img47 from "@/assets/image/blogImg47.jpg";
+
 
 const blogData = [
+  {
+    tag: "blog-45",
+    slug: "google-seo-2025-update",
+    heading: "Google’s 2025 SEO Update Cracked: What’s Changing and Why It Matters",
+    date: "May 15, 2025",
+    image: img47,
+    about:"If you’ve been keeping up with Google’s updates like I have, you might’ve felt that this latest SEO update of 2025 is a bit different. It’s not just the usual shuffle of rankings or keyword tweaks. It feels like Google is trying to send us a message, a pretty clear one about what it truly wants from the web these days. Gone are the days when you could just play the system or stuff your pages with keywords. Now, it’s all about creating content that genuinely helps real people. No more tricks, no shortcuts, just useful, meaningful stuff that makes a difference. So, let’s get into what’s changed, why it matters, and how you can keep your SEO strong without feeling overwhelmed or stressed out.",
+  },
+  
   {
     tag: "blog-44",
     slug: "mastering-assignment-writing",

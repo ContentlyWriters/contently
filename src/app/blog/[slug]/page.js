@@ -144,7 +144,7 @@ const blogData = [
                 target="_blank"
                 rel="noopener noreferrer">Applying for FAFSA early</a> boosts your chances of getting the most beneficial financial support. For the 2025–2026 school year, FAFSA opened in October 2024, and submitting it by June 30, 2025, will give you the best chance to get the financial help you need.</p>
 
-        <p className="mt-1">If you're unsure how to apply for FAFSA, start by visiting the official FAFSA website, gathering necessary documents like your SSN and tax returns, and submitting the form online or via the app.</p>
+        <p className="mt-1">If you&#39;re unsure how to apply for FAFSA, start by visiting the official FAFSA website, gathering necessary documents like your SSN and tax returns, and submitting the form online or via the app.</p>
         <p className="mt-1"><b>Waiting too long could mean missing out on federal grants for college students in 2025 or low-interest loans, leaving you scrambling to cover costs when school starts.</b></p>
               
           </div>

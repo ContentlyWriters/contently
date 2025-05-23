@@ -49,9 +49,19 @@ import img44 from "@/assets/image/blogImg44.jpg";
 import img45 from "@/assets/image/blogImg45.jpg";
 import img46 from "@/assets/image/blogImg46.jpg";
 import img47 from "@/assets/image/blogImg47.jpg";
+import img48 from "@/assets/image/blogImg48.jpg";
 
 
 const blogData = [
+ {
+    tag: "blog-46",
+    slug: "2025-stident-financial-aid",
+    heading: "2025 Student Financial Aid Guide for US College Students",
+    date: "May 23, 2025",
+    image: img48,
+    about:"Starting college is an exciting new chapter, but money worries can quickly take over. With updates to student financial aid coming in 2025, knowing the latest changes and how to handle your budget is more important than ever.",
+  },
+ 
   {
     tag: "blog-45",
     slug: "google-seo-2025-update",

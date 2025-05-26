@@ -79,7 +79,7 @@ const blogData = [
             <p>
             <b>Understand SGE, Its Impact, and How to Optimize for AI-Generated Search Results</b>
             </p>
-            <p className="mt-2">Google started revolutionizing the search experience in 2024 and 2025 with a feature dubbed SGE (Search Generative Experience), which is today known as AI Overviews. It's no longer merely a test; it's being implemented all around the world and is already changing the way consumers engage with online material.</p>
+            <p className="mt-2">Google started revolutionizing the search experience in 2024 and 2025 with a feature dubbed SGE (Search Generative Experience), which is today known as AI Overviews. It'&#39; no longer merely a test; it&#39;s being implemented all around the world and is already changing the way consumers engage with online material.</p>
             <p className="mt-2">But what does that mean for your website? More importantly, how can you get featured in these AI-generated summaries?</p>
             <p className="mt-2">Let’s break it all down.</p>
           
@@ -122,7 +122,7 @@ const blogData = [
             </ul>
 
 
-        <p className="mt-1">So, even if you're not ranking #1, your site can still be featured—if it’s optimized properly.</p>
+        <p className="mt-1">So, even if you&#39;re not ranking #1, your site can still be featured—if it&#39;s optimized properly.</p>
         <p className="mt-1">For more insights on recent SEO changes, check out our latest blog post: <a
                 href="https://www.contentlywriters.com/blog/google-seo-2025-update"
                 class="text-[#5b6cf2] underline hover:no-underline"
@@ -208,8 +208,8 @@ const blogData = [
        <ul className="ml-8 list-disc">
               <li>Cover secondary questions in your article. In simpler terms, think of it like this:</li>
                  <ul className="ml-8 list-disc">
-              <li>Your article has a main question it's trying to answer.</li>
-              <li> Cover secondary questions" means you should also answer any other smaller, related questions that people might have while reading about the main topic.</li>
+              <li>Your article has a main question it&#39;s trying to answer.</li>
+              <li> Cover secondary questions&#34; means you should also answer any other smaller, related questions that people might have while reading about the main topic.</li>
              
               
             </ul>
@@ -254,11 +254,11 @@ const blogData = [
           <div>
       
         <p>
-      AI Overviews are not a passing trend. They're the new face of search, and businesses that adapt early will see increased visibility, engagement, and trust.</p>
+      AI Overviews are not a passing trend. They&#39;re the new face of search, and businesses that adapt early will see increased visibility, engagement, and trust.</p>
 
       
 
-        <p className="mt-2">Don't wait to lose clicks. Start optimizing your content now for the way people (and AI) search today.</p>
+        <p className="mt-2">Don&#39;t wait to lose clicks. Start optimizing your content now for the way people (and AI) search today.</p>
       
                   
           </div>

@@ -79,7 +79,7 @@ const blogData = [
             <p>
             <b>Understand SGE, Its Impact, and How to Optimize for AI-Generated Search Results</b>
             </p>
-            <p className="mt-2">Google started revolutionizing the search experience in 2024 and 2025 with a feature dubbed SGE (Search Generative Experience), which is today known as AI Overviews. It'&#39; no longer merely a test; it&#39;s being implemented all around the world and is already changing the way consumers engage with online material.</p>
+            <p className="mt-2">Google started revolutionizing the search experience in 2024 and 2025 with a feature dubbed SGE (Search Generative Experience), which is today known as AI Overviews. It&#39; no longer merely a test; it&#39;s being implemented all around the world and is already changing the way consumers engage with online material.</p>
             <p className="mt-2">But what does that mean for your website? More importantly, how can you get featured in these AI-generated summaries?</p>
             <p className="mt-2">Let’s break it all down.</p>
           

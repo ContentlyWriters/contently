@@ -48,6 +48,7 @@ import img45 from "@/assets/image/blogImg45.jpg";
 import img46 from "@/assets/image/blogImg46.jpg";
 import img47 from "@/assets/image/blogImg47.jpg";
 import img48 from "@/assets/image/blogImg48.jpg";
+import img49 from "@/assets/image/blogImg49.jpg";
 
 
 
@@ -56,6 +57,242 @@ import { color } from "framer-motion";
 
 const blogData = [
 
+  {
+    slug: "google-ai-overview-are-changing",
+    heading: "Google AI Overviews Are Changing SEO – How to Remain at the Top",
+    date: "May 26, 2025",
+    author: "Charchit Sharma",
+    image: img49,
+    metaTitle: "Google AI Overviews Are Changing SEO – How to Remain at the Top",
+    metaDescription: "Discover how Google AI Overviews (SGE) are reshaping SEO. Learn strategies to stay visible, rank higher, and optimize content for AI-driven search results.",
+    keywords: [
+      "best content writing services",
+      "Google’s 2025 SEO Update Cracked: What’s Changing and Why It Matters"
+     
+
+    ],
+    description: "Discover how Google AI Overviews (SGE) are reshaping SEO. Learn strategies to stay visible, rank higher, and optimize content for AI-driven search results.",
+    post: [
+      {
+        about: (
+          <div>
+            <p>
+            <b>Understand SGE, Its Impact, and How to Optimize for AI-Generated Search Results</b>
+            </p>
+            <p className="mt-2">Google started revolutionizing the search experience in 2024 and 2025 with a feature dubbed SGE (Search Generative Experience), which is today known as AI Overviews. It's no longer merely a test; it's being implemented all around the world and is already changing the way consumers engage with online material.</p>
+            <p className="mt-2">But what does that mean for your website? More importantly, how can you get featured in these AI-generated summaries?</p>
+            <p className="mt-2">Let’s break it all down.</p>
+          
+          </div>
+        ),
+      },
+
+
+      {
+        title1: "What Is Google’s AI Overview (SGE)?",
+        about: (
+          <div>
+            
+        <p>
+        Google’s AI Overview, previously called Search Generative Experience (SGE), is an AI-powered feature that appears at the top of some search results. Instead of just showing links, it gives users instant, summarized answers to their queries, compiled from various websites and sources. </p>
+       
+        <p className="mt-1">For example, instead of seeing a list of websites for “how to optimize blog content,” users might see:</p>
+        <p><b>“To optimize a blog post, include relevant keywords, structure content with H2 headings, and ensure it answers the reader’s intent. High-quality visuals and internal linking also help improve user engagement and SEO.”</b></p>
+        <p className="mt-1">This entire paragraph could come from your content—but only if you’ve optimized it right.</p>
+        
+
+        
+          </div> 
+        ),
+      },
+
+      {
+        title1: "How AI Overviews Are Changing SEO",
+        about: (
+          <div>
+      
+        <p>
+         AI Overviews don’t replace traditional search rankings, but they influence visibility, traffic, and conversions by doing three key things:</p>
+        
+         <ul className="ml-8 list-disc">
+              <li><strong>Answering queries directly –</strong> reducing the need to click links.</li>
+              <li><strong>Pulling content from trusted sources,</strong> even if they’re not in the top 3 positions.</li>
+              <li><strong>Highlighting brands with clear, structured, and helpful content.</strong></li>
+              
+            </ul>
+
+
+        <p className="mt-1">So, even if you're not ranking #1, your site can still be featured—if it’s optimized properly.</p>
+        <p className="mt-1">For more insights on recent SEO changes, check out our latest blog post: <a
+                href="https://www.contentlywriters.com/blog/google-seo-2025-update"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Google’s 2025 SEO Update Cracked: What’s Changing and Why It Matters</a></p>
+              
+          </div>
+        ),
+      },
+
+    
+      {
+        title: "How to Optimize for Google’s AI Overviews",
+        about: (
+          <div>
+      
+        <p>
+       Use the following user-friendly, white-hat content methods to get featured in AI Overviews:</p>
+       
+        <h4 className="font-bold mt-2">1. Write Direct, Clear Answers</h4>
+        <ul className="ml-8 list-disc">
+              <li>Break complex topics into concise paragraphs.</li>
+              <li>Use bullet points, lists, and bolded headings.</li>
+              <li>Answers should appear early in the content or above the fold.</li>
+              
+            </ul>
+        
+        <h4 className="font-bold mt-2">2. Use Conversational, Natural Language</h4>
+       <ul className="ml-8 list-disc">
+              <li>AI systems prefer a <a
+                href="https://app.uxcel.com/tutorials/mastering-ux-writing-tones-151"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">user-friendly tone</a> over robotic keyword stuffing.</li>
+              <li>Include questions users ask in your H2/H3s (e.g., “How do I optimize my website for AI search?”)</li>
+             
+              
+            </ul>
+        
+        <h4 className="font-bold mt-2">3. Leverage FAQ Schema Markup</h4>
+        <ul className="ml-8 list-disc">
+              <li>Add structured data (schema) to FAQs, reviews, and how-tos.</li>
+              <li>Helps Google identify your content as answer-worthy.</li>
+             
+              
+            </ul>
+        
+        <h4 className="font-bold mt-2">4. Showcase Expertise and Trust</h4>
+         <ul className="ml-8 list-disc">
+              <li>Include author bios, real data, case studies, and outbound links to credible sources.</li>
+              <li>Build <a
+                href="https://www.searchenginejournal.com/google-e-e-a-t-how-to-demonstrate-first-hand-experience/474446/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">E-E-A-T</a>: Experience, Expertise, Authoritativeness, Trustworthiness.</li>
+             
+              
+            </ul>
+        
+        <h4 className="font-bold mt-2">5. Keep Content Updated</h4>
+         <ul className="ml-8 list-disc">
+              <li>AI values fresh, relevant content</li>
+              <li>Add fresh statistics, screenshots, or insights to blogs regularly.</li>
+             
+              
+            </ul>
+
+          </div>
+        ),
+      },
+
+      {
+        title: "Bonus Tip: Optimize for Related Queries",
+        about: (
+          <div>
+      
+        <p>
+       AI Overviews often pull <a
+                href="https://www.ai21.com/blog/introducing-contextual-answers/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">contextual answers</a>, not just a single response. So:</p>
+       <ul className="ml-8 list-disc">
+              <li>Cover secondary questions in your article. In simpler terms, think of it like this:</li>
+                 <ul className="ml-8 list-disc">
+              <li>Your article has a main question it's trying to answer.</li>
+              <li> Cover secondary questions" means you should also answer any other smaller, related questions that people might have while reading about the main topic.</li>
+             
+              
+            </ul>
+              <li>Use tools like <a
+                href="https://answerthepublic.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">AnswerThePublic</a> to find related user questions.</li>
+             <li>Write with clusters in mind (e.g., if your post is about “SEO for AI search,” also address “how AI affects Google rankings” or “SGE vs traditional SEO”).</li>
+              
+            </ul>
+
+                  
+          </div>
+        ),
+      },
+
+
+      {
+        title: "Why It Matters for Content Creators & Businesses",
+        about: (
+          <div>
+      
+        <p>
+       If your business relies on organic traffic, visibility in AI Overviews is crucial. It’s like a fast pass to authority, without needing to outrank everyone traditionally.</p>
+      <p className="mt-1">At Contently Writers, we specialize in SEO content writing services designed to:</p>
+      <ul className="ml-8 list-disc">
+              <li>Answer user intent clearly</li>
+              <li> Target high-traffic, low-competition keywords</li>
+              <li> Help you rank not just in search, but in AI-generated answers too</li>
+             
+              
+            </ul>
+       
+          </div>
+        ),
+      },
+
+      {
+        title: "Final Thoughts: Be Visible Where It Matters",
+        about: (
+          <div>
+      
+        <p>
+      AI Overviews are not a passing trend. They're the new face of search, and businesses that adapt early will see increased visibility, engagement, and trust.</p>
+
+      
+
+        <p className="mt-2">Don't wait to lose clicks. Start optimizing your content now for the way people (and AI) search today.</p>
+      
+                  
+          </div>
+        ),
+      },
+
+
+      {
+        title: "Final WordsWant to Get Featured in AI Overviews?",
+        about: (
+          <div>
+        
+            
+        
+        <p>
+        Let Contently Writers help you stay ahead. Our <a
+                href="https://www.contentlywriters.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">best content writing services</a> are tailored to structure your content for both search engines and AI tools like Google SGE, ChatGPT, and Perplexity. 
+        </p>
+
+
+        <p className="mt-2">
+        <b>Contact us now</b> to get started with strategic, AI-ready content that delivers results.</p>
+       
+          </div> 
+        ),
+      },
+ 
+    ],
+  },
+ 
+ 
   {
     slug: "2025-stident-financial-aid",
     heading: "2025 Student Financial Aid Guide for US College Students",

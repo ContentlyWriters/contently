@@ -174,7 +174,7 @@ const blogData = [
           
           <h4 className="font-bold mt-2">5. Get Feedback (but Keep It Yours)</h4>
           <p>Ask someone you trust to read your draft, not to rewrite it, but to offer honest thoughts. It’s okay to get suggestions from mentors or editors, but don’t lose your tone.</p>
-          <p className="mt-1">Many students also seek quiet academic support from the best assignment services to refine grammar, tone, or structure, especially those who aren't native English speakers or feel uncertain about their writing voice. It&#39;s more common than you think.</p>
+          <p className="mt-1">Many students also seek quiet academic support from the best assignment services to refine grammar, tone, or structure, especially those who aren&#39;t native English speakers or feel uncertain about their writing voice. It&#39;s more common than you think.</p>
 
           </div>
         ),

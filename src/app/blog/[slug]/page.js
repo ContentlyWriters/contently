@@ -77,7 +77,7 @@ const blogData = [
         about: (
           <div>
             <p>
-            If you aim for a seat at Harvard, it’s a worldwide dream of thousands of students. While grades and test scores play a role, one of the most powerful components of your application is the personal essay. It's your chance to speak directly to the admissions team and show them who you are beyond numbers and transcripts.
+            If you aim for a seat at Harvard, it&#39;s a worldwide dream of thousands of students. While grades and test scores play a role, one of the most powerful components of your application is the personal essay. It&#39;s your chance to speak directly to the admissions team and show them who you are beyond numbers and transcripts.
             </p>
             <p className="mt-2">But what exactly does Harvard expect from these essays? And how can your essay stand out?</p>
             <p className="mt-2">Let’s dive deep into what makes a <a
@@ -136,7 +136,7 @@ const blogData = [
                 rel="noopener noreferrer">climate movement</a>, poetry, computer science, or starting your small business, Harvard wants to hear about it. But more than just passion, they’re looking for how you act on it. Are you doing something about your interests?</p>
           
           <h4 className="font-bold mt-2">5. Alignment with Harvard’s Values</h4>
-          <p>Harvard is deeply invested in building a community of leaders, changemakers, and ethical thinkers. Essays that align with those ideals naturally capture attention. Whether it's social responsibility, leadership, or a desire to give back, showcasing that in a grounded way works well.</p>
+          <p>Harvard is deeply invested in building a community of leaders, changemakers, and ethical thinkers. Essays that align with those ideals naturally capture attention. Whether it&#39;s social responsibility, leadership, or a desire to give back, showcasing that in a grounded way works well.</p>
  
           </div>
         ),
@@ -163,7 +163,7 @@ const blogData = [
                 href="https://www.contentlywriters.com/blog/a-beginner's-guide-to-writing-essays-in-proper-format"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">Beginner's Guide to Writing Essays in Proper Format</a>.</p>
+                rel="noopener noreferrer">Beginner&#39;s Guide to Writing Essays in Proper Format</a>.</p>
           
           <h4 className="font-bold mt-2">3. Demonstrated Growth and Self-Reflection</h4>
           <p>Admissions officers read thousands of essays every year. Topics like “winning the big game” or “volunteering abroad” are common; what makes your version different? Focus on your perspective more than the event itself.</p>
@@ -174,7 +174,7 @@ const blogData = [
           
           <h4 className="font-bold mt-2">5. Get Feedback (but Keep It Yours)</h4>
           <p>Ask someone you trust to read your draft, not to rewrite it, but to offer honest thoughts. It’s okay to get suggestions from mentors or editors, but don’t lose your tone.</p>
-          <p className="mt-1">Many students also seek quiet academic support from the best assignment services to refine grammar, tone, or structure, especially those who aren't native English speakers or feel uncertain about their writing voice. It’s more common than you think.</p>
+          <p className="mt-1">Many students also seek quiet academic support from the best assignment services to refine grammar, tone, or structure, especially those who aren't native English speakers or feel uncertain about their writing voice. It&#39;s more common than you think.</p>
 
           </div>
         ),
@@ -237,9 +237,9 @@ const blogData = [
         about: (
           <div>
            <h4 className="font-bold mt-2">When is the Harvard application due?</h4>
-          <p>Harvard's deadlines are typically January 1st for Regular Decision and November 1st for Restrictive Early Action. Always check the official Harvard Admissions Calendar for the current year.</p> 
+          <p>Harvard&#39;s deadlines are typically January 1st for Regular Decision and November 1st for Restrictive Early Action. Always check the official Harvard Admissions Calendar for the current year.</p> 
           
-           <h4 className="font-bold mt-2">What are Harvard's application requirements?</h4>
+           <h4 className="font-bold mt-2">What are Harvard&#39;s application requirements?</h4>
           <p> You need to submit the Common App or Coalition App, your transcripts, teacher recommendations, personal essay, and optional test scores. Harvard looks beyond numbers—your story matters.</p> 
           
            <h4 className="font-bold mt-2">How to write a Harvard application essay?</h4>

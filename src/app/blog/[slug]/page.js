@@ -97,7 +97,7 @@ const blogData = [
                 href="https://moz.com/learn/seo/what-is-seo"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">SEO (Search Engine Optimization)</a> writing involves creating content tailored to rank high on search engines. It's a strategic approach that focuses on incorporating relevant keywords, optimizing meta tags, and structuring content to enhance visibility.</p>
+                rel="noopener noreferrer">SEO (Search Engine Optimization)</a> writing involves creating content tailored to rank high on search engines. It&#39;s a strategic approach that focuses on incorporating relevant keywords, optimizing meta tags, and structuring content to enhance visibility.</p>
        
         <p className="mt-1"><b>Key Elements of SEO Writing:</b></p>
         <ul className="ml-8 list-disc">
@@ -126,7 +126,7 @@ const blogData = [
           
         
           
-          <p>Content writing focuses on delivering valuable, informative, or persuasive content tailored to a target audience. It's about storytelling, building brand voice, and engaging readers on a deeper level.</p>
+          <p>Content writing focuses on delivering valuable, informative, or persuasive content tailored to a target audience. It&#39;s about storytelling, building brand voice, and engaging readers on a deeper level.</p>
           <p className="mt-1"><b>Key Elements of Content Writing</b></p>
             <ul className="ml-8 list-disc">
            
@@ -206,7 +206,7 @@ const blogData = [
         about: (
           <div>
       
-       <p>Relying solely on SEO writing may bring visitors to your site, but without engaging content, they won't stay. Conversely, excellent content without SEO optimization may never reach your intended audience.</p>
+       <p>Relying solely on SEO writing may bring visitors to your site, but without engaging content, they won&#39;t stay. Conversely, excellent content without SEO optimization may never reach your intended audience.</p>
       <p className="mt-1"><b>Benefits of Combining SEO and Content Writing:</b></p>
       
        <ul className="ml-8 list-disc">
@@ -228,7 +228,7 @@ const blogData = [
           <div>
       
          <ul className="ml-8 list-disc">
-              <li><strong>Conduct Keyword Research:</strong> Identify relevant keywords that align with your audience's search intent. <b>Note: Use <a
+              <li><strong>Conduct Keyword Research:</strong> Identify relevant keywords that align with your audience&#39;s search intent. <b>Note: Use <a
                 href="https://business.google.com/in/ad-tools/keyword-planner/"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
@@ -250,7 +250,7 @@ const blogData = [
         about: (
           <div>
       
-        <p>A blog titled '5 Time-Saving Tips for Remote Teams' that relies solely on storytelling without incorporating SEO strategies may struggle to achieve high visibility in search engine results. However, by targeting the keyword "time management tips for remote teams" and structuring the content with SEO best practices, the blog can achieve higher visibility while still engaging readers.</p>
+        <p>A blog titled &#39;5 Time-Saving Tips for Remote Teams&#39; that relies solely on storytelling without incorporating SEO strategies may struggle to achieve high visibility in search engine results. However, by targeting the keyword &#34;time management tips for remote teams&#34; and structuring the content with SEO best practices, the blog can achieve higher visibility while still engaging readers.</p>
                   
           </div>
         ),
@@ -281,7 +281,7 @@ const blogData = [
         about: (
           <div>
            
-          <p>SEO writing and content writing are interdependent; each amplifies the other's impact. By integrating SEO strategies with compelling content, you can create pieces that rank high on search engines and captivate and convert your audience.</p> 
+          <p>SEO writing and content writing are interdependent; each amplifies the other&#39;s impact. By integrating SEO strategies with compelling content, you can create pieces that rank high on search engines and captivate and convert your audience.</p> 
           <p className="mt-2"><b>Bonus Tip:</b> Regularly update existing content by incorporating current keywords and enhancing readability to maintain and improve search rankings.</p>
           <p className="mt-2">Ready to elevate your content and drive real growth? Partner with our expert team offering the <a
                 href="https://www.contentlywriters.com/"

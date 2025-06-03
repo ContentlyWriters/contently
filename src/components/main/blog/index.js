@@ -52,9 +52,19 @@ import img47 from "@/assets/image/blogImg47.jpg";
 import img48 from "@/assets/image/blogImg48.jpg";
 import img49 from "@/assets/image/blogImg49.jpg";
 import img50 from "@/assets/image/blogImg50.jpg";
+import img51 from "@/assets/image/blogImg51.jpg";
 
 const blogData = [
 
+  {
+    tag: "blog-49",
+    slug: "seo-writing-vs-content-writing",
+    heading: "SEO Writing vs Content Writing: Which Truly Drives Results",
+    date: "June 03, 2025",
+    image: img51,
+    about:"Understand SGE, Its Impact, and How to Optimize for AI-Generated Search Results - Google started revolutionizing the search experience in 2024 and 2025 with a feature dubbed SGE (Search Generative Experience), which is today known as AI Overviews. It's no longer merely a test; it's being implemented all around the world and is already changing the way consumers engage with online material.",
+  },
+  
   {
     tag: "blog-48",
     slug: "harvard-application-essay-tips",

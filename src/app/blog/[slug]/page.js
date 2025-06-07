@@ -88,7 +88,7 @@ const blogData = [
                 rel="noopener noreferrer">law assignment help</a> when the workload piles up and clarity is missing.
             </p>
             <p className="mt-2">Honestly, going through student life wasn’t all that bad. Lectures? Surprisingly engaging. Homework? Manageable. But assignments? That’s where things got intense. Every time a new one was announced, it felt like, “Oh no, here we go again!” Extra hours, endless research, referencing, rewriting — it was like a whole new subject on its own.</p>
-            <p className="mt-2">Whether you’re just starting or approaching the finish line of your law degree, one thing is certain — there will be moments when the workload feels too heavy, the expectations too high, and the instructions too vague. And that’s okay. It's normal to feel overburdened or unprepared at times; it's all a part of the process.</p>
+            <p className="mt-2">Whether you&#39;re just starting or approaching the finish line of your law degree, one thing is certain — there will be moments when the workload feels too heavy, the expectations too high, and the instructions too vague. And that&#39;s okay. It&#39;s normal to feel overburdened or unprepared at times; it&#39;s all a part of the process.</p>
             <p className="mt-2">So here’s a breakdown of the most challenging assignments in law school — and how you can tackle them with confidence.</p>
           
           <h4 className="font-bold mt-2">1. Case Briefs</h4>
@@ -106,7 +106,7 @@ const blogData = [
           
           <p>Legal Research, in which students have to use legal databases and other resources to fi nd relevant case law. It can be challenging for students who are not familiar with these tools or fi nd it hard to navigate the legal system.</p>
           <p><b>The struggle:</b> Choosing a topic, navigating legal databases, and citing correctly — it’s a lot.</p>
-          <p><b>Example:</b> Let's say you are required to write about the rules of <a
+          <p><b>Example:</b> Let&#39;s say you are required to write about the rules of <a
                 href="https://uclawreview.org/2025/03/05/data-privacy-in-the-digital-age-a-comparative-analysis-of-u-s-and-eu-regulations/"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
@@ -136,14 +136,14 @@ const blogData = [
           
           <h4 className="font-bold mt-2">5. Dissertations</h4>
           
-          <p><b>The hard part:</b> It's your longest and most independent project, and it can feel never-ending.</p>
+          <p><b>The hard part:</b> It&#39;s your longest and most independent project, and it can feel never-ending.</p>
           <p><b>For example</b> Writing a dissertation on the <a
                 href="https://counciloncj.org/the-implications-of-ai-for-criminal-justice/"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
                 rel="noopener noreferrer">impact of AI on criminal justice</a> may sound exciting, but narrowing it down to a manageable research question is tough.</p>
           <p><b>Quick tip:</b> Choose a topic you genuinely care about. Break your research and writing into weekly goals. And start early.</p>
-          <p>If you're stuck with structuring or editing your draft, our <a
+          <p>If you&#39;re stuck with structuring or editing your draft, our <a
                 href="https://www.contentlywriters.com/service/dissertation"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
@@ -179,7 +179,7 @@ const blogData = [
            <ul className="ml-8 list-disc">
               <li>Break big tasks into smaller steps</li>
               <li>Use past examples and samples from senior students</li>
-              <li>Whether it's memo format, IRAC format, or another format, follow the guidelines.</li>
+              <li>Whether it&#39;s memo format, IRAC format, or another format, follow the guidelines.</li>
               <li>Don’t hesitate to seek help and get personalized support through our best assignment help designed for law students.</li>
              
                 
@@ -197,7 +197,7 @@ const blogData = [
       
       
           
-          <p>At Contently Writers, we support law students with complex assignments — whether it's crafting a legal memo, choosing the right research topic, or editing your dissertation draft. Our expert legal writers have studied law themselves and understand what markers are looking for.</p>
+          <p>At Contently Writers, we support law students with complex assignments — whether it&#39;s crafting a legal memo, choosing the right research topic, or editing your dissertation draft. Our expert legal writers have studied law themselves and understand what markers are looking for.</p>
           <p className="mt-1"> Struggling with a legal writing task? We’re here to help — with real experience, useful insights, and plagiarism-free support.</p>
           
          

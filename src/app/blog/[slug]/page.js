@@ -51,6 +51,7 @@ import img48 from "@/assets/image/blogImg48.jpg";
 import img49 from "@/assets/image/blogImg49.jpg";
 import img50 from "@/assets/image/blogImg50.jpg";
 import img51 from "@/assets/image/blogImg51.jpg";
+import img52 from "@/assets/image/blogImg52.jpg";
 
 
 import { ImTextColor } from "react-icons/im";
@@ -58,6 +59,176 @@ import { color } from "framer-motion";
 
 const blogData = [
 
+ {
+    slug: "what-assignments-do-law-student-struggle",
+    heading: "What Assignments Do Law Students Struggle With the Most?",
+    date: "Jine 06, 2025",
+    author: "Charchit Sharma",
+    image: img52,
+    metaTitle: "What Assignments Do Law Students Struggle With the Most?",
+    metaDescription: "Explore common law school assignments, real-world examples, and expert tips to help you manage legal writing, research, and critical thinking with ease.",
+    keywords: [
+      "law assignment help",
+      "dissertation writing services",
+      "best assignment services"
+    
+     
+
+    ],
+    description: "Explore common law school assignments, real-world examples, and expert tips to help you manage legal writing, research, and critical thinking with ease.",
+    post: [
+      {
+        about: (
+          <div>
+            <p>
+            Being a student is never easy. We all want to do everything at this age.. We want to focus on our dream job, have fun with friends, family, hobbies, and a lot more. But for law students, the pressure is on another level — law school isn’t just about knowing the law — it’s about learning how to think critically, argue clearly, and write persuasively. That’s why many students turn to <a
+                href="https://www.contentlywriters.com/subject/law"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">law assignment help</a> when the workload piles up and clarity is missing.
+            </p>
+            <p className="mt-2">Honestly, going through student life wasn’t all that bad. Lectures? Surprisingly engaging. Homework? Manageable. But assignments? That’s where things got intense. Every time a new one was announced, it felt like, “Oh no, here we go again!” Extra hours, endless research, referencing, rewriting — it was like a whole new subject on its own.</p>
+            <p className="mt-2">Whether you’re just starting or approaching the finish line of your law degree, one thing is certain — there will be moments when the workload feels too heavy, the expectations too high, and the instructions too vague. And that’s okay. It's normal to feel overburdened or unprepared at times; it's all a part of the process.</p>
+            <p className="mt-2">So here’s a breakdown of the most challenging assignments in law school — and how you can tackle them with confidence.</p>
+          
+          <h4 className="font-bold mt-2">1. Case Briefs</h4>
+          
+          <p>Case briefs and memos are short summaries of legal cases or information meant to inform others. They require students to simplify complex details and present them. These tasks involve a lot of reading and analysis, which can take a lot of time.</p>
+          <p><b>The hard part:</b> Understanding a long 40-page judgment and summarizing it into just one page? Not easy.</p>
+          <p><b>For example</b> Students often get stuck trying to brief famous cases like <a
+                href="https://www.lawteacher.net/cases/donoghue-v-stevenson.php"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Donoghue v Stevenson</a>, trying to fi nd the main issue, what the court decided (judgment), and why they decided that (rationale).</p>
+          <p><b>Quick tip:</b> Use the IRAC method — focus on the Issue, Rule, Application, and Conclusion. Don’t try to copy the whole case — just grab the main points.</p>
+          
+          <h4 className="font-bold mt-2">2. Legal Research Papers</h4>
+          
+          <p>Legal Research, in which students have to use legal databases and other resources to fi nd relevant case law. It can be challenging for students who are not familiar with these tools or fi nd it hard to navigate the legal system.</p>
+          <p><b>The struggle:</b> Choosing a topic, navigating legal databases, and citing correctly — it’s a lot.</p>
+          <p><b>Example:</b> Let's say you are required to write about the rules of <a
+                href="https://uclawreview.org/2025/03/05/data-privacy-in-the-digital-age-a-comparative-analysis-of-u-s-and-eu-regulations/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">data privacy in the digital era</a>. You’ll need to refer to multiple statutes, cases, and journal articles — all while building a clear argument.</p>
+          <p><b>Quick tip:</b> Stick to recent legal issues. They are more pertinent and have easier sources. Also, always use the citation style your university prefers (like OSCOLA or Bluebook).</p>
+          
+          <h4 className="font-bold mt-2">3. Legal Memos</h4>
+          
+          <p>A written document used by attorneys to examine a particular legal issue or case is called a legal memo. It organizes facts, highlights legal questions, applies relevant laws, and gives conclusions or advice. Law fi rms use memos internally to understand complex issues, plan legal strategies, or prepare for court.</p>
+          <p><b>The hard part:</b> Writing an objective, well-reasoned memo takes serious skill.</p>
+          <p><b>For example</b> A memo advising a client on whether a workplace policy counts as <a
+                href="https://www.eeoc.gov/prohibited-employment-policiespractices"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">discrimination under the Equality Act</a>.</p>
+          <p><b>Quick tip:</b> Use clear headings (Facts, Issue, Analysis, Conclusion). Stay objective — don’t argue, just advise.</p>
+          
+          <h4 className="font-bold mt-2">4. Scenario-Based Problem Questions</h4>
+          
+          <p><b>The hard part:</b> Applying the right law to fictional facts is harder than it looks.</p>
+          <p><b>For example</b> A problem question on tort law might involve several defendants and overlapping issues like <a
+                href="https://www.lawteacher.net/problem-question-examples/tort-of-negligence-problem-question-2.php"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">tort of negligence</a>, duty of care, and causation.</p>
+          <p><b>Quick tip:</b> Don’t just write down everything you know. Spot the legal issues, and apply the law step by step, using relevant cases.</p>
+          
+          <h4 className="font-bold mt-2">5. Dissertations</h4>
+          
+          <p><b>The hard part:</b> It's your longest and most independent project, and it can feel never-ending.</p>
+          <p><b>For example</b> Writing a dissertation on the <a
+                href="https://counciloncj.org/the-implications-of-ai-for-criminal-justice/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">impact of AI on criminal justice</a> may sound exciting, but narrowing it down to a manageable research question is tough.</p>
+          <p><b>Quick tip:</b> Choose a topic you genuinely care about. Break your research and writing into weekly goals. And start early.</p>
+          <p>If you're stuck with structuring or editing your draft, our <a
+                href="https://www.contentlywriters.com/service/dissertation"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">dissertation writing services</a> can support you at every stage.</p>
+
+
+          </div>
+        ),
+      },
+
+
+      {
+        title1: "Why Do Law Assignments Feel So Tough?",
+        about: (
+          <div>
+            
+         <ul className="ml-8 list-disc">
+              <li>There is little space for ambiguous arguments, thus, precision is essential.</li>
+              <li>Time-consuming research — legal sources aren’t always easy to access or understand.</li>
+              <li>Fear of “getting the law wrong” — something many students face, especially when grades are high-stakes.</li>
+             
+                
+            </ul>
+        
+          </div> 
+        ),
+      },
+
+      {
+        title1: "Tips to Survive (and Succeed!)",
+        about: (
+          <div>
+           <ul className="ml-8 list-disc">
+              <li>Break big tasks into smaller steps</li>
+              <li>Use past examples and samples from senior students</li>
+              <li>Whether it's memo format, IRAC format, or another format, follow the guidelines.</li>
+              <li>Don’t hesitate to seek help and get personalized support through our best assignment help designed for law students.</li>
+             
+                
+            </ul>
+          
+          </div>
+        ),
+      },
+
+    
+      {
+        title: "Need Help With a Legal Assignment?",
+        about: (
+          <div>
+      
+      
+          
+          <p>At Contently Writers, we support law students with complex assignments — whether it's crafting a legal memo, choosing the right research topic, or editing your dissertation draft. Our expert legal writers have studied law themselves and understand what markers are looking for.</p>
+          <p className="mt-1"> Struggling with a legal writing task? We’re here to help — with real experience, useful insights, and plagiarism-free support.</p>
+          
+         
+          </div>
+        ),
+      },
+
+      {
+        title: "Final Thoughts",
+        about: (
+          <div>
+      
+     
+       <p>It takes time to become proficient in legal writing, and law school is demanding. But every challenging assignment is an opportunity to sharpen your skills — and build the confidence you’ll need in your legal career.</p>
+       <p className="mt-2">You’re not alone in this. Ask for help, we offer some of the <a
+                href="https://www.contentlywriters.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">best assignment services</a> tailored for law students. Let’s make your next submission your strongest one yet.</p>
+                  
+          </div>
+        ),
+      },
+
+
+     
+ 
+    ],
+  },
+ 
+ 
   {
     slug: "seo-writing-vs-content-writing",
     heading: "SEO Writing vs Content Writing: Which Truly Drives Results",

@@ -53,9 +53,20 @@ import img48 from "@/assets/image/blogImg48.jpg";
 import img49 from "@/assets/image/blogImg49.jpg";
 import img50 from "@/assets/image/blogImg50.jpg";
 import img51 from "@/assets/image/blogImg51.jpg";
+import img52 from "@/assets/image/blogImg52.jpg";
+
 
 const blogData = [
 
+   {
+    tag: "blog-50",
+    slug: "what-assignments-do-law-student-struggle",
+    heading: "What Assignments Do Law Students Struggle With the Most?",
+    date: "June 06, 2025",
+    image: img52,
+    about:"Being a student is never easy. We all want to do everything at this age.. We want to focus on our dream job, have fun with friends, family, hobbies, and a lot more. But for law students, the pressure is on another level — law school isn’t just about knowing the law — it’s about learning how to think critically, argue clearly, and write persuasively. That’s why many students turn to law assignment help when the workload piles up and clarity is missing.",
+  },
+  
   {
     tag: "blog-49",
     slug: "seo-writing-vs-content-writing",

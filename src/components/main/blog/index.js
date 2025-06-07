@@ -62,7 +62,7 @@ const blogData = [
     heading: "SEO Writing vs Content Writing: Which Truly Drives Results",
     date: "June 03, 2025",
     image: img51,
-    about:"Understand SGE, Its Impact, and How to Optimize for AI-Generated Search Results - Google started revolutionizing the search experience in 2024 and 2025 with a feature dubbed SGE (Search Generative Experience), which is today known as AI Overviews. It's no longer merely a test; it's being implemented all around the world and is already changing the way consumers engage with online material.",
+    about:"Is your well-written content going unnoticed by your target audience? Or perhaps your articles rank well on Google but fail to retain visitors? This is the classic conundrum between SEO writing and content writing. Understanding and balancing both is the key to creating content that not only ranks but also resonates.",
   },
   
   {
@@ -71,7 +71,7 @@ const blogData = [
     heading: "Harvard Application Essay Tips: What They Want to See",
     date: "May 30, 2025",
     image: img50,
-    about:"Understand SGE, Its Impact, and How to Optimize for AI-Generated Search Results - Google started revolutionizing the search experience in 2024 and 2025 with a feature dubbed SGE (Search Generative Experience), which is today known as AI Overviews. It's no longer merely a test; it's being implemented all around the world and is already changing the way consumers engage with online material.",
+    about:"If you aim for a seat at Harvard, it's a worldwide dream of thousands of students. While grades and test scores play a role, one of the most powerful components of your application is the personal essay. It's your chance to speak directly to the admissions team and show them who you are beyond numbers and transcripts.",
   },
  
   {

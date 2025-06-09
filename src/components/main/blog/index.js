@@ -61,7 +61,7 @@ const blogData = [
 
   {
     tag: "blog-51",
-    slug: "ai-literacy-&-prompt-engineering",
+    slug: "ai-literacy-prompt-engineering",
     heading: "AI Literacy & Prompt Engineering: Must-Have Skill for 2025",
     date: "June 09, 2025",
     image: img53,

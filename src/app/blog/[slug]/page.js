@@ -61,7 +61,7 @@ import { color } from "framer-motion";
 const blogData = [
 
  {
-    slug: "ai-literacy-&-prompt-engineering",
+    slug: "ai-literacy-prompt-engineering",
     heading: "AI Literacy & Prompt Engineering: Must-Have Skill for 2025",
     date: "Jine 09, 2025",
     author: "Charchit Sharma",

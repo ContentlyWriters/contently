@@ -95,7 +95,7 @@ const blogData = [
                 href="https://claude.ai/login?returnTo=%2F%3F"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">Claude</a>, or even Google's Gemini are undoubtedly powerful. But unless you know how to communicate with them properly, you’re not getting even half the value they can offer. That’s where AI literacy and something called prompt engineering come in, two of the most overlooked yet critical student skills in today’s academic world.</p>
+                rel="noopener noreferrer">Claude</a>, or even Google&#39;s Gemini are undoubtedly powerful. But unless you know how to communicate with them properly, you&#39;re not getting even half the value they can offer. That&#39;s where AI literacy and something called prompt engineering come in, two of the most overlooked yet critical student skills in today&#39;s academic world.</p>
                       
          
           </div>
@@ -195,8 +195,8 @@ const blogData = [
       
       
           
-          <p>If you’ve ever drafted outlines, got feedback on your writing, rephrased complex ideas, and practiced academic tone using ChatGPT or similar tools, then congrats, you're using AI.</p>
-          <p className="mt-1">But here’s where most go wrong: they stop there. They don't refine their prompts, tweak their queries, or fact-check outputs. That’s like using Google but never going past page one.</p>
+          <p>If you&#39;ve ever drafted outlines, got feedback on your writing, rephrased complex ideas, and practiced academic tone using ChatGPT or similar tools, then congrats, you&#39;re using AI.</p>
+          <p className="mt-1">But here&#39;s where most go wrong: they stop there. They don&#39;t refine their prompts, tweak their queries, or fact-check outputs. That&#39;s like using Google but never going past page one.</p>
           <p className="mt-1">The better approach? Leverage AI tools for academic writing to their full potential.</p>
           
           </div>

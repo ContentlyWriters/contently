@@ -52,6 +52,7 @@ import img49 from "@/assets/image/blogImg49.jpg";
 import img50 from "@/assets/image/blogImg50.jpg";
 import img51 from "@/assets/image/blogImg51.jpg";
 import img52 from "@/assets/image/blogImg52.jpg";
+import img53 from "@/assets/image/blogImg53.jpg";
 
 
 import { ImTextColor } from "react-icons/im";
@@ -60,6 +61,211 @@ import { color } from "framer-motion";
 const blogData = [
 
  {
+    slug: "ai-literacy-&-prompt-engineering",
+    heading: "AI Literacy & Prompt Engineering: Must-Have Skill for 2025",
+    date: "Jine 09, 2025",
+    author: "Charchit Sharma",
+    image: img53,
+    metaTitle: "AI Literacy & Prompt Engineering: Must-Have Skill for 2025",
+    metaDescription: "Think AI is just for shortcuts? Think again. Learn how prompt engineering and AI literacy can level up your writing and save serious study time in 2025.",
+    keywords: [
+      "how to use AI for studying",
+      "prompt engineering for students",
+      "AI tools for academic writing",
+      "improve assignments using AI",
+      "ChatGPT for essay writing",
+      "best assignment services"
+    
+     
+
+    ],
+    description: "Think AI is just for shortcuts? Think again. Learn how prompt engineering and AI literacy can level up your writing and save serious study time in 2025.",
+    post: [
+      {
+        about: (
+          <div>
+            <p>
+           If you’ve ever asked ChatGPT to “write my assignment” or “summarise this article,” you’ve already had a small taste of what <a
+                href="https://www.forbes.com/councils/forbestechcouncil/2020/07/08/ai-assisted-learning-and-its-impact-on-education/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">AI-assisted learning</a> is. But here’s the truth: most students don’t realise you’re only scratching the surface.
+            </p>
+            <p className="mt-2">AI tools like ChatGPT, <a
+                href="https://claude.ai/login?returnTo=%2F%3F"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Claude</a>, or even Google's Gemini are undoubtedly powerful. But unless you know how to communicate with them properly, you’re not getting even half the value they can offer. That’s where AI literacy and something called prompt engineering come in, two of the most overlooked yet critical student skills in today’s academic world.</p>
+                      
+         
+          </div>
+        ),
+      },
+
+
+      {
+        title1: "What is AI Literacy, Anyway?",
+        about: (
+          <div>
+        <p>To put it simply, <a
+                href="https://www.datacamp.com/blog/what-is-ai-literacy-a-comprehensive-guide-for-beginners"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">AI literacy</a> refers to understanding how AI works, how to use it ethically, and how to interact with it in a manner that benefits your learning. This doesn’t mean you need to code an algorithm or build a chatbot. It means knowing:</p>
+         <ul className="ml-8 list-disc">
+              <li>How AI tools process information.</li>
+              <li>What kind of responses do they generate?</li>
+              <li>How to use them effectively without crossing the line into plagiarism.</li>
+             
+                
+            </ul>
+          <p className="mt-1">Now, imagine using these tools not just to cut corners, but to genuinely improve your academic writing, research, and study habits. That’s the shift AI literacy brings.</p>
+          </div> 
+        ),
+      },
+
+      {
+        title1: "Enter Prompt Engineering: The Real Secret Sauce",
+        about: (
+          <div>
+          <p>Asking AI without context is like walking into a shop and saying, ‘Something nice, please.’</p>
+          <p className="mt-1"><a
+                href="https://www.techtarget.com/searchenterpriseai/tip/Prompt-engineering-tips-for-ChatGPT-and-other-LLMs"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Prompt engineering</a> is about asking the right questions or giving the right instructions so the AI can give you the exact help you need. Think of it as crafting smart search queries but on steroids.</p>
+          <p className="mt-1"><b>For example:</b></p>
+           <ul className="ml-8 list-disc">
+              <li>Bad Prompt: “Write an essay on climate change.”</li>
+              <li>Good Prompt: “Write a 500-word argumentative essay introduction on the impact of industrialisation on climate change, with a thesis statement and two key arguments.”</li>
+
+             
+                
+            </ul>
+          <p className="mt-1">See the difference? One gets you generic content, the other gives you detailed help, and that’s what students are missing.</p>
+          </div>
+        ),
+      },
+
+    
+      {
+        title: "What Choices Do Students Have in Unexpected Situations?",
+        about: (
+          <div>
+      
+      
+          
+          <p>Learning how to use AI tools for studying and mastering prompt engineering can be tricky, and sometimes you just need a little extra help to turn your ideas into a well-crafted assignment. That’s when having someone with experience by your side helps. Whether it’s tightening up your <a
+                href="https://www.contentlywriters.com/blog/how-to-write-and-structure-a-2000-word-essay-effectively"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">essay’s structure</a>, making sure your points come across clearly, or double-checking that your work meets university standards, getting some academic support can boost what you do with AI. It’s not about someone doing the work for you, but about working together with experts who know how to raise your writing game the right way.</p>
+          
+         
+          </div>
+        ),
+      },
+
+      {
+        title: "Why Students Should Care (More Than They Do)?",
+        about: (
+          <div>
+      
+     
+       <p>We know, we’re all trying to save time. Between lectures, part-time jobs, and life happening all at once, students need tools that work smart. But misusing AI or relying on it blindly is a fast track to generic, bland(Ordinary), and often inaccurate work.</p>
+       <p className="mt-1">By learning the art of prompting:</p>
+       <ul className="ml-8 list-disc">
+              <li>You save time on planning and research.</li>
+              <li>You get structured writing help without copy-pasting.</li>
+              <li>You can improve assignments using AI and cross-check key details before handing them in.</li>
+              <li>You get the help, but the final voice is still completely yours.</li>
+
+             
+                
+            </ul>
+                  
+          </div>
+        ),
+      },
+
+      {
+        title: "Common Ways Students Are Already Using AI (But Could Use It Better)",
+        about: (
+          <div>
+      
+      
+          
+          <p>If you’ve ever drafted outlines, got feedback on your writing, rephrased complex ideas, and practiced academic tone using ChatGPT or similar tools, then congrats, you're using AI.</p>
+          <p className="mt-1">But here’s where most go wrong: they stop there. They don't refine their prompts, tweak their queries, or fact-check outputs. That’s like using Google but never going past page one.</p>
+          <p className="mt-1">The better approach? Leverage AI tools for academic writing to their full potential.</p>
+          
+          </div>
+        ),
+      },
+
+      {
+        title: "Ethical Use of AI in Academic Writing",
+        about: (
+          <div>
+      
+      
+          
+          <p>This part’s important. <a
+                href="https://www.contentlywriters.com/blog/free-tools-to-make-study-easy"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">AI tools</a> aren’t a replacement for human thinking, and they’re not a free pass for plagiarism. Schools are catching on, and so are plagiarism detectors. The goal isn’t to let AI write your paper, it’s to let it guide your process.</p>
+          <p className="mt-1">At our academic writing service, we believe AI is a supplement, not a substitute. And when combined with real subject expertise, the result is scholarly work that’s clear, polished, and 100% original.</p>
+         
+          </div>
+        ),
+      },
+
+      {
+        title: "Ready to Get Smarter with AI? Let Us Help.",
+        about: (
+          <div>
+    
+          <p>While AI can help you brainstorm, outline, or even polish your writing, it still lacks the <a
+                href="https://www.linkedin.com/pulse/ai-content-creation-we-losing-human-touch-stacy-ann-nanyo-9zl9c#:~:text=%F0%9F%92%A1%20AI%20lacks%20real%2Dlife,joy%2C%20sorrow%2C%20or%20inspiration."
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">human touch</a>, the critical thinking, structure, and depth required for university-level work. That’s where we come in.</p>
+          <p className="mt-1">Whether you’re stuck on an introduction or want your research to sound more professional, our team of academic experts can guide you. From custom-written assignments to editing and formatting, we combine real-world experience with modern tools to help you get ahead, ethically and effectively.</p>
+          <p className="mt-1">You’ll also learn to use ChatGPT for essay writing without compromising your originality.</p>
+
+         
+          </div>
+        ),
+      },
+
+      {
+        title: "Final Thoughts",
+        about: (
+          <div>
+    
+          <p>2025 isn’t about whether students should use AI; it’s about how well they use it. Prompt engineering for students and AI literacy are fast becoming essential skills, not just in university, but in the workplace too.</p>
+           <p className="mt-2">It’s a piece of cake with a little guidance. You just need to start with the basics: ask better questions, explore ethically, and never forget that your brain is the most powerful tool you have.</p>
+          <p className="mt-2"><b>TIP:-</b> Learn the Tool, Don’t Let the Tool Use You.</p>
+          <p className="mt-2">Need help turning your research into a high-quality assignment? Check out our <a
+                href="https://www.contentlywriters.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">best assignment services</a> for expert support and timely submissions.</p>
+
+         
+         
+          </div>
+        ),
+      },
+
+     
+ 
+    ],
+  },
+ 
+ 
+  {
     slug: "what-assignments-do-law-student-struggle",
     heading: "What Assignments Do Law Students Struggle With the Most?",
     date: "Jine 06, 2025",

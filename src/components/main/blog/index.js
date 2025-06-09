@@ -54,11 +54,21 @@ import img49 from "@/assets/image/blogImg49.jpg";
 import img50 from "@/assets/image/blogImg50.jpg";
 import img51 from "@/assets/image/blogImg51.jpg";
 import img52 from "@/assets/image/blogImg52.jpg";
+import img53 from "@/assets/image/blogImg53.jpg";
 
 
 const blogData = [
 
-   {
+  {
+    tag: "blog-51",
+    slug: "ai-literacy-&-prompt-engineering",
+    heading: "AI Literacy & Prompt Engineering: Must-Have Skill for 2025",
+    date: "June 09, 2025",
+    image: img53,
+    about:"If you’ve ever asked ChatGPT to “write my assignment” or “summarise this article,” you’ve already had a small taste of what AI-assisted learning is. But here’s the truth: most studnts don’t realise you’re only scratching the surface..",
+  },
+ 
+  {
     tag: "blog-50",
     slug: "what-assignments-do-law-student-struggle",
     heading: "What Assignments Do Law Students Struggle With the Most?",

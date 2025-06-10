@@ -63,7 +63,7 @@ const blogData = [
  {
     slug: "ai-literacy-prompt-engineering",
     heading: "AI Literacy & Prompt Engineering: Must-Have Skill for 2025",
-    date: "Jine 09, 2025",
+    date: "June 09, 2025",
     author: "Charchit Sharma",
     image: img53,
     metaTitle: "AI Literacy & Prompt Engineering: Must-Have Skill for 2025",
@@ -268,7 +268,7 @@ const blogData = [
   {
     slug: "what-assignments-do-law-student-struggle",
     heading: "What Assignments Do Law Students Struggle With the Most?",
-    date: "Jine 06, 2025",
+    date: "June 06, 2025",
     author: "Charchit Sharma",
     image: img52,
     metaTitle: "What Assignments Do Law Students Struggle With the Most?",

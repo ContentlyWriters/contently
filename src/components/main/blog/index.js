@@ -55,10 +55,20 @@ import img50 from "@/assets/image/blogImg50.jpg";
 import img51 from "@/assets/image/blogImg51.jpg";
 import img52 from "@/assets/image/blogImg52.jpg";
 import img53 from "@/assets/image/blogImg53.jpg";
+import img54 from "@/assets/image/blogImg54.jpg";
 
 
 const blogData = [
 
+  {
+    tag: "blog-52",
+    slug: "geo-vs-seo",
+    heading: "GEO vs SEO: How AI Is Changing Search in 2025",
+    date: "June 13, 2025",
+    image: img54,
+    about:"SEO just doesn’t work the way it used to. If your SEO strategy still revolves around keywords and backlinks, you might’ve felt it’s not getting you as far as it once did. Search isn’t about finding words anymore; it’s about understanding context and intent. AI has completely changed how content is read, understood, and shown to people, and here’s the thing: being at the top of Google doesn’t always mean what it used to. More and more, people are getting their answers straight from AI, before they even click on anything. So if your content isn’t built in a way that makes sense to those systems, it might not appear.",
+  },
+  
   {
     tag: "blog-51",
     slug: "ai-literacy-prompt-engineering",

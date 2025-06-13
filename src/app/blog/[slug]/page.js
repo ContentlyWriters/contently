@@ -53,6 +53,7 @@ import img50 from "@/assets/image/blogImg50.jpg";
 import img51 from "@/assets/image/blogImg51.jpg";
 import img52 from "@/assets/image/blogImg52.jpg";
 import img53 from "@/assets/image/blogImg53.jpg";
+import img54 from "@/assets/image/blogImg54.jpg";
 
 
 import { ImTextColor } from "react-icons/im";
@@ -61,6 +62,202 @@ import { color } from "framer-motion";
 const blogData = [
 
  {
+    slug: "geo-vs-seo",
+    heading: "GEO vs SEO: How AI Is Changing Search in 2025",
+    date: "June 13, 2025",
+    author: "Charchit Sharma",
+    image: img54,
+    metaTitle: "GEO vs SEO: How AI Is Changing Search in 2025",
+    metaDescription: "Is your content still ranking, or is AI stealing the spotlight? Discover how Generative Engine Optimization (GEO) is redefining SEO and visibility in 2025.",
+    keywords: [
+      "best content writing services"
+    
+     
+
+    ],
+    description: "Is your content still ranking, or is AI stealing the spotlight? Discover how Generative Engine Optimization (GEO) is redefining SEO and visibility in 2025.",
+    post: [
+      {
+        about: (
+          <div>
+            <p>
+           SEO just doesn’t work the way it used to. If your SEO strategy still revolves around keywords and backlinks, you might’ve felt it’s not getting you as far as it once did. Search isn’t about finding words anymore; it’s about understanding context and intent. AI has completely changed how content is read, understood, and shown to people, and here’s the thing: being at the top of Google doesn’t always mean what it used to. More and more, people are getting their answers straight from AI, before they even click on anything. So if your content isn’t built in a way that makes sense to those systems, it might not appear.
+            </p>
+            <p className="mt-2">That’s the whole idea behind what’s now being called Generative Engine Optimization (GEO). It’s not just a new SEO trick; it’s a shift in how we need to write and structure content. Because now, the goal isn’t just to rank but to be the answer AI pulls up when someone asks a question.</p>
+                      
+         
+          </div>
+        ),
+      },
+
+
+      {
+        title1: "What is Generative Engine Optimization (GEO)?",
+        about: (
+          <div>
+        <p>GEO is about creating content in a way that makes it easy for AI tools like Google’s AI Overviews, ChatGPT, Gemini, or even Perplexity to understand what you’re saying, pull the key info, and use it when they respond to people’s questions.</p>
+         
+          <p className="mt-1">It’s a bit different from traditional SEO. GEO is more about being recognized by AI as a trustworthy source instead of just trying to rank high and get clicks, so your content gets featured in those instant answers people see without even clicking through.</p>
+          </div> 
+        ),
+      },
+
+      {
+        title1: "Why Traditional SEO Isn’t Enough Anymore?",
+        about: (
+          <div>
+          <p>SEO was all about hitting the right keywords for a long time, adding meta tags, building backlinks, and making sure your site was nicely structured. And to be fair, those things still matter, they’re just not the full picture anymore.</p>
+          <p className="mt-1">Things have changed. AI-generated summaries are everywhere. You’ve probably noticed it yourself: people aren’t clicking through a bunch of links like they used to. They get what they need right from the search results, often without visiting a single website.</p>
+          <p className="mt-1"><b>That means your brand can be:</b></p>
+           <ul className="ml-8 list-disc">
+              <li>Seen, even if no one clicks.</li>
+              <li>Trusted, if AI chooses your content as a source.</li>
+              <li>Or invisible, if your site isn’t AI-friendly.</li>
+
+             
+                
+            </ul>
+          </div>
+        ),
+      },
+
+    
+      {
+        title: "How AI Overviews Are Changing User Behavior?",
+        about: (
+          <div>
+      
+      
+          
+          <p>You must have seen how Google’s AI now gives you a quick summary right at the top of the page, pulling info from different sources so you don’t even need to click on a single link.</p>
+          <p className="mt-1">If your site isn’t structured clearly or lacks depth, it won’t get picked. That’s a big deal, because even if your link ranks high, you’re missing traffic and brand exposure if the AI doesn’t “see” your content as valuable.</p> 
+         
+          </div>
+        ),
+      },
+
+      {
+        title: "What Makes Content GEO-Ready??",
+        about: (
+          <div>
+      
+     
+       <p>Your content has to do more than just hit the right keywords to show up in AI- AI-generated answers. It needs to be clear, helpful, and structured in a way that makes sense, not just to people, but to machines too. Here’s what makes a difference:</p>
+        
+          <h4 className="font-bold mt-2">1. Keep It Clear and Easy to Read</h4>
+          
+          <p>Break things up. Use short paragraphs, bullet points, subheadings, anything that makes your content easy to skim. AI tools don’t love big blocks of text any more than humans do.</p>
+
+          <h4 className="font-bold mt-2">2. Be Trustworthy</h4>
+          
+          <p>If you’re making a point, back it up. AI is way more likely to grab your content if it looks credible and well-researched.</p>
+
+          <h4 className="font-bold mt-2">3. Write Like You Talk</h4>
+          
+          <p>If someone typed a question into Google or asked their voice assistant out loud, your content should sound like a natural reply.</p>
+
+          <h4 className="font-bold mt-2">4. Help AI Understand Your Page</h4>
+          
+          <p>Using things like schema markup (FAQPage, HowTo, etc.) helps AI know what your content is about.</p>
+
+          <h4 className="font-bold mt-2">5. Go Deeper</h4>
+          
+          <p>Don’t just answer the main question, cover the related stuff too. Think about what else someone might want to know and include it. AI tools love content that isn’t basic.</p>
+                  
+          </div>
+        ),
+      },
+
+      {
+        title: "Why You Can’t Ignore Zero-Click Searches?",
+        about: (
+          <div>
+      
+      
+          
+          <p>A few years ago, just landing on page one of Google felt like a win. But now? It’s not always enough. More and more, people get what they need without ever clicking a link, thanks to
+featured snippets, AI summaries, and voice search. If your content isn’t showing up in those spots, you’re probably being overlooked, even if your ranking looks good on paper.</p>
+          <p className="mt-1">Now, with zero-click results and voice-based search on the rise, being selected as the source of truth by AI is your new top spot.</p>
+          <p className="mt-1">You’re not just fighting for a higher rank anymore; you’re competing to be the AI’s chosen answer.</p>
+          
+          </div>
+        ),
+      },
+
+      {
+        title: "GEO vs Traditional SEO: Can They Work Together?",
+        about: (
+          <div>
+      
+      
+          
+          <p>Absolutely, and they should. Traditional SEO gets you indexed and ranked, while GEO ensures that AI tools and search assistants pull your content into their answers.</p>
+          <p className="mt-1">Here’s how to balance both:</p>
+
+          <ul className="ml-8 list-disc">
+              <li>Keep doing on-page SEO: meta tags, alt texts, internal linking.</li>
+              <li>Don’t overthink it, just make sure your content is clear, well laid out, and answers the question properly.</li>
+              <li>Don’t write for clicks alone; write to be quoted.</li>
+
+             
+                
+            </ul>
+         
+          </div>
+        ),
+      },
+
+      {
+        title: "Preparing for the Next Frontier: AI Agents & GEO",
+        about: (
+          <div>
+    
+          <p>As digital assistants and AI agents become more mainstream, the need to create machine-readable and AI-optimizable content will grow fast.</p>
+          <p className="mt-1">Think about what happens when a customer says, “Hey Siri, what’s the best strategy to grow a blog in 2025?” If your content isn’t structured to be pulled, summarized, and cited in that response, you’re out of the loop.</p>
+          <p className="mt-1">This is where GEO overlaps with emerging trends like Agentic AI Optimization, something we’ll hear a lot more about soon.</p>
+         
+          </div>
+        ),
+      },
+
+      {
+        title: "Final Thoughts: Are You GEO-Ready?",
+        about: (
+          <div>
+    
+          <p>SEO isn’t dying, it’s evolving. If you want to stay relevant, it’s time to look beyond rankings and start thinking about how your content interacts with AI.</p>
+           <p className="mt-2">Ask yourself:</p>
+          <ul className="ml-8 list-disc">
+              <li>Is my content structured enough for AI to understand?</li>
+              <li>Am I giving concise, direct answers to user intent?</li>
+              <li>Do I write to engage humans and also assist machines?</li>
+
+             
+                
+            </ul>
+         
+
+
+
+          <p className="mt-2">For more SEO related information, content writing, or assignment help, check out our <a
+                href="https://www.contentlywriters.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">best content writing services</a> for expert support and timely submissions.</p>
+
+         
+         
+          </div>
+        ),
+      },
+
+     
+ 
+    ],
+  },
+
+
+  {
     slug: "ai-literacy-prompt-engineering",
     heading: "AI Literacy & Prompt Engineering: Must-Have Skill for 2025",
     date: "June 09, 2025",

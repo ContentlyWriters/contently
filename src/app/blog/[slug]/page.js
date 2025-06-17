@@ -119,7 +119,7 @@ const blogData = [
                 href="https://github.com/GoogleChrome/lighthouse"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">Lighthouse</a> (Google's Mobile-Friendly Test) and make sure it’s loading smoothly and properly on all devices.</p>
+                rel="noopener noreferrer">Lighthouse</a> (Google&#39;s Mobile-Friendly Test) and make sure it&#39;s loading smoothly and properly on all devices.</p>
          
          <h4 className="font-bold mt-2">4. Ignoring Local SEO</h4>
           <p>If your startup serves a local market, ignoring local SEO is a huge mistake. Many startups focus only on national or global SEO, forgetting that their immediate community is where they can build a loyal customer base.</p>
@@ -174,7 +174,7 @@ const blogData = [
           <p>Provide the content by prioritizing audience needs instead of trying to rank your website.</p>
          
          <h4 className="font-bold mt-2">9. Neglecting Backlink Strategy</h4>
-          <p>Backlinks remain one of the strongest ranking factors for SEO, yet many startups neglect this vital strategy. Focus on building relationships with industry influencers, guest blogging, and creating shareable content to naturally earn backlinks. Remember, it's not about the quantity of backlinks but their quality.</p>
+          <p>Backlinks remain one of the strongest ranking factors for SEO, yet many startups neglect this vital strategy. Focus on building relationships with industry influencers, guest blogging, and creating shareable content to naturally earn backlinks. Remember, it&#39;s not about the quantity of backlinks but their quality.</p>
          
          <h4 className="font-bold mt-2">10. Overcomplicating the User Experience</h4>
           <p>User experience (UX) is a critical ranking factor, but startups often overlook it in favor of flashy designs or excessive content. Your site should be easy to navigate, with a clear structure and straightforward navigation.</p>

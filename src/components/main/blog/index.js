@@ -56,10 +56,21 @@ import img51 from "@/assets/image/blogImg51.jpg";
 import img52 from "@/assets/image/blogImg52.jpg";
 import img53 from "@/assets/image/blogImg53.jpg";
 import img54 from "@/assets/image/blogImg54.jpg";
+import img55 from "@/assets/image/blogImg55.jpg";
 
 
 const blogData = [
 
+  {
+    tag: "blog-53",
+    slug: "top-10-seo-mistake-startups-must-avoid",
+    heading: "Top 10 SEO Mistakes Startups Must Avoid for Growth",
+    date: "June 17, 2025",
+    image: img55,
+    about:"SEO is one of the most powerful tools for growing your business online. Yet, many US startups overlook or mishandle critical SEO practices, unintentionally sabotaging their growth potential. Your website is fine, but you could be missing out on valuable traffic and opportunities without the right SEO strategies.",
+  },
+  
+  
   {
     tag: "blog-52",
     slug: "geo-vs-seo",

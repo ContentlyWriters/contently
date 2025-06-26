@@ -57,10 +57,21 @@ import img52 from "@/assets/image/blogImg52.jpg";
 import img53 from "@/assets/image/blogImg53.jpg";
 import img54 from "@/assets/image/blogImg54.jpg";
 import img55 from "@/assets/image/blogImg55.jpg";
+import img56 from "@/assets/image/blogImg56.jpg";
 
 
 const blogData = [
 
+  {
+    tag: "blog-54",
+    slug: "how-ai-is-transforming-content-in-american-ecommerce",
+    heading: "How AI Is Transforming Content in American eCommerce",
+    date: "June 26, 2025",
+    image: img56,
+    about:"Something big is happening in American eCommerce, and most people don’t even realize it. AI is changing the game. It’s not just about faster tools or automated systems anymore. From how product descriptions are written to the way those “you might also like” suggestions appear in your cart, AI is quietly transforming how online stores communicate with their customers. But this shift isn’t just technical, it’s personal. It’s about creating content that connects with people. So, let’s take a closer look at how AI is shaping the way brands tell their stories online.",
+  },
+  
+  
   {
     tag: "blog-53",
     slug: "top-10-seo-mistake-startups-must-avoid",

@@ -217,7 +217,7 @@ const blogData = [
                 href="https://www.contentlywriters.com/"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer"></a> for expert support and timely submissions.</p>
+                rel="noopener noreferrer">best content writing services</a> for expert support and timely submissions.</p>
           
          
          

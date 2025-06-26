@@ -101,7 +101,7 @@ const blogData = [
         title1: "Product Descriptions: Getting Smarter, Not Lazier",
         about: (
           <div>
-        <p>If you've ever browsed an online store and felt like the product descriptions just clicked, there's a good chance AI played a role. These days, many American retailers utilize AI tools to assist in creating descriptions, not to replace writers, but to streamline their processes and increase efficiency.</p>
+        <p>If you&#39;ve ever browsed an online store and felt like the product descriptions just clicked, there&#39;s a good chance AI played a role. These days, many American retailers utilize AI tools to assist in creating descriptions, not to replace writers, but to streamline their processes and increase efficiency.</p>
         <p className="mt-1">Picture this: instead of writing hundreds of descriptions from scratch, AI can take key details about a product and generate a rough version. Then, a real person steps in to refine it, add personality, and ensure it aligns with the brand. It’s a time-saver, but it still keeps the human touch, and that’s what customers connect with.</p>
           </div> 
         ),
@@ -198,7 +198,7 @@ const blogData = [
           <div>
     
           <p>If there’s one clear thing, it’s this: the future of eCommerce content isn’t AI versus humans, it’s AI with humans. The most successful brands won’t be the ones that go fully automated, but the ones that use AI to make their teams better, faster, and more focused on what really matters, connecting with customers.</p>
-          <p className="mt-1">So, whether you're just starting your online store or running content for a growing brand, remember: tools are just tools. How you use them makes the difference. And if you ever feel stuck trying to get the tone right or find the words that resonate, don’t be afraid to get a little help, just like students do when they want to make sure their assignments shine.</p>
+          <p className="mt-1">So, whether you&#39;re just starting your online store or running content for a growing brand, remember: tools are just tools. How you use them makes the difference. And if you ever feel stuck trying to get the tone right or find the words that resonate, don&#39;t be afraid to get a little help, just like students do when they want to make sure their assignments shine.</p>
           
          
          
@@ -212,7 +212,7 @@ const blogData = [
         about: (
           <div>
     
-          <p>AI is doing incredible things in American eCommerce, but it's still people who make the content feel real. Whether it's product descriptions, visuals, or comprehensive strategies, the best results emerge when tech and human creativity collaborate. It’s not about choosing one or the other; it’s about building something better with both.</p>
+          <p>AI is doing incredible things in American eCommerce, but it&#39;s still people who make the content feel real. Whether it&#39;s product descriptions, visuals, or comprehensive strategies, the best results emerge when tech and human creativity collaborate. It&#39;s not about choosing one or the other; it&#39;s about building something better with both.</p>
           <p className="mt-1">For more SEO related information, content writing, or assignment help, check out our <a
                 href="https://www.contentlywriters.com/"
                 class="text-[#5b6cf2] underline hover:no-underline"

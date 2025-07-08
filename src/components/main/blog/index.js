@@ -58,9 +58,20 @@ import img53 from "@/assets/image/blogImg53.jpg";
 import img54 from "@/assets/image/blogImg54.jpg";
 import img55 from "@/assets/image/blogImg55.jpg";
 import img56 from "@/assets/image/blogImg56.jpg";
+import img57 from "@/assets/image/blogImg57.jpg";
 
 
 const blogData = [
+
+  {
+    tag: "blog-55",
+    slug: "how-much-tech-has-taken-over-our-daily-life",
+    heading: "Have You Noticed How Much Tech Has Taken Over Our Daily Life?",
+    date: "July 08, 2025",
+    image: img57,
+    about:"Have you ever stopped and realized how much tech we use without even thinking about it? It’s kind of wild. One minute you’re unlocking your phone with your face, the next you’re ordering dinner, checking in on work emails, and tracking your steps, all without even leaving the couch. It’s not just about convenience anymore. Over time, technology has quietly made itself a part of almost everything we do. It’s not screaming for our attention, it just blends into the background, making life feel easier, faster, and more connected.",
+  },
+
 
   {
     tag: "blog-54",

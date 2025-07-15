@@ -59,10 +59,20 @@ import img54 from "@/assets/image/blogImg54.jpg";
 import img55 from "@/assets/image/blogImg55.jpg";
 import img56 from "@/assets/image/blogImg56.jpg";
 import img57 from "@/assets/image/blogImg57.jpg";
+import img58 from "@/assets/image/blogImg58.jpg";
 
 
 const blogData = [
 
+  {
+    tag: "blog-56",
+    slug: "seo-checklist-for-small-business",
+    heading: "SEO Checklist for Small Businesses in the USA",
+    date: "July 15, 2025",
+    image: img58,
+    about:"SEO is one of those things that small business owners hear about all the time but rarely have the time to figure out. I’ve seen it happen over and over again. You’re trying to keep things moving, making sure customers are happy, dealing with day-to-day stuff… and someone says, “Hey, have you tried SEO?”",
+  },
+ 
   {
     tag: "blog-55",
     slug: "how-much-tech-has-taken-over-our-daily-life",

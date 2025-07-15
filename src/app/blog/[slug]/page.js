@@ -57,6 +57,7 @@ import img54 from "@/assets/image/blogImg54.jpg";
 import img55 from "@/assets/image/blogImg55.jpg";
 import img56 from "@/assets/image/blogImg56.jpg";
 import img57 from "@/assets/image/blogImg57.jpg";
+import img58 from "@/assets/image/blogImg58.jpg";
 
 
 import { ImTextColor } from "react-icons/im";
@@ -65,6 +66,257 @@ import { color } from "framer-motion";
 const blogData = [
 
 {
+    slug: "seo-checklist-for-small-business",
+    heading: "SEO Checklist for Small Businesses in the USA",
+    date: "July 15, 2025",
+    author: "Charchit Sharma",
+    image: img58,
+    metaTitle: "SEO Checklist for Small Businesses in the USA",
+    metaDescription: "Boost your local visibility and grow your brand with this essential SEO checklist for small businesses in the USA—plus one powerful strategy most businesses overlook.",
+    keywords: [
+      "best content writing services",
+      "SEO for small businesses USA",
+      "small business SEO checklist",
+      "local SEO USA"
+    
+     
+
+    ],
+    description: "Boost your local visibility and grow your brand with this essential SEO checklist for small businesses in the USA—plus one powerful strategy most businesses overlook.",
+    post: [
+      {
+        about: (
+          <div>
+            <p>
+           SEO is one of those things that small business owners hear about all the time but rarely have the time to figure out. I’ve seen it happen over and over again. You’re trying to keep things moving, making sure customers are happy, dealing with day-to-day stuff… and someone says, “Hey, have you tried SEO?”
+            </p>
+            <p className="mt-2">It’s not that you’re ignoring it on purpose. It’s just that when your to-do list is already packed, digging into how Google decides who shows up first on search results isn’t exactly your top priority.</p>
+            <p className="mt-2">Still, the truth is that more people are searching online before making any kind of purchase, especially locally. Whether someone’s looking for a plumber, a bakery, a fitness coach, or a cleaning service, they’re most likely starting with a Google search. If your business isn’t showing up, someone else is getting those clicks and probably those sales, too.</p>
+            <p className="mt-2">You don’t need to be an SEO expert to start showing up in the right places. I’ve put together a checklist that makes sense for small business owners. It’s straightforward, realistic, and built around what works, including one smart strategy hardly anyone’s using yet.</p>
+            <p className="mt-2">Let’s dive in.</p>
+
+          </div>
+        ),
+      },
+
+
+      {
+        title1: "Focus on the Right Keywords (Not Just Any Keywords)",
+        about: (
+          <div>
+        <p>Instead of guessing what people are typing into Google, take a little time to do some basic keyword research. You’re not looking for the most popular terms. You’re looking for what real people in your area are searching for when they need what you offer.</p>
+        <p className="mt-1">For example, don’t just go with “electrician.” Try something like “licensed electrician in Dayton, OH” or “emergency home wiring repair in Dayton.”</p>
+        <p className="mt-1">Tools like Google’s <a
+                href="https://business.google.com/in/ad-tools/keyword-planner/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Keyword Planner</a> or even the “People Also Ask” section on Google can give you solid ideas. It doesn’t have to be perfect, just close enough to match how your customers naturally search.</p>
+        
+          </div> 
+        ),
+      },
+
+     
+      {
+        title1: "Set Up Your Google Business Profile",
+        about: (
+          <div>
+    
+          <p>This is the easiest win for local SEO, and yet so many businesses either skip it or leave it half-finished. If someone’s looking for a service near them, your <a
+                href="https://business.google.com/in/business-profile/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Google Business Profile</a> is what helps you show up in those little map listings at the top.</p>
+          
+
+         
+         
+          </div>
+        ),
+      },
+
+
+       
+
+       {
+        title: "Clean Up Your Website’s On-Page SEO",
+        about: (
+          <div>
+    
+          <p>You don’t need a fancy website, but it does need to be clear and easy for both people and search engines to understand.</p>
+          <p className="mt-1">Here’s what helps:</p>
+          <ul className="ml-8 list-disc">
+              <li>Use clear page titles that say what you do and where (like “Affordable Tree Removal in Tulsa, OK”)</li>
+              <li>Add a short but helpful meta description under each page</li>
+              
+              <li>Use headings (H1, H2, H3) to break up your content</li>
+              <li>Include keywords naturally, not too often, but not missing either</li>
+              <li>Name your images properly (not just “IMG004.jpg”) and add alt text describing them</li>
+              
+            </ul>
+         <p className="mt-1">These little details help search engines connect your website with the right searches.</p>
+         
+          </div>
+        ),
+      },
+
+
+       {
+        title: "Make Sure Your Site Works Well on Phones",
+        about: (
+          <div>
+    
+          <p>More than half of local searches happen on mobile devices. If your site doesn’t load quickly or is hard to read on a phone, people will just leave. Google notices that, too.</p>
+         <p className="mt-1">Test your site on your phone. If you have to zoom in to click something, or it takes forever to load, it needs work. Using a responsive design or a mobile-friendly theme is usually enough to fix it.</p>
+         
+         
+          </div>
+        ),
+      },
+
+
+       {
+        title: "Speed Things Up",
+        about: (
+          <div>
+    
+          <p> Nobody likes a slow website. And with today’s short attention spans, you only have a couple of seconds before people move on.</p>
+          <p className="mt-1">Here are some quick fixes:</p>
+           <ul className="ml-8 list-disc">
+              <li>Shrink image sizes before uploading to keep your site running fast.</li>
+              <li>Avoid <a
+                href="https://www.eyequant.com/resources/is-my-website-too-cluttered/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">cluttered pages</a> or heavy graphics.</li>
+              
+              <li>Use caching if you're on <a
+                href="https://wordpress.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">WordPress</a>.</li>
+              <li>Make sure your hosting service isn’t slowing things down.</li>
+              
+            </ul>
+         <p className="mt-1">Even just shaving a second or two off your load time can make a difference in rankings and in keeping people on your site.</p>
+         
+          </div>
+        ),
+      },
+
+
+       {
+        title: "Create Content That Helps People",
+        about: (
+          <div>
+    
+          <p>Start by answering the questions your customers ask you all the time. Turn those into blog posts or short guides. For example:</p>
+          <ul className="ml-8 list-disc">
+              <li><strong>“How to choose the right AC unit for a small apartment”</strong> </li>
+             
+            </ul>
+         <p className="mt-1">Google loves helpful, specific content.</p>
+         
+          </div>
+        ),
+      },
+
+     {
+        title: "Build Local Links That Make Sense",
+        about: (
+          <div>
+    
+          <p>Not all links pointing to your website carry the same weight. For small businesses, what makes a difference are the ones that come from trusted sources within your community. Try this:</p>
+           <ul className="ml-8 list-disc">
+              <li>Add your profile to local business groups online.</li>
+              <li>Sponsor a school team or community event (they’ll usually mention you online).</li>
+              
+              <li>Offer a discount to members of a local organization and ask to be listed on their site.</li>
+              <li>Get listed in local business directories.</li>
+              
+            </ul>
+          <p className="mt-1">It’s less about quantity and more about being part of your local ecosystem online.</p>
+          
+         
+         
+          </div>
+        ),
+      },
+
+
+       {
+        title: "Here’s What Most Businesses Are Still Missing: Hyperlocal Entity SEO (IMPORTANT)",
+        about: (
+          <div>
+    
+          <p>This one doesn’t get talked about enough, but it’s quietly becoming one of the most important ranking factors.</p>
+          <p className="mt-1">Google now looks beyond just keywords and links. It wants to understand what your business is, who it serves, and how it fits into the bigger picture of your town, city, or niche. That’s where <a
+                href="https://ahrefs.com/seo/glossary/entity-based-seo"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">entity-based SEO</a> comes in.</p>
+          <p className="mt-1">Here’s what you can do:</p>
+          
+           <ul className="ml-8 list-disc">
+              <li>Mention local landmarks and neighborhoods on your site (like “right across from Lincoln High” or “serving all of West Little Rock”)</li>
+              <li>Get mentioned on platforms like <a
+                href="https://patch.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Patch</a>, <a
+                href="https://nextdoor.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Nextdoor</a>, and community blogs, even if it’s just a brief mention</li>
+              
+              <li>Add structured data to your site using schema (if you’re on WordPress, plugins like <a
+                href="https://rankmath.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Rank Math</a> can help)</li>
+              <li>Use something called “sameAs” tags in your site’s backend to link all your public profiles (Google, <a
+                href="https://www.yelp.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">Yelp</a>, Facebook, etc.) and help Google connect the dots</li>
+              
+            </ul>
+          <p className="mt-1">Most businesses, even the ones investing in SEO, aren’t doing this yet. But it helps Google treat your business like a trusted local brand, not just another listing.</p>
+          
+         
+         
+          </div>
+        ),
+      },
+
+
+       {
+        title: "Final Thoughts",
+        about: (
+          <div>
+    
+          <p>You don’t need to master every part of SEO overnight. Even checking off a few of the things above can start moving the needle. The goal isn’t to beat the algorithm. It’s to make it easier for real people in your area to find you when they need what you offer.</p>
+          <p className="mt-2">Start small. Keep it simple. And most importantly, focus on the stuff that makes sense for your business.</p>
+          <p className="mt-2">If you want help figuring out where to start, I’m happy to take a look at your website and give you a few pointers, strings attached.</p>
+          <p className="mt-2"><b>For SEO related information, content writing, or assignment help, check out our <a
+                href="https://www.contentlywriters.com/"
+                class="text-[#5b6cf2] underline hover:no-underline"
+                target="_blank"
+                rel="noopener noreferrer">best content writing services</a> for expert support and timely submissions.</b></p>
+          
+         
+         
+          </div>
+        ),
+      },
+
+
+ 
+    ],
+  },
+
+
+  {
     slug: "how-much-tech-has-taken-over-our-daily-life",
     heading: "Have You Noticed How Much Tech Has Taken Over Our Daily Life?",
     date: "July 08, 2025",

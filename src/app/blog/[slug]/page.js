@@ -190,7 +190,7 @@ const blogData = [
                 target="_blank"
                 rel="noopener noreferrer">cluttered pages</a> or heavy graphics.</li>
               
-              <li>Use caching if you're on <a
+              <li>Use caching if you&#39;re on <a
                 href="https://wordpress.com/"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"

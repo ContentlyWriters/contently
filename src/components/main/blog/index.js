@@ -60,10 +60,20 @@ import img55 from "@/assets/image/blogImg55.jpg";
 import img56 from "@/assets/image/blogImg56.jpg";
 import img57 from "@/assets/image/blogImg57.jpg";
 import img58 from "@/assets/image/blogImg58.jpg";
+import img59 from "@/assets/image/blogImg59.jpg";
 
 
 const blogData = [
 
+  {
+    tag: "blog-57",
+    slug: "are-degree-losing-value",
+    heading: "Are Degrees Losing Value? Alternative Career Paths in the AI Era",
+    date: "August 20, 2025",
+    image: img59,
+    about:"For decades, a college degree was the golden ticket. You studied, graduated, and stepped into a career path that promised stability. But in 2025, the ground under that promise is shifting. Between rapid AI adoption, employers focusing more on skills than credentials, and the rise of micro-learning, the “degree first” rulebook is being rewritten.",
+  },
+ 
   {
     tag: "blog-56",
     slug: "seo-checklist-for-small-business",

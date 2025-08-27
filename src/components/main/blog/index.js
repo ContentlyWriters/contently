@@ -61,9 +61,20 @@ import img56 from "@/assets/image/blogImg56.jpg";
 import img57 from "@/assets/image/blogImg57.jpg";
 import img58 from "@/assets/image/blogImg58.jpg";
 import img59 from "@/assets/image/blogImg59.jpg";
+import img60 from "@/assets/image/blogImg60.jpg";
 
 
 const blogData = [
+
+  {
+    tag: "blog-58",
+    slug: "top-5-academic-writing-trends",
+    heading: "Top 5 Academic Writing Trends 2025: AI, Integrity & More",
+    date: "August 27, 2025",
+    image: img60,
+    about:"In 2025, academic writing isn't just a task; it’s evolving into something more dynamic, tech-savvy, and student-centered. Here are the five biggest trends shaping how students, researchers, and writers communicate scholarly ideas today.",
+  },
+
 
   {
     tag: "blog-57",

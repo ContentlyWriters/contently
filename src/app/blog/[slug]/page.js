@@ -89,7 +89,7 @@ const blogData = [
         about: (
           <div>
             <p>
-            In 2025, academic writing isn't just a task; it’s evolving into something more dynamic, tech-savvy, and student-centered. Here are the five biggest trends shaping how students, researchers, and writers communicate scholarly ideas today.
+            In 2025, academic writing isn&#39;t just a task; it&#39;s evolving into something more dynamic, tech-savvy, and student-centered. Here are the five biggest trends shaping how students, researchers, and writers communicate scholarly ideas today.
             </p>
             
 
@@ -102,7 +102,7 @@ const blogData = [
         title1: "1. Intelligent AI Writing Assistants: Your Smarter Sidekick",
         about: (
           <div>
-        <p>AI has moved beyond predictive typing; today, it's a genuine writing companion. Tools like <a
+        <p>AI has moved beyond predictive typing; today, it&#39;s a genuine writing companion. Tools like <a
                 href="https://app.grammarly.com/"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
@@ -128,7 +128,7 @@ const blogData = [
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
                 rel="noopener noreferrer">AI-aided cheating</a>.</p>
-        <p className="mt-2">On the student side, there's a growing emphasis on humanizing the writing process. Many now run their drafts through <a
+        <p className="mt-2">On the student side, there&#39;s a growing emphasis on humanizing the writing process. Many now run their drafts through <a
                 href="https://quillbot.com/ai-content-detector"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
@@ -234,7 +234,7 @@ const blogData = [
         about: (
           <div>
     
-          <p>In short, academic writing in 2025 is defined by balance: smart tech, human integrity, richer formats, and writing as learning. Pairing AI efficiency with personal insight makes for writing that's both modern and meaningful.</p>
+          <p>In short, academic writing in 2025 is defined by balance: smart tech, human integrity, richer formats, and writing as learning. Pairing AI efficiency with personal insight makes for writing that&#39;s both modern and meaningful.</p>
           <p className="mt-2">If you need expert guidance to make your writing stand out, explore our <a
                 href="https://www.contentlywriters.com/service/essay-service"
                 class="text-[#5b6cf2] underline hover:no-underline"

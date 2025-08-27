@@ -290,7 +290,7 @@ export default function Banner() {
       console.log("Error Response:", err.response?.data || err.message);
       setError((prev) => ({
         ...prev,
-        coupon: "Something went wrong. Please try again later.",
+        coupon: "Site under maintenance — reach us via WhatsApp or email.",
       }));
     } finally {
       setLoading(false);

@@ -62,9 +62,20 @@ import img57 from "@/assets/image/blogImg57.jpg";
 import img58 from "@/assets/image/blogImg58.jpg";
 import img59 from "@/assets/image/blogImg59.jpg";
 import img60 from "@/assets/image/blogImg60.jpg";
+import img61 from "@/assets/image/blogImg61.jpg";
 
 
 const blogData = [
+
+  
+  {
+    tag: "blog-59",
+    slug: "triple-threat-of-web-2025",
+    heading: "Triple Threat of Web 2025: Sustainability, Security & Accessibility",
+    date: "September 02, 2025",
+    image: img61,
+    about:"In 2025, a site will require more than just appealing images and fast loading speeds to be noticed. The three foundations of sustainability, security, and accessibility are what I refer to as the 'Triple Threat.' They are gaining increasing significance. In this blog entry, we will discuss why this group holds greater importance now than before, how they collaborate, and some actions you can take to ensure your online presence is prepared for the future.",
+  },
 
   {
     tag: "blog-58",

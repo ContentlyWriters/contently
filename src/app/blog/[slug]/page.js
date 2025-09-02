@@ -90,7 +90,7 @@ const blogData = [
         about: (
           <div>
             <p>
-            In 2025, a site will require more than just appealing images and fast loading speeds to be noticed. The three foundations of sustainability, security, and accessibility are what I refer to as the "Triple Threat." They are gaining increasing significance. In this blog entry, we will discuss why this group holds greater importance now than before, how they collaborate, and some actions you can take to ensure your online presence is prepared for the future.
+            In 2025, a site will require more than just appealing images and fast loading speeds to be noticed. The three foundations of sustainability, security, and accessibility are what I refer to as the &#34;Triple Threat.&#34; They are gaining increasing significance. In this blog entry, we will discuss why this group holds greater importance now than before, how they collaborate, and some actions you can take to ensure your online presence is prepared for the future.
             </p>
             
 
@@ -103,7 +103,7 @@ const blogData = [
         title1: "1. The Green Shift: How to Be More Sustainable Online",
         about: (
           <div>
-        <p>First, let's talk about sustainability. Web developers are adopting more environmentally friendly practices because the internet consumes a significant amount of energy and is a major contributor to global carbon emissions. As of early 2025, eco-friendly design means leaner code, energy-efficient hosting, and consciously crafted content that doesn't drain server power or bloat pages.</p>
+        <p>First, let&#39;s talk about sustainability. Web developers are adopting more environmentally friendly practices because the internet consumes a significant amount of energy and is a major contributor to global carbon emissions. As of early 2025, eco-friendly design means leaner code, energy-efficient hosting, and consciously crafted content that doesn&#39;t drain server power or bloat pages.</p>
         
         <p className="mt-2">Green web hosting services such as <a
                 href="https://world.siteground.com/"

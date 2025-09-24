@@ -1,87 +1,85 @@
-import Image from "next/image";
-import React from "react";
-import image1 from "@/assets/image/5484597.svg";
-import image2 from "@/assets/image/5150721.svg";
-import image3 from "@/assets/image/5150721.svg";
-import image4 from "@/assets/image/19197293.svg";
-import image5 from "@/assets/image/5138237.svg";
-import image6 from "@/assets/image/5024147.svg";
-import image7 from "@/assets/image/4931505.svg";
+"use client";
 
+import { motion } from "framer-motion";
 
-export default function Details() {
+export default function GrowthPartner() {
   return (
-    <div className="px-4 sm:!px-10 lg:!px-[50px] ">
-      <div className="max-w-[1280px] mx-auto">
-        <div className="grid sm:!gap-1 gap-10" >
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className={`flex flex-col  
-              justify-center items-center 
-       
-              ${Number(index) % 2== 0 ? "md:flex-row-reverse" : "md:flex-row"
-              } `}
-            >
-              <div className={`flex justify-center flex-col md:w-[50%] `}>
-                <h3 className="lg:text-5xl sm:text-3xl text-3xl font-bold pb-5 md:text-start text-left sm:px-0 px-2 sm:text-center">{item.title}</h3>
-                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-small px-2 leading-tight sm:leading-normal text-left sm:px-0 sm:text-left">
-  {item.description}
-</p>
-
-              </div>
-              <div className="flex justify-center items-center md:w-[50%] p-5">
-                <Image src={item.image} alt="Topic" className="m-w-[500px]" />
-              </div>
-            </div>
-          ))}
-        </div>
+    <section className="relative bg-[#ffffff] text-black py-20 overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 pointer-events-none">
+        <motion.div
+          animate={{ x: [0, 40, -40, 0], y: [0, -25, 25, 0] }}
+          transition={{ repeat: Infinity, duration: 26, ease: "easeInOut" }}
+          className="absolute top-10 left-0 w-[450px] h-[450px] bg-[#5b6cf2]/20 rounded-full blur-[150px]"
+        />
+        <motion.div
+          animate={{ x: [0, -30, 30, 0], y: [0, 20, -20, 0] }}
+          transition={{ repeat: Infinity, duration: 24, ease: "easeInOut" }}
+          className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-pink-500/10 rounded-full blur-[180px]"
+        />
       </div>
-    </div>
+
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
+        
+        {/* Left Content */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-snug">
+            <span className="bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] bg-clip-text text-transparent">
+              Your Growth Partner
+            </span>{" "}
+            — Reliable & Low-Cost SEO Company USA
+          </h2>
+
+          <p className="mt-6 text-lg text-black">
+            We’re recognized as a best USA SEO company, delivering measurable results with 
+            affordable search engine optimization service packages. Whether you're a small 
+            business or startup, our low price SEO services scale with your goals. 
+          </p>
+
+          <p className="mt-4 text-lg text-black">
+            Among all search engine optimization companies in USA, we prioritize transparency, 
+            strategy, and results. Partner with a result-driven SEO company USA that works smart — 
+            and fast.
+          </p>
+        </motion.div>
+
+        {/* Right Feature List */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="space-y-6"
+        >
+          <h3 className="text-2xl font-semibold text-black">
+            Affordable SEO That Actually Delivers
+          </h3>
+
+          <div className="space-y-4">
+            {[
+              "Full-suite SEO from audits to link-building",
+              "Our SEO company in USA is among the best — focused on real rankings",
+              "Watch your traffic and leads grow — without blowing your budget",
+            ].map((feature, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.02 }}
+                className="flex items-start gap-3 p-5 rounded-2xl bg-white/5 border border-gray-800 hover:bg-white/10 shadow-md hover:shadow-[0_0_20px_rgba(91,108,242,0.25)] transition"
+              >
+                <span className="mt-1 w-3 h-3 rounded-full bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] shadow-[0_0_8px_rgba(91,108,242,0.8)]" />
+                <p className="text-black text-lg">{feature}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+   
+    </section>
+    
   );
 }
-
-const data = [
-  {
-    id: 1,
-    title: "EXPERTISE",
-    description:
-      "Assignments are completed meticulously by experts in the field with years of experience.",
-    image: image6,
-  },
-  {
-    id: 2,
-    title: "Covered Topics",
-    description:
-      "We offer services across a wide range of subjects and topics, from standard school subjects to specialized research papers.",
-    image: image1,
-  },
-  {
-    id: 3,
-    title: "SIGN IN / LOG IN ",
-    description:
-      "You can track your assignments through the profile page, where we provide SafeAssign to help maintain academic integrity and originality.",
-    image: image3,
-  },
-  {
-    id: 4,
-    title: "IN YOUR BUDGET!",
-    description:
-      "We offer services in a variety of formats to fit any budget, making it easy for you to pay for assignments that meet your specific needs.",
-    image: image4,
-  },
-  {
-    id: 4,
-    title: "COMMUNITY",
-    description:
-      "Our team is responsible and responsive, ready to assist whenever needed.",
-    image: image5,
-  },
-  {
-    id: 4,
-    title: "ALWAYS ON TIME !",
-    description:
-      "Your assignments will always be completed on time. Check out our policies for more details.",
-    image: image7,
-  },
-];

@@ -6,7 +6,7 @@ Guest route if for users who are not authenticated
 
 import { Fragment, useEffect } from 'react'
 import { useRouter } from "next/navigation";
-import { useUserContext } from '@/context/auth';
+import { useUserContext } from '@/context/AuthContext';
 import LoadingSpinner from '@/components/ui/loading';
 
 const GuestRoute = ({ children, allowAuthenticated = false }) => {

@@ -1,116 +1,205 @@
-import { Separator } from "@/components/ui/separator";
-import Image from "next/image";
-import React from "react";
-import logo from "@/assets/image/contently-logo.png";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+"use client";
+import { useState } from "react";
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaPaperPlane,
+  FaLinkedin,
+  FaTwitter,
+  FaFacebookF,
+} from "react-icons/fa";
 
+export default function ContactSection() {
+  const [hovering, setHovering] = useState(false);
 
+ 
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
 
-function ContactUs() {
-  return (
-    <>
-      <div className="bg-[#020035] py-8">
-      <h1 className="text-[#FFFFFF] lg:text-[80px]  sm:text-[40px] text-[30px] text-center pt-16 sm:pt-20 mx-auto font-semibold">
-  Contently Connect
-</h1>
-<h3 className="text-[#FFFFFF] sm:text-[22px] md:text-[26px] text-[20px] text-center pt-6 sm:pt-10 mx-auto">
-  Got a Question or Concern? Drop Us a Mail, and We&#39;ll Help You Out!
-</h3>
-<p className="text-[#FFFFFF] text-[25px] text-center pt-6 mx-auto lg:pb-2 pb-3">
-          
-          </p>
-        <div className="h-[7px] w-[150px] bg-[#5b6cf2] mx-auto"></div>
-      </div>
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-      <div className="lg:px-32 lg:py-16">
-        <div className="!px-6 sm:!px-10 lg:!px-[80px] py-20">
-          <div className="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 ">
-            <div className="grid gap-2">
-              <h2 className="font-semibold">Phone</h2>
-              <div>
-                <p>
-                Tel: <a className="hover:underline hover:text-[#5b6cf2]" href="https://wa.me/+917727851997" rel="noopener noreferrer">+91 7727851997</a>
-                </p>
-                <p>Contact us on WhatsApp at these hours:</p>
-                <p> Monday 10:00 AM – Saturday 06:00 PM</p>
-              </div>
-            </div>
-            <div className="grid gap-2">
-              <h3 className="font-semibold">Location</h3>
-              <div>
-                <p>Our company, Facio Contently Writers Private Limited is based in
-                Mansarovar, Jaipur 302020</p>
-              </div>
-              <p>CIN: U82990RJ2024PTC09328</p>
-            </div>
-            {/* Social Media Section */}
-            <div className="grid gap-2">
-              <h3 className="font-semibold">Social Media</h3>
-              <p>Stay connected with us on:</p>
-              <div className="flex space-x-4">
-              <a
-                  href="https://www.linkedin.com/company/facio-contently-writers/posts/?feedView=all"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-700 hover:scale-110 transition"
-                  aria-label="LinkedIn"
-                >
-                  <FaLinkedin size={24} />
-                </a>
-                <a
-                  href="https://www.facebook.com/profile.php?id=61568632033503"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:scale-110 transition"
-                  aria-label="Facebook"
-                >
-                  <FaFacebook size={24} />
-                </a>
-                <a
-                  href="https://www.instagram.com/contentlywriters/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pink-500 hover:scale-110 transition"
-                  aria-label="Instagram"
-                >
-                  <FaInstagram size={24} />
-                </a>
-                <a
-                  href="https://x.com/ContentlyW"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-black hover:scale-110 transition"
-                  aria-label="X (Twitter)"
-                >
-                  <FaSquareXTwitter size={24} />
-                </a>
-               
-          
-              </div>
-              <p className="text-sm text-gray-600 mt-2">
-                Follow us for updates, news, and more!
-              </p>
-            </div>
-            <div className="grid gap-2">
-              <h2 className="font-semibold">Email</h2>
-              <div>
-                <p>If you have any issues regarding any matter or if you are
-                just curious drop a mail so we can help you out!</p>
-              </div>
-              <a
-                href="mailto:info@contentlywriters.com"
-                className="hover:underline hover:text-[#5b6cf2]"
-              >
-                info@contentlywriters.com
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
 
-    </>
-  );
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+ const data = await res.json();
+if (data.success) {
+  setStatus("✅ Message sent!");
+  setForm({ name: "", email: "", company: "", message: "" });
+} else {
+  setStatus("❌ Failed to send. Please try again.");
 }
 
-export default ContactUs;
+  };
+
+  return (
+    <section className="relative bg-white  ">
+ <div className="relative bg-[#020035] h-[60vh] overflow-hidden">
+  {/* Background Image with low opacity */}
+  <div
+    className="absolute inset-0 bg-cover bg-center opacity-40"
+    style={{ backgroundImage: "url('/contact-bg.png')" }}
+  ></div>
+
+  {/* Optional: dark overlay for better contrast */}
+  <div className="absolute inset-0 bg-[#020035]/70"></div>
+
+  {/* Text Section */}
+  <div className="max-w-5xl mx-auto px-6 md:px-12 text-left text-white pt-12 relative z-10">
+    <h1 className="text-3xl sm:text-4xl mb-20 lg:text-5xl font-bold leading-snug mt-[8vh] bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] bg-clip-text text-transparent">
+      Get In Touch
+    </h1>
+  </div>
+</div>
+
+
+
+      {/* Card */}
+      <div className=" relative mb-[12vh] max-w-5xl mx-auto -mt-[250px] shadow-xl rounded-lg overflow-hidden flex flex-col md:flex-row">
+        {/* Left Form */}
+        <div className="bg-white flex-1 p-10 ">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+            Send us a Message
+          </h2>
+        <form onSubmit={handleSubmit} className="space-y-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div>
+          <label className="block text-sm font-medium text-gray-600 mb-2">
+            Your Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Devbysid"
+            value={form.name}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-600 mb-2">
+            Email Address
+          </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="sid@contentlywriters.com"
+            value={form.email}
+            onChange={handleChange}
+            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+      </div>
+      <div>
+        <label className="block text-sm font-medium text-gray-600 mb-2">
+          Company
+        </label>
+        <input
+          type="text"
+          name="company"
+          placeholder="Facio ContentlyWriters"
+          value={form.company}
+          onChange={handleChange}
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+        />
+      </div>
+      <div>
+        <label className="block text-sm font-medium text-gray-600 mb-2">
+          Message
+        </label>
+        <textarea
+          name="message"
+          placeholder="Hi, do you have a moment to talk about..."
+          rows="4"
+          value={form.message}
+          onChange={handleChange}
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+          required
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        
+        className="w-12 h-12 flex items-center justify-center bg-[#020035] hover:bg-[#5b6cf2] text-white rounded-full ml-auto transition-colors"
+      >
+        <FaPaperPlane />
+      </button>
+
+     <p className={`text-sm mt-2 ${
+  status.includes("✅") ? "text-green-600" : "text-red-600"
+}`}>
+  {status}
+</p>
+
+    </form>
+        </div>
+
+        {/* Right Info */}
+       <div
+  className={`relative w-full md:w-1/3 p-10 text-white transition-colors duration-300 ${
+    hovering
+      ? "bg-[#020035] border-[1px] border-[#ffffff]"
+      : "bg-[#5b6cf2] border-[0px] border-[#020035]"
+  }`}
+>
+  <h2 className="text-xl font-semibold mb-6">Contact Information</h2>
+  <ul className="space-y-6 relative z-10">
+    <li className="flex items-start space-x-4">
+      <FaMapMarkerAlt className="text-lg mt-1" />
+      <span>
+        41 Jadon Nagar B
+        <br />
+        Durgapura, Jaipur 302018
+      </span>
+    </li>
+    <li className="flex items-center space-x-4">
+      <FaPhoneAlt className="text-lg" />
+      <span>+91 900-200-300</span>
+    </li>
+    <li className="flex items-center space-x-4">
+      <FaEnvelope className="text-lg" />
+      <span>info@example.com</span>
+    </li>
+  </ul>
+  <div className="flex items-center space-x-5 mt-8 relative z-10">
+    <a href="#" className="hover:text-black transition-colors">
+      <FaLinkedin />
+    </a>
+    <a href="#" className="hover:text-black transition-colors">
+      <FaTwitter />
+    </a>
+    <a href="#" className="hover:text-black transition-colors">
+      <FaFacebookF />
+    </a>
+  </div>
+
+  {/* Decorative image - right bottom */}
+  <img
+    src="/pop-up1.webp" // apni image ka path lagao
+    alt="Decor"
+   className="absolute -bottom-4 -right-14 w-[180px] md:w-[250px] opacity-30 rotate-60 pointer-events-none"
+
+  />
+</div>
+
+      </div>
+    </section>
+  );
+}

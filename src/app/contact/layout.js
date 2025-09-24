@@ -20,7 +20,7 @@ export default function ContactLayout({ children }) {
        
         <Navbar />
        
-        <div className="mt-[80px]">{children}</div>
+        <div >{children}</div>
         <Footer />
       </div>
     </GuestRoute>

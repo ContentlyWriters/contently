@@ -210,3 +210,122 @@ html {
 
 
 
+/* global.css ya tailwind.css me */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+
+@keyframes electric-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-electric {
+  background-size: 300% 300%;
+  animation: electric-flow 3s linear infinite;
+}
+
+@keyframes lightning-flash {
+  0%, 100% { opacity: 0; transform: scale(0.4); }
+  50% { opacity: 1; transform: scale(0.6)}
+}
+
+.animate-lightning {
+  animation: lightning-flash 1.2s ease-out infinite;
+}
+
+
+
+/* styles/glow-border.css */
+@keyframes border-glow {
+  0% {
+    border-color: #5b6cf2;
+    box-shadow: 0 0 2px #5b6cf2, 0 0 10px #5b6cf2, 0 0 4px #5b6cf2;
+  }
+  50% {
+    border-color: #00c6ff;
+    box-shadow: 0 0 7px #00c6ff, 0 0 20px #00c6ff, 0 0 8px #00c6ff;
+  }
+  100% {
+    border-color: #5b6cf2;
+    box-shadow: 0 0 2px #5b6cf2, 0 0 10px #5b6cf2, 0 0 4px #5b6cf2;
+  }
+}
+
+.animated-border {
+  animation: border-glow 2.5s infinite;
+}
+
+
+
+@keyframes border-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-border-flow {
+  background-size: 300% 300%;
+  animation: border-flow 6s linear infinite;
+}
+
+
+
+
+/*dashboard0*/
+
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+.animate-fadeIn { animation: fadeIn 0.3s ease-out forwards; }
+
+@keyframes scaleIn { from { transform: scale(0.95) } to { transform: scale(1) } }
+.animate-scaleIn { animation: scaleIn 0.3s ease-out forwards; }
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+/*seo page*/
+
+@keyframes blob {
+  0%, 100% { transform: translate(0px,0px) scale(1); }
+  33% { transform: translate(25px,-15px) scale(1.1); }
+  66% { transform: translate(-20px,10px) scale(0.9); }
+}
+
+.animate-blob {
+  animation: blob 10s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse {
+  animation: pulse 6s infinite;
+}
+
+/* Polygon clip-path */
+.clip-path-polygon {
+  clip-path: polygon(50% 0%, 100% 25%, 75% 100%, 25% 100%, 0% 25%);
+}

@@ -3,7 +3,7 @@ import Navbar from "@/components/main/navbar";
 import Footer from "@/components/main/footer";
 import GuestRoute from "@/routes/guestRoute";
 import Popup from "@/components/main/popup";
-
+import { AuthProvider } from "@/context/AuthContext";
 
 
 export const metadata = {
@@ -25,7 +25,7 @@ export default function HomeLayout({ children }) {
 
         <Navbar />
         {/* <Popup /> */}
-        <div className="mt-[80px]">{children}</div>
+        <div>{children}</div>
         <Footer />
       </div>
     </GuestRoute>

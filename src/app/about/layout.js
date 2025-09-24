@@ -15,7 +15,7 @@ export default function AboutLayout({ children }) {
     <GuestRoute allowAuthenticated={true}>
       <div>
         <Navbar />
-        <div className="mt-[80px]">{children}</div>
+        <div className="mt-10" >{children}</div>
         <Footer />
       </div>
     </GuestRoute>

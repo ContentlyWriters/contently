@@ -13,7 +13,7 @@ const ResearchPaperPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-[#020035] min-h-[44vh] flex flex-col items-center justify-center text-center p-4 shadow-lg backdrop-blur-md">
+      <section className="relative bg-[#020035] min-h-[54vh] flex flex-col items-center justify-center text-center p-4 shadow-lg backdrop-blur-md">
 
   <motion.h1
    className="text-white text-2xl sm:text-3xl lg:text-5xl font-semibold leading-snug lg:leading-tight mb-4 sm:mb-3"

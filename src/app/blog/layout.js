@@ -14,7 +14,7 @@ export default function BlogLayout({ children }) {
       <div>
         <Navbar />
         {/* <Popup /> */}
-        <div className="mt-[80px]">{children}</div>
+        <div className="mt-[40px]">{children}</div>
         <Footer />
       </div>
     </GuestRoute>

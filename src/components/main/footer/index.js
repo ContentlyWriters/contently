@@ -10,29 +10,29 @@ import { MdOutlineMail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="bg-[#020035] text-white px-6 sm:px-10 lg:px-[80px] py-5">
+    <div className="bg-[#000000] text-white px-6 sm:px-10 lg:px-[80px] py-5">
       <div className="max-w-[1280px] mx-auto">
         <div className="flex py-4 items-start flex-col md:flex-row gap-4">
           <div className="flex md:gap-[150px] gap-10 w-full md:flex-row flex-col">
             <ul className="grid gap-2">
               <li className="font-semibold"><h4>Company</h4></li>
               <li>
-                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/about">
+                <Link className="text-md hover:text-[#ffffff] hover:underline" href="/about">
                   <h5>About Us</h5>
                 </Link>
               </li>
               <li>
-                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/#faq">
+                <Link className="text-md hover:text-[#ffffff] hover:underline" href="/#faq">
                   <h5>FAQs</h5>
                 </Link>
               </li>
               <li>
-                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/contact">
+                <Link className="text-md hover:text-[#ffffff] hover:underline" href="/contact">
                   <h5>Contacts</h5>
                 </Link>
               </li>
               <li>
-                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/blog">
+                <Link className="text-md hover:text-[#ffffff] hover:underline" href="/blog">
                   <h5>Blog</h5>
                 </Link>
               </li>
@@ -40,27 +40,27 @@ const Footer = () => {
             <ul className="grid gap-2">
               <li className="font-semibold"><h4>Terms</h4></li>
               <li>
-                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/terms-and-conditions">
+                <Link className="text-md hover:text-[#ffffff] hover:underline" href="/terms-and-conditions">
                   <h5>Terms & Conditions</h5>
                 </Link>
               </li>
               <li>
-                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/privacy-policy">
+                <Link className="text-md hover:text-[#ffffff] hover:underline" href="/privacy-policy">
                   <h5>Privacy Policy</h5>
                 </Link>
               </li>
               <li>
-                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/refund-policy">
+                <Link className="text-md hover:text-[#ffffff] hover:underline" href="/refund-policy">
                   <h5>Refund Policy</h5>
                 </Link>
               </li>
               <li>
-                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/revision-policy">
+                <Link className="text-md hover:text-[#ffffff] hover:underline" href="/revision-policy">
                   <h5>Revision Policy</h5>
                 </Link>
               </li>
               <li>
-                <Link className="text-md hover:text-[#8e8e9e] hover:underline" href="/plagiarism-policy">
+                <Link className="text-md hover:text-[#ffffff] hover:underline" href="/plagiarism-policy">
                   <h5>Plagiarism Policy</h5>
                 </Link>
               </li>
@@ -108,23 +108,23 @@ const Footer = () => {
           </p>
           <div className="flex gap-10">
             <Link href="mailto:info@contentlywriters.com"  target="_blank"
-            rel="noopener noreferrer" className="text-black-400 hover:text-[#8e8e9e]">
+            rel="noopener noreferrer" className="text-black-400 hover:text-[#ffffff]">
               <MdOutlineMail />
             </Link>
             <Link href="https://www.facebook.com/profile.php?id=61568632033503"  target="_blank"
-            rel="noopener noreferrer" className="text-black-400 hover:text-[#8e8e9e]">
+            rel="noopener noreferrer" className="text-black-400 hover:text-[#ffffff]">
               <FaFacebookF />
             </Link>
             <Link href="https://www.instagram.com/contentlywriters/"  target="_blank"
-            rel="noopener noreferrer" className="text-black-400 hover:text-[#8e8e9e]">
+            rel="noopener noreferrer" className="text-black-400 hover:text-[#ffffff]">
               <FaInstagram />
             </Link>
             <Link href="https://www.youtube.com/@ContentlyWriters"  target="_blank"
-            rel="noopener noreferrer" className="text-black-400 hover:text-[#8e8e9e]">
+            rel="noopener noreferrer" className="text-black-400 hover:text-[#ffffff]">
              <FaYoutube />
             </Link>
             <Link href="https://www.linkedin.com/company/facio-contently-writers/"  target="_blank"
-            rel="noopener noreferrer" className="text-black-400 hover:text-[#8e8e9e]">
+            rel="noopener noreferrer" className="text-black-400 hover:text-[#ffffff]">
               <FaLinkedin />
             </Link>
           </div>

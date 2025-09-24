@@ -17,7 +17,7 @@ export default function DissertationLayout({ children }) {
     <GuestRoute allowAuthenticated={true}>
       <div>
         <Navbar />
-        <div className="mt-[80px]">{children}</div>
+        <div >{children}</div>
        
       </div>
     </GuestRoute>

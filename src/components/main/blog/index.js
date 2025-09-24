@@ -26,8 +26,374 @@ import img21 from "@/assets/image/blogImg21.jpg";
 import img22 from "@/assets/image/blogImg22.jpg";
 import img23 from "@/assets/image/blogImg23.jpg";
 import img24 from "@/assets/image/blogImg24.jpg";
+import img25 from "@/assets/image/blogImg25.jpg";
+import img26 from "@/assets/image/blogImg26.jpg";
+import img27 from "@/assets/image/blogImg27.jpg";
+import img28 from "@/assets/image/blogImg28.jpg";
+import img29 from "@/assets/image/blogImg29.jpg";
+import img30 from "@/assets/image/blogImg30.jpg";
+import img31 from "@/assets/image/blogImg31.jpg";
+import img32 from "@/assets/image/blogImg32.jpg";
+import img33 from "@/assets/image/blogImg33.jpg";
+import img34 from "@/assets/image/blogImg34.jpg";
+import img35 from "@/assets/image/blogImg35.jpg";
+import img36 from "@/assets/image/blogImg36.jpg";
+import img37 from "@/assets/image/blogImg37.jpg";
+import img38 from "@/assets/image/blogImg38.jpg";
+import img39 from "@/assets/image/blogImg39.jpg";
+import img40 from "@/assets/image/blogImg40.jpg";
+import img41 from "@/assets/image/blogImg41.jpg";
+import img42 from "@/assets/image/blogImg42.jpg";
+import img43 from "@/assets/image/blogImg43.jpg";
+import img44 from "@/assets/image/blogImg44.jpg";
+import img45 from "@/assets/image/blogImg45.jpg";
+import img46 from "@/assets/image/blogImg46.jpg";
+import img47 from "@/assets/image/blogImg47.jpg";
+import img48 from "@/assets/image/blogImg48.jpg";
+import img49 from "@/assets/image/blogImg49.jpg";
+import img50 from "@/assets/image/blogImg50.jpg";
+import img51 from "@/assets/image/blogImg51.jpg";
+import img52 from "@/assets/image/blogImg52.jpg";
+import img53 from "@/assets/image/blogImg53.jpg";
+import img54 from "@/assets/image/blogImg54.jpg";
+import img55 from "@/assets/image/blogImg55.jpg";
+import img56 from "@/assets/image/blogImg56.jpg";
+import img57 from "@/assets/image/blogImg57.jpg";
+import img58 from "@/assets/image/blogImg58.jpg";
+import img59 from "@/assets/image/blogImg59.jpg";
+import img60 from "@/assets/image/blogImg60.jpg";
+import img61 from "@/assets/image/blogImg61.jpg";
+
 
 const blogData = [
+
+  
+  {
+    tag: "blog-59",
+    slug: "triple-threat-of-web-2025",
+    heading: "Triple Threat of Web 2025: Sustainability, Security & Accessibility",
+    date: "September 02, 2025",
+    image: img61,
+    about:"In 2025, a site will require more than just appealing images and fast loading speeds to be noticed. The three foundations of sustainability, security, and accessibility are what I refer to as the 'Triple Threat.' They are gaining increasing significance. In this blog entry, we will discuss why this group holds greater importance now than before, how they collaborate, and some actions you can take to ensure your online presence is prepared for the future.",
+  },
+
+  {
+    tag: "blog-58",
+    slug: "top-5-academic-writing-trends",
+    heading: "Top 5 Academic Writing Trends 2025: AI, Integrity & More",
+    date: "August 27, 2025",
+    image: img60,
+    about:"In 2025, academic writing isn't just a task; it’s evolving into something more dynamic, tech-savvy, and student-centered. Here are the five biggest trends shaping how students, researchers, and writers communicate scholarly ideas today.",
+  },
+
+
+  {
+    tag: "blog-57",
+    slug: "are-degree-losing-value",
+    heading: "Are Degrees Losing Value? Alternative Career Paths in the AI Era",
+    date: "August 20, 2025",
+    image: img59,
+    about:"For decades, a college degree was the golden ticket. You studied, graduated, and stepped into a career path that promised stability. But in 2025, the ground under that promise is shifting. Between rapid AI adoption, employers focusing more on skills than credentials, and the rise of micro-learning, the “degree first” rulebook is being rewritten.",
+  },
+ 
+  {
+    tag: "blog-56",
+    slug: "seo-checklist-for-small-business",
+    heading: "SEO Checklist for Small Businesses in the USA",
+    date: "July 15, 2025",
+    image: img58,
+    about:"SEO is one of those things that small business owners hear about all the time but rarely have the time to figure out. I’ve seen it happen over and over again. You’re trying to keep things moving, making sure customers are happy, dealing with day-to-day stuff… and someone says, “Hey, have you tried SEO?”",
+  },
+ 
+  {
+    tag: "blog-55",
+    slug: "how-much-tech-has-taken-over-our-daily-life",
+    heading: "Have You Noticed How Much Tech Has Taken Over Our Daily Life?",
+    date: "July 08, 2025",
+    image: img57,
+    about:"Have you ever stopped and realized how much tech we use without even thinking about it? It’s kind of wild. One minute you’re unlocking your phone with your face, the next you’re ordering dinner, checking in on work emails, and tracking your steps, all without even leaving the couch. It’s not just about convenience anymore. Over time, technology has quietly made itself a part of almost everything we do. It’s not screaming for our attention, it just blends into the background, making life feel easier, faster, and more connected.",
+  },
+
+
+  {
+    tag: "blog-54",
+    slug: "how-ai-is-transforming-content-in-american-ecommerce",
+    heading: "How AI Is Transforming Content in American eCommerce",
+    date: "June 26, 2025",
+    image: img56,
+    about:"Something big is happening in American eCommerce, and most people don’t even realize it. AI is changing the game. It’s not just about faster tools or automated systems anymore. From how product descriptions are written to the way those “you might also like” suggestions appear in your cart, AI is quietly transforming how online stores communicate with their customers. But this shift isn’t just technical, it’s personal. It’s about creating content that connects with people. So, let’s take a closer look at how AI is shaping the way brands tell their stories online.",
+  },
+  
+  
+  {
+    tag: "blog-53",
+    slug: "top-10-seo-mistake-startups-must-avoid",
+    heading: "Top 10 SEO Mistakes Startups Must Avoid for Growth",
+    date: "June 17, 2025",
+    image: img55,
+    about:"SEO is one of the most powerful tools for growing your business online. Yet, many US startups overlook or mishandle critical SEO practices, unintentionally sabotaging their growth potential. Your website is fine, but you could be missing out on valuable traffic and opportunities without the right SEO strategies.",
+  },
+  
+  
+  {
+    tag: "blog-52",
+    slug: "geo-vs-seo",
+    heading: "GEO vs SEO: How AI Is Changing Search in 2025",
+    date: "June 13, 2025",
+    image: img54,
+    about:"SEO just doesn’t work the way it used to. If your SEO strategy still revolves around keywords and backlinks, you might’ve felt it’s not getting you as far as it once did. Search isn’t about finding words anymore; it’s about understanding context and intent. AI has completely changed how content is read, understood, and shown to people, and here’s the thing: being at the top of Google doesn’t always mean what it used to. More and more, people are getting their answers straight from AI, before they even click on anything. So if your content isn’t built in a way that makes sense to those systems, it might not appear.",
+  },
+  
+  {
+    tag: "blog-51",
+    slug: "ai-literacy-prompt-engineering",
+    heading: "AI Literacy & Prompt Engineering: Must-Have Skill for 2025",
+    date: "June 09, 2025",
+    image: img53,
+    about:"If you’ve ever asked ChatGPT to “write my assignment” or “summarise this article,” you’ve already had a small taste of what AI-assisted learning is. But here’s the truth: most studnts don’t realise you’re only scratching the surface..",
+  },
+ 
+  {
+    tag: "blog-50",
+    slug: "what-assignments-do-law-student-struggle",
+    heading: "What Assignments Do Law Students Struggle With the Most?",
+    date: "June 06, 2025",
+    image: img52,
+    about:"Being a student is never easy. We all want to do everything at this age.. We want to focus on our dream job, have fun with friends, family, hobbies, and a lot more. But for law students, the pressure is on another level — law school isn’t just about knowing the law — it’s about learning how to think critically, argue clearly, and write persuasively. That’s why many students turn to law assignment help when the workload piles up and clarity is missing.",
+  },
+  
+  {
+    tag: "blog-49",
+    slug: "seo-writing-vs-content-writing",
+    heading: "SEO Writing vs Content Writing: Which Truly Drives Results",
+    date: "June 03, 2025",
+    image: img51,
+    about:"Is your well-written content going unnoticed by your target audience? Or perhaps your articles rank well on Google but fail to retain visitors? This is the classic conundrum between SEO writing and content writing. Understanding and balancing both is the key to creating content that not only ranks but also resonates.",
+  },
+  
+  {
+    tag: "blog-48",
+    slug: "harvard-application-essay-tips",
+    heading: "Harvard Application Essay Tips: What They Want to See",
+    date: "May 30, 2025",
+    image: img50,
+    about:"If you aim for a seat at Harvard, it's a worldwide dream of thousands of students. While grades and test scores play a role, one of the most powerful components of your application is the personal essay. It's your chance to speak directly to the admissions team and show them who you are beyond numbers and transcripts.",
+  },
+ 
+  {
+    tag: "blog-47",
+    slug: "google-ai-overview-are-changing",
+    heading: "Google AI Overviews Are Changing SEO – How to Remain at the Top",
+    date: "May 26, 2025",
+    image: img49,
+    about:"Understand SGE, Its Impact, and How to Optimize for AI-Generated Search Results - Google started revolutionizing the search experience in 2024 and 2025 with a feature dubbed SGE (Search Generative Experience), which is today known as AI Overviews. It's no longer merely a test; it's being implemented all around the world and is already changing the way consumers engage with online material.",
+  },
+ 
+  {
+    tag: "blog-46",
+    slug: "2025-stident-financial-aid",
+    heading: "2025 Student Financial Aid Guide for US College Students",
+    date: "May 23, 2025",
+    image: img48,
+    about:"Starting college is an exciting new chapter, but money worries can quickly take over. With updates to student financial aid coming in 2025, knowing the latest changes and how to handle your budget is more important than ever.",
+  },
+ 
+  {
+    tag: "blog-45",
+    slug: "google-seo-2025-update",
+    heading: "Google’s 2025 SEO Update Cracked: What’s Changing and Why It Matters",
+    date: "May 15, 2025",
+    image: img47,
+    about:"If you’ve been keeping up with Google’s updates like I have, you might’ve felt that this latest SEO update of 2025 is a bit different. It’s not just the usual shuffle of rankings or keyword tweaks. It feels like Google is trying to send us a message, a pretty clear one about what it truly wants from the web these days. Gone are the days when you could just play the system or stuff your pages with keywords. Now, it’s all about creating content that genuinely helps real people. No more tricks, no shortcuts, just useful, meaningful stuff that makes a difference. So, let’s get into what’s changed, why it matters, and how you can keep your SEO strong without feeling overwhelmed or stressed out.",
+  },
+  
+  {
+    tag: "blog-44",
+    slug: "mastering-assignment-writing",
+    heading: "Mastering Assignment Writing: Tips for International Students with Language Barriers",
+    date: "May 12, 2025",
+    image: img46,
+    about:"Studying abroad is one of those things you’ve probably imagined for years: new adventures, a different culture, meeting people from all over. But then, Reality hits the moment your professor hands you that first assignment. You look at the paper, and suddenly, it feels like the dream is harder to reach than you thought. You glance at the brief, and it feels like it was written in academic English from another century. Suddenly, all that excitement about being in a new place starts to fade, and you’re left thinking, “Okay, now I’m in trouble!”",
+  },
+
+  {
+    tag: "blog-43",
+    slug: "topical-authority",
+    heading: "Topical Authority: Build a Winning Content Hub in 2025",
+    date: "May 05, 2025",
+    image: img45,
+    about:"StudyiIf you’ve been creating content and wondering why it’s not showing up in Google searches, here's the truth: ticking off keywords isn’t enough anymore.",
+  },
+  
+  {
+    tag: "blog-42",
+    slug: "study-in-usa-vs-uk",
+    heading: "Study in the US vs UK: Pros, Cons & Academic Support Tips",
+    date: "April 21, 2025",
+    image: img44,
+    about:"Studying abroad is one of the most exciting decisions a student can make, but it also comes with a fair share of confusion. Two of the most popular destinations, the United States and the United Kingdom, offer world-class education, but in very different ways.",
+  },
+  
+  {
+    tag: "blog-41",
+    slug: "why-we-procrastinate",
+    heading: "Why We Procrastinate and How to Overcome It: Psychology Explained",
+    date: "April 14, 2025",
+    image: img43,
+    about:"Procrastination is something we're accidentally experts at, even though it's something that tends to hurt us academically. You sit down, all ready to tackle that one assignment, and somehow you end up deep-cleaning your room, checking the weather in three different cities, or doom-scrolling TikTok for “just five minutes.” Next thing you know? It’s midnight, the deadline’s creeping up, and the panic kicks in hard.",
+  },
+  
+  {
+    tag: "blog-40",
+    slug: "free-tools-to-make-study-easy",
+    heading: "Top 10 Free Tools to Make Studying Easier for Students in 2025",
+    date: "April 10, 2025",
+    image: img42,
+    about:"Let’s be honest: student life can feel like a juggling act most days. It's a lot to do time management between classes, assignments, part-time jobs, and trying to keep some form of social life. Sometimes it feels like you’re running a marathon with your shoelaces tied together.",
+  },
+  
+  {
+    tag: "blog-39",
+    slug: "how-to-use-google-scholar",
+    heading: "How to Use Google Scholar: A Student’s Research Guide",
+    date: "April 04, 2025",
+    image: img41,
+    about:"Let’s be honest—doing research for assignments can feel like a wild goose chase. You Google something, only to sift through random blogs, outdated articles, or—worst of all—paywalled journals. It’s frustrating! But don’t worry, because Google Scholar is here to save the day. Think of it as your academic search engine, helping you find credible, peer-reviewed research without the headache.",
+  },
+  
+  {
+    tag: "blog-38",
+    slug: "time-management-tips",
+    heading: "Time Management Tips for Students: Balance Studies & Writing",
+    date: "April 01, 2025",
+    image: img40,
+    about:"Time management is crucial for students who need to juggle their coursework, assignments, and exams. With multiple deadlines to meet, many students struggle to allocate their time effectively, leading to stress and decreased productivity. A well-structured schedule and efficient time management strategies can help students stay on top of their workload while maintaining academic excellence.",
+  },
+  
+  {
+    tag: "blog-37",
+    slug: "right-dissertation-topic",
+    heading: "Tips to Choose the Right Dissertation Topic Easily",
+    date: "March 25, 2025",
+    image: img39,
+    about:"Choosing the right dissertation topic is a crucial decision that affects your Academic and professional journey. A dissertation is a long-term project requiring in-depth research, Critical thinking, and strong commitment. Therefore, selecting a topic that aligns with your interests, scholarly qualities, and career yearnings is basic. In this guide, we will explore the key components to consider when choosing a dissertation subject and how best dissertation services can Support students in this challenging process.",
+  },
+  
+  {
+    tag: "blog-36",
+    slug: "time-management-tips-for-thesis",
+    heading: "Time Management Tips for Thesis Writing – Stay Organized",
+    date: "March 21, 2025",
+    image: img38,
+    about:"Writing a thesis is a challenging task. It’s a long and detailed process that requires careful planning, strong investigation, and much persistence. If you’re juggling coursework, part-time work, or individual commitments, It’s easy to feel overwhelmed.",
+  },
+  
+  {
+    tag: "blog-35",
+    slug: "benefit-drawback-assignments-help",
+    heading: "Benefits & Drawbacks of Using Online Assignment Help",
+    date: "March 17, 2025",
+    image: img37,
+    about:"Finding the best assignment help service can make a significant difference in managing workloads effectively. Between juggling deadlines, assignments, part-time jobs, and personal commitments, it’s no shock that numerous undergraduates feel overpowered. Hiring an online assignment helper can seem like a lifesaver when due dates heap up and stress levels rise. But is it truly the best solution? Like most things in life, there are both advantages and drawbacks to consider. Let’s break it down.",
+  },
+  
+  {
+    tag: "blog-34",
+    slug: "cost-accounting-assignments-help",
+    heading: "Cost Accounting Assignments Got You Stressed? Get Help Now",
+    date: "March 07, 2025",
+    image: img36,
+    about:"Let’s be honest—cost accounting assignment help isn’t exactly a walk in the park. If you've ever found yourself staring at a problem for hours, wondering where you went wrong, you're not alone. There are ways to make sense of this subject and even get a little expert help along the way.",
+  },
+  
+  {
+    tag: "blog-33",
+    slug: "financial-accounting-assignments-help",
+    heading: "Financial Accounting Assignment Help: Your Ultimate Guide",
+    date: "March 03, 2025",
+    image: img35,
+    about:"Financial accounting is a crucial aspect of business education, helping students develop the skills required to analyze financial statements and make informed economic decisions. However, financial accounting assignments can often be challenging, requiring a deep understanding of concepts, formulas, and real-world applications. Many students struggle with these tasks due to time constraints, lack of understanding, or complex problems. This is where professional financial accounting assignment help comes in handy, providing the necessary support to excel academically.",
+  },
+  {
+    tag: "blog-32",
+    slug: "aerospace-engineering-assignments-help",
+    heading: "Need Aerospace Engineering Assignment Help? Ultimate Guide",
+    date: "February 28, 2025",
+    image: img34,
+    about:"Aerospace engineering is one of the most challenging fields of study. It modulates elements of mechanical, electrical, and computer engineering to design, build, and preserve aircraft and spacecraft. Students often struggle with assignments that require advanced knowledge, precise calculations, and critical thinking because of the complexity of the subject. This is where expert Aerospace Engineering Assignment Help steps in, offering students expert help to achieve success.",
+  },
+  {
+    tag: "blog-31",
+    slug: "biomedical-engineering-assignments-help",
+    heading: "How to Ace Your Biomedical Engineering Assignments",
+    date: "February 17, 2025",
+    image: img33,
+    about:"Biomedical engineering is a dynamic field combining engineering principles with medical and biological sciences to develop healthcare solutions. As a biomedical engineering student, you will often encounter help with biomedical engineering assignments that require technical knowledge, problem-solving skills, and creativity. These assignments help bridge the gap between theoretical concepts and real-world applications, making them essential for academic and professional growth.",
+  },
+  {
+    tag: "blog-30",
+    slug: "electrical-engineering-assignments-help",
+    heading: "Electrical Engineering Assignment Help: Experts Help & Guide",
+    date: "February 13, 2025",
+    image: img32,
+    about:"Electrical engineering is a vast and complex field that covers circuits, power systems, electromagnetism, and digital electronics. Many students find it challenging to understand intricate theories, apply formulas correctly, and complete assignments on time. If you're facing difficulties, don’t worry, you’re not alone. There are engineering assignment help experts who are willing to take your stress away. Reach out to the assignment experts to get your assignment done",
+  },
+  {
+    tag: "blog-29",
+    slug: "guide-to-civil-engineering-assignments-help",
+    heading: "Guide to Civil Engineering Assignment Help & Success",
+    date: "February 10, 2025",
+    image: img31,
+    about:"Are you struggling with your civil engineering coursework? Civil engineering is a complex field that requires a deep understanding of mathematical concepts, physics, and design principles. Whether dealing with structural analysis, transportation engineering, or geotechnical studies, getting professional guidance can make a difference.",
+  },
+  {
+    tag: "blog-28",
+    slug: "software-engineering-assignments-help",
+    heading: "Software Engineering Assignment Help – Expert Assistance",
+    date: "February 7, 2025",
+    image: img30,
+    about:"Software engineering is an essential discipline in today’s tech landscape. From designing robust systems to developing complex applications, software engineers are at the heart of technological advancements. However, due to its complexity and diverse range of topics, many students often find themselves struggling with software engineering assignments. Whether it’s understanding intricate algorithms or solving programming challenges, seeking professional help can make a significant difference. This blog post will explore how getting software engineering assignment help can enhance your learning experience and contribute to your academic success.",
+  },
+  {
+    tag: "blog-27",
+    slug: "javascript-assignments-help",
+    heading: "JavaScript Assignment Help – Fast & Reliable Coding Aid",
+    date: "February 3, 2025",
+    image: img29,
+    about:"JavaScript is one of the most powerful and widely used programming languages in the world. JavaScript plays a crucial role in modern web development, from creating dynamic web pages to building full-fledged web applications. However, learning JavaScript can be challenging, especially for students juggling multiple assignments, exams, and coursework. If you find yourself struggling with JavaScript assignments, seeking professional JavaScript assignment help can be a game-changing decision. Whether you need help with a JavaScript assignment online or guidance with JavaScript project help for students, expert assistance can save time and improve your understanding.",
+  },
+  {
+    tag: "blog-26",
+    slug: "c-programming-assignments-help",
+    heading: "C Programming Assignment Help: Expert Solutions for You",
+    date: "January 30, 2025",
+    image: img28,
+    about:"C programming is one of the most essential and widely used languages in the field of computer science. Whether you’re a beginner stepping into coding or an experienced programmer aiming to refine your skills, mastering C is crucial. However, many students struggle with C programming assignments due to their complex syntax, memory management, and logical problem-solving demands. That’s where C programming assignment helps services prove valuable, offering expert guidance to simplify learning.",
+  },
+  {
+    tag: "blog-25",
+    slug: "it-security-assignments-help",
+    heading: "IT Security Assignments Help: Challenges & Best Practices",
+    date: "January 27, 2025",
+    image: img27,
+    about:"In today’s digital era, IT security is critical, playing a pivotal role in safeguarding sensitive information from threats like hacking, phishing, and malware. For students pursuing degrees in information technology, tackling IT security assignments is both necessary and challenging. These assignments not only test their theoretical understanding but also their practical skills in real-world problem-solving.",
+  },
+  {
+    tag: "blog-24",
+    slug: "expert-python-programming-assignment-help",
+    heading: "Expert Python Programming Assignment Help for Students",
+    date: "January 23, 2025",
+    image: img26,
+    about:"In the rapidly advancing world of technology, Python programming has become a cornerstone skill for developers, data scientists, and software engineers. Renowned for its simplicity and versatility, Python is a reliable language for everything from web development to artificial intelligence. However, excelling in Python requires effort, and tackling intricate assignments can often feel overwhelming. That’s where professional Python programming experts can become a game-changer.",
+  },
+  {
+    tag: "blog-23",
+    slug: "master-business-management-assignments",
+    heading: "Master Business Management Assignments with Ease",
+    date: "January 20, 2025",
+    image: img25,
+    about:"Business management assignments are common among students seeking degrees in business or similar professions. These critical assignments assess your ability to analyze business situations, make educated judgments, and provide realistic solutions. Excelling in these assignments not only improves your academic achievement but also prepares you for real-world issues. This blog delves into tips, techniques, and insights to help you ace your business management tasks with expert business management assignment help.",
+  },
   {
     tag: "blog-22",
     slug: "constitutional-law-assignment-help-expert-legal-guidance",
@@ -227,79 +593,121 @@ export default function Blog() {
   };
 
   return (
-    <div className="px-4 sm:!px-10 lg:!px-[50px]">
-      <div className="max-w-[1280px] mx-auto">
-        {/* Adjust grid columns based on screen size */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
-          {currentBlogs.map((item, index) => (
-            <Link href={`/blog/${item.slug}`} key={index} passHref>
-              <div
-                id={item.tag}
-                className="bg-[#fff] border-1 p-4 sm:p-6 shadow-xl rounded-xl h-[550px] flex flex-col justify-between cursor-pointer hover:shadow-2xl transition-shadow duration-300"
-              >
-                <h1 className="text-lg font-bold pt-5 text-center">
-                  {item.heading}
-                </h1>
-                <Image
-                  className="my-4 rounded-sm w-full h-[200px] object-contain mx-auto -mb-8 -mt-8"
-                  src={item.image}
-                  alt="blog image"
-                />
-                <p className="pt-5 text-sm line-clamp-3">{item.about}</p>
-                <div className="flex justify-between items-center mt-4">
-                  <span className="text-sm text-gray-500">{item.date}</span>
-                  <Button className="bg-white hover:bg-[#fff] hover:text-[#5b6cf2] text-read-more-text underline text-sm font-bold">
-                    Read More »
-                  </Button>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+<div className="px-4 sm:!px-10 lg:!px-[50px]">
+  <div className="max-w-[1280px] mx-auto">
+    {/* Blog Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 py-12">
+      {currentBlogs.map((item, index) => (
+       <Link href={`/blog/${item.slug}`} key={index} passHref>
+  <div
+    id={item.tag}
+    className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group cursor-pointer flex flex-col min-h-[500px]"
+  >
+    {/* Blog Image */}
+    <div className="relative w-full h-[220px] flex items-center justify-center bg-gray-50">
+      <Image
+        src={item.image}
+        alt="blog image"
+        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+      />
+    </div>
 
-        {/* Pagination */}
-        <div className="flex justify-end mt-8 mb-8">
-          <div className="flex items-center space-x-2">
-            <button
-              onClick={() => handlePageChange(currentPage - 1)}
-              className={`px-4 py-2 rounded-l-lg border ${
-                currentPage === 1
-                  ? "cursor-not-allowed bg-gray-200 text-gray-500"
-                  : "bg-white hover:bg-gray-100 text-gray-700"
-              }`}
-              disabled={currentPage === 1}
-            >
-              « Previous
-            </button>
+    {/* Content */}
+    <div className="flex flex-col flex-1 p-6">
+      <h1 className="text-lg font-bold text-gray-900 group-hover:text-[#5b6cf2] transition-colors duration-300 text-left">
+        {item.heading}
+      </h1>
+      <p className="mt-4 text-sm text-gray-600 line-clamp-3">
+        {item.about}
+      </p>
 
-            {[...Array(totalPages)].map((_, index) => (
-              <button
-                key={index}
-                onClick={() => handlePageChange(index + 1)}
-                className={`px-4 py-2 border ${
-                  currentPage === index + 1
-                    ? "bg-[#5b6cf2] text-white font-semibold"
-                    : "bg-white hover:bg-gray-100 text-gray-700"
-                }`}
-              >
-                {index + 1}
-              </button>
-            ))}
-
-            <button
-              onClick={() => handlePageChange(currentPage + 1)}
-              className={`px-4 py-2 rounded-r-lg border ${
-                currentPage === totalPages
-                  ? "cursor-not-allowed bg-gray-200 text-gray-500"
-                  : "bg-white hover:bg-gray-100 text-gray-700"
-              }`}
-              disabled={currentPage === totalPages}
-            >
-              Next »
-            </button>
-          </div>
-        </div>
+      {/* Footer */}
+      <div className="flex justify-between items-center mt-auto pt-6 border-t border-gray-100">
+        <span className="text-sm text-gray-400">{item.date}</span>
+        <Button className="bg-transparent hover:bg-transparent text-[#5b6cf2] hover:text-black font-semibold text-sm transition-colors duration-300">
+          Read More »
+        </Button>
       </div>
     </div>
+  </div>
+</Link>
+
+      ))}
+    </div>
+
+   {/* Pagination */}
+<div className="flex justify-center sm:justify-end mt-10 mb-12">
+  <div className="flex flex-wrap items-center gap-2">
+    {/* Previous */}
+    <button
+      onClick={() => handlePageChange(currentPage - 1)}
+      className={`px-3 sm:px-4 py-2 rounded-full border text-sm sm:text-base transition-all duration-200 ${
+        currentPage === 1
+          ? "cursor-not-allowed bg-gray-200 text-gray-500"
+          : "bg-white hover:bg-[#5b6cf2] hover:text-white text-gray-700"
+      }`}
+      disabled={currentPage === 1}
+    >
+      <span className="hidden sm:inline">« Previous</span>
+      <span className="sm:hidden">«</span>
+    </button>
+
+    {/* Page Numbers */}
+    <div className="flex flex-wrap gap-2">
+      {Array.from({ length: totalPages }, (_, index) => index + 1)
+        .filter((page) => {
+          return (
+            page === 1 || // First
+            page === 2 || // Second
+            page === totalPages || // Last
+            page === totalPages - 1 || // Second Last
+            (page >= currentPage - 1 && page <= currentPage + 1) // Current ±1
+          );
+        })
+        .reduce((acc, page, idx, arr) => {
+          if (idx > 0 && page - arr[idx - 1] > 1) {
+            acc.push("ellipsis");
+          }
+          acc.push(page);
+          return acc;
+        }, [])
+        .map((page, index) =>
+          page === "ellipsis" ? (
+            <span key={index} className="px-3 py-2 text-gray-500">...</span>
+          ) : (
+            <button
+              key={page}
+              onClick={() => handlePageChange(page)}
+              className={`px-3 sm:px-4 py-2 rounded-full border text-sm sm:text-base transition-all duration-200 ${
+                currentPage === page
+                  ? "bg-[#5b6cf2] text-white font-bold"
+                  : "bg-white hover:bg-[#5b6cf2] hover:text-white text-gray-700"
+              }`}
+            >
+              {page}
+            </button>
+          )
+        )}
+    </div>
+
+    {/* Next */}
+    <button
+      onClick={() => handlePageChange(currentPage + 1)}
+      className={`px-3 sm:px-4 py-2 rounded-full border text-sm sm:text-base transition-all duration-200 ${
+        currentPage === totalPages
+          ? "cursor-not-allowed bg-gray-200 text-gray-500"
+          : "bg-white hover:bg-[#5b6cf2] hover:text-white text-gray-700"
+      }`}
+      disabled={currentPage === totalPages}
+    >
+      <span className="hidden sm:inline">Next »</span>
+      <span className="sm:hidden">»</span>
+    </button>
+  </div>
+</div>
+
+  </div>
+</div>
+
   );
 }

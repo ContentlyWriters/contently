@@ -1,167 +1,159 @@
 "use client";
-import React from "react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
-import img from "@/assets/image/scholar.png";
-import ReactStars from "react-stars";
-export default function Testimonials() {
-  function scrollToSection() {
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }, 10);
-  }
-  return (
-    <>
-      <div id="Testimonials" className="px-4 sm:!px-10 lg:!px-[50px] bg-[#f8f9fa]">
-        <div className="max-w-[1280px] mx-auto py-16">
-          <div className="mx-auto ">
-            <div className="text-[26px] text-center font-bold py-4 underline underline-offset-2">
-             <h4> Testimonials </h4>
-            </div>
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              plugins={[
-                Autoplay({
-                  delay: 2000,
-                }),
-              ]}
-              className="mx-auto !w-full sm:!w-full !px-4 sm:!px-16 lg:!px-[150px]"
-            >
-              <CarouselContent>
-                {testimonialItems.map((item, index) => (
-                  <CarouselItem
-                    key={index}
-                    className="sm:basis-1/2 lg:basis-1/3"
-                  >
-                    <div className="p-1">
-                      <Card className="min-h-[400px]">
-                        <CardHeader className="flex justify-center items-center">
-                          <Image
-                            src={img}
-                            alt="testimonials"
-                            className="w-[100px] h-[100px]"
-                          />
-                        </CardHeader>
-                        <CardContent className="grid justify-center items-center ">
-                          <div className="text-center">{item.name}</div>
-                          <ReactStars
-                            className="flex justify-center items-center my-4"
-                            count={5}
-                            value={item.stars}
-                            edit={false}
-                            size={24}
-                            color2={"#ffd700"}
-                          />
-                          <div className="mt-1 text-sm  font-normal ">
-                            {item.message}
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              {/* <CarouselPrevious className="" />
-              <CarouselNext /> */}
-            </Carousel>
-          </div>
-        </div>
-      </div>
-      <div id="faq" className="px-4 sm:!px-10 lg:!px-[50px] bg-[#000]">
-        <div className="max-w-[1280px] mx-auto py-10 lg:py-32 flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-5">
-          <p className="text-white text-2xl lg:text-3xl text-center">
-            Get your assignment done in just a few clicks
-          </p>
 
-          <Button
-            onClick={scrollToSection}
-            type="button"
-            className="py-6 px-4 lg:p-8 bg-[#5b6cf2] lg:text-xl text-md hover:bg-white hover:text-black"
-          >
-            Write my assignment
-          </Button>
+import { useRef, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Star } from "lucide-react";
+
+export default function Testimonials() {
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    let scrollAmount = 0;
+    const scrollStep = 1;
+    const scrollInterval = setInterval(() => {
+      if (
+        scrollContainer.scrollWidth - scrollContainer.clientWidth <=
+        scrollAmount
+      ) {
+        scrollAmount = 0;
+      } else {
+        scrollAmount += scrollStep;
+      }
+      scrollContainer.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    }, 40);
+
+    return () => clearInterval(scrollInterval);
+  }, []);
+
+  const testimonials = [
+    {
+      name: "Emma J., New York, USA",
+      rating: 5,
+      text: "I needed website content for my small business, and Contently Writers nailed it! The tone was spot-on, and the turnaround time was amazing. Definitely the best content writing company I’ve worked with.",
+    },
+    {
+      name: "David M., Chicago, USA",
+      rating: 5,
+      text: "Their SEO team helped my blog rank on Google within weeks. Super impressed with their strategy and support — affordable SEO that actually works!",
+    },
+    {
+      name: "Sophia L., Los Angeles, USA",
+      rating: 5,
+      text: "I was behind on a major assignment, and their writers saved me. The work was original, well-researched, and delivered on time. Highly recommended for students!",
+    },
+    {
+      name: "Jason K., Austin, USA",
+      rating: 5,
+      text: "Great experience from start to finish. They helped me with SEO copywriting and blog content that brought real traffic. Reliable and professional team!",
+    },
+    {
+      name: "Ava B., Miami, USA",
+      rating: 5,
+      text: "I’ve used their assignment services twice now, and both times the quality was excellent. Clear, plagiarism-free, and tailored exactly to what I needed.",
+    },
+    {
+      name: "Michael S., Seattle, USA",
+      rating: 5,
+      text: "As a startup owner, I needed a lot of content quickly. Their writers understood the brief perfectly and delivered quality work faster than I expected. A top-tier content writing agency!",
+    },
+    {
+      name: "Olivia T., Denver, USA",
+      rating: 5,
+      text: "They handled both my SEO and blog writing. Everything was optimized, well-written, and aligned with my business goals. My site traffic has definitely improved.",
+    },
+    {
+      name: "Liam W., Boston, USA",
+      rating: 5,
+      text: "I reached out for help with a research paper and ended up using their content team for my business site too. Great service on both fronts — academic and professional!",
+    },
+  ];
+
+  return (
+    <section className="relative py-20 bg-white text-black overflow-hidden">
+      
+      {/* background blur gradient overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#5b6cf2,transparent_50%)] opacity-10 blur-3xl"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,pink,transparent_50%)] opacity-10 blur-3xl"></div>
+
+      <div className="relative max-w-[1280px] mx-auto px-6 lg:px-16">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12"
+        >
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff]">
+            TESTIMONIALS
+          </span>
+        </motion.h2>
+
+        <div
+          ref={scrollRef}
+          className="flex space-x-6 overflow-x-hidden scrollbar-hide"
+        >
+          {testimonials.map((t, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+             className="min-w-[350px] max-w-[400px] 
+  bg-white/10 backdrop-blur-lg border border-black/20 
+  rounded-2xl p-6  flex-shrink-0 
+  hover:scale-[1.02] transition-transform duration-300
+  overflow-hidden"
+
+            >
+              <div className="flex text-yellow-400 mb-3">
+                {Array.from({ length: t.rating }).map((_, idx) => (
+                  <Star key={idx} className="w-5 h-5 fill-yellow-400" />
+                ))}
+              </div>
+              <p className="text-black italic mb-4 leading-relaxed">
+                "{t.text}"
+              </p>
+              <h4 className="text-[#5b6cf2] font-semibold">{t.name}</h4>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="text-center mt-16">
+          <p className="text-lg text-black mb-4">
+            Send us your enquiry — we’ll connect with you right away
+          </p>
+          <motion.button
+      whileHover={{
+        
+        boxShadow: "0 0 20px rgba(91,108,242,0.8), 0 0 40px rgba(255,255,255,0.6)",
+      }}
+      transition={{ type: "spring", stiffness: 250, damping: 12 }}
+      className="relative px-8 py-3 rounded-full font-semibold text-white 
+                 text-lg bg-[#5b6cf2] overflow-hidden group"
+    >
+      {/* 🔥 Border Line */}
+      <span className="absolute inset-0 rounded-full border-2 border-transparent 
+                       animate-electric bg-[linear-gradient(90deg,#5b6cf2,#00c6ff,#5b6cf2)]
+                       bg-[length:300%_300%] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)]
+                       [mask-composite:exclude] p-[2px]">
+      </span>
+
+      {/* Button Text */}
+      <span className="relative ">Talk to Us Today</span>
+
+      {/* Lightning Hover Flash */}
+      <span className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 
+                       bg-[radial-gradient(circle,rgba(255,255,255,0.4)_0%,transparent_70%)] 
+                       animate-lightning"></span>
+    </motion.button> 
         </div>
       </div>
-    </>
+    
+    </section>
   );
 }
-
-const testimonialItems = [
-  {
-    name: "Sarah M., California, USA",
-    stars: 5,
-    message:
-      "Absolutely fantastic service! They assisted me with my research paper, and the quality was outstanding. I highly recommend them to any student in need of writing help.",
-    image: "image/scholar.png",
-  },
-  {
-    name: "James K., New York, USA",
-    stars: 4,
-    message:
-      "A great experience from start to finish. My essay was excellently written and delivered on time. I couldn't have asked for anything more.",
-    image: "image/scholar.png",
-  },
-  {
-    name: "Emily W., Sydney, Australia",
-    stars: 5,
-    message:
-      "Exceptional service! The team truly grasped my requirements and delivered a flawlessly written assignment. This will definitely be my first choice for future projects.",
-    image: "image/scholar.png",
-  },
-  {
-    name: "Liam H., Melbourne, Australia",
-    stars: 4,
-    message:
-      "Highly professional and reliable. They saved me so much time, and my grades have never been better. Thank you!",
-    image: "image/scholar.png",
-  },
-  {
-    name: "Charlotte R., London, UK",
-    stars: 4,
-    message:
-      "I was having difficulty with my dissertation, but their skilled writers provided excellent support. The quality and attention to detail were remarkable. I highly recommend their services!",
-    image: "image/scholar.png",
-  },
-  {
-    name: "Oliver B., Manchester, UK",
-    stars: 5,
-    message:
-      "Outstanding service! The writers are both knowledgeable and approachable. My essay surpassed all my expectations. I will definitely use their services again.",
-    image: "image/scholar.png",
-  },
-  {
-    name: "Henry Brown, Toronto, Canada ",
-    stars: 4,
-    message:
-      "My assignments were delivered on time and fulfilled all requirements. This service has been incredibly helpful during my busy semester.",
-    image: "image/scholar.png",
-  },
-  {
-    name: "Arlo Smith, St. John's, Canada ",
-    stars: 5,
-    message:
-      "The writer assigned to my project was exceptionally knowledgeable and provided detailed, well-reasoned content. The entire process was smooth and stress-free.",
-    image: "image/scholar.png",
-  },
-  // Add more testimonials as needed
-];

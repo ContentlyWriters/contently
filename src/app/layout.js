@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import { AuthProvider } from "@/context/auth";
+import { AuthProvider } from "@/context/AuthContext";
 import "./globals.css";
 import Script from "next/script";
 import { ToastContainer } from "react-toastify";
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <AuthProvider>
           {children}
-          <Script src="https://checkout.razorpay.com/v1/checkout.js" />
+         
         </AuthProvider>
         
         <Toaster />

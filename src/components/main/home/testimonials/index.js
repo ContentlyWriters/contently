@@ -116,7 +116,7 @@ export default function Testimonials() {
                 ))}
               </div>
               <p className="text-black italic mb-4 leading-relaxed">
-                "{t.text}"
+                &#34;{t.text}&#34;
               </p>
               <h4 className="text-[#5b6cf2] font-semibold">{t.name}</h4>
             </motion.div>

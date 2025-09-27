@@ -37,7 +37,7 @@ export default function GrowthPartner() {
 
           <p className="mt-6 text-lg text-black">
             We’re recognized as a best USA SEO company, delivering measurable results with 
-            affordable search engine optimization service packages. Whether you're a small 
+            affordable search engine optimization service packages. Whether you&#39;re a small 
             business or startup, our low price SEO services scale with your goals. 
           </p>
 

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle, Cpu, Globe, Link2, Zap, MapPin,  Lightbulb, Users, ArrowRight } from "lucide-react";
@@ -616,7 +617,7 @@ generated. </p>
     </motion.div>
 
     {/* Main Illustration */}
-    <img
+    <Image
       src="/seo.png"
       alt="SEO Illustration"
       className="w-64 lg:w-80 z-10"

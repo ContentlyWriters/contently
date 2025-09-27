@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
@@ -203,7 +204,7 @@ export default function ContentWritingPage() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex justify-center md:justify-end relative z-0"
         >
-          <img
+          <Image
             src="/2202_w039_n003_124_businessdoodle_p1_124.jpg"
             alt="Marketing Illustration"
             className="w-[380px] md:w-[460px] drop-shadow-2xl pointer-events-none"
@@ -332,7 +333,7 @@ export default function ContentWritingPage() {
       animate={{ y: [0, -20, 0], rotate: [0, 5, -5, 0] }}
       transition={{ duration: 6, repeat: Infinity, repeatType: "mirror" }}
     >
-      <img
+      <Image
         src="/OE9CG90.jpg"
         alt="Content Writing"
         className="w-full h-full object-cover"
@@ -346,7 +347,7 @@ export default function ContentWritingPage() {
       transition={{ duration: 7, repeat: Infinity, repeatType: "mirror" }}
       whileHover={{ scale: 1.05 }}
     >
-      <img
+      <Image
         src="/social-media-content.webp"
         alt="SEO Services"
         className="w-full h-full object-cover"
@@ -388,7 +389,7 @@ export default function ContentWritingPage() {
     <p className="mt-4 text-lg md:text-xl text-gray-700 leading-relaxed">
       Looking for the best content writing services that combine quality and affordability? At{" "}
       <span className="font-bold text-[#5b6cf2]">Contently Writers</span>, we craft professional
-      content tailored for websites, blogs, SEO, and more. Whether you're a business owner or a
+      content tailored for websites, blogs, SEO, and more. Whether you&#39;re a business owner or a
       digital agency, our expert writers help your brand connect with the right audience through
       words that inspire action.
     </p>

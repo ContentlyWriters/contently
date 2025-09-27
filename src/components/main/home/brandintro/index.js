@@ -42,7 +42,7 @@ export default function BrandIntro() {
           >
             At <span className="font-semibold text-[#5b6cf2]">Contently Writers</span>, we specialize in
             delivering high-quality content writing services and result-driven SEO solutions to help your brand grow online.
-            Whether you need blog posts, website copy, product descriptions, or complete SEO strategies — we're here
+            Whether you need blog posts, website copy, product descriptions, or complete SEO strategies — we&#39;re here
             to create content that connects and ranks. As a trusted content writing company and SEO agency, we combine
             creativity with keyword precision to boost your visibility and engagement.
           </motion.p>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import LargeNavbar from "./large-navbar";
 import SmallNavbar from "./small-navbar";
@@ -83,7 +84,7 @@ function NavBar() {
         <div className="flex justify-between items-center px-2 py-1">
           {/* Left side - Logo / Site Name */}
          <div className="flex items-center">
-      <img 
+      <Image 
         src="/contently-logo.png"  
         alt="Contently Writers Logo" 
         className="h-14 w-auto"

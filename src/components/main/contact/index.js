@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 import {
   FaMapMarkerAlt,
@@ -191,7 +192,7 @@ if (data.success) {
   </div>
 
   {/* Decorative image - right bottom */}
-  <img
+  <Image
     src="/pop-up1.webp" // apni image ka path lagao
     alt="Decor"
    className="absolute -bottom-4 -right-14 w-[180px] md:w-[250px] opacity-30 rotate-60 pointer-events-none"

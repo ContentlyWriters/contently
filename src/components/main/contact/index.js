@@ -198,6 +198,7 @@ if (data.success) {
    className="absolute -bottom-4 -right-14 w-[180px] md:w-[250px] opacity-30 rotate-60 pointer-events-none"
 
   />
+  
 </div>
 
       </div>

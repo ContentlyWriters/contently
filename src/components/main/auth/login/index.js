@@ -296,13 +296,13 @@ const handleLogin = async () => {
                   <form className="space-y-5" onSubmit={handleSignup}>
                     {/* First + Last */}
                     <div className="grid grid-cols-2 gap-4">
-                      <input type="text" placeholder="First Name" value={form.firstName} onChange={(e) => setForm({ ...form, firstName: e.target.value })} className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#5b6cf2]" />
-                      <input type="text" placeholder="Last Name" value={form.lastName} onChange={(e) => setForm({ ...form, lastName: e.target.value })} className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#5b6cf2]" />
+                      <input type="text" placeholder="First Name" value={form.firstName} onChange={(e) => setForm({ ...form, firstName: e.target.value.replace(/^\s+|\s+$/g, '')  })} className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#5b6cf2]" />
+                      <input type="text" placeholder="Last Name" value={form.lastName} onChange={(e) => setForm({ ...form, lastName: e.target.value.replace(/^\s+|\s+$/g, '')  })} className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#5b6cf2]" />
                     </div>
                     {errors.firstName && <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>}
                     {errors.lastName && <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>}
 
-                    <input type="email" placeholder="Email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#5b6cf2]" />
+                    <input type="email" placeholder="Email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value.toLowerCase() })} className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-[#5b6cf2]" />
                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
 
                     <div className="relative">

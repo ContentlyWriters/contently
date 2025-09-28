@@ -138,7 +138,8 @@ const notificationRef = useRef();
       });
 
       const data = await res.json();
-
+  console.log("Signup Response:", data);
+  
    if (res.ok) {
   notificationRef.current.showNotification("Signup successful ✅", "success");
   setMode("login");
@@ -210,7 +211,7 @@ const handleLogin = async () => {
   animate={{ y: 0, opacity: 1 }}
   exit={{ y: -50, opacity: 0 }}
   transition={{ duration: 0.3 }}
-  className="bg-white rounded-md shadow-2xl p-6 sm:p-8 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[360px] border-black border-2 relative mx-4 sm:mx-auto"
+  className="bg-white rounded-md shadow-2xl p-6 sm:p-8 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[360px] border-black border-2 relative mx-4 sm:mx-auto z-[100]"
   onClick={(e) => e.stopPropagation()}
 >
 

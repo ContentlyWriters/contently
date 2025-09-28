@@ -121,31 +121,121 @@ export default function SmallNavbar({ items }) {
       {/* Menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed top-0 left-0 w-full h-full bg-[#ffffff]/95 backdrop-blur-lg shadow-lg z-50 border-t-4 border-black"
-          >
-            {/* Title */}
-            <div className="px-6 py-5 border-b border-gray-700 flex justify-between items-center">
-              <h2 className="font-extrabold text-2xl bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] bg-clip-text text-transparent drop-shadow-[0_0_10px_#5b6cf2]">
-                Contently Writers
-              </h2>
-              <button
-                className="text-3xl text-black hover:text-[#5b6cf2]"
-                onClick={() => setIsOpen(false)}
-              >
-                <BiX />
-              </button>
-            </div>
+       <motion.div
+  initial={{ x: "100%", opacity: 0 }}      
+  animate={{ x: 0, opacity: 1 }}        
+  exit={{ x: "100%", opacity: 0 }}     
+  transition={{ duration: 0.2, ease: "easeInOut" }}
+  className="fixed top-0 right-0 w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-full bg-white/95 backdrop-blur-sm shadow-xl z-50 overflow-y-auto"
+>
+  {/* Header */}
+  <div className="px-6 py-5 flex justify-between items-center border-b border-gray-200">
+    <h2 className="font-bold text-2xl bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] bg-clip-text text-transparent">
+      Contently Writers
+    </h2>
+    <button
+      className="text-3xl text-gray-800 hover:text-[#5b6cf2]"
+      onClick={() => setIsOpen(false)}
+    >
+      <BiX />
+    </button>
+  </div>
 
-            {/* Links */}
-            <nav className="px-4 py-6 overflow-y-auto h-[calc(100%-70px)]">
-              {renderMenuItems(items)}
-            </nav>
-          </motion.div>
+  {/* Menu Items */}
+  <nav className="px-4 py-6">
+    {items.map((item) => (
+      <div key={item.id} className="mb-2">
+        {item.subItems ? (
+          <>
+            <button
+              className={`flex justify-between items-center w-full py-3 px-4 text-lg text-gray-900 hover:text-[#5b6cf2] relative`}
+              onClick={() => toggleMenu(item.id)}
+            >
+              <span>{item.name}</span>
+              {openMenuId === item.id ? <FiChevronUp /> : <FiChevronDown />}
+              {/* Side Indicator */}
+              {openMenuId === item.id && (
+                <span className="absolute left-0 top-0 h-full w-1 bg-[#5b6cf2] rounded-r"></span>
+              )}
+            </button>
+
+            <AnimatePresence>
+              {openMenuId === item.id && (
+                <motion.ul
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="pl-6 border-l border-gray-200 overflow-hidden"
+                >
+                  {item.subItems.map((subItem) => (
+                    <li key={subItem.id} className="relative">
+                      {subItem.subItems ? (
+                        <>
+                          <button
+                            className="flex justify-between items-center w-full py-2 px-4 text-md text-gray-800 hover:text-[#5b6cf2] relative"
+                            onClick={() => toggleSubMenu(subItem.id)}
+                          >
+                            {subItem.name}
+                            {openSubMenuId === subItem.id ? <FiChevronUp /> : <FiChevronDown />}
+                            {openSubMenuId === subItem.id && (
+                              <span className="absolute left-0 top-0 h-full w-1 bg-[#5b6cf2] rounded-r"></span>
+                            )}
+                          </button>
+
+                          <AnimatePresence>
+                            {openSubMenuId === subItem.id && (
+                              <motion.ul
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: "auto", opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.25 }}
+                                className="pl-6 border-l border-gray-200 overflow-hidden"
+                              >
+                                {subItem.subItems.map((third) => (
+                                  <li key={third.id}>
+                                    <Link
+                                      href={third.path}
+                                      className="block py-2 px-4 text-md text-gray-700 hover:text-[#5b6cf2] transition-colors"
+                                      onClick={() => setIsOpen(false)}
+                                    >
+                                      {third.name}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </motion.ul>
+                            )}
+                          </AnimatePresence>
+                        </>
+                      ) : (
+                        <Link
+                          href={subItem.path}
+                          className="block py-2 px-4 text-md text-gray-700 hover:text-[#5b6cf2] transition-colors"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          {subItem.name}
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </motion.ul>
+              )}
+            </AnimatePresence>
+          </>
+        ) : (
+          <Link
+            href={item.path}
+            className="block py-3 px-4 text-lg text-gray-900 hover:text-[#5b6cf2] transition-colors"
+            onClick={() => setIsOpen(false)}
+          >
+            {item.name}
+          </Link>
+        )}
+      </div>
+    ))}
+  </nav>
+</motion.div>
+
         )}
       </AnimatePresence>
     </div>

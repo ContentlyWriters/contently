@@ -33,8 +33,8 @@ const Notification = forwardRef((props, ref) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -30 }}
           transition={{ type: "spring", stiffness: 500, damping: 30 }}
-          className={`fixed top-5 right-5 z-[99999] w-[310px] backdrop-blur-md shadow-lg border ${bgColor[type]} rounded-xl px-4 py-2 flex items-center justify-between`}
-        >
+          className={`fixed top-5 right-1/2 transform translate-x-1/2 z-[99999] w-[90%] max-w-xs sm:max-w-sm backdrop-blur-md shadow-lg border ${bgColor[type]} rounded-xl px-4 py-2 flex items-center justify-between`}
+>
           <span className="text-sm font-medium">{message}</span>
           <button
             onClick={() => setShow(false)}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function GrowthPartner() {
   return (
-    <section className="relative bg-[#ffffff] text-black py-20 overflow-hidden">
+    <section className="relative bg-white text-black py-20 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
@@ -20,7 +20,6 @@ export default function GrowthPartner() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
-        
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -35,16 +34,17 @@ export default function GrowthPartner() {
             — Reliable & Low-Cost SEO Company USA
           </h2>
 
-          <p className="mt-6 text-lg text-black">
-            We’re recognized as a best USA SEO company, delivering measurable results with 
-            affordable search engine optimization service packages. Whether you&#39;re a small 
-            business or startup, our low price SEO services scale with your goals. 
+          <p className="mt-6 text-lg text-gray-700">
+            We’re recognized as a best USA SEO company, delivering measurable
+            results with affordable search engine optimization service
+            packages. Whether you&#39;re a small business or startup, our low
+            price SEO services scale with your goals.
           </p>
 
-          <p className="mt-4 text-lg text-black">
-            Among all search engine optimization companies in USA, we prioritize transparency, 
-            strategy, and results. Partner with a result-driven SEO company USA that works smart — 
-            and fast.
+          <p className="mt-4 text-lg text-gray-700">
+            Among all search engine optimization companies in USA, we prioritize
+            transparency, strategy, and results. Partner with a result-driven
+            SEO company USA that works smart — and fast.
           </p>
         </motion.div>
 
@@ -69,17 +69,23 @@ export default function GrowthPartner() {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.02 }}
-                className="flex items-start gap-3 p-5 rounded-2xl bg-white/5 border border-gray-800 hover:bg-white/10 shadow-md hover:shadow-[0_0_20px_rgba(91,108,242,0.25)] transition"
+                className="
+                  flex items-start gap-3
+                  p-2 sm:p-5
+                  border-b border-gray-700
+                  lg:border lg:rounded-2xl lg:shadow-md
+                  lg:bg-white lg:hover:bg-gray-50
+                  lg:hover:shadow-[0_0_20px_rgba(91,108,242,0.25)]
+                  transition
+                "
               >
                 <span className="mt-1 w-3 h-3 rounded-full bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] shadow-[0_0_8px_rgba(91,108,242,0.8)]" />
-                <p className="text-black text-lg">{feature}</p>
+                <p className="text-gray-800 text-lg">{feature}</p>
               </motion.div>
             ))}
           </div>
         </motion.div>
       </div>
-   
     </section>
-    
   );
 }

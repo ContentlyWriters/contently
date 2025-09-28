@@ -1,36 +1,9 @@
 "use client";
 
-import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
 export default function Testimonials() {
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
-
-    let scrollAmount = 0;
-    const scrollStep = 1;
-    const scrollInterval = setInterval(() => {
-      if (
-        scrollContainer.scrollWidth - scrollContainer.clientWidth <=
-        scrollAmount
-      ) {
-        scrollAmount = 0;
-      } else {
-        scrollAmount += scrollStep;
-      }
-      scrollContainer.scrollTo({
-        left: scrollAmount,
-        behavior: "smooth",
-      });
-    }, 40);
-
-    return () => clearInterval(scrollInterval);
-  }, []);
-
   const testimonials = [
     {
       name: "Emma J., New York, USA",
@@ -74,14 +47,17 @@ export default function Testimonials() {
     },
   ];
 
+  // 🔥 Duplicate list for infinite loop
+  const doubledTestimonials = [...testimonials, ...testimonials];
+
   return (
     <section className="relative py-20 bg-white text-black overflow-hidden">
-      
       {/* background blur gradient overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#5b6cf2,transparent_50%)] opacity-10 blur-3xl"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,pink,transparent_50%)] opacity-10 blur-3xl"></div>
 
       <div className="relative max-w-[1280px] mx-auto px-6 lg:px-16">
+        {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -93,67 +69,52 @@ export default function Testimonials() {
           </span>
         </motion.h2>
 
-        <div
-          ref={scrollRef}
-          className="flex space-x-6 overflow-x-hidden scrollbar-hide"
-        >
-          {testimonials.map((t, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-             className="min-w-[350px] max-w-[400px] 
-  bg-white/10 backdrop-blur-lg border border-black/20 
-  rounded-2xl p-6  flex-shrink-0 
-  hover:scale-[1.02] transition-transform duration-300
-  overflow-hidden"
-
-            >
-              <div className="flex text-yellow-400 mb-3">
-                {Array.from({ length: t.rating }).map((_, idx) => (
-                  <Star key={idx} className="w-5 h-5 fill-yellow-400" />
-                ))}
+        {/* Slider Container */}
+        <div className="relative overflow-hidden">
+          <div className="flex gap-6 animate-scroll">
+            {doubledTestimonials.map((t, i) => (
+              <div
+                key={i}
+                className="min-w-[300px] max-w-[350px] bg-white shadow-md border border-black/10 rounded-2xl p-6 flex-shrink-0"
+              >
+                <div className="flex text-yellow-400 mb-3">
+                  {Array.from({ length: t.rating }).map((_, idx) => (
+                    <Star key={idx} className="w-5 h-5 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-black italic mb-4 leading-relaxed">
+                  “{t.text}”
+                </p>
+                <h4 className="text-[#5b6cf2] font-semibold">{t.name}</h4>
               </div>
-              <p className="text-black italic mb-4 leading-relaxed">
-                &#34;{t.text}&#34;
-              </p>
-              <h4 className="text-[#5b6cf2] font-semibold">{t.name}</h4>
-            </motion.div>
-          ))}
+            ))}
+          </div>
         </div>
 
+        {/* CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-black mb-4">
             Send us your enquiry — we’ll connect with you right away
           </p>
-          <motion.button
-      whileHover={{
-        
-        boxShadow: "0 0 20px rgba(91,108,242,0.8), 0 0 40px rgba(255,255,255,0.6)",
-      }}
-      transition={{ type: "spring", stiffness: 250, damping: 12 }}
-      className="relative px-8 py-3 rounded-full font-semibold text-white 
-                 text-lg bg-[#5b6cf2] overflow-hidden group"
-    >
-      {/* 🔥 Border Line */}
-      <span className="absolute inset-0 rounded-full border-2 border-transparent 
-                       animate-electric bg-[linear-gradient(90deg,#5b6cf2,#00c6ff,#5b6cf2)]
-                       bg-[length:300%_300%] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)]
-                       [mask-composite:exclude] p-[2px]">
-      </span>
-
-      {/* Button Text */}
-      <span className="relative ">Talk to Us Today</span>
-
-      {/* Lightning Hover Flash */}
-      <span className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 
-                       bg-[radial-gradient(circle,rgba(255,255,255,0.4)_0%,transparent_70%)] 
-                       animate-lightning"></span>
-    </motion.button> 
+         <motion.button whileHover={{ boxShadow: "0 0 20px rgba(91,108,242,0.8), 0 0 40px rgba(255,255,255,0.6)", }} transition={{ type: "spring", stiffness: 250, damping: 12 }} className="relative px-4 py-2 rounded-full font-semibold text-white text-lg bg-[#5b6cf2] overflow-hidden group" > {/* 🔥 Border Line */} <span className="absolute inset-0 rounded-full border-2 border-transparent animate-electric bg-[linear-gradient(90deg,#5b6cf2,#00c6ff,#5b6cf2)] bg-[length:300%_300%] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] [mask-composite:exclude] p-[2px]"> </span> {/* Button Text */} <span className="relative ">Talk to Us Today</span> {/* Lightning Hover Flash */} <span className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 bg-[radial-gradient(circle,rgba(255,255,255,0.4)_0%,transparent_70%)] animate-lightning"></span> </motion.button>
         </div>
       </div>
-    
+
+      {/* Keyframes Style */}
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-scroll {
+          width: max-content;
+          animation: scroll 40s linear infinite;
+        }
+      `}</style>
     </section>
   );
 }

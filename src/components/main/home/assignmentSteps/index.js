@@ -5,21 +5,23 @@ import { motion } from "framer-motion";
 export default function WhyChooseUs() {
   return (
     <section className="relative bg-[#ffffff] text-black py-20 overflow-hidden">
-      
-      {/* Smooth top fade (for blending with banner) */}
-    
-
       {/* Background gradient blobs */}
       <div className="absolute inset-0">
         <motion.div
-          animate={{ x: [0, 50, -50, 0], y: [0, -30, 30, 0] }}
+          style={{ willChange: "transform, opacity", transform: "translate3d(0,0,0)" }}
+          animate={{ x: [0, 30, -30, 0], y: [0, -20, 20, 0] }} // lighter motion
           transition={{ repeat: Infinity, duration: 25, ease: "easeInOut" }}
-          className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#5b6cf2]/20 rounded-full blur-[150px]"
+          className="absolute top-0 left-0 w-[400px] h-[400px] 
+                     bg-[#5b6cf2]/20 rounded-full 
+                     blur-[80px] sm:blur-[150px]" // smaller blur on mobile
         />
         <motion.div
-          animate={{ x: [0, -40, 40, 0], y: [0, 20, -20, 0] }}
+          style={{ willChange: "transform, opacity", transform: "translate3d(0,0,0)" }}
+          animate={{ x: [0, -25, 25, 0], y: [0, 15, -15, 0] }} // lighter motion
           transition={{ repeat: Infinity, duration: 28, ease: "easeInOut" }}
-          className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-pink-500/10 rounded-full blur-[180px]"
+          className="absolute bottom-0 right-0 w-[400px] h-[400px] 
+                     bg-pink-500/10 rounded-full 
+                     blur-[100px] sm:blur-[180px]"
         />
       </div>
 
@@ -51,7 +53,7 @@ export default function WhyChooseUs() {
         </motion.p>
 
         {/* Features List */}
-        <div className="mt-12 grid gap-6  sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[
             "Ranked among the best for clarity, tone, and SEO",
             "Content for blogs, websites, product pages & more",
@@ -66,12 +68,12 @@ export default function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
               viewport={{ once: true }}
-              className="p-6 rounded-2xl  bg-white/5 border border-gray-800 hover:bg-white/10 transition shadow-md hover:shadow-[0_0_25px_rgba(91,108,242,0.3)]"
+              style={{ willChange: "transform, opacity" }}
+              className="p-6 rounded-2xl bg-white/40 border border-gray-700 
+                         hover:bg-white/60 transition 
+                         shadow-sm sm:shadow-md sm:hover:shadow-[0_0_25px_rgba(91,108,242,0.3)]"
             >
-              <div className="flex items-start gap-3">
-               
-                <p className="text-black text-lg">{point}</p>
-              </div>
+              <p className="text-black text-lg">{point}</p>
             </motion.div>
           ))}
         </div>

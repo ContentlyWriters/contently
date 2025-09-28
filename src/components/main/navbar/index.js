@@ -86,7 +86,9 @@ function NavBar() {
          <div className="flex items-center">
       <Image 
         src="/contently-logo.png"  
-        alt="Contently Writers Logo" 
+        alt="Contently Writers Logo"
+        width={500}
+        height={500}
         className="h-14 w-auto"
       />
     </div>

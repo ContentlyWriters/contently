@@ -20,11 +20,16 @@ export async function POST(req) {
     }
 
     // ✅ Token generate
-    const token = jwt.sign(
-      { userId: user._id, email: user.email },
-      process.env.JWT_SECRET,
-      { expiresIn: "7d" }
-    );
+   const token = jwt.sign(
+  { 
+    userId: user._id, 
+    email: user.email,
+    firstName: user.firstName,  
+    lastName: user.lastName    
+  },
+  process.env.JWT_SECRET,
+  { expiresIn: "7d" }
+);
 
    const response = NextResponse.json({
   message: "Signin successful",

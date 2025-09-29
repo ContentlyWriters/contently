@@ -1,5 +1,5 @@
 "use client";
-
+import Portal from "@/components/main/Portal";
 import { useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -197,6 +197,7 @@ const handleLogin = async () => {
 
 
   return (
+      <Portal>
     <AnimatePresence>
       {isOpen && (
         <motion.div
@@ -403,5 +404,6 @@ const handleLogin = async () => {
         </motion.div>
       )}
     </AnimatePresence>
+    </Portal>
   );
 }

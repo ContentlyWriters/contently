@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function WhyChooseUs() {
   return (
-    <section className="relative bg-[#ffffff] text-black py-20 overflow-hidden -z-[10]">
+    <section className="relative bg-[#ffffff] text-black py-20 overflow-hidden ">
       {/* Background gradient blobs */}
       <div className="absolute inset-0">
         <motion.div

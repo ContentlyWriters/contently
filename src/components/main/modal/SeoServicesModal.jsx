@@ -31,7 +31,7 @@ export default function ExcelStylePopup({ isOpen, onClose }) {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 50, opacity: 0 }}
             transition={{ type: "spring", stiffness: 120, damping: 18 }}
-            className="bg-[#f5f5f7] rounded-2xl shadow-2xl w-full max-w-6xl overflow-hidden border border-gray-300"
+            className="bg-[#f5f5f7] rounded-2xl shadow-2xl w-full max-w-6xl overflow-hidden border border-gray-300 flex flex-col"
             style={{ fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif" }}
           >
             {/* Mac Header */}
@@ -46,35 +46,38 @@ export default function ExcelStylePopup({ isOpen, onClose }) {
             </div>
 
             {/* Excel-style Table */}
-            <div className="p-6 overflow-x-auto max-h-[70vh]">
-              <table className="min-w-full border border-gray-300 text-left">
-                <thead className="bg-gray-100 sticky top-0 z-10">
-                  <tr>
-                    <th className="px-4 py-2 border-b border-gray-300">Service</th>
-                    <th className="px-4 py-2 border-b border-gray-300">Description</th>
-                    <th className="px-4 py-2 border-b border-gray-300">Price</th>
-                    <th className="px-4 py-2 border-b border-gray-300">Model</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {seoServices.map((item, index) => (
-                    <motion.tr
-                      key={index}
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.05, type: "spring", stiffness: 100 }}
-                      whileHover={{ backgroundColor: "rgba(91,108,242,0.1)" }}
-                      className="border-b border-gray-200 cursor-pointer"
-                    >
-                      <td className="px-4 py-3">{item.service}</td>
-                      <td className="px-4 py-3 text-gray-700">{item.description}</td>
-                      <td className="px-4 py-3 font-semibold text-[#5b6cf2]">{item.price}</td>
-                      <td className="px-4 py-3 text-gray-500">{item.model}</td>
-                    </motion.tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+          <div className="overflow-x-auto max-h-[70vh]">
+  <table className="min-w-full border border-gray-300 text-left border-separate">
+
+    <thead className="sticky top-0 z-30 bg-[#f5f5f7] border-b border-gray-300">
+      <tr>
+        <th className="px-4 py-2">Service</th>
+        <th className="px-4 py-2">Description</th>
+        <th className="px-4 py-2">Price</th>
+        <th className="px-4 py-2">Model</th>
+      </tr>
+    </thead>
+    <tbody>
+      {seoServices.map((item, index) => (
+       <motion.tr
+  key={index}
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: index * 0.05, type: "spring", stiffness: 100 }}
+  whileHover={{ backgroundColor: "rgba(91,108,242,0.1)" }}
+  className="bg-white border border-gray-300 rounded-xl cursor-pointer"
+>
+
+          <td className="px-4 py-3">{item.service}</td>
+          <td className="px-4 py-3 text-gray-700">{item.description}</td>
+          <td className="px-4 py-3 font-semibold text-[#5b6cf2]">{item.price}</td>
+          <td className="px-4 py-3 text-gray-500">{item.model}</td>
+        </motion.tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
 
             {/* Footer */}
             <div className="flex justify-end gap-4 p-5 border-t border-gray-300">

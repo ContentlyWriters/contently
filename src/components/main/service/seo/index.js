@@ -343,7 +343,7 @@ export default function SeoServicePage() {
         onClick={() => setIsTableOpen(true)}
         className="inline-flex items-center gap-3 px-8 py-2 bg-white text-black border-[1px] border-black font-semibold rounded-full shadow-lg hover:scale-105 transition-transform cursor-pointer"
       >
-        Free Consultation
+        Explore SEO Plans
         <ArrowRight size={20} />
       </motion.a>
 

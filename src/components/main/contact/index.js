@@ -193,6 +193,8 @@ if (data.success) {
 
   {/* Decorative image - right bottom */}
   <Image
+     width={500}
+      height={500}
     src="/pop-up1.webp" // apni image ka path lagao
     alt="Decor"
    className="absolute -bottom-4 -right-14 w-[180px] md:w-[250px] opacity-30 rotate-60 pointer-events-none"

@@ -205,6 +205,8 @@ export default function ContentWritingPage() {
           className="flex justify-center md:justify-end relative z-0"
         >
           <Image
+             width={500}
+             height={500}
             src="/2202_w039_n003_124_businessdoodle_p1_124.jpg"
             alt="Marketing Illustration"
             className="w-[380px] md:w-[460px] drop-shadow-2xl pointer-events-none"
@@ -334,6 +336,8 @@ export default function ContentWritingPage() {
       transition={{ duration: 6, repeat: Infinity, repeatType: "mirror" }}
     >
       <Image
+         width={500}
+      height={500}
         src="/OE9CG90.jpg"
         alt="Content Writing"
         className="w-full h-full object-cover"
@@ -348,6 +352,8 @@ export default function ContentWritingPage() {
       whileHover={{ scale: 1.05 }}
     >
       <Image
+         width={500}
+      height={500}
         src="/social-media-content.webp"
         alt="SEO Services"
         className="w-full h-full object-cover"
@@ -543,7 +549,7 @@ export default function ContentWritingPage() {
   initial={{ opacity: 0, y: 50, rotate: -5 }}
   whileInView={{ opacity: 1, y: 0, rotate: 0 }}
   viewport={{ once: true }}
-  transition={{ duration: 0.8, delay: idx * 0.2, type: "spring", stiffness: 120 }}
+  transition={{ duration: 0.3, delay: idx * 0.2, type: "spring", stiffness: 120 }}
 >
   {/* corner borders */}
   <span className="absolute top-0 left-0 w-6 h-6 border-t-[1px] border-l-[1px] border-black rounded-tl-3xl"></span>
@@ -707,7 +713,7 @@ export default function ContentWritingPage() {
 
   {/* CTA Button - Comic Style */}
   <motion.a
-    href="#contact"
+    href="/contact"
     whileHover={{ scale: 1.05, rotate: [0, 2, -2, 0] }}
     className="px-10 py-4 bg-white text-black font-black rounded-full shadow-lg border-2 border-black"
   >

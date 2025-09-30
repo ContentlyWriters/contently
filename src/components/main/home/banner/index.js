@@ -5,10 +5,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import LoginModal from "@/components/main/auth/login";
 import { useUserContext } from "@/context/AuthContext";
+import  TablePopup from "@/components/main/modal/learnmore";
+
 
 export default function HeroBanner() {
   const [isOpen, setIsOpen] = useState(false);
   const { isLoggedIn } = useUserContext();
+  const [isTableOpen, setIsTableOpen] = useState(false);
 
   return (
     <section className="relative bg-black text-white overflow-hidden">
@@ -108,16 +111,19 @@ export default function HeroBanner() {
 
             <LoginModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
 
-            <motion.a
-              whileHover={{ scale: 1.01 }}
-              href="#services"
-              className="px-[clamp(0.9rem,2vw,2rem)] py-[clamp(0.45rem,1vw,0.9rem)] 
-                         rounded-xl border border-gray-600 bg-black text-gray-300 font-semibold 
-                         text-[clamp(0.85rem,2vw,1.05rem)] 
-                         hover:border-[#5b6cf2] hover:text-[#5b6cf2] transition"
-            >
-              Learn More
-            </motion.a>
+        <motion.a
+  whileHover={{ scale: 1.01 }}
+    onClick={() => setIsTableOpen(true)}
+  className="px-[clamp(0.9rem,2vw,2rem)] py-[clamp(0.45rem,1vw,0.9rem)] 
+             rounded-xl border border-gray-600 bg-black text-gray-300 font-semibold 
+             text-[clamp(0.85rem,2vw,1.05rem)] 
+             hover:border-[#5b6cf2] hover:text-[#5b6cf2] transition cursor-pointer"
+>
+  Learn More
+</motion.a>
+
+   <TablePopup isOpen={isTableOpen} onClose={() => setIsTableOpen(false)} />
+
           </div>
         </motion.div>
 

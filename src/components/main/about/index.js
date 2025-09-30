@@ -117,6 +117,8 @@ export default function AboutSection() {
 
       {/* Image inside */}
       <Image
+      width={500}
+      height={500}
         src="/8607126.jpg"
         alt="About illustration"
         className="absolute inset-0 w-full h-full object-contain p-4 sm:p-6"

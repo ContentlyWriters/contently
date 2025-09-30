@@ -1,14 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle, Cpu, Globe, Link2, Zap, MapPin,  Lightbulb, Users, ArrowRight } from "lucide-react";
+import  TablePopup from "@/components/main/modal/SeoServicesModal";
 ;
 
 
 export default function SeoServicePage() {
 
+   const [isTableOpen, setIsTableOpen] = useState(false);
     const services = [
     {
       title: "Technical SEO That Powers Performance",
@@ -106,7 +109,7 @@ export default function SeoServicePage() {
           SEO That Actually Works
         </h1>
         <a
-          href="#contact"
+          href="/contact"
           className="inline-block px-8 py-2 bg-white border-2 border-black text-black font-semibold rounded-lg shadow-lg hover:bg-gray-200 transition-colors"
         >
           Get Started
@@ -163,7 +166,7 @@ export default function SeoServicePage() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.4, delay: idx * 0.3 }}
+      transition={{ duration: 0.2, delay: idx * 0.3 }}
       className={`relative flex flex-col md:flex-row items-center gap-12 ${
         idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
       }`}
@@ -333,16 +336,21 @@ export default function SeoServicePage() {
 
         {/* Call to Action */}
         <motion.a
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          href="#contact"
-          className="inline-flex items-center gap-3 px-8 py-2 bg-white text-black border-[1px] border-black font-semibold rounded-full shadow-lg hover:scale-105 transition-transform"
-        >
-          Free Consultation
-          <ArrowRight size={20} />
-        </motion.a>
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        onClick={() => setIsTableOpen(true)}
+        className="inline-flex items-center gap-3 px-8 py-2 bg-white text-black border-[1px] border-black font-semibold rounded-full shadow-lg hover:scale-105 transition-transform cursor-pointer"
+      >
+        Free Consultation
+        <ArrowRight size={20} />
+      </motion.a>
+
+      <TablePopup
+        isOpen={isTableOpen}
+        onClose={() => setIsTableOpen(false)}
+      />
       </div>
 
       {/* Futuristic lines */}
@@ -376,7 +384,7 @@ export default function SeoServicePage() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: idx * 0.2 }}
+            transition={{ duration: 0.5, delay: idx * 0.2 }}
             className="flex items-start gap-6 md:gap-8"
           >
             {/* Icon Circle */}
@@ -455,7 +463,7 @@ export default function SeoServicePage() {
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.5 }}
         className="text-4xl md:text-5xl font-bold mb-12 text-center"
       >
         What We Offer
@@ -618,6 +626,8 @@ generated. </p>
 
     {/* Main Illustration */}
     <Image
+       width={500}
+      height={500}
       src="/seo.png"
       alt="SEO Illustration"
       className="w-64 lg:w-80 z-10"

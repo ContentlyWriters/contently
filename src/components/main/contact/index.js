@@ -99,7 +99,7 @@ if (data.success) {
           <input
             type="email"
             name="email"
-            placeholder="email"
+            placeholder="Email"
             value={form.email}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
@@ -114,7 +114,7 @@ if (data.success) {
         <input
           type="text"
           name="subject"
-          placeholder="subject"
+          placeholder="Subject"
           value={form.subject}
           onChange={handleChange}
           className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"

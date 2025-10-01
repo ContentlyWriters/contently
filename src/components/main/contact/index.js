@@ -7,8 +7,8 @@ import {
   FaEnvelope,
   FaPaperPlane,
   FaLinkedin,
-  FaTwitter,
   FaFacebookF,
+  FaInstagram
 } from "react-icons/fa";
 
 export default function ContactSection() {
@@ -18,7 +18,7 @@ export default function ContactSection() {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    company: "",
+    subject: "",
     message: "",
   });
   const [status, setStatus] = useState("");
@@ -40,7 +40,7 @@ export default function ContactSection() {
  const data = await res.json();
 if (data.success) {
   setStatus("✅ Message sent!");
-  setForm({ name: "", email: "", company: "", message: "" });
+  setForm({ name: "", email: "", subject: "", message: "" });
 } else {
   setStatus("❌ Failed to send. Please try again.");
 }
@@ -109,13 +109,13 @@ if (data.success) {
       </div>
       <div>
         <label className="block text-sm font-medium text-gray-600 mb-2">
-          Company
+          subject
         </label>
         <input
           type="text"
-          name="company"
-          placeholder="Facio ContentlyWriters"
-          value={form.company}
+          name="subject"
+          placeholder="Seo Optimization"
+          value={form.subject}
           onChange={handleChange}
           className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
         />
@@ -165,28 +165,28 @@ if (data.success) {
     <li className="flex items-start space-x-4">
       <FaMapMarkerAlt className="text-lg mt-1" />
       <span>
-        41 Jadon Nagar B
+        Kiran path Mansarovar
         <br />
-        Durgapura, Jaipur 302018
+         Jaipur 302020
       </span>
     </li>
     <li className="flex items-center space-x-4">
       <FaPhoneAlt className="text-lg" />
-      <span>+91 900-200-300</span>
+      <span>+91 7727851997</span>
     </li>
     <li className="flex items-center space-x-4">
       <FaEnvelope className="text-lg" />
-      <span>info@example.com</span>
+      <span>info@contentlywriters.com</span>
     </li>
   </ul>
   <div className="flex items-center space-x-5 mt-8 relative z-10">
-    <a href="#" className="hover:text-black transition-colors">
+    <a href="https://www.linkedin.com/company/facio-contently-writers/" className="hover:text-black transition-colors">
       <FaLinkedin />
     </a>
-    <a href="#" className="hover:text-black transition-colors">
-      <FaTwitter />
+    <a href="https://www.instagram.com/contentlywriters/" target="_blank">
+      <FaInstagram className="cursor-pointer hover:scale-110 hover:text-black transition" />
     </a>
-    <a href="#" className="hover:text-black transition-colors">
+    <a href="https://www.facebook.com/profile.php?id=61568632033503" className="hover:text-black transition-colors">
       <FaFacebookF />
     </a>
   </div>

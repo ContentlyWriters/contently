@@ -11,7 +11,7 @@ export async function POST(req) {
   try {
     await connect(); // DB connect
 
-    const { name, email, company, message } = await req.json();
+    const { name, email, subject, message } = await req.json();
 
     if (!name || !email || !message) {
       return sendResponse("Name, email, and message are required", 400);
@@ -22,7 +22,7 @@ export async function POST(req) {
       name,
       email,
       message,
-      company: company || "N/A",
+      subject: subject || "N/A",
     });
     await newMessage.save();
 
@@ -53,7 +53,7 @@ export async function POST(req) {
             <table style="width:100%; border-collapse:collapse;">
               <tr><td><b>Name</b></td><td>${name}</td></tr>
               <tr><td><b>Email</b></td><td>${email}</td></tr>
-              <tr><td><b>Company</b></td><td>${company || "N/A"}</td></tr>
+              <tr><td><b>subject</b></td><td>${subject || "N/A"}</td></tr>
               <tr><td><b>Message</b></td><td>${message}</td></tr>
             </table>
           </div>

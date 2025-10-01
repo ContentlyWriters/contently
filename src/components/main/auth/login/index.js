@@ -28,7 +28,7 @@ const { setIsLoggedIn } = useUserContext();
     window.location.href = url; 
   };
 
-useEffect(() => {
+useEffect(() => { 
   let interval;
   if (isSending) {
     interval = setInterval(() => {
@@ -220,7 +220,7 @@ const handleLogin = async () => {
             <button className="absolute top-3 right-3 text-gray-800 hover:text-black" onClick={onClose}>✕</button>
 
             <h2 className="text-2xl font-semibold mb-6 text-center text-[#020035]">
-              {mode === "login" && "Welcome To FCW"}
+              {mode === "login" && "Welcome To CW"}
               {mode === "signup" && "Create Your Account"}
               {mode === "reset" && "Reset Your Password"}
             </h2>

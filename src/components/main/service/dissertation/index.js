@@ -13,7 +13,7 @@ const DissertationWritingPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-[#020035] min-h-[54vh] flex flex-col items-center justify-center text-center p-4 shadow-lg backdrop-blur-md">
+      <section className="relative bg-[#020035] min-h-[64vh] flex flex-col items-center justify-center text-center p-4 shadow-lg backdrop-blur-md">
   
   <motion.h1
     className="text-white text-2xl sm:text-3xl lg:text-5xl font-semibold leading-snug lg:leading-tight mb-4 sm:mb-3"
@@ -551,7 +551,7 @@ Let Contently Writers be your partner in achieving your academic goals. Our team
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.3 }}
           >
-           <a href="https://www.contentlywriters.com/"> <Button  className="px-6 py-3 bg-[#210404] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
+           <a href="/contact"> <Button  className="px-6 py-3 bg-[#210404] text-white rounded-full hover:bg-[#fff] hover:text-[#000] hover:border-2 hover:border-black transition duration-300">
               Start Now <FaArrowRight className="inline-block ml-2" />
             </Button></a>
           </motion.div>

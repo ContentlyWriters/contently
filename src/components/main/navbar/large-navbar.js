@@ -59,7 +59,7 @@ export default function LargeNavbar({ items }) {
 
             {/* First-level Dropdown */}
             {item.subItems && openDropdown === item.id && (
-              <div className="absolute top-full left-0 pb-1 bg-white shadow-md rounded-lg w-60 border border-gray-800">
+              <div className="absolute top-full left-0 pb-3 bg-white ml-[2px] shadow-md rounded-lg w-60 border border-gray-800">
                 {item.subItems.map((subItem) => (
                   <div
                     key={subItem.id}
@@ -71,7 +71,7 @@ export default function LargeNavbar({ items }) {
                       <Button
                         size="sm"
                         variant="link"
-                        className="text-md font-normal px-5 py-3 hover:bg-gray-100 hover:text-[#5b6cf2] block text-left w-full"
+                        className="text-md font-normal px-5 py-3 hover:underline hover:text-[#5b6cf2] block text-left w-full"
                         style={{ textDecoration: "none" }}
                       >
                         {subItem.name}
@@ -80,7 +80,7 @@ export default function LargeNavbar({ items }) {
 
                     {/* Second-level submenu */}
                     {subItem.subItems && openSubDropdown === subItem.id && (
-                      <div className="absolute top-0 left-full mt-2 bg-white ml-[2px] shadow-md rounded-lg w-60 border border-gray-800">
+                      <div className="absolute top-0 left-full mt-2 pb-3 bg-white ml-[2px] shadow-md rounded-lg w-60 border border-gray-800">
                         {subItem.subItems.map((secondSubItem) => (
                           <div
                             key={secondSubItem.id}
@@ -94,7 +94,7 @@ export default function LargeNavbar({ items }) {
                               <Button
                                 size="sm"
                                 variant="link"
-                                className="text-md font-normal px-5 py-3 hover:bg-gray-100 hover:text-[#5b6cf2] block text-left w-full"
+                                className="text-md font-normal px-5 py-3 hover:underline hover:text-[#5b6cf2] block text-left w-full"
                                 style={{ textDecoration: "none" }}
                               >
                                 {secondSubItem.name}
@@ -104,7 +104,7 @@ export default function LargeNavbar({ items }) {
                             {/* Third-level submenu */}
                             {secondSubItem.subItems &&
                               openThirdDropdown === secondSubItem.id && (
-                                <div className="absolute top-0 left-full mt-2 ml-[2px] bg-white shadow-md rounded-lg w-60 border border-gray-800">
+                                <div className="absolute top-0 left-full mt-2 ml-[2px] pb-3 bg-white shadow-md rounded-lg w-60 border border-gray-800">
                                   {secondSubItem.subItems.map((thirdSubItem) => (
                                     <Link
                                       key={thirdSubItem.id}
@@ -113,7 +113,7 @@ export default function LargeNavbar({ items }) {
                                       <Button
                                         size="sm"
                                         variant="link"
-                                        className="text-md font-normal px-5 py-3 hover:bg-gray-100 hover:text-[#5b6cf2] block text-left w-full"
+                                        className="text-md font-normal px-5 py-3 hover:underline hover:text-[#5b6cf2] block text-left w-full"
                                         style={{ textDecoration: "none" }}
                                       >
                                         {thirdSubItem.name}

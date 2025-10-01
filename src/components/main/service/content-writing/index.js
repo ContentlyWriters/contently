@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -134,6 +135,7 @@ export default function ContentWritingPage() {
     { value: "seo", label: "SEO Content" },
   ];
 
+  const pricingRef = useRef(null);
   const [service, setService] = useState("article");
   const [words, setWords] = useState("150");
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -182,7 +184,11 @@ export default function ContentWritingPage() {
             className="flex flex-col sm:flex-row gap-5 justify-center md:justify-start"
           >
             <Link
-              href="/services"
+              href="#"
+  onClick={(e) => {
+    e.preventDefault(); 
+    pricingRef.current?.scrollIntoView({ behavior: "smooth" });
+  }}
               className="px-4 py-2 bg-white text-black border border-black rounded-full font-semibold shadow-lg  hover:shadow-xl transition transform text-center"
             >
               Explore Services
@@ -409,7 +415,7 @@ export default function ContentWritingPage() {
  
  
 
-<section className="bg-white py-24 px-6 md:px-16 relative border-b-4 border-t-[1px] border-black ">
+<section ref={pricingRef} className="bg-white py-24 px-6 md:px-16 relative border-b-4 border-t-[1px] border-black ">
 
    <motion.div
           animate={{ x: [0, 60, -60, 0], y: [0, -40, 40, 0] }}
@@ -426,6 +432,7 @@ export default function ContentWritingPage() {
 
     {/* Heading - Manga/Anime Style */}
     <motion.h3
+    
       className="text-3xl sm:text-5xl font-black text-black text-center leading-snug  inline-block px-4 tracking-tight drop-shadow-lg"
       initial={{ opacity: 0, y: 30, scale: 0.9 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}

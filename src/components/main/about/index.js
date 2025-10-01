@@ -22,18 +22,23 @@ const privacyItems = [
 ];
 
 
- const reviews = [
-    {
-      stars: "⭐️⭐️⭐️⭐️⭐️",
-      text: "Exceptional web development service, SEO, content writing, and smooth web design! FACIO Contently Writers Private Limited delivered a stunning website that exceeded my expectations. Professional, responsive, and highly skilled. Highly recommend!",
-      author: "— Dhananjay Sharma, Founder of djaybusinesscafe.com",
-    },
-    {
-      stars: "⭐️⭐️⭐️⭐️⭐️",
-      text: "We needed a professional website that reflects our CA firm’s credibility and services. The team at Contently Writers delivered exactly that—with clean design, accurate content, and excellent SEO support. Very cooperative and efficient.",
-      author: "— CA Vivek Sharma, Founder of jvsmindia.com",
-    },
-  ];
+const reviews = [
+  {
+    stars: "⭐️⭐️⭐️⭐️⭐️",
+    text: "Exceptional web development service, SEO, content writing, and smooth web design! FACIO Contently Writers Private Limited delivered a stunning website that exceeded my expectations. Professional, responsive, and highly skilled. Highly recommend!",
+    author: (
+      <>— Dhananjay Sharma, Founder of <a href="https://djaybusinesscafe.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">djaybusinesscafe.com</a></>
+    ),
+  },
+  {
+    stars: "⭐️⭐️⭐️⭐️⭐️",
+    text: "We needed a professional website that reflects our CA firm’s credibility and services. The team at Contently Writers delivered exactly that—with clean design, accurate content, and excellent SEO support. Very cooperative and efficient.",
+    author: (
+      <>— CA Vivek Sharma, Founder of <a href="https://jvsmindia.com" target="_blank" rel="noopener noreferrer" className="text-black  hover:underline ">jvsmindia.com</a></>
+    ),
+  },
+];
+
 
 export default function AboutSection() {
   return (

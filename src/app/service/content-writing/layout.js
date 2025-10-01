@@ -4,11 +4,11 @@ import GuestRoute from "@/routes/guestRoute";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Contently Writers | Best Personal Statement Writing Help Online",
-  description:'Contently Writers provides the best personal statement writing help. Our experts craft unique, impactful statements to help boost your grades and stand out',
-  keywords: "Best personal statement writing help , Help with personal statement online , best Personal statement writing service online , Best personal statement help online , best personal statement writer",
+  title: " Best Content Writing Services for Website & SEO",
+  description:' Hire expert writers for website content, SEO content, and blog writing. Get affordable content writing services that rank, engage, and convert.',
+  keywords: "content writing agency,  ,content writing company  ,content writing companies  ,best content writing company  ,content writing agencies  ,best content writing websites  ,affordable content writing services  ,SEO content writing services       ,professional content writers          ,website content writing services  ,best article writing service       ,content creation services         ,high quality content writing         ,content writing for blogs ",
   alternates: {
-    canonical: "https://www.contentlywriters.com/service/seo" 
+    canonical: "https://www.contentlywriters.com/service/content-writing" 
   }
 };
 

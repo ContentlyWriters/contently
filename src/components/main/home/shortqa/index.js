@@ -32,9 +32,9 @@ export default function FuturisticQA() {
 
       <div className="relative max-w-4xl mx-auto text-center">
         {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] bg-clip-text text-transparent">
+        <h3 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] bg-clip-text text-transparent">
           A+ Work Starts Here — Your Go-To Assignment Writing Service
-        </h2>
+        </h3>
 
         {/* Sub-title */}
         <p className="mt-6 text-md text-gray-300">

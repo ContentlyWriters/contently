@@ -4,9 +4,9 @@ import GuestRoute from "@/routes/guestRoute";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Contently Writers | Best Personal Statement Writing Help Online",
-  description:'Contently Writers provides the best personal statement writing help. Our experts craft unique, impactful statements to help boost your grades and stand out',
-  keywords: "Best personal statement writing help , Help with personal statement online , best Personal statement writing service online , Best personal statement help online , best personal statement writer",
+  title: "Affordable SEO Services for Small & Growing Businesses",
+  description:'Boost your online presence with affordable SEO services. Get expert on-page, off-page, technical & local SEO tailored for startups and small businesses.',
+  keywords: "affordable SEO services for small businesses , , affordable SEO services , cheap SEO services , professional SEO services in USA , low cost SEO services , affordable SEO optimization , cheap backlink services , local SEO services near me , affordable local SEO , top SEO companies in USA , cheap SEO optimization , inexpensive SEO , cheap search engine optimization , cheap search engine optimization services , off-page SEO , LLMO seo , AI in search engine optimization , SEO for generative search ",
   alternates: {
     canonical: "https://www.contentlywriters.com/service/seo" 
   }

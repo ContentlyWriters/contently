@@ -94,9 +94,9 @@ export default function Dashboard() {
       <aside className={`fixed sm:relative top-0 h-full pb-10 w-72 bg-white shadow-lg flex flex-col justify-between transition-transform duration-300 z-40
         ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} sm:translate-x-0`}>
         <div>
-          <h1 className="text-2xl ml-2 font-semibold mb-6 flex items-center gap-2 cursor-pointer" onClick={goHome}>
+          <h3 className="text-2xl ml-2 font-semibold mb-6 flex items-center gap-2 cursor-pointer" onClick={goHome}>
             <FaHome /> Home
-          </h1>
+          </h3>
           <nav className="space-y-2">
             <button
               className={`flex items-center gap-3 p-3 w-full text-left rounded hover:bg-gray-100 transition font-medium ${activeTab === "profile" ? "bg-gray-100" : ""}`}
@@ -224,7 +224,7 @@ export default function Dashboard() {
       {showModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/30 z-50">
           <div className="bg-white rounded-xl shadow-lg p-6 w-80 text-center space-y-4">
-            <h2 className="text-xl font-semibold">Confirm Logout</h2>
+            <h3 className="text-xl font-semibold">Confirm Logout</h3>
             <p className="text-gray-700">Are you sure you want to logout?</p>
             <div className="flex justify-between mt-4">
               <button onClick={() => setShowModal(false)} className="px-5 py-2 bg-gray-200 rounded hover:bg-gray-300 transition font-medium">

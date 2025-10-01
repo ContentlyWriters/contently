@@ -27,12 +27,12 @@ export default function GrowthPartner() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-snug">
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-snug">
             <span className="bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] bg-clip-text text-transparent">
               Your Growth Partner
             </span>{" "}
             — Reliable & Low-Cost SEO Company USA
-          </h2>
+          </h3>
 
           <p className="mt-6 text-lg text-gray-700">
             We’re recognized as a best USA SEO company, delivering measurable

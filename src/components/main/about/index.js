@@ -57,13 +57,13 @@ export default function AboutSection() {
       transition={{ duration: 0.7 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
         About <span className="text-[#5b6cf2]">Us</span>
-      </h2>
+      </h1>
 
-      <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 mb-4">
+      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 mb-4">
         Our Story
-      </h3>
+      </h2>
 
       <p className="text-gray-600 leading-relaxed mb-6">
         We’re a bunch of engineers, writers, and SEO nerds who teamed up
@@ -191,7 +191,7 @@ export default function AboutSection() {
 
       <div className="max-w-7xl mx-auto relative z-10 flex flex-col items-center">
         {/* Heading */}
-        <motion.h2
+        <motion.h3
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -200,7 +200,7 @@ export default function AboutSection() {
         >
           Our <span className="text-[#5b6cf2]">Mission</span> &{" "}
           <span className="text-[#5b6cf2]">Vision</span>
-        </motion.h2>
+        </motion.h3>
 
     
 
@@ -250,7 +250,7 @@ export default function AboutSection() {
 
       <div className="max-w-6xl mx-auto relative z-10 text-center">
         {/* Section Heading */}
-        <motion.h2
+        <motion.h3
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -258,7 +258,7 @@ export default function AboutSection() {
           className="text-4xl md:text-5xl font-bold text-[#000] mb-12"
         >
           What Our <span className="text-[#5b6cf2]">Clients</span> Think
-        </motion.h2>
+        </motion.h3>
 
         {/* Reviews Grid */}
         <div className="grid md:grid-cols-2 gap-10">

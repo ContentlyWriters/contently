@@ -22,7 +22,7 @@ const StatisticsPage = () => {
  return (
      <div className=" text-[#333] font-sans">
      {/* Hero Section with Animation */}
-     <div className="bg-[#020035] py-8 text-center relative overflow-hidden">
+     <div className="bg-[#020035] py-8 min-h-[64vh] text-center relative overflow-hidden">
        <motion.h1
          className="text-white sm:text-[40px] lg:text-[50px] text-[30px] pt-20 mx-auto font-semibold"
          initial={{ opacity: 0, y: -50 }}
@@ -63,9 +63,7 @@ const StatisticsPage = () => {
              Best Management Assignment Help
            </motion.p> */}
            <motion.p
-             className="text-lg leading-7 mb-6"
-             
-           >
+             className="text-lg leading-7 mb-6">
 Are you struggling with overwhelming statistical data and complex calculations? Our statistics assignment help is here to provide the support you need! Our team of skilled statisticians is committed to delivering exceptional assistance for all your statistics assignments. Additionally, we offer a variety of other academic services, including <a href="https://www.contentlywriters.com/service/personal-statement" class="text-[#5b6cf2]">Personal Statement Help</a>, <a href="https://www.contentlywriters.com/service/buy-a-research-paper" class="text-[#5b6cf2]">Research Paper Assistance</a>, <a href="https://www.contentlywriters.com/service/coursework-writing" class="text-[#5b6cf2]">Coursework Writing</a>, and much more!  </motion.p>
          </section>
          
@@ -268,7 +266,7 @@ When you <strong>pay for statistics assignment help</strong> with us, we make su
              className="lg:p-8 sm:p4 bg-[#5b6cf2] lg:text-xl sm:text-md hover:bg-white hover:text-black"
            >
            <a
-     href="https://contentlywriters.com"
+     href="/contact"
    >
      Write my assignment
    </a>

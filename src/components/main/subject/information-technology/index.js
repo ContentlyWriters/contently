@@ -22,7 +22,7 @@ const ITPage = () => {
   return (
     <div className="text-[#333] font-sans">
       {/* Hero Section with Animation */}
-      <div className="bg-[#020035] py-8 text-center relative overflow-hidden">
+      <div className="bg-[#020035] py-8 min-h-[64vh] text-center relative overflow-hidden">
         <motion.h1
           className="text-white sm:text-[40px] lg:text-[50px] text-[30px] pt-20 mx-auto font-semibold"
           initial={{ opacity: 0, y: -50 }}
@@ -186,7 +186,7 @@ const ITPage = () => {
             className="lg:p-8 sm:p4 bg-[#5b6cf2] lg:text-xl sm:text-md hover:bg-white hover:text-black"
           >
           <a
-    href="https://contentlywriters.com"
+    href="/contact"
   >
     Write my assignment
   </a>

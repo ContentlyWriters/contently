@@ -367,7 +367,7 @@ export default function SeoServicePage() {
     </section>
 
   <section className="bg-black text-white py-24 px-6 md:px-16 relative">
-      <motion.h3
+      <motion.h2
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -375,7 +375,7 @@ export default function SeoServicePage() {
         className="text-4xl md:text-5xl font-bold mb-16 text-center"
       >
         Who We Help
-      </motion.h3>
+      </motion.h2>
 
       <div className="flex flex-col space-y-12 relative">
         {targets.map((target, idx) => (
@@ -511,7 +511,7 @@ export default function SeoServicePage() {
 
   {/* Floating content */}
   <div className="relative z-10 max-w-4xl mx-auto space-y-4">
-    <motion.h2
+    <motion.h3
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
@@ -519,7 +519,7 @@ export default function SeoServicePage() {
       className="text-3xl md:text-4xl font-bold"
     >
       Optimizing for the AI-First Search Era (SGE + LLMO)
-    </motion.h2>
+    </motion.h3>
 
     <motion.p
       initial={{ opacity: 0, x: 50 }}
@@ -636,9 +636,9 @@ generated. </p>
 
   {/* Left: Text content */}
   <div className="lg:w-1/2 text-center lg:text-left z-10">
-    <h1 className="text-3xl md:text-4xl font-semibold text-white mb-4">
+    <h3 className="text-3xl md:text-4xl font-semibold text-white mb-4">
       Rank Smarter, Not Harder – SEO Services Backed by the Latest Algorithms
-    </h1>
+    </h3>
     <h3 className="text-lg md:text-xl text-gray-300 mb-6">
       Your Growth Starts Here with Advanced SEO Services: On-Page, Off-Page, Technical & Local Optimization
     </h3>

@@ -85,7 +85,7 @@ if (data.success) {
           <input
             type="text"
             name="name"
-            placeholder="Devbysid"
+            placeholder="Name"
             value={form.name}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
@@ -99,7 +99,7 @@ if (data.success) {
           <input
             type="email"
             name="email"
-            placeholder="sid@contentlywriters.com"
+            placeholder="email"
             value={form.email}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
@@ -109,12 +109,12 @@ if (data.success) {
       </div>
       <div>
         <label className="block text-sm font-medium text-gray-600 mb-2">
-          subject
+          Subject
         </label>
         <input
           type="text"
           name="subject"
-          placeholder="Seo Optimization"
+          placeholder="subject"
           value={form.subject}
           onChange={handleChange}
           className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"

@@ -23,7 +23,7 @@ export default function InformationLayout({ children }) {
           <link rel="canonical" href={metadata.canonical} />
         </Head>
         <Navbar />
-        <div className="mt-[80px]">{children}</div>
+        <div>{children}</div>
         <Footer />
       </div>
     </GuestRoute>

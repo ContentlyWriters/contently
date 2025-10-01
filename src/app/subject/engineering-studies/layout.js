@@ -17,7 +17,7 @@ export default function EngineeringLayout({ children }) {
     <GuestRoute allowAuthenticated={true}>
       <div>
         <Navbar />
-        <div className="mt-[80px]">{children}</div>
+        <div>{children}</div>
         <Footer />
       </div>
     </GuestRoute>

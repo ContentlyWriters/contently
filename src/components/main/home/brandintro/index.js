@@ -42,7 +42,7 @@ export default function BrandIntro() {
           >
             At <span className="font-semibold text-[#5b6cf2]">Contently Writers</span>, we specialize in
             delivering high-quality content writing services and result-driven SEO solutions to help your brand grow online.
-            Whether you need blog posts, website copy, product descriptions, or complete SEO strategies — we&#39;re here
+            Whether you need blog posts, website copy, product descriptions, or complete SEO strategies; we&#39;re here
             to create content that connects and ranks. As a trusted content writing company and SEO agency, we combine
             creativity with keyword precision to boost your visibility and engagement.
           </motion.p>
@@ -55,7 +55,7 @@ export default function BrandIntro() {
             className="mt-5 text-lg text-black leading-relaxed"
           >
             In addition to business content, we also offer assignment writing services for students seeking expert support
-            with essays, projects, and homework — handled with the same level of care and quality.
+            with essays, projects, and homework; handled with the same level of care and quality.
           </motion.p>
 
           {/* small chips */}

@@ -32,7 +32,7 @@ const reviews = [
   },
   {
     stars: "⭐️⭐️⭐️⭐️⭐️",
-    text: "We needed a professional website that reflects our CA firm’s credibility and services. The team at Contently Writers delivered exactly that—with clean design, accurate content, and excellent SEO support. Very cooperative and efficient.",
+    text: "We needed a professional website that reflects our CA firm’s credibility and services. The team at Contently Writers delivered exactly that, with clean design, accurate content, and excellent SEO support. Very cooperative and efficient.",
     author: (
       <>— CA Vivek Sharma, Founder of <a href="https://jvsmindia.com" target="_blank" rel="noopener noreferrer" className="text-black  hover:underline ">jvsmindia.com</a></>
     ),
@@ -67,7 +67,7 @@ export default function AboutSection() {
 
       <p className="text-gray-600 leading-relaxed mb-6">
         We’re a bunch of engineers, writers, and SEO nerds who teamed up
-        with one simple goal—
+        with one simple goal -
         <span className="font-semibold text-gray-900">
           to help brands grow online with content that actually works.
         </span>
@@ -79,7 +79,7 @@ export default function AboutSection() {
           Contently Writers
         </span>
         , we’re not a huge agency with layers of process and buzzwords.
-        We’re a small, focused team that loves building things—from
+        We’re a small, focused team that loves building things from
         compelling articles and catchy website content to fast,
         SEO-friendly websites that Google (and people) love.
       </p>
@@ -87,7 +87,7 @@ export default function AboutSection() {
       <p className="text-gray-600 leading-relaxed mb-8">
         With over three years of experience, we’ve written thousands of
         words, ranked hundreds of pages, and built websites that don’t
-        just look great—they perform.
+        just look great, they perform.
       </p>
 
       {/* Highlights */}
@@ -216,7 +216,7 @@ export default function AboutSection() {
             <h3 className="text-2xl font-bold text-[#5b6cf2] mb-3">Our Mission</h3>
             <p className="text-gray-200 leading-relaxed">
               To connect the world through simple, impactful words that speak
-              to everyone—everywhere.
+              to everyone and everywhere.
             </p>
             <p className="mt-3 text-gray-300 leading-relaxed">
               Clarity is power. We keep content, SEO, and code simple, smart, and human.
@@ -233,7 +233,7 @@ export default function AboutSection() {
             <h3 className="text-2xl font-bold text-[#5b6cf2] mb-3">Our Vision</h3>
             <p className="text-gray-200 leading-relaxed">
               To become a trusted global team that helps brands grow through
-              clear content, smart SEO, and clean code—without the jargon.
+              clear content, smart SEO, and clean code without the jargon.
             </p>
             <p className="mt-3 text-gray-300 leading-relaxed">
               A digital world where simplicity wins, creativity connects, and every brand stands out.

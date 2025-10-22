@@ -16,7 +16,7 @@ export default function SeoServicePage() {
     {
       title: "Technical SEO That Powers Performance",
       content:
-        "Our team handles everything under the hood—technical SEO including crawlability, site speed, mobile-first indexing, and schema markup. These elements not only please search engines but also improve UX and engagement.",
+        "Our team handles everything under the hood, technical SEO including crawlability, site speed, mobile-first indexing, and schema markup. These elements not only please search engines but also improve UX and engagement.",
       icon: <Cpu size={36} />,
     },
     {
@@ -28,13 +28,13 @@ export default function SeoServicePage() {
     {
       title: "Off-Page SEO That Builds Authority",
       content:
-        "We don’t just build links—we build credibility. With cheap backlink services and outreach strategies tailored to your niche, we ensure your domain gets the recognition it deserves.",
+        "We don’t just build links, we build credibility. With cheap backlink services and outreach strategies tailored to your niche, we ensure your domain gets the recognition it deserves.",
       icon: <Link2 size={36} />,
     },
     {
       title: "A Thought That Stuck with Us",
       content:
-        "We all want great services without overspending. But once we hear 'affordable,' a voice inside us asks, 'What if…?' Well, what if we deliver guaranteed SEO results—at a price that doesn’t break your budget? That’s not just marketing talk. It’s our mission to help clients stay stress-free within their budgets while delivering real growth.",
+        "We all want great services without overspending. But once we hear 'affordable,' a voice inside us asks, 'What if…?' Well, what if we deliver guaranteed SEO results at a price that doesn’t break your budget? That’s not just marketing talk. It’s our mission to help clients stay stress-free within their budgets while delivering real growth.",
       icon: <Lightbulb size={36} />,
     },
   ];
@@ -316,7 +316,7 @@ export default function SeoServicePage() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-black text-lg md:text-xl leading-relaxed"
         >
-          Today’s SEO is not about ranking first — it’s about being found first in AI-generated
+          Today’s SEO is not about ranking first, it’s about being found first in AI-generated
           answers, conversational results, and predictive suggestions. Learn more in our guide
           on emerging marketing trends and technologies shaping the future of search.
         </motion.p>
@@ -426,7 +426,7 @@ export default function SeoServicePage() {
       Why Choose Our SEO Services?
     </h2>
     <p className="text-black text-lg md:text-xl">
-      While most agencies follow the same outdated playbook, we stay ahead by constantly adapting to Google’s 2025 SEO update, ensuring your strategy stays relevant and effective. Your website won’t just be optimized for today—it’ll be ready for tomorrow.
+      While most agencies follow the same outdated playbook, we stay ahead by constantly adapting to Google’s 2025 SEO update, ensuring your strategy stays relevant and effective. Your website won’t just be optimized for today, it’ll be ready for tomorrow.
     </p>
   </div>
 
@@ -528,7 +528,7 @@ export default function SeoServicePage() {
       transition={{ delay: 0.2, duration: 0.8 }}
       className="text-lg md:text-xl text-gray-800 leading-relaxed"
     >
-      Search engines are evolving — and so is SEO. With Google introducing SGE, traditional results are being replaced by AI-generated answers. Our SEO services train your content for this shift.
+      Search engines are evolving and so is SEO. With Google introducing SGE, traditional results are being replaced by AI-generated answers. Our SEO services train your content for this shift.
     </motion.p>
 
     <motion.ul
@@ -592,7 +592,7 @@ export default function SeoServicePage() {
         </motion.li>
       ))}
     </ul>
-    <p>This means your content won’t just rank — it will become part of how answers are 
+    <p>This means your content won’t just rank, it will become part of how answers are 
 generated. </p>
   </div>
 </section>

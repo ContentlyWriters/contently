@@ -40,7 +40,7 @@ const faqs = [
   },
     {
     question: "Which platform is best for content writing?",
-    answer: "Freelance platforms can help with short-term needs. But for long-term brand growth and quality,partnering with a professional content writing company like Contently Writers offers consistency and results.",
+    answer: "Freelance platforms can help with short-term needs. But for long-term brand growth and quality, partnering with a professional content writing company like Contently Writers offers consistency and results.",
   },
 ];
 
@@ -108,7 +108,7 @@ export default function ContentWritingPage() {
     },
     {
       title: "Fast Turnaround",
-      desc: "Deadlines matter—we deliver on time, every time.",
+      desc: "Deadlines matter, we deliver on time, every time.",
       icon: <Clock size={28} />,
       color: "#5b6cf2",
     },

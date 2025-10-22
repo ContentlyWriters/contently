@@ -58,32 +58,56 @@ export default function FAQ() {
 const data = [
   {
     id: 1,
-    title: "How to get your assignments completed?",
+    title: "What are the best content writing services?",
     description:
-      "Our website works on pay-to-work system, basically you pay us to do your assignments. Upload your assignment file in the form, the writer completes it and sends it back. Put instructions in the remarks box if needed.",
+      "At Contently Writers, we deliver creative, accurate, and SEO-friendly content. Our team crafts research-backed, plagiarism-free content across blogs, websites, academic work, and business writing to boost visibility and engagement.",
   },
   {
     id: 2,
-    title: "How will you receive your completed assignments?",
+    title: "Who is the best SEO company for growing businesses?",
     description:
-      "All orders are delivered through the customer's account on the website via the Orders page.",
+      "The best SEO company depends on goals and budget. Contently Writers offers comprehensive SEO strategies, transparent results, and measurable ROI to help businesses grow consistently online.",
   },
   {
     id: 3,
-    title: "What are the upload file requirements?",
+    title: "What are the 4 types of SEO?",
     description:
-      "Upload a single ZIP file containing all necessary files along with an explained format to be followed by the writer.",
+      "The four main types are: On-page (content & HTML), Off-page (backlinks & authority), Technical (speed, mobile, structure), and Local SEO. Contently Writers combines all four for a complete SEO strategy.",
   },
   {
     id: 4,
-    title: "How to stay updated with the progress on your order?",
+    title: "How much does SEO cost?",
     description:
-      "You will see a profile dashboard when you place an order or sign in. Use the 'My Orders' option to track progress.",
+      "SEO pricing depends on scope, competition, and goals. At Contently Writers, packages start from $250/month, including keyword research, on-page optimization, and clear deliverables to boost visibility",
   },
   {
     id: 5,
-    title: "If you face any technical issue how to get human support?",
+    title: "Is content writing still in demand?",
     description:
-      "Please contact us through Mail or WhatsApp shown on the website.",
+      "Yes. High-quality, SEO-friendly content is more important than ever. Contently Writers helps businesses and students create content that drives traffi c, builds trust, and supports conversions.",
+  },
+    {
+    id: 6,
+    title: "What makes content writing services trustworthy?",
+    description:
+      "Trustworthy services deliver original, research-backed, and SEO-optimized content. Contently Writers ensures transparency, timely delivery, and plagiarism-free work to build long-term client trust.",
+  },
+    {
+    id: 7,
+    title: "How do I choose the right content writing company?",
+    description:
+      "Look for expertise, SEO understanding, and personalized strategy. Contently Writers combines experienced writers, data-driven insights, and tailored solutions to achieve your goals.",
+  },
+    {
+    id: 8,
+    title: "What qualities should a good content writer have?",
+    description:
+      "A good writer combines creativity, clarity, and strategy. Contently Writers ensures every piece is audience-focused, well-researched, and optimized to rank higher on search engines.",
+  },
+    {
+    id: 9,
+    title: "How long does it take for SEO to show results?",
+    description:
+      "SEO is gradual; results typically appear in 3–6 months. With consistent updates and optimization, Contently Writers helps achieve sustainable visibility and long-term growth.",
   },
 ];

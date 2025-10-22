@@ -13,31 +13,31 @@ const features = [
   {
     icon: Star,
     title: "CONTENT THAT COVERS EVERYTHING",
-    desc: "From blog posts and website copy to product descriptions and SEO landing pages — we cover every content need, tailored to your brand and goals.",
+    desc: "From blog posts and website copy to product descriptions and SEO landing pages, we cover every content need, tailored to your brand and goals.",
     color: "from-pink-500 to-[#5b6cf2]",
   },
   {
     icon: Search,
     title: "SEO THAT GETS RESULTS",
-    desc: "Our strategies are built for performance — from keyword research to content optimization, we help you climb the ranks and stay there.",
+    desc: "Our strategies are built for performance, from keyword research to content optimization, we help you climb the ranks and stay there.",
     color: "from-[#5b6cf2] to-indigo-400",
   },
   {
     icon: DollarSign,
     title: "THAT FITS YOUR BUDGET",
-    desc: "We offer scalable content writing and SEO packages to match every budget — without compromising on quality, creativity, or strategy.",
+    desc: "We offer scalable content writing and SEO packages to match every budget, without compromising on quality, creativity, or strategy.",
     color: "from-green-400 to-teal-400",
   },
   {
     icon: Users,
     title: "RESPONSIVE TEAM SUPPORT",
-    desc: "Our team is quick to respond, eager to help, and ready to guide you with any query — because your success is our priority.",
+    desc: "Our team is quick to respond, eager to help, and ready to guide you with any query, because your success is our priority.",
     color: "from-yellow-400 to-orange-500",
   },
   {
     icon: Clock,
     title: "ALWAYS ON TIME",
-    desc: "Deadlines matter. Whether it’s a blog delivery or SEO report — we never miss one. Your projects are always delivered as promised.",
+    desc: "Deadlines matter. Whether it’s a blog delivery or SEO report, we never miss one. Your projects are always delivered as promised.",
     color: "from-red-400 to-pink-500",
   },
 ];

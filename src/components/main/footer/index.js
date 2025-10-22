@@ -42,7 +42,7 @@ export default function Footer() {
         height={500}
         src="/pop-up1.webp" 
         alt="Decor"
-        className="absolute -bottom-4 -right-14 w-[500px] md:w-[640px] opacity-10 blur-sm rotate-60 pointer-events-none select-none"
+        className="absolute  -bottom-4 -right-14 w-[500px] md:w-[640px] opacity-10 blur-sm rotate-60 pointer-events-none select-none"
       />
 
       {/* Footer Content */}

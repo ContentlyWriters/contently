@@ -20,7 +20,8 @@ const { setIsLoggedIn } = useUserContext();
 
   const handleGoogleLogin = () => {
     const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
-    const redirectUri = "https://www.contentlywriters/api/auth/google/callback";
+  const redirectUri = "https://www.contentlywriters.com/api/auth/callback/google";
+
     const scope = "openid email profile";
 
     const url = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&prompt=consent`;

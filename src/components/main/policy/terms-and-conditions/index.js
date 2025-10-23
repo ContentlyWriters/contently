@@ -552,7 +552,7 @@ function TermsAndCondition() {
           </div>
 
           <div className="font-bold ">
-            Version 1.0. Last modified: April, 2024
+           Version 2.0. Last modified: November, 2025
           </div>
         </div>
       </div>

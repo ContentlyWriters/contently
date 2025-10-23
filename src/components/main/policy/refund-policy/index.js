@@ -36,7 +36,7 @@ export default function RefundPolicyUI() {
             </div>
           ))}
           <div className="font-bold opacity-80 ">
-            Contentlywriters.com Refund Policy, Last Updated: April 2024.
+            Version 2.0. Last modified: November, 2025
           </div>
         </div>
       </div>
@@ -59,10 +59,8 @@ const data = {
           "You are eligible for a full refund if you cancel your order before a writer is assigned. Once a writer has been assigned, cancellations may be restricted, and refunds may be partial or not possible, depending on the level of completion. The following timeframes determine eligibility for a refund:",
           value: [
            
-            "14-Day Assignment Period: Cancel within 3 days of placing the order for a refund.",
-            "7-Day Assignment Period: Cancel within 2 days of placing the order for a refund.",
-            "3-Day Assignment Period: Cancel within 12 hours of placing the order for a refund.",
-            "1-Day Assignment Period: Orders with a 1-day assignment period are not eligible for cancellations or refunds due to the short timeframe.",
+            "Cancel within 3 days of placing the order for a refund.",
+
           
           ],
         },
@@ -76,7 +74,7 @@ const data = {
     {
       title: "Late Delivery",
       description:
-        "We aim to deliver every order by the agreed-upon deadline. However, if your assignment is delivered late, you may be eligible for a refund based on the length of the delay and its impact on your needs. Please contact our support team to address the issue and begin the refund process, if applicable.",
+        "We aim to deliver every order by the agreed-upon deadline. However, if your content is delivered late, you may be eligible for a refund based on the length of the delay and its impact on your needs. Please contact our support team to address the issue and begin the refund process, if applicable.",
     },
     {
       title: "Accidental Duplicate Orders",

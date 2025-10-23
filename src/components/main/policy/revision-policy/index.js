@@ -18,7 +18,7 @@ export default function RevisionPolicyUI() {
             </div>
           ))}
           <div className="font-bold opacity-80 ">
-          Contentlywriters.com Revision Policy, Last Updated: April 2024.
+          Version 2.0. Last modified: November, 2025
           </div>
         </div>
       </div>

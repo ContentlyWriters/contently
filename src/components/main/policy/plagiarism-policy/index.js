@@ -36,7 +36,7 @@ export default function PlagiarismPolicyUI() {
             </div>
           ))}
           <div className="font-bold opacity-80">
-            Contentlywriters.com Plagiarism Policy, Last Updated: April 2024.
+           Version 2.0. Last modified: November, 2025
           </div>
         </div>
       </div>
@@ -51,12 +51,12 @@ const data = {
     {
       title: "Original Content",
       description:
-        "We provide academic assignments crafted by our experts from scratch. These assignments are meant to be used as guides for developing your own essays or as sources of information when appropriately cited.",
+        "We provide content crafted by our experts from scratch. These content are meant to be used as guides for developing your own content or as sources of information when appropriately cited.",
     },
     {
       title: "Anti-Plagiarism Measures",
       description:
-        "To ensure the authenticity of our assignments, we employ advanced anti-plagiarism software. This software is regularly updated to identify similarities with online content or existing papers. Our tools are designed to detect various forms of plagiarism, including:",
+        "To ensure the authenticity of our content, we employ advanced anti-plagiarism software. This software is regularly updated to identify similarities with online content or existing papers. Our tools are designed to detect various forms of plagiarism, including:",
       other: [
         {
           value: [
@@ -75,7 +75,7 @@ const data = {
     {
       title: "Consequences of Plagiarism",
       description:
-        "Any plagiarism identified in our assignments is addressed promptly. Depending on the severity, consequences may include the suspension of access to our services or legal action if warranted.",
+        "Any plagiarism identified in our content is addressed promptly. Depending on the severity, consequences may include the suspension of access to our services or legal action if warranted.",
     },
     {
       title: "Reporting Plagiarism",

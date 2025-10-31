@@ -63,11 +63,22 @@ import img58 from "@/assets/image/blogImg58.jpg";
 import img59 from "@/assets/image/blogImg59.jpg";
 import img60 from "@/assets/image/blogImg60.jpg";
 import img61 from "@/assets/image/blogImg61.jpg";
+import img62 from "@/assets/image/blogImg62.jpg";
 
 
 const blogData = [
 
-  
+
+    
+  {
+    tag: "blog-60",
+    slug: "the-new-era-of-seo",
+    heading: "The New Era of SEO: How Smart Businesses Are Winning in 2025",
+    date: "October 31, 2025",
+    image: img62,
+    about:"If you still think of SEO as getting to position #1 on Google, clearly, the times are getting away from you. Online visibility has changed. Instead of going to a browser and searching, users are now retrieving information through AI-generated searching, voice search, or predictive browsing. Companies are going to need SEO plans that go beyond the keywords.",
+  },
+
   {
     tag: "blog-59",
     slug: "triple-threat-of-web-2025",

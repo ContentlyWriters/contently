@@ -95,7 +95,7 @@ const blogData = [
             <p>
            If you still think of SEO as getting to position #1 on Google, clearly, the times are getting away from you. Online visibility has changed. Instead of going to a browser and searching, users are now retrieving information through AI-generated searching, voice search, or predictive browsing. Companies are going to need SEO plans that go beyond the keywords.
             </p>
-            <p className="mt-2">Effective SEO requires technical accuracy, a content strategy, and AI-readiness so that the search engines will rank your website and people will find it anywhere on the internet. Let's take a look at what this modern format looks like.  </p>
+            <p className="mt-2">Effective SEO requires technical accuracy, a content strategy, and AI-readiness so that the search engines will rank your website and people will find it anywhere on the internet. Let&#39;s take a look at what this modern format looks like.  </p>
 
           </div>
         ),
@@ -116,7 +116,7 @@ const blogData = [
               
             </ul>
 
-        <p className="mt-2">Think of technical SEO as the plumbing of your site; you don't see it, but it is essential to make everything run smoothly.</p>
+        <p className="mt-2">Think of technical SEO as the plumbing of your site; you don&#39;t see it, but it is essential to make everything run smoothly.</p>
           </div> 
         ),
       },
@@ -128,11 +128,11 @@ const blogData = [
           <div>
         <p>Once your site is up and running technically, you move on to on-page SEO, which is basically optimizing each page for maximum effectiveness.</p>
         <p className="mt-2">The most important thing? Balance. Search engines must be able to read your pages, but they also have to be human-feeling to readers.</p>
-        <p className="mt-2">Here's what that means:</p>
+        <p className="mt-2">Here&#39;s what that means:</p>
         <ul className="ml-8 list-disc">
               <li><strong>Recognizing search intent:</strong> Yes, instead of guessing keywords, you will now attempt to match the whys behind every search.</li>
               <li><strong>Optimizing titles, meta descriptions, and headers:</strong> Keep them feeling natural, engaging, and transparent, with the goal of getting them to click and providing context.</li>
-              <li><strong>Content structure:</strong> Logical headings (H1, H2, H3), short paragraphs, bullet points, so it's easy to read.</li>
+              <li><strong>Content structure:</strong> Logical headings (H1, H2, H3), short paragraphs, bullet points, so it&#39;s easy to read.</li>
               <li><strong>Internal linking:</strong> Linking visitors from one topic to another on your site helps with flow and reinforces SEO signals.</li>
               <li><strong>Engagement first writing:</strong> Ensure your copy appeals to a connection both emotionally and intellectually. If you can do that, people will want to stay.</li>
 
@@ -152,7 +152,7 @@ const blogData = [
         title1: "3. Off-Page SEO: Building Authority Beyond Your Website",
         about: (
           <div>
-        <p>You could have the best website out there, but if nobody talks about your site, you probably won't be able to reach anyone. Off-page SEO is what we generally call strategies designed to build your reputation and credibility across the web.</p>
+        <p>You could have the best website out there, but if nobody talks about your site, you probably won&#39;t be able to reach anyone. Off-page SEO is what we generally call strategies designed to build your reputation and credibility across the web.</p>
        
         <p className="mt-2">What works best:</p>
         <ul className="ml-8 list-disc">
@@ -194,15 +194,15 @@ const blogData = [
         about: (
           <div>
           
-          <p>Effective SEO isn't just about doing the work; it's about demonstrating results transparently as well!</p>
+          <p>Effective SEO isn&#39;t just about doing the work; it&#39;s about demonstrating results transparently as well!</p>
           <p className="mt-2">An effective SEO proposal must include:</p>
 
           <ul className="ml-8 list-disc">
-           <li><strong>Transparent deliverables:</strong> Reporting on rankings, clicks, leads, conversions, etc, not "good" results based on nothing.</li>
-             <li><strong>Customized strategies:</strong> Every business is different. Your SEO approach needs to complement your business goals vs a generic plan "in case."</li>
+           <li><strong>Transparent deliverables:</strong> Reporting on rankings, clicks, leads, conversions, etc, not &#34;good&#34; results based on nothing.</li>
+             <li><strong>Customized strategies:</strong> Every business is different. Your SEO approach needs to complement your business goals vs a generic plan &#34;in case.&#34;</li>
             <li><strong>Affordable scaling:</strong> SEO should not break your bank. Effective, stepwise optimization can help achieve long-lasting profitability without it needing to be massive.</li>
            </ul>
-            <p className="mt-2">In short, transparency simply means that you always know what we are implementing, why, and how it's helping your business grow.</p>
+            <p className="mt-2">In short, transparency simply means that you always know what we are implementing, why, and how it&#39;s helping your business grow.</p>
        
           </div> 
         ),

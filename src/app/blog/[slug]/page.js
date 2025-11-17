@@ -94,9 +94,9 @@ const blogData = [
         about: (
           <div>
             <p>
-          SEO used to be simple. Sprinkle some keywords everywhere like confetti at a New Year's party, and boom, you'd show up on page one.
+          SEO used to be simple. Sprinkle some keywords everywhere like confetti at a New Year&#39;s party, and boom, you&#39;d show up on page one.
             </p>
-            <p className="mt-2">Fast forward to today, and Google's basically turned into that friend who asks way too many questions before putting in a good word for a restaurant. It's no longer enough that the food is good. Google wants to know the chef's background, their training, and whether they've actually tasted what they're serving, essentially their credentials. That's where E-E-A-T comes in: Experience, Expertise, Authoritativeness, and Trustworthiness. Think of it as Google's lie detector, and trust me, it's working overtime. If you're still creating content the old way, you might as well be discreet. </p>
+            <p className="mt-2">Fast forward to today, and Google&#39;s basically turned into that friend who asks way too many questions before putting in a good word for a restaurant. It&#39;s no longer enough that the food is good. Google wants to know the chef&#39;s background, their training, and whether they&#39;ve actually tasted what they&#39;re serving, essentially their credentials. That&#39;s where E-E-A-T comes in: Experience, Expertise, Authoritativeness, and Trustworthiness. Think of it as Google&#39;s lie detector, and trust me, it&#39;s working overtime. If you&#39;re still creating content the old way, you might as well be discreet. </p>
 
           </div>
         ),
@@ -113,30 +113,30 @@ const blogData = [
                 target="_blank"
                 rel="noopener noreferrer">professional SEO services in the USA</a> because they struggle to maintain online visibility.</p>
          
-         <p className="mt-2">E-E-A-T isn't some complicated tweak. It's Google asking a simple question: "Is this a reliable source of advice?" And honestly, that's understandable.</p>
+         <p className="mt-2">E-E-A-T isn&#39;t some complicated tweak. It&#39;s Google asking a simple question: &#34;Is this a reliable source of advice?&#34; And honestly, that&#39;s understandable.</p>
         
         <p className="mt-2">Let me break down what each letter means in plain English:</p>
         
         <h4 className="font-bold mt-2">Experience</h4>
-        <p>Google's "Experience" factor (added in late 2022) assesses whether the content creator has first-hand, real-world involvement with the topic. In essence, the search engine wants proof that you have lived the subject matter you're discussing.</p>
+        <p>Google&#39;s &#34;Experience&#34; factor (added in late 2022) assesses whether the content creator has first-hand, real-world involvement with the topic. In essence, the search engine wants proof that you have lived the subject matter you&#39;re discussing.</p>
 
         <h4 className="font-bold mt-2">Expertise</h4>
-        <p> Is your expertise sufficient to support your claims? Possessing a degree, relevant certifications, or extensive practical experience matters; simply completing a brief course won't suffice as proof of true subject matter knowledge.
+        <p> Is your expertise sufficient to support your claims? Possessing a degree, relevant certifications, or extensive practical experience matters; simply completing a brief course won&#39;t suffice as proof of true subject matter knowledge.
         </p>
 
         <h4 className="font-bold mt-2">Authoritativeness</h4>
-        <p>Building a strong reputation is key to becoming a recognized authority in your field. Are you the first person who comes to colleagues' minds when they need advice? Does your work frequently get cited or linked to by other reliable sources?
+        <p>Building a strong reputation is key to becoming a recognized authority in your field. Are you the first person who comes to colleagues&#39; minds when they need advice? Does your work frequently get cited or linked to by other reliable sources?
         </p>
 
         <h4 className="font-bold mt-2">Trustworthiness</h4>
         <p> This principle is the cornerstone of any relationship, demanding that individuals believe in the integrity and truthfulness of your statements and actions. Misplace that trust, and you are left with nothing of value.
          </p>
 
-        <p className="mt-2">Let me paint you a picture of why this actually matters. There was this blogger, let's call her Sarah, who had built a solid health and wellness site. Traffic was great, engagement was solid, life was good. Then August 2018 rolled around with Google's "Medic Update," and overnight, her site lost 60% of its traffic. Brutal, right?</p>
+        <p className="mt-2">Let me paint you a picture of why this actually matters. There was this blogger, let&#39;s call her Sarah, who had built a solid health and wellness site. Traffic was great, engagement was solid, life was good. Then August 2018 rolled around with Google&#39;s &#34;Medic Update,&#34; and overnight, her site lost 60% of its traffic. Brutal, right?</p>
 
         <p className="mt-2">Meanwhile, her competitor, who had been quietly publishing content written by actual registered dietitians and certified health coaches, suddenly skyrocketed to the top. Same topics, similar quality writing, but one major difference: credentials. Google had started caring less about what was being said and more about who was saying it.</p>
 
-        <p className="mt-2">The lesson? In today's search landscape, your byline matters just as much as your headline.</p>
+        <p className="mt-2">The lesson? In today&#39;s search landscape, your byline matters just as much as your headline.</p>
           </div> 
         ),
       },
@@ -148,21 +148,21 @@ const blogData = [
           <div>
           <h4 className="font-bold mt-2">1. Experience: Stop Talking Theory, Start Sharing Reality</h4>
 
-        <p>Look, anyone can write "Here are five tips for better email marketing." But that doesn't tell me anything about whether those tips actually work. It's the difference between someone reading a cookbook and someone who's burned their fair share of dinners before finally nailing the recipe.</p>
-        <p className="mt-1">Here's what showing real experience looks like: Instead of writing generic fluff like "Abandoned cart emails can boost sales," try something like this: "Last quarter, we tested a three-email sequence for an online bookstore. The first email went out one hour after cart abandonment, with a gentle reminder, and a second hit at 24 hours with customer reviews of the abandoned items. The third came at 72 hours with a small discount. Result? Cart recovery jumped from 12% to 28%, and we generated an extra $43,000 in revenue."</p>
+        <p>Look, anyone can write &#34;Here are five tips for better email marketing.&#34; But that doesn&#39;t tell me anything about whether those tips actually work. It&#39;s the difference between someone reading a cookbook and someone who&#39;s burned their fair share of dinners before finally nailing the recipe.</p>
+        <p className="mt-1">Here&#39;s what showing real experience looks like: Instead of writing generic fluff like &#34;Abandoned cart emails can boost sales,&#34; try something like this: &#34;Last quarter, we tested a three-email sequence for an online bookstore. The first email went out one hour after cart abandonment, with a gentle reminder, and a second hit at 24 hours with customer reviews of the abandoned items. The third came at 72 hours with a small discount. Result? Cart recovery jumped from 12% to 28%, and we generated an extra $43,000 in revenue.&#34;</p>
         <p className="mt-1">See the difference? One is a textbook. The other is lived experience with the bumps, bruises, and victories that come with it.</p>
-        <p className="mt-1"><strong> Here's how to inject real experience into your content:</strong></p>
+        <p className="mt-1"><strong> Here&#39;s how to inject real experience into your content:</strong></p>
 
-        <p className="mt-1">Talk about the messy middle. Share the time you thought you had a brilliant idea that completely flopped. I once spent three weeks building an entire content campaign around a product launch, only to realize we'd targeted the wrong audience entirely. We pivoted in 48 hours, learned a ton, and the next campaign crushed it. Those stories? Gold.</p>
+        <p className="mt-1">Talk about the messy middle. Share the time you thought you had a brilliant idea that completely flopped. I once spent three weeks building an entire content campaign around a product launch, only to realize we&#39;d targeted the wrong audience entirely. We pivoted in 48 hours, learned a ton, and the next campaign crushed it. Those stories? Gold.</p>
 
-        <p className="mt-1">Show your receipts. Screenshots, before-and-after comparisons, data dashboards, client testimonials, these aren't just nice-to-haves anymore. They're proof you've been in the arena, not just watching from the stands.</p>
+        <p className="mt-1">Show your receipts. Screenshots, before-and-after comparisons, data dashboards, client testimonials, these aren&#39;t just nice-to-haves anymore. They&#39;re proof you&#39;ve been in the arena, not just watching from the stands.</p>
         
-        <p className="mt-1">Get personal with your language. Don't be afraid to write "we tried" or "in my experience" or even "I completely screwed this up." It makes you human, and humans trust other humans who've walked the path before them.</p>
+        <p className="mt-1">Get personal with your language. Don&#39;t be afraid to write &#34;we tried&#34; or &#34;in my experience&#34; or even &#34;I completely screwed this up.&#34; It makes you human, and humans trust other humans who&#39;ve walked the path before them.</p>
        
-       <p className="mt-1">Document your process visually. If you're teaching someone how to optimize a landing page, show photos of your actual workspace, screen recordings of your workflow, or time-lapse videos of the project coming together. It's not about fancy production, it's about authenticity</p>
+       <p className="mt-1">Document your process visually. If you&#39;re teaching someone how to optimize a landing page, show photos of your actual workspace, screen recordings of your workflow, or time-lapse videos of the project coming together. It&#39;s not about fancy production, it&#39;s about authenticity</p>
         
       <h4 className="font-bold mt-2">2. Expertise: Become the Go-To Guru</h4>
-        <p>Think about how Neil Patel became synonymous with digital marketing. He didn't write one viral post and disappear. He showed up consistently with comprehensive, in-depth content for years.</p>
+        <p>Think about how Neil Patel became synonymous with digital marketing. He didn&#39;t write one viral post and disappear. He showed up consistently with comprehensive, in-depth content for years.</p>
         
         <p className="mt-1"><strong>Build expertise fast:</strong></p>
 
@@ -176,11 +176,11 @@ const blogData = [
         <p className="mt-1"><strong>Action item:</strong> Have each team member identify their niche expertise area, then dominate that specific space with content.</p>
         
       <h4 className="font-bold mt-2">3. Authoritativeness: Build Your Reputation Empire</h4>
-      <p>Authority is expertise meets visibility. Rand Fishkin built Moz's authority with "Whiteboard Friday" videos, just him, a whiteboard, and genuine knowledge-sharing. No fancy production, just consistent value.</p>
+      <p>Authority is expertise meets visibility. Rand Fishkin built Moz&#39;s authority with &#34;Whiteboard Friday&#34; videos, just him, a whiteboard, and genuine knowledge-sharing. No fancy production, just consistent value.</p>
       <p className="mt-1"><strong>How to build authority:</strong></p>
          <ul className="ml-8 list-disc">
          <li>Get featured on reputable sites (Forbes, Entrepreneur, industry publications)</li>
-         <li>Build team members' personal brands on LinkedIn</li>
+         <li>Build team members&#39; personal brands on LinkedIn</li>
          <li>Showcase testimonials and case studies prominently</li>
          <li>Collaborate with other industry leaders</li>
          <li>Earn awards and recognition</li>
@@ -217,7 +217,7 @@ const blogData = [
         title: "Your 7-Step Action Plan",
         about: (
           <div>
-        <p><strong>Step 1:</strong> Audit Your Current State. Check if you have author bios with credentials, qualified writers, easy-to-verify information, and comprehensive "About Us" pages. Be brutally honest.
+        <p><strong>Step 1:</strong> Audit Your Current State. Check if you have author bios with credentials, qualified writers, easy-to-verify information, and comprehensive &#34;About Us&#34; pages. Be brutally honest.
            Most small brands miss crucial ranking factors that truly matter. That’s why we follow a proven framework similar to our <a
                 href="http://contentlywriters.com/blog/seo-checklist-for-small-business"
                 class="text-[#5b6cf2] underline hover:no-underline"
@@ -247,7 +247,7 @@ const blogData = [
         title: "Real Success: The Healthline Story",
         about: (
           <div>
-        <p>Healthline invested heavily in having medical professionals review all content with detailed credential displays and strict editorial guidelines. The result? They became one of the most visible health sites on Google, consistently outranking competitors with better domain authority but weaker E-E-A-T signals. Their secret wasn't more content; it was better, more trustworthy content from verifiable experts.</p>
+        <p>Healthline invested heavily in having medical professionals review all content with detailed credential displays and strict editorial guidelines. The result? They became one of the most visible health sites on Google, consistently outranking competitors with better domain authority but weaker E-E-A-T signals. Their secret wasn&#39;t more content; it was better, more trustworthy content from verifiable experts.</p>
        
           </div> 
         ),
@@ -259,15 +259,15 @@ const blogData = [
         about: (
           <div>
           
-          <p>E-E-A-T isn't about gaming the system; it's about genuinely becoming the authoritative, trustworthy source in your space. Google's algorithms can now detect the difference between genuine expertise and cleverly written fluff.</p>
+          <p>E-E-A-T isn&#39;t about gaming the system; it&#39;s about genuinely becoming the authoritative, trustworthy source in your space. Google&#39;s algorithms can now detect the difference between genuine expertise and cleverly written fluff.</p>
           <p className="mt-2"><strong>Your next steps:</strong></p>
 
           <p className="mt-2"><strong>This weak:</strong>Audit your top 10 pages, update author bios, check all sources</p>
           <p className="mt-2"><strong>This month:</strong>Add schema markup, create comprehensive profiles, and establish editorial review</p>
           <p className="mt-2"><strong>This quarter:</strong>Pursue guest posts, secure speaking gigs, and create original research</p>
           <p className="mt-2"><strong>This year:</strong> Make E-E-A-T core to your content culture, invest in team education, and become the resource others cite</p>
-            <p className="mt-2">Remember, Rome wasn't built in a day, and neither is online authority. But every quality piece, every credential added, every bit of original research is a brick in your E-E-A-T foundation.</p>
-            <p className="mt-2">The brands that will dominate search results aren't the ones with the biggest SEO budgets; they're the ones with the most credible experts creating the most trustworthy content.</p>
+            <p className="mt-2">Remember, Rome wasn&#39;t built in a day, and neither is online authority. But every quality piece, every credential added, every bit of original research is a brick in your E-E-A-T foundation.</p>
+            <p className="mt-2">The brands that will dominate search results aren&#39;t the ones with the biggest SEO budgets; they&#39;re the ones with the most credible experts creating the most trustworthy content.</p>
           <p className="mt-2">Ready to scale your brand with strategies that actually convert? Let’s work together and create powerful content that strengthens your online presence. Partner with the <a
                 href="https://www.contentlywriters.com/"
                 class="text-[#5b6cf2] underline hover:no-underline"

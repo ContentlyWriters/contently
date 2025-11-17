@@ -64,12 +64,22 @@ import img59 from "@/assets/image/blogImg59.jpg";
 import img60 from "@/assets/image/blogImg60.jpg";
 import img61 from "@/assets/image/blogImg61.jpg";
 import img62 from "@/assets/image/blogImg62.jpg";
+import img63 from "@/assets/image/blogImg63.jpg";
 
 
 const blogData = [
 
 
     
+  {
+    tag: "blog-61",
+    slug: "google-e-e-a-t-guide",
+    heading: "Google E-E-A-T Guide: How to Build Expertise and Trust in 2025",
+    date: "November 17, 2025",
+    image: img63,
+    about:"SEO used to be simple. Sprinkle some keywords everywhere like confetti at a New Year's party, and boom, you'd show up on page one.",
+  },
+ 
   {
     tag: "blog-60",
     slug: "the-new-era-of-seo",

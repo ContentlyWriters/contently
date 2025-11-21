@@ -101,7 +101,7 @@ const blogData = [
             <p>
            Ever wondered what separates mediocre content from pieces that genuinely connect with audiences and rank on search engines? The answer lies not just in writing talent, but in a systematic content quality control process that transforms rough drafts into polished, results-driven content.
             </p>
-            <p className="mt-2">At our core, we believe transparency builds trust. That's why we're pulling back the curtain on our comprehensive 7-step content quality control process the framework that ensures every piece of content we deliver meets the highest standards while remaining part of our affordable content writing services.</p>
+            <p className="mt-2">At our core, we believe transparency builds trust. That&#39;s why we&#39;re pulling back the curtain on our comprehensive 7-step content quality control process the framework that ensures every piece of content we deliver meets the highest standards while remaining part of our affordable content writing services.</p>
 
           </div>
         ),
@@ -116,7 +116,7 @@ const blogData = [
         
         <h4 className="font-bold mt-2">Step 1: Strategic Keyword Research and Content Planning</h4>
 
-        <p>Quality content begins long before a single word hits the page. Our SEO experts start by diving deep into keyword research, competitor analysis, and audience intent mapping. We don't just identify what people are searching for; we understand why they're searching and what they need to find.</p>
+        <p>Quality content begins long before a single word hits the page. Our SEO experts start by diving deep into keyword research, competitor analysis, and audience intent mapping. We don&#39;t just identify what people are searching for; we understand why they&#39;re searching and what they need to find.</p>
         <p className="mt-1">This foundation phase includes analyzing search volume, keyword difficulty, and user intent to create a content blueprint that aligns with your business goals. Our SEO team maps out primary and secondary keywords, identifies related questions your audience is asking, and structures a comprehensive strategy. This detailed keyword package is then handed off to our professional content writers, ensuring they have a clear roadmap for creating content that performs.</p>
       
         <h4 className="font-bold mt-2">Step 2: Expert Writer Assignment and Briefing</h4>
@@ -145,13 +145,13 @@ const blogData = [
 
         <p>Before any content reaches the editing stage, our SEO specialists review it against a comprehensive checklist.</p>
         <p className="mt-1">They verify keyword placement and density, assess content structure and header hierarchy, check meta descriptions and title tags, evaluate internal and external linking opportunities, and ensure proper image alt text and formatting.</p>
-        <p className="mt-1">This technical review catches issues that might otherwise slip through. It's where we ensure your website content writing services deliver content that's not just well-written but also search engine-friendly. We optimize without over-optimizing, maintaining that delicate balance between human readability and algorithmic favor.</p>
+        <p className="mt-1">This technical review catches issues that might otherwise slip through. It&#39;s where we ensure your website content writing services deliver content that&#39;s not just well-written but also search engine-friendly. We optimize without over-optimizing, maintaining that delicate balance between human readability and algorithmic favor.</p>
       
         <h4 className="font-bold mt-2">Step 5: Editorial Review for Accuracy and Engagement</h4>
 
         <p>Next comes the editorial review, where content moves from good to great. Our editors scrutinize every sentence for clarity, accuracy, and engagement. They verify facts, strengthen weak arguments, eliminate redundancies, and ensure the content delivers on its promise to readers.</p>
         <p className="mt-1">This stage also includes a thorough grammar and style check. While tools can catch obvious errors, experienced editors catch nuances that automated systems miss: awkward phrasing, logical inconsistencies, and opportunities to make content more compelling.</p>
-        <p className="mt-1">It's this human touch that elevates our work beyond what budget content mills can deliver.</p>
+        <p className="mt-1">It&#39;s this human touch that elevates our work beyond what budget content mills can deliver.</p>
 
         <h4 className="font-bold mt-2">Step 6: Quality Assurance and Plagiarism Verification</h4>
 
@@ -166,7 +166,7 @@ const blogData = [
                 href="https://www.contentlywriters.com/service/content-writing"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">professional content writers</a> approach revisions collaboratively, not defensively. Whether you need minor tweaks or substantial changes, we're committed to refining the content until it perfectly represents your brand voice and meets your objectives.</p>
+                rel="noopener noreferrer">professional content writers</a> approach revisions collaboratively, not defensively. Whether you need minor tweaks or substantial changes, we&#39;re committed to refining the content until it perfectly represents your brand voice and meets your objectives.</p>
         <p className="mt-1">Most clients find that our thorough internal process means minimal revisions are needed, but we're always ready to go the extra mile.</p>
 
           </div> 
@@ -186,13 +186,13 @@ const blogData = [
 
 
 
-          <p className="mt-2">Every piece of content that leaves our team has been researched, written, optimized, edited, and verified through multiple checkpoints. It's this unwavering commitment to quality that sets us apart in a crowded market.</p>
+          <p className="mt-2">Every piece of content that leaves our team has been researched, written, optimized, edited, and verified through multiple checkpoints. It&#39;s this unwavering commitment to quality that sets us apart in a crowded market.</p>
        
           <p className="mt-2">Ready to experience the difference that a systematic approach to content creation can make? Partner with a <a
                 href="https://www.contentlywriters.com/"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">content writing company</a> that treats your content with the care and attention it deserves. Contact us today to discuss your content needs and discover how our proven process can elevate your brand's online presence.</p>
+                rel="noopener noreferrer">content writing company</a> that treats your content with the care and attention it deserves. Contact us today to discuss your content needs and discover how our proven process can elevate your brand&#39;s online presence.</p>
          
           </div>
         ),

@@ -65,12 +65,24 @@ import img60 from "@/assets/image/blogImg60.jpg";
 import img61 from "@/assets/image/blogImg61.jpg";
 import img62 from "@/assets/image/blogImg62.jpg";
 import img63 from "@/assets/image/blogImg63.jpg";
+import img64 from "@/assets/image/blogImg64.jpg";
 
 
 const blogData = [
 
 
     
+  {
+    tag: "blog-62",
+    slug: "our-7-step-content-quality-control",
+    heading: "How Our 7-Step Content Quality Control Process Works",
+    date: "November 21, 2025",
+    image: img64,
+    about:"Ever wondered what separates mediocre content from pieces that genuinely connect with audiences and rank on search engines? The answer lies not just in writing talent, but in a systematic content quality control process that transforms rough drafts into polished, results-driven content.",
+  },
+ 
+  
+
   {
     tag: "blog-61",
     slug: "google-e-e-a-t-guide",

@@ -167,7 +167,7 @@ const blogData = [
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
                 rel="noopener noreferrer">professional content writers</a> approach revisions collaboratively, not defensively. Whether you need minor tweaks or substantial changes, we&#39;re committed to refining the content until it perfectly represents your brand voice and meets your objectives.</p>
-        <p className="mt-1">Most clients find that our thorough internal process means minimal revisions are needed, but we're always ready to go the extra mile.</p>
+        <p className="mt-1">Most clients find that our thorough internal process means minimal revisions are needed, but we&#39;re always ready to go the extra mile.</p>
 
           </div> 
         ),

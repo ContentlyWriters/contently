@@ -66,12 +66,24 @@ import img61 from "@/assets/image/blogImg61.jpg";
 import img62 from "@/assets/image/blogImg62.jpg";
 import img63 from "@/assets/image/blogImg63.jpg";
 import img64 from "@/assets/image/blogImg64.jpg";
+import img65 from "@/assets/image/blogImg65.jpg";
 
 
 const blogData = [
 
 
     
+  {
+    tag: "blog-63",
+    slug: "how-much-should-a-1500-word-seo-blog-post-cost",
+    heading: "How Much Should a 1,500-Word SEO Blog Post Cost? An Agency Pricing Breakdown",
+    date: "November 24, 2025",
+    image: img65,
+    about:"I remember the day Sarah, a small business owner from Austin, asked me this exact question over coffee. Her startup was struggling to get organic traffic, and she'd been quoted prices ranging from $50 to $500 for a single blog post. Confused and skeptical, she did what most business owners do: she scrolled through search results looking for answers. Today, that's probably you, too.",
+  },
+ 
+  
+
   {
     tag: "blog-62",
     slug: "our-7-step-content-quality-control",

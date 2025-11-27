@@ -14,7 +14,7 @@ export default function Testimonials() {
     {
       name: "David M., Chicago, USA",
       rating: 5,
-      text: "Their SEO team helped my blog rank on Google within weeks. Super impressed with their strategy and support — affordable SEO that actually works!",
+      text: "Their SEO team helped my blog rank on Google within weeks. Super impressed with their strategy and support, affordable SEO that actually works!",
     },
     {
       name: "Sophia L., Los Angeles, USA",
@@ -44,7 +44,7 @@ export default function Testimonials() {
     {
       name: "Liam W., Boston, USA",
       rating: 5,
-      text: "I reached out for help with a research paper and ended up using their content team for my business site too. Great service on both fronts — academic and professional!",
+      text: "I reached out for help with a research paper and ended up using their content team for my business site too. Great service on both fronts; academic and professional!",
     },
   ];
 
@@ -95,7 +95,7 @@ export default function Testimonials() {
         {/* CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-black mb-4">
-            Send us your enquiry — we’ll connect with you right away
+            Send us your enquiry and we’ll connect with you right away
           </p>
             <Link href="/contact" passHref>
          <motion.button whileHover={{ boxShadow: "0 0 20px rgba(91,108,242,0.8), 0 0 40px rgba(255,255,255,0.6)", }} transition={{ type: "spring", stiffness: 250, damping: 12 }}  className="relative px-4 py-2 rounded-full font-semibold text-white text-lg bg-[#5b6cf2] overflow-hidden group" > {/* 🔥 Border Line */} <span className="absolute inset-0 rounded-full border-2 border-transparent animate-electric bg-[linear-gradient(90deg,#5b6cf2,#00c6ff,#5b6cf2)] bg-[length:300%_300%] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] [mask-composite:exclude] p-[2px]"> </span> {/* Button Text */} <span className="relative ">Talk to Us Today</span> {/* Lightning Hover Flash */} <span className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 bg-[radial-gradient(circle,rgba(255,255,255,0.4)_0%,transparent_70%)] animate-lightning"></span> </motion.button></Link>

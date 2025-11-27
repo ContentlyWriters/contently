@@ -31,7 +31,7 @@ export default function GrowthPartner() {
             <span className="bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] bg-clip-text text-transparent">
               Your Growth Partner
             </span>{" "}
-            — Reliable & Low-Cost SEO Company USA
+            Reliable & Low-Cost SEO Company USA
           </h3>
 
           <p className="mt-6 text-lg text-gray-700">
@@ -44,7 +44,7 @@ export default function GrowthPartner() {
           <p className="mt-4 text-lg text-gray-700">
             Among all search engine optimization companies in USA, we prioritize
             transparency, strategy, and results. Partner with a result-driven
-            SEO company USA that works smart — and fast.
+            SEO company USA that works smart and fast.
           </p>
         </motion.div>
 
@@ -63,8 +63,8 @@ export default function GrowthPartner() {
           <div className="space-y-4">
             {[
               "Full-suite SEO from audits to link-building",
-              "Our SEO company in USA is among the best — focused on real rankings",
-              "Watch your traffic and leads grow — without blowing your budget",
+              "Our SEO company in USA is among the best and focused on real rankings",
+              "Watch your traffic and leads grow; without blowing your budget",
             ].map((feature, index) => (
               <motion.div
                 key={index}

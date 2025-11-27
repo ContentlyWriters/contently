@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
           className="mt-6 text-lg text-black max-w-3xl mx-auto text-center"
         >
           Why Choose Us As Your Content Writing Company? <br />
-          We&#39;re not just another agency — we&#39;re storytellers who craft your brand&#39;s voice.
+          We&#39;re not just another agency; we&#39;re storytellers who craft your brand&#39;s voice.
         </motion.p>
 
         {/* Features List */}

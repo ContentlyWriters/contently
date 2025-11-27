@@ -212,9 +212,9 @@ export default function Footer() {
         {/* Disclaimer */}
         <div className="mt-10 border-t border-black pt-6 text-sm text-black">
           <p className="mb-1 font-semibold">Disclaimer</p>
-          <p>Our materials are designed to support you in conducting research and completing your</p>
-          <p>assignments independently. It is important to utilize them only with appropriate</p>
-          <p>references and citations to maintain academic integrity.</p>
+          <p>Contently Writers provides content writing, SEO, and academic writing support to improve the</p>
+          <p>quality and structure of your work. All material is for reference use only. Clients must</p>
+          <p>ensure proper citations and comply with academic integrity policies.</p>
         </div>
 
         {/* Copyright */}

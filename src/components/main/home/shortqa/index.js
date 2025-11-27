@@ -10,7 +10,7 @@ const questions = [
   },
   {
     q: "What can you help with?",
-    a: "Essays, research papers, reports — you name it. Our assignment helper team covers it all.",
+    a: "Essays, research papers, reports, you name it. Our assignment helper team covers it all.",
   },
   {
     q: "Is it original? Will it pass SafeAssign?",
@@ -33,7 +33,7 @@ export default function FuturisticQA() {
       <div className="relative max-w-4xl mx-auto text-center">
         {/* Title */}
         <h3 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-[#5b6cf2] to-[#00c6ff] bg-clip-text text-transparent">
-          A+ Work Starts Here — Your Go-To Assignment Writing Service
+          A+ Work Starts Here; Your Go-To Assignment Writing Service
         </h3>
 
         {/* Sub-title */}

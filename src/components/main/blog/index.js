@@ -63,11 +63,56 @@ import img58 from "@/assets/image/blogImg58.jpg";
 import img59 from "@/assets/image/blogImg59.jpg";
 import img60 from "@/assets/image/blogImg60.jpg";
 import img61 from "@/assets/image/blogImg61.jpg";
+import img62 from "@/assets/image/blogImg62.jpg";
+import img63 from "@/assets/image/blogImg63.jpg";
+import img64 from "@/assets/image/blogImg64.jpg";
+import img65 from "@/assets/image/blogImg65.jpg";
 
 
 const blogData = [
 
+
+    
+  {
+    tag: "blog-63",
+    slug: "how-much-should-a-1500-word-seo-blog-post-cost",
+    heading: "How Much Should a 1,500-Word SEO Blog Post Cost? An Agency Pricing Breakdown",
+    date: "November 24, 2025",
+    image: img65,
+    about:"I remember the day Sarah, a small business owner from Austin, asked me this exact question over coffee. Her startup was struggling to get organic traffic, and she'd been quoted prices ranging from $50 to $500 for a single blog post. Confused and skeptical, she did what most business owners do: she scrolled through search results looking for answers. Today, that's probably you, too.",
+  },
+ 
   
+
+  {
+    tag: "blog-62",
+    slug: "our-7-step-content-quality-control",
+    heading: "How Our 7-Step Content Quality Control Process Works",
+    date: "November 21, 2025",
+    image: img64,
+    about:"Ever wondered what separates mediocre content from pieces that genuinely connect with audiences and rank on search engines? The answer lies not just in writing talent, but in a systematic content quality control process that transforms rough drafts into polished, results-driven content.",
+  },
+ 
+  
+
+  {
+    tag: "blog-61",
+    slug: "google-e-e-a-t-guide",
+    heading: "Google E-E-A-T Guide: How to Build Expertise and Trust in 2025",
+    date: "November 17, 2025",
+    image: img63,
+    about:"SEO used to be simple. Sprinkle some keywords everywhere like confetti at a New Year's party, and boom, you'd show up on page one.",
+  },
+ 
+  {
+    tag: "blog-60",
+    slug: "the-new-era-of-seo",
+    heading: "The New Era of SEO: How Smart Businesses Are Winning in 2025",
+    date: "October 31, 2025",
+    image: img62,
+    about:"If you still think of SEO as getting to position #1 on Google, clearly, the times are getting away from you. Online visibility has changed. Instead of going to a browser and searching, users are now retrieving information through AI-generated searching, voice search, or predictive browsing. Companies are going to need SEO plans that go beyond the keywords.",
+  },
+
   {
     tag: "blog-59",
     slug: "triple-threat-of-web-2025",

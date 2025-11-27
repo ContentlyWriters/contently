@@ -61,7 +61,7 @@ export default function PrivacyPolicyUI() {
           ))}
          
           <div className="font-bold opacity-80 ">
-            Contentlywriters.com Privacy Policy, Last Updated: April 2024.
+            Version 2.0. Last modified: November, 2025
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@ const data = {
             "- User's email address.",
             "- Account Password.",
             "- Order details.",
-            "- Additional files uploaded by you to our website.",
+            
           ],
         },
         
@@ -129,8 +129,7 @@ const data = {
       title: "Ways of Giving Information",
       value: [
         "You may offer us information about yourself with your consent, for example:",
-        "- Fill out a form or contact us via email.",
-        "- Posting an order on the website.",
+        "- Fill out a contact form or contact us via email.",
         "- Posting reviews and feedback on the website.",
         "- Contacting us via our phone numbers.",
         "This information could be personal, financial, educational, or about your order.",
@@ -188,7 +187,7 @@ const data = {
     {
       title: "Where We Store Your Personal Data?",
       value: [
-        "We mostly keep your personal information in Amazon Web Services.We assure you that all of your data is securely protected and that unauthorized parties will not have access to it.",
+        "We mostly keep your personal information in Backend Server. We assure you that all of your data is securely protected and that unauthorized parties will not have access to it.",
       ],
     
        subItems: [

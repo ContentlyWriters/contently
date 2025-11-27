@@ -11,6 +11,8 @@ export async function generateSitemap() {
     { loc: "/refund-policy", lastmod: "2024-11-26", priority: 0.6 },
     { loc: "/revision-policy", lastmod: "2024-11-26", priority: 0.6 },
     { loc: "/plagiarism-policy", lastmod: "2024-11-26", priority: 0.6 },
+    { loc: "/service/content-writing", lastmod: "2024-11-26", priority: 0.8 },
+    { loc: "/service/seo", lastmod: "2024-11-26", priority: 0.8 },
   ];
 
   const dynamicUrls = [

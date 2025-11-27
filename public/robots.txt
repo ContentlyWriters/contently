@@ -1,13 +1,13 @@
+
 # Disallow crawling
 User-agent: *
 Disallow: /login
-Disallow: /sign-up
-Disallow: /dashboard
 Disallow: /privacy-policy
 Disallow: /terms-and-conditions
 Disallow: /refund-policy
 Disallow: /revision-policy
 Disallow: /plagiarism-policy
+
 
 # Allow crawling 
 Allow: /service/
@@ -16,6 +16,8 @@ Allow: /blog/
 Allow: /
 Allow: /contact
 Allow: /about
+Allow: /service/seo
+Allow: /service/content-writing
 
 # Disallow access to potentially private sections
 Disallow: /admin/

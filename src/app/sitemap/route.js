@@ -4,15 +4,15 @@ export async function generateSitemap() {
   
   const staticUrls = [
     { loc: "/", lastmod: "2024-11-26", priority: 1.0 },
-    { loc: "/about", lastmod: "2024-11-26", priority: 0.7 },
-    { loc: "/contact", lastmod: "2024-11-26", priority: 0.7 },
+    { loc: "/about", lastmod: "2024-11-26", priority: 0.8 },
+    { loc: "/contact", lastmod: "2024-11-26", priority: 0.8 },
     { loc: "/privacy-policy", lastmod: "2024-11-26", priority: 0.6 },
     { loc: "/terms-and-conditions", lastmod: "2024-11-26", priority: 0.6 },
     { loc: "/refund-policy", lastmod: "2024-11-26", priority: 0.6 },
     { loc: "/revision-policy", lastmod: "2024-11-26", priority: 0.6 },
     { loc: "/plagiarism-policy", lastmod: "2024-11-26", priority: 0.6 },
-    { loc: "/service/content-writing", lastmod: "2024-11-26", priority: 0.8 },
-    { loc: "/service/seo", lastmod: "2024-11-26", priority: 0.8 },
+    { loc: "/service/content-writing", lastmod: "2024-11-26", priority: 0.9 },
+    { loc: "/service/seo", lastmod: "2024-11-26", priority: 0.9 },
   ];
 
   const dynamicUrls = [

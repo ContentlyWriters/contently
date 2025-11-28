@@ -67,12 +67,23 @@ import img62 from "@/assets/image/blogImg62.jpg";
 import img63 from "@/assets/image/blogImg63.jpg";
 import img64 from "@/assets/image/blogImg64.jpg";
 import img65 from "@/assets/image/blogImg65.jpg";
+import img66 from "@/assets/image/blogImg66.jpg";
 
 
 const blogData = [
 
 
     
+  {
+    tag: "blog-64",
+    slug: "from-submit-to-success",
+    heading: "From Submit to Success: How Contently Writers Work With You",
+    date: "November 27, 2025",
+    image: img66,
+    about:"Finding the right partner for your content needs shouldn't feel overwhelming. Yet many businesses struggle to connect with professional content writers who truly understand their vision and deliver results. The journey from submitting your first brief to celebrating successful content doesn't have to be complicated when you work with the right team.",
+  },
+  
+
   {
     tag: "blog-63",
     slug: "how-much-should-a-1500-word-seo-blog-post-cost",

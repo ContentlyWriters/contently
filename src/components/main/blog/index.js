@@ -68,12 +68,22 @@ import img63 from "@/assets/image/blogImg63.jpg";
 import img64 from "@/assets/image/blogImg64.jpg";
 import img65 from "@/assets/image/blogImg65.jpg";
 import img66 from "@/assets/image/blogImg66.jpg";
+import img67 from "@/assets/image/blogImg67.jpg";
 
 
 const blogData = [
 
 
-    
+  {
+    tag: "blog-65",
+    slug: "beyond-blogging",
+    heading: "Beyond the Blog: The 3 Channels Where Your Customers Actually Read Content in 2025",
+    date: "December 08, 2025",
+    image: img67,
+    about:"Remember when maintaining a company blog was enough? Yeah, those days are long gone. Your audience has moved on, and frankly, they’re consuming information in places you might not even be looking.",
+  },   
+ 
+ 
   {
     tag: "blog-64",
     slug: "from-submit-to-success",

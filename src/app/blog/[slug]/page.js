@@ -77,8 +77,9 @@ import { Playwrite_CA } from "next/font/google";
 const blogData = [
 
 
-  
+
   {
+    
     slug: "beyond-blogging",
     heading: "Beyond the Blog: The 3 Channels Where Your Customers Actually Read Content in 2025",
     date: "December 08, 2025",

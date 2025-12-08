@@ -128,7 +128,7 @@ const blogData = [
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
                 rel="noopener noreferrer">significantly higher open rates</a> than generic blasts.</li>
-            <li>The brands winning right now are dividing audiences based on behavior and interests. Someone brand new needs different messaging than a repeat buyer. This level of email segmentation ensures you aren't just sending noise, but value.</li>
+            <li>The brands winning right now are dividing audiences based on behavior and interests. Someone brand new needs different messaging than a repeat buyer. This level of email segmentation ensures you aren&#39;t just sending noise, but value.</li>
 
            
            </ul>
@@ -146,10 +146,10 @@ const blogData = [
         title1: "2. LinkedIn: The Center of Professional Publishing",
         about: (
           <div>
-         <p>LinkedIn has quietly become the premier platform for B2B content strategy and thought leadership. This isn't just for recruiters anymore; professionals turn to LinkedIn to learn new skills and discover solutions to business problems.</p>
+         <p>LinkedIn has quietly become the premier platform for B2B content strategy and thought leadership. This isn&#39;t just for recruiters anymore; professionals turn to LinkedIn to learn new skills and discover solutions to business problems.</p>
          
 
-        <p className="mt-2">The "Document Post" Opportunity Short articles, carousel posts, and video content perform exceptionally well here. In fact, many marketers now publish directly on LinkedIn rather than linking back to their website. This is because the algorithm rewards "zero-click" content posts that keep users on the platform.</p>
+        <p className="mt-2">The &#34;Document Post&#34; Opportunity Short articles, carousel posts, and video content perform exceptionally well here. In fact, many marketers now publish directly on LinkedIn rather than linking back to their website. This is because the algorithm rewards &#34;zero-click&#34; content posts that keep users on the platform.</p>
        
         <ul className="ml-8 list-decimal">
            <li><strong>Video Dominance:</strong>Native video on LinkedIn often sees up to 5x more engagement than static text.</li>
@@ -169,19 +169,19 @@ const blogData = [
         about: (
           <div>
 
-        <p>If you aren't thinking about YouTube for business, you are leaving money on the table. YouTube isn't just for entertainment; it is the world's second-largest search engine.</p>
+        <p>If you aren&#39;t thinking about YouTube for business, you are leaving money on the table. YouTube isn&#39;t just for entertainment; it is the world&#39;s second-largest search engine.</p>
          
 
         <p className="mt-2">Why Video Wins:</p>
        
         <ul className="ml-8 list-decimal">
-           <li><strong>Search Intent:</strong>People use YouTube to troubleshoot issues ("How to fix X") or compare products.</li>
+           <li><strong>Search Intent:</strong>People use YouTube to troubleshoot issues (&#34;How to fix X&#34;) or compare products.</li>
              <li><strong>Longevity:</strong>A blog post might fade in a month, but a solid YouTube video can drive traffic for years. This is the power of YouTube SEO, creating assets that compound over time.</li>
            
            
            </ul> 
          
-         <p className="mt-2">You don't need a Hollywood studio. Audiences in 2025 prefer authenticity over polish. Real people solving real problems often outperform over-produced corporate commercials.</p>
+         <p className="mt-2">You don&#39;t need a Hollywood studio. Audiences in 2025 prefer authenticity over polish. Real people solving real problems often outperform over-produced corporate commercials.</p>
 
           </div>
         ),
@@ -191,7 +191,7 @@ const blogData = [
         title: "Conclusion",
         about: (
           <div>
-        <p>Your customers haven't abandoned content; they have just relocated. Meeting them where they actually spend time, rather than forcing them to your blog, is the difference between being heard and being ignored.</p>
+        <p>Your customers haven&#39;t abandoned content; they have just relocated. Meeting them where they actually spend time, rather than forcing them to your blog, is the difference between being heard and being ignored.</p>
          
         <p className="mt-2">Need help building a strategy that actually converts? Partnering with the <a
                 href="https://www.contentlywriters.com"
@@ -210,7 +210,7 @@ const blogData = [
         about: (
           <div>
 
-        <h4 className="font-bold mt-2">1. What if I don't have the budget to manage all three channels?</h4>
+        <h4 className="font-bold mt-2">1. What if I don&#39;t have the budget to manage all three channels?</h4>
         <p>Start where your customers hang out. If you are B2B, prioritize a LinkedIn content strategy and email. B2C brands should look at YouTube first. It is better to master one channel than to fail at three.</p>
  
         <h4 className="font-bold mt-2">2. How often should I be publishing content on these channels?</h4>
@@ -220,10 +220,10 @@ const blogData = [
         <p>Absolutely. Blogs are the hub of your SEO services strategy. Use them as deep-dive resources and link to them from your emails and YouTube descriptions. Think of your blog as the library, and social media as the billboard.</p>
  
         <h4 className="font-bold mt-2">4. Should I repurpose the same content across all three channels?</h4>
-        <p>Repurposing is smart, but formatting is essential. A YouTube script needs different pacing than an email. LinkedIn posts should be formatted differently from YouTube descriptions. Take your core message and adapt it to fit each platform's culture and technical requirements.</p>
+        <p>Repurposing is smart, but formatting is essential. A YouTube script needs different pacing than an email. LinkedIn posts should be formatted differently from YouTube descriptions. Take your core message and adapt it to fit each platform&#39;s culture and technical requirements.</p>
  
         <h4 className="font-bold mt-2">5. How do I measure success across these different channels?</h4>
-        <p>Track engagement metrics specific to each platform, email open rates, LinkedIn engagement rates, and YouTube watch time. But focus on business outcomes: conversions, sales, or customer acquisition. A highly engaged audience means little if they're not moving toward your business goals.</p>
+        <p>Track engagement metrics specific to each platform, email open rates, LinkedIn engagement rates, and YouTube watch time. But focus on business outcomes: conversions, sales, or customer acquisition. A highly engaged audience means little if they&#39;re not moving toward your business goals.</p>
 
     
           </div>

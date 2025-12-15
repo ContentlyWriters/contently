@@ -69,11 +69,21 @@ import img64 from "@/assets/image/blogImg64.jpg";
 import img65 from "@/assets/image/blogImg65.jpg";
 import img66 from "@/assets/image/blogImg66.jpg";
 import img67 from "@/assets/image/blogImg67.jpg";
+import img68 from "@/assets/image/blogImg68.jpg";
 
 
 const blogData = [
 
 
+  {
+    tag: "blog-66",
+    slug: "the-anatomy-of-high-converting-landing-page",
+    heading: "The Anatomy of a High-Converting Landing Page: 7 Copy Elements That Double Your Leads",
+    date: "December 15, 2025",
+    image: img68,
+    about:"Last Tuesday, my friend Sarah called me in tears. She'd spent three months building her online coaching business, hired a content writing agency for her blog, invested in affordable SEO services, and was getting decent traffic to her landing page. The remarkable aspect is that out of 500 visitors last month, only 4 people signed up. Four.",
+  },
+  
   {
     tag: "blog-65",
     slug: "beyond-blogging",

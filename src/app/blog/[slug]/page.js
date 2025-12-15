@@ -262,7 +262,7 @@ const blogData = [
        
         
          <p className="mt-2">Is there really a cohort? Yes. Are there really 3 spots? Also yes. You don&#39;t need to manufacture fake scarcity when you can create real value.</p>
-         <p className="mt-2">See the difference? One's a feature list. The other&#39;s a promise of insider knowledge.</p>
+         <p className="mt-2">See the difference? One&#39;s a feature list. The other&#39;s a promise of insider knowledge.</p>
 
           </div>
         ),
@@ -294,7 +294,7 @@ const blogData = [
           <div>
 
         <h4 className="font-bold mt-2">How long should a landing page be?</h4>
-        <p>Long enough to answer objections, short enough to maintain attention. Generally, 500-800 words work for most offers, but complex or expensive products may need 1,500-2,000 words to overcome skepticism. The real question isn't length, it's whether you've addressed all the reasons someone might say no.</p>
+        <p>Long enough to answer objections, short enough to maintain attention. Generally, 500-800 words work for most offers, but complex or expensive products may need 1,500-2,000 words to overcome skepticism. The real question isn&#39;t length, it&#39;s whether you&#39;ve addressed all the reasons someone might say no.</p>
  
         <h4 className="font-bold mt-2">What&#39;s a good conversion rate for a landing page?</h4>
         <p>It varies wildly by industry, but 2-5% is average, 5-10% is strong, and above 10% is exceptional. If you&#39;re below 2%, your copy (not your traffic) is likely the problem. Focus on clarity and relevance before driving more visitors.</p>

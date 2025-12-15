@@ -102,7 +102,7 @@ const blogData = [
         about: (
           <div>
             <p>
-            Last Tuesday, my friend Sarah called me in tears. She'd spent three months building her online coaching business, hired a <a
+            Last Tuesday, my friend Sarah called me in tears. She&#39;d spent three months building her online coaching business, hired a <a
                 href="https://www.contentlywriters.com/service/content-writing"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
@@ -111,9 +111,9 @@ const blogData = [
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
                 rel="noopener noreferrer">affordable SEO services</a>, and was getting decent traffic to her landing page. The remarkable aspect is that out of 500 visitors last month, only 4 people signed up. Four. </p>
-            <p className="mt-2">"I don't get it," she said. "We have high traffic, low conversions."</p>
-            <p className="mt-2">I've seen this story play out dozens of times. Business owners pour money into driving traffic, but forget the most crucial part: what happens when people actually land on their page. It's like inviting guests to a party but forgetting to open the door.</p>
-            <p className="mt-2">After tweaking Sarah's landing page copy using the seven elements I'm about to share, her conversion rate jumped from 0.8% to 6.2% in just two weeks. That's not magic, it's understanding what actually makes people say "yes."</p>
+            <p className="mt-2">&#34;I don&#39;t get it,&#34; she said. &#34;We have high traffic, low conversions.&#34;</p>
+            <p className="mt-2">I&#39;ve seen this story play out dozens of times. Business owners pour money into driving traffic, but forget the most crucial part: what happens when people actually land on their page. It&#39;s like inviting guests to a party but forgetting to open the door.</p>
+            <p className="mt-2">After tweaking Sarah&#39;s landing page copy using the seven elements I&#39;m about to share, her conversion rate jumped from 0.8% to 6.2% in just two weeks. That&#39;s not magic, it&#39;s understanding what actually makes people say &#34;yes.&#34;</p>
 
           </div>
         ),
@@ -124,16 +124,16 @@ const blogData = [
         title1: "1. The Headline That Stops the Scroll",
         about: (
           <div>
-        <p>Your headline has about three seconds to grab attention before someone bounces. Not "We Provide Quality Services" or "Welcome to Our Website." Those are yawns disguised as headlines.</p>        
+        <p>Your headline has about three seconds to grab attention before someone bounces. Not &#34;We Provide Quality Services&#34; or &#34;Welcome to Our Website.&#34; Those are yawns disguised as headlines.</p>        
         
-         <p className="mt-2">Your headline should answer one question: "What's in it for me?"</p>
+         <p className="mt-2">Your headline should answer one question: &#34;What&#39;s in it for me?&#34;</p>
      
-        <p className="mt-2">Sarah's original headline read: "Professional Life Coaching Services." Generic, forgettable, and frankly, boring. We changed it to: "Finally Take Control of Your Career (Without Burning Out in the Process)." The difference? Specificity and a promised outcome.</p>
+        <p className="mt-2">Sarah&#39;s original headline read: &#34;Professional Life Coaching Services.&#34; Generic, forgettable, and frankly, boring. We changed it to: &#34;Finally Take Control of Your Career (Without Burning Out in the Process).&#34; The difference? Specificity and a promised outcome.</p>
         <p className="mt-2">For small businesses looking into <a
                 href="https://www.contentlywriters.com/service/seo"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">affordable SEO services</a>, this principle applies doubly. You're not just competing with big corporations, you're fighting for attention in a noisy world.</p>
+                rel="noopener noreferrer">affordable SEO services</a>, this principle applies doubly. You&#39;re not just competing with big corporations, you&#39;re fighting for attention in a noisy world.</p>
         
           </div> 
         ),
@@ -147,12 +147,12 @@ const blogData = [
         title1: "2. The Subheadline That Builds Trust",
         about: (
           <div>
-         <p>Think of your subheadline as the supporting actor that makes your headline shine. It should expand on your promise and address the skepticism that's already forming in your reader's mind.</p>
+         <p>Think of your subheadline as the supporting actor that makes your headline shine. It should expand on your promise and address the skepticism that&#39;s already forming in your reader&#39;s mind.</p>
          
 
-        <p className="mt-2">Sarah's new subheadline: "Join 200+ professionals who've landed their dream roles in 90 days or less, no corporate BS, just real strategies that work."</p>
+        <p className="mt-2">Sarah&#39;s new subheadline: &#34;Join 200+ professionals who&#39;ve landed their dream roles in 90 days or less, no corporate BS, just real strategies that work.&#34;</p>
        
-        <p className="mt-2">Notice the social proof (200+ professionals), the timeframe (90 days), and the personality (no corporate BS). It's conversational, specific, and instantly relatable.</p>
+        <p className="mt-2">Notice the social proof (200+ professionals), the timeframe (90 days), and the personality (no corporate BS). It&#39;s conversational, specific, and instantly relatable.</p>
 
           </div>
         ),
@@ -164,14 +164,14 @@ const blogData = [
         about: (
           <div>
 
-        <p>Here's where most landing pages fall flat. They jump straight to solutions without acknowledging the problem. But people don't buy solutions; they buy escapes from pain.</p>
+        <p>Here&#39;s where most landing pages fall flat. They jump straight to solutions without acknowledging the problem. But people don&#39;t buy solutions; they buy escapes from pain.</p>
          
 
-        <p className="mt-2">Spend a solid paragraph describing your reader's problem in their own words. When they read it and think, "Yes! That's exactly how I feel," you've built a bridge of trust.</p>
+        <p className="mt-2">Spend a solid paragraph describing your reader&#39;s problem in their own words. When they read it and think, &#34;Yes! That&#39;s exactly how I feel,&#34; you&#39;ve built a bridge of trust.</p>
        
         
-         <p className="mt-2">Sarah added, "You're exhausted from sending applications into the void. You've updated your resume five times, but recruiters ghost you. Meanwhile, your friends are landing interviews, and you're wondering what you're doing wrong."</p>
-         <p className="mt-2">That's not marketing copy. That's Tuesday afternoon for someone job hunting.</p>
+         <p className="mt-2">Sarah added, &#34;You&#39;re exhausted from sending applications into the void. You&#39;ve updated your resume five times, but recruiters ghost you. Meanwhile, your friends are landing interviews, and you&#39;re wondering what you&#39;re doing wrong.&#34;</p>
+         <p className="mt-2">That&#39;s not marketing copy. That&#39;s Tuesday afternoon for someone job hunting.</p>
 
           </div>
         ),
@@ -190,14 +190,14 @@ const blogData = [
                 href="https://www.contentlywriters.com"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
-                rel="noopener noreferrer">content writing company</a> won't help if your landing page copy doesn't clearly answer: "Why should I choose you over the seventeen other tabs I have open?"</p>
+                rel="noopener noreferrer">content writing company</a> won&#39;t help if your landing page copy doesn&#39;t clearly answer: &#34;Why should I choose you over the seventeen other tabs I have open?&#34;</p>
          
 
-        <p className="mt-2">Don't list features. Paint a picture of transformation.</p>
+        <p className="mt-2">Don&#39;t list features. Paint a picture of transformation.</p>
        
         
-         <p className="mt-2">Instead of "Weekly coaching calls and email support," Sarah wrote: "Get a former tech recruiter in your corner who knows exactly what hiring managers look for and how to make your application impossible to ignore."</p>
-         <p className="mt-2">See the difference? One's a feature list. The other's a promise of insider knowledge.</p>
+         <p className="mt-2">Instead of &#34;Weekly coaching calls and email support,&#34; Sarah wrote: &#34;Get a former tech recruiter in your corner who knows exactly what hiring managers look for and how to make your application impossible to ignore.&#34;</p>
+         <p className="mt-2">See the difference? One&#39;s a feature list. The other&#39;s a promise of insider knowledge.</p>
 
           </div>
         ),
@@ -209,15 +209,15 @@ const blogData = [
         about: (
           <div>
 
-        <p>Testimonials matter, but not the "Great service, highly recommend!" variety. Those sound fake because they probably are.</p>
+        <p>Testimonials matter, but not the &#34;Great service, highly recommend!&#34; variety. Those sound fake because they probably are.</p>
          
 
         <p className="mt-2">Real social proof includes:</p>
        
         <ul className="ml-8 list-decimal">
-           <li>Specific results ("Landed three interviews in my first week")</li>
+           <li>Specific results (&#34;Landed three interviews in my first week&#34;)</li>
              <li>Names and photos (even just first names work)</li>
-            <li>Relevant details that match your reader's situation</li>
+            <li>Relevant details that match your reader&#39;s situation</li>
           
            
            </ul>
@@ -241,10 +241,10 @@ const blogData = [
                 rel="noopener noreferrer">affordable SEO services</a> for small businesses need to address this: people are scared of wasting money. Your landing page should dissolve that fear.</p>
          
 
-        <p className="mt-2">Free trials, money-back guarantees, or "cancel anytime" policies work. But so does clarity. Tell them exactly what they're getting, when they'll get it, and what happens if they're not happy.</p>
+        <p className="mt-2">Free trials, money-back guarantees, or &#34;cancel anytime&#34; policies work. But so does clarity. Tell them exactly what they&#39;re getting, when they&#39;ll get it, and what happens if they&#39;re not happy.</p>
        
         
-         <p className="mt-2">Sarah offered a "First session free, no credit card required" deal. Simple, clear, risk-free. Conversions jumped immediately.</p>
+         <p className="mt-2">Sarah offered a &#34;First session free, no credit card required&#34; deal. Simple, clear, risk-free. Conversions jumped immediately.</p>
        
           </div>
         ),
@@ -255,14 +255,14 @@ const blogData = [
         about: (
           <div>
 
-        <p>"Submit" and "Sign Up" are lazy CTAs. They don't inspire action.</p>
+        <p>&#34;Submit&#34; and &#34;Sign Up&#34; are lazy CTAs. They don&#39;t inspire action.</p>
          
 
-        <p className="mt-2">Your CTA should reinforce the benefit and create gentle urgency. Sarah's button reads: "Start My Career Transformation" with a line underneath: "Next cohort starts Monday, 3 spots left."</p>
+        <p className="mt-2">Your CTA should reinforce the benefit and create gentle urgency. Sarah&#39;s button reads: &#34;Start My Career Transformation&#34; with a line underneath: &#34;Next cohort starts Monday, 3 spots left.&#34;</p>
        
         
-         <p className="mt-2">Is there really a cohort? Yes. Are there really 3 spots? Also yes. You don't need to manufacture fake scarcity when you can create real value.</p>
-         <p className="mt-2">See the difference? One's a feature list. The other's a promise of insider knowledge.</p>
+         <p className="mt-2">Is there really a cohort? Yes. Are there really 3 spots? Also yes. You don&#39;t need to manufacture fake scarcity when you can create real value.</p>
+         <p className="mt-2">See the difference? One's a feature list. The other&#39;s a promise of insider knowledge.</p>
 
           </div>
         ),
@@ -274,9 +274,9 @@ const blogData = [
         title: "The Conclusion",
         about: (
           <div>
-        <p>Here's what changed for Sarah: she stopped thinking about her landing page as a "business website" and started treating it as a conversation with one specific person who needed her help.</p>
+        <p>Here&#39;s what changed for Sarah: she stopped thinking about her landing page as a &#34;business website&#34; and started treating it as a conversation with one specific person who needed her help.</p>
          
-        <p className="mt-2">Your landing page isn't a brochure. It's a sales conversation at scale. And like any good conversation, it needs to listen (acknowledge problems), empathize (show you understand), and offer a clear next step.</p>
+        <p className="mt-2">Your landing page isn&#39;t a brochure. It&#39;s a sales conversation at scale. And like any good conversation, it needs to listen (acknowledge problems), empathize (show you understand), and offer a clear next step.</p>
        
         <p className="mt-2">For small businesses investing in <a
                 href="https://www.contentlywriters.com/service/seo"
@@ -296,17 +296,17 @@ const blogData = [
         <h4 className="font-bold mt-2">How long should a landing page be?</h4>
         <p>Long enough to answer objections, short enough to maintain attention. Generally, 500-800 words work for most offers, but complex or expensive products may need 1,500-2,000 words to overcome skepticism. The real question isn't length, it's whether you've addressed all the reasons someone might say no.</p>
  
-        <h4 className="font-bold mt-2">What's a good conversion rate for a landing page?</h4>
-        <p>It varies wildly by industry, but 2-5% is average, 5-10% is strong, and above 10% is exceptional. If you're below 2%, your copy (not your traffic) is likely the problem. Focus on clarity and relevance before driving more visitors.</p>
+        <h4 className="font-bold mt-2">What&#39;s a good conversion rate for a landing page?</h4>
+        <p>It varies wildly by industry, but 2-5% is average, 5-10% is strong, and above 10% is exceptional. If you&#39;re below 2%, your copy (not your traffic) is likely the problem. Focus on clarity and relevance before driving more visitors.</p>
       
         <h4 className="font-bold mt-2">Do I really need a separate landing page for each campaign?</h4>
-        <p>Yes, especially if you're running affordable SEO services or paid ads. A targeted landing page that matches the visitor's intent will always outperform a generic homepage. Think of it this way: would you rather walk into a store with exactly what you need displayed upfront, or hunt through aisles hoping to find it?</p>
+        <p>Yes, especially if you&#39;re running affordable SEO services or paid ads. A targeted landing page that matches the visitor&#39;s intent will always outperform a generic homepage. Think of it this way: would you rather walk into a store with exactly what you need displayed upfront, or hunt through aisles hoping to find it?</p>
  
         <h4 className="font-bold mt-2">How often should I update my landing page copy?</h4>
-        <p>Test major changes quarterly, but make smaller tweaks monthly based on user feedback and data. If something's working, don't break it. If conversions are stagnant, start testing headlines and CTAs first; they have the biggest impact.</p>
+        <p>Test major changes quarterly, but make smaller tweaks monthly based on user feedback and data. If something&#39;s working, don&#39;t break it. If conversions are stagnant, start testing headlines and CTAs first; they have the biggest impact.</p>
  
         <h4 className="font-bold mt-2">Can I write my own landing page copy, or should I hire someone?</h4>
-        <p>You can absolutely write your own if you understand your audience deeply. The best copy comes from knowing your customers' exact words, fears, and desires. However, if you're too close to your business or struggle with writing conversationally, investing in the <a
+        <p>You can absolutely write your own if you understand your audience deeply. The best copy comes from knowing your customers&#39; exact words, fears, and desires. However, if you&#39;re too close to your business or struggle with writing conversationally, investing in the <a
                 href="https://www.contentlywriters.com/service/content-writing"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"

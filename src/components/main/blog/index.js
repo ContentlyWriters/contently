@@ -70,10 +70,21 @@ import img65 from "@/assets/image/blogImg65.jpg";
 import img66 from "@/assets/image/blogImg66.jpg";
 import img67 from "@/assets/image/blogImg67.jpg";
 import img68 from "@/assets/image/blogImg68.jpg";
+import img69 from "@/assets/image/blogImg69.jpg";
 
 
 const blogData = [
 
+
+  {
+    tag: "blog-67",
+    slug: "content-spying",
+    heading: "Content Spying: How to Use Competitors' Weaknesses to Dominate Their Keywords",
+    date: "December 19, 2025",
+    image: img69,
+    about:"Last Tuesday, I was staring at my Google Analytics dashboard, watching my beautifully crafted blog post sit at position 11 for best project management tools. That’s the dreaded second page of Google where traffic goes to die. Meanwhile, a competitor's article from 2021, riddled with broken links and missing half the tools that actually matter today, was sitting pretty at position 3.",
+  },
+  
 
   {
     tag: "blog-66",

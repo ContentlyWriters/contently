@@ -139,7 +139,7 @@ const blogData = [
         title1: "Finding Your Actual Competition (It's Not Who You Think)",
         about: (
           <div>
-         <p>Before we go further, you need to know who you&#39;re really up against. When I started my fitness blog, I assumed my competition was giants like Healthline and Men&#39;s Health. I was wrong. For specific keywords like "home workout routine for beginners over 40," my real competitors were medium-sized blogs, YouTube channels, and even a couple of Reddit posts that somehow ranked.</p>
+         <p>Before we go further, you need to know who you&#39;re really up against. When I started my fitness blog, I assumed my competition was giants like Healthline and Men&#39;s Health. I was wrong. For specific keywords like &#34;home workout routine for beginners over 40,&#34; my real competitors were medium-sized blogs, YouTube channels, and even a couple of Reddit posts that somehow ranked.</p>
          
 
         <p className="mt-2">Search your target keywords and look at positions 1-10. These are the people you need to study. Don&#39;t waste energy obsessing over Forbes or HubSpot if they&#39;re not ranking for your specific terms. Focus on the battles you can actually win.</p>

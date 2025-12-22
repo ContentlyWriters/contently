@@ -71,9 +71,21 @@ import img66 from "@/assets/image/blogImg66.jpg";
 import img67 from "@/assets/image/blogImg67.jpg";
 import img68 from "@/assets/image/blogImg68.jpg";
 import img69 from "@/assets/image/blogImg69.jpg";
+import img70 from "@/assets/image/blogImg70.jpg";
 
 
 const blogData = [
+
+
+  {
+    tag: "blog-68",
+    slug: "cookieless-content-strategy",
+    heading: "The Cookieless Content Strategy: Building First-Party Data & Trust in the Privacy-First Era",
+    date: "December 22, 2025",
+    image: img70,
+    about:"The digital marketing landscape is undergoing a seismic shift. As third-party cookies crumble and privacy regulations tighten, brands are scrambling to find new ways to connect with their audience. The solution isn't just a technical fix; it requires a fundamental change in how we approach value. Enter the cookieless content strategy, a method that prioritizes direct relationships, transparency, and high-quality information over invasive tracking.",
+  },
+  
 
 
   {

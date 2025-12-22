@@ -69,6 +69,7 @@ import img66 from "@/assets/image/blogImg66.jpg";
 import img67 from "@/assets/image/blogImg67.jpg";
 import img68 from "@/assets/image/blogImg68.jpg";
 import img69 from "@/assets/image/blogImg69.jpg";
+import img70 from "@/assets/image/blogImg70.jpg";
 
 
 

@@ -72,11 +72,21 @@ import img67 from "@/assets/image/blogImg67.jpg";
 import img68 from "@/assets/image/blogImg68.jpg";
 import img69 from "@/assets/image/blogImg69.jpg";
 import img70 from "@/assets/image/blogImg70.jpg";
+import img71 from "@/assets/image/blogImg71.jpg";
 
 
 const blogData = [
 
 
+  {
+    tag: "blog-69",
+    slug: "trust-is-the-new-traffic",
+    heading: "Trust is the New Traffic: The 2026 Strategy for Building First-Party Data in a Privacy-First World",
+    date: "January 05, 2026",
+    image: img71,
+    about:"In the early days of digital marketing, the strategy was simple: buy as much traffic as possible. Marketers relied on a complex web of third-party cookies to track users across the internet, serving ads based on where they had been rather than who they were.",
+  },
+ 
   {
     tag: "blog-68",
     slug: "cookieless-content-strategy",

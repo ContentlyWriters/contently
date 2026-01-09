@@ -73,11 +73,21 @@ import img68 from "@/assets/image/blogImg68.jpg";
 import img69 from "@/assets/image/blogImg69.jpg";
 import img70 from "@/assets/image/blogImg70.jpg";
 import img71 from "@/assets/image/blogImg71.jpg";
+import img72 from "@/assets/image/blogImg72.jpg";
 
 
 const blogData = [
 
 
+  {
+    tag: "blog-70",
+    slug: "how-social-search-is-becoming-the-new-google",
+    heading: "Learn How Social Search Is Becoming the New Google 2026 Tips",
+    date: "January 09, 2026",
+    image: img72,
+    about:"For decades, the phrase (Google) it was the ultimate answer to any question. Whether you were looking for a local plumber or trying to understand complex scientific theories, the journey began and ended with a white screen and a single search bar. But as we move further into 2026, a seismic shift is occurring in how we discover information.",
+  },
+ 
   {
     tag: "blog-69",
     slug: "trust-is-the-new-traffic",

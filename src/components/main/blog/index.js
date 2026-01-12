@@ -74,9 +74,21 @@ import img69 from "@/assets/image/blogImg69.jpg";
 import img70 from "@/assets/image/blogImg70.jpg";
 import img71 from "@/assets/image/blogImg71.jpg";
 import img72 from "@/assets/image/blogImg72.jpg";
+import img73 from "@/assets/image/blogImg73.jpg";
 
 
 const blogData = [
+
+
+
+  {
+    tag: "blog-71",
+    slug: "the-ghost-expert",
+    heading: "The Ghost Expert: Why You're Invisible in Social Search",
+    date: "January 12, 2026",
+    image: img73,
+    about:"For decades, the phrase (Google) it was the ultimate answer to any question. Whether you were looking for a local plumber or trying to understand complex scientific theories, the journey began and ended with a white screen and a single search bar. But as we move further into 2026, a seismic shift is occurring in how we discover information.",
+  },
 
 
   {

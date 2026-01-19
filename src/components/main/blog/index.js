@@ -75,12 +75,22 @@ import img70 from "@/assets/image/blogImg70.jpg";
 import img71 from "@/assets/image/blogImg71.jpg";
 import img72 from "@/assets/image/blogImg72.jpg";
 import img73 from "@/assets/image/blogImg73.jpg";
+import img74 from "@/assets/image/blogImg74.jpg";
 
 
 const blogData = [
 
 
 
+  {
+    tag: "blog-72",
+    slug: "the-2-am-search",
+    heading: "The 2:00 AM Search: How to Solve Your Customer's Biggest Stress",
+    date: "January 19, 2026",
+    image: img74,
+    about:"It's 2:47 AM, and Sarah has been scrolling for twenty minutes, typing and deleting, typing and deleting. Finally, she types: Why does my small business keep losing customers?",
+  },
+ 
   {
     tag: "blog-71",
     slug: "the-ghost-expert",

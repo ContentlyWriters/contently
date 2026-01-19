@@ -191,7 +191,7 @@ const blogData = [
         <ul className="ml-8 list-decimal">
            <li><strong>Google</strong> - Still the king for data-heavy, comparison-based searches</li>
            <li><strong>YouTube</strong> - The go-to for detailed tutorials and long-form explanations</li>
-           <li><strong>TikTok</strong> - The new default for "life problems" and peer-reviewed recommendations</li>
+           <li><strong>TikTok</strong> - The new default for &#34;life problems&#34; and peer-reviewed recommendations</li>
           
            
            </ul> 

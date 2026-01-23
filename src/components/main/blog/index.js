@@ -76,11 +76,22 @@ import img71 from "@/assets/image/blogImg71.jpg";
 import img72 from "@/assets/image/blogImg72.jpg";
 import img73 from "@/assets/image/blogImg73.jpg";
 import img74 from "@/assets/image/blogImg74.jpg";
+import img75 from "@/assets/image/blogImg75.jpg";
 
 
 const blogData = [
 
 
+
+
+  {
+    tag: "blog-73",
+    slug: "the-proof-portfolio",
+    heading: "The Proof Portfolio: How to Turn Searchers into Clients",
+    date: "January 23, 2026",
+    image: img75,
+    about:"You’ve optimized your profile for the Social Search Era. You know exactly what keeps your ideal clients awake at 2:00 AM, and you’re finally showing up in the search results when they look for a solution.",
+  },
 
   {
     tag: "blog-72",

@@ -110,8 +110,8 @@ const blogData = [
             <p>
           You&#39;ve optimized your profile for the &#34;Social Search Era.&#34; You know exactly what keeps your ideal clients awake at 2:00 AM, and you&#39;re finally showing up in the search results when they look for a solution.</p>
            <p className="mt-2">But now you face a harder problem: The Skepticism Gap.</p>
-           <p className="mt-2">When a stressed founder or executive lands on your profile at midnight, they aren't looking for a friend. They are looking for a reason to trust you with their business, their budget, and their reputation. Most experts fail this test. They have a profile full of claims (&#34;I help scale businesses&#34;) but zero evidence (&#34;Here is how I scaled Company X by $2M&#34;).</p>
-           <p className="mt-2">If you're still struggling with that initial visibility, you might still be a &#34;<a
+           <p className="mt-2">When a stressed founder or executive lands on your profile at midnight, they aren&#39;t looking for a friend. They are looking for a reason to trust you with their business, their budget, and their reputation. Most experts fail this test. They have a profile full of claims (&#34;I help scale businesses&#34;) but zero evidence (&#34;Here is how I scaled Company X by $2M&#34;).</p>
+           <p className="mt-2">If you&#39;re still struggling with that initial visibility, you might still be a &#34;<a
                 href="https://www.contentlywriters.com/blog/the-ghost-expert"
                 class="text-[#5b6cf2] underline hover:no-underline"
                 target="_blank"
@@ -127,7 +127,7 @@ const blogData = [
         about: (
           <div>
 
-        <p>A Proof Portfolio is a curated collection of assets that demonstrate you have successfully solved specific problems for real people. It isn't a resume listing your job duties; it&#39;s a &#34;museum of outcomes.&#34;</p>        
+        <p>A Proof Portfolio is a curated collection of assets that demonstrate you have successfully solved specific problems for real people. It isn&#39;t a resume listing your job duties; it&#39;s a &#34;museum of outcomes.&#34;</p>        
         <p className="mt-2">The Difference:-  A Resume says: &#34;I am an expert in Facebook Ads and lead generation.&#34;</p>
         
         <p className="mt-2">A Proof Portfolio says: &#34;I spent $5k on Ads for a Fintech startup and generated $45k in qualified pipeline in 3 weeks. Here is the screenshot of the dashboard.&#34;</p>
@@ -171,11 +171,11 @@ const blogData = [
         about: (
           <div>
 
-        <p>This is the &#34;Catch-22&#34; of the social search era. You have the skills, but you don't have the shiny logos or public testimonials yet. The secret is that proof doesn't always require a named client. You can build a &#34;Proxy Portfolio.&#34;</p>
-        <p className="mt-2"><strong>Be Your Own Case Study</strong>: If you are a LinkedIn Strategist, your own profile's growth is your proof. Document your journey: &#34;How I grew my inbound leads by 300% in 90 days using the Ghost Expert framework.&#34;</p>
+        <p>This is the &#34;Catch-22&#34; of the social search era. You have the skills, but you don&#39;t have the shiny logos or public testimonials yet. The secret is that proof doesn&#39;t always require a named client. You can build a &#34;Proxy Portfolio.&#34;</p>
+        <p className="mt-2"><strong>Be Your Own Case Study</strong>: If you are a LinkedIn Strategist, your own profile&#39;s growth is your proof. Document your journey: &#34;How I grew my inbound leads by 300% in 90 days using the Ghost Expert framework.&#34;</p>
         <p className="mt-2"><strong>The "Teardown" Method</strong>: Find a public problem in your niche and solve it for free in a post.</p>
-        <p><strong>Example:</strong> A UX Designer could do a 5-slide teardown of a popular app's checkout process and show the &#34;Proposed Fix.&#34; This proves you have the skills before anyone hires you.</p>
-        <p className="mt-2"><strong>Anonymized Snapshots:</strong> You don't need to name the company to show the transformation.</p>
+        <p><strong>Example:</strong> A UX Designer could do a 5-slide teardown of a popular app&#39;s checkout process and show the &#34;Proposed Fix.&#34; This proves you have the skills before anyone hires you.</p>
+        <p className="mt-2"><strong>Anonymized Snapshots:</strong> You don&#39;t need to name the company to show the transformation.</p>
         <p><strong>Example:</strong> &#34;How I helped a $10M SaaS company reduce churn by 15% using a custom onboarding sequence.&#34;</p>
 
           </div>
@@ -187,10 +187,10 @@ const blogData = [
         about: (
           <div>
 
-        <p>To turn skeptical searchers into clients, your portfolio needs to layer three types of evidence. Don't just list them, organize them in your LinkedIn Featured Section or a dedicated &#34;Results&#34; page.</p>
+        <p>To turn skeptical searchers into clients, your portfolio needs to layer three types of evidence. Don&#39;t just list them, organize them in your LinkedIn Featured Section or a dedicated &#34;Results&#34; page.</p>
         
         <h3 className="font-bold mt-2">1. The &#34;Outcome-Based&#34; Testimonial</h3>
-        <p>Don't just ask for a recommendation that says, &#34;John was great!&#34; Ask for one that speaks to the transformation.</p>
+        <p>Don&#39;t just ask for a recommendation that says, &#34;John was great!&#34; Ask for one that speaks to the transformation.</p>
          <p className="mt-1"><strong>Example:</strong> &#34;Before working with Sarah, our sales team was guessing. Within 30 days of her workshop, our closing rate jumped from 12% to 28%. The investment paid for itself in one week.&#34;</p>
 
        
@@ -220,7 +220,7 @@ const blogData = [
           <div>
 
          <p>Getting found through social search is only half the battle. It gets them to the door. Your Proof Portfolio is what invites them inside and makes them stay.</p>
-         <p className="mt-2">In the age of AI, everyone can sound like an expert. But very few can show the work. Stop telling the world you're the best and start showing them the evidence. When your visibility meets your proof, your &#34;personal brand&#34; stops being a vanity project and starts being a client acquisition engine.</p>
+         <p className="mt-2">In the age of AI, everyone can sound like an expert. But very few can show the work. Stop telling the world you&#39;re the best and start showing them the evidence. When your visibility meets your proof, your &#34;personal brand&#34; stops being a vanity project and starts being a client acquisition engine.</p>
          <p className="mt-2">Ready to stop being a ghost and start being a category leader? Building a profile that ranks is a technical challenge; building content that proves your worth is a creative one. If you want to dominate the social search era without the &#34;boring work&#34; of SEO audits and content calendars, partnering with the <a
                 href="https://www.contentlywriters.com/"
                 class="text-[#5b6cf2] underline hover:no-underline"

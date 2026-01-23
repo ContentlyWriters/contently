@@ -173,7 +173,7 @@ const blogData = [
 
         <p>This is the &#34;Catch-22&#34; of the social search era. You have the skills, but you don&#39;t have the shiny logos or public testimonials yet. The secret is that proof doesn&#39;t always require a named client. You can build a &#34;Proxy Portfolio.&#34;</p>
         <p className="mt-2"><strong>Be Your Own Case Study</strong>: If you are a LinkedIn Strategist, your own profile&#39;s growth is your proof. Document your journey: &#34;How I grew my inbound leads by 300% in 90 days using the Ghost Expert framework.&#34;</p>
-        <p className="mt-2"><strong>The "Teardown" Method</strong>: Find a public problem in your niche and solve it for free in a post.</p>
+        <p className="mt-2"><strong>The &#34;Teardown&#34; Method</strong>: Find a public problem in your niche and solve it for free in a post.</p>
         <p><strong>Example:</strong> A UX Designer could do a 5-slide teardown of a popular app&#39;s checkout process and show the &#34;Proposed Fix.&#34; This proves you have the skills before anyone hires you.</p>
         <p className="mt-2"><strong>Anonymized Snapshots:</strong> You don&#39;t need to name the company to show the transformation.</p>
         <p><strong>Example:</strong> &#34;How I helped a $10M SaaS company reduce churn by 15% using a custom onboarding sequence.&#34;</p>

@@ -128,7 +128,7 @@ const blogData = [
           <div>
 
         <p>A Proof Portfolio is a curated collection of assets that demonstrate you have successfully solved specific problems for real people. It isn't a resume listing your job duties; it&#39;s a &#34;museum of outcomes.&#34;</p>        
-        <p className="mt-2">The Difference:- * A Resume says: &#34;I am an expert in Facebook Ads and lead generation.&#34;</p>
+        <p className="mt-2">The Difference:-  A Resume says: &#34;I am an expert in Facebook Ads and lead generation.&#34;</p>
         
         <p className="mt-2">A Proof Portfolio says: &#34;I spent $5k on Ads for a Fintech startup and generated $45k in qualified pipeline in 3 weeks. Here is the screenshot of the dashboard.&#34;</p>
        

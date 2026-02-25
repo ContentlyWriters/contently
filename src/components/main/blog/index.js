@@ -77,6 +77,7 @@ import img72 from "@/assets/image/blogImg72.jpg";
 import img73 from "@/assets/image/blogImg73.jpg";
 import img74 from "@/assets/image/blogImg74.jpg";
 import img75 from "@/assets/image/blogImg75.jpg";
+import img76 from "@/assets/image/blogImg76.jpg";
 
 
 const blogData = [
@@ -84,6 +85,16 @@ const blogData = [
 
 
 
+  {
+    tag: "blog-74",
+    slug: "dark-social-74",
+    heading: "Dark Social: Why Your Best Leads Are Invisible to Google",
+    date: "February 25, 2026",
+    image: img76,
+    about:"Is your marketing attribution lying to you? Discover why your best B2B leads are invisible and how to win in the world of Dark Social.",
+  },
+
+  
   {
     tag: "blog-73",
     slug: "the-proof-portfolio",

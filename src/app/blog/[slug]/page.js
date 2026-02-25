@@ -92,7 +92,7 @@ const blogData = [
     heading: "Dark Social: Why Your Best Leads Are Invisible to Google",
     date: "February 23, 2026",
     author: "Divyanshi Sharma",
-    image: img75,
+    image: img76,
     metaTitle: "Dark Social: Why Your Best Leads Are Invisible to Google",
     metaDescription: "Is your marketing attribution lying to you? Discover why your best B2B leads are invisible and how to win in the world of Dark Social.",
     keywords: [

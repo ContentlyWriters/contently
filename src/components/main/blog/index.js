@@ -78,11 +78,22 @@ import img73 from "@/assets/image/blogImg73.jpg";
 import img74 from "@/assets/image/blogImg74.jpg";
 import img75 from "@/assets/image/blogImg75.jpg";
 import img76 from "@/assets/image/blogImg76.jpg";
+import img77 from "@/assets/image/blogImg77.jpg";
 
 
 const blogData = [
 
 
+
+
+  {
+    tag: "blog-75",
+    slug: "the-invisible-ranking-75",
+    heading: "The Invisible Ranking: Mastering Generative Engine Optimisation Before the Industry Catches Up",
+    date: "March 19, 2026",
+    image: img77,
+    about:"AI reads your greatest content, condenses it into a tidy paragraph, and never returns the user to you. That isn't a system bug. The system is to blame. Here's how to become the source instead of just a footnote.",
+  },
 
 
   {

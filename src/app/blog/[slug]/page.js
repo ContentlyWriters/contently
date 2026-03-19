@@ -76,6 +76,7 @@ import img73 from "@/assets/image/blogImg73.jpg";
 import img74 from "@/assets/image/blogImg74.jpg";
 import img75 from "@/assets/image/blogImg75.jpg";
 import img76 from "@/assets/image/blogImg76.jpg";
+import img77 from "@/assets/image/blogImg77.jpg";
 
 
 
@@ -87,6 +88,140 @@ const blogData = [
 
 
 {
+    
+    slug: "the-invisible-ranking-75",
+    heading: "The Invisible Ranking: Mastering Generative Engine Optimisation Before the Industry Catches Up",
+    date: "March 19, 2026",
+    author: "Charchit Sharma",
+    image: img77,
+    metaTitle: "The Invisible Ranking: Mastering Generative Engine Optimisation Before the Industry Catches Up",
+    metaDescription: "IStop being a footnote. Learn how to master Generative Engine Optimization (GEO) and become the primary source for AI platforms like ChatGPT, Perplexity, and Google.",
+    keywords: [
+      "best content writing company"
+
+      
+    
+     
+
+    ],
+    description: "IStop being a footnote. Learn how to master Generative Engine Optimization (GEO) and become the primary source for AI platforms like ChatGPT, Perplexity, and Google.",
+    post: [
+      {
+        about: (
+          <div>
+            <p>
+         AI reads your greatest content, condenses it into a tidy paragraph, and never returns the user to you. That isn&#39;t a system bug. The system is to blame. Here&#39;s how to become the source instead of just a footnote.</p>
+           <p className="mt-2"><strong>14-minute read on strategy, content, and SEO</strong></p>
+           <p className="mt-2">The majority of content teams have either not yet observed this subtle change in how users locate information, or they have spotted it and are still hoping it reverses. It won&#39;t go back. Millions of high-intent questions are now routed to AI-driven platforms like Perplexity, ChatGPT Search, and Google&#39;s AI Overviews. The harsh reality is that they might be pulling your content, comprehending it, and skillfully summarizing it before directing the user away from your website.</p>
+           <p className="mt-2">Generative Engine Optimization, or GEO, was designed with that scenario in mind. Not the reality we lived in, where traffic was a result of ranking on page one. In the modern world, an AI responds to a query before a user even notices a link.</p>
+           <p className="mt-2">This change affects you differently if you are a director of marketing, a founder, or someone who has developed an organic search-based content strategy. Because losing a few clicks is not the goal. The whole idea that &#34;produce good content and the traffic will follow&#34; is subtly turning out to be false.</p>
+           <p className="mt-2"><strong>The Problem</strong></p>
+
+          </div>
+        ),
+      },
+
+
+      {
+        title1: "You're Ranking, but No One is clicking.",
+        about: (
+          <div>
+
+        <p>This should cause you to pause and consider the possibility that you have the best content on the internet regarding a particular subject. Every time someone asks a similar question, ChatGPT may quote it. Through an AI summary, hundreds of individuals are practically reading your ideas every day without ever visiting your site.</p>        
+        <p className="mt-2">This is the reality of zero clicks. The phrase first appeared before AI Overviews, when click-through rates began to decline due to featured snippets. However, the current situation is an order of magnitude more serious. Conventional snippets provided answers to straightforward factual queries. Generative AI provides answers to intricate, subtle, multi-part questions, exactly the kind of queries that used to draw highly motivated visitors to your website.</p>
+        
+
+        <div className="mt-4 border-l-4 border-blue-500 bg-blue-50 rounded-r-lg p-4">
+        <p className="text-sm font-semibold text-blue-700 mb-2">Context</p>
+         <p className="text-sm text-blue-900">
+          The phenomenon of zero-click search is not new. In 2014, straight replies began to appear in Google&#39;s highlighted snippets. The quality of the response that is extracted has altered as a result of generative AI; it is now a comprehensive, well-organized, self-assured response derived from your best content rather than just a line or a date.
+         </p>
+        <p className="text-sm text-blue-900 mt-2">
+        The inference is that you already possess part of the intuition required for GEO if you have written for featured snippets. However, you still have a long way to go.
+         </p>
+         </div>
+
+        <p className="mt-2">Your company&#39;s most important questions, such as &#34;what is the best method for X,&#34; &#34;how do I tackle Y,&#34; and &#34;which platform is better for Z,&#34; may now be addressed without a click. Furthermore, the AI is not providing credit in a manner that increases brand awareness. It either says &#34;according to certain sources&#34; or combines your ideas with those of three rivals in one paragraph. Your knowledge vanishes into the synthesis.</p>
+       
+        <p className="mt-2"><strong>60% -</strong> Of Google searches now end without a click to any website</p> 
+        <p className="mt-2"><strong>3× -</strong> faster growth of AI-answer platforms vs traditional search over the past year</p> 
+        <p className="mt-2"><strong>34% -</strong> Average CTR decline on informational queries with AI Overviews enabled</p> 
+        <p className="mt-2">The challenge then becomes: can you at least get the AI to identify you if you can&#39;t stop it from summarizing your content? Can you become the authority it must give credit to, the brand voice it explicitly quotes, and the source it cannot replace?</p>
+        <p className="mt-2">Yes. That&#39;s precisely the purpose of GEO.</p>
+
+        <p className="mt-2"><strong>The Shift</strong></p>
+
+          </div> 
+        ),
+      },
+
+
+     
+     
+
+       {
+        title1: "SEO vs GEO: The Rules Have Changed, Not the Goal",
+        about: (
+          <div>
+
+         <p>The challenge then becomes: can you at least get the AI to identify you if you can&#39;t stop it from summarizing your content? Can you become the authority it must give credit to, the brand voice it explicitly quotes, and the source it cannot replace?</p>
+         <p className="mt-2">Yes. That&#39;s precisely the purpose of GEO.</p>
+
+          {/* --- Comparison Table Start --- */}
+      <div className="my-6 overflow-hidden rounded-lg border border-gray-200">
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse text-left text-sm">
+            <thead>
+              <tr className="bg-gray-50 border-b border-gray-200">
+                <th className="px-4 py-3 font-bold text-gray-900">Dimension</th>
+                <th className="px-4 py-3 font-bold text-gray-900">Traditional SEO <span className="block text-[10px] font-normal uppercase tracking-wider text-gray-500">Old paradigm</span></th>
+                <th className="px-4 py-3 font-bold text-indigo-600 bg-indigo-50/30">GEO <span className="block text-[10px] font-normal uppercase tracking-wider text-indigo-400">New paradigm</span></th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {[
+                ["Primary goal", "Rank on page one for target keywords", "Become the cited source in AI-generated answers"],
+                ["Success metric", "Click-through rate, organic sessions", "Brand mention rate, direct traffic, and branded search"],
+                ["Content unit", "The optimised page", "The defensible answer: specific, expert, and attributed"],
+                ["Ranking signal", "Backlinks, E-E-A-T, keyword match", "Topical depth, unique data, brand authority"],
+                ["Enemy", "Competitors on the same keyword", "Being synthesised anonymously into an AI summary"],
+                ["Differentiation", "Better content on the same topic", "Content only you could have written"]
+              ].map((row, i) => (
+                <tr key={i} className="hover:bg-gray-50/50 transition-colors">
+                  <td className="px-4 py-3 font-semibold text-gray-700">{row[0]}</td>
+                  <td className="px-4 py-3 text-gray-600">{row[1]}</td>
+                  <td className="px-4 py-3 text-gray-900 font-medium bg-indigo-50/10">{row[2]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {/* --- Comparison Table End --- */}
+
+         <p className="mt-2">The challenge then becomes: can you at least get the AI to identify you if you can&#39;t stop it from summarizing your content? Can you become the authority it must give credit to, the brand voice it explicitly quotes, and the source it cannot replace?</p>
+         <p className="mt-2">Yes. That&#39;s precisely the purpose of GEO.</p>
+         <p className="mt-2"><strong>Asking &#34;how do I rank for this keyword&#34; has given way to &#34;how do I own this response so thoroughly that an AI has no option but to name me.&#34; This is the transition from SEO to GEO.</strong></p>
+         <p className="mt-2">Understanding the shift from SEO to GEO is only half the battle. Now that you know why your clicks are disappearing, you need a defense. In Part 2, we break down the exact tactics to build a content moat that AI can&#39;t ignore.</p> 
+       
+      
+          </div>
+        ),
+      },
+
+
+
+
+      
+
+           
+
+    ],
+  },
+ 
+
+
+  {
     
     slug: "dark-social-74",
     heading: "Dark Social: Why Your Best Leads Are Invisible to Google",
